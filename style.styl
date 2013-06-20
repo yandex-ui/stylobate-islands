@@ -1,0 +1,91 @@
+@import "stylobate"
+
+// Variables
+
+gap_xs = 6px
+gap_s = 10px
+gap_m = 16px
+gap_l = 20px
+
+
+// Move to page kind?
+.page
+  padding: 0
+  margin: 0
+
+  font: 15px/22px Arial, sans-serif
+
+  background: #E8E7E4
+
+.page-body
+  padding: 0
+  margin: 0
+
+  background: transparent
+
+h1,h2
+  padding: 0
+  margin: 0
+
+  font-weight: normal
+
+
+// Move and rename to skins/islands/isle
+skin-isle()
+  background: #FFF
+  box-shadow: 0 0 0 1px rgba(#000,0.15)
+
+skin-link()
+  cursor: pointer
+  color: #22C
+
+  if hover in arguments
+    &:hover
+      skin-link_hover()
+
+skin-link_hover()
+  color: #D00
+
+skin-link_selected()
+  color: #000
+  cursor: default
+
+
+
+.header,
+.site-nav
+  skin: isle
+
+.header
+  position: relative
+  padding: 0 gap_l
+
+.site-nav
+  padding: 0 (gap_l - 0.5*gap_m)
+  // It would be nice to make nav/nav-item skin/pattern with padding here and there
+
+
+.site-nav-link
+  skin: link hover
+
+  // Move those to something like `kind: inline-block`?
+  position: relative // make configurable as optional static?
+  display: inline-block // Or make default `block`, but `inline-block` if `skin: block inline`
+  vertical-align: top
+  text-decoration: none
+
+  padding: gap_s 0.5*gap_m
+
+a.site-nav-link:not([href])
+  skin: link_selected
+
+  &:before
+    content: ""
+    kind: fill
+
+    bottom: auto // When we need to apply fill only to one side, we could tell here `kind: fill top` and it would get this
+
+    left: 0.5*gap_m // Should those go to fill too? Like, using `kind: fill top 0 0.5em`
+    right: 0.5*gap_m
+
+    border-top: 2px solid

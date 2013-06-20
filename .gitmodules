@@ -1,0 +1,3 @@
+[submodule "stylobate"]
+	path = stylobate
+	url = git://github.com/kizu/stylobate.git
