@@ -39,11 +39,38 @@ h1,h2
 
 .header
   z-index: 2 // So it would be highter than `.site-nav`
-  padding: (gap_m - 2px) gap_l
+  padding: gap_m gap_l
 
 .header-logo,
 .header-service
   kind: block inline
+
+.header-logo
+  // How to deal with those?
+  top: -1px
+
+  // Could we move this to `block`? So it would be `kind: block inline 95px 37px`.
+  // Also, it would be cool to came up with a way to set margins/paddings in a block way.
+  width: 98px
+  height: 37px
+
+  margin-right: gap_l
+
+.header-logo-text
+  kind: hidden visually
+
+.header-logo-image
+  kind: fill "http://islands.yandex-team.ru/bem/blocks-2/src/i/yandex.svg"
+
+.header-service
+  // There is no available gaps to make such paddings, so the closest are here
+  padding: gap_xs gap_s
+
+  // This could be `skin: h3`
+  font-size: 18px
+  line-height: 26px
+
+  background: #FFDB4C
 
 .site-nav
   padding: 0 (gap_l - 0.5*gap_m)

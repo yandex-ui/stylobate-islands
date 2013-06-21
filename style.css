@@ -24,13 +24,37 @@ h2 {
 }
 .header {
   z-index: 2;
-  padding: 14px 20px;
+  padding: 16px 20px;
 }
 .header-logo,
 .header-service {
   position: relative;
   display: inline-block;
   vertical-align: top;
+}
+.header-logo {
+  top: -1px;
+  width: 98px;
+  height: 37px;
+  margin-right: 20px;
+}
+.header-logo-text {
+  position: absolute !important;
+  clip: rect(1px,1px,1px,1px) !important;
+}
+.header-logo-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("http://islands.yandex-team.ru/bem/blocks-2/src/i/yandex.svg") no-repeat 50%;
+}
+.header-service {
+  padding: 6px 10px;
+  font-size: 18px;
+  line-height: 26px;
+  background: #ffdb4c;
 }
 .site-nav {
   padding: 0 12px;
