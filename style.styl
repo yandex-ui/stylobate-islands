@@ -81,11 +81,6 @@ a.site-nav-link:not([href])
 
   &:before
     content: ""
-    kind: fill
-
-    bottom: auto // When we need to apply fill only to one side, we could tell here `kind: fill top` and it would get this
-
-    left: 0.5*gap_m // Should those go to fill too? Like, using `kind: fill top 0 0.5em`
-    right: 0.5*gap_m
+    kind: fill top 0 0.5*gap_m
 
     border-top: 2px solid

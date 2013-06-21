@@ -47,11 +47,8 @@ a.site-nav-link:not([href]):before {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  right: 8px;
   bottom: auto;
   left: 8px;
-  right: 8px;
   border-top: 2px solid;
 }
