@@ -1,4 +1,6 @@
 @import "stylobate"
+@import "_skins/islands/isle"
+@import "_skins/islands/link"
 
 // Variables
 
@@ -30,34 +32,13 @@ h1,h2
   font-weight: normal
 
 
-// Move and rename to skins/islands/isle
-skin-isle()
-  background: #FFF
-  box-shadow: 0 0 0 1px rgba(#000,0.15)
-
-skin-link()
-  cursor: pointer
-  color: #22C
-
-  if hover in arguments
-    &:hover
-      skin-link_hover()
-
-skin-link_hover()
-  color: #D00
-
-skin-link_selected()
-  color: #000
-  cursor: default
-
-
-
 .header,
 .site-nav
+  kind: block
   skin: isle
 
 .header
-  position: relative
+  z-index: 2 // So it would be highter than `.site-nav`
   padding: (gap_m - 2px) gap_l
 
 .header-logo,
@@ -71,9 +52,7 @@ skin-link_selected()
 
 .site-nav-link
   kind: block inline
-  skin: link hover
-
-  text-decoration: none // Should we move this to block kind? Or to link skin as `block` param?
+  skin: link hover nou
 
   padding: gap_s 0.5*gap_m
 

@@ -1,0 +1,23 @@
+skin-link()
+  cursor: pointer
+  color: #22C
+
+  if hover in arguments
+    &:hover
+      skin-link_hover()
+
+  if nou in arguments
+    text-decoration: none
+
+  if pseudo in arguments
+    text-decoration: none
+    border-bottom: 1px dashed
+
+skin-link_hover()
+  color: #D00
+
+skin-link_selected()
+  color: #000
+  cursor: default
+
+
