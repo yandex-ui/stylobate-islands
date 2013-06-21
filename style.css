@@ -22,7 +22,13 @@ h2 {
 }
 .header {
   position: relative;
-  padding: 0 20px;
+  padding: 14px 20px;
+}
+.header-logo,
+.header-service {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
 }
 .site-nav {
   padding: 0 12px;
