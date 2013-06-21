@@ -66,13 +66,10 @@ skin-link_selected()
 
 
 .site-nav-link
+  kind: block inline
   skin: link hover
 
-  // Move those to something like `kind: inline-block`?
-  position: relative // make configurable as optional static?
-  display: inline-block // Or make default `block`, but `inline-block` if `skin: block inline`
-  vertical-align: top
-  text-decoration: none
+  text-decoration: none // Should we move this to block kind? Or to link skin as `block` param?
 
   padding: gap_s 0.5*gap_m
 

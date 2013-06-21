@@ -28,11 +28,11 @@ h2 {
   padding: 0 12px;
 }
 .site-nav-link {
-  cursor: pointer;
-  color: #22c;
   position: relative;
   display: inline-block;
   vertical-align: top;
+  cursor: pointer;
+  color: #22c;
   text-decoration: none;
   padding: 10px 8px;
 }
