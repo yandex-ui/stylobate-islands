@@ -56,6 +56,20 @@ h2 {
   line-height: 26px;
   background: #ffdb4c;
 }
+.header-service:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 26.87005769217761px;
+  height: 26.87005769217761px;
+  -webkit-transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
+  -moz-transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
+  transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
+  background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  background: -moz-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+}
 .site-nav {
   padding: 0 12px;
 }
