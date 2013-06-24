@@ -14,7 +14,7 @@ h1,h2 {
   font: inherit;
   vertical-align: baseline;
   font-size: 62.5%;
-  background: #e8e7e4;
+  background: #f6f5f3;
 }
 .page-body {
   margin: 0;
@@ -26,24 +26,30 @@ h1,h2 {
   font: 1.5rem/2.2rem Arial, sans-serif;
   background: transparent;
 }
-.header,
-.site-nav {
+.page-content {
+  padding: 2rem;
+}
+.page-content:before {
+  content: "";
+  display: table;
+}
+.page-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header {
   position: relative;
   display: block;
   background: #fff;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
-}
-.header {
   z-index: 2;
   padding: 1.6rem 2rem;
 }
-.header-logo,
-.header-service {
+.header-logo {
   position: relative;
   display: inline-block;
   vertical-align: top;
-}
-.header-logo {
   top: -1px;
   width: 98px;
   height: 37px;
@@ -62,6 +68,54 @@ h1,h2 {
   background: url("http://islands.yandex-team.ru/bem/blocks-2/src/i/yandex.svg") no-repeat 50%;
 }
 .header-service {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.6rem 1rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  background: #ffdb4c;
+}
+.header-service:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 2.687005769217761rem;
+  height: 2.687005769217761rem;
+  -webkit-transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
+  -moz-transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg);
+  -o-transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg);
+  transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg);
+  background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  background: -moz-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+}
+.header-logo {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  top: -1px;
+  width: 98px;
+  height: 37px;
+  margin-right: 2rem;
+}
+.header-logo-text {
+  position: absolute !important;
+  clip: rect(1px,1px,1px,1px) !important;
+}
+.header-logo-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("http://islands.yandex-team.ru/bem/blocks-2/src/i/yandex.svg") no-repeat 50%;
+}
+.header-service {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
   padding: 0.6rem 1rem;
   font-size: 1.8rem;
   line-height: 2.6rem;
@@ -83,6 +137,10 @@ h1,h2 {
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
 }
 .site-nav {
+  position: relative;
+  display: block;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
   padding: 0 1.2rem;
 }
 .site-nav-link {
@@ -109,4 +167,50 @@ a.site-nav-link:not([href]):before {
   bottom: auto;
   left: 0.8rem;
   border-top: 2px solid;
+}
+.content {
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  margin-left: 320px;
+}
+.aside {
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  width: 300px;
+  float: left;
+}
+.aside-nav {
+  overflow: auto;
+  overflow-x: hidden;
+}
+.aside-nav-item {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  padding: 0.6rem 1rem;
+  padding-right: 2.6rem;
+  box-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+  margin-top: 1px;
+}
+.aside-nav-item:first-child {
+  margin-top: 0;
+  box-shadow: none;
+}
+.aside-nav-item:hover {
+  background: #ecf4f9;
+}
+.aside-nav-item.is-active {
+  color: #fff;
+  background: #1981ca;
+  box-shadow: 0 -1px 0 rgba(0,0,0,0.15), 0 -1px 0 #1981ca, 0 1px 0 #1981ca;
+}
+.aside-nav-item:after {
+  content: '›';
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 2rem;
+  line-height: 3.2rem;
 }

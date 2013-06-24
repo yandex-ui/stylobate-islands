@@ -13,99 +13,14 @@ gap_l = 2*rem
 
 reset('h1' 'h2', global)
 
-// Move to page kind?
-.page
-  reset('html')
+@import "blocks/page/page"
 
-  font-size: 62.5%
+@import "blocks/header/header"
+@import "blocks/header/header-logo"
+@import "blocks/header/header-service"
 
-  background: #E8E7E4
+@import "blocks/site-nav/site-nav"
 
-.page-body
-  reset('body')
+@import "blocks/content/content"
 
-  font: 1.5*rem/2.2*rem Arial, sans-serif
-
-  background: transparent
-
-.header,
-.site-nav
-  kind: block
-  skin: isle
-
-.header
-  z-index: 2 // So it would be highter than `.site-nav`
-  padding: gap_m gap_l
-
-.header-logo,
-.header-service
-  kind: block inline
-
-.header-logo
-  // How to deal with those?
-  top: -1px
-
-  // Could we move this to `block`? So it would be `kind: block inline 95px 37px`.
-  // Also, it would be cool to came up with a way to set margins/paddings in a block way.
-  width: 98px
-  height: 37px
-
-  margin-right: gap_l
-
-.header-logo-text
-  kind: hidden visually
-
-.header-logo-image
-  kind: fill "http://islands.yandex-team.ru/bem/blocks-2/src/i/yandex.svg"
-
-.header-service
-  // There is no available gaps to make such paddings, so the closest are here
-  padding: gap_xs gap_s
-
-  // This could be `skin: h3`
-  font-size: 1.8*rem
-  line-height: 2.6*rem
-
-  background: #FFDB4C
-
-arrow($height, $color)
-  position: absolute
-  top: 50%
-  right: 0
-  $sqrt2 = 1.414213562
-  width: $height * (1/$sqrt2)
-  height: $height * (1/$sqrt2)
-
-  // tfZ should be there only if alpha == 1
-  -webkit-transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg) translateZ(0)
-  -moz-transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg)
-  -o-transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg)
-  transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg)
-  background: -webkit-linear-gradient(45deg, $color 50%,transparent 50%)
-  background: -moz-linear-gradient(45deg, $color 50%,transparent 50%)
-  background: linear-gradient(45deg, $color 50%,transparent 50%)
-
-.header-service:before
-  content: ""
-  arrow(3.8*rem, #FFDB4C)
-
-.site-nav
-  padding: 0 (gap_l - 0.5*gap_m)
-  // It would be nice to make nav/nav-item skin/pattern with padding here and there
-
-
-.site-nav-link
-  kind: block inline
-  skin: link hover nou
-
-  padding: gap_s 0.5*gap_m
-
-
-a.site-nav-link:not([href])
-  skin: link_selected
-
-  &:before
-    content: ""
-    kind: fill top 0 0.5*gap_m
-
-    border-top: 2px solid
+@import "blocks/aside/aside"
