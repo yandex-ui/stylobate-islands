@@ -1,12 +1,13 @@
 .page {
   padding: 0;
   margin: 0;
-  font: 15px/22px Arial, sans-serif;
+  font-size: 62.5%;
   background: #e8e7e4;
 }
 .page-body {
   padding: 0;
   margin: 0;
+  font: 1.5rem/2.2rem Arial, sans-serif;
   background: transparent;
 }
 h1,
@@ -24,7 +25,7 @@ h2 {
 }
 .header {
   z-index: 2;
-  padding: 16px 20px;
+  padding: 1.6rem 2rem;
 }
 .header-logo,
 .header-service {
@@ -36,7 +37,7 @@ h2 {
   top: -1px;
   width: 98px;
   height: 37px;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 .header-logo-text {
   position: absolute !important;
@@ -51,9 +52,9 @@ h2 {
   background: url("http://islands.yandex-team.ru/bem/blocks-2/src/i/yandex.svg") no-repeat 50%;
 }
 .header-service {
-  padding: 6px 10px;
-  font-size: 18px;
-  line-height: 26px;
+  padding: 0.6rem 1rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
   background: #ffdb4c;
 }
 .header-service:before {
@@ -61,8 +62,8 @@ h2 {
   position: absolute;
   top: 50%;
   right: 0;
-  width: 26.87005769217761px;
-  height: 26.87005769217761px;
+  width: 2.687005769217761rem;
+  height: 2.687005769217761rem;
   -webkit-transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
   -moz-transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg);
   -o-transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg);
@@ -72,7 +73,7 @@ h2 {
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
 }
 .site-nav {
-  padding: 0 12px;
+  padding: 0 1.2rem;
 }
 .site-nav-link {
   position: relative;
@@ -81,7 +82,7 @@ h2 {
   cursor: pointer;
   color: #22c;
   text-decoration: none;
-  padding: 10px 8px;
+  padding: 1rem 0.8rem;
 }
 .site-nav-link:hover {
   color: #d00;
@@ -94,8 +95,8 @@ a.site-nav-link:not([href]):before {
   content: "";
   position: absolute;
   top: 0;
-  right: 8px;
+  right: 0.8rem;
   bottom: auto;
-  left: 8px;
+  left: 0.8rem;
   border-top: 2px solid;
 }

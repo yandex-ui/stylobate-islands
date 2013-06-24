@@ -1,13 +1,15 @@
+rem_px = 10px
+
 @import "stylobate"
 @import "_skins/islands/isle"
 @import "_skins/islands/link"
 
 // Variables
 
-gap_xs = 6px
-gap_s = 10px
-gap_m = 16px
-gap_l = 20px
+gap_xs = 0.6*rem
+gap_s = 1*rem
+gap_m = 1.6*rem
+gap_l = 2*rem
 
 
 // Move to page kind?
@@ -15,13 +17,15 @@ gap_l = 20px
   padding: 0
   margin: 0
 
-  font: 15px/22px Arial, sans-serif
+  font-size: 62.5%
 
   background: #E8E7E4
 
 .page-body
   padding: 0
   margin: 0
+
+  font: 1.5*rem/2.2*rem Arial, sans-serif
 
   background: transparent
 
@@ -67,8 +71,8 @@ h1,h2
   padding: gap_xs gap_s
 
   // This could be `skin: h3`
-  font-size: 18px
-  line-height: 26px
+  font-size: 1.8*rem
+  line-height: 2.6*rem
 
   background: #FFDB4C
 
@@ -91,7 +95,7 @@ arrow($height, $color)
 
 .header-service:before
   content: ""
-  arrow(38px, #FFDB4C)
+  arrow(3.8*rem, #FFDB4C)
 
 .site-nav
   padding: 0 (gap_l - 0.5*gap_m)
