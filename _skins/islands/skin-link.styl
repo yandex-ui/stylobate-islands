@@ -1,12 +1,18 @@
 skin-link()
   cursor: pointer
-  color: alike(arguments, #22C)
 
-  if hover in arguments
+  if outer in arguments
+    color: #070
+  else
+    color: alike(arguments, #22C)
+
+  unless no-hover in arguments
     &:hover
       skin-link_hover()
 
-  if nou in arguments
+  if underline in arguments
+    text-decoration: underline
+  else
     text-decoration: none
 
   if pseudo in arguments

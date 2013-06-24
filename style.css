@@ -310,3 +310,19 @@ a.site-nav-link:not([href]):before {
   height: 100px;
   width: 200px;
 }
+.example-link {
+  cursor: pointer;
+  color: #22c;
+  text-decoration: none;
+}
+.example-link:hover {
+  color: #d00;
+}
+.example-outer-link {
+  cursor: pointer;
+  color: #070;
+  text-decoration: none;
+}
+.example-outer-link:hover {
+  color: #d00;
+}
