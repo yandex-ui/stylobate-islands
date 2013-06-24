@@ -1,3 +1,10 @@
 skin-isle()
   background: #FFF
-  box-shadow: 0 0 0 1px rgba(#000, alike(arguments, 0.1))
+
+  if fly in arguments
+    box-shadow: 0 0 0 1px rgba(0,0,0, alike(arguments, 0.15)),
+                0 8px 30px -5px rgba(0,0,0,0.5)
+  else
+    box-shadow: 0 0 0 1px rgba(#000, alike(arguments, 0.1))
+
+
