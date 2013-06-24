@@ -1,3 +1,14 @@
 .content
+  kind: block
   skin: isle
   margin-left: 320px
+
+.content-section
+  kind: block, clear
+  padding: gap_m gap_m 0
+
+  border-top: 1px solid rgba(0,0,0,0.15)
+
+  // Should it be `el+el`?
+  &:first-child
+    border-top: 0

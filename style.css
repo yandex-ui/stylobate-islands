@@ -1,4 +1,4 @@
-h1,h2 {
+h1,h2,h3 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -169,15 +169,35 @@ a.site-nav-link:not([href]):before {
   border-top: 2px solid;
 }
 .content {
+  position: relative;
+  display: block;
   background: #fff;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
   margin-left: 320px;
 }
+.content-section {
+  position: relative;
+  display: block;
+  padding: 1.6rem 1.6rem 0;
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
+.content-section:before {
+  content: "";
+  display: table;
+}
+.content-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content-section:first-child {
+  border-top: 0;
+}
 .aside {
   background: #fff;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  position: absolute;
   width: 300px;
-  float: left;
 }
 .aside-nav {
   overflow: auto;
@@ -202,6 +222,7 @@ a.site-nav-link:not([href]):before {
   background: #ecf4f9;
 }
 .aside-nav-item.is-active {
+  cursor: default;
   color: #fff;
   background: #1981ca;
   box-shadow: 0 -1px 0 rgba(0,0,0,0.15), 0 -1px 0 #1981ca, 0 1px 0 #1981ca;
@@ -213,4 +234,48 @@ a.site-nav-link:not([href]):before {
   right: 1rem;
   font-size: 2rem;
   line-height: 3.2rem;
+}
+.text h1 {
+  margin-bottom: 2rem;
+  font-weight: normal;
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+}
+.text h2 {
+  margin-bottom: 2rem;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+.text h3 {
+  margin-bottom: 1.6rem;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+.text h4 {
+  margin-bottom: 1.6rem;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+.text h5 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+.text h6 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.text p {
+  margin-bottom: 1.6rem;
+}
+.text p.secondary {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-bottom: 0.6rem;
 }
