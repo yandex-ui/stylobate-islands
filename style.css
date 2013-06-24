@@ -276,11 +276,13 @@ a.site-nav-link:not([href]):before {
 }
 .text p {
   margin-bottom: 1.6rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 }
 .text p.secondary {
+  margin-bottom: 0.6rem;
   font-size: 1.3rem;
   line-height: 1.8rem;
-  margin-bottom: 0.6rem;
 }
 .example {
   padding-left: 2rem;
@@ -288,9 +290,9 @@ a.site-nav-link:not([href]):before {
   margin-bottom: 2rem;
 }
 .example-title {
+  margin-bottom: 0.6rem;
   font-size: 1.3rem;
   line-height: 1.8rem;
-  margin-bottom: 0.6rem;
   color: #999;
 }
 .example-title-mark {
