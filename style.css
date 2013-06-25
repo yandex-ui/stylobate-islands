@@ -129,6 +129,214 @@ a.site-nav-link:not([href]):before {
 .outer-link:hover {
   color: #d00;
 }
+.button {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+  position: relative;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  padding: 0.5rem 1.5rem;
+  background: #eee;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+}
+.button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+.button > .button-content {
+  position: relative;
+  display: block;
+}
+.button:active {
+  box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
+}
+.button:active:before {
+  box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
+}
+.button:active > .button-content {
+  top: 1px;
+}
+.button:before {
+  background: #fff;
+  background: -webkit-linear-gradient(#fff, #eee);
+}
+.small-button {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+  position: relative;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding: 0.5rem 1.3rem;
+  background: #eee;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+}
+.small-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+.small-button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+.small-button > .button-content {
+  position: relative;
+  display: block;
+}
+.small-button:active {
+  box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
+}
+.small-button:active:before {
+  box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
+}
+.small-button:active > .button-content {
+  top: 1px;
+}
+.small-button:before {
+  background: #fff;
+  background: -webkit-linear-gradient(#fff, #eee);
+}
+.action-button {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+  position: relative;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  padding: 0.5rem 1.5rem;
+  background: #ffdf60;
+  background: -webkit-linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
+}
+.action-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+.action-button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+.action-button > .button-content {
+  position: relative;
+  display: block;
+}
+.action-button:active {
+  box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
+}
+.action-button:active:before {
+  box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
+}
+.action-button:active > .button-content {
+  top: 1px;
+}
+.action-button:before {
+  background: #ffdf60;
+  background: linear-gradient(#ffdf60, #fc0);
+}
+.small-action-button {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+  position: relative;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding: 0.5rem 1.3rem;
+  background: #ffdf60;
+  background: -webkit-linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
+}
+.small-action-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+.small-action-button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+.small-action-button > .button-content {
+  position: relative;
+  display: block;
+}
+.small-action-button:active {
+  box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
+}
+.small-action-button:active:before {
+  box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
+}
+.small-action-button:active > .button-content {
+  top: 1px;
+}
+.small-action-button:before {
+  background: #ffdf60;
+  background: linear-gradient(#ffdf60, #fc0);
+}
 .page {
   margin: 0;
   padding: 0;

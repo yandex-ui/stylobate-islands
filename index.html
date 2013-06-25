@@ -30,12 +30,13 @@
     <div class="page-content">
         <div class="aside">
             <div class="aside-nav">
-                <a class="aside-nav-item" href="#skin-isle">Острова</a>
-                <a class="aside-nav-item" href="#skin-link">Ссылки</a>
+                <a class="aside-nav-item" href="#isle">Острова</a>
+                <a class="aside-nav-item" href="#link">Ссылки</a>
+                <a class="aside-nav-item" href="#button">Кнопки</a>
             </div>
         </div>
         <div class="content text">
-            <div class="content-section" id="skin-isle">
+            <div class="content-section" id="isle">
                 <h1>Острова</h1>
                 <p>Наш герой, белый блок с тенью. Остров можно приземлить, а можно оставить парящим (модификатор `fly`).</p>
                 <div class="example">
@@ -49,18 +50,46 @@
                 </div>
             </div>
 
-            <div class="content-section" id="skin-link">
+            <div class="content-section" id="link">
                 <h1>Ссылки</h1>
                 <div class="example">
                     <div class="example-title">.link<br/>  skin: <strong class="example-title-mark">link</strong></div>
-                    <a class="link" href="#">In CTR we trust</a>
+                    <a class="link" href="#x">In CTR we trust</a>
                 </div>
                 И внешняя ссылка
                 <div class="example">
                     <div class="example-title">.outer-link<br/>  skin: link <strong class="example-title-mark">outer</strong></div>
-                    <a class="outer-link" href="#">We don't care</a>
+                    <a class="outer-link" href="#x">We don't care</a>
                 </div>
                 <!-- И потом ещё будет с иконкой -->
+            </div>
+
+            <div class="content-section" id="button">
+                <h1>Кнопки</h1>
+                <div class="example">
+                    <div class="example-title">.button</div>
+                    <a class="button" href="#x">
+                        <span class="button-content">Кнопка ссылкой</span>
+                    </a>
+                </div>
+                <div class="example">
+                    <div class="example-title">.small-button</div>
+                    <button class="small-button" type="button">
+                        <span class="button-content">Маленькая кнопка кнопкой</span>
+                    </button>
+                </div>
+                <div class="example">
+                    <div class="example-title">.action-button</div>
+                    <a class="action-button" href="#x">
+                        <span class="button-content">Кнопка ссылкой</span>
+                    </a>
+                </div>
+                <div class="example">
+                    <div class="example-title">.small-action-button</div>
+                    <button class="small-action-button" type="button">
+                        <span class="button-content">Маленькая кнопка кнопкой</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
