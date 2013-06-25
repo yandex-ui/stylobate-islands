@@ -158,6 +158,8 @@ a.site-nav-link:not([href]):before {
   padding: 0.5rem 1.5rem;
   background: #eee;
   background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  background: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
 }
 .button::-moz-focus-inner {
   padding: 0;
@@ -194,13 +196,19 @@ a.site-nav-link:not([href]):before {
 }
 .button:not(.is-disabled):hover {
   background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+  background: -moz-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 .button:not(.is-disabled):hover:before {
   background: -webkit-linear-gradient(#fff, #f6f5f3);
+  background: -moz-linear-gradient(#fff, #f6f5f3);
+  background: linear-gradient(#fff, #f6f5f3);
 }
 .button:before {
   background: #fff;
   background: -webkit-linear-gradient(#fff, #eee);
+  background: -moz-linear-gradient(#fff, #eee);
+  background: linear-gradient(#fff, #eee);
 }
 .small-button {
   display: inline-block;
@@ -224,6 +232,8 @@ a.site-nav-link:not([href]):before {
   padding: 0.5rem 1.3rem;
   background: #eee;
   background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  background: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
 }
 .small-button::-moz-focus-inner {
   padding: 0;
@@ -260,13 +270,19 @@ a.site-nav-link:not([href]):before {
 }
 .small-button:not(.is-disabled):hover {
   background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+  background: -moz-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 .small-button:not(.is-disabled):hover:before {
   background: -webkit-linear-gradient(#fff, #f6f5f3);
+  background: -moz-linear-gradient(#fff, #f6f5f3);
+  background: linear-gradient(#fff, #f6f5f3);
 }
 .small-button:before {
   background: #fff;
   background: -webkit-linear-gradient(#fff, #eee);
+  background: -moz-linear-gradient(#fff, #eee);
+  background: linear-gradient(#fff, #eee);
 }
 .action-button {
   display: inline-block;
@@ -290,6 +306,8 @@ a.site-nav-link:not([href]):before {
   padding: 0.5rem 1.5rem;
   background: #ffdf60;
   background: -webkit-linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
+  background: -moz-linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
+  background: linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
 }
 .action-button::-moz-focus-inner {
   padding: 0;
@@ -326,13 +344,19 @@ a.site-nav-link:not([href]):before {
 }
 .action-button:not(.is-disabled):hover {
   background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+  background: -moz-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 .action-button:not(.is-disabled):hover:before {
   background: -webkit-linear-gradient(#ffe681, #ffd428);
+  background: -moz-linear-gradient(#ffe681, #ffd428);
+  background: linear-gradient(#ffe681, #ffd428);
 }
 .action-button:before {
   background: #ffdf60;
   background: -webkit-linear-gradient(#ffdf60, #fc0);
+  background: -moz-linear-gradient(#ffdf60, #fc0);
+  background: linear-gradient(#ffdf60, #fc0);
 }
 .small-action-button {
   display: inline-block;
@@ -356,6 +380,8 @@ a.site-nav-link:not([href]):before {
   padding: 0.5rem 1.3rem;
   background: #ffdf60;
   background: -webkit-linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
+  background: -moz-linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
+  background: linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
 }
 .small-action-button::-moz-focus-inner {
   padding: 0;
@@ -392,13 +418,19 @@ a.site-nav-link:not([href]):before {
 }
 .small-action-button:not(.is-disabled):hover {
   background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+  background: -moz-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 .small-action-button:not(.is-disabled):hover:before {
   background: -webkit-linear-gradient(#ffe681, #ffd428);
+  background: -moz-linear-gradient(#ffe681, #ffd428);
+  background: linear-gradient(#ffe681, #ffd428);
 }
 .small-action-button:before {
   background: #ffdf60;
   background: -webkit-linear-gradient(#ffdf60, #fc0);
+  background: -moz-linear-gradient(#ffdf60, #fc0);
+  background: linear-gradient(#ffdf60, #fc0);
 }
 .pseudo-button {
   display: inline-block;

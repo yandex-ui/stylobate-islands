@@ -41,6 +41,8 @@ skin-button()
 
   background: #EEE
   background: -webkit-linear-gradient(rgba(#000, 0.2), rgba(#000, 0.4))
+  background: -moz-linear-gradient(rgba(#000, 0.2), rgba(#000, 0.4))
+  background: linear-gradient(rgba(#000, 0.2), rgba(#000, 0.4))
 
   &:not(.is-disabled):hover
     skin-button_hover()
@@ -48,6 +50,8 @@ skin-button()
   &:before
     background: #FFF
     background: -webkit-linear-gradient(#FFF, #EEE)
+    background: -moz-linear-gradient(#FFF, #EEE)
+    background: linear-gradient(#FFF, #EEE)
 
 
 // Action button
@@ -56,6 +60,8 @@ skin-action-button()
 
   background: #FFDF60
   background: -webkit-linear-gradient(rgba(96,64,0, 0.4),rgba(70,47,0, 0.54))
+  background: -moz-linear-gradient(rgba(96,64,0, 0.4),rgba(70,47,0, 0.54))
+  background: linear-gradient(rgba(96,64,0, 0.4),rgba(70,47,0, 0.54))
 
   &:not(.is-disabled):hover
     skin-action-button_hover()
@@ -63,21 +69,31 @@ skin-action-button()
   &:before
     background: #FFDF60
     background: -webkit-linear-gradient(#FFDF60, #FFCC00)
+    background: -moz-linear-gradient(#FFDF60, #FFCC00)
+    background: linear-gradient(#FFDF60, #FFCC00)
 
 
 // Hover state
 skin-button_hover()
   background: -webkit-linear-gradient(rgba(#000, 0.22), rgba(#000, 0.4))
+  background: -moz-linear-gradient(rgba(#000, 0.22), rgba(#000, 0.4))
+  background: linear-gradient(rgba(#000, 0.22), rgba(#000, 0.4))
 
   &:before
     background: -webkit-linear-gradient(#FFF, #F6F5F3)
+    background: -moz-linear-gradient(#FFF, #F6F5F3)
+    background: linear-gradient(#FFF, #F6F5F3)
 
 // Hover state for action
 skin-action-button_hover()
   background: -webkit-linear-gradient(rgba(#000, 0.22), rgba(#000, 0.4))
+  background: -moz-linear-gradient(rgba(#000, 0.22), rgba(#000, 0.4))
+  background: linear-gradient(rgba(#000, 0.22), rgba(#000, 0.4))
 
   &:before
     background: -webkit-linear-gradient(#FFE681, #FFD428)
+    background: -moz-linear-gradient(#FFE681, #FFD428)
+    background: linear-gradient(#FFE681, #FFD428)
 
 // Pressed state
 skin-button_pressed()
