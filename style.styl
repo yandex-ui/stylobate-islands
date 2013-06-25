@@ -1,34 +1,37 @@
+
+// Variables for Stylobate
 rem_px = 10px
 
 @import "stylobate"
-@import "_skins/islands/skin-isle"
-@import "_skins/islands/skin-link"
-@import "_skins/islands/skin-text"
 
-// Variables
+// Variables for Everything else
 
 gap_xs = 0.6*rem
 gap_s = 1*rem
 gap_m = 1.6*rem
 gap_l = 2*rem
 
+// Skins
+@import "_skins/islands/skin-isle"
+@import "_skins/islands/skin-link"
+@import "_skins/islands/skin-text"
+
 reset('h1' 'h2' 'h3', global)
 
-@import "blocks/page/page"
-
+// Blocks
 @import "blocks/is-hidden/is-hidden"
-
-@import "blocks/header/header"
-@import "blocks/header/header-logo"
-@import "blocks/header/header-service"
-
 @import "blocks/site-nav/site-nav"
-
-@import "blocks/content/content"
-
-@import "blocks/aside/aside"
-
 @import "blocks/text/text"
-
 @import "blocks/example/example"
 @import "blocks/example/examples"
+
+// Structures
+@import "structures/page/page"
+
+@import "structures/header/header"
+@import "structures/header/header-logo"
+@import "structures/header/header-service"
+
+@import "structures/content/content"
+
+@import "structures/aside/aside"
