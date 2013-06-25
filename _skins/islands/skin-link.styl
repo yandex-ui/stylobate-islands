@@ -4,7 +4,7 @@ skin-link()
   cursor: pointer
 
   if outer in arguments
-    color: #070
+    skin-link_outer()
   else
     color: alike(arguments, #22C)
 
@@ -20,6 +20,9 @@ skin-link()
   if pseudo in arguments
     text-decoration: none
     border-bottom: 1px dashed
+
+skin-link_outer()
+  color: #070
 
 skin-link_hover()
   color: #D00

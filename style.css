@@ -101,32 +101,32 @@ a.site-nav-link:not([href]):before {
 .example-title-mark {
   color: #444;
 }
-.example-isle {
+.isle {
+  position: relative;
+  display: block;
   background: #fff;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
-  height: 100px;
-  width: 200px;
 }
-.example-fly-isle {
+.flying-isle {
+  position: relative;
+  display: block;
   background: #fff;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 30px -5px rgba(0,0,0,0.5);
-  height: 100px;
-  width: 200px;
 }
-.example-link {
+.link {
   cursor: pointer;
   color: #22c;
   text-decoration: none;
 }
-.example-link:hover {
+.link:hover {
   color: #d00;
 }
-.example-outer-link {
+.outer-link {
   cursor: pointer;
   color: #070;
   text-decoration: none;
 }
-.example-outer-link:hover {
+.outer-link:hover {
   color: #d00;
 }
 .page {
@@ -168,51 +168,6 @@ a.site-nav-link:not([href]):before {
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
   z-index: 2;
   padding: 1.6rem 2rem;
-}
-.header-logo {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  top: -1px;
-  width: 98px;
-  height: 37px;
-  margin-right: 2rem;
-}
-.header-logo-text {
-  position: absolute !important;
-  clip: rect(1px,1px,1px,1px) !important;
-}
-.header-logo-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url("http://islands.yandex-team.ru/bem/blocks-2/src/i/yandex.svg") no-repeat 50%;
-}
-.header-service {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  padding: 0.6rem 1rem;
-  font-size: 1.8rem;
-  line-height: 2.6rem;
-  background: #ffdb4c;
-}
-.header-service:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 2.687005769217761rem;
-  height: 2.687005769217761rem;
-  -webkit-transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
-  -moz-transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg);
-  -o-transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg);
-  transform: translate(50%, -50%) scale(0.5, 1) rotate(-135deg);
-  background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  background: -moz-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
 }
 .header-logo {
   position: relative;
