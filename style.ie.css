@@ -525,6 +525,13 @@ a.site-nav-link:not([href]):before {
 .aside {
   background: #fff;
   position: absolute;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 19px;
+  float: left;
   width: 300px;
 }
 .aside-nav {
