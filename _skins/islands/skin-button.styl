@@ -5,7 +5,11 @@ skin-proto-button()
   color: #333
 
   border-radius: 3px
-  box-shadow: 0 1px 0 rgba(#000, 0.07)
+
+  if fly in arguments
+    box-shadow: 0 8px 20px -5px rgba(#000, 0.25)
+  else
+    box-shadow: 0 1px 0 rgba(#000, 0.07)
 
   &:before
     content: ""
@@ -23,10 +27,13 @@ skin-proto-button()
     kind: block
 
   &:not(.is-disabled):active
-    skin-button_pressed()
+    skin-button_pressed(arguments)
 
-    & > .button-content
+    if fly in arguments
       top: 1px
+    else
+      & > .button-content
+        top: 1px
 
   &:not(.is-disabled):focus
     outline: 0
@@ -100,8 +107,11 @@ skin-action-button_hover()
 
 // Pressed state
 skin-button_pressed()
-  box-shadow: inset 0 2px 1px -1px rgba(#000, 0.4), 0 1px 0 rgba(#FFF, 0.2)
+  if fly in arguments
+    box-shadow:0 4px 10px -4px rgba(#000, 0.45)
+  else
+    box-shadow: inset 0 2px 1px -1px rgba(#000, 0.4), 0 1px 0 rgba(#FFF, 0.2)
 
-  &:before
-    box-shadow: inset 0 1px 3px -1px rgba(#000, 0.5)
+    &:before
+      box-shadow: inset 0 1px 3px -1px rgba(#000, 0.5)
 

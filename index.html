@@ -137,6 +137,16 @@
                     <button class="small-pseudo-button" type="button">Маленькая псевдокнопка кнопкой</button>
                 </div>
                 <div class="example">
+                    <pre class="example-title">
+.fly-button
+  kind: button
+  skin: button <strong class="example-title-mark">fly</strong>
+</pre>
+                    <button class="fly-button" type="button">
+                        <span class="button-content">Летающая кнопка</span>
+                    </button>
+                </div>
+                <div class="example">
                     <pre class="example-title">.is-disabled</pre>
                     <a class="button is-disabled">
                         <span class="button-content">Кнопка ссылкой</span>
@@ -145,6 +155,17 @@
                         <span class="button-content">Маленькая кнопка кнопкой</span>
                     </button>
                     <a class="pseudo-button is-disabled">Псевдокнопка ссылкой</a>
+                </div>
+                <p>Ещё раз: не нужно в html выплёвывать все модификации. Если нужна маленькая летающая кнопка, то, конечно, можно наплодить классов вида small-fly-action-button, но на самом деле стоит к каждому элементу интерфейса подходить индивидуальнее, и для подобной кнопки прописать всё соответствующим образом в CSS:</p>
+                <div class="example">
+                    <pre class="example-title">
+.super-button
+  kind: button
+  skin: action-button fly small
+</pre>
+                    <button class="super-button" type="button">
+                        <span class="button-content">Супер кнопка</span>
+                    </button>
                 </div>
             </div>
         </div>
