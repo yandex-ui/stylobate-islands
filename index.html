@@ -40,12 +40,20 @@
                 <h1>Острова</h1>
                 <p>Наш герой, белый блок с тенью. Остров можно приземлить, а можно оставить парящим (модификатор `fly`).</p>
                 <div class="example">
-                    <div class="example-title">.isle<br/>  kind: block<br/>  skin: <strong class="example-title-mark">isle</strong></div>
+                    <pre class="example-title">
+.isle
+  kind: block
+  skin: <strong class="example-title-mark">isle</strong>
+</pre>
                     <div class="isle" style="width: 200px; height: 100px;"></div>
                 </div>
                 <p>Летающий блок создан для модальных окон, выпадающих списков и прочих элементов верхнего слоя, в остальных случаях следует обходиться обычным островом.</p>
                 <div class="example">
-                    <div class="example-title">.flying-isle<br/>  kind: block<br/>  skin: isle <strong class="example-title-mark">fly</strong></div>
+                    <pre class="example-title">
+.flying-isle
+  kind: block
+  skin: isle <strong class="example-title-mark">fly</strong>
+</pre>
                     <div class="flying-isle" style="width: 200px; height: 100px;"></div>
                 </div>
             </div>
@@ -53,12 +61,18 @@
             <div class="content-section" id="link">
                 <h1>Ссылки</h1>
                 <div class="example">
-                    <div class="example-title">.link<br/>  skin: <strong class="example-title-mark">link</strong></div>
+                    <pre class="example-title">
+.link
+  skin: <strong class="example-title-mark">link</strong>
+</pre>
                     <a class="link" href="#x">In CTR we trust</a>
                 </div>
                 И внешняя ссылка
                 <div class="example">
-                    <div class="example-title">.outer-link<br/>  skin: link <strong class="example-title-mark">outer</strong></div>
+                    <pre class="example-title">
+.outer-link
+  skin: link <strong class="example-title-mark">outer</strong>
+</pre>
                     <a class="outer-link" href="#x">We don't care</a>
                 </div>
                 <!-- И потом ещё будет с иконкой -->
@@ -67,39 +81,63 @@
             <div class="content-section" id="button">
                 <h1>Кнопки</h1>
                 <div class="example">
-                    <div class="example-title">.button</div>
+                    <pre class="example-title">
+.button
+  kind: button reset
+  skin: button
+</pre>
                     <a class="button" href="#x">
                         <span class="button-content">Кнопка ссылкой</span>
                     </a>
                 </div>
                 <div class="example">
-                    <div class="example-title">.small-button</div>
+                    <pre class="example-title">
+.small-button
+  kind: button reset
+  skin: button <strong class="example-title-mark">small</strong>
+</pre>
                     <button class="small-button" type="button">
                         <span class="button-content">Маленькая кнопка кнопкой</span>
                     </button>
                 </div>
                 <div class="example">
-                    <div class="example-title">.action-button</div>
+                    <pre class="example-title">
+.action-button
+  kind: button reset
+  skin: <strong class="example-title-mark">action-</strong>button
+</pre>
                     <a class="action-button" href="#x">
                         <span class="button-content">Кнопка ссылкой</span>
                     </a>
                 </div>
                 <div class="example">
-                    <div class="example-title">.small-action-button</div>
+                    <pre class="example-title">
+.small-action-button
+  kind: button reset
+  skin: action-button <strong class="example-title-mark">small</strong>
+</pre>
                     <button class="small-action-button" type="button">
                         <span class="button-content">Маленькая кнопка кнопкой</span>
                     </button>
                 </div>
                 <div class="example">
-                    <div class="example-title">.pseudo-button</div>
+                    <pre class="example-title">
+.pseudo-button
+  kind: button reset
+  skin: <strong class="example-title-mark">pseudo-</strong>button
+</pre>
                     <a class="pseudo-button" href="#x">Псевдокнопка ссылкой</a>
                 </div>
                 <div class="example">
-                    <div class="example-title">.small-pseudo-button</div>
+                    <pre class="example-title">
+.small-pseudo-button
+  kind: button reset
+  skin: pseudo-button <strong class="example-title-mark">small</strong>
+</pre>
                     <button class="small-pseudo-button" type="button">Маленькая псевдокнопка кнопкой</button>
                 </div>
                 <div class="example">
-                    <div class="example-title">.is-disabled</div>
+                    <pre class="example-title">.is-disabled</pre>
                     <a class="button is-disabled">
                         <span class="button-content">Кнопка ссылкой</span>
                     </a>
