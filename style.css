@@ -88,11 +88,13 @@ a.site-nav-link:not([href]):before {
   margin-bottom: 1.6rem;
   font-size: 1.5rem;
   line-height: 2.2rem;
+  max-width: 42em;
 }
 .text p.secondary {
   margin-bottom: 0.6rem;
   font-size: 1.3rem;
   line-height: 1.8rem;
+  max-width: 42em;
 }
 .example {
   padding-left: 2rem;
@@ -769,6 +771,7 @@ a.site-nav-link:not([href]):before {
   font: inherit;
   vertical-align: baseline;
   font-size: 62.5%;
+  color: #333;
   background: #f6f5f3;
 }
 .page-body {
@@ -870,6 +873,11 @@ a.site-nav-link:not([href]):before {
 }
 .content-section:first-child {
   border-top: 0;
+}
+.content-section:last-child:target:before {
+  content: "";
+  position: absolute;
+  height: 90vh;
 }
 .aside {
   background: #fff;

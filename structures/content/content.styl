@@ -12,3 +12,9 @@
   // Should it be `el+el`?
   &:first-child
     border-top: 0
+
+  // Make the bottom of the page bigger for the readability of the last item
+  &:last-child:target:before
+    content: ""
+    position: absolute
+    height: 90vh
