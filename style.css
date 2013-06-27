@@ -824,13 +824,6 @@ a.site-nav-link:not([href]):before {
   background: #fff;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
   position: absolute;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -o-sticky;
-  position: -ms-sticky;
-  position: sticky;
-  top: 1.9rem;
-  float: left;
   width: 300px;
 }
 .aside-nav {
