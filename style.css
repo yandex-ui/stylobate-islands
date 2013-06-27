@@ -203,6 +203,12 @@ a.site-nav-link:not([href]):before {
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
+.button:before {
+  background: #f7f7f7;
+  background: -webkit-linear-gradient(#fff, #eee);
+  background: -moz-linear-gradient(#fff, #eee);
+  background: linear-gradient(#fff, #eee);
+}
 .button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
@@ -214,12 +220,6 @@ a.site-nav-link:not([href]):before {
   background: -webkit-linear-gradient(#fff, #f6f5f3);
   background: -moz-linear-gradient(#fff, #f6f5f3);
   background: linear-gradient(#fff, #f6f5f3);
-}
-.button:before {
-  background: #f7f7f7;
-  background: -webkit-linear-gradient(#fff, #eee);
-  background: -moz-linear-gradient(#fff, #eee);
-  background: linear-gradient(#fff, #eee);
 }
 .small-button {
   display: inline-block;
@@ -288,6 +288,12 @@ a.site-nav-link:not([href]):before {
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
+.small-button:before {
+  background: #f7f7f7;
+  background: -webkit-linear-gradient(#fff, #eee);
+  background: -moz-linear-gradient(#fff, #eee);
+  background: linear-gradient(#fff, #eee);
+}
 .small-button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
@@ -299,12 +305,6 @@ a.site-nav-link:not([href]):before {
   background: -webkit-linear-gradient(#fff, #f6f5f3);
   background: -moz-linear-gradient(#fff, #f6f5f3);
   background: linear-gradient(#fff, #f6f5f3);
-}
-.small-button:before {
-  background: #f7f7f7;
-  background: -webkit-linear-gradient(#fff, #eee);
-  background: -moz-linear-gradient(#fff, #eee);
-  background: linear-gradient(#fff, #eee);
 }
 .fly-button {
   display: inline-block;
@@ -368,6 +368,12 @@ a.site-nav-link:not([href]):before {
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
+.fly-button:before {
+  background: #f7f7f7;
+  background: -webkit-linear-gradient(#fff, #eee);
+  background: -moz-linear-gradient(#fff, #eee);
+  background: linear-gradient(#fff, #eee);
+}
 .fly-button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
@@ -379,12 +385,6 @@ a.site-nav-link:not([href]):before {
   background: -webkit-linear-gradient(#fff, #f6f5f3);
   background: -moz-linear-gradient(#fff, #f6f5f3);
   background: linear-gradient(#fff, #f6f5f3);
-}
-.fly-button:before {
-  background: #f7f7f7;
-  background: -webkit-linear-gradient(#fff, #eee);
-  background: -moz-linear-gradient(#fff, #eee);
-  background: linear-gradient(#fff, #eee);
 }
 .action-button {
   display: inline-block;
@@ -453,6 +453,12 @@ a.site-nav-link:not([href]):before {
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
+.action-button:before {
+  background: #ffd630;
+  background: -webkit-linear-gradient(#ffdf60, #fc0);
+  background: -moz-linear-gradient(#ffdf60, #fc0);
+  background: linear-gradient(#ffdf60, #fc0);
+}
 .action-button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
@@ -464,12 +470,6 @@ a.site-nav-link:not([href]):before {
   background: -webkit-linear-gradient(#ffe681, #ffd428);
   background: -moz-linear-gradient(#ffe681, #ffd428);
   background: linear-gradient(#ffe681, #ffd428);
-}
-.action-button:before {
-  background: #ffd630;
-  background: -webkit-linear-gradient(#ffdf60, #fc0);
-  background: -moz-linear-gradient(#ffdf60, #fc0);
-  background: linear-gradient(#ffdf60, #fc0);
 }
 .small-action-button {
   display: inline-block;
@@ -538,6 +538,12 @@ a.site-nav-link:not([href]):before {
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
+.small-action-button:before {
+  background: #ffd630;
+  background: -webkit-linear-gradient(#ffdf60, #fc0);
+  background: -moz-linear-gradient(#ffdf60, #fc0);
+  background: linear-gradient(#ffdf60, #fc0);
+}
 .small-action-button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
@@ -549,12 +555,6 @@ a.site-nav-link:not([href]):before {
   background: -webkit-linear-gradient(#ffe681, #ffd428);
   background: -moz-linear-gradient(#ffe681, #ffd428);
   background: linear-gradient(#ffe681, #ffd428);
-}
-.small-action-button:before {
-  background: #ffd630;
-  background: -webkit-linear-gradient(#ffdf60, #fc0);
-  background: -moz-linear-gradient(#ffdf60, #fc0);
-  background: linear-gradient(#ffdf60, #fc0);
 }
 .pseudo-button {
   display: inline-block;
@@ -704,6 +704,12 @@ a.site-nav-link:not([href]):before {
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
+.super-button:before {
+  background: #ffd630;
+  background: -webkit-linear-gradient(#ffdf60, #fc0);
+  background: -moz-linear-gradient(#ffdf60, #fc0);
+  background: linear-gradient(#ffdf60, #fc0);
+}
 .super-button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
@@ -715,12 +721,6 @@ a.site-nav-link:not([href]):before {
   background: -webkit-linear-gradient(#ffe681, #ffd428);
   background: -moz-linear-gradient(#ffe681, #ffd428);
   background: linear-gradient(#ffe681, #ffd428);
-}
-.super-button:before {
-  background: #ffd630;
-  background: -webkit-linear-gradient(#ffdf60, #fc0);
-  background: -moz-linear-gradient(#ffdf60, #fc0);
-  background: linear-gradient(#ffdf60, #fc0);
 }
 .page {
   margin: 0;
