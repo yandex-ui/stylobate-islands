@@ -722,6 +722,45 @@ a.site-nav-link:not([href]):before {
   background: -moz-linear-gradient(#ffe681, #ffd428);
   background: linear-gradient(#ffe681, #ffd428);
 }
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 99;
+}
+.modal-wrap:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.modal {
+  position: relative;
+  visibility: visible;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  text-align: left;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 30px -5px rgba(0,0,0,0.5);
+}
+.modal-paranja {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.3);
+  visibility: visible;
+}
+.modal-content {
+  padding: 2rem;
+}
 .page {
   margin: 0;
   padding: 0;
