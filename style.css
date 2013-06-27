@@ -187,16 +187,18 @@ a.site-nav-link:not([href]):before {
 .button:not(.is-disabled):active > .button-content {
   top: 1px;
 }
-.button:not(.is-disabled):focus {
-  outline: 0;
-}
-.button:not(.is-disabled):focus:after {
+.button:after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+.button:not(.is-disabled):focus {
+  outline: 0;
+}
+.button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
@@ -268,16 +270,18 @@ a.site-nav-link:not([href]):before {
 .small-button:not(.is-disabled):active > .button-content {
   top: 1px;
 }
-.small-button:not(.is-disabled):focus {
-  outline: 0;
-}
-.small-button:not(.is-disabled):focus:after {
+.small-button:after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+.small-button:not(.is-disabled):focus {
+  outline: 0;
+}
+.small-button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
@@ -344,16 +348,18 @@ a.site-nav-link:not([href]):before {
   box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
   top: 1px;
 }
-.fly-button:not(.is-disabled):focus {
-  outline: 0;
-}
-.fly-button:not(.is-disabled):focus:after {
+.fly-button:after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+.fly-button:not(.is-disabled):focus {
+  outline: 0;
+}
+.fly-button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
@@ -425,16 +431,18 @@ a.site-nav-link:not([href]):before {
 .action-button:not(.is-disabled):active > .button-content {
   top: 1px;
 }
-.action-button:not(.is-disabled):focus {
-  outline: 0;
-}
-.action-button:not(.is-disabled):focus:after {
+.action-button:after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+.action-button:not(.is-disabled):focus {
+  outline: 0;
+}
+.action-button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
@@ -506,16 +514,18 @@ a.site-nav-link:not([href]):before {
 .small-action-button:not(.is-disabled):active > .button-content {
   top: 1px;
 }
-.small-action-button:not(.is-disabled):focus {
-  outline: 0;
-}
-.small-action-button:not(.is-disabled):focus:after {
+.small-action-button:after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+.small-action-button:not(.is-disabled):focus {
+  outline: 0;
+}
+.small-action-button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
@@ -668,16 +678,18 @@ a.site-nav-link:not([href]):before {
   box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
   top: 1px;
 }
-.super-button:not(.is-disabled):focus {
-  outline: 0;
-}
-.super-button:not(.is-disabled):focus:after {
+.super-button:after {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+.super-button:not(.is-disabled):focus {
+  outline: 0;
+}
+.super-button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
