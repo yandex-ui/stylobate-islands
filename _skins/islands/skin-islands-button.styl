@@ -6,7 +6,7 @@
 // 4. Better handling of arguments?
 
 // Proto for simple buttons
-skin-proto-button()
+skin-islands-proto-button()
   position: relative
 
   color: #333
@@ -24,17 +24,17 @@ skin-proto-button()
     border-radius: 2px
 
   if small in arguments
-    skin-para2(no-margin)
+    skin-islands-para2(no-margin)
     padding: (gap_xs - 0.1*rem) (gap_m - 0.3*rem)
   else
-    skin-para(no-margin)
+    skin-islands-para(no-margin)
     padding: (gap_xs - 0.1*rem) (gap_m - 0.1*rem)
 
   & > .button-content
     kind: block
 
   &:not(.is-disabled):active
-    skin-button_pressed(arguments)
+    skin-islands-button_pressed(arguments)
 
     if fly in arguments
       top: 1px
@@ -60,8 +60,8 @@ skin-proto-button()
       border-radius: inherit
 
 // Normal button
-skin-button()
-  skin-proto-button(arguments)
+skin-islands-button()
+  skin-islands-proto-button(arguments)
 
   gradient: #000 0.2, 0.4
 
@@ -69,11 +69,11 @@ skin-button()
     gradient: #FFF, #EEE
 
   &:not(.is-disabled):hover
-    skin-button_hover()
+    skin-islands-button_hover()
 
 // Action button
-skin-action-button()
-  skin-proto-button(arguments)
+skin-islands-action-button()
+  skin-islands-proto-button(arguments)
 
   gradient: #604000 0.4, #462f00 0.54
 
@@ -81,25 +81,25 @@ skin-action-button()
     gradient: #FFDF60, #FFCC00
 
   &:not(.is-disabled):hover
-    skin-action-button_hover()
+    skin-islands-action-button_hover()
 
 
 // Hover state
-skin-button_hover()
+skin-islands-button_hover()
   gradient: #000 0.22, 0.4
 
   &:before
     gradient: #FFF, #F6F5F3
 
 // Hover state for action
-skin-action-button_hover()
+skin-islands-action-button_hover()
   gradient: #000 0.22, 0.4
 
   &:before
     gradient: #FFE681, #FFD428
 
 // Pressed state
-skin-button_pressed()
+skin-islands-button_pressed()
   if fly in arguments
     box-shadow:0 4px 10px -4px rgba(#000, 0.45)
   else
