@@ -145,7 +145,7 @@ a.site-nav-link:not([href]):before {
 .link {
   cursor: pointer;
   color: #22c;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .link:hover {
   color: #d00;
@@ -153,7 +153,7 @@ a.site-nav-link:not([href]):before {
 .outer-link {
   cursor: pointer;
   color: #070;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .outer-link:hover {
   color: #d00;
