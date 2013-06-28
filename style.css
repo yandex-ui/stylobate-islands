@@ -916,7 +916,7 @@ a.site-nav-link:not([href]):before {
 .content-section:last-child:target:before {
   content: "";
   position: absolute;
-  height: 90vh;
+  height: 60vh;
 }
 .aside {
   background: #fff;
