@@ -50,41 +50,61 @@ a.site-nav-link:not([href]):before {
 }
 .text h1 {
   margin-bottom: 2rem;
-  font-weight: normal;
   font-size: 2.8rem;
   line-height: 2.8rem;
 }
 .text h2 {
   margin-bottom: 2rem;
-  font-weight: normal;
   font-size: 2.4rem;
   line-height: 2.4rem;
 }
 .text h3 {
-  margin-bottom: 1.6rem;
-  font-weight: normal;
+  margin-bottom: 0.6rem;
   font-size: 1.8rem;
   line-height: 2.6rem;
 }
 .text h4 {
-  margin-bottom: 1.6rem;
-  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin-bottom: 0.6rem;
   font-size: 1.6rem;
   line-height: 1.6rem;
 }
 .text h5 {
-  margin-bottom: 1rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin-bottom: 0.6rem;
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 2.2rem;
 }
 .text h6 {
-  margin-bottom: 1rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin-bottom: 0.6rem;
   font-weight: bold;
   font-size: 1.3rem;
   line-height: 2rem;
 }
 .text p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   margin-bottom: 1.6rem;
   font-size: 1.5rem;
   line-height: 2.2rem;
@@ -735,7 +755,7 @@ a.site-nav-link:not([href]):before {
   text-align: center;
   z-index: 99;
 }
-.modal-wrap:before {
+.modal-wrap:after {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -768,6 +788,19 @@ a.site-nav-link:not([href]):before {
 }
 .modal-content.text {
   padding-bottom: 0;
+}
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  opacity: 0.2;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuMjA5Yy0zLjc1MSAwLTYuNzkxIDMuMDQtNi43OTEgNi43OTEgMCAzLjc0OSAzLjA0IDYuNzg5IDYuNzkxIDYuNzg5IDMuNzQ5IDAgNi43ODktMy4wNCA2Ljc4OS02Ljc4OSAwLTMuNzUxLTMuMDQtNi43OTEtNi43ODktNi43OTF6bTMuOTkgOS4zNTVsLTEuNDI2IDEuNDI2LTIuNTY0LTIuNTY0LTIuNTY0IDIuNTY0LTEuNDI2LTEuNDI2IDIuNTY0LTIuNTY0LTIuNTY0LTIuNTY0IDEuNDI2LTEuNDI2IDIuNTY0IDIuNTY0IDIuNTY0LTIuNTY0IDEuNDI2IDEuNDI2LTIuNTY0IDIuNTY0IDIuNTY0IDIuNTY0eiIvPjwvc3ZnPg==");
+}
+.modal-close:hover {
+  opacity: 1;
 }
 .page {
   margin: 0;

@@ -184,8 +184,8 @@
         </div>
     </div>
 
-    <div class="modal-wrap is-hidden" id="Popup1"
-        ><div class="modal" style="width: auto;">
+    <div class="modal-wrap is-hidden" id="Popup1">
+        <div class="modal" style="width: 300px;">
             <!-- Maybe we could add something to set the max-width for
                  inner elements, so it won't make the popup too wide?
                  Like `tight` for text?
@@ -194,26 +194,28 @@
                 <h3>Подарок</h3>
                 <p>Большое мороженное с орехами и карамелью в вафельном рожке</p>
             </div>
+            <div class="modal-close"></div>
         </div>
     </div>
     <div class="modal-wrap is-hidden" id="Popup2">
         <div class="modal-paranja"></div>
-        <div class="modal">
-            <div class="modal-content">
-                Hello
+        <div class="modal" style="width: 300px;">
+            <div class="modal-content text">
+                <h3>Вам письмо:</h3>
+                <p>Дорогой друг, спешу тебе напомнить, что ты занимал у меня много денег и до сих пор не отдал. Даю тебе еще неделю, твои дети у меня.</p>
             </div>
+            <div class="modal-close"></div>
         </div>
     </div>
     <script src="https://yandex.st/jquery/2.0.2/jquery.min.js"></script>
     <script>
 
 $("[data-modal]").click(function(){
-    $('#' + $(this).attr('data-modal')).toggleClass('is-hidden')
+    $('#' + $(this).attr('data-modal')).toggleClass('is-hidden');
 });
-$(".modal-paranja").click(function(){
-    $(this).closest('.modal-wrap').toggleClass('is-hidden')
+$(".modal-paranja, .modal-close").click(function(){
+    $(this).closest('.modal-wrap').toggleClass('is-hidden');
 });
-
     </script>
 </body>
 </html>

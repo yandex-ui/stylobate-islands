@@ -1,52 +1,56 @@
 skin-islands-para()
+  reset('p') if reset in arguments
   margin-bottom: gap_m unless no-margin in arguments
 
   font-size: 1.5*rem
   line-height: 2.2*rem
 
 skin-islands-para2()
+  reset('p') if reset in arguments
   margin-bottom: gap_xs unless no-margin in arguments
 
   font-size: 1.3*rem
   line-height: 1.8*rem
 
 skin-islands-h1()
+  reset('h1') if reset in arguments
   margin-bottom: gap_l unless no-margin in arguments
 
-  font-weight: normal
   font-size: 2.8*rem
   line-height: 2.8*rem
 
 skin-islands-h2()
+  reset('h2') if reset in arguments
   margin-bottom: gap_l unless no-margin in arguments
 
-  font-weight: normal
   font-size: 2.4*rem
   line-height: 2.4*rem
 
 skin-islands-h3()
-  margin-bottom: gap_m unless no-margin in arguments
+  reset('h3') if reset in arguments
+  margin-bottom: gap_xs unless no-margin in arguments
 
-  font-weight: normal
   font-size: 1.8*rem
   line-height: 2.6*rem
 
 skin-islands-h4()
-  margin-bottom: gap_m unless no-margin in arguments
+  reset('h4') if reset in arguments
+  margin-bottom: gap_xs unless no-margin in arguments
 
-  font-weight: normal
   font-size: 1.6*rem
   line-height: 1.6*rem
 
 skin-islands-h5()
-  margin-bottom: gap_s unless no-margin in arguments
+  reset('h5') if reset in arguments
+  margin-bottom: gap_xs unless no-margin in arguments
 
   font-weight: bold
   font-size: 1.5*rem
   line-height: 2.2*rem
 
 skin-islands-h6()
-  margin-bottom: gap_s unless no-margin in arguments
+  reset('h6') if reset in arguments
+  margin-bottom: gap_xs unless no-margin in arguments
 
   font-weight: bold
   font-size: 1.3*rem
