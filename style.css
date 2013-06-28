@@ -743,6 +743,9 @@ a.site-nav-link:not([href]):before {
 }
 .modal {
   position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
   visibility: visible;
   display: inline-block;
   white-space: normal;
@@ -762,6 +765,9 @@ a.site-nav-link:not([href]):before {
 }
 .modal-content {
   padding: 2rem;
+}
+.modal-content.text {
+  padding-bottom: 0;
 }
 .page {
   margin: 0;
