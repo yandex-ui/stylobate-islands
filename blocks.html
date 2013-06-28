@@ -41,6 +41,69 @@
             </div>
         </div>
         <div class="content text">
+            <div class="content-section" id="text">
+                <h1>Текст</h1>
+                <h2>Основной текст</h2>
+                <div class="example">
+                    <pre class="example-title">
+p
+  skin: para reset
+</pre>
+                    <p>Arial 15px, высота строки — 22px</p>
+                </div>
+                <div class="example">
+                    <pre class="example-title">
+p.secondary
+  skin: para2
+</pre>
+                    <p class="secondary">Arial 13px, высота строки — 18px</p>
+                </div>
+                <h2>Заголовки</h2>
+                <div class="example">
+                    <pre class="example-title">
+h1
+  skin: h1 reset
+</pre>
+                    <h1>Заголовок</h1>
+                </div>
+                <div class="example">
+                    <pre class="example-title">
+h2
+  skin: h2 reset
+</pre>
+                    <h2>Заголовок</h2>
+                </div>
+                <div class="example">
+                    <pre class="example-title">
+h3
+  skin: h3 reset
+</pre>
+                    <h3>Заголовок</h3>
+                </div>
+                <div class="example">
+                    <pre class="example-title">
+h4
+  skin: h4 reset
+</pre>
+                    <h4>Заголовок</h4>
+                </div>
+                <div class="example">
+                    <pre class="example-title">
+h5
+  skin: h5 reset
+</pre>
+                    <h5>Заголовок</h5>
+                </div>
+                <div class="example">
+                    <pre class="example-title">
+h6
+  skin: h6 reset
+</pre>
+                    <h6>Заголовок</h6>
+                </div>
+            </div>
+        </div>
+        <div class="content text">
             <div class="content-section" id="isle">
                 <h1>Острова</h1>
                 <p>Наш герой, белый блок с тенью. Остров можно приземлить, а можно оставить парящим (модификатор `fly`).</p>
@@ -175,6 +238,19 @@
             </div>
             <div class="content-section" id="popup">
                 <h1>Модальные окна</h1>
+                <div class="example">
+                    <div class="modal" style="width: 300px;">
+                        <!-- Maybe we could add something to set the max-width for
+                             inner elements, so it won't make the popup too wide?
+                             Like `tight` for text?
+                        -->
+                        <div class="modal-content text">
+                            <h3>Подарок</h3>
+                            <p>Большое мороженное с орехами и карамелью в вафельном рожке</p>
+                        </div>
+                        <div class="modal-close"></div>
+                    </div>
+                </div>
                 <div class="example">
                     <pre class="example-title">
 </pre>
