@@ -235,6 +235,37 @@ h6
                         <span class="button-content">Супер кнопка</span>
                     </button>
                 </div>
+                <h2>Поведение</h2>
+                <p>Поведение нажатой кнопки можно сделать, например, через микс:</p>
+                <div class="example">
+                    <pre class="example-title">
+.toggle-button
+  &.is-checked,
+  &.is-checked:hover
+    skin: button_checked
+</pre>
+                    <button class="button toggle-button" type="button">
+                        <span class="button-content">Раз</span>
+                    </button>
+                    <button class="button toggle-button is-checked" type="button">
+                        <span class="button-content">Два</span>
+                    </button>
+                    <button class="button toggle-button is-checked" type="button">
+                        <span class="button-content">Три</span>
+                    </button>
+                </div>
+                <p>Причём, работать оно будет для любых типов кнопок (не всегда идеально, конечно)</p>
+                <div class="example">
+                    <button class="super-button toggle-button is-checked" type="button">
+                        <span class="button-content">Супер</span>
+                    </button>
+                    <button class="button toggle-button is-checked is-disabled" type="button">
+                        <span class="button-content">Не отключишь</span>
+                    </button>
+                    <button class="pseudo-button toggle-button" type="button">
+                        <span class="button-content">Псевдо</span>
+                    </button>
+                </div>
             </div>
             <div class="content-section" id="popup">
                 <h1>Модальные окна</h1>
@@ -300,6 +331,10 @@ $("[data-modal]").click(function(){
 $(".modal-paranja, .modal-close").click(function(){
     $(this).closest('.modal-wrap').toggleClass('is-hidden');
 });
+$(".toggle-button:not(.is-disabled)").click(function(){
+    $(this).toggleClass('is-checked');
+});
+
     </script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 // What to simplify:
 // 1. Detail/skin/kind for layered button with gradiented borders, to call both gradients at the same time.
 // 2. Move different buttons to other files.
@@ -23,6 +22,9 @@ skin-islands-proto-button()
     kind: fill 1px
     border-radius: 2px
 
+  & > .button-content
+    kind: block
+
   if small in arguments
     skin-islands-para2(no-margin)
     padding: (gap_xs - 0.1*rem) (gap_m - 0.3*rem)
@@ -30,17 +32,8 @@ skin-islands-proto-button()
     skin-islands-para(no-margin)
     padding: (gap_xs - 0.1*rem) (gap_m - 0.1*rem)
 
-  & > .button-content
-    kind: block
-
   &:not(.is-disabled):active
     skin-islands-button_pressed(arguments)
-
-    if fly in arguments
-      top: 1px
-    else
-      & > .button-content
-        top: 1px
 
   // So it would overlay anything inside
   &:after
@@ -101,10 +94,13 @@ skin-islands-action-button_hover()
 // Pressed state
 skin-islands-button_pressed()
   if fly in arguments
-    box-shadow:0 4px 10px -4px rgba(#000, 0.45)
+    top: 1px
+    box-shadow: 0 4px 10px -4px rgba(#000, 0.45)
   else
     box-shadow: inset 0 2px 1px -1px rgba(#000, 0.4), 0 1px 0 rgba(#FFF, 0.2)
 
     &:before
       box-shadow: inset 0 1px 3px -1px rgba(#000, 0.5)
 
+    & > .button-content
+      top: 1px

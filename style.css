@@ -371,8 +371,8 @@ a.site-nav-link:not([href]):before {
   display: block;
 }
 .fly-button:not(.is-disabled):active {
-  box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
   top: 1px;
+  box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
 }
 .fly-button:after {
   content: "";
@@ -603,6 +603,19 @@ a.site-nav-link:not([href]):before {
   padding: 0;
   border: none;
 }
+.pseudo-button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+.pseudo-button > .button-content {
+  position: relative;
+  display: block;
+}
 .pseudo-button:not(.is-disabled):hover {
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
 }
@@ -645,6 +658,19 @@ a.site-nav-link:not([href]):before {
 .small-pseudo-button::-moz-focus-inner {
   padding: 0;
   border: none;
+}
+.small-pseudo-button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+.small-pseudo-button > .button-content {
+  position: relative;
+  display: block;
 }
 .small-pseudo-button:not(.is-disabled):hover {
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
@@ -707,8 +733,8 @@ a.site-nav-link:not([href]):before {
   display: block;
 }
 .super-button:not(.is-disabled):active {
-  box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
   top: 1px;
+  box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
 }
 .super-button:after {
   content: "";
@@ -743,6 +769,23 @@ a.site-nav-link:not([href]):before {
   background: -webkit-linear-gradient(#ffe681, #ffd428);
   background: -moz-linear-gradient(#ffe681, #ffd428);
   background: linear-gradient(#ffe681, #ffd428);
+}
+.toggle-button.is-checked,
+.toggle-button.is-checked:hover {
+  background: rgba(255,236,166,0.4);
+  box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
+}
+.toggle-button.is-checked:before,
+.toggle-button.is-checked:hover:before {
+  background: #fff1be;
+  background: -webkit-linear-gradient(#ffeca6, #fff6d5);
+  background: -moz-linear-gradient(#ffeca6, #fff6d5);
+  background: linear-gradient(#ffeca6, #fff6d5);
+  box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
+}
+.toggle-button.is-checked > .button-content,
+.toggle-button.is-checked:hover > .button-content {
+  top: 1px;
 }
 .modal-wrap {
   position: fixed;
