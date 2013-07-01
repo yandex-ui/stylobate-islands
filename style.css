@@ -17,9 +17,7 @@ h1,h2,h3 {
   outline: 0;
 }
 .group {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
+  kind: block inline;
   white-space: nowrap;
 }
 .toggle-button:first-child,.toggle-button:first-child:before {
