@@ -805,33 +805,33 @@ a.site-nav-link:not([href]):before {
   background: linear-gradient(#ffeca6, #fff6d5);
   box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
 }
-.radio-button {
+.radiobutton {
   position: relative;
   display: inline-block;
   vertical-align: top;
 }
-.radio-button-controller {
+.radiobutton-controller {
   position: absolute !important;
   clip: rect(1px,1px,1px,1px) !important;
 }
-.radio-button-controller:checked + .radio-button-view {
+.radiobutton-controller:checked + .radiobutton-view {
   background: rgba(255,236,166,0.4);
   box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
 }
-.radio-button-controller:checked + .radio-button-view:before {
+.radiobutton-controller:checked + .radiobutton-view:before {
   background: #fff1be;
   background: -webkit-linear-gradient(#ffeca6, #fff6d5);
   background: -moz-linear-gradient(#ffeca6, #fff6d5);
   background: linear-gradient(#ffeca6, #fff6d5);
   box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
 }
-.radio-button-controller:checked + .radio-button-view > .button-content {
+.radiobutton-controller:checked + .radiobutton-view > .button-content {
   top: 1px;
 }
-.radio-button-controller:focus + .radio-button-view {
+.radiobutton-controller:focus + .radiobutton-view {
   outline: 0;
 }
-.radio-button-controller:focus + .radio-button-view:after {
+.radiobutton-controller:focus + .radiobutton-view:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
