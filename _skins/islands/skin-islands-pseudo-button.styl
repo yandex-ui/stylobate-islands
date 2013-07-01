@@ -12,6 +12,11 @@ skin-islands-pseudo-button()
     kind: fill 1px
     border-radius: 2px
 
+  // So it would overlay anything inside
+  &:after
+    content: ""
+    kind: fill
+
   & > .button-content
     kind: block
 
@@ -26,12 +31,6 @@ skin-islands-pseudo-button()
     box-shadow: inset 0 0 0 1px rgba(#000, 0.35)
 
   &:not(.is-disabled):focus
-    outline: 0
     box-shadow: inset 0 0 0 1px rgba(#000, 0.35)
 
-    &:after
-      content: ""
-      kind: fill
-      z-index: 9 // So it would be over other elements nearby
-      box-shadow: 0 0 6px 2px rgba(255,204,0, 0.7), inset 0 0 0 1px rgba(193,154,0, 0.2);
-      border-radius: inherit
+    skin-islands-button_focus(arguments)

@@ -612,6 +612,14 @@ a.site-nav-link:not([href]):before {
   left: 1px;
   border-radius: 2px;
 }
+.pseudo-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .pseudo-button > .button-content {
   position: relative;
   display: block;
@@ -620,16 +628,10 @@ a.site-nav-link:not([href]):before {
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
 }
 .pseudo-button:not(.is-disabled):focus {
-  outline: 0;
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
+  outline: 0;
 }
 .pseudo-button:not(.is-disabled):focus:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
@@ -668,6 +670,14 @@ a.site-nav-link:not([href]):before {
   left: 1px;
   border-radius: 2px;
 }
+.small-pseudo-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .small-pseudo-button > .button-content {
   position: relative;
   display: block;
@@ -676,16 +686,10 @@ a.site-nav-link:not([href]):before {
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
 }
 .small-pseudo-button:not(.is-disabled):focus {
-  outline: 0;
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
+  outline: 0;
 }
 .small-pseudo-button:not(.is-disabled):focus:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
@@ -823,6 +827,14 @@ a.site-nav-link:not([href]):before {
 }
 .radio-button-controller:checked + .radio-button-view > .button-content {
   top: 1px;
+}
+.radio-button-controller:focus + .radio-button-view {
+  outline: 0;
+}
+.radio-button-controller:focus + .radio-button-view:after {
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
 }
 .modal-wrap {
   position: fixed;

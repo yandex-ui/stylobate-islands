@@ -45,12 +45,7 @@ skin-islands-proto-button()
   //   -moz-transition: box-shadow 0.1s 999s
 
   &:not(.is-disabled):focus
-    outline: 0
-
-    &:after
-      z-index: 9 // So it would be over other elements nearby
-      box-shadow: 0 0 6px 2px rgba(255,204,0, 0.7), inset 0 0 0 1px rgba(193,154,0, 0.2);
-      border-radius: inherit
+    skin-islands-button_focus(arguments)
 
 // Normal button
 skin-islands-button()

@@ -266,7 +266,7 @@ h6
                         <span class="button-content">Псевдо</span>
                     </button>
                 </div>
-                <p>Или можно это сделать, используя action-wrapper + микс с любой кнопкой</p>
+                <p>Или можно это сделать без js, используя реальные инпуты + микс с любой кнопкой</p>
                 <div class="example">
                     <pre class="example-title">
 .radio-button
@@ -277,6 +277,9 @@ h6
 
   &-controller:checked + &-view
     skin: button_checked
+
+  &-controller:focus + &-view
+    skin: button_focus
 </pre>
                     <label class="radio-button">
                         <input class="radio-button-controller" type="checkbox">
