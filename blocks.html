@@ -31,6 +31,7 @@
                 <a class="aside-nav-item" href="#link">Ссылки</a>
                 <a class="aside-nav-item" href="#button">Кнопки</a>
                 <a class="aside-nav-item" href="#popup">Модальные окна</a>
+                <a class="aside-nav-item" href="#groups">Группы</a>
             </div>
         </div>
         <div class="content text">
@@ -349,6 +350,89 @@ h6
                     <button class="small-button" type="button" data-modal="Popup2">
                         <span class="button-content">А теперь что?</span>
                     </button>
+                </div>
+            </div>
+            <div class="content-section" id="groups">
+                <h1>Группы</h1>
+                <p>JS-Чекбоксы в группе:</p>
+                <div class="example">
+                    <pre class="example-title">
+.group
+  kind-group()
+
+.group > .button
+  kind-group-item('&,&:before')
+
+.group > .button:not(:last-child):before
+  right: 0
+</pre>
+                    <div class="group">
+                        <span class="button toggle-button">
+                            <span class="button-content">Раз</span>
+                        </span
+                        ><span class="button toggle-button is-checked">
+                            <span class="button-content">Два</span>
+                        </span
+                        ><span class="button toggle-button is-checked">
+                            <span class="button-content">Три</span>
+                        </span>
+                    </div>
+                </div>
+                <p>Радиогрупа на инпутах:</p>
+                <div class="example">
+                    <pre class="example-title">
+.group
+  kind-group()
+
+.group > .radiobutton
+  kind-group-item('& > .radiobutton-view, & > .radiobutton-view:before')
+
+.group > .radiobutton:not(:last-child) > .radiobutton-view:before
+  right: 0
+</pre>
+                    <div class="group">
+                        <label class="radiobutton">
+                            <input class="radiobutton-controller" type="radio" name="radiobutton2" checked="checked">
+                            <span class="button radiobutton-view">
+                                <span class="button-content">Раз</span>
+                            </span>
+                        </label
+                        ><label class="radiobutton">
+                            <input class="radiobutton-controller" type="radio" name="radiobutton2">
+                            <span class="button radiobutton-view">
+                                <span class="button-content">Два</span>
+                            </span>
+                        </label
+                        ><label class="radiobutton">
+                            <input class="radiobutton-controller" type="radio" name="radiobutton2">
+                            <span class="button radiobutton-view">
+                                <span class="button-content">Три</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <p>Маленькие псевдо-чекбоксы на инпутах</p>
+                <div class="example">
+                    <div class="group">
+                        <label class="radiobutton">
+                            <input class="radiobutton-controller" type="checkbox" checked="checked">
+                            <span class="small-pseudo-button radiobutton-view">
+                                <span class="button-content">Раз</span>
+                            </span>
+                        </label
+                        ><label class="radiobutton">
+                            <input class="radiobutton-controller" type="checkbox">
+                            <span class="small-pseudo-button radiobutton-view">
+                                <span class="button-content">Два</span>
+                            </span>
+                        </label
+                        ><label class="radiobutton">
+                            <input class="radiobutton-controller" type="checkbox">
+                            <span class="small-pseudo-button radiobutton-view">
+                                <span class="button-content">Три</span>
+                            </span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
