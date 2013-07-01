@@ -1,23 +1,13 @@
 .modal-wrap
-  kind: guide fixed, centering
-  z-index: 99
-
-  &:after
-    kind: centering-helper
+  kind: modal-wrap fixed
 
 .modal
-  position: relative
-  max-width: 100%
-  max-height: 100%
-  // use calc like this here?
-  // max-width: unquote("-webkit-calc(100% - " + 2*gap_l + ")")
-  overflow: auto
-
-  kind: guide-item, centering-item
+  kind: modal
   skin: isle fly
 
 .modal-paranja
-  kind: fill rgba(#000, 0.3), guide-item
+  kind: modal-paranja
+  skin: paranja
 
 // Could be a block like `content`, there are a lot of places for thing like that
 .modal-content
@@ -27,10 +17,12 @@
   &.text
     padding-bottom: 0
 
+// Need to be abstracted to icon
 .modal-close
   position: absolute
   top: 5px
   right: 5px
+
   width: 16px
   height: 16px
 
