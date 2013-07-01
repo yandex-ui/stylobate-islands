@@ -29,12 +29,16 @@
   kind: button
   skin: pseudo-button small
 
-.super-button
-  kind: button
-  skin: action-button fly small
-
 // Toggle button
 .toggle-button
   &.is-checked,
   &.is-checked:hover
     skin: button_checked
+
+.super-button
+  kind: button
+  skin: action-button fly small
+
+  &.is-checked,
+  &.is-checked:hover
+    skin: button_checked fly

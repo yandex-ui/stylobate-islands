@@ -690,6 +690,23 @@ a.site-nav-link:not([href]):before {
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
+.toggle-button.is-checked,
+.toggle-button.is-checked:hover {
+  background: rgba(255,236,166,0.4);
+  box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
+}
+.toggle-button.is-checked:before,
+.toggle-button.is-checked:hover:before {
+  background: #fff1be;
+  background: -webkit-linear-gradient(#ffeca6, #fff6d5);
+  background: -moz-linear-gradient(#ffeca6, #fff6d5);
+  background: linear-gradient(#ffeca6, #fff6d5);
+  box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
+}
+.toggle-button.is-checked > .button-content,
+.toggle-button.is-checked:hover > .button-content {
+  top: 1px;
+}
 .super-button {
   display: inline-block;
   white-space: nowrap;
@@ -770,22 +787,19 @@ a.site-nav-link:not([href]):before {
   background: -moz-linear-gradient(#ffe681, #ffd428);
   background: linear-gradient(#ffe681, #ffd428);
 }
-.toggle-button.is-checked,
-.toggle-button.is-checked:hover {
+.super-button.is-checked,
+.super-button.is-checked:hover {
   background: rgba(255,236,166,0.4);
   box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
+  top: 1px;
 }
-.toggle-button.is-checked:before,
-.toggle-button.is-checked:hover:before {
+.super-button.is-checked:before,
+.super-button.is-checked:hover:before {
   background: #fff1be;
   background: -webkit-linear-gradient(#ffeca6, #fff6d5);
   background: -moz-linear-gradient(#ffeca6, #fff6d5);
   background: linear-gradient(#ffeca6, #fff6d5);
   box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
-}
-.toggle-button.is-checked > .button-content,
-.toggle-button.is-checked:hover > .button-content {
-  top: 1px;
 }
 .modal-wrap {
   position: fixed;
