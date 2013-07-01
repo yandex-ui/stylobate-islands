@@ -235,7 +235,7 @@ h6
                         <span class="button-content">Супер кнопка</span>
                     </button>
                 </div>
-                <h2>Поведение</h2>
+                <h2 id="button-behavoiur">Поведение</h2>
                 <p>Поведение нажатой кнопки можно сделать, например, через микс:</p>
                 <div class="example">
                     <pre class="example-title">
@@ -265,6 +265,58 @@ h6
                     <button class="pseudo-button toggle-button" type="button">
                         <span class="button-content">Псевдо</span>
                     </button>
+                </div>
+                <p>Или можно это сделать, используя action-wrapper + микс с любой кнопкой</p>
+                <div class="example">
+                    <pre class="example-title">
+.radio-button
+  kind: block inline
+
+  &-controller
+    kind: hidden visually
+
+  &-controller:checked + &-view
+    skin: button_checked
+</pre>
+                    <label class="radio-button">
+                        <input class="radio-button-controller" type="checkbox">
+                        <span class="button radio-button-view">
+                            <span class="button-content">Раз</span>
+                        </span>
+                    </label>
+                    <label class="radio-button">
+                        <input class="radio-button-controller" type="checkbox" checked="checked">
+                        <span class="button radio-button-view">
+                            <span class="button-content">Два</span>
+                        </span>
+                    </label>
+                    <label class="radio-button">
+                        <input class="radio-button-controller" type="checkbox" checked="checked">
+                        <span class="button radio-button-view">
+                            <span class="button-content">Три</span>
+                        </span>
+                    </label>
+                </div>
+                <p>Или не чекбоксы, а псевдо-радиокнопки</p>
+                <div class="example">
+                    <label class="radio-button">
+                        <input class="radio-button-controller" type="radio" name="radio-button1" checked="checked">
+                        <span class="pseudo-button radio-button-view">
+                            <span class="button-content">Раз</span>
+                        </span>
+                    </label>
+                    <label class="radio-button">
+                        <input class="radio-button-controller" type="radio" name="radio-button1">
+                        <span class="pseudo-button radio-button-view">
+                            <span class="button-content">Два</span>
+                        </span>
+                    </label>
+                    <label class="radio-button">
+                        <input class="radio-button-controller" type="radio" name="radio-button1">
+                        <span class="pseudo-button radio-button-view">
+                            <span class="button-content">Три</span>
+                        </span>
+                    </label>
                 </div>
             </div>
             <div class="content-section" id="popup">

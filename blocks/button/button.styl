@@ -42,3 +42,13 @@
   &.is-checked,
   &.is-checked:hover
     skin: button_checked fly
+
+// Radio button
+.radio-button
+  kind: block inline
+
+  &-controller
+    kind: hidden visually
+
+  &-controller:checked + &-view
+    skin: button_checked
