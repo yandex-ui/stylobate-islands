@@ -20,17 +20,17 @@ h1,h2,h3 {
   kind: block inline;
   white-space: nowrap;
 }
-.toggle-button:first-child,.toggle-button:first-child:before {
+.group > .toggle-button:first-child,.group > .toggle-button:first-child:before {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.toggle-button:not(:first-child) {
+.group > .toggle-button:not(:first-child) {
   margin-left: -1px;
 }
-.toggle-button:not(:first-child):not(:last-child),.toggle-button:not(:first-child):not(:last-child):before {
+.group > .toggle-button:not(:first-child):not(:last-child),.group > .toggle-button:not(:first-child):not(:last-child):before {
   border-radius: 0;
 }
-.toggle-button:last-child,.toggle-button:last-child:before {
+.group > .toggle-button:last-child,.group > .toggle-button:last-child:before {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -48,7 +48,7 @@ h1,h2,h3 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.toggle-button:not(:last-child):before,
+.group > .toggle-button:not(:last-child):before,
 .group > .radiobutton:not(:last-child) > .radiobutton-view:before {
   right: 0;
 }
