@@ -1,13 +1,13 @@
 .group
   kind-group()
 
-.group > .button
+.toggle-button
   kind-group-item('&,&:before')
 
 .group > .radiobutton
   kind-group-item('& > .radiobutton-view, & > .radiobutton-view:before')
 
-.group > .radiobutton-view:not(:last-child):before,
+.toggle-button:not(:last-child):before,
 .group > .radiobutton:not(:last-child) > .radiobutton-view:before
   right: 0
 

@@ -22,17 +22,17 @@ h1,h2,h3 {
   vertical-align: top;
   white-space: nowrap;
 }
-.group > .button:first-child,.group > .button:first-child:before {
+.toggle-button:first-child,.toggle-button:first-child:before {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.group > .button:not(:first-child) {
+.toggle-button:not(:first-child) {
   margin-left: -1px;
 }
-.group > .button:not(:first-child):not(:last-child),.group > .button:not(:first-child):not(:last-child):before {
+.toggle-button:not(:first-child):not(:last-child),.toggle-button:not(:first-child):not(:last-child):before {
   border-radius: 0;
 }
-.group > .button:last-child,.group > .button:last-child:before {
+.toggle-button:last-child,.toggle-button:last-child:before {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -50,7 +50,7 @@ h1,h2,h3 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.group > .radiobutton-view:not(:last-child):before,
+.toggle-button:not(:last-child):before,
 .group > .radiobutton:not(:last-child) > .radiobutton-view:before {
   right: 0;
 }
