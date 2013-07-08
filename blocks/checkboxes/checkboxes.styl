@@ -3,18 +3,11 @@
 // Внутреннюю графику — как иконку?
 // Ховер сделать по родителю?
 // Ещё раз — попробовать вытаскивать таплы (подфиксить get, чтобы он работал со вложенными массивами без запятых?)
-// Можно сделать размер чекбокса адаптивным, 1em + 1px, то есть ширину-высоту задавать в емах, плюс один пиксель вокруг
-//   16 = 15+1, 14 = 13+1
 
 .checkbox
-  kind: button no-reset
+  kind: icon
   skin: checkbox adaptive
 
 .radio
-  kind: button no-reset
+  kind: icon
   skin: radio adaptive
-
-.toggler-controller:not(:checked) + .toggler-view > .radio-icon,
-.toggler-controller:not(:checked) + .toggler-view > .checkbox-icon
-  visibility: hidden
-

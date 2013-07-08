@@ -846,12 +846,10 @@ a.site-nav-link:not([href]):before {
   box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
 }
 .checkbox {
+  position: relative;
   display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  user-select: none;
   vertical-align: middle;
+  margin-top: -4px;
   position: relative;
   color: #333;
   border-radius: 3px;
@@ -929,13 +927,14 @@ a.site-nav-link:not([href]):before {
   -moz-transform: scale(0.9) rotate(50deg) skewX(12deg);
   transform: scale(0.9) rotate(50deg) skewX(12deg);
 }
+.toggler-controller:not(:checked) + .toggler-view > .checkbox-icon {
+  visibility: hidden;
+}
 .radio {
+  position: relative;
   display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  user-select: none;
   vertical-align: middle;
+  margin-top: -4px;
   position: relative;
   color: #333;
   border-radius: 3px;
@@ -1013,8 +1012,7 @@ a.site-nav-link:not([href]):before {
   background: #000;
   border-radius: 50%;
 }
-.toggler-controller:not(:checked) + .toggler-view > .radio-icon,
-.toggler-controller:not(:checked) + .toggler-view > .checkbox-icon {
+.toggler-controller:not(:checked) + .toggler-view > .radio-icon {
   visibility: hidden;
 }
 .modal-wrap {

@@ -34,3 +34,7 @@ skin-islands-checkbox()
     -webkit-transform: scale(0.9) rotate(50deg) skewX(12deg)
     -moz-transform: scale(0.9) rotate(50deg) skewX(12deg)
     transform: scale(0.9) rotate(50deg) skewX(12deg)
+
+    // Find out if there is any way to make this easier?
+    .toggler-controller:not(:checked) + .toggler-view > &
+      visibility: hidden

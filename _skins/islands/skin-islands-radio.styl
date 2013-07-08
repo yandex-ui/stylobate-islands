@@ -34,3 +34,7 @@ skin-islands-radio()
 
     background: #000
     border-radius: 50%
+
+    // Find out if there is any way to make this easier?
+    .toggler-controller:not(:checked) + .toggler-view > &
+      visibility: hidden
