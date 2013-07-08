@@ -443,7 +443,7 @@ h6
                     <pre class="example-title">
 .checkbox
   kind: icon
-  skin: checkbox adaptive
+  skin: checkbox
 </pre>
                     <div>
                         <label class="toggler">
@@ -464,7 +464,7 @@ h6
                     <pre class="example-title">
 .radio
   kind: icon
-  skin: radio adaptive
+  skin: radio
 </pre>
                     <div>
                         <label class="toggler">
@@ -479,6 +479,37 @@ h6
                             <span class="radio toggler-view"><span class="radio-icon"></span></span
                             >Радиобатон
                         </label>
+                    </div>
+                </div>
+                <p>Если же надо сделать чекбокс определённого (не зависимого от размера шрифта) размера, вне контекста, можно сделать так:</p>
+                <div class="example">
+                    <pre class="example-title">
+.normal-checkbox
+  kind: icon
+  skin: checkbox sizeless
+
+  width: gap_m
+  height: gap_m
+
+.small-radio
+  kind: icon
+  skin: radio sizeless
+
+  width: gap_m - 0.2*rem
+  height: gap_m - 0.2*rem
+</pre>
+                        <h2>
+                            <label class="toggler">
+                                <input class="toggler-controller" type="checkbox" checked="checked">
+                                <span class="normal-checkbox toggler-view"><span class="checkbox-icon"></span></span
+                                >Обычный чекбокс
+                            </label>
+                            <label class="toggler">
+                                <input class="toggler-controller" type="radio" name="radio2">
+                                <span class="small-radio toggler-view"><span class="radio-icon"></span></span
+                                >маленький радиобатон
+                            </label>
+                        </h2>
                     </div>
                 </div>
             </div>

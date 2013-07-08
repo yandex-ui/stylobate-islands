@@ -1,5 +1,5 @@
 skin-islands-radio()
-  skin-islands-button(no-active retrieve(arguments, adaptive))
+  skin-islands-button(no-active retrieve(arguments, sizeless, adaptive))
 
   text-align: center
 
@@ -10,16 +10,6 @@ skin-islands-radio()
 
   &:before
     border-radius: 50%
-
-  unless no-modifiers
-    &_m
-      width: gap_m
-      height: gap_m
-      padding: 0
-    &_m
-      width: gap_m - 0.2*rem
-      height: gap_m - 0.2*rem
-      padding: 0
 
   // Replace it with svg?
   // And icon kind?
