@@ -3,52 +3,30 @@
 // Внутреннюю графику — как иконку?
 // Ховер сделать по родителю?
 // Ещё раз — попробовать вытаскивать таплы (подфиксить get, чтобы он работал со вложенными массивами без запятых?)
-
-.checkbox-view,
-.radio-view
-  kind: button
-  skin: button sizeless no-active
-
-  margin-top: -4px
-
-.checkbox-view,
-.radio-view
-  width: gap_m
-  height: gap_m
-  margin-right: gap_xs
-
-.small-checkbox .checkbox-view
-.small-radio .radio-view
-  width: gap_m - 0.2*rem
-  height: gap_m - 0.2*rem
-  margin-right: gap_xs
-
-.radio-view
-  &,
-  &:before
-    border-radius: 50%
-
-
-.checkbox,
-.radio,
-.small-checkbox,
-.small-radio
-  cursor: pointer
+// Можно сделать размер чекбокса адаптивным, 1em + 1px, то есть ширину-высоту задавать в емах, плюс один пиксель вокруг
+//   16 = 15+1, 14 = 13+1
 
 .checkbox,
 .radio
-  skin: para
+  kind: button
+  skin: button adaptive no-active
 
-  &-controller
-    kind: hidden visually
-    // Could add `.is-disabled &\n kind: hidden`
+  margin-top: -4px
+  margin-right: gap_xs
 
-  &-controller:checked + &-view
-    skin: button_checked
+.checkbox_m,
+.radio_m
+  width: gap_m
+  height: gap_m
+  padding: 0
 
-  &-controller:focus + &-view
-    skin: button_focus
+.checkbox_s
+.radio_s
+  width: gap_m - 0.2*rem
+  height: gap_m - 0.2*rem
+  padding: 0
 
-.small-checkbox,
-.small-radio
-  skin: para2
+.radio
+  &,
+  &:before
+    border-radius: 50%

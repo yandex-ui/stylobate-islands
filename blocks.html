@@ -271,7 +271,7 @@ h6
                 <p>Или можно это сделать без js, используя реальные инпуты + микс с любой кнопкой</p>
                 <div class="example">
                     <pre class="example-title">
-.radiogroup
+.toggler
   kind: block inline
 
   &-controller
@@ -283,42 +283,42 @@ h6
   &-controller:focus + &-view
     skin: button_focus
 </pre>
-                    <label class="radiogroup">
-                        <input class="radiogroup-controller" type="checkbox">
-                        <span class="button radiogroup-view">
+                    <label class="toggler">
+                        <input class="toggler-controller" type="checkbox">
+                        <span class="button toggler-view">
                             <span class="button-content">Раз</span>
                         </span>
                     </label>
-                    <label class="radiogroup">
-                        <input class="radiogroup-controller" type="checkbox" checked="checked">
-                        <span class="button radiogroup-view">
+                    <label class="toggler">
+                        <input class="toggler-controller" type="checkbox" checked="checked">
+                        <span class="button toggler-view">
                             <span class="button-content">Два</span>
                         </span>
                     </label>
-                    <label class="radiogroup">
-                        <input class="radiogroup-controller" type="checkbox" checked="checked">
-                        <span class="button radiogroup-view">
+                    <label class="toggler">
+                        <input class="toggler-controller" type="checkbox" checked="checked">
+                        <span class="button toggler-view">
                             <span class="button-content">Три</span>
                         </span>
                     </label>
                 </div>
                 <p>Или не чекбоксы, а псевдо-радиокнопки</p>
                 <div class="example">
-                    <label class="radiogroup">
-                        <input class="radiogroup-controller" type="radio" name="radiogroup1" checked="checked">
-                        <span class="pseudo-button radiogroup-view">
+                    <label class="toggler">
+                        <input class="toggler-controller" type="radio" name="toggler1" checked="checked">
+                        <span class="pseudo-button toggler-view">
                             <span class="button-content">Раз</span>
                         </span>
                     </label>
-                    <label class="radiogroup">
-                        <input class="radiogroup-controller" type="radio" name="radiogroup1">
-                        <span class="pseudo-button radiogroup-view">
+                    <label class="toggler">
+                        <input class="toggler-controller" type="radio" name="toggler1">
+                        <span class="pseudo-button toggler-view">
                             <span class="button-content">Два</span>
                         </span>
                     </label>
-                    <label class="radiogroup">
-                        <input class="radiogroup-controller" type="radio" name="radiogroup1">
-                        <span class="pseudo-button radiogroup-view">
+                    <label class="toggler">
+                        <input class="toggler-controller" type="radio" name="toggler1">
+                        <span class="pseudo-button toggler-view">
                             <span class="button-content">Три</span>
                         </span>
                     </label>
@@ -385,28 +385,28 @@ h6
 .group
   kind: group
 
-.group > .radiogroup
-  kind: group-item '& > .radiogroup-view, & > .radiogroup-view:before'
+.group > .toggler
+  kind: group-item '& > .toggler-view, & > .toggler-view:before'
 
-.group > .radiogroup:not(:last-child) > .radiogroup-view:before
+.group > .toggler:not(:last-child) > .toggler-view:before
   right: 0
 </pre>
                     <div class="group">
-                        <label class="radiogroup">
-                            <input class="radiogroup-controller" type="radio" name="radiogroup2" checked="checked">
-                            <span class="button radiogroup-view">
+                        <label class="toggler">
+                            <input class="toggler-controller" type="radio" name="toggler2" checked="checked">
+                            <span class="button toggler-view">
                                 <span class="button-content">Раз</span>
                             </span>
                         </label
-                        ><label class="radiogroup">
-                            <input class="radiogroup-controller" type="radio" name="radiogroup2">
-                            <span class="button radiogroup-view">
+                        ><label class="toggler">
+                            <input class="toggler-controller" type="radio" name="toggler2">
+                            <span class="button toggler-view">
                                 <span class="button-content">Два</span>
                             </span>
                         </label
-                        ><label class="radiogroup">
-                            <input class="radiogroup-controller" type="radio" name="radiogroup2">
-                            <span class="button radiogroup-view">
+                        ><label class="toggler">
+                            <input class="toggler-controller" type="radio" name="toggler2">
+                            <span class="button toggler-view">
                                 <span class="button-content">Три</span>
                             </span>
                         </label>
@@ -415,21 +415,21 @@ h6
                 <p>Маленькие псевдо-чекбоксы на инпутах</p>
                 <div class="example">
                     <div class="group">
-                        <label class="radiogroup">
-                            <input class="radiogroup-controller" type="checkbox" checked="checked">
-                            <span class="small-pseudo-button radiogroup-view">
+                        <label class="toggler">
+                            <input class="toggler-controller" type="checkbox" checked="checked">
+                            <span class="small-pseudo-button toggler-view">
                                 <span class="button-content">Раз</span>
                             </span>
                         </label
-                        ><label class="radiogroup">
-                            <input class="radiogroup-controller" type="checkbox">
-                            <span class="small-pseudo-button radiogroup-view">
+                        ><label class="toggler">
+                            <input class="toggler-controller" type="checkbox">
+                            <span class="small-pseudo-button toggler-view">
                                 <span class="button-content">Два</span>
                             </span>
                         </label
-                        ><label class="radiogroup">
-                            <input class="radiogroup-controller" type="checkbox">
-                            <span class="small-pseudo-button radiogroup-view">
+                        ><label class="toggler">
+                            <input class="toggler-controller" type="checkbox">
+                            <span class="small-pseudo-button toggler-view">
                                 <span class="button-content">Три</span>
                             </span>
                         </label>
@@ -440,30 +440,30 @@ h6
                 <h1>Чекбоксы</h1>
                 <div class="example">
                     <div>
-                        <label class="checkbox">
-                            <input class="checkbox-controller" type="checkbox">
-                            <span class="checkbox-view">
+                        <label class="toggler">
+                            <input class="toggler-controller" type="checkbox">
+                            <span class="checkbox toggler-view">
+                            </span>Чекбокс
+                        </label>
+                    </div>
+                    <div class="secondary">
+                        <label class="toggler">
+                            <input class="toggler-controller" type="checkbox">
+                            <span class="checkbox toggler-view">
                             </span>Чекбокс
                         </label>
                     </div>
                     <div>
-                        <label class="small-checkbox">
-                            <input class="checkbox-controller" type="checkbox">
-                            <span class="checkbox-view">
-                            </span>Чекбокс
-                        </label>
-                    </div>
-                    <div>
-                        <label class="radio">
-                            <input class="radio-controller" type="radio" name="radio1" checked="checked">
-                            <span class="radio-view">
+                        <label class="toggler">
+                            <input class="toggler-controller" type="radio" name="radio1" checked="checked">
+                            <span class="radio toggler-view">
                             </span>Радиобатон
                         </label>
                     </div>
-                    <div>
-                        <label class="small-radio">
-                            <input class="radio-controller" type="radio" name="radio1">
-                            <span class="radio-view">
+                    <div class="secondary">
+                        <label class="toggler">
+                            <input class="toggler-controller" type="radio" name="radio1">
+                            <span class="radio toggler-view">
                             </span>Радиобатон
                         </label>
                     </div>
