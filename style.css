@@ -866,10 +866,12 @@ a.site-nav-link:not([href]):before {
   width: 1em;
   height: 1em;
   padding: 0 1px 1px 0;
+  line-height: 1em;
   background: rgba(0,0,0,0.3);
   background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
   background: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  text-align: center;
   margin-top: -4px;
   margin-right: 0.6rem;
 }
@@ -948,6 +950,34 @@ a.site-nav-link:not([href]):before {
 .radio,
 .radio:before {
   border-radius: 50%;
+}
+.radio-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px;
+  background: #000;
+  border-radius: 50%;
+}
+.toggler-controller:not(:checked) + .toggler-view > .radio-icon,
+.toggler-controller:not(:checked) + .toggler-view > .checkbox-icon {
+  visibility: hidden;
+}
+.checkbox-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 13px;
+  border-bottom: 3px solid;
+  border-right: 3px solid;
+  margin: -13px 0 0 -2px;
+  color: #000;
+  -webkit-transform: scale(0.9) rotate(50deg) skewX(12deg);
+  -moz-transform: scale(0.9) rotate(50deg) skewX(12deg);
+  transform: scale(0.9) rotate(50deg) skewX(12deg);
 }
 .modal-wrap {
   position: fixed;
