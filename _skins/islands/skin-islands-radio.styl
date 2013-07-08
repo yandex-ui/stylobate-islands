@@ -1,0 +1,36 @@
+skin-islands-radio()
+  skin-islands-button(no-active retrieve(arguments, adaptive))
+
+  text-align: center
+
+  margin-top: -4px
+  margin-right: gap_xs
+
+  border-radius: 50%
+
+  &:before
+    border-radius: 50%
+
+  unless no-modifiers
+    &_m
+      width: gap_m
+      height: gap_m
+      padding: 0
+    &_m
+      width: gap_m - 0.2*rem
+      height: gap_m - 0.2*rem
+      padding: 0
+
+  // Replace it with svg?
+  // And icon kind?
+  &-icon
+    position: absolute
+    top: 50%
+    left: 50%
+
+    width: 6px
+    height: 6px
+    margin: -3px
+
+    background: #000
+    border-radius: 50%

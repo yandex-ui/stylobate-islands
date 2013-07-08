@@ -6,63 +6,15 @@
 // Можно сделать размер чекбокса адаптивным, 1em + 1px, то есть ширину-высоту задавать в емах, плюс один пиксель вокруг
 //   16 = 15+1, 14 = 13+1
 
-.checkbox,
-.radio
-  kind: button
-  skin: button adaptive no-active
-
-  text-align: center
-
-  margin-top: -4px
-  margin-right: gap_xs
-
-.checkbox_m,
-.radio_m
-  width: gap_m
-  height: gap_m
-  padding: 0
-
-.checkbox_s
-.radio_s
-  width: gap_m - 0.2*rem
-  height: gap_m - 0.2*rem
-  padding: 0
+.checkbox
+  kind: button no-reset
+  skin: checkbox adaptive
 
 .radio
-  &,
-  &:before
-    border-radius: 50%
-
-.radio-icon
-  position: absolute
-  top: 50%
-  left: 50%
-
-  width: 6px
-  height: 6px
-  margin: -3px
-
-  background: #000
-  border-radius: 50%
+  kind: button no-reset
+  skin: radio adaptive
 
 .toggler-controller:not(:checked) + .toggler-view > .radio-icon,
 .toggler-controller:not(:checked) + .toggler-view > .checkbox-icon
   visibility: hidden
 
-// Replace it with svg?
-.checkbox-icon
-  position: absolute
-  top: 50%
-  left: 50%
-
-  width: 5px
-  height: 13px
-  border-bottom: 3px solid
-  border-right: 3px solid
-  margin: -13px 0 0 -2px
-
-  color: #000
-
-  -webkit-transform: scale(0.9) rotate(50deg) skewX(12deg)
-  -moz-transform: scale(0.9) rotate(50deg) skewX(12deg)
-  transform: scale(0.9) rotate(50deg) skewX(12deg)
