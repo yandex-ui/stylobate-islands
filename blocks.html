@@ -32,6 +32,7 @@
                 <a class="aside-nav-item" href="#button">Кнопки</a>
                 <a class="aside-nav-item" href="#popup">Модальные окна</a>
                 <a class="aside-nav-item" href="#groups">Группы</a>
+                <a class="aside-nav-item" href="#checkboxes">Чекбоксы</a>
             </div>
         </div>
         <div class="content text">
@@ -270,7 +271,7 @@ h6
                 <p>Или можно это сделать без js, используя реальные инпуты + микс с любой кнопкой</p>
                 <div class="example">
                     <pre class="example-title">
-.radiobutton
+.radiogroup
   kind: block inline
 
   &-controller
@@ -282,42 +283,42 @@ h6
   &-controller:focus + &-view
     skin: button_focus
 </pre>
-                    <label class="radiobutton">
-                        <input class="radiobutton-controller" type="checkbox">
-                        <span class="button radiobutton-view">
+                    <label class="radiogroup">
+                        <input class="radiogroup-controller" type="checkbox">
+                        <span class="button radiogroup-view">
                             <span class="button-content">Раз</span>
                         </span>
                     </label>
-                    <label class="radiobutton">
-                        <input class="radiobutton-controller" type="checkbox" checked="checked">
-                        <span class="button radiobutton-view">
+                    <label class="radiogroup">
+                        <input class="radiogroup-controller" type="checkbox" checked="checked">
+                        <span class="button radiogroup-view">
                             <span class="button-content">Два</span>
                         </span>
                     </label>
-                    <label class="radiobutton">
-                        <input class="radiobutton-controller" type="checkbox" checked="checked">
-                        <span class="button radiobutton-view">
+                    <label class="radiogroup">
+                        <input class="radiogroup-controller" type="checkbox" checked="checked">
+                        <span class="button radiogroup-view">
                             <span class="button-content">Три</span>
                         </span>
                     </label>
                 </div>
                 <p>Или не чекбоксы, а псевдо-радиокнопки</p>
                 <div class="example">
-                    <label class="radiobutton">
-                        <input class="radiobutton-controller" type="radio" name="radiobutton1" checked="checked">
-                        <span class="pseudo-button radiobutton-view">
+                    <label class="radiogroup">
+                        <input class="radiogroup-controller" type="radio" name="radiogroup1" checked="checked">
+                        <span class="pseudo-button radiogroup-view">
                             <span class="button-content">Раз</span>
                         </span>
                     </label>
-                    <label class="radiobutton">
-                        <input class="radiobutton-controller" type="radio" name="radiobutton1">
-                        <span class="pseudo-button radiobutton-view">
+                    <label class="radiogroup">
+                        <input class="radiogroup-controller" type="radio" name="radiogroup1">
+                        <span class="pseudo-button radiogroup-view">
                             <span class="button-content">Два</span>
                         </span>
                     </label>
-                    <label class="radiobutton">
-                        <input class="radiobutton-controller" type="radio" name="radiobutton1">
-                        <span class="pseudo-button radiobutton-view">
+                    <label class="radiogroup">
+                        <input class="radiogroup-controller" type="radio" name="radiogroup1">
+                        <span class="pseudo-button radiogroup-view">
                             <span class="button-content">Три</span>
                         </span>
                     </label>
@@ -384,28 +385,28 @@ h6
 .group
   kind: group
 
-.group > .radiobutton
-  kind: group-item '& > .radiobutton-view, & > .radiobutton-view:before'
+.group > .radiogroup
+  kind: group-item '& > .radiogroup-view, & > .radiogroup-view:before'
 
-.group > .radiobutton:not(:last-child) > .radiobutton-view:before
+.group > .radiogroup:not(:last-child) > .radiogroup-view:before
   right: 0
 </pre>
                     <div class="group">
-                        <label class="radiobutton">
-                            <input class="radiobutton-controller" type="radio" name="radiobutton2" checked="checked">
-                            <span class="button radiobutton-view">
+                        <label class="radiogroup">
+                            <input class="radiogroup-controller" type="radio" name="radiogroup2" checked="checked">
+                            <span class="button radiogroup-view">
                                 <span class="button-content">Раз</span>
                             </span>
                         </label
-                        ><label class="radiobutton">
-                            <input class="radiobutton-controller" type="radio" name="radiobutton2">
-                            <span class="button radiobutton-view">
+                        ><label class="radiogroup">
+                            <input class="radiogroup-controller" type="radio" name="radiogroup2">
+                            <span class="button radiogroup-view">
                                 <span class="button-content">Два</span>
                             </span>
                         </label
-                        ><label class="radiobutton">
-                            <input class="radiobutton-controller" type="radio" name="radiobutton2">
-                            <span class="button radiobutton-view">
+                        ><label class="radiogroup">
+                            <input class="radiogroup-controller" type="radio" name="radiogroup2">
+                            <span class="button radiogroup-view">
                                 <span class="button-content">Три</span>
                             </span>
                         </label>
@@ -414,23 +415,56 @@ h6
                 <p>Маленькие псевдо-чекбоксы на инпутах</p>
                 <div class="example">
                     <div class="group">
-                        <label class="radiobutton">
-                            <input class="radiobutton-controller" type="checkbox" checked="checked">
-                            <span class="small-pseudo-button radiobutton-view">
+                        <label class="radiogroup">
+                            <input class="radiogroup-controller" type="checkbox" checked="checked">
+                            <span class="small-pseudo-button radiogroup-view">
                                 <span class="button-content">Раз</span>
                             </span>
                         </label
-                        ><label class="radiobutton">
-                            <input class="radiobutton-controller" type="checkbox">
-                            <span class="small-pseudo-button radiobutton-view">
+                        ><label class="radiogroup">
+                            <input class="radiogroup-controller" type="checkbox">
+                            <span class="small-pseudo-button radiogroup-view">
                                 <span class="button-content">Два</span>
                             </span>
                         </label
-                        ><label class="radiobutton">
-                            <input class="radiobutton-controller" type="checkbox">
-                            <span class="small-pseudo-button radiobutton-view">
+                        ><label class="radiogroup">
+                            <input class="radiogroup-controller" type="checkbox">
+                            <span class="small-pseudo-button radiogroup-view">
                                 <span class="button-content">Три</span>
                             </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section" id="checkboxes">
+                <h1>Чекбоксы</h1>
+                <div class="example">
+                    <div>
+                        <label class="checkbox">
+                            <input class="checkbox-controller" type="checkbox">
+                            <span class="checkbox-view">
+                            </span>Чекбокс
+                        </label>
+                    </div>
+                    <div>
+                        <label class="small-checkbox">
+                            <input class="checkbox-controller" type="checkbox">
+                            <span class="checkbox-view">
+                            </span>Чекбокс
+                        </label>
+                    </div>
+                    <div>
+                        <label class="radio">
+                            <input class="radio-controller" type="radio" name="radio1" checked="checked">
+                            <span class="radio-view">
+                            </span>Радиобатон
+                        </label>
+                    </div>
+                    <div>
+                        <label class="small-radio">
+                            <input class="radio-controller" type="radio" name="radio1">
+                            <span class="radio-view">
+                            </span>Радиобатон
                         </label>
                     </div>
                 </div>

@@ -1,0 +1,54 @@
+// Надо вынести всё-таки view-controller в кайнд,
+// добавить настройки к скину для задания размеров в виде таплов (?)
+// Внутреннюю графику — как иконку?
+// Ховер сделать по родителю?
+// Ещё раз — попробовать вытаскивать таплы (подфиксить get, чтобы он работал со вложенными массивами без запятых?)
+
+.checkbox-view,
+.radio-view
+  kind: button
+  skin: button sizeless no-active
+
+  margin-top: -4px
+
+.checkbox-view,
+.radio-view
+  width: gap_m
+  height: gap_m
+  margin-right: gap_xs
+
+.small-checkbox .checkbox-view
+.small-radio .radio-view
+  width: gap_m - 0.2*rem
+  height: gap_m - 0.2*rem
+  margin-right: gap_xs
+
+.radio-view
+  &,
+  &:before
+    border-radius: 50%
+
+
+.checkbox,
+.radio,
+.small-checkbox,
+.small-radio
+  cursor: pointer
+
+.checkbox,
+.radio
+  skin: para
+
+  &-controller
+    kind: hidden visually
+    // Could add `.is-disabled &\n kind: hidden`
+
+  &-controller:checked + &-view
+    skin: button_checked
+
+  &-controller:focus + &-view
+    skin: button_focus
+
+.small-checkbox,
+.small-radio
+  skin: para2

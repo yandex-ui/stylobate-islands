@@ -29,11 +29,13 @@ skin-islands-proto-button()
     skin-islands-para2(no-margin)
     padding: (gap_xs - 0.1*rem) (gap_m - 0.3*rem)
   else
-    skin-islands-para(no-margin)
-    padding: (gap_xs - 0.1*rem) (gap_m - 0.1*rem)
+    unless sizeless in arguments
+      skin-islands-para(no-margin)
+      padding: (gap_xs - 0.1*rem) (gap_m - 0.1*rem)
 
-  &:not(.is-disabled):active
-    skin-islands-button_pressed(arguments)
+  unless no-active in arguments
+    &:not(.is-disabled):active
+      skin-islands-button_pressed(arguments)
 
   // So it would overlay anything inside
   &:after
