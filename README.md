@@ -1,4 +1,1 @@
-stylobate-islands
-=================
-
-Islands skin for stylobate
+# Islands skin for stylobate
