@@ -409,13 +409,15 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 > <div>
 >     <label class="toggler">
 >         <input class="toggler-controller" type="checkbox" checked="checked">
->         <span class="checkbox toggler-view"><span class="checkbox-icon"></span></span>Чекбокс
+>         <span class="checkbox toggler-view"><span class="checkbox-icon"></span></span>
+>         Чекбокс
 >     </label>
 > </div>
 > <div class="secondary">
 >     <label class="toggler">
 >         <input class="toggler-controller" type="checkbox">
->         <span class="checkbox toggler-view"><span class="checkbox-icon"></span></span>Чекбокс
+>         <span class="checkbox toggler-view"><span class="checkbox-icon"></span></span>
+>         Чекбокс
 >     </label>
 > </div>
 
@@ -426,13 +428,15 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 > <div>
 >     <label class="toggler">
 >         <input class="toggler-controller" type="radio" name="radio1" checked="checked">
->         <span class="radio toggler-view"><span class="radio-icon"></span></span>Радиобатон
+>         <span class="radio toggler-view"><span class="radio-icon"></span></span>
+>         Радиобатон
 >     </label>
 > </div>
 > <div class="secondary">
 >     <label class="toggler">
 >         <input class="toggler-controller" type="radio" name="radio1">
->         <span class="radio toggler-view"><span class="radio-icon"></span></span>Радиобатон
+>         <span class="radio toggler-view"><span class="radio-icon"></span></span>
+>         Радиобатон
 >     </label>
 > </div>
 
