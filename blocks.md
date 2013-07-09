@@ -465,6 +465,6 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 >     <label class="toggler">
 >         <input class="toggler-controller" type="radio" name="radio2">
 >         <span class="small-radio toggler-view"><span class="radio-icon"></span></span>
->         маленький радиобатон
+>         маленький радиобатон!
 >     </label>
 > </h2>
