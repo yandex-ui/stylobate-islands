@@ -409,15 +409,13 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 > <div>
 >     <label class="toggler">
 >         <input class="toggler-controller" type="checkbox" checked="checked">
->         <span class="checkbox toggler-view"><span class="checkbox-icon"></span></span
->         >Чекбокс
+>         <span class="checkbox toggler-view"><span class="checkbox-icon"></span></span>Чекбокс
 >     </label>
 > </div>
 > <div class="secondary">
 >     <label class="toggler">
 >         <input class="toggler-controller" type="checkbox">
->         <span class="checkbox toggler-view"><span class="checkbox-icon"></span></span
->         >Чекбокс
+>         <span class="checkbox toggler-view"><span class="checkbox-icon"></span></span>Чекбокс
 >     </label>
 > </div>
 
@@ -428,15 +426,13 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 > <div>
 >     <label class="toggler">
 >         <input class="toggler-controller" type="radio" name="radio1" checked="checked">
->         <span class="radio toggler-view"><span class="radio-icon"></span></span
->         >Радиобатон
+>         <span class="radio toggler-view"><span class="radio-icon"></span></span>Радиобатон
 >     </label>
 > </div>
 > <div class="secondary">
 >     <label class="toggler">
 >         <input class="toggler-controller" type="radio" name="radio1">
->         <span class="radio toggler-view"><span class="radio-icon"></span></span
->         >Радиобатон
+>         <span class="radio toggler-view"><span class="radio-icon"></span></span>Радиобатон
 >     </label>
 > </div>
 
@@ -459,12 +455,10 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 > <h2>
 >     <label class="toggler">
 >         <input class="toggler-controller" type="checkbox" checked="checked">
->         <span class="normal-checkbox toggler-view"><span class="checkbox-icon"></span></span
->         >Обычный чекбокс
+>         <span class="normal-checkbox toggler-view"><span class="checkbox-icon"></span></span>Обычный чекбокс
 >     </label>
 >     <label class="toggler">
 >         <input class="toggler-controller" type="radio" name="radio2">
->         <span class="small-radio toggler-view"><span class="radio-icon"></span></span
->         >маленький радиобатон
+>         <span class="small-radio toggler-view"><span class="radio-icon"></span></span>маленький радиобатон
 >     </label>
 > </h2>
