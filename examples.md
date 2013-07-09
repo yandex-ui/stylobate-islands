@@ -18,9 +18,25 @@ table {
 th {
   font-weight: normal;
   text-align: left;
+  padding-right: 2rem;
+  padding: 0 2rem 1rem 0;
 }
 th[colspan] {
   font-size: 18px;
+  padding: 1rem 0;
+}
+tbody:first-of-type > tr > th[colspan] {
+  padding-top: 0;
+}
+td {
+  padding: 0 1rem 1rem 0;
+}
+tfoot > tr > td {
+  border-top: 1px solid #EDECE8;
+  padding-top: 1.6rem;
+}
+tbody > tr:last-child > td {
+  padding-bottom: 1.6rem;
 }
 </style>
 
@@ -68,7 +84,7 @@ th[colspan] {
             <th>Телефон</th>
             <td>
                 +7 (903) 617 80 14
-                <button class="pseudo-button" type="button">Изменить</button>
+                <button class="small-pseudo-button" type="button">Изменить</button>
             </td>
         </tr>
         <tr>
