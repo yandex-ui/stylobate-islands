@@ -156,12 +156,15 @@ a.site-nav-link:not([href]):before {
   line-height: 1.8rem;
   max-width: 42em;
 }
-.example {
-  padding-left: 2rem;
+.example,
+.content-section > blockquote {
+  padding: 0 0 0 2rem;
   box-shadow: inset 2px 0 #ddd;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
 }
-.example-title {
+.example-title,
+.example > pre,
+.content-section > blockquote > pre {
   margin-bottom: 0.6rem;
   font-size: 1.3rem;
   line-height: 1.8rem;
@@ -1387,6 +1390,10 @@ a.site-nav-link:not([href]):before {
 }
 .content-section > h1:first-child,
 .content-section > h2:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+.content-section > h1 + h2 {
   padding-top: 0;
   border-top: 0;
 }

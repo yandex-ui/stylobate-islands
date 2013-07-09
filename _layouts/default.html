@@ -14,7 +14,7 @@
 	<link rel="alternate" hreflang="en" href="{{ site.production_url }}/en{{ page.url | remove:'index.html' }}" />
 	<link rel="alternate" hreflang="ru" href="{{ site.production_url }}{{ page.url | remove:'index.html' }}" />{% endif %}{% endif %}
 
-    <title>{{ processed_title | strip_html }} — kizu.ru</title>
+    <title>Прототип островов на Стилобате</title>
 </head>
 <body class="page-body">
     <div class="header">
@@ -27,14 +27,30 @@
         </h2>
     </div>
     <div class="site-nav">
+    	{% if page.page_type == 'index' %}
         <a class="site-nav-link">Next level shit ©</a
         ><a class="site-nav-link" href="blocks.html">Блоки</a>
+        {% else %}
+        <a class="site-nav-link" href="index.html">Next level shit ©</a
+        ><a class="site-nav-link">Блоки</a>
+        {% endif %}
     </div>
     <div class="page-content">
         <div class="aside">
             <div class="aside-nav">
+            	{% if page.page_type == 'index' %}
                 <a class="aside-nav-item" href="#intro">Вводная</a>
                 <a class="aside-nav-item" href="#independance">Абсолютная независимость</a>
+                {% else %}
+                <a class="aside-nav-item" href="#disclaymer"><em>Дисклеймер</em></a>
+                <a class="aside-nav-item" href="#text">Текст</a>
+                <a class="aside-nav-item" href="#isle">Острова</a>
+                <a class="aside-nav-item" href="#link">Ссылки</a>
+                <a class="aside-nav-item" href="#button">Кнопки</a>
+                <a class="aside-nav-item" href="#popup">Модальные окна</a>
+                <a class="aside-nav-item" href="#groups">Группы</a>
+                <a class="aside-nav-item" href="#checkboxes">Чекбоксы</a>
+                {% endif %}
             </div>
         </div>
 
@@ -43,5 +59,21 @@
 				{{ content }}
 			</div>
 		</div>
+    </div>
+    <script src="https://yandex.st/jquery/2.0.2/jquery.min.js"></script>
+    <script>
+
+$("[data-modal]").click(function(){
+    $('#' + $(this).attr('data-modal')).toggleClass('is-hidden');
+});
+$(".modal-paranja, .modal-close").click(function(){
+    $(this).closest('.modal-wrap').toggleClass('is-hidden');
+});
+$(".toggle-button:not(.is-disabled)").click(function(){
+    $(this).toggleClass('is-checked');
+});
+
+    </script>
 </body>
 </html>
+
