@@ -3,4 +3,4 @@
 	url = git://github.com/kizu/stylobate.git
 [submodule "_skins/islands"]
 	path = _skins/islands
-	url = git://github.yandex-team.ru/kizu/islands.git
+	url = git://github.yandex-team.ru/kizu/stylobate-islands.git
