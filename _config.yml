@@ -1,0 +1,31 @@
+safe: true
+markdown: kramdown
+pygments: true
+permalink: /:categories/:title
+
+production_url: https://github.yandex-team.ru/pages/kizu/stylobate-islands
+relative_permalinks: false
+
+# Add a possibility to use full url
+github_repo: "kizu/stylobate-islands"
+
+link_handles:
+    - prefix: "@"
+      handle: "https://twitter.com/"
+    - prefix: "gh:"
+      handle: "https://github.com/"
+
+langs:
+    - ru
+    - en
+
+default_lang: ru
+
+
+loc:
+    laquo:
+        ru: "«"
+        en: "“"
+    raquo:
+        ru: "»"
+        en: "”"

@@ -156,6 +156,18 @@ a.site-nav-link:not([href]):before {
   line-height: 1.8rem;
   max-width: 42em;
 }
+.text > .content-section > h1,
+.text > .content-section > h2 {
+  padding: 1.6rem 1.6rem 0;
+  margin-right: -1.6rem;
+  margin-left: -1.6rem;
+  border-top: 1px solid rgba(0,0,0,0.15);
+}
+.text > .content-section > h1:first-child,
+.text > .content-section > h2:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
 .example {
   padding-left: 2rem;
   box-shadow: inset 2px 0 #ddd;
@@ -1368,7 +1380,6 @@ a.site-nav-link:not([href]):before {
   position: relative;
   display: block;
   padding: 1.6rem 1.6rem 0;
-  border-top: 1px solid rgba(0,0,0,0.15);
 }
 .content-section:before {
   content: "";
@@ -1378,14 +1389,6 @@ a.site-nav-link:not([href]):before {
   content: "";
   display: table;
   clear: both;
-}
-.content-section:first-child {
-  border-top: 0;
-}
-.content-section:last-child:target:before {
-  content: "";
-  position: absolute;
-  height: 60vh;
 }
 .aside {
   background: #fff;
