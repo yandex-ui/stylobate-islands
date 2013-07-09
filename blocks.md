@@ -66,7 +66,7 @@ page_type: blocks
 
 >     .isle
 >       kind: block
->       skin: <strong class="example-title-mark">isle</strong>
+>       skin: isle
 >
 > <div class="isle" style="width: 200px; height: 100px;"></div>
 
@@ -74,7 +74,7 @@ page_type: blocks
 
 >     .flying-isle
 >       kind: block
->       skin: isle <strong class="example-title-mark">fly</strong>
+>       skin: isle fly
 >
 > <div class="flying-isle" style="width: 200px; height: 100px;"></div>
 
@@ -82,14 +82,14 @@ page_type: blocks
 # Ссылки {#link}
 
 >     .link
->       skin: <strong class="example-title-mark">link</strong>
+>       skin: link
 >
 > <a class="link" href="#x">In CTR we trust</a>
 
 И внешняя ссылка
 
 >     .outer-link
->       skin: link <strong class="example-title-mark">outer</strong>
+>       skin: link outer
 >
 > <a class="outer-link" href="#x">We don't care</a>
 
@@ -108,7 +108,7 @@ page_type: blocks
 
 >     .small-button
 >       kind: button
->       skin: button <strong class="example-title-mark">small</strong>
+>       skin: button small
 >
 > <div>
 >     <button class="small-button" type="button">
@@ -118,7 +118,7 @@ page_type: blocks
 
 >     .action-button
 >       kind: button
->       skin: <strong class="example-title-mark">action-</strong>button
+>       skin: action-button
 >
 > <a class="action-button" href="#x">
 >   <span class="button-content">Кнопка ссылкой</span>
@@ -126,7 +126,7 @@ page_type: blocks
 
 >     .small-action-button
 >       kind: button
->       skin: action-button <strong class="example-title-mark">small</strong>
+>       skin: action-button small
 >
 > <div>
 >     <button class="small-action-button" type="button">
@@ -136,13 +136,13 @@ page_type: blocks
 
 >     .pseudo-button
 >       kind: button
->       skin: <strong class="example-title-mark">pseudo-</strong>button
+>       skin: pseudo-button
 >
 > <a class="pseudo-button" href="#x">Псевдокнопка ссылкой</a>
 
 >     .small-pseudo-button
 >       kind: button
->       skin: pseudo-button <strong class="example-title-mark">small</strong>
+>       skin: pseudo-button small
 >
 > <div>
 >     <button class="small-pseudo-button" type="button">Маленькая псевдокнопка кнопкой</button>
@@ -150,7 +150,7 @@ page_type: blocks
 
 >     .fly-button
 >       kind: button
->       skin: button <strong class="example-title-mark">fly</strong>
+>       skin: button fly
 >
 > <div>
 >     <button class="fly-button" type="button">
