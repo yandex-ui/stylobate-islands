@@ -6,3 +6,21 @@
 .content-section
   kind: block, clear
   padding: gap_m gap_m 0
+
+  & > h1,
+  & > h2
+    padding: gap_m gap_m 0
+    margin-right: -1*gap_m
+    margin-left: -1*gap_m
+
+    border-top: 1px solid rgba(0,0,0,0.15)
+
+    &:first-child
+      padding-top: 0
+      border-top: 0
+
+  & a:not([class])
+    skin: link underline
+
+  & a:not([class])[href^=http]
+    skin: link underline outer
