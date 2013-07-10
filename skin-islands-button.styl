@@ -10,7 +10,14 @@ skin-islands-proto-button()
 
   vertical-align: baseline
 
-  color: #333
+  if one-element in arguments
+    color: transparent
+    color: #333 unquote('\0/') // For IE9
+
+    text-shadow: 0 0 0 #333
+    z-index: 9
+  else
+    color: #333
 
   border-radius: 3px
 
@@ -23,6 +30,9 @@ skin-islands-proto-button()
     content: ""
     kind: fill 1px
     border-radius: 2px
+
+    if one-element in arguments
+      z-index: -1
 
   & > .button-content
     kind: block
@@ -108,5 +118,8 @@ skin-islands-button_pressed()
     &:before
       box-shadow: inset 0 1px 3px -1px rgba(#000, 0.5)
 
-    & > .button-content
-      top: 1px
+    if one-element in arguments
+      text-shadow: 0 1px 0 #333
+    else
+      & > .button-content
+        top: 1px
