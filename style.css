@@ -1293,10 +1293,12 @@ a.site-nav-link:not([href]):before {
   display: inline-block;
   vertical-align: top;
   vertical-align: baseline;
-  padding: 0.5rem 1rem;
-  border: none;
+  padding: 0;
   margin: 0;
+  border: none;
+  background: transparent;
   font: inherit;
+  padding: 0.5rem 1rem;
   line-height: 20px;
   border: 1px solid;
   border-color: rgba(0,0,0,0.38) rgba(0,0,0,0.27) rgba(0,0,0,0.16);
