@@ -523,7 +523,7 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 
 > <label class="field">
 >     <span class="field-left">
->         Prefix: 
+>         Prefix:
 >     </span>
 >     <span class="field-right">
 >         …postfix
@@ -542,7 +542,7 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 >
 > <label class="small-field">
 >     <span class="field-left">
->         Prefix: 
+>         Prefix:
 >     </span>
 >     <span class="field-right">
 >         …postfix
@@ -558,7 +558,7 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 > <div>
 >     <label class="field" style="width:100%">
 >         <span class="field-left">
->             Prefix: 
+>             Prefix:
 >         </span>
 >         <span class="field-right">
 >             …postfix
@@ -585,3 +585,19 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 >         <span class="button-content">+</span>
 >     </button>
 > </div>
+
+С сервисом:
+
+>     .field-label
+>       kind: field-left
+>       skin: input-label
+>
+> <label class="field">
+>     <a class="field-label" href="#x">
+>         Маркет
+>     </a>
+>     <span class="field-content">
+>         <input class="input-controller" type="text" value="Буквы" />
+>         <span class="input-view"> </span>
+>     </span>
+> </label>
