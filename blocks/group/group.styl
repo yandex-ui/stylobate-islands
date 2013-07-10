@@ -1,7 +1,17 @@
 .group
   kind: group
 
-.group > .toggle-button
+.group-start
+  kind: group-start '&,&:before'
+
+.group-middle
+  kind: group-end '&,&:before'
+
+.group-end
+  kind: group-end '&,&:before'
+
+.group > .toggle-button,
+.group-item
   kind: group-item '&,&:before'
 
 .group > .toggler

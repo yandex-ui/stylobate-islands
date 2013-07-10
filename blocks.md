@@ -472,6 +472,116 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 
 # Инпуты {#inputs}
 
-Обычный инпут, на обычном инпуте
+Обычный инпут, на обычном инпуте, если надо просто где-то вставить самый простой инпут:
 
+>     .input
+>       kind: input
+>       skin: input
+>
 > <input class="input" type="text" value="Буквы" />
+
+И маленький
+
+>     .small-input
+>       kind: input
+>       skin: input small
+>
+> <input class="small-input" type="text" value="Буквы" />
+
+
+# Сложные поля ввода {#field}
+
+Если же нужно что-то сложнее (нужно вставлять сущности внутрь, типа крестика и подобных штук) лучше использовать «составной» инпут.
+
+В минимальном обрамлении он выглядит аналогично обычному инпуту, но внутри надо чуть поколдовать с инпутами
+
+>     .field
+>       kind: field
+>       skin: input-box
+>
+>     .input-controller
+>       kind: input
+>       z-index: 9
+>       width: 100%
+>       height: 100%
+>
+>     .input-view
+>       kind: fill -1px
+>       skin: input-view no-focus
+>
+>       .input-controller:not(.is-disabled):focus + &
+>         skin: input_focus
+>
+> <label class="field">
+>     <span class="field-content">
+>         <input class="input-controller" type="text" value="Буквы" />
+>         <span class="input-view"> </span>
+>     </span>
+> </label>
+
+Но зато снановится просто добавить внутрь любые дополнительные контролы:
+
+> <label class="field">
+>     <span class="field-left">
+>         Prefix: 
+>     </span>
+>     <span class="field-right">
+>         …postfix
+>     </span>
+>     <span class="field-content">
+>         <input class="input-controller" type="text" value="Буквы" />
+>         <span class="input-view"> </span>
+>     </span>
+> </label>
+
+Ну и маленький контрол (если использовать имеющиеся элементы обычного филда):
+
+>     .small-field
+>       kind: field no-elements
+>       skin: input-box small
+>
+> <label class="small-field">
+>     <span class="field-left">
+>         Prefix: 
+>     </span>
+>     <span class="field-right">
+>         …postfix
+>     </span>
+>     <span class="field-content">
+>         <input class="input-controller" type="text" value="Буквы" />
+>         <span class="input-view"> </span>
+>     </span>
+> </label>
+
+Растягивается на 100% по ширине:
+
+> <div>
+>     <label class="field" style="width:100%">
+>         <span class="field-left">
+>             Prefix: 
+>         </span>
+>         <span class="field-right">
+>             …postfix
+>         </span>
+>         <span class="field-content">
+>             <input class="input-controller" type="text" value="Буквы" />
+>             <span class="input-view"> </span>
+>         </span>
+>     </label>
+> </div>
+
+Обычные инпуты с прижатыми вплотную кнопками
+
+> <div class="group">
+>     <button class="button group-item" type="button">
+>         <span class="button-content">–</span>
+>     </button
+>     ><input class="input group-item" type="text" style="width:100px"
+>     /><button class="button group-item" type="button">
+>         <span class="button-content">⟷</span>
+>     </button
+>     ><input class="input group-item" type="text" style="width:100px"
+>     /><button class="button group-item" type="button">
+>         <span class="button-content">+</span>
+>     </button>
+> </div>
