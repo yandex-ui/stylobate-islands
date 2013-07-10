@@ -191,7 +191,7 @@ page_type: blocks
 >       kind: button
 >       skin: button one-element
 >
-> <a class="simple-button" href="#x">Кнопка ссылкой</a>
+> <a class="simple-button" href="#x">Кнопка одним элементом</a>
 
 
 ## Кнопки-переключатели
