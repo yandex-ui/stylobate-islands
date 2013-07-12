@@ -45,21 +45,13 @@
     <div class="page-content">
         <div class="aside">
             <div class="aside-nav">
-            	{% if page.page_type == 'index' %}
-                <a class="aside-nav-item" href="#intro">Вводная</a>
-                <a class="aside-nav-item" href="#independance">Абсолютная независимость</a>
-                {% elsif page.page_type == 'blocks' %}
-                <a class="aside-nav-item" href="#disclaymer"><em>Дисклеймер</em></a>
-                <a class="aside-nav-item" href="#text">Текст</a>
-                <a class="aside-nav-item" href="#isle">Острова</a>
-                <a class="aside-nav-item" href="#link">Ссылки</a>
-                <a class="aside-nav-item" href="#button">Кнопки</a>
-                <a class="aside-nav-item" href="#popup">Модальные окна</a>
-                <a class="aside-nav-item" href="#groups">Группы</a>
-                <a class="aside-nav-item" href="#checkboxes">Чекбоксы</a>
-                <a class="aside-nav-item" href="#inputs">Инпуты</a>
-                <a class="aside-nav-item" href="#field">Сложные поля ввода</a>
-                {% endif %}
+                {% assign toc_input = page %}
+                {% capture lolcache %}{% include tenkan/toc.md %}{% endcapture %}
+                {% for toc_id in toc_headers_id %}
+                    {% if toc_headers_indexes[forloop.index0] != '' and toc_headers_indexes[forloop.index0] != '1' %}
+                        <a class="aside-nav-item{% if toc_headers_indexes[forloop.index0] != '2' %} aside-nav-item_{{ toc_headers_indexes[forloop.index0] | minus:1 }}{% endif %}" href="#{{ toc_id }}">{{ toc_headers_contents[forloop.index0] }}</a>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
 

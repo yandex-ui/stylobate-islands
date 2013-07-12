@@ -1793,6 +1793,26 @@ a.site-nav-link:not([href]):before {
   background: #1981ca;
   box-shadow: 0 -1px 0 rgba(0,0,0,0.15), 0 -1px 0 #1981ca, 0 1px 0 #1981ca;
 }
+.aside-nav-item_2 {
+  padding-left: 3.2rem;
+  font-size: 1.3rem;
+}
+.aside-nav-item_3 {
+  padding-left: 4.800000000000001rem;
+  font-size: 1.3rem;
+}
+.aside-nav-item_4 {
+  padding-left: 6.4rem;
+  font-size: 1.3rem;
+}
+.aside-nav-item_5 {
+  padding-left: 8rem;
+  font-size: 1.3rem;
+}
+.aside-nav-item_6 {
+  padding-left: 9.600000000000001rem;
+  font-size: 1.3rem;
+}
 .aside-nav-item:after {
   content: '›';
   position: absolute;
