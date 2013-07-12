@@ -45,9 +45,13 @@
     <div class="page-content">
         <div class="aside">
             <div class="aside-nav">
-                {% assign lol = 'a~b~c~d~e' %}
-                {% assign lol = lol | split:'~' %}
-                {% for item in lol offset:2 %}
+                {% assign lol = 'ambmcmdme' %}
+                {% assign lolz = lol | split:'m' %}
+                {% for item in lolz %}
+                    {{ item }}
+                    {{ forloop.index0 }}
+                {% endfor %}<hr/>
+                {% for item in lolz offset:2 %}
                     {{ item }}
                     {{ forloop.index0 }}
                 {% endfor %}
