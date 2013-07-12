@@ -93,6 +93,23 @@ page_type: blocks
 >
 > <a class="outer-link" href="#x">We don't care</a>
 
+Псевдоссылка
+
+>     .pseudo-link
+>       skin: link pseudo
+>
+> <a class="pseudo-link">I'm not a link really</a>
+
+Сложная ссылка с кастомным цветом
+
+>     .complex-link
+>       skin: link #000
+>
+>     .link-inner
+>       skin: link nested underline
+>
+> <a class="complex-link">© «<span class="link-inner">Яндекс</span>»</a>
+
 <!-- И потом ещё будет с иконкой -->
 
 

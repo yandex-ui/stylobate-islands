@@ -230,6 +230,27 @@ a.site-nav-link:not([href]):before {
 .outer-link:hover {
   color: #d00;
 }
+.pseudo-link {
+  cursor: pointer;
+  color: #22c;
+  text-decoration: none;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+.pseudo-link:hover {
+  color: #d00;
+}
+.complex-link {
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+.complex-link:hover {
+  color: #d00;
+}
+.link-inner {
+  text-decoration: underline;
+}
 .button {
   display: inline-block;
   white-space: nowrap;
