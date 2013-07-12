@@ -1,35 +1,17 @@
 skin-islands-link()
-  // This could be divided to `link-simple` and other stuff, so the `skin-link` would be just a shortcut
+  // Shoulf find out how to merge arguments
+  kind: link underline get_color(arguments) get_ident(arguments) get_ident(arguments,1)
 
-  unless nested in arguments
-    cursor: pointer
+skin-islands-outer-link()
+  kind: link underline #070
 
-    if outer in arguments
-      skin-islands-link_outer()
-    else
-      color: alike(arguments, #22C)
+skin-islands-pseudo-link()
+  kind: link pseudo get_color(arguments)
 
-    unless no-hover in arguments
-      &:hover
-        skin-islands-link_hover()
-
-  if underline in arguments
-    text-decoration: underline
-  else
-    text-decoration: none
-
-  if pseudo in arguments
-    text-decoration: none
-    border-bottom: 1px dashed
-
-skin-islands-link_outer()
-  color: #070
-
-skin-islands-link_hover()
-  color: #D00
+skin-islands-complex-link()
+  kind: link get_color(arguments)
 
 skin-islands-link_selected()
   color: #000
   cursor: default
-
 
