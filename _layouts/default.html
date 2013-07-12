@@ -45,8 +45,9 @@
     <div class="page-content">
         <div class="aside">
             <div class="aside-nav">
-                {% assign lol = 'a,b,c,d,e' | split:',' %}
-                {% for item in lol %}
+                {% assign lol = 'a,b,c,d,e' %}
+                {% assign lol = lol | split:',' %}
+                {% for item in lol offset:2 %}
                     {{ item }}
                     {{ forloop.index0 }}
                 {% endfor %}
