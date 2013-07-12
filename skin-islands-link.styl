@@ -1,15 +1,12 @@
 skin-islands-link()
   // Shoulf find out how to merge arguments
-  kind: link underline get_color(arguments) get_ident(arguments) get_ident(arguments,1)
+  kind: link get_color(arguments) get_ident(arguments) get_ident(arguments, $index:1)
 
 skin-islands-outer-link()
-  kind: link underline #070
+  kind: link #070 get_ident(arguments)
 
 skin-islands-pseudo-link()
   kind: link pseudo get_color(arguments)
-
-skin-islands-complex-link()
-  kind: link get_color(arguments)
 
 skin-islands-link_selected()
   color: #000
