@@ -103,7 +103,7 @@ page_type: blocks
 Сложная ссылка с кастомным цветом
 
 >     .complex-link
->       skin: complex-link #000
+>       skin: link #000
 >
 >     .link-inner
 >       skin: link nested underline
