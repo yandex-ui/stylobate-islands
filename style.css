@@ -94,7 +94,7 @@ h1,h2,h3 {
   vertical-align: top;
   cursor: pointer;
   color: #22c;
-  text-decoration: none;
+  text-decoration: underline;
   padding: 1rem 0.8rem;
 }
 .site-nav-link:hover {
@@ -1614,7 +1614,7 @@ a.site-nav-link:not([href]):before {
   padding: 0.5rem 1rem;
   cursor: pointer;
   color: #000;
-  text-decoration: none;
+  text-decoration: underline;
   border-right: 1px solid rgba(0,0,0,0.08);
   margin-right: 1rem;
   font-size: 1.6rem;
@@ -1758,7 +1758,7 @@ a.site-nav-link:not([href]):before {
 }
 .content-section a:not([class])[href^=http] {
   cursor: pointer;
-  color: #070;
+  color: #22c;
   text-decoration: underline;
 }
 .content-section a:not([class])[href^=http]:hover {

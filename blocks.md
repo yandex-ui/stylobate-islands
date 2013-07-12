@@ -82,28 +82,28 @@ page_type: blocks
 # Ссылки {#link}
 
 >     .link
->       skin: link
+>       skin: link underline
 >
 > <a class="link" href="#x">In CTR we trust</a>
 
 И внешняя ссылка
 
 >     .outer-link
->       skin: link outer
+>       skin: outer-link underline
 >
 > <a class="outer-link" href="#x">We don't care</a>
 
 Псевдоссылка
 
 >     .pseudo-link
->       skin: link pseudo
+>       skin: pseudo-link
 >
 > <a class="pseudo-link">I'm not a link really</a>
 
 Сложная ссылка с кастомным цветом
 
 >     .complex-link
->       skin: link #000
+>       skin: complex-link #000
 >
 >     .link-inner
 >       skin: link nested underline
