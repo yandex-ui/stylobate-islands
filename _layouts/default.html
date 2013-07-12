@@ -28,11 +28,18 @@
     </div>
     <div class="site-nav">
     	{% if page.page_type == 'index' %}
-        <a class="site-nav-link">Next level shit ©</a
+        <a class="site-nav-link">Вводная</a
+        ><a class="site-nav-link" href="codestyle.html">Code Style</a
         ><a class="site-nav-link" href="blocks.html">Блоки</a>
-        {% else %}
-        <a class="site-nav-link" href="index.html">Next level shit ©</a
+        {% elsif page.page_type == 'blocks'   %}
+        <a class="site-nav-link" href="index.html">Вводная</a
+        ><a class="site-nav-link" href="codestyle.html">Code Style</a
         ><a class="site-nav-link">Блоки</a>
+        {% elsif page.page_type == 'codestyle'   %}
+        <a class="site-nav-link" href="index.html">Вводная</a
+        ><a class="site-nav-link">Code Style</a
+        ><a class="site-nav-link" href="blocks.html">Блоки</a>
+        {% elsif page.page_type == 'examples'   %}
         {% endif %}
     </div>
     <div class="page-content">
@@ -41,7 +48,7 @@
             	{% if page.page_type == 'index' %}
                 <a class="aside-nav-item" href="#intro">Вводная</a>
                 <a class="aside-nav-item" href="#independance">Абсолютная независимость</a>
-                {% else %}
+                {% elsif page.page_type == 'blocks' %}
                 <a class="aside-nav-item" href="#disclaymer"><em>Дисклеймер</em></a>
                 <a class="aside-nav-item" href="#text">Текст</a>
                 <a class="aside-nav-item" href="#isle">Острова</a>

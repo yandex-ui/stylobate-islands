@@ -2,7 +2,7 @@
 
 layout: default
 
-page_type: blocks
+page_type: examples
 
 ---
 
