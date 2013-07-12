@@ -45,7 +45,11 @@
     <div class="page-content">
         <div class="aside">
             <div class="aside-nav">
-
+                {% assign lol = 'a,b,c,d,e' | split:',' %}
+                {% for item in lol %}
+                    {{ item }}
+                    {{ forloop.index0 }}
+                {% endfor %}
                 {% assign toc_input = page %}
                 {% capture lolcache %}{% include tenkan/toc.md %}{% endcapture %}
                 {% for toc_id in toc_headers_id %}
