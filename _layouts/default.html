@@ -46,7 +46,7 @@
         <div class="aside">
             <div class="aside-nav">
                 {% assign lol = 'ambmcmdme' %}
-                {% assign lolz = lol | split:'m' %}
+                {% assign lolz = lol | split:m %}
                 {% for item in lolz %}
                     {{ item }}
                     {{ forloop.index0 }}
