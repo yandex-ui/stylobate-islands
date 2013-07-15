@@ -10,7 +10,7 @@ permalink: /examples/
 
 # Примеры
 
-## Создать правило
+## Форма «Создать правило» {#new-rule}
 
 <div class="form form_Default">
     <div class="form-fieldset">
