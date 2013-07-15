@@ -16,6 +16,9 @@ h1,h2,h3 {
 .is-disabled:focus {
   outline: 0;
 }
+.is-disabled .is-disabled {
+  opacity: 1;
+}
 .group {
   kind: block inline;
   white-space: nowrap;
@@ -1388,6 +1391,64 @@ a.site-nav-link:not([href]):before {
 }
 .modal-close:hover {
   opacity: 1;
+}
+.form {
+  position: relative;
+  display: block;
+  cursor: default;
+}
+.form-fieldset {
+  position: relative;
+  display: block;
+  margin-bottom: 1.6rem;
+}
+.form-fieldset + .form-fieldset {
+  margin-top: 2rem;
+}
+.form-legend {
+  position: relative;
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  margin-bottom: 1rem;
+}
+.form-field {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+.form-field:last-child {
+  margin-bottom: 0;
+}
+.form-inline-field {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 1rem;
+}
+.form-field-label {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  white-space: normal;
+  margin-right: 2rem;
+  width: 18rem;
+}
+.form-field-content {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  white-space: normal;
+  width: 30rem;
+}
+.form-field-content:first-child {
+  margin-left: 20rem;
+}
+.form-field-content .form-field + .form-field {
+  float: left;
+  width: 100%;
 }
 .toggler {
   position: relative;

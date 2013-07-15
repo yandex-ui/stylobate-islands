@@ -30,16 +30,23 @@
     	{% if page.page_type == 'index' %}
         <a class="site-nav-link">Вводная</a
         ><a class="site-nav-link" href="codestyle.html">Code Style</a
-        ><a class="site-nav-link" href="blocks.html">Блоки</a>
+        ><a class="site-nav-link" href="blocks.html">Блоки</a
+        ><a class="site-nav-link" href="examples.html">Примеры</a>
         {% elsif page.page_type == 'blocks'   %}
         <a class="site-nav-link" href="index.html">Вводная</a
         ><a class="site-nav-link" href="codestyle.html">Code Style</a
-        ><a class="site-nav-link">Блоки</a>
+        ><a class="site-nav-link">Блоки</a
+        ><a class="site-nav-link" href="examples.html">Примеры</a>
         {% elsif page.page_type == 'codestyle'   %}
         <a class="site-nav-link" href="index.html">Вводная</a
         ><a class="site-nav-link">Code Style</a
-        ><a class="site-nav-link" href="blocks.html">Блоки</a>
+        ><a class="site-nav-link" href="blocks.html">Блоки</a
+        ><a class="site-nav-link" href="examples.html">Примеры</a>
         {% elsif page.page_type == 'examples'   %}
+        <a class="site-nav-link" href="index.html">Вводная</a
+        ><a class="site-nav-link" href="index.html">Code Style</a
+        ><a class="site-nav-link" href="blocks.html">Блоки</a
+        ><a class="site-nav-link">Примеры</a>
         {% endif %}
     </div>
     <div class="page-content">

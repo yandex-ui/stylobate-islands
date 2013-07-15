@@ -1,0 +1,53 @@
+.form
+  kind: block
+  cursor: default
+
+.form-fieldset
+  kind: block
+  margin-bottom: gap_m
+
+  & + &
+    margin-top: gap_l
+
+.form-legend
+  kind: block
+  skin: h3 no-reset
+
+  margin-bottom: gap_s
+
+.form-field
+  kind: block
+  white-space: nowrap
+
+  margin-bottom: gap_s
+
+  &:last-child
+    margin-bottom: 0
+
+.form-inline-field
+  kind: block inline baseline
+
+  margin-right: gap_s
+
+.form-field-label
+  kind: block inline baseline
+  white-space: normal
+
+  margin-right: gap_l
+
+  width: 9*gap_l
+
+.form-field-content
+  kind: block inline baseline
+  white-space: normal
+
+  width: 15*gap_l
+
+  // Align labelless content
+  &:first-child
+    margin-left: 10*gap_l
+
+  // Making only the first nested field to be at baseline
+  & .form-field + .form-field
+    float: left
+    width: 100%
