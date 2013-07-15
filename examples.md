@@ -12,7 +12,7 @@ page_type: examples
 
 <div class="form">
     <div class="form-fieldset">
-        <div class="form-legend">Если письмо содержит:</div>
+        <div class="form-legend">Если письмо содержит</div>
 
         <div class="form-field">
             <div class="form-field-label">В поле «от кого»</div
@@ -48,7 +48,9 @@ page_type: examples
     </div>
 
     <div class="form-fieldset">
-        <div class="form-legend">Уведомлять об этом письме по SMS:</div>
+        <div class="form-legend">Уведомлять об этом письме по SMS</div>
+
+        <!-- Вложенная форма? http://jing.yandex-team.ru/files/diloo/2013-07-04_1747.png -->
 
         <div class="form-field">
             <div class="form-field-label">Телефон</div
