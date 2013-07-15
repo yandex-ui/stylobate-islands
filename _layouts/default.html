@@ -27,27 +27,20 @@
         </h2>
     </div>
     <div class="site-nav">
-    	{% if page.page_type == 'index' %}
-        <a class="site-nav-link">Вводная</a
-        ><a class="site-nav-link" href="codestyle.html">Code Style</a
-        ><a class="site-nav-link" href="blocks.html">Блоки</a
-        ><a class="site-nav-link" href="examples.html">Примеры</a>
-        {% elsif page.page_type == 'blocks'   %}
-        <a class="site-nav-link" href="index.html">Вводная</a
-        ><a class="site-nav-link" href="codestyle.html">Code Style</a
-        ><a class="site-nav-link">Блоки</a
-        ><a class="site-nav-link" href="examples.html">Примеры</a>
-        {% elsif page.page_type == 'codestyle'   %}
-        <a class="site-nav-link" href="index.html">Вводная</a
-        ><a class="site-nav-link">Code Style</a
-        ><a class="site-nav-link" href="blocks.html">Блоки</a
-        ><a class="site-nav-link" href="examples.html">Примеры</a>
-        {% elsif page.page_type == 'examples'   %}
-        <a class="site-nav-link" href="index.html">Вводная</a
-        ><a class="site-nav-link" href="codestyle.html">Code Style</a
-        ><a class="site-nav-link" href="blocks.html">Блоки</a
-        ><a class="site-nav-link">Примеры</a>
-        {% endif %}
+        {% capture menu_cache %}
+            {% assign menu_result = '' %}
+            {% assign current_post_name = page.url | remove:'/' | remove:'.html' %}
+            {% for item in site.menu %}
+                {% for post in site.pages %}
+                    {% assign post_name = post.url | remove:'/' | remove:'.html' %}
+                    {% if post_name == item %}
+                        {% assign processed_post = post %}
+                        {% include tenkan/get_title.md %}
+                        {% capture menu_result %}{{ menu_result }}<a class="site-nav-link"{% unless post_name == current_post_name %} href="{{ post.url }}"{% endunless %}>{{ processed_title }}</a>{% endcapture %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% endcapture %}{{ menu_result }}
     </div>
     <div class="page-content">
         <div class="aside">

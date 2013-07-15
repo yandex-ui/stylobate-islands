@@ -3,11 +3,19 @@ markdown: kramdown
 pygments: true
 permalink: /:categories/:title
 
+exclude: [stylobate, all.styl, *.styl, *.sublime-project, *.sublime-workspace]
+
 production_url: https://github.yandex-team.ru/pages/kizu/stylobate-islands
 relative_permalinks: false
 
 # Add a possibility to use full url
 github_repo: "kizu/stylobate-islands"
+
+menu:
+    - index
+    - codestyle
+    - blocks
+    - examples
 
 link_handles:
     - prefix: "@"
