@@ -12,12 +12,12 @@ skin-islands-proto-button()
 
   if one-element in arguments
     color: transparent
-    color: #333 unquote('\0/') // For IE9
+    color: $color_text unquote('\0/') // For IE9
 
-    text-shadow: 0 0 0 #333
+    text-shadow: 0 0 0 $color_text
     z-index: 9
   else
-    color: #333
+    color: $color_text
 
   border-radius: 3px
 
@@ -119,7 +119,7 @@ skin-islands-button_pressed()
       box-shadow: inset 0 1px 3px -1px rgba(#000, 0.5)
 
     if one-element in arguments
-      text-shadow: 0 1px 0 #333
+      text-shadow: 0 1px 0 $color_text
     else
       & > .button-content
         top: 1px
