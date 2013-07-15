@@ -29,10 +29,10 @@
     <div class="site-nav">
         {% capture menu_cache %}
             {% assign menu_result = '' %}
-            {% assign current_post_name = page.url | remove:'/' | remove:'.html' %}
+            {% capture current_post_name %}{{ page.url | remove:'/' | remove:'.html'}}{% endcapture %}
             {% for item in site.menu %}
                 {% for post in site.pages %}
-                    {% assign post_name = post.url | remove:'/' | remove:'.html' %}
+                    {% capture post_name %}{{ post.url | remove:'/' | remove:'.html'}}{% endcapture %}
                     {% if post_name == item %}
                         {% assign processed_post = post %}
                         {% include tenkan/get_title.md %}
