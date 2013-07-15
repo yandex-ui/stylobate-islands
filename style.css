@@ -238,7 +238,7 @@ a.site-nav-link:not([href]):before {
   color: #22c;
   text-decoration: none;
   text-decoration: none;
-  border-bottom: 1px dashed;
+  border-bottom: 1px dotted;
 }
 .pseudo-link:hover {
   color: #d00;
@@ -1479,7 +1479,7 @@ a.site-nav-link:not([href]):before {
   color: #333;
   text-decoration: none;
   text-decoration: none;
-  border-bottom: 1px dashed;
+  border-bottom: 1px dotted;
 }
 .form-pseudo-link:hover {
   color: #d00;
