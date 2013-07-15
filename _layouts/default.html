@@ -36,7 +36,7 @@
                     {% if post_name == item %}
                         {% assign processed_post = post %}
                         {% include tenkan/get_title.md %}
-                        {% capture menu_result %}{{ menu_result }}<a class="site-nav-link"{% unless post_name == current_post_name %} href="{{ post.url }}"{% endunless %}>{{ processed_title }}</a>{% endcapture %}
+                        {% capture menu_result %}{{ menu_result }}<a class="site-nav-link"{% unless post_name == current_post_name %} href="{{ site.production_url }}{{ post.url }}"{% endunless %}>{{ processed_title }}</a>{% endcapture %}
                     {% endif %}
                 {% endfor %}
             {% endfor %}
