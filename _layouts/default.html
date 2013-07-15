@@ -29,14 +29,14 @@
     <div class="site-nav">
         {% capture menu_cache %}
             {% assign menu_result = '' %}
-            {% capture current_post_name %}{{ page.url | remove:'/' | remove:'.html'}}{% endcapture %}
+            {% assign current_post_name = page.url | remove:'/' | remove:'.html' %}
             {% for item in site.menu %}
                 {% for post in site.pages %}
-                    {% capture post_name %}{{ post.url | remove:'/' | remove:'.html'}}{% endcapture %}
+                    {% assign post_name = post.url | remove:'/' | remove:'.html' %}
                     {% if post_name == item %}
                         {% assign processed_post = post %}
                         {% include tenkan/get_title.md %}
-                        {% capture menu_result %}{{ menu_result }}<a class="site-nav-link"{% unless post_name == current_post_name %} href="{{ post.url | remove_first:'/' }}"{% endunless %}>{% if processed_title != '' %}{{ processed_title }}{% else %}{{ post_name }}{% endif %}</a>{% endcapture %}
+                        {% capture menu_result %}{{ menu_result }}<a class="site-nav-link"{% unless post_name == current_post_name %} href="{{ post.url }}"{% endunless %}>{{ processed_title }}</a>{% endcapture %}
                     {% endif %}
                 {% endfor %}
             {% endfor %}
