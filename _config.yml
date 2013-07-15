@@ -5,7 +5,7 @@ permalink: /:categories/:title
 
 exclude: [stylobate, all.styl, *.styl, *.sublime-project, *.sublime-workspace]
 
-production_url: http://yandex-ui.github.io/stylobate-islands/
+production_url: http://yandex-ui.github.io/stylobate-islands
 relative_permalinks: false
 
 # Add a possibility to use full url
