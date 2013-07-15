@@ -9,7 +9,7 @@ production_url: http://yandex-ui.github.io/stylobate-islands/
 relative_permalinks: false
 
 # Add a possibility to use full url
-github_repo: "kizu/stylobate-islands"
+github_repo: "yandex-ui/stylobate-islands"
 
 menu:
     - index
