@@ -68,6 +68,7 @@ skin-islands-proto-button()
   &:not(.is-disabled):focus
     skin-islands-button_focus(arguments)
 
+
 // Normal button
 skin-islands-button()
   skin-islands-proto-button(arguments)
@@ -79,6 +80,7 @@ skin-islands-button()
 
   &:not(.is-disabled):hover
     skin-islands-button_hover()
+
 
 // Action button
 skin-islands-action-button()
@@ -100,12 +102,14 @@ skin-islands-button_hover()
   &:before
     gradient: #FFF, #F6F5F3
 
+
 // Hover state for action
 skin-islands-action-button_hover()
   gradient: #000 0.22, 0.4
 
   &:before
     gradient: #FFE681, #FFD428
+
 
 // Pressed state
 skin-islands-button_pressed()
