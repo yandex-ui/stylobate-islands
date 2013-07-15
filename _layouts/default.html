@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width"/>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,IE=edge"/><!--[if gt IE 7]><!-->
-    <link rel="stylesheet" href="style.css" /><!--<![endif]--><!--[if lt IE 8]>
-    <link rel="stylesheet" href="style.ie.css" /><![endif]-->
+    <link rel="stylesheet" href="{{ site.production_url }}/style.css" /><!--<![endif]--><!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ site.production_url }}/style.ie.css" /><![endif]-->
 
 	{% if page_have_translation %}{% if lang == 'en' %}
 	<link rel="alternate" hreflang="en" href="{{ site.production_url }}{{ page.url | remove:'index.html' }}" />
@@ -36,7 +36,7 @@
                     {% if post_name == item %}
                         {% assign processed_post = post %}
                         {% include tenkan/get_title.md %}
-                        {% capture menu_result %}{{ menu_result }}<a class="site-nav-link"{% unless post_name == current_post_name %} href="{{ site.production_url }}{{ post.url }}"{% endunless %}>{{ processed_title }}</a>{% endcapture %}
+                        {% capture menu_result %}{{ menu_result }}<a class="site-nav-link"{% unless post_name == current_post_name %} href="{{ site.production_url }}{{ post.url | remove:'index.html' }}"{% endunless %}>{{ processed_title }}</a>{% endcapture %}
                     {% endif %}
                 {% endfor %}
             {% endfor %}

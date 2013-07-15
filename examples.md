@@ -4,6 +4,8 @@ layout: default
 
 page_type: examples
 
+permalink: /examples/
+
 ---
 
 # Примеры

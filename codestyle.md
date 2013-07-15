@@ -4,6 +4,8 @@ layout: default
 
 page_type: codestyle
 
+permalink: /codestyle/
+
 ---
 
 # Code Style
