@@ -3,7 +3,7 @@
 	url = git://github.com/kizu/stylobate.git
 [submodule "_skins/islands"]
 	path = _skins/islands
-	url = git://github.yandex-team.ru/kizu/stylobate-islands.git
+	url = git://github.com/yandex-ui/stylobate-islands.git
 [submodule "_includes/tenkan"]
 	path = _includes/tenkan
 	url = git://github.com/kizu/tenkan.git
