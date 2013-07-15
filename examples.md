@@ -71,13 +71,13 @@ page_type: examples
 
                 <div class="form-field">
                     <label class="toggler">
-                        <input class="toggler-controller" type="checkbox" checked="checked">
+                        <input class="toggler-controller" type="checkbox" checked="checked" onchange="var btns = $(this).closest('.form-field-content').find('#NotificationTime, #NotificationTime .small-pseudo-button'); btns.toggleClass('is-disabled'); btns.attr('disabled') ? btns.removeAttr('disabled') : btns.attr('disabled',true) ">
                         <span class="checkbox toggler-view"><span class="checkbox-icon"> </span></span
                         >круглосуточно
                     </label>
                 </div>
 
-                <div class="form-field is-disabled">
+                <div class="form-field is-disabled" id="NotificationTime" disabled="disabled">
                     <button class="small-pseudo-button is-disabled" type="button" disabled="disabled">10:00</button>
                     –
                     <button class="small-pseudo-button is-disabled" type="button" disabled="disabled">22:00</button>
