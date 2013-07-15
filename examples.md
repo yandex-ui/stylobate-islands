@@ -18,6 +18,12 @@ page_type: examples
             <div class="form-field-label">В поле «от кого»</div
             ><div class="form-field-content">
                 <input class="input" type="text" placeholder="Например «info@info.ru»" />
+            </div
+            ><div class="form-hint">
+                <div class="form-hint-title">Подсказка</div>
+                <div class="form-hint-content">
+                    Незаполненные поля будут игнорироваться при работе правила
+                </div>
             </div>
         </div>
 
@@ -110,7 +116,7 @@ page_type: examples
                 </div>
 
                 <div class="form-inline-field">
-                    <span class="pseudo-link" tabindex="0">Отмена</span>
+                    <span class="form-pseudo-link" tabindex="0">Отмена</span>
                 </div>
 
             </div>
