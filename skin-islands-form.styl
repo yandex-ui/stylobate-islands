@@ -1,0 +1,64 @@
+
+skin-islands-form()
+  cursor: default
+
+skin-islands-form-fieldset()
+  margin-bottom: gap_m
+
+  & + &
+    margin-top: gap_l
+
+skin-islands-form-legend()
+  skin-islands-h3(no-reset)
+
+  margin-bottom: gap_s
+
+skin-islands-form-field()
+  white-space: nowrap
+
+  margin-bottom: gap_s
+
+  &:last-child
+    margin-bottom: 0
+
+  // Making only the first nested field to be at baseline
+  & & + &
+    float: left
+    width: 100%
+
+skin-islands-form-inline-field()
+  vertical-align: baseline
+
+  margin-right: gap_s
+
+skin-islands-form-field-label()
+  white-space: normal
+  vertical-align: baseline
+
+  margin-right: gap_l
+
+skin-islands-form-field-content()
+  white-space: normal
+  vertical-align: baseline
+
+skin-islands-form-hint()
+  white-space: normal
+  vertical-align: baseline
+
+  width: 9*gap_l
+  margin-left: 2*gap_l
+
+skin-islands-form-hint-title()
+  skin-islands-h3(no-reset)
+
+skin-islands-form-hint-content()
+  float: left
+  width: 100%
+  height: 0 // To hang it
+
+  skin-islands-para2(no-reset)
+
+  color: $color_text_misc
+
+skin-islands-form-pseudo-link()
+  skin-islands-pseudo-link($color_text)
