@@ -1,78 +1,53 @@
 .form
   kind: block
-  cursor: default
+  skin: form
 
 .form-fieldset
   kind: block
-  margin-bottom: gap_m
-
-  & + &
-    margin-top: gap_l
+  skin: form-fieldset
 
 .form-legend
   kind: block
-  skin: h3 no-reset
-
-  margin-bottom: gap_s
+  skin: form-legend
 
 .form-field
   kind: block
-  white-space: nowrap
-
-  margin-bottom: gap_s
-
-  &:last-child
-    margin-bottom: 0
+  skin: form-field
 
 .form-inline-field
-  kind: block inline baseline
-
-  margin-right: gap_s
+  kind: block inline
+  skin: form-inline-field
 
 .form-field-label
-  kind: block inline baseline
-  white-space: normal
-
-  margin-right: gap_l
-
-  width: 9*gap_l
+  kind: block inline
+  skin: form-field-label
 
 .form-field-content
-  kind: block inline baseline
-  white-space: normal
-
-  width: 15*gap_l
-
-  // Align labelless content
-  &:first-child
-    margin-left: 10*gap_l
-
-  // Making only the first nested field to be at baseline
-  & .form-field + .form-field
-    float: left
-    width: 100%
-
+  kind: block inline
+  skin: form-field-content
 
 .form-hint
-  kind: block inline baseline
-  white-space: normal
-
-  width: 9*gap_l
-  margin-left: 2*gap_l
+  kind: block inline
+  skin: form-hint
 
 .form-hint-title
   kind: block
-
-  skin: h3 no-reset
+  skin: form-hint-title
 
 .form-hint-content
-  float: left
-  width: 100%
-  height: 0 // To hang it
-
-  skin: para2 no-reset
-
-  color: $color_text_misc
+  kind: block
+  skin: form-hint-content
 
 .form-pseudo-link
-  skin: pseudo-link $color_text
+  skin: form-pseudo-link
+
+.form_Default
+  & .form-field-label
+    width: 9*gap_l
+
+  & .form-field-content
+    width: 15*gap_l
+
+    // Align labelless content
+    &:first-child
+      margin-left: 10*gap_l

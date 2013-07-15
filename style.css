@@ -1422,39 +1422,38 @@ a.site-nav-link:not([href]):before {
 .form-field:last-child {
   margin-bottom: 0;
 }
+.form-field .form-field + .form-field {
+  float: left;
+  width: 100%;
+}
 .form-inline-field {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   vertical-align: baseline;
   margin-right: 1rem;
 }
 .form-field-label {
   position: relative;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
   white-space: normal;
+  vertical-align: baseline;
   margin-right: 2rem;
-  width: 18rem;
 }
 .form-field-content {
   position: relative;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
   white-space: normal;
-  width: 30rem;
-}
-.form-field-content:first-child {
-  margin-left: 20rem;
-}
-.form-field-content .form-field + .form-field {
-  float: left;
-  width: 100%;
+  vertical-align: baseline;
 }
 .form-hint {
   position: relative;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
   white-space: normal;
+  vertical-align: baseline;
   width: 18rem;
   margin-left: 4rem;
 }
@@ -1466,6 +1465,8 @@ a.site-nav-link:not([href]):before {
   line-height: 2.6rem;
 }
 .form-hint-content {
+  position: relative;
+  display: block;
   float: left;
   width: 100%;
   height: 0;
@@ -1483,6 +1484,15 @@ a.site-nav-link:not([href]):before {
 }
 .form-pseudo-link:hover {
   color: #d00;
+}
+.form_Default .form-field-label {
+  width: 18rem;
+}
+.form_Default .form-field-content {
+  width: 30rem;
+}
+.form_Default .form-field-content:first-child {
+  margin-left: 20rem;
 }
 .toggler {
   position: relative;

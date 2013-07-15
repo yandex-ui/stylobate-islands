@@ -10,7 +10,7 @@ page_type: examples
 
 ## Создать правило
 
-<div class="form">
+<div class="form form_Default">
     <div class="form-fieldset">
         <div class="form-legend">Если письмо содержит</div>
 
