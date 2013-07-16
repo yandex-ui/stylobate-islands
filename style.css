@@ -2009,6 +2009,10 @@ hr {
   position: absolute;
   width: 300px;
 }
+.aside_fixed {
+  position: fixed;
+  top: 2rem;
+}
 .aside-nav {
   overflow: auto;
   overflow-x: hidden;
