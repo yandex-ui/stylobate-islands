@@ -15,42 +15,6 @@ permalink: /blocks/
 
 ## Кнопки {#button}
 
->     .button
->       kind: button
->       skin: button
->
-> <a class="button" href="#x">
->     <span class="button-content">Кнопка ссылкой</span>
-> </a>
-
->     .small-button
->       kind: button
->       skin: button small
->
-> <div>
->     <button class="small-button" type="button">
->         <span class="button-content">Маленькая кнопка кнопкой</span>
->     </button>
-> </div>
-
->     .action-button
->       kind: button
->       skin: action-button
->
-> <a class="action-button" href="#x">
->   <span class="button-content">Кнопка ссылкой</span>
-> </a>
-
->     .small-action-button
->       kind: button
->       skin: action-button small
->
-> <div>
->     <button class="small-action-button" type="button">
->         <span class="button-content">Маленькая кнопка кнопкой</span>
->     </button>
-> </div>
-
 >     .pseudo-button
 >       kind: button
 >       skin: pseudo-button
@@ -64,51 +28,6 @@ permalink: /blocks/
 > <div>
 >     <button class="small-pseudo-button" type="button">Маленькая псевдокнопка кнопкой</button>
 > </div>
-
->     .fly-button
->       kind: button
->       skin: button fly
->
-> <div>
->     <button class="fly-button" type="button">
->         <span class="button-content">Летающая кнопка</span>
->     </button>
-> </div>
-
->     .is-disabled
->
-> <div>
->     <a class="button is-disabled">
->         <span class="button-content">Кнопка ссылкой</span>
->     </a>
->
->     <button class="small-action-button is-disabled" type="button" disabled="disabled">
->         <span class="button-content">Маленькая кнопка кнопкой</span>
->     </button>
->
->     <a class="pseudo-button is-disabled">Псевдокнопка ссылкой</a>
-> </div>
-
-Ещё раз: не нужно в html выплёвывать все модификации. Если нужна маленькая летающая кнопка, то, конечно, можно наплодить классов вида `small-fly-action-button`, но на самом деле стоит к каждому элементу интерфейса подходить индивидуальнее, и для подобной кнопки прописать всё соответствующим образом в CSS:
-
->     .super-button
->       kind: button
->       skin: action-button fly small
->
-> <div>
->     <button class="super-button" type="button">
->         <span class="button-content">Супер кнопка</span>
->     </button>
-> </div>
-
-{:#simple-button}
-Как видно выше, у кнопки должен быть внутренний элемент `.button-content`, это нужно для правильного «нажимания» кнопки. Но есть и альтернативный вариант — использовать модификатор скина `one-element`, но такую кнопку рекомендуется делать только если нет возможности в коде добавить дополнительный элемент.
-
->     .simple-button
->       kind: button
->       skin: button one-element
->
-> <a class="simple-button" href="#x">Кнопка одним элементом</a>
 
 
 ### Кнопки-переключатели {#toggle-button}
