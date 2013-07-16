@@ -301,6 +301,9 @@ code[class*="language-"] {
 .token.entity {
   cursor: help;
 }
+.token a {
+  color: inherit;
+}
 code,
 pre,
 kbd {
