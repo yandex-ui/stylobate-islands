@@ -1,8 +1,8 @@
 [submodule "stylobate"]
 	path = stylobate
 	url = git://github.com/kizu/stylobate.git
-[submodule "_skins/islands"]
-	path = _skins/islands
+[submodule "skins/islands"]
+	path = skins/islands
 	url = git://github.com/yandex-ui/stylobate-islands.git
 [submodule "_includes/tenkan"]
 	path = _includes/tenkan
