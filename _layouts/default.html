@@ -84,6 +84,9 @@ $(".toggle-button:not(.is-disabled)").click(function(){
 $('.js-toggler').click(function(){
     $(this).next().toggleClass('is-hidden');
 });
+$('.js-outer-toggler').click(function(){
+    $(this).parent().next().toggleClass('is-hidden');
+});
 
     </script>
 </body>
