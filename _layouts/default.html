@@ -62,13 +62,15 @@
 
         <div class="content text">
             <div class="content-section">
-				{{ content | replace:'<pre class="styl">','<span class="small-pseudo-button example-source js-toggler">styl</span><pre class="is-hidden">' | replace:'<code>','<code class="language-css">' }}
+				{{ content | replace:'<pre class="styl">','<span class="small-pseudo-button example-source js-toggler">styl</span><pre class="is-hidden">' | replace:'<code>','<code class="language-styl">' }}
 			</div>
 		</div>
     </div>
     <script src="https://yandex.st/jquery/2.0.2/jquery.min.js"></script>
     <script src="{{ site.production_url }}/prism.js?v={{ site.version }}"></script>
     <script>
+
+Prism.languages.styl = Prism.languages.css
 
 $("[data-modal]").click(function(){
     $('#' + $(this).attr('data-modal')).toggleClass('is-hidden');
