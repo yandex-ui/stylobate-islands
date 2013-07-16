@@ -5,14 +5,16 @@
 	<meta name="viewport" content="width=device-width"/>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,IE=edge"/><!--[if gt IE 7]><!-->
-    <link rel="stylesheet" href="{{ site.production_url }}/style.css" /><!--<![endif]--><!--[if lt IE 8]>
-    <link rel="stylesheet" href="{{ site.production_url }}/style.ie.css" /><![endif]-->
+    <link rel="stylesheet" href="{{ site.production_url }}/style.css?v={{ site.version }}" /><!--<![endif]--><!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ site.production_url }}/style.ie.css?v={{ site.version }}" /><![endif]-->
 
-	{% if page_have_translation %}{% if lang == 'en' %}
-	<link rel="alternate" hreflang="en" href="{{ site.production_url }}{{ page.url | remove:'index.html' }}" />
-	<link rel="alternate" hreflang="ru" href="{{ site.production_url }}{{ page.url | replace:'/en/','/' | remove:'index.html' }}" />{% else %}
-	<link rel="alternate" hreflang="en" href="{{ site.production_url }}/en{{ page.url | remove:'index.html' }}" />
-	<link rel="alternate" hreflang="ru" href="{{ site.production_url }}{{ page.url | remove:'index.html' }}" />{% endif %}{% endif %}
+    {% if false %}
+    	{% if page_have_translation %}{% if lang == 'en' %}
+    	<link rel="alternate" hreflang="en" href="{{ site.production_url }}{{ page.url | remove:'index.html' }}" />
+    	<link rel="alternate" hreflang="ru" href="{{ site.production_url }}{{ page.url | replace:'/en/','/' | remove:'index.html' }}" />{% else %}
+    	<link rel="alternate" hreflang="en" href="{{ site.production_url }}/en{{ page.url | remove:'index.html' }}" />
+    	<link rel="alternate" hreflang="ru" href="{{ site.production_url }}{{ page.url | remove:'index.html' }}" />{% endif %}{% endif %}
+    {% endif %}
 
     <title>{{ processed_title }} — Прототип островов на Стилобате</title>
 </head>
@@ -65,7 +67,7 @@
 		</div>
     </div>
     <script src="https://yandex.st/jquery/2.0.2/jquery.min.js"></script>
-    <script src="{{ site.production_url }}/prism.js"></script>
+    <script src="{{ site.production_url }}/prism.js?v={{ site.version }}"></script>
     <script>
 
 $("[data-modal]").click(function(){
