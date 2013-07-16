@@ -205,9 +205,7 @@ a.site-nav-link:not([href]):before {
   box-shadow: inset 2px 0 #ddd;
   margin: 0 0 2rem;
 }
-.example-title,
-.example > pre,
-.content-section > blockquote > pre {
+.example-title {
   margin-bottom: 0.6rem;
   font-size: 1.3rem;
   line-height: 1.8rem;
@@ -215,6 +213,111 @@ a.site-nav-link:not([href]):before {
 }
 .example-title-mark {
   color: #444;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #000;
+  text-shadow: 0 1px #fff;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+code[class*="language-"] {
+  background: #f5f2f0;
+}
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #778090;
+}
+.token.punctuation {
+  color: #999;
+}
+.namespace {
+  opacity: 0.7;
+}
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+  color: #905;
+}
+.token.selector,
+.token.attr-name,
+.token.string {
+  color: #690;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: rgba(255,255,255,0.5);
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a;
+}
+.token.regex,
+.token.important {
+  color: #e90;
+}
+.token.important {
+  font-weight: bold;
+}
+.token.entity {
+  cursor: help;
+}
+code,
+pre,
+kbd {
+  font-family: Monaco, Consolas, monospace;
+  font-size: 0.87em;
+}
+pre > code {
+  font-size: 1em;
+}
+pre {
+  position: relative;
+  overflow: hidden;
+  overflow-x: auto;
+  padding: 0;
+}
+pre > code {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1rem 1.6rem;
+  margin-bottom: 0;
 }
 .isle {
   position: relative;

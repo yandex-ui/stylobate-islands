@@ -60,11 +60,12 @@
 
         <div class="content text">
             <div class="content-section">
-				{{ content }}
+				{{ content | replace:'<code>','<code class="language-css">' }}
 			</div>
 		</div>
     </div>
     <script src="https://yandex.st/jquery/2.0.2/jquery.min.js"></script>
+    <script src="{{ site.production_url }}/prism.js"></script>
     <script>
 
 $("[data-modal]").click(function(){

@@ -5,11 +5,36 @@
 
   margin: 0 0 gap_l
 
-.example-title,
-.example > pre,
-.content-section > blockquote > pre
+.example-title
   skin: para2
   color: #999
 
 .example-title-mark
   color: #444
+
+
+@import "prism"
+
+// Where to move this stuff?
+code,
+pre,
+kbd
+  font-family: Monaco, Consolas, monospace
+  font-size: 0.87em
+
+pre > code
+  font-size: 1em
+
+
+pre
+  position: relative
+  overflow: hidden
+  overflow-x: auto
+
+  padding: 0
+
+pre > code
+  display: inline-block
+  vertical-align: top
+  padding: gap_s gap_m
+  margin-bottom: 0
