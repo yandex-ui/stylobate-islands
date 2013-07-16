@@ -62,7 +62,7 @@
 
         <div class="content text">
             <div class="content-section">
-				{{ content | replace:'<code>','<code class="language-css">' }}
+				{{ content | replace:'<pre class="styl">','<span class="pseudo-link js-toggler">.styl</span><pre class="is-hidden">' | replace:'<code>','<code class="language-css">' }}
 			</div>
 		</div>
     </div>
@@ -78,6 +78,11 @@ $(".modal-paranja, .modal-close").click(function(){
 });
 $(".toggle-button:not(.is-disabled)").click(function(){
     $(this).toggleClass('is-checked');
+});
+
+// Toggling code blocks
+$('.js-toggler').click(function(){
+    $(this).next().toggleClass('is-hidden');
 });
 
     </script>
