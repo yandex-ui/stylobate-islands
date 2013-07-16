@@ -6,11 +6,16 @@
   // It would be nice to make nav/nav-item skin/pattern with padding here and there
 
 
-.site-nav-link
+.site-nav-link,
+.site-nav-outer-link
   kind: block inline
   skin: link
 
   padding: gap_s 0.5*gap_m
+
+.site-nav-outer-link
+  skin: outer-link
+  float: right
 
 
 a.site-nav-link:not([href])

@@ -91,7 +91,8 @@ h1,h2,h3 {
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
   padding: 0 1.2rem;
 }
-.site-nav-link {
+.site-nav-link,
+.site-nav-outer-link {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -100,7 +101,17 @@ h1,h2,h3 {
   text-decoration: none;
   padding: 1rem 0.8rem;
 }
-.site-nav-link:hover {
+.site-nav-link:hover,
+.site-nav-outer-link:hover {
+  color: #d00;
+}
+.site-nav-outer-link {
+  cursor: pointer;
+  color: #070;
+  text-decoration: none;
+  float: right;
+}
+.site-nav-outer-link:hover {
   color: #d00;
 }
 a.site-nav-link:not([href]) {
