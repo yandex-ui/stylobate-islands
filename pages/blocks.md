@@ -10,44 +10,7 @@ permalink: /blocks/
 
 # Блоки
 
-**Важно:** всё это дело находится в активной разработке, всё может поменяться, поломаться, исправиться.
-
-Это только вершина айсберга, пример вёрстки островного дизайна на основе [новой концепции](../). Другие реализации: [дизайнерский прототип](http://islands.yandex-team.ru/pages/blocks.xml), [островные библиотеки](http://clubs.at.yandex-team.ru/lego-dev/replies.xml?item_no=4095).
-
-
-
-## Ссылки {#link}
-
->     .link
->       skin: link underline
->
-> <a class="link" href="#x">In CTR we trust</a>
-
-И внешняя ссылка
-
->     .outer-link
->       skin: outer-link underline
->
-> <a class="outer-link" href="#x">We don't care</a>
-
-Псевдоссылка
-
->     .pseudo-link
->       skin: pseudo-link
->
-> <a class="pseudo-link">I'm not a link really</a>
-
-Сложная ссылка с кастомным цветом
-
->     .complex-link
->       skin: link #000
->
->     .link-inner
->       skin: link nested underline
->
-> <a class="complex-link">© «<span class="link-inner">Яндекс</span>»</a>
-
-<!-- И потом ещё будет с иконкой -->
+**Важно:** Это уже устаревшая документация, так как основной смысл этой документации — скины, то документация будет перенесена на [соответствующую страницу](../skins/). Эта же страница постепенно растеряет всё, что на ней есть, и станет документацией по изготовлению блоков на основе скинов.
 
 
 ## Кнопки {#button}

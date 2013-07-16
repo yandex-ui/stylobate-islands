@@ -367,7 +367,12 @@ hr {
   color: #d00;
 }
 .complex-link {
-  skin-islands-complex-link: #000;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+.complex-link:hover {
+  color: #d00;
 }
 .link-inner {
   text-decoration: underline;
