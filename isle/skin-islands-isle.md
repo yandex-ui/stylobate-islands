@@ -9,10 +9,10 @@
 
 > <div class="isle" style="width: 200px; height: 100px;"></div>
 >
-> {:.styl}
 >     .isle
 >       kind: block
 >       skin: isle
+> {:.styl}
 
 Летающий блок создан для модальных окон, выпадающих списков и прочих элементов верхнего слоя, в остальных случаях следует обходиться обычным островом.
 
@@ -20,8 +20,8 @@
 
 > <div class="flying-isle" style="width: 200px; height: 100px;"></div>
 >
-> {:.styl}
 >     .flying-isle
 >       kind: block
 >       skin: isle fly
+> {:.styl}
 
