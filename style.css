@@ -214,6 +214,9 @@ a.site-nav-link:not([href]):before {
 .example-title-mark {
   color: #444;
 }
+span.example-source {
+  margin-top: 1rem;
+}
 code[class*="language-"],
 pre[class*="language-"] {
   color: #000;
