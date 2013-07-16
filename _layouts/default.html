@@ -30,9 +30,11 @@
         {% capture menu_cache %}
             {% assign menu_result = '' %}
             {% assign current_post_name = page.url | remove:'/' | remove:'.html' %}
+            {% if current_post_name == '' %}{% assign current_post_name = "index" %}{% endif %}
             {% for item in site.menu %}
                 {% for post in site.pages %}
                     {% assign post_name = post.url | remove:'/' | remove:'.html' %}
+                    {% if post_name == '' %}{% assign post_name = "index" %}{% endif %}
                     {% if post_name == item %}
                         {% assign processed_post = post %}
                         {% include tenkan/get_title.md %}

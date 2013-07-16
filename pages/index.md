@@ -4,6 +4,8 @@ layout: default
 
 page_type: index
 
+permalink: /
+
 ---
 
 # Вводная {#intro}
