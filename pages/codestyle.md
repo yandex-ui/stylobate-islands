@@ -16,8 +16,8 @@ permalink: /codestyle/
 
 Во-первых, мы используем минималистичный стиль написания Стайлуса, из излишеств используем двоеточие между свойством и значением (с последующим пробелом):
 
->     .foo
->       width: 10px
+    .foo
+      width: 10px
 
 Отступы — два пробела, никаких табов.
 
@@ -29,8 +29,8 @@ permalink: /codestyle/
 
 Внутри `url()` используем двойные кавычки:
 
->     .foo
->       background: url("some-path-to-pic.png")
+    .foo
+      background: url("some-path-to-pic.png")
 
 Это нужно для того, чтобы не пасть жертвой гибкого синтаксиса Стайлуса, который, если вы создадите переменную `png = "lol"`, подставит её значение в подобном случае (т.е. Стайлус содержимое урла без кавычек будет воспринимать как обычный аргумент, в котором могут использоваться переменные).
 
@@ -54,14 +54,14 @@ permalink: /codestyle/
 
 Пишем так:
 
->     .foo
->       width: 10px
->
->     .foo:hover
->       background: red
->
->     .foo-bar
->       height: 10px
+    .foo
+      width: 10px
+
+    .foo:hover
+      background: red
+
+    .foo-bar
+      height: 10px
 
 Исключения два:
 
@@ -71,94 +71,94 @@ permalink: /codestyle/
 
 При использовании вложенности амперсанд надо указывать __всегда__, примерно так:
 
->     .foo
->       color: blue
->
->       &:hover
->         color: red
->
->       &:active
->         background: lime
+    .foo
+      color: blue
+
+      &:hover
+        color: red
+
+      &:active
+        background: lime
 
 
 ## Структурирование {#structure}
 
 Если в файле находится много всяких смысловых блоков, необходимо их группировать и снабжать описательными комментариями. При этом, друг от друга блоки отделяются двумя переносами строки для большей читаемости:
 
->     // Some block doing cool stuff
->     .foo
->       width: 10px
->
->     .foo__element
->       height: 10px
->
->
->     // Another strange block
->     .strange-foo
->       position: sticky
->       right: 100px
->
->     .strange-foo_dope
->       left: 10px
+    // Some block doing cool stuff
+    .foo
+      width: 10px
+
+    .foo__element
+      height: 10px
+
+
+    // Another strange block
+    .strange-foo
+      position: sticky
+      right: 100px
+
+    .strange-foo_dope
+      left: 10px
 
 Во вложенных конструкциях (будь то условия Стайлуса, или вложенные блоки правил) необходимо по возможности класть их в конец блока правил, после стилей применяемых к исходному селектору, при этом их нужно отбивать пустой строкой:
 
->     .foo
->       color: red
->       background: lime
->
->       if $whatever == true
->         display: none
->       else
->         display: block
->
->       &:before
->         content: ''
+    .foo
+      color: red
+      background: lime
+
+      if $whatever == true
+        display: none
+      else
+        display: block
+
+      &:before
+        content: ''
 
 
 ## nib {#nib}
 
 Для разворачивания префсов используем nib, поэтому пишем CSS3-свойства без префиксов:
 
->     .fpp
->       border-radius: 10px
->       transition: transform 1s, width .4s linear
+    .fpp
+      border-radius: 10px
+      transition: transform 1s, width .4s linear
 
 а Ниб уже сам развернёт всё, что нужно:
 
->    .foo {
->      -webkit-border-radius: 10px;
->      border-radius: 10px;
->      -webkit-transition: -webkit-transform 1s, width 0.4s linear;
->      -moz-transition: -moz-transform 1s, width 0.4s linear;
->      -o-transition: -o-transform 1s, width 0.4s linear;
->      -ms-transition: -ms-transform 1s, width 0.4s linear;
->      transition: transform 1s, width 0.4s linear;
->    }
+   .foo {
+     -webkit-border-radius: 10px;
+     border-radius: 10px;
+     -webkit-transition: -webkit-transform 1s, width 0.4s linear;
+     -moz-transition: -moz-transform 1s, width 0.4s linear;
+     -o-transition: -o-transform 1s, width 0.4s linear;
+     -ms-transition: -ms-transform 1s, width 0.4s linear;
+     transition: transform 1s, width 0.4s linear;
+   }
 
 
 ## `if ie` {#if-ie}
 
 Мы используем отдельную таблицу стилей для ie, которую собираем, используя оригинальную таблицу стилей, пропущенную с установленной переменной Стайлуса `ie = true`. С помощью этого можно и нужно писать условия для ie прямо в основных таблицах стилей.
 
->     .foo
->       width: 10px
->       width: 12px if ie
->
->     if ie
->       .foo-ololo
->         height: 12px
+    .foo
+      width: 10px
+      width: 12px if ie
+
+    if ie
+      .foo-ololo
+        height: 12px
 
 Таким образом можно как переопределять те или иные свойства (можно заметить, что при использовании в одном блоке правил достаточно использовать условие только во второй раз — для большинства свойств CSSO уберёт лишние стили сам), так и доопределять целые селекторы, используя условие блочно.
 
 Кроме того, можно использовать отрицание `if !ie` — в таком случае можно будет задавать стили, которые **не попадут** в конечную таблицу стилей для ie. Это может быть полезно или для того, чтобы гарантированно не включать где-то неотключаемый hasLayout, или же просто для оптимизации: раз ie не поддерживает псевдоэлементы, то можно их обрамлять в условия так, что в таблице стилей для ie не будет этих, лишних для него, стилей:
 
->     .foo
->       width: 10px
->
->     if !ie
->       .foo:before
->         content: 'ololo'
+    .foo
+      width: 10px
+
+    if !ie
+      .foo:before
+        content: 'ololo'
 
 ### [if-ie.styl](https://github.com/kizu/if-ie.styl) {#if-ie_styl}
 
