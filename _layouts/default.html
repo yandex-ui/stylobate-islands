@@ -50,7 +50,7 @@
     <div class="page-content">
         <div class="aside">
             <div class="aside-nav">
-                {% assign toc_input = page %}
+                {% assign toc_input = content %}
                 {% capture lolcache %}{% include tenkan/toc.md %}{% endcapture %}
                 {% for toc_id in toc_headers_id %}
                     {% if toc_headers_indexes[forloop.index0] != '' and toc_headers_indexes[forloop.index0] != '1' %}
