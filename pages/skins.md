@@ -21,7 +21,8 @@ permalink: /skins/
 
 Это только вершина айсберга, пример вёрстки островного дизайна на основе [новой концепции](../). Другие реализации: [дизайнерский прототип](http://islands.yandex-team.ru/pages/blocks.xml), [островные библиотеки](http://clubs.at.yandex-team.ru/lego-dev/replies.xml?item_no=4095).
 
-{% for item in site.pages %}{% if item.path contains 'skins/islands/' %}
+{% assign sorted_pages = site.pages | sort:'path' %}
+{% for item in sorted_pages %}{% if item.path contains 'skins/islands/' %}
 {:#{{ item.path | split:'/' | last | remove:'.md' }}}
 {{ item.content }}
 
