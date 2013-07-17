@@ -197,6 +197,9 @@ a.site-nav-link:not([href]):before {
   margin-bottom: 0.6rem;
   font-size: 1.3rem;
   line-height: 1.8rem;
+}
+.text ol,
+.text ul {
   max-width: 42em;
 }
 .example,
