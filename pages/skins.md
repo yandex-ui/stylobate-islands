@@ -28,8 +28,8 @@ permalink: /skins/
 
 - - -
 
-<span class="small-pseudo-button js-outer-toggler">исходный код скина</span>  
-[оно же на Гитхабе](https://github.com/yandex-ui/stylobate-islands/tree/master/{{ item.path | split:'/' | last | remove:'.md' | remove:'skin-islands-' }}/){:.outer-link}
+<span class="small-pseudo-button toggle-button js-outer-toggler"><span class="button-content">исходный код скина</span></span>  
+[оно же на Гитхабе](https://github.com/yandex-ui/stylobate-islands/tree/master/{{ item.path | split:'/' | last | split:'_' | first | remove:'.md' | remove:'skin-islands-' }}/){:.outer-link}
 
-<pre class="language-styl is-hidden" data-src="islands/{{ item.path | split:'/' | last | remove:'.md' | remove:'skin-islands-' }}/{{ item.path | split:'/' | last | replace:'.md','.styl' }}"></pre>
+<pre class="language-styl is-hidden" data-src="islands/{{ item.path | split:'/' | last | split:'_' | first | remove:'.md' | remove:'skin-islands-' }}/{{ item.path | split:'/' | last | replace:'.md','.styl' }}"></pre>
 {% endif %}{% endfor %}
