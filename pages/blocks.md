@@ -184,15 +184,15 @@ JS-Чекбоксы в группе. Из-за особенностей вёрс
 >       kind: icon
 >       skin: checkbox sizeless
 >
->       width: gap_m
->       height: gap_m
+>       width: $m
+>       height: $m
 >
 >     .small-radio
 >       kind: icon
 >       skin: radio sizeless
 >
->       width: gap_m - 0.2*rem
->       height: gap_m - 0.2*rem
+>       width: $m - 0.2*rem
+>       height: $m - 0.2*rem
 >
 > <h2>
 >     <label class="toggler">

@@ -7,7 +7,7 @@
 
 .aside_fixed
   position: fixed
-  top: gap_l
+  top: $l
 
 .aside-nav
   overflow: auto
@@ -20,8 +20,8 @@
   text-decoration: none
   color: #000
 
-  padding: gap_xs gap_s
-  padding-right: gap_s*2 + gap_xs
+  padding: $xs $s
+  padding-right: $s*2 + $xs
 
   box-shadow: 0 -1px 0 rgba(0,0,0,0.15)
 
@@ -44,7 +44,7 @@
                 0 1px 0 #1981CA
   for i in 2..6
     &_{i}
-      padding-left: gap_m*i
+      padding-left: $m*i
       font-size: $text_s
 
 .aside-nav-item:after
@@ -52,9 +52,9 @@
 
   position: absolute
   top: 0
-  right: gap_s
+  right: $s
 
-  font-size: gap_l
+  font-size: $l
 
-  line-height: round(gap_l + 2*gap_xs,1)
+  line-height: round($l + 2*$xs,1)
 

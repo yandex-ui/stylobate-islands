@@ -1,9 +1,9 @@
 .example,
 .content-section > blockquote
-  padding: 0 0 0 gap_l
+  padding: 0 0 0 $l
   box-shadow: inset 0.2*rem 0 #DDD
 
-  margin: 0 0 gap_l
+  margin: 0 0 $l
 
 .example-title
   skin: para2
@@ -13,7 +13,7 @@
   color: #444
 
 span.example-source
-  margin-top: gap_s
+  margin-top: $s
 
 @import "prism"
 
@@ -34,23 +34,23 @@ pre
   overflow-x: auto
 
   padding: 0
-  margin: 0 -1*gap_m gap_m
+  margin: 0 -1*$m $m
 
 blockquote > pre
-  margin-top: gap_s
-  margin-left: -1*(gap_l - 0.2*rem)
+  margin-top: $s
+  margin-left: -1*($l - 0.2*rem)
 
 pre > code
   display: inline-block
   vertical-align: top
-  padding: gap_s gap_m
+  padding: $s $m
   margin-bottom: 0
 
 blockquote > pre > code
-  padding-left: gap_l - 0.2*rem
+  padding-left: $l - 0.2*rem
 
 hr
-  margin: gap_l 0
+  margin: $l 0
   padding: 0
   border: none
   border-top: 1px solid #DDDCDA

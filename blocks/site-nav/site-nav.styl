@@ -2,7 +2,7 @@
   kind: block
   skin: isle 0.15
 
-  padding: 0 (gap_l - 0.5*gap_m)
+  padding: 0 ($l - 0.5*$m)
   // It would be nice to make nav/nav-item skin/pattern with padding here and there
 
 
@@ -11,7 +11,7 @@
   kind: block inline
   skin: link
 
-  padding: gap_s 0.5*gap_m
+  padding: $s 0.5*$m
 
 .site-nav-outer-link
   skin: outer-link
@@ -23,6 +23,6 @@ a.site-nav-link:not([href])
 
   &:before
     content: ""
-    kind: fill top 0 0.5*gap_m
+    kind: fill top 0 0.5*$m
 
     border-top: 2px solid
