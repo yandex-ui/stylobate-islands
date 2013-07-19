@@ -1634,6 +1634,11 @@ hr {
 .form-pseudo-link:hover {
   color: #d00;
 }
+.default-form {
+  position: relative;
+  display: block;
+  cursor: default;
+}
 .default-form .form-field-label {
   width: 18rem;
 }
