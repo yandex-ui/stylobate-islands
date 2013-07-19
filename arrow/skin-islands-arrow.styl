@@ -1,0 +1,39 @@
+skin-islands-arrow()
+  unless $height = get_unit(arguments)
+    $height = 4.1*rem
+  unless $color = get_color(arguments)
+    $color  = #FFDB4C
+
+  // There is no available gaps to make such paddings, so compute it
+  padding: 0.8334*$xs 0.875*$m 0.8334*$xs 0.8334*$xs
+
+  // FIXME: round & units problem
+  //height: $height - (0.8334*$xs + 0.8334*$xs)
+
+  // This could be `skin: h3`
+  font-size: 1.8*rem
+  line-height: 2.6*rem
+
+  background: $color 
+
+  unless no-elements in arguments
+    &:before
+      content: ""
+      skin-islands-arrow-helper($height, $color)
+
+skin-islands-arrow-helper($height, $color)
+  position: absolute
+  top: 50%
+  right: 0
+  $sqrt2 = 1.414213562
+  width: $height * (1/$sqrt2)
+  height: $height * (1/$sqrt2)
+
+  // tfZ should be there only if alpha == 1
+  -webkit-transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg) translateZ(0)
+  -moz-transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg)
+  -o-transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg)
+  transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg)
+  background: -webkit-linear-gradient(45deg, $color 50%,transparent 50%)
+  background: -moz-linear-gradient(45deg, $color 50%,transparent 50%)
+  background: linear-gradient(45deg, $color 50%,transparent 50%)
