@@ -19,6 +19,13 @@ $('.js-outer-toggler').click(function(){
     $(this).parent().next().toggleClass('is-hidden');
 });
 
+// Toggling tabs
+$('blockquote .tabs-item').click(function(){
+    $(this).siblings().removeClass('tabs-item_selected');
+    $(this).addClass('tabs-item_selected');
+});
+
+
 // Keeping the position of the sidebar
 
 var lastScroll = $(window).scrollTop();
