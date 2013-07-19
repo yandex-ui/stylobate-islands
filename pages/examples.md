@@ -10,9 +10,11 @@ permalink: /examples/
 
 # Примеры
 
+На этой странице будут собраны различные примеры использования скинов и блоков, пока что тут только один пример, но в будущем тут будет больше всего.
+
 ## Форма «Создать правило» {#new-rule}
 
-<div class="form form_Default">
+<div class="default-form">
     <div class="form-fieldset">
         <div class="form-legend">Если письмо содержит</div>
 

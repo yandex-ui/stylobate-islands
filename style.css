@@ -1634,13 +1634,13 @@ hr {
 .form-pseudo-link:hover {
   color: #d00;
 }
-.form_Default .form-field-label {
+.default-form .form-field-label {
   width: 18rem;
 }
-.form_Default .form-field-content {
+.default-form .form-field-content {
   width: 30rem;
 }
-.form_Default .form-field-content:first-child {
+.default-form .form-field-content:first-child {
   margin-left: 20rem;
 }
 .toggler {
