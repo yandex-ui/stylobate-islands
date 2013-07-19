@@ -1,5 +1,5 @@
 skin-islands-tabs()
-  margin: 0 -0.5*gap_m
+  margin: 0 -0.5*$m
 
   if nowrap in arguments
     white-space: nowrap
@@ -14,7 +14,7 @@ skin-islands-tabs()
 skin-islands-tabs-item()
   skin-islands-link(arguments)
   line-height: 2em
-  padding: 0.3*rem 0.5*gap_m
+  padding: 0.3*rem 0.5*$m
 
 skin-islands-tabs-item_selected()
   skin-islands-link_selected(arguments)
@@ -25,6 +25,6 @@ skin-islands-tabs-item_selected()
       skin-islands-tabs-item_selected-helper(arguments)
 
 skin-islands-tabs-item_selected-helper()
-  kind: fill top -1px 0.5*gap_m
+  kind: fill top -1px 0.5*$m
 
   border-top: 2px solid

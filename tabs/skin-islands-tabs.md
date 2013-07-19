@@ -32,3 +32,13 @@
 >       kind: block
 >       skin: tabs small
 > {:.styl}
+
+> <div class="flying-isle">
+>     <div class="isle-content">
+>         <div class="tabs">
+>             <a class="tabs-item tabs-item_selected">Войти</a
+>             ><a href="#x" class="tabs-item">Зарегистрироваться</a>
+>         </div>
+>         blah blah
+>     </div>
+> </div>
