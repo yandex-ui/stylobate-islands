@@ -39,7 +39,7 @@ skin-islands-proto-button()
 
   if small in arguments
     skin-islands-para2(no-margin)
-    padding: (gap_xs - 0.1*rem) (gap_m - 0.3*rem)
+    padding: ($xs - 0.1*rem) ($m - 0.3*rem)
 
   else if adaptive in arguments
     width: 1em
@@ -50,7 +50,7 @@ skin-islands-proto-button()
   else
     unless sizeless in arguments
       skin-islands-para(no-margin)
-      padding: (gap_xs - 0.1*rem) (gap_m - 0.1*rem)
+      padding: ($xs - 0.1*rem) ($m - 0.1*rem)
 
   unless no-active in arguments
     &:not(.is-disabled):active
