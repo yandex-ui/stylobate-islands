@@ -1936,10 +1936,6 @@ hr {
 .select:focus {
   outline: none;
 }
-.select,x::-moz-focus-inner {
-  color: transparent;
-  text-shadow: 0 0 0 #333;
-}
 .select:focus + .select-focus {
   position: absolute;
   top: 0;
@@ -1949,6 +1945,10 @@ hr {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
+}
+.select,x::-moz-focus-inner {
+  color: transparent;
+  text-shadow: 0 0 0 #333;
 }
 .button > .select {
   padding: 0.5rem 1.5rem;

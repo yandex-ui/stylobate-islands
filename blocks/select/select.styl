@@ -15,29 +15,35 @@
   color: inherit
   background: transparent
 
+  // Does it helps anyone?
   &:focus
     outline: none
-
-  &{",x::-moz-focus-inner"}
-    color: transparent
-    text-shadow: 0 0 0 #333
 
   &:focus + &-focus
     kind: fill
     z-index: 9
     skin: button_focus_style
 
+  // Removing dotted outline from Fx
+  &{",x::-moz-focus-inner"}
+    color: transparent
+    text-shadow: 0 0 0 #333
+
+  // Adjusting the select's size to be clickable
   .button > &
     padding: 0.5rem 1.5rem
     margin: -0.5rem -1.5rem
 
+    // Fixing padding in Fx
     &{",x::-moz-focus-inner"}
       padding: 0.6rem 1.1rem
 
+    // Fixing margins in Opera
     &{",x:-o-prefocus"}
       margin: -0.3rem -1.5rem
       margin-right: -3rem
 
+  // In Opera the va suxx, also hiding arrow using oh
   &-wrap{",x:-o-prefocus"}
     overflow: hidden
     vertical-align: middle
