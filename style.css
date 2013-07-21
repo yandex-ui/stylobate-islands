@@ -1919,6 +1919,52 @@ hr {
   margin: 0 -0.8rem;
   font-size: 1.3rem;
 }
+.select {
+  position: relative;
+  display: block;
+  z-index: 10;
+  -webkit-appearance: none;
+  -moz-appearance: menuitem;
+  -moz-appearance: window;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+}
+.select:focus {
+  outline: none;
+}
+.select,x::-moz-focus-inner {
+  color: transparent;
+  text-shadow: 0 0 0 #333;
+}
+.select:focus + .select-focus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+.button > .select {
+  padding: 0.5rem 1.5rem;
+  margin: -0.5rem -1.5rem;
+}
+.button > .select,x::-moz-focus-inner {
+  padding: 0.6rem 1.1rem;
+}
+.button > .select,x:-o-prefocus {
+  margin: -0.3rem -1.5rem;
+  margin-right: -3rem;
+}
+.select-wrap,x:-o-prefocus {
+  overflow: hidden;
+  vertical-align: middle;
+}
 .page {
   margin: 0;
   padding: 0;
