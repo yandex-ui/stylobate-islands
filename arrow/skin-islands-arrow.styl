@@ -1,30 +1,33 @@
+$skin-islands-arrow-height ?= 4.2*rem
+$skin-islands-arrow-color  ?= #FFDB4C
+
 skin-islands-arrow()
-  unless $height = get_unit(arguments)
-    $height = 4.1*rem
-  unless $color = get_color(arguments)
-    $color  = #FFDB4C
+  $height = alike(arguments, $skin-islands-arrow-height)
+  $color = alike(arguments, $skin-islands-arrow-color)
 
-  if arrow in arguments
-    skin-islands-arrow-helper($height, $color)
+  if tail in arguments
+    skin-islands-arrow-helper(arguments)
   else
-    skin-islands-arrow-body($height, $color)
+    if search in arguments
+      padding: $xs - 0.1*rem $m - 0.2*rem $xs - 0.1*rem $xs - 0.1*rem
+    else
+      padding: $xs $x
 
-skin-islands-arrow-body($height, $color)
-  // There is no available gaps to make such paddings, so compute it
-  padding: 0.8334*$xs 0.875*$m 0.8334*$xs 0.8334*$xs
+    // This could be `skin: h3`
+    font-size: 1.8*rem
+    line-height: 2.6*rem
 
-  // This could be `skin: h3`
-  font-size: 1.8*rem
-  line-height: 2.6*rem
+    background: $color
 
-  background: $color 
+    unless no-elements in arguments
+      &:before
+        content: ""
+        skin-islands-arrow-helper(arguments)
 
-  unless no-elements in arguments
-    &:before
-      content: ""
-      skin-islands-arrow-helper($height, $color)
+skin-islands-arrow-helper()
+  $height = alike(arguments, $skin-islands-arrow-height)
+  $color = alike(arguments, $skin-islands-arrow-color)
 
-skin-islands-arrow-helper($height, $color)
   position: absolute
   top: 50%
   right: 0
