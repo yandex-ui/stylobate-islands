@@ -4,5 +4,8 @@ skin-islands-button_focus()
 
   &:after
     z-index: 9 // So it would be over other elements nearby
-    box-shadow: 0 0 6px 2px rgba(255,204,0, 0.7), inset 0 0 0 1px rgba(193,154,0, 0.2);
-    border-radius: inherit
+    skin-islands-button_focus_style()
+
+skin-islands-button_focus_style()
+  box-shadow: 0 0 6px 2px rgba(255,204,0, 0.7), inset 0 0 0 1px rgba(193,154,0, 0.2);
+  border-radius: inherit
