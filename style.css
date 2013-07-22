@@ -323,6 +323,9 @@ pre {
   padding: 0;
   margin: 0 -1.6rem 1.6rem;
 }
+li > pre {
+  margin-left: 0;
+}
 blockquote > pre {
   margin-top: 1rem;
   margin-left: -1.8rem;
