@@ -1976,6 +1976,7 @@ hr {
   font-size: 1.8rem;
   line-height: 2.6rem;
   background: #ffdb4c;
+  white-space: nowrap;
 }
 .service-arrow:before {
   content: "";
@@ -1998,6 +1999,7 @@ hr {
   vertical-align: top;
   padding: 0.5rem 1.4000000000000001rem 0.5rem 0.5rem;
   background: #ffdb4c;
+  white-space: nowrap;
 }
 .search-arrow:before {
   content: "";
@@ -2025,6 +2027,7 @@ hr {
   font-size: 1.8rem;
   line-height: 9.4rem;
   background: #f00;
+  white-space: nowrap;
   color: #fff;
 }
 .arrow-tail {
@@ -2040,6 +2043,39 @@ hr {
   background: -webkit-linear-gradient(45deg, #f00 50%, transparent 50%);
   background: -moz-linear-gradient(45deg, #f00 50%, transparent 50%);
   background: linear-gradient(45deg, #f00 50%, transparent 50%);
+}
+.search {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1.4000000000000001rem 0.5rem 0.5rem;
+  background: #ffdb4c;
+  white-space: nowrap;
+}
+.search:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 2.969848481766999rem;
+  height: 2.969848481766999rem;
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
+  -moz-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+  -o-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+  transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+  background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  background: -moz-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+}
+.search-field {
+  width: 100%;
+}
+.search-content {
+  display: block;
+  overflow: hidden;
+}
+.search-right {
+  float: right;
+  margin-left: 0.6rem;
 }
 .page {
   margin: 0;
@@ -2111,6 +2147,7 @@ hr {
   font-size: 1.8rem;
   line-height: 2.6rem;
   background: #ffdb4c;
+  white-space: nowrap;
 }
 .header-service:before {
   content: "";
