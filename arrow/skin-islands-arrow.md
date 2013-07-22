@@ -4,17 +4,18 @@
 ## Стрелка
 
 
-> <div class="search-arrow">
->     Фотки
->   <label class="field">
->     <a class="field-label" href="#x">
->         Маркет
->     </a>
->     <span class="field-content">
->         <input class="input-controller" type="text" value="Буквы">
->         <span class="input-view">&nbsp;</span>
->     </span>
->   </label>
+> <div>
+>   <div class="search-arrow">
+>     <label class="field">
+>       <a class="field-label" href="#x">
+>           Маркет
+>       </a>
+>       <span class="field-content">
+>           <input class="input-controller" type="text" value="Буквы">
+>           <span class="input-view">&nbsp;</span>
+>       </span>
+>     </label>
+>   </div>
 > </div>
 >
 >     .search-arrow
@@ -22,8 +23,10 @@
 >       skin: arrow search
 > {:.styl}
 
-> <div class="service-arrow">
->     Фотки
+> <div>
+>   <div class="service-arrow">
+>       Фотки
+>   </div>
 > </div>
 >
 >     .service-arrow
@@ -31,9 +34,11 @@
 >       skin: arrow
 > {:.styl}
 
-> <div class="arrow-body">
->   <div class="arrow-tail">&nbsp;</div>
->   Маркет
+> <div>
+>   <div class="arrow-body">
+>     <div class="arrow-tail">&nbsp;</div>
+>     Маркет
+>   </div>
 > </div>
 >
 >     .arrow-body
