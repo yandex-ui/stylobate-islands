@@ -4,11 +4,14 @@ skin-islands-arrow()
   unless $color = get_color(arguments)
     $color  = #FFDB4C
 
+  if arrow in arguments
+    skin-islands-arrow-helper($height, $color)
+  else
+    skin-islands-arrow-body($height, $color)
+
+skin-islands-arrow-body($height, $color)
   // There is no available gaps to make such paddings, so compute it
   padding: 0.8334*$xs 0.875*$m 0.8334*$xs 0.8334*$xs
-
-  // FIXME: round & units problem
-  //height: $height - (0.8334*$xs + 0.8334*$xs)
 
   // This could be `skin: h3`
   font-size: 1.8*rem
