@@ -14,7 +14,7 @@
 > {:.styl}
 >
 > <div class="arrow-body">
->   <div class="arrow-tail" />
+>   <div class="arrow-tail"> </div>
 >   Маркет
 > </div>
 >
