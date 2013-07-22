@@ -18,6 +18,8 @@ skin-islands-arrow()
     background: $color
     white-space: nowrap
 
+    margin-right: round(($height / 2) * (sin(PI * 30 / 180) / cos(PI * 30 / 180)), 3)
+
     unless no-elements in arguments
       &:before
         content: ""
