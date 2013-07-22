@@ -1977,6 +1977,7 @@ hr {
   line-height: 2.6rem;
   background: #ffdb4c;
   white-space: nowrap;
+  margin-right: 1.212rem;
 }
 .service-arrow:before {
   content: "";
@@ -2000,6 +2001,7 @@ hr {
   padding: 0.5rem 1.4000000000000001rem 0.5rem 0.5rem;
   background: #ffdb4c;
   white-space: nowrap;
+  margin-right: 1.212rem;
 }
 .search-arrow:before {
   content: "";
@@ -2028,6 +2030,7 @@ hr {
   line-height: 9.4rem;
   background: #f00;
   white-space: nowrap;
+  margin-right: 3.175rem;
   color: #fff;
 }
 .arrow-tail {
@@ -2050,6 +2053,7 @@ hr {
   padding: 0.5rem 1.4000000000000001rem 0.5rem 0.5rem;
   background: #ffdb4c;
   white-space: nowrap;
+  margin-right: 1.212rem;
 }
 .search:before {
   content: "";
@@ -2148,6 +2152,7 @@ hr {
   line-height: 2.6rem;
   background: #ffdb4c;
   white-space: nowrap;
+  margin-right: 1.212rem;
 }
 .header-service:before {
   content: "";
