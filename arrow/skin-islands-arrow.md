@@ -47,6 +47,40 @@
 >         vertical-align: top
 > {:.styl}
 
+Такая стрелка не тянется, так как там внутри просто обычные инлайн-блоки, ну а если надо сделать её тянущейся, нужно использовать `kind: shrink` с дополнительным враппером:
+
+> <div class="search">
+>   <button class="button search-right" type="button" tabindex="2">
+>       <span class="button-content">Найти</span>
+>   </button>
+>   <div class="search-content">
+>     <label class="search-field field">
+>       <a class="field-label" href="#x">
+>           Маркет
+>       </a>
+>       <span class="field-content">
+>           <input class="input-controller" type="text" value="Окна" tabindex="1">
+>           <span class="input-view">&nbsp;</span>
+>       </span>
+>     </label>
+>   </div>
+> </div>
+>
+>     .search
+>       kind: block
+>       skin: arrow search
+>
+>       &-field
+>         width: 100%
+>
+>       &-content
+>         kind: shrink
+>
+>       &-right
+>         kind: shrink-right
+>         margin-left: $xs
+> {:.styl}
+
 По умолчанию хвостик делается с помощью всевдоэлемента, если же нужно его отделить, можно использовать параметр `no-elements` на «теле» и `tail` на хвостике.
 
     skin: arrow no-elements
