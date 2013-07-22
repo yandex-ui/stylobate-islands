@@ -3,7 +3,9 @@
 
 ## Стрелка
 
-С названием сервиса
+Фирменная стрелка Яндекса, по умолчанию может использоваться для названия сервиса:
+
+    skin: arrow
 
 > <div>
 >   <div class="service-arrow">
@@ -16,8 +18,9 @@
 >       skin: arrow
 > {:.styl}
 
+Если же нужна поисковая стрелка, нужно использовать параметр `search` для правильных отступов (+ нужно поправить выравнивание поля внутри):
 
-С поисковым полем и кнопкой
+    skin: arrow search
 
 > <div>
 >   <div class="search-arrow">
@@ -39,9 +42,19 @@
 >     .search-arrow
 >       kind: block inline
 >       skin: arrow search
+>
+>       & > .field
+>         vertical-align: top
+>
 > {:.styl}
 
-С дополнительным элементом для хвостика
+По умолчанию хвостик делается с помощью всевдоэлемента, если же нужно его отделить, можно использовать параметр `no-elements` на «теле» и `tail` на хвостике.
+
+    skin: arrow no-elements
+
+    skin: arrow tail
+
+Кроме того, можно настраивать как цвет, так и высоту стрелки, передавая параметры соответствующих типов:
 
 > <div>
 >   <div class="arrow-body">
@@ -52,8 +65,8 @@
 >
 >     .arrow-body
 >       kind: block inline
->       skin: arrow no-elements red
+>       skin: arrow no-elements red 11*rem
 >
 >     .arrow-tail
->       skin: arrow tail red
+>       skin: arrow tail red 11*rem
 > {:.styl}

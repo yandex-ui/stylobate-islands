@@ -9,13 +9,11 @@ skin-islands-arrow()
     skin-islands-arrow-helper(arguments)
   else
     if search in arguments
-      padding: $xs - 0.1*rem $m - 0.2*rem $xs - 0.1*rem $xs - 0.1*rem
+      padding: ($xs - 0.1*rem) ($m - 0.2*rem) ($xs - 0.1*rem) ($xs - 0.1*rem)
     else
-      padding: $xs + 0.2*rem $m - 0.1*rem
-
-    // This could be `skin: h3`
-    font-size: 1.8*rem
-    line-height: 2.6*rem
+      padding: ($xs + 0.2*rem) ($m - 0.1*rem)
+      font-size: 1.8*rem
+      line-height: $height - (2*$xs + 0.4*rem)
 
     background: $color
 
@@ -30,16 +28,16 @@ skin-islands-arrow-helper()
 
   position: absolute
   top: 50%
-  right: 0
+  left: 100%
   $sqrt2 = 1.414213562
   width: $height * (1/$sqrt2)
   height: $height * (1/$sqrt2)
 
   // tfZ should be there only if alpha == 1
-  -webkit-transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg) translateZ(0)
-  -moz-transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg)
-  -o-transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg)
-  transform: translate(50%,-50%) scale(0.5,1) rotate(-135deg)
+  -webkit-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg) translateZ(0)
+  -moz-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
+  -o-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
+  transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
   background: -webkit-linear-gradient(45deg, $color 50%,transparent 50%)
   background: -moz-linear-gradient(45deg, $color 50%,transparent 50%)
   background: linear-gradient(45deg, $color 50%,transparent 50%)
