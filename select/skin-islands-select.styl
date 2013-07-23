@@ -1,0 +1,82 @@
+skin-islands-select()
+  z-index: 10
+
+  -webkit-appearance: none
+  -moz-appearance: menuitem
+  -moz-appearance: window
+  cursor: pointer
+
+  border: none
+  padding: 0
+  margin: 0
+
+  font: inherit
+
+  color: inherit
+  background: transparent
+
+  &:focus
+    outline: none
+
+  // Removing dotted outline from Fx
+  &{",x::-moz-focus-inner"}
+    color: transparent
+    text-shadow: 0 0 0 alike(arguments, #333)
+
+  // Hardcoded paddings, yeah, Opera and Fx are stupid there
+  unless no-paddings in arguments
+    skin-islands-select-padding(arguments)
+
+skin-islands-select-padding()
+  if small in arguments
+    $sides = ($xs - 0.1*rem) (2*$xs + $m - 0.3*rem) ($xs - 0.1*rem) ($m - 0.3*rem)
+  else
+    $sides = ($xs - 0.1*rem) (2*$xs + $m - 0.1*rem) ($xs - 0.1*rem) ($m - 0.1*rem)
+
+  padding: $sides[0] $sides[1] $sides[2] $sides[3]
+
+  // Fixing padding in Fx
+  &{",x::-moz-focus-inner"}
+    // Here in for opera one-liners 'cause there is a bug in Stylus
+    padding: ($sides[0] + 0.1*rem) ($sides[1] - 0.4*rem) ($sides[2] + 0.1*rem) ($sides[3] - 0.4*rem) unless small in arguments
+    padding: $sides[0] ($sides[1] - 0.4*rem) $sides[2] ($sides[3] - 0.4*rem) if small in arguments
+
+  // Fixing margins in Opera
+  &{",x:-o-prefocus"}
+    margin-right: -1.5*rem
+    padding-top: ($sides[0] + 0.2*rem)
+    padding-bottom: ($sides[0] + 0.2*rem) unless small in arguments
+    padding-bottom: ($sides[0] + 0.1*rem) if small in arguments
+
+skin-islands-select_focus()
+  select:focus + &
+    kind: fill
+    z-index: 9
+    skin-islands-button_focus_style()
+
+
+skin-islands-select-wrap()
+  padding: 0
+
+  // In Opera the va suxx, also hiding arrow using oh
+  &{",x:-o-prefocus"}
+    overflow: hidden
+    vertical-align: middle
+
+  &:after
+    top: 50%
+    right: 2*$xs
+    bottom: auto
+    left: auto
+
+    width: 6px
+    height: 6px
+    border-bottom: 2px solid
+    border-right: 2px solid
+    margin: -5px -2px 0 0
+
+    color: #000
+
+    -webkit-transform: scale(0.75) rotate(45deg)
+    -moz-transform: scale(0.75) rotate(45deg)
+    transform: scale(0.75) rotate(45deg)
