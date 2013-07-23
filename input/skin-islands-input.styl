@@ -3,6 +3,10 @@ skin-islands-input()
   skin-islands-input-box(arguments)
   skin-islands-input-view(arguments)
 
+  // When it's on a single element, pop it to the top on focus
+  &:focus
+    z-index: 9
+
 skin-islands-input-box()
   -moz-box-sizing: border-box
   box-sizing: border-box
