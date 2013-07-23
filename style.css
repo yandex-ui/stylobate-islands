@@ -1930,6 +1930,7 @@ hr {
   -moz-appearance: menuitem;
   -moz-appearance: window;
   cursor: pointer;
+  width: 100%;
   border: none;
   padding: 0;
   margin: 0;
@@ -1949,6 +1950,7 @@ hr {
   padding: 0.6rem 2.3rem 0.6rem 1.1rem;
 }
 .select,x:-o-prefocus {
+  box-sizing: content-box;
   margin-right: -1.5rem;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
@@ -1993,6 +1995,7 @@ select:focus + .select-focus {
   -moz-appearance: menuitem;
   -moz-appearance: window;
   cursor: pointer;
+  width: 100%;
   border: none;
   padding: 0;
   margin: 0;
@@ -2012,6 +2015,7 @@ select:focus + .select-focus {
   padding: 0.5rem 2.1rem 0.5rem 0.9rem;
 }
 .small-select,x:-o-prefocus {
+  box-sizing: content-box;
   margin-right: -1.5rem;
   padding-top: 0.7rem;
   padding-bottom: 0.6rem;
