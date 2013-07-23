@@ -3,6 +3,18 @@
 
 ## Табы
 
+Табы состоят из враппера:
+
+    skin: tabs
+
+и отдельных пунктов:
+
+    skin: tabs-item
+
+Плюс есть подскин с текущим табом:
+
+    skin: tabs-item_selected
+
 > <div class="tabs">
 >     <a class="tabs-item tabs-item_selected">Раз</a
 >     ><a href="#x" class="tabs-item">Два</a
@@ -22,6 +34,10 @@
 >       skin: tabs-item_selected
 > {:.styl}
 
+На айтемах нужные размеры задаются в `em`, так что достаточно задавать размер только на родителе:
+
+    skin: tabs small
+
 > <div class="small-tabs">
 >     <a class="tabs-item tabs-item_selected">Маленький раз</a
 >     ><a href="#x" class="tabs-item">Маленький два</a
@@ -32,6 +48,8 @@
 >       kind: block
 >       skin: tabs small
 > {:.styl}
+
+Можно использовать табы внутри острова, но сейчас там хардкодно, надо что-то придумать с отступами и всем таким.
 
 > <div class="flying-isle">
 >     <div class="isle-content">
