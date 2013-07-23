@@ -78,7 +78,7 @@
 >
 >       &-right
 >         kind: shrink-right
->         margin-left: $xs
+>         margin-left: $islands_xs
 > {:.styl}
 
 По умолчанию хвостик делается с помощью всевдоэлемента, если же нужно его отделить, можно использовать параметр `no-elements` на «теле» и `tail` на хвостике.

@@ -8,16 +8,16 @@ skin-islands-input-box()
   box-sizing: border-box
 
   border: 1px solid transparent
-  padding: 0.5*$s $s
+  padding: 0.5*$islands_s $islands_s
 
   if small in arguments
-    line-height: $m
-    min-height:  $m + $s + 0.2*rem
-    font-size: $text_s
+    line-height: $islands_m
+    min-height:  $islands_m + $islands_s + 0.2*rem
+    font-size: $islands_text_s
   else
-    line-height: $l
-    min-height:  $l + $s + 0.2*rem
-    font-size: $text_m
+    line-height: $islands_l
+    min-height:  $islands_l + $islands_s + 0.2*rem
+    font-size: $islands_text_m
 
 skin-islands-input-view()
   border: 1px solid transparent unless @border
@@ -47,9 +47,9 @@ skin-islands-input-label()
   skin-islands-link(#000)
 
   border-right: 1px solid rgba(#000, 0.08)
-  margin-right: $s
+  margin-right: $islands_s
 
-  font-size: $m
+  font-size: $islands_m
 
   background: -webkit-linear-gradient(rgba(#FFE178, 0.1), rgba(#000, 0.02))
   background: -moz-linear-gradient(rgba(#FFE178, 0.1), rgba(#000, 0.02))

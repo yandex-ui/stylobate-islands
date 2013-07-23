@@ -30,9 +30,9 @@ skin-islands-select()
 
 skin-islands-select-padding()
   if small in arguments
-    $sides = ($xs - 0.1*rem) (2*$xs + $m - 0.3*rem) ($xs - 0.1*rem) ($m - 0.3*rem)
+    $sides = ($islands_xs - 0.1*rem) (2*$islands_xs + $islands_m - 0.3*rem) ($islands_xs - 0.1*rem) ($islands_m - 0.3*rem)
   else
-    $sides = ($xs - 0.1*rem) (2*$xs + $m - 0.1*rem) ($xs - 0.1*rem) ($m - 0.1*rem)
+    $sides = ($islands_xs - 0.1*rem) (2*$islands_xs + $islands_m - 0.1*rem) ($islands_xs - 0.1*rem) ($islands_m - 0.1*rem)
 
   padding: $sides[0] $sides[1] $sides[2] $sides[3]
 
@@ -68,7 +68,7 @@ skin-islands-select-wrap()
 
   &:after
     top: 50%
-    right: 2*$xs
+    right: 2*$islands_xs
     bottom: auto
     left: auto
 
