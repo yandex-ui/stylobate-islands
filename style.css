@@ -1929,17 +1929,53 @@ hr {
   -webkit-appearance: none;
   -moz-appearance: menuitem;
   -moz-appearance: window;
+  cursor: pointer;
   border: none;
   padding: 0;
   margin: 0;
   font: inherit;
   color: inherit;
   background: transparent;
+  padding: 0.5rem 2.6999999999999997rem 0.5rem 1.5rem;
 }
 .select:focus {
   outline: none;
 }
-.select:focus + .select-focus {
+.select,x::-moz-focus-inner {
+  color: transparent;
+  text-shadow: 0 0 0 #333;
+}
+.select,x::-moz-focus-inner {
+  padding: 0.6rem 2.3rem 0.6rem 1.1rem;
+}
+.select,x:-o-prefocus {
+  margin-right: -1.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.select-wrap {
+  padding: 0;
+}
+.select-wrap,x:-o-prefocus {
+  overflow: hidden;
+  vertical-align: middle;
+}
+.select-wrap:after {
+  top: 50%;
+  right: 1.2rem;
+  bottom: auto;
+  left: auto;
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  margin: -5px -2px 0 0;
+  color: #000;
+  -webkit-transform: scale(0.75) rotate(45deg);
+  -moz-transform: scale(0.75) rotate(45deg);
+  transform: scale(0.75) rotate(45deg);
+}
+select:focus + .select-focus {
   position: absolute;
   top: 0;
   right: 0;
@@ -1949,24 +1985,36 @@ hr {
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
-.select,x::-moz-focus-inner {
+.small-select {
+  position: relative;
+  display: block;
+  z-index: 10;
+  -webkit-appearance: none;
+  -moz-appearance: menuitem;
+  -moz-appearance: window;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  padding: 0.5rem 2.5rem 0.5rem 1.3rem;
+}
+.small-select:focus {
+  outline: none;
+}
+.small-select,x::-moz-focus-inner {
   color: transparent;
   text-shadow: 0 0 0 #333;
 }
-.button > .select {
-  padding: 0.5rem 1.5rem;
-  margin: -0.5rem -1.5rem;
+.small-select,x::-moz-focus-inner {
+  padding: 0.5rem 2.1rem 0.5rem 0.9rem;
 }
-.button > .select,x::-moz-focus-inner {
-  padding: 0.6rem 1.1rem;
-}
-.button > .select,x:-o-prefocus {
-  margin: -0.3rem -1.5rem;
-  margin-right: -3rem;
-}
-.select-wrap,x:-o-prefocus {
-  overflow: hidden;
-  vertical-align: middle;
+.small-select,x:-o-prefocus {
+  margin-right: -1.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.6rem;
 }
 .service-arrow {
   position: relative;
