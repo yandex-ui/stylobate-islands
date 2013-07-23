@@ -46,3 +46,16 @@ HTML селекта это, по сути, микс с кнопкой:
 >       kind: block
 >       skin: select small
 > {:.styl}
+
+С изменённой шириной
+
+> <span class="button select-wrap" style="width: 50%">
+>     <select class="select">
+>         <option>Select</option>
+>         <option>Bar</option>
+>         <option>Baz long long</option>
+>     </select>
+>     <span class="select-focus"></span>
+> </span>
+
+Но, на самом деле, всё это дикий хардкод, будет работать только для двух этих конкретных размеров, если получится сделать селекты полностью на JS, на основе обычных кнопок и попапов, это будет предпочтительнее.

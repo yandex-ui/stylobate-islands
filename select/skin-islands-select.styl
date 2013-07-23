@@ -6,6 +6,7 @@ skin-islands-select()
   -moz-appearance: window
   cursor: pointer
 
+  width: 100%
   border: none
   padding: 0
   margin: 0
@@ -43,6 +44,8 @@ skin-islands-select-padding()
 
   // Fixing margins in Opera
   &{",x:-o-prefocus"}
+    box-sizing: content-box
+
     margin-right: -1.5*rem
     padding-top: ($sides[0] + 0.2*rem)
     padding-bottom: ($sides[0] + 0.2*rem) unless small in arguments
