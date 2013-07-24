@@ -1,0 +1,12 @@
+skin-islands-disabled()
+  cursor: default !important
+
+  opacity: 0.6
+
+  &:focus
+    outline: 0
+
+  unless no-nested
+    // When nested, make only the first level transparenty
+    & &
+      opacity: 1
