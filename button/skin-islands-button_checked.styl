@@ -10,6 +10,6 @@ skin-islands-button_checked()
   if fly in arguments
     top: 1px
   else
-    & > {$skin-islands-button-content}
+    & > { alike(arguments, $skin-islands-button-content) }
       top: 1px
 
