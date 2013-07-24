@@ -6,8 +6,10 @@
 
 // Proto for simple buttons
 $skin-islands-button-content ?= '.button-content'
+$skin-islands-button-disabled ?= '.is-disabled'
 
 skin-islands-proto-button()
+  // unless only in arguments
   position: relative
 
   vertical-align: baseline
@@ -55,7 +57,7 @@ skin-islands-proto-button()
       padding: ($islands_xs - 0.1*rem) ($islands_m - 0.1*rem)
 
   unless no-active in arguments
-    &:not(.is-disabled):active
+    &:not({$skin-islands-button-disabled}):active
       skin-islands-button_pressed(arguments)
 
   // So it would overlay anything inside
@@ -67,7 +69,7 @@ skin-islands-proto-button()
   // &:hover:after
   //   -moz-transition: box-shadow 0.1s 999s
 
-  &:not(.is-disabled):focus
+  &:not({$skin-islands-button-disabled}):focus
     skin-islands-button_focus(arguments)
 
 
@@ -80,7 +82,7 @@ skin-islands-button()
   &:before
     gradient: #FFF, #EEE
 
-  &:not(.is-disabled):hover
+  &:not({$skin-islands-button-disabled}):hover
     skin-islands-button_hover()
 
 
@@ -93,7 +95,7 @@ skin-islands-action-button()
   &:before
     gradient: #FFDF60, #FFCC00
 
-  &:not(.is-disabled):hover
+  &:not({$skin-islands-button-disabled}):hover
     skin-islands-action-button_hover()
 
 
