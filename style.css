@@ -6,6 +6,39 @@ h1,h2,h3 {
   font: inherit;
   vertical-align: baseline;
 }
+.page {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-size: 62.5%;
+  color: #333;
+  background: #f6f5f3;
+}
+.page-body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font: 1.5rem/2.2rem Arial, sans-serif;
+  background: transparent;
+}
+.page-content {
+  padding: 2rem;
+}
+.page-content:before {
+  content: "";
+  display: table;
+}
+.page-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .is-hidden {
   display: none !important;
 }
@@ -2135,39 +2168,6 @@ select:focus + .select-focus {
 .search-right {
   float: right;
   margin-left: 0.6rem;
-}
-.page {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  font-size: 62.5%;
-  color: #333;
-  background: #f6f5f3;
-}
-.page-body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  font: 1.5rem/2.2rem Arial, sans-serif;
-  background: transparent;
-}
-.page-content {
-  padding: 2rem;
-}
-.page-content:before {
-  content: "";
-  display: table;
-}
-.page-content:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 .header {
   position: relative;
