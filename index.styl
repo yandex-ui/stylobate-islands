@@ -13,16 +13,6 @@ $islands_color_text_misc ?= rgba(#000, 0.4)
 
 // Base optional initial rules
 @import "page/skin-islands-page"
-$init_islands_root ?= false
-if $init_islands_root
-  html
-    skin-islands-page()
-
-  body
-    skin-islands-page-body()
-else
-  rem ?= rem_px
-
 
 // Importing skins
 @import "disabled/skin-islands-disabled"
