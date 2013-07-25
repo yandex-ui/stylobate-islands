@@ -8,9 +8,16 @@ skin-islands-page()
   unless $init_islands_root
     rem = 1rem
 
+skin-islands-page-font()
+  font: $islands_text_m/2.2*rem Arial, sans-serif
+
+skin-islands-check-font()
+  unless $init_islands_root
+    skin-islands-page-font()
+
 skin-islands-page-body()
   reset('body') unless no-reset in arguments
-  font: $islands_text_m/2.2*rem Arial, sans-serif
+  skin-islands-page-font()
 
   background: transparent
 
