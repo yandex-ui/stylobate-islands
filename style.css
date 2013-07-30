@@ -2413,7 +2413,6 @@ x:-o-prefocus {
   -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  background: -webkit-linear-gradient(135deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
 }
 
@@ -2438,7 +2437,6 @@ x:-o-prefocus {
   -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  background: -webkit-linear-gradient(135deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
 }
 
@@ -2469,7 +2467,6 @@ x:-o-prefocus {
   -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   background: -webkit-linear-gradient(45deg, #f00 50%, transparent 50%);
-  background: -webkit-linear-gradient(135deg, #f00 50%, transparent 50%);
   background: linear-gradient(45deg, #f00 50%, transparent 50%);
 }
 
@@ -2493,7 +2490,6 @@ x:-o-prefocus {
   -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  background: -webkit-linear-gradient(135deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
 }
 
@@ -2567,7 +2563,6 @@ x:-o-prefocus {
   -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  background: -webkit-linear-gradient(135deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
 }
 
