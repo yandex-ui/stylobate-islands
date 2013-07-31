@@ -8,7 +8,6 @@ skin-islands-input()
     z-index: 9
 
 skin-islands-input-box()
-  -moz-box-sizing: border-box
   box-sizing: border-box
 
   border: 1px solid transparent
@@ -27,8 +26,6 @@ skin-islands-input-view()
   border: 1px solid transparent unless @border
   border-color: rgba(#000, 0.38) rgba(#000, 0.27) rgba(#000, 0.16)
 
-  background: -webkit-linear-gradient(#FFF,#FFF)
-  background: -moz-linear-gradient(#FFF,#FFF)
   background: linear-gradient(#FFF,#FFF)
 
   background-clip: padding-box
@@ -55,6 +52,4 @@ skin-islands-input-label()
 
   font-size: $islands_m
 
-  background: -webkit-linear-gradient(rgba(#FFE178, 0.1), rgba(#000, 0.02))
-  background: -moz-linear-gradient(rgba(#FFE178, 0.1), rgba(#000, 0.02))
   background: linear-gradient(rgba(#FFE178, 0.1), rgba(#000, 0.02))

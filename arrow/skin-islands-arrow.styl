@@ -37,10 +37,6 @@ skin-islands-arrow-helper()
   height: $height * (1/$sqrt2)
 
   // tfZ should be there only if alpha == 1
-  -webkit-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg) translateZ(0)
-  -moz-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
-  -o-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
   transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
-  background: -webkit-linear-gradient(45deg, $color 50%,transparent 50%)
-  background: -moz-linear-gradient(45deg, $color 50%,transparent 50%)
+  -webkit-transform: @transform translateZ(0) if alpha($color) == 1
   background: linear-gradient(45deg, $color 50%,transparent 50%)
