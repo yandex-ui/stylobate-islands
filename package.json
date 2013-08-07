@@ -1,0 +1,26 @@
+{
+  "private": true,
+
+  "name": "stylobate-islands-docs",
+  "version": "0.1.0",
+
+  "author": "Roman Komarov <kizmarh@ya.ru> (http://kizu.ru/en/)",
+  "licence": "MIT",
+
+  "description": "Docs for Islands skin for stylobate",
+  "homepage": "https://github.com/yandex-ui/stylobate-islands/tree/gh-pages#readme",
+  "bugs": { "url": "http://github.com/yandex-ui/stylobate-islands/issues" },
+
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yandex-ui/stylobate-islands.git"
+  },
+
+  "dependencies": {
+    "stylus": "0.36.x",
+    "autoprefixer": "0.7.x",
+    "csso": "1.3.x"
+  },
+
+  "engines": { "node": ">=0.6" }
+}
