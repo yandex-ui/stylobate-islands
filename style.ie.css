@@ -52,12 +52,14 @@ h1,h2,h3 {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+.group-start:before {
+  right: 0;
+}
 .group-middle {
   margin-left: -1px;
 }
-.group-middle,.group-middle:before {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+.group-middle:before {
+  right: 0;
 }
 .group-end {
   margin-left: -1px;
@@ -66,21 +68,29 @@ h1,h2,h3 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.group > .toggle-button:first-child,.group > .toggle-button:first-child:before,
-.group-item:first-child,.group-item:first-child:before {
+.group-item:first-child,.group-item:first-child:before,
+.group > .toggle-button:first-child,.group > .toggle-button:first-child:before {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.group > .toggle-button:not(:first-child):not(:last-child),
-.group-item:not(:first-child):not(:last-child) {
+.group-item:first-child:before,
+.group > .toggle-button:first-child:before {
+  right: 0;
+}
+.group-item:not(:first-child):not(:last-child),
+.group > .toggle-button:not(:first-child):not(:last-child) {
   margin-left: -1px;
 }
-.group > .toggle-button:last-child,
-.group-item:last-child {
+.group-item:not(:first-child):not(:last-child):before,
+.group > .toggle-button:not(:first-child):not(:last-child):before {
+  right: 0;
+}
+.group-item:last-child,
+.group > .toggle-button:last-child {
   margin-left: -1px;
 }
-.group > .toggle-button:last-child,.group > .toggle-button:last-child:before,
-.group-item:last-child,.group-item:last-child:before {
+.group-item:last-child,.group-item:last-child:before,
+.group > .toggle-button:last-child,.group > .toggle-button:last-child:before {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -98,7 +108,6 @@ h1,h2,h3 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.group > .toggle-button:not(:last-child):before,
 .group > .toggler:not(:last-child) > .toggler-view:before {
   right: 0;
 }

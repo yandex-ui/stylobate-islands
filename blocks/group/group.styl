@@ -1,23 +1,18 @@
 .group
-  kind: group
+  skin: group
 
 .group-start
-  kind: group-start '&,&:before'
+  skin: group-start
 
 .group-middle
-  kind: group-end '&,&:before'
+  skin: group-middle
 
 .group-end
-  kind: group-end '&,&:before'
+  skin: group-end
 
-.group > .toggle-button,
-.group-item
-  kind: group-item '&,&:before'
+.group-item,
+.group > .toggle-button
+  skin: group-item
 
 .group > .toggler
-  kind: group-item '& > .toggler-view, & > .toggler-view:before'
-
-.group > .toggle-button:not(:last-child):before,
-.group > .toggler:not(:last-child) > .toggler-view:before
-  right: 0
-
+  skin: nested-group-item '.toggler-view'
