@@ -416,13 +416,16 @@ hr {
   background: transparent;
   -moz-appearance: none;
   font: inherit;
+  overflow: visible;
   position: relative;
   vertical-align: baseline;
   color: #333;
   font-size: 15px;
   line-height: 22px;
-  padding: 5px 15px;
-  background: #b3b3b3;
+  padding: 4px 14px;
+  background: #f6f6f6;
+  border: 1px solid;
+  border-color: #cbcbcb #b2b2b2 #9a9a9a;
 }
 .button::-moz-focus-inner {
   padding: 0;
@@ -440,8 +443,8 @@ hr {
   position: relative;
   display: block;
 }
-.button:not(.is-disabled):active > .button-content {
-  top: 1px;
+button.button > .button-content {
+  margin: -1px -1px -3px;
 }
 .button:after {
   content: "";
@@ -456,9 +459,6 @@ hr {
 }
 .button:not(.is-disabled):focus:after {
   z-index: 9;
-}
-.button:before {
-  background: #f7f7f7;
 }
 .button:not(.is-disabled):hover {
   background: #b0b0b0;
@@ -479,13 +479,16 @@ hr {
   background: transparent;
   -moz-appearance: none;
   font: inherit;
+  overflow: visible;
   position: relative;
   vertical-align: baseline;
   color: #333;
   font-size: 13px;
   line-height: 18px;
-  padding: 5px 13px;
-  background: #b3b3b3;
+  padding: 4px 12px;
+  background: #f6f6f6;
+  border: 1px solid;
+  border-color: #cbcbcb #b2b2b2 #9a9a9a;
 }
 .small-button::-moz-focus-inner {
   padding: 0;
@@ -503,8 +506,8 @@ hr {
   position: relative;
   display: block;
 }
-.small-button:not(.is-disabled):active > .button-content {
-  top: 1px;
+button.small-button > .button-content {
+  margin: -1px -1px -3px;
 }
 .small-button:after {
   content: "";
@@ -519,9 +522,6 @@ hr {
 }
 .small-button:not(.is-disabled):focus:after {
   z-index: 9;
-}
-.small-button:before {
-  background: #f7f7f7;
 }
 .small-button:not(.is-disabled):hover {
   background: #b0b0b0;
@@ -542,13 +542,16 @@ hr {
   background: transparent;
   -moz-appearance: none;
   font: inherit;
+  overflow: visible;
   position: relative;
   vertical-align: baseline;
   color: #333;
   font-size: 15px;
   line-height: 22px;
-  padding: 5px 15px;
-  background: #b3b3b3;
+  padding: 4px 14px;
+  background: #f6f6f6;
+  border: 1px solid;
+  border-color: #cbcbcb #b2b2b2 #9a9a9a;
 }
 .fly-button::-moz-focus-inner {
   padding: 0;
@@ -566,8 +569,8 @@ hr {
   position: relative;
   display: block;
 }
-.fly-button:not(.is-disabled):active {
-  top: 1px;
+button.fly-button > .button-content {
+  margin: -1px -1px -3px;
 }
 .fly-button:after {
   content: "";
@@ -582,9 +585,6 @@ hr {
 }
 .fly-button:not(.is-disabled):focus:after {
   z-index: 9;
-}
-.fly-button:before {
-  background: #f7f7f7;
 }
 .fly-button:not(.is-disabled):hover {
   background: #b0b0b0;
@@ -605,13 +605,16 @@ hr {
   background: transparent;
   -moz-appearance: none;
   font: inherit;
+  overflow: visible;
   position: relative;
   vertical-align: baseline;
   color: #333;
   font-size: 15px;
   line-height: 22px;
-  padding: 5px 15px;
-  background: #aea187;
+  padding: 4px 14px;
+  background: #ffd52e;
+  border: 1px solid;
+  border-color: #bfb298 #a99c82 #9b8e75;
 }
 .action-button::-moz-focus-inner {
   padding: 0;
@@ -629,8 +632,8 @@ hr {
   position: relative;
   display: block;
 }
-.action-button:not(.is-disabled):active > .button-content {
-  top: 1px;
+button.action-button > .button-content {
+  margin: -1px -1px -3px;
 }
 .action-button:after {
   content: "";
@@ -645,9 +648,6 @@ hr {
 }
 .action-button:not(.is-disabled):focus:after {
   z-index: 9;
-}
-.action-button:before {
-  background: #ffd630;
 }
 .action-button:not(.is-disabled):hover {
   background: #b0b0b0;
@@ -668,13 +668,16 @@ hr {
   background: transparent;
   -moz-appearance: none;
   font: inherit;
+  overflow: visible;
   position: relative;
   vertical-align: baseline;
   color: #333;
   font-size: 13px;
   line-height: 18px;
-  padding: 5px 13px;
-  background: #aea187;
+  padding: 4px 12px;
+  background: #ffd52e;
+  border: 1px solid;
+  border-color: #bfb298 #a99c82 #9b8e75;
 }
 .small-action-button::-moz-focus-inner {
   padding: 0;
@@ -692,8 +695,8 @@ hr {
   position: relative;
   display: block;
 }
-.small-action-button:not(.is-disabled):active > .button-content {
-  top: 1px;
+button.small-action-button > .button-content {
+  margin: -1px -1px -3px;
 }
 .small-action-button:after {
   content: "";
@@ -708,9 +711,6 @@ hr {
 }
 .small-action-button:not(.is-disabled):focus:after {
   z-index: 9;
-}
-.small-action-button:before {
-  background: #ffd630;
 }
 .small-action-button:not(.is-disabled):hover {
   background: #b0b0b0;
@@ -731,12 +731,14 @@ hr {
   background: transparent;
   -moz-appearance: none;
   font: inherit;
+  overflow: visible;
   position: relative;
   vertical-align: baseline;
   color: #333;
+  border: 1px solid #cbcbcb;
   font-size: 15px;
   line-height: 22px;
-  padding: 3px 11px;
+  padding: 2px 10px;
 }
 .pseudo-button::-moz-focus-inner {
   padding: 0;
@@ -781,12 +783,14 @@ hr {
   background: transparent;
   -moz-appearance: none;
   font: inherit;
+  overflow: visible;
   position: relative;
   vertical-align: baseline;
   color: #333;
+  border: 1px solid #cbcbcb;
   font-size: 13px;
   line-height: 18px;
-  padding: 3px 10px;
+  padding: 2px 9px;
 }
 .small-pseudo-button::-moz-focus-inner {
   padding: 0;
@@ -820,15 +824,8 @@ hr {
 }
 .toggle-button.is-checked,
 .toggle-button.is-checked:hover {
-  background: rgba(255,236,166,0.4);
-}
-.toggle-button.is-checked:before,
-.toggle-button.is-checked:hover:before {
-  background: #fff1be;
-}
-.toggle-button.is-checked > .button-content,
-.toggle-button.is-checked:hover > .button-content {
-  top: 1px;
+  background: #fff1c0;
+  border-color: #999278 #b4ad93 #ccc4aa;
 }
 .super-button {
   display: inline;
@@ -843,13 +840,16 @@ hr {
   background: transparent;
   -moz-appearance: none;
   font: inherit;
+  overflow: visible;
   position: relative;
   vertical-align: baseline;
   color: #333;
   font-size: 13px;
   line-height: 18px;
-  padding: 5px 13px;
-  background: #aea187;
+  padding: 4px 12px;
+  background: #ffd52e;
+  border: 1px solid;
+  border-color: #bfb298 #a99c82 #9b8e75;
 }
 .super-button::-moz-focus-inner {
   padding: 0;
@@ -867,8 +867,8 @@ hr {
   position: relative;
   display: block;
 }
-.super-button:not(.is-disabled):active {
-  top: 1px;
+button.super-button > .button-content {
+  margin: -1px -1px -3px;
 }
 .super-button:after {
   content: "";
@@ -884,9 +884,6 @@ hr {
 .super-button:not(.is-disabled):focus:after {
   z-index: 9;
 }
-.super-button:before {
-  background: #ffd630;
-}
 .super-button:not(.is-disabled):hover {
   background: #b0b0b0;
 }
@@ -895,12 +892,8 @@ hr {
 }
 .super-button.is-checked,
 .super-button.is-checked:hover {
-  background: rgba(255,236,166,0.4);
-  top: 1px;
-}
-.super-button.is-checked:before,
-.super-button.is-checked:hover:before {
-  background: #fff1be;
+  background: #fff1c0;
+  border-color: #999278 #b4ad93 #ccc4aa;
 }
 .simple-button {
   display: inline;
@@ -915,15 +908,16 @@ hr {
   background: transparent;
   -moz-appearance: none;
   font: inherit;
+  overflow: visible;
   position: relative;
   vertical-align: baseline;
-  color: transparent;
-  color: #333 \0/;
-  z-index: 9;
+  color: #333;
   font-size: 15px;
   line-height: 22px;
-  padding: 5px 15px;
-  background: #b3b3b3;
+  padding: 4px 14px;
+  background: #f6f6f6;
+  border: 1px solid;
+  border-color: #cbcbcb #b2b2b2 #9a9a9a;
 }
 .simple-button::-moz-focus-inner {
   padding: 0;
@@ -942,6 +936,9 @@ hr {
   position: relative;
   display: block;
 }
+button.simple-button > .button-content {
+  margin: -1px -1px -3px;
+}
 .simple-button:after {
   content: "";
   position: absolute;
@@ -955,9 +952,6 @@ hr {
 }
 .simple-button:not(.is-disabled):focus:after {
   z-index: 9;
-}
-.simple-button:before {
-  background: #f7f7f7;
 }
 .simple-button:not(.is-disabled):hover {
   background: #b0b0b0;
@@ -978,7 +972,9 @@ hr {
   height: 1em;
   padding: 0 1px 1px 0;
   line-height: 1em;
-  background: #b3b3b3;
+  background: #f6f6f6;
+  border: 1px solid;
+  border-color: #cbcbcb #b2b2b2 #9a9a9a;
   vertical-align: middle;
   text-align: center;
   margin-top: -3px;
@@ -996,6 +992,9 @@ hr {
   position: relative;
   display: block;
 }
+button.checkbox > .button-content {
+  margin: -1px -1px -3px;
+}
 .checkbox:after {
   content: "";
   position: absolute;
@@ -1009,9 +1008,6 @@ hr {
 }
 .checkbox:not(.is-disabled):focus:after {
   z-index: 9;
-}
-.checkbox:before {
-  background: #f7f7f7;
 }
 .checkbox:not(.is-disabled):hover {
   background: #b0b0b0;
@@ -1046,7 +1042,9 @@ hr {
   height: 1em;
   padding: 0 1px 1px 0;
   line-height: 1em;
-  background: #b3b3b3;
+  background: #f6f6f6;
+  border: 1px solid;
+  border-color: #cbcbcb #b2b2b2 #9a9a9a;
   text-align: center;
   margin-top: -4px;
   margin-right: 6px;
@@ -1063,6 +1061,9 @@ hr {
   position: relative;
   display: block;
 }
+button.radio > .button-content {
+  margin: -1px -1px -3px;
+}
 .radio:after {
   content: "";
   position: absolute;
@@ -1076,9 +1077,6 @@ hr {
 }
 .radio:not(.is-disabled):focus:after {
   z-index: 9;
-}
-.radio:before {
-  background: #f7f7f7;
 }
 .radio:not(.is-disabled):hover {
   background: #b0b0b0;
@@ -1107,7 +1105,9 @@ hr {
   position: relative;
   vertical-align: baseline;
   color: #333;
-  background: #b3b3b3;
+  background: #f6f6f6;
+  border: 1px solid;
+  border-color: #cbcbcb #b2b2b2 #9a9a9a;
   vertical-align: middle;
   text-align: center;
   margin-top: -3px;
@@ -1127,6 +1127,9 @@ hr {
   position: relative;
   display: block;
 }
+button.normal-checkbox > .button-content {
+  margin: -1px -1px -3px;
+}
 .normal-checkbox:after {
   content: "";
   position: absolute;
@@ -1140,9 +1143,6 @@ hr {
 }
 .normal-checkbox:not(.is-disabled):focus:after {
   z-index: 9;
-}
-.normal-checkbox:before {
-  background: #f7f7f7;
 }
 .normal-checkbox:not(.is-disabled):hover {
   background: #b0b0b0;
@@ -1173,7 +1173,9 @@ hr {
   position: relative;
   vertical-align: baseline;
   color: #333;
-  background: #b3b3b3;
+  background: #f6f6f6;
+  border: 1px solid;
+  border-color: #cbcbcb #b2b2b2 #9a9a9a;
   text-align: center;
   margin-top: -4px;
   margin-right: 6px;
@@ -1192,6 +1194,9 @@ hr {
   position: relative;
   display: block;
 }
+button.small-radio > .button-content {
+  margin: -1px -1px -3px;
+}
 .small-radio:after {
   content: "";
   position: absolute;
@@ -1205,9 +1210,6 @@ hr {
 }
 .small-radio:not(.is-disabled):focus:after {
   z-index: 9;
-}
-.small-radio:before {
-  background: #f7f7f7;
 }
 .small-radio:not(.is-disabled):hover {
   background: #b0b0b0;
@@ -1409,13 +1411,8 @@ hr {
   clip: rect(1px 1px 1px 1px) !important;
 }
 .toggler-controller:checked + .toggler-view {
-  background: rgba(255,236,166,0.4);
-}
-.toggler-controller:checked + .toggler-view:before {
-  background: #fff1be;
-}
-.toggler-controller:checked + .toggler-view > .button-content {
-  top: 1px;
+  background: #fff1c0;
+  border-color: #999278 #b4ad93 #ccc4aa;
 }
 .toggler-controller:focus + .toggler-view {
   outline: 0;
