@@ -1743,11 +1743,11 @@ select:focus + .select-focus {
 .service-arrow:before {
   content: "";
   position: absolute;
-  top: 50%;
   left: 100%;
+  top: 50%;
   width: 29.69848481766999px;
   height: 29.69848481766999px;
-  -webkit-transform: translateZ(0);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
 }
 .search-arrow {
@@ -1763,11 +1763,11 @@ select:focus + .select-focus {
 .search-arrow:before {
   content: "";
   position: absolute;
-  top: 50%;
   left: 100%;
+  top: 50%;
   width: 29.69848481766999px;
   height: 29.69848481766999px;
-  -webkit-transform: translateZ(0);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
 }
 .search-arrow > .field {
@@ -1788,12 +1788,12 @@ select:focus + .select-focus {
 }
 .arrow-tail {
   position: absolute;
-  top: 50%;
   left: 100%;
-  width: 77.78174595104045px;
-  height: 77.78174595104045px;
-  -webkit-transform: translateZ(0);
-  background: linear-gradient(45deg, #f00 50%, transparent 50%);
+  top: 0;
+  height: 0;
+  border-style: dashed solid;
+  border-color: transparent #f00;
+  border-width: 55px 0 55px 31.754px;
 }
 .search {
   position: relative;
@@ -1806,11 +1806,11 @@ select:focus + .select-focus {
 .search:before {
   content: "";
   position: absolute;
-  top: 50%;
   left: 100%;
+  top: 50%;
   width: 29.69848481766999px;
   height: 29.69848481766999px;
-  -webkit-transform: translateZ(0);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
 }
 .search-field {
@@ -1868,11 +1868,11 @@ select:focus + .select-focus {
 .header-service:before {
   content: "";
   position: absolute;
-  top: 50%;
   left: 100%;
+  top: 50%;
   width: 29.69848481766999px;
   height: 29.69848481766999px;
-  -webkit-transform: translateZ(0);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
 }
 .content {
