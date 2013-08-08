@@ -1402,6 +1402,7 @@ hr {
   display: inline-block;
   vertical-align: middle;
   margin-top: -4px;
+  background: 50% no-repeat;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1496,6 +1497,7 @@ hr {
   display: inline-block;
   vertical-align: middle;
   margin-top: -4px;
+  background: 50% no-repeat;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1590,6 +1592,7 @@ hr {
   display: inline-block;
   vertical-align: middle;
   margin-top: -4px;
+  background: 50% no-repeat;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1682,6 +1685,7 @@ hr {
   display: inline-block;
   vertical-align: middle;
   margin-top: -4px;
+  background: 50% no-repeat;
   position: relative;
   vertical-align: baseline;
   color: #333;
