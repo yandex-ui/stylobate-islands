@@ -1,3 +1,14 @@
+.checkbox,
+.radio,
+.normal-checkbox,
+.small-radio {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -4px;
+  background: 50% no-repeat;
+}
+
 h1,
 h2,
 h3 {
@@ -1399,11 +1410,6 @@ hr {
 
 .checkbox {
   position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: -4px;
-  background: 50% no-repeat;
-  position: relative;
   vertical-align: baseline;
   color: #333;
   border-radius: 3px;
@@ -1493,11 +1499,6 @@ hr {
 }
 
 .radio {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: -4px;
-  background: 50% no-repeat;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1589,11 +1590,6 @@ hr {
 
 .normal-checkbox {
   position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: -4px;
-  background: 50% no-repeat;
-  position: relative;
   vertical-align: baseline;
   color: #333;
   border-radius: 3px;
@@ -1681,11 +1677,6 @@ hr {
 }
 
 .small-radio {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: -4px;
-  background: 50% no-repeat;
   position: relative;
   vertical-align: baseline;
   color: #333;

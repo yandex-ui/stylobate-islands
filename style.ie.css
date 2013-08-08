@@ -1,3 +1,14 @@
+.checkbox,
+.radio,
+.normal-checkbox,
+.small-radio {
+  position: relative;
+  display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  margin-top: -4px;
+  background: 50% no-repeat;
+}
 h1,h2,h3 {
   margin: 0;
   padding: 0;
@@ -970,12 +981,6 @@ button.simple-button > .button-content {
 }
 .checkbox {
   position: relative;
-  display: inline;
-  zoom: 1;
-  vertical-align: middle;
-  margin-top: -4px;
-  background: 50% no-repeat;
-  position: relative;
   vertical-align: baseline;
   color: #333;
   width: 1em;
@@ -1041,12 +1046,6 @@ button.checkbox > .button-content {
 }
 .radio {
   position: relative;
-  display: inline;
-  zoom: 1;
-  vertical-align: middle;
-  margin-top: -4px;
-  background: 50% no-repeat;
-  position: relative;
   vertical-align: baseline;
   color: #333;
   width: 1em;
@@ -1108,12 +1107,6 @@ button.radio > .button-content {
   visibility: hidden;
 }
 .normal-checkbox {
-  position: relative;
-  display: inline;
-  zoom: 1;
-  vertical-align: middle;
-  margin-top: -4px;
-  background: 50% no-repeat;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1177,12 +1170,6 @@ button.normal-checkbox > .button-content {
   visibility: hidden;
 }
 .small-radio {
-  position: relative;
-  display: inline;
-  zoom: 1;
-  vertical-align: middle;
-  margin-top: -4px;
-  background: 50% no-repeat;
   position: relative;
   vertical-align: baseline;
   color: #333;
