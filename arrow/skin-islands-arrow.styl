@@ -18,7 +18,7 @@ skin-islands-arrow()
     background: $color
     white-space: nowrap
 
-    margin-right: round(($height / 2) * (sin(PI * 30 / 180) / cos(PI * 30 / 180)), 3)
+    margin-right: round(($height / 2) * tan(30deg), 3)
 
     unless no-elements in arguments
       &:before
@@ -30,13 +30,24 @@ skin-islands-arrow-helper()
   $color = alike(arguments, $skin-islands-arrow-color)
 
   position: absolute
-  top: 50%
   left: 100%
   $sqrt2 = 1.414213562
-  width: $height * (1/$sqrt2)
-  height: $height * (1/$sqrt2)
 
-  // tfZ should be there only if alpha == 1
-  transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
-  -webkit-transform: @transform translateZ(0) if alpha($color) == 1
-  background: linear-gradient(45deg, $color 50%,transparent 50%)
+  if ie and tail in arguments
+    top: 0
+    height: 0
+
+    border-style: dashed solid
+    border-color: transparent $color
+    border-width: ($height / 2) 0 ($height / 2) (round(($height / 2) * tan(30deg), 3))
+  else
+    top: 50%
+
+    width: $height * (1/$sqrt2)
+    height: $height * (1/$sqrt2)
+
+    // tfZ should be there only if alpha == 1
+    $transform = translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
+    transform: $transform
+    -webkit-transform: $transform translateZ(0) if alpha($color) == 1
+    background: linear-gradient(45deg, $color 50%,transparent 50%)
