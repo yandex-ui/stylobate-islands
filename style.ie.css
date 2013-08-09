@@ -99,7 +99,7 @@ h1,h2,h3,
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 .modal {
   position: relative;
