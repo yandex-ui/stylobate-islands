@@ -105,6 +105,33 @@ h3,
   text-align: left;
 }
 
+.button,
+.small-button,
+.fly-button,
+.action-button,
+.small-action-button,
+.pseudo-button,
+.small-pseudo-button,
+.super-button,
+.simple-button {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.modal {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
 .group {
   position: relative;
   display: inline-block;
@@ -611,15 +638,6 @@ hr {
 }
 
 .button {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -698,15 +716,6 @@ hr {
 }
 
 .small-button {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -785,15 +794,6 @@ hr {
 }
 
 .fly-button {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -865,15 +865,6 @@ hr {
 }
 
 .action-button {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -952,15 +943,6 @@ hr {
 }
 
 .small-action-button {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1039,15 +1021,6 @@ hr {
 }
 
 .pseudo-button {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1098,15 +1071,6 @@ hr {
 }
 
 .small-pseudo-button {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1176,15 +1140,6 @@ hr {
 }
 
 .super-button {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1271,15 +1226,6 @@ hr {
 }
 
 .simple-button {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: transparent;
@@ -1728,10 +1674,6 @@ hr {
 
 .modal {
   visibility: visible;
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: auto;
   background: #fff;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 30px -5px rgba(0,0,0,0.5);
 }

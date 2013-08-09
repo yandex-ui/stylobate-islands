@@ -85,6 +85,28 @@ h1,h2,h3,
   vertical-align: middle;
   text-align: left;
 }
+.button,
+.small-button,
+.fly-button,
+.action-button,
+.small-action-button,
+.pseudo-button,
+.small-pseudo-button,
+.super-button,
+.simple-button {
+  display: inline;
+  zoom: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.modal {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
 .group {
   position: relative;
   display: inline;
@@ -457,12 +479,6 @@ hr {
   text-decoration: underline;
 }
 .button {
-  display: inline;
-  zoom: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -509,12 +525,6 @@ button.button > .button-content {
   background: #fbfaf9;
 }
 .small-button {
-  display: inline;
-  zoom: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -561,12 +571,6 @@ button.small-button > .button-content {
   background: #fbfaf9;
 }
 .fly-button {
-  display: inline;
-  zoom: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -613,12 +617,6 @@ button.fly-button > .button-content {
   background: #fbfaf9;
 }
 .action-button {
-  display: inline;
-  zoom: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -665,12 +663,6 @@ button.action-button > .button-content {
   background: #fd5;
 }
 .small-action-button {
-  display: inline;
-  zoom: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -717,12 +709,6 @@ button.small-action-button > .button-content {
   background: #fd5;
 }
 .pseudo-button {
-  display: inline;
-  zoom: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -758,12 +744,6 @@ button.small-action-button > .button-content {
   z-index: 9;
 }
 .small-pseudo-button {
-  display: inline;
-  zoom: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -804,12 +784,6 @@ button.small-action-button > .button-content {
   border-color: #999278 #b4ad93 #ccc4aa;
 }
 .super-button {
-  display: inline;
-  zoom: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -861,12 +835,6 @@ button.super-button > .button-content {
   border-color: #999278 #b4ad93 #ccc4aa;
 }
 .simple-button {
-  display: inline;
-  zoom: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  vertical-align: middle;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1176,10 +1144,6 @@ button.small-radio > .button-content {
 }
 .modal {
   visibility: visible;
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: auto;
   background: #fff;
 }
 .modal-paranja {
