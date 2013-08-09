@@ -105,6 +105,41 @@ h3,
   text-align: left;
 }
 
+.input,
+.small-input,
+.field,
+.small-field,
+.input-controller {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  cursor: text;
+  vertical-align: baseline;
+}
+
+.field-content {
+  position: static;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+}
+
+.field-left,
+.field-label {
+  position: relative;
+  z-index: 9;
+  float: left;
+}
+
+.field-right {
+  position: relative;
+  z-index: 9;
+  float: right;
+}
+
 .page {
   font-size: 62.5%;
   color: #333;
@@ -1918,15 +1953,8 @@ hr {
 }
 
 .input {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 100%;
   width: 400px;
-  vertical-align: baseline;
-  cursor: text;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid transparent;
   padding: 0.5rem 1rem;
@@ -1952,15 +1980,8 @@ hr {
 }
 
 .small-input {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 100%;
   width: 400px;
-  vertical-align: baseline;
-  cursor: text;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid transparent;
   padding: 0.5rem 1rem;
@@ -1986,15 +2007,8 @@ hr {
 }
 
 .field {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 100%;
   width: 400px;
-  vertical-align: baseline;
-  cursor: text;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid transparent;
   padding: 0.5rem 1rem;
@@ -2003,41 +2017,19 @@ hr {
   font-size: 1.5rem;
 }
 
-.field-content {
-  position: static;
-  display: block;
-  overflow: hidden;
-  height: 100%;
-}
-
 .field-left {
-  position: relative;
-  z-index: 9;
-  float: left;
-  margin: -0.5rem -1rem -0.5rem -1rem;
-  margin-right: 0;
+  margin: -0.5rem 0 -0.5rem -1rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .field-right {
-  position: relative;
-  z-index: 9;
-  float: right;
-  margin: -0.5rem -1rem -0.5rem -1rem;
-  margin-left: 0;
+  margin: -0.5rem -1rem -0.5rem 0;
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .small-field {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 100%;
   width: 400px;
-  vertical-align: baseline;
-  cursor: text;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid transparent;
   padding: 0.5rem 1rem;
@@ -2047,15 +2039,7 @@ hr {
 }
 
 .input-controller {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 100%;
   width: 400px;
-  vertical-align: baseline;
-  cursor: text;
   z-index: 9;
   width: 100%;
   height: 100%;
@@ -2083,11 +2067,7 @@ hr {
 }
 
 .field-label {
-  position: relative;
-  z-index: 9;
-  float: left;
-  margin: -0.5rem -1rem -0.5rem -1rem;
-  margin-right: 0;
+  margin: -0.5rem 0 -0.5rem -1rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   cursor: pointer;
   color: #000;
