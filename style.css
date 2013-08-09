@@ -2023,7 +2023,7 @@ hr {
   position: relative;
   z-index: 9;
   float: right;
-  Margin: -0.5rem -1rem -0.5rem -1rem;
+  margin: -0.5rem -1rem -0.5rem -1rem;
   margin-left: 0;
   padding: 0.5rem 1rem 0.5rem 1rem;
 }

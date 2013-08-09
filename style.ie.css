@@ -1418,7 +1418,7 @@ button.small-radio > .button-content {
   position: relative;
   z-index: 9;
   float: right;
-  Margin: -5px -10px -5px -10px;
+  margin: -5px -10px -5px -10px;
   margin-left: 0;
   padding: 5px 10px 5px 10px;
 }
