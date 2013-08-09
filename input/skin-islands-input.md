@@ -47,7 +47,7 @@
 > </label>
 >
 >     .field
->       kind: field
+>       kind: field 0.5*$s $s
 >       skin: input-box
 >
 >     .input-controller
@@ -151,6 +151,6 @@
 > </label>
 >
 >     .field-label
->       kind: field-left
+>       kind: field-left 0.5*$s $s
 >       skin: input-label
 > {:.styl}
