@@ -105,6 +105,48 @@ h3,
   text-align: left;
 }
 
+.group {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.group-start,
+.group-start:before,
+.group-item:first-child,
+.group-item:first-child:before,
+.group > .toggle-button:first-child,
+.group > .toggle-button:first-child:before,
+.group > .toggler:first-child > .toggler-view,
+.group > .toggler:first-child > .toggler-view:before {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.group-end,
+.group-end:before,
+.group-item:last-child,
+.group-item:last-child:before,
+.group > .toggle-button:last-child,
+.group > .toggle-button:last-child:before,
+.group > .toggler:last-child > .toggler-view,
+.group > .toggler:last-child > .toggler-view:before {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.group-middle,
+.group-end,
+.group-item:not(:first-child):not(:last-child),
+.group > .toggle-button:not(:first-child):not(:last-child),
+.group-item:last-child,
+.group > .toggle-button:last-child,
+.group > .toggler:not(:first-child):not(:last-child),
+.group > .toggler:last-child {
+  margin-left: -1px;
+}
+
 .input,
 .small-input,
 .field,
@@ -172,23 +214,8 @@ h3,
   opacity: 1;
 }
 
-.group {
-  kind: block inline;
-  white-space: nowrap;
-}
-
-.group-start,
-.group-start:before {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
 .group-start:before {
   right: 0;
-}
-
-.group-middle {
-  margin-left: -1px;
 }
 
 .group-middle,
@@ -200,32 +227,9 @@ h3,
   right: 0;
 }
 
-.group-end {
-  margin-left: -1px;
-}
-
-.group-end,
-.group-end:before {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.group-item:first-child,
-.group-item:first-child:before,
-.group > .toggle-button:first-child,
-.group > .toggle-button:first-child:before {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
 .group-item:first-child:before,
 .group > .toggle-button:first-child:before {
   right: 0;
-}
-
-.group-item:not(:first-child):not(:last-child),
-.group > .toggle-button:not(:first-child):not(:last-child) {
-  margin-left: -1px;
 }
 
 .group-item:not(:first-child):not(:last-child),
@@ -240,42 +244,9 @@ h3,
   right: 0;
 }
 
-.group-item:last-child,
-.group > .toggle-button:last-child {
-  margin-left: -1px;
-}
-
-.group-item:last-child,
-.group-item:last-child:before,
-.group > .toggle-button:last-child,
-.group > .toggle-button:last-child:before {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.group > .toggler:first-child > .toggler-view,
-.group > .toggler:first-child > .toggler-view:before {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.group > .toggler:not(:first-child):not(:last-child) {
-  margin-left: -1px;
-}
-
 .group > .toggler:not(:first-child):not(:last-child) > .toggler-view,
 .group > .toggler:not(:first-child):not(:last-child) > .toggler-view:before {
   border-radius: 0;
-}
-
-.group > .toggler:last-child {
-  margin-left: -1px;
-}
-
-.group > .toggler:last-child > .toggler-view,
-.group > .toggler:last-child > .toggler-view:before {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 .group > .toggler:not(:last-child) > .toggler-view:before {
@@ -556,6 +527,11 @@ pre > code {
 
 blockquote > pre > code {
   padding-left: 1.8rem;
+}
+
+blockquote > hr {
+  margin: 0;
+  border: 0;
 }
 
 hr {
