@@ -209,6 +209,32 @@ h3,
   float: right;
 }
 
+.is-disabled {
+  cursor: default !important;
+  opacity: 0.6;
+}
+
+.is-disabled:focus {
+  outline: 0;
+}
+
+.is-disabled .is-disabled {
+  opacity: 1;
+}
+
+.service-arrow:before,
+.search-arrow:before,
+.arrow-tail,
+.search:before,
+.header-service:before {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+  -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+  transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+}
+
 .page {
   font-size: 62.5%;
   color: #333;
@@ -226,19 +252,6 @@ h3,
 
 .is-hidden {
   display: none !important;
-}
-
-.is-disabled {
-  cursor: default !important;
-  opacity: 0.6;
-}
-
-.is-disabled:focus {
-  outline: 0;
-}
-
-.is-disabled .is-disabled {
-  opacity: 1;
 }
 
 .group-start:before {
@@ -2182,16 +2195,11 @@ x:-o-prefocus {
 
 .service-arrow:before {
   content: "";
-  position: absolute;
-  left: 100%;
-  top: 50%;
   width: 2.969848481766999rem;
   height: 2.969848481766999rem;
-  -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  -webkit-transform: $transform translateZ(0);
 }
 
 .search-arrow {
@@ -2206,16 +2214,11 @@ x:-o-prefocus {
 
 .search-arrow:before {
   content: "";
-  position: absolute;
-  left: 100%;
-  top: 50%;
   width: 2.969848481766999rem;
   height: 2.969848481766999rem;
-  -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  -webkit-transform: $transform translateZ(0);
 }
 
 .search-arrow > .field {
@@ -2236,16 +2239,11 @@ x:-o-prefocus {
 }
 
 .arrow-tail {
-  position: absolute;
-  left: 100%;
-  top: 50%;
   width: 7.778174595104045rem;
   height: 7.778174595104045rem;
-  -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
   background: -webkit-linear-gradient(45deg, #f00 50%, transparent 50%);
   background: linear-gradient(45deg, #f00 50%, transparent 50%);
+  -webkit-transform: $transform translateZ(0);
 }
 
 .search {
@@ -2259,16 +2257,11 @@ x:-o-prefocus {
 
 .search:before {
   content: "";
-  position: absolute;
-  left: 100%;
-  top: 50%;
   width: 2.969848481766999rem;
   height: 2.969848481766999rem;
-  -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  -webkit-transform: $transform translateZ(0);
 }
 
 .search-field {
@@ -2327,16 +2320,11 @@ x:-o-prefocus {
 
 .header-service:before {
   content: "";
-  position: absolute;
-  left: 100%;
-  top: 50%;
   width: 2.969848481766999rem;
   height: 2.969848481766999rem;
-  -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  -webkit-transform: $transform translateZ(0);
 }
 
 .content {
