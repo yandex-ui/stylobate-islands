@@ -18,6 +18,22 @@
 >       skin: arrow
 > {:.styl}
 
+Если необходимо сделать стрелку-ссылку, это легко сделать, используя [скин ссылки](#skin-islands-link):
+
+> <div>
+>   <a class="service-arrow" href="#x">
+>       Фотки
+>   </a>
+> </div>
+>
+>     .service-arrow
+>       kind: block inline
+>       skin: arrow
+>
+>       a&
+>         skin: link #000
+> {:.styl}
+
 Если же нужна поисковая стрелка, нужно использовать параметр `search` для правильных отступов (+ нужно поправить выравнивание поля внутри):
 
     skin: arrow search
