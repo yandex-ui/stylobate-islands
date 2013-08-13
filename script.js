@@ -25,6 +25,25 @@ $('blockquote .tabs-item').click(function(){
     $(this).addClass('tabs-item_selected');
 });
 
+// Auto-sizing textarea
+
+$('.js-autosize').on('input',function(){
+    $(this).height(0).height($(this)[0].scrollHeight);
+});
+
+$('.js-autosize').each(function(){
+    $(this).height(0).height($(this)[0].scrollHeight);
+});
+
+$('.field-reset').on('click',function(e){
+    e.preventDefault();
+    var $textarea = $(this).closest('.field').find('.input-controller')
+    $textarea
+        .val('')
+        .focus()
+        .height(0)
+        .height($textarea[0].scrollHeight);
+});
 
 // Keeping the position of the sidebar
 
