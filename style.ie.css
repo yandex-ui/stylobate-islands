@@ -1543,6 +1543,14 @@ select:focus + .select-focus {
   white-space: nowrap;
   margin-right: 12.124px;
 }
+a.service-arrow {
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+a.service-arrow:hover {
+  color: #d00;
+}
 .search-arrow {
   position: relative;
   display: inline;

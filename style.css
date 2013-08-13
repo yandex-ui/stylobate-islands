@@ -2246,6 +2246,16 @@ x:-o-prefocus {
   -webkit-transform: $transform translateZ(0);
 }
 
+a.service-arrow {
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+a.service-arrow:hover {
+  color: #d00;
+}
+
 .search-arrow {
   position: relative;
   display: inline-block;
