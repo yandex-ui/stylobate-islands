@@ -25,6 +25,13 @@
 >       skin: input small
 > {:.styl}
 
+Текстария — визуально тот же инпут, так что можно использовать те же скины и классы:
+
+> <textarea class="small-input" rows="8" cols="20">
+> Some text inside
+> </textarea>
+
+
 ### Сложные инпуты {#fields}
 
 Если же нужно что-то сложнее (нужно вставлять сущности внутрь, типа крестика и подобных штук) лучше использовать «составной» инпут.
@@ -154,3 +161,15 @@
 >       kind: field-left 0.5*$s $s
 >       skin: input-label
 > {:.styl}
+
+#### Сложная текстария {#complex-textarea}
+
+Если использовать сложный инпут + текстарию, то довольно просто сделать автоувеличивающуюся по контенту текстарию с дополнительными внутренними элементами вроде иконки очистки:
+
+> <label class="field">
+>     <span class="field-reset"></span>
+>     <span class="field-content">
+>         <textarea class="input-controller js-autosize" cols="20" rows="8" />
+>         <span class="input-view"> </span>
+>     </span>
+> </label>
