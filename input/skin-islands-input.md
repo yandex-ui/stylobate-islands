@@ -173,3 +173,9 @@
 >         <span class="input-view"> </span>
 >     </span>
 > </label>
+>
+>     .field-reset
+>       kind: field-right 0.5*$s
+>       skin: icon remove with-hover
+>       margin-right: $s * -1
+> {:.styl}
