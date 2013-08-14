@@ -20,14 +20,14 @@ skin-islands-arrow()
 
     margin-right: round(($height / 2) * tan(30deg), 3)
 
-    unless ie or no-elements in arguments
+    unless ie or no-elements in arguments or utilus_get(arguments, '-helper')
       &:before
         content: ""
         skin-islands-arrow-helper(arguments)
 
 skin-islands-arrow-helper()
-  $height = alike(arguments, $skin-islands-arrow-height)
-  $color = alike(arguments, $skin-islands-arrow-color)
+  $height = alike(arguments, parent_alike(arguments, $skin-islands-arrow-height))
+  $color = alike(arguments, parent_alike(arguments, $skin-islands-arrow-color))
 
   @extends $skin-islands-arrow-helper
 
@@ -41,7 +41,8 @@ skin-islands-arrow-helper()
 
     background: linear-gradient(45deg, $color 50%,transparent 50%)
 
-    -webkit-transform: $transform translateZ(0) if alpha($color) == 1
+    if alpha($color) == 1
+      -webkit-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg) translateZ(0)
 
 $skin-islands-arrow-helper
   position: absolute
@@ -55,6 +56,5 @@ $skin-islands-arrow-helper
   else
     top: 50%
 
-    $transform = translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
-    transform: $transform
+    transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
 

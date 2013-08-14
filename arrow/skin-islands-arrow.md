@@ -103,6 +103,10 @@
 
     skin: arrow tail
 
+Либо можно использовать специальный параметр-элемент, создав хвостик из вызова скина:
+
+    skin: arrow red 11*rem (-helper '& > .arrow-tail')
+
 Кроме того, можно настраивать как цвет, так и высоту стрелки, передавая параметры соответствующих типов:
 
 > <div>
@@ -114,8 +118,5 @@
 >
 >     .arrow-body
 >       kind: block inline
->       skin: arrow no-elements red 11*rem
->
->     .arrow-tail
->       skin: arrow tail red 11*rem
+>       skin: arrow red 11*rem (-helper '& > .arrow-tail')
 > {:.styl}
