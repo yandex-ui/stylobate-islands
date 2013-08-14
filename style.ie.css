@@ -1425,6 +1425,7 @@ textarea.input-controller {
   margin: -5px -5px -5px 0;
   padding: 5px 5px 5px 5px;
   margin-right: -10px;
+  height: auto;
 }
 .field-reset:before {
   content: " ";
