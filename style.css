@@ -229,7 +229,7 @@ h3,
 
 .service-arrow:before,
 .search-arrow:before,
-.arrow-tail,
+.arrow-body > .arrow-tail,
 .search:before,
 .header-service:before {
   position: absolute;
@@ -2277,7 +2277,7 @@ x:-o-prefocus {
   height: 2.969848481766999rem;
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  -webkit-transform: $transform translateZ(0);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
 }
 
 a.service-arrow {
@@ -2306,7 +2306,7 @@ a.service-arrow:hover {
   height: 2.969848481766999rem;
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  -webkit-transform: $transform translateZ(0);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
 }
 
 .search-arrow > .field {
@@ -2326,12 +2326,12 @@ a.service-arrow:hover {
   color: #fff;
 }
 
-.arrow-tail {
+.arrow-body > .arrow-tail {
   width: 7.778174595104045rem;
   height: 7.778174595104045rem;
   background: -webkit-linear-gradient(45deg, #f00 50%, transparent 50%);
   background: linear-gradient(45deg, #f00 50%, transparent 50%);
-  -webkit-transform: $transform translateZ(0);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
 }
 
 .search {
@@ -2349,7 +2349,7 @@ a.service-arrow:hover {
   height: 2.969848481766999rem;
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  -webkit-transform: $transform translateZ(0);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
 }
 
 .search-field {
@@ -2412,7 +2412,7 @@ a.service-arrow:hover {
   height: 2.969848481766999rem;
   background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
   background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  -webkit-transform: $transform translateZ(0);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
 }
 
 .content {

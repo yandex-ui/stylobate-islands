@@ -169,7 +169,7 @@ h1,h2,h3,
 .is-disabled .is-disabled {
   opacity: 1;
 }
-.arrow-tail {
+.arrow-body > .arrow-tail {
   position: absolute;
   left: 100%;
   top: 0;
@@ -1606,7 +1606,7 @@ a.service-arrow:hover {
   margin-right: 31.754px;
   color: #fff;
 }
-.arrow-tail {
+.arrow-body > .arrow-tail {
   border-color: transparent #f00;
   border-width: 55px 0 55px 31.754px;
 }

@@ -9,6 +9,7 @@ build_minified:
 	./node_modules/csso/bin/csso style.ie.css style.ie.css
 
 up:
+	git pull --rebase && \
 	npm install && \
 	git submodule init && \
 	git submodule update && \
