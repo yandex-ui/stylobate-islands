@@ -2087,6 +2087,10 @@ textarea.input-controller {
   margin-right: -1rem;
 }
 
+.field-reset:before {
+  content: " ";
+}
+
 .tabs {
   position: relative;
   display: block;
