@@ -91,10 +91,10 @@
 >       &-controller
 >         kind: hidden visually
 >
->       &-controller:checked + &-view
+>       input:checked + &-view
 >         skin: button_checked
 >
->       &-controller:focus + &-view
+>       :focus + &-view
 >         skin: button_focus
 > {:.styl}
 

@@ -67,7 +67,7 @@
 >       kind: fill -1px
 >       skin: input-view no-focus
 >
->       .input-controller:not(.is-disabled):focus + &
+>       :not(.is-disabled):focus + &
 >         skin: input_focus
 > {:.styl}
 
