@@ -1070,6 +1070,8 @@ button.radio > .button-content {
   visibility: hidden;
 }
 .normal-checkbox {
+  width: 16px;
+  height: 16px;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1080,8 +1082,6 @@ button.radio > .button-content {
   text-align: center;
   margin-top: -3px;
   margin-right: 6px;
-  width: 16px;
-  height: 16px;
 }
 .normal-checkbox:before {
   content: "";
@@ -1133,6 +1133,8 @@ button.normal-checkbox > .button-content {
   visibility: hidden;
 }
 .small-radio {
+  width: 14px;
+  height: 14px;
   position: relative;
   vertical-align: baseline;
   color: #333;
@@ -1142,8 +1144,6 @@ button.normal-checkbox > .button-content {
   text-align: center;
   margin-top: -4px;
   margin-right: 6px;
-  width: 14px;
-  height: 14px;
 }
 .small-radio:before {
   content: "";

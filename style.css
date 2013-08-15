@@ -1590,6 +1590,8 @@ hr {
 }
 
 .normal-checkbox {
+  width: 1.6rem;
+  height: 1.6rem;
   position: relative;
   vertical-align: baseline;
   -webkit-user-select: none;
@@ -1606,8 +1608,6 @@ hr {
   text-align: center;
   margin-top: -3px;
   margin-right: 0.6rem;
-  width: 1.6rem;
-  height: 1.6rem;
 }
 
 .normal-checkbox:before {
@@ -1682,6 +1682,8 @@ hr {
 }
 
 .small-radio {
+  width: 1.4000000000000001rem;
+  height: 1.4000000000000001rem;
   position: relative;
   vertical-align: baseline;
   -webkit-user-select: none;
@@ -1698,8 +1700,6 @@ hr {
   margin-top: -4px;
   margin-right: 0.6rem;
   border-radius: 50%;
-  width: 1.4000000000000001rem;
-  height: 1.4000000000000001rem;
 }
 
 .small-radio:before {
