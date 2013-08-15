@@ -7,11 +7,19 @@ skin-islands-group-start()
   &:before
     right: 0
 
+  input&,
+  label&
+    border-right-color: transparent
+
 skin-islands-group-middle()
   kind: group-middle '&,&:before'
 
   &:before
     right: 0
+
+  input&,
+  label&
+    border-right-color: transparent
 
 skin-islands-group-end()
   kind: group-end '&,&:before'
@@ -30,5 +38,11 @@ skin-islands-nested-group-item()
   $nested-group-item = alike(arguments, '.toggler-view')
   kind: group-item ('& > ' + $nested-group-item + ', & > ' + $nested-group-item + ':before')
 
-  &:not(:last-child) > {$nested-group-item}:before
-    right: 0
+  &:not(:last-child) > {$nested-group-item}
+    &:before
+      right: 0
+
+    input&,
+    label&
+      border-right-color: transparent
+
