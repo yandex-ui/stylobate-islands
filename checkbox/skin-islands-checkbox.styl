@@ -18,23 +18,27 @@ skin-islands-checkbox()
       height: $islands_m - 0.2*rem
       padding: 0
 
+  unless no-elements in arguments or utilus_get(arguments, '-icon')
+    &-icon
+      skin-islands-checkbox-icon()
+
+skin-islands-checkbox-icon()
   // Replace it with svg?
   // And icon kind?
-  &-icon
-    position: absolute
-    top: 50%
-    left: 50%
+  position: absolute
+  top: 50%
+  left: 50%
 
-    width: 5px
-    height: 13px
-    border-bottom: 3px solid
-    border-right: 3px solid
-    margin: -13px 0 0 -2px
+  width: 5px
+  height: 13px
+  border-bottom: 3px solid
+  border-right: 3px solid
+  margin: -13px 0 0 -2px
 
-    color: #000
+  color: #000
 
-    transform: scale(0.9) rotate(50deg) skewX(12deg)
+  transform: scale(0.9) rotate(50deg) skewX(12deg)
 
-    // Find out if there is any way to make this easier?
-    .toggler-controller:not(:checked) + .toggler-view > &
-      visibility: hidden
+  // Find out if there is any way to make this easier?
+  .toggler-controller:not(:checked) + .toggler-view > &
+    visibility: hidden

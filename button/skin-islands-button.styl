@@ -81,8 +81,9 @@ skin-islands-proto-button()
   // &:hover:after
   //   -moz-transition: box-shadow 0.1s 999s
 
-  &:not({$skin-islands-button-disabled}):focus
-    skin-islands-button_focus(arguments)
+  unless no-focus in arguments
+    &:not({$skin-islands-button-disabled}):focus
+      skin-islands-button_focus(arguments)
 
 
 // Normal button
