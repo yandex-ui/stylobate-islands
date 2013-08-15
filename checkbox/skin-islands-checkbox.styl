@@ -1,5 +1,5 @@
 skin-islands-checkbox()
-  skin-islands-button(no-active retrieve(arguments, sizeless, adaptive))
+  skin-islands-button(no-active no-hover retrieve(arguments, sizeless, adaptive))
 
   vertical-align: middle
 
@@ -19,7 +19,7 @@ skin-islands-checkbox()
       padding: 0
 
   unless no-elements in arguments or utilus_get(arguments, '-icon')
-    &-icon
+    & > &-icon
       skin-islands-checkbox-icon()
 
 skin-islands-checkbox-icon()

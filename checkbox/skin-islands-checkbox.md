@@ -45,9 +45,11 @@
 >
 >     .normal-checkbox
 >       kind: icon (size $m $m)
->       skin: checkbox sizeless
+>       skin: checkbox sizeless (-icon '& > .checkbox-icon')
 >
 >     .small-radio
 >       kind: icon (size ($m - 0.2*rem) ($m - 0.2*rem))
->       skin: radio sizeless
+>       skin: radio sizeless (-icon '& > .radio-icon')
 > {:.styl}
+
+Нужно отметить, что из-за того, что имя внутреннего элемента отличается от родителя (`small-radio` и `radio-icon`) нужно при вызове явно прокидывать имя внутреннего элемента, не опираясь на дефолт.

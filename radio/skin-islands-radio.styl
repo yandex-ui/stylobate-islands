@@ -1,5 +1,5 @@
 skin-islands-radio()
-  skin-islands-button(no-active retrieve(arguments, sizeless, adaptive))
+  skin-islands-button(no-active no-hover retrieve(arguments, sizeless, adaptive))
 
   text-align: center
 
@@ -12,7 +12,7 @@ skin-islands-radio()
     border-radius: 50%
 
   unless no-elements in arguments or utilus_get(arguments, '-icon')
-    &-icon
+    & > &-icon
       skin-islands-radio-icon()
 
 skin-islands-radio-icon()
