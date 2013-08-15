@@ -285,6 +285,11 @@ h3,
   right: 0;
 }
 
+input.group-start,
+label.group-start {
+  border-right-color: transparent;
+}
+
 .group-middle,
 .group-middle:before {
   border-radius: 0;
@@ -294,9 +299,21 @@ h3,
   right: 0;
 }
 
+input.group-middle,
+label.group-middle {
+  border-right-color: transparent;
+}
+
 .group-item:first-child:before,
 .group > .toggle-button:first-child:before {
   right: 0;
+}
+
+input.group-item:first-child,
+input.group > .toggle-button:first-child,
+label.group-item:first-child,
+label.group > .toggle-button:first-child {
+  border-right-color: transparent;
 }
 
 .group-item:not(:first-child):not(:last-child),
@@ -311,6 +328,13 @@ h3,
   right: 0;
 }
 
+input.group-item:not(:first-child):not(:last-child),
+input.group > .toggle-button:not(:first-child):not(:last-child),
+label.group-item:not(:first-child):not(:last-child),
+label.group > .toggle-button:not(:first-child):not(:last-child) {
+  border-right-color: transparent;
+}
+
 .group > .toggler:not(:first-child):not(:last-child) > .toggler-view,
 .group > .toggler:not(:first-child):not(:last-child) > .toggler-view:before {
   border-radius: 0;
@@ -318,6 +342,11 @@ h3,
 
 .group > .toggler:not(:last-child) > .toggler-view:before {
   right: 0;
+}
+
+input.group > .toggler:not(:last-child) > .toggler-view,
+label.group > .toggler:not(:last-child) > .toggler-view {
+  border-right-color: transparent;
 }
 
 .site-nav {

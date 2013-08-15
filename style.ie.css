@@ -214,24 +214,50 @@ h1,h2,h3,
 .group-start:before {
   right: 0;
 }
+input.group-start,
+label.group-start {
+  border-right-color: transparent;
+}
 .group-middle:before {
   right: 0;
+}
+input.group-middle,
+label.group-middle {
+  border-right-color: transparent;
 }
 .group-item:first-child:before,
 .group > .toggle-button:first-child:before {
   right: 0;
 }
+input.group-item:first-child,
+input.group > .toggle-button:first-child,
+label.group-item:first-child,
+label.group > .toggle-button:first-child {
+  border-right-color: transparent;
+}
 .group-item:not(:first-child):not(:last-child):before,
 .group > .toggle-button:not(:first-child):not(:last-child):before {
   right: 0;
 }
+input.group-item:not(:first-child):not(:last-child),
+input.group > .toggle-button:not(:first-child):not(:last-child),
+label.group-item:not(:first-child):not(:last-child),
+label.group > .toggle-button:not(:first-child):not(:last-child) {
+  border-right-color: transparent;
+}
 .group > .toggler:not(:last-child) > .toggler-view:before {
   right: 0;
+}
+input.group > .toggler:not(:last-child) > .toggler-view,
+label.group > .toggler:not(:last-child) > .toggler-view {
+  border-right-color: transparent;
 }
 .site-nav {
   position: relative;
   display: block;
   background: #fff;
+  border: 1px solid #d9d9d9;
+  margin: -1px 0;
   padding: 0 12px;
 }
 .site-nav-link,
@@ -459,11 +485,15 @@ hr {
   position: relative;
   display: block;
   background: #fff;
+  border: 1px solid #e6e6e6;
+  margin: -1px 0;
 }
 .flying-isle {
   position: relative;
   display: block;
   background: #fff;
+  border: 1px solid #e6e6e6;
+  margin: -1px 0;
 }
 .isle-content {
   padding: 16px;
@@ -1176,6 +1206,8 @@ button.small-radio > .button-content {
 .modal {
   visibility: visible;
   background: #fff;
+  border: 1px solid #e6e6e6;
+  margin: -1px 0;
 }
 .modal-paranja {
   position: absolute;
@@ -1633,6 +1665,8 @@ a.service-arrow:hover {
   position: relative;
   display: block;
   background: #fff;
+  border: 1px solid #d9d9d9;
+  margin: -1px 0;
   z-index: 2;
   padding: 16px 20px;
 }
@@ -1670,6 +1704,8 @@ a.service-arrow:hover {
   position: relative;
   display: block;
   background: #fff;
+  border: 1px solid #e6e6e6;
+  margin: -1px 0;
   margin-left: 320px;
 }
 .content-section {
@@ -1712,6 +1748,8 @@ a.service-arrow:hover {
 }
 .aside {
   background: #fff;
+  border: 1px solid #e6e6e6;
+  margin: -1px 0;
   position: absolute;
   width: 300px;
 }
