@@ -14,7 +14,7 @@ Getting the language from url
         {% assign lang_prefix = "en/" %}
     {% endif %}
 
-Looking if the page have a translation
+Looking if the page has a translation
 
     {% if lang == 'en' %}
         {% capture expected_translation_id %}{{ page.id | replace:'/en/','/' }}{% endcapture %}
