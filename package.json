@@ -1,18 +1,18 @@
 {
   "name": "stylobate-islands",
-  "version": "0.3.0",
-
+  "version": "0.3.1",
   "author": "Roman Komarov <kizmarh@ya.ru> (http://kizu.ru/en/)",
   "licence": "MIT",
-
   "description": "Islands skin for stylobate",
   "homepage": "https://github.com/yandex-ui/stylobate-islands#readme",
-  "bugs": { "url": "http://github.com/yandex-ui/stylobate-islands/issues" },
-
+  "bugs": {
+    "url": "http://github.com/yandex-ui/stylobate-islands/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/yandex-ui/stylobate-islands.git"
   },
-
-  "engines": { "node": ">=0.6" }
+  "engines": {
+    "node": ">=0.6"
+  }
 }
