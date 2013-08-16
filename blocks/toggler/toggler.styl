@@ -8,10 +8,10 @@
     kind: hidden visually
     // Could add `.is-disabled &\n kind: hidden`
 
-  &-controller:checked + &-view
+  input:checked + &-view
     skin: button_checked
 
-  &-controller:focus + &-view
+  :focus + &-view
     skin: button_focus
 
 // Also, see group block for toggler-inside-group styles

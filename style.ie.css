@@ -987,13 +987,7 @@ button.checkbox > .button-content {
 .checkbox:not(.is-disabled):focus:after {
   z-index: 9;
 }
-.checkbox:not(.is-disabled):hover {
-  background: #b0b0b0;
-}
-.checkbox:not(.is-disabled):hover:before {
-  background: #fbfaf9;
-}
-.checkbox-icon {
+.checkbox > .checkbox-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1004,7 +998,7 @@ button.checkbox > .button-content {
   margin: -13px 0 0 -2px;
   color: #000;
 }
-.toggler-controller:not(:checked) + .toggler-view > .checkbox-icon {
+input:not(:checked) + .checkbox > .checkbox-icon {
   visibility: hidden;
 }
 .radio {
@@ -1051,13 +1045,7 @@ button.radio > .button-content {
 .radio:not(.is-disabled):focus:after {
   z-index: 9;
 }
-.radio:not(.is-disabled):hover {
-  background: #b0b0b0;
-}
-.radio:not(.is-disabled):hover:before {
-  background: #fbfaf9;
-}
-.radio-icon {
+.radio > .radio-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1066,7 +1054,7 @@ button.radio > .button-content {
   margin: -3px;
   background: #000;
 }
-.toggler-controller:not(:checked) + .toggler-view > .radio-icon {
+input:not(:checked) + .radio > .radio-icon {
   visibility: hidden;
 }
 .normal-checkbox {
@@ -1112,13 +1100,7 @@ button.normal-checkbox > .button-content {
 .normal-checkbox:not(.is-disabled):focus:after {
   z-index: 9;
 }
-.normal-checkbox:not(.is-disabled):hover {
-  background: #b0b0b0;
-}
-.normal-checkbox:not(.is-disabled):hover:before {
-  background: #fbfaf9;
-}
-.normal-checkbox-icon {
+.normal-checkbox > .checkbox-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1129,7 +1111,7 @@ button.normal-checkbox > .button-content {
   margin: -13px 0 0 -2px;
   color: #000;
 }
-.toggler-controller:not(:checked) + .toggler-view > .normal-checkbox-icon {
+input:not(:checked) + .normal-checkbox > .checkbox-icon {
   visibility: hidden;
 }
 .small-radio {
@@ -1174,13 +1156,7 @@ button.small-radio > .button-content {
 .small-radio:not(.is-disabled):focus:after {
   z-index: 9;
 }
-.small-radio:not(.is-disabled):hover {
-  background: #b0b0b0;
-}
-.small-radio:not(.is-disabled):hover:before {
-  background: #fbfaf9;
-}
-.small-radio-icon {
+.small-radio > .radio-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1189,7 +1165,7 @@ button.small-radio > .button-content {
   margin: -3px;
   background: #000;
 }
-.toggler-controller:not(:checked) + .toggler-view > .small-radio-icon {
+input:not(:checked) + .small-radio > .radio-icon {
   visibility: hidden;
 }
 .modal-wrap {
@@ -1347,14 +1323,14 @@ button.small-radio > .button-content {
   vertical-align: top;
   cursor: pointer;
 }
-.toggler-controller:checked + .toggler-view {
+input:checked + .toggler-view {
   background: #fff1c0;
   border-color: #999278 #b4ad93 #ccc4aa;
 }
-.toggler-controller:focus + .toggler-view {
+:focus + .toggler-view {
   outline: 0;
 }
-.toggler-controller:focus + .toggler-view:after {
+:focus + .toggler-view:after {
   z-index: 9;
 }
 .input {
@@ -1435,7 +1411,7 @@ textarea.input-controller {
   border-color: rgba(0,0,0,0.38) rgba(0,0,0,0.27) rgba(0,0,0,0.16);
   background: linear-gradient(#fff, #fff);
 }
-.input-controller:not(.is-disabled):focus + .input-view {
+:not(.is-disabled):focus + .input-view {
   outline: none;
   border-color: rgba(78,62,2,0.515) rgba(94,76,2,0.42) rgba(117,93,0,0.335);
 }

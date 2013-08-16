@@ -1464,19 +1464,7 @@ hr {
   background: linear-gradient(#fff, #eee);
 }
 
-.checkbox:not(.is-disabled):hover {
-  background: rgba(0,0,0,0.31);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
-  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
-}
-
-.checkbox:not(.is-disabled):hover:before {
-  background: #fbfaf9;
-  background: -webkit-linear-gradient(#fff, #f6f5f3);
-  background: linear-gradient(#fff, #f6f5f3);
-}
-
-.checkbox-icon {
+.checkbox > .checkbox-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1491,7 +1479,7 @@ hr {
   transform: scale(0.9) rotate(50deg) skewX(12deg);
 }
 
-.toggler-controller:not(:checked) + .toggler-view > .checkbox-icon {
+input:not(:checked) + .checkbox > .checkbox-icon {
   visibility: hidden;
 }
 
@@ -1558,23 +1546,11 @@ hr {
   background: linear-gradient(#fff, #eee);
 }
 
-.radio:not(.is-disabled):hover {
-  background: rgba(0,0,0,0.31);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
-  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
-}
-
-.radio:not(.is-disabled):hover:before {
-  background: #fbfaf9;
-  background: -webkit-linear-gradient(#fff, #f6f5f3);
-  background: linear-gradient(#fff, #f6f5f3);
-}
-
 .radio:before {
   border-radius: 50%;
 }
 
-.radio-icon {
+.radio > .radio-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1585,7 +1561,7 @@ hr {
   border-radius: 50%;
 }
 
-.toggler-controller:not(:checked) + .toggler-view > .radio-icon {
+input:not(:checked) + .radio > .radio-icon {
   visibility: hidden;
 }
 
@@ -1650,19 +1626,7 @@ hr {
   background: linear-gradient(#fff, #eee);
 }
 
-.normal-checkbox:not(.is-disabled):hover {
-  background: rgba(0,0,0,0.31);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
-  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
-}
-
-.normal-checkbox:not(.is-disabled):hover:before {
-  background: #fbfaf9;
-  background: -webkit-linear-gradient(#fff, #f6f5f3);
-  background: linear-gradient(#fff, #f6f5f3);
-}
-
-.normal-checkbox-icon {
+.normal-checkbox > .checkbox-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1677,7 +1641,7 @@ hr {
   transform: scale(0.9) rotate(50deg) skewX(12deg);
 }
 
-.toggler-controller:not(:checked) + .toggler-view > .normal-checkbox-icon {
+input:not(:checked) + .normal-checkbox > .checkbox-icon {
   visibility: hidden;
 }
 
@@ -1742,23 +1706,11 @@ hr {
   background: linear-gradient(#fff, #eee);
 }
 
-.small-radio:not(.is-disabled):hover {
-  background: rgba(0,0,0,0.31);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
-  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
-}
-
-.small-radio:not(.is-disabled):hover:before {
-  background: #fbfaf9;
-  background: -webkit-linear-gradient(#fff, #f6f5f3);
-  background: linear-gradient(#fff, #f6f5f3);
-}
-
 .small-radio:before {
   border-radius: 50%;
 }
 
-.small-radio-icon {
+.small-radio > .radio-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1769,7 +1721,7 @@ hr {
   border-radius: 50%;
 }
 
-.toggler-controller:not(:checked) + .toggler-view > .small-radio-icon {
+input:not(:checked) + .small-radio > .radio-icon {
   visibility: hidden;
 }
 
@@ -1948,27 +1900,27 @@ hr {
   cursor: pointer;
 }
 
-.toggler-controller:checked + .toggler-view {
+input:checked + .toggler-view {
   background: rgba(255,236,166,0.4);
   box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
 }
 
-.toggler-controller:checked + .toggler-view:before {
+input:checked + .toggler-view:before {
   background: #fff1be;
   background: -webkit-linear-gradient(#ffeca6, #fff6d5);
   background: linear-gradient(#ffeca6, #fff6d5);
   box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
 }
 
-.toggler-controller:checked + .toggler-view > .button-content {
+input:checked + .toggler-view > .button-content {
   top: 1px;
 }
 
-.toggler-controller:focus + .toggler-view {
+:focus + .toggler-view {
   outline: 0;
 }
 
-.toggler-controller:focus + .toggler-view:after {
+:focus + .toggler-view:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
@@ -2087,7 +2039,7 @@ textarea.input-controller {
   box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
 }
 
-.input-controller:not(.is-disabled):focus + .input-view {
+:not(.is-disabled):focus + .input-view {
   outline: none;
   border-color: rgba(78,62,2,0.515) rgba(94,76,2,0.42) rgba(117,93,0,0.335);
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
