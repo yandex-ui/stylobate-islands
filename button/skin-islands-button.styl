@@ -41,7 +41,7 @@ skin-islands-proto-button()
     if one-element in arguments
       z-index: -1
 
-  & > { alike(arguments, $skin-islands-button-content) }
+  & { alike(arguments, $skin-islands-button-content) }
     kind: block
     if ie
       button&
@@ -161,5 +161,5 @@ skin-islands-button_pressed()
       if one-element in arguments
         text-shadow: 0 1px 0 $islands_color_text
       else
-        & > { alike(arguments, $skin-islands-button-content) }
+        & { alike(arguments, $skin-islands-button-content) }
           top: 1px
