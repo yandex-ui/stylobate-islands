@@ -145,3 +145,22 @@
 >       kind: button
 >       skin: action-button fly small
 > {:.styl}
+
+### Кнопка добавления файла
+
+Для кнопки добавления файла нужно использовать `kind-file-input` с любой нужной кнопкой:
+
+> <div>
+>     <label class="file-input">
+>         <input class="file-input-controller" type="file" />
+>         <span class="button">
+>             <span class="button-content">Прикрепить файлы…</span>
+>         </span>
+>     </label>
+> </div>
+>
+>     .file-input
+>       kind: file-input 6px (-input '&-controller')
+> {:.styl}
+
+Тут видно, что мы задаём дополнительный отступ в `6px` на родителе — для того, чтобы у файлового инпута не обрезалось состояние фокуса. Побочный эффект: кликабельная область чуть увеличивается, но это не страшно.
