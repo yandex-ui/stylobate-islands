@@ -783,7 +783,7 @@ hr {
   border-radius: 2px;
 }
 
-.button > .button-content {
+.button .button-content {
   position: relative;
   display: block;
 }
@@ -798,8 +798,8 @@ input[type=file]:active + .button:before,
   box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
 }
 
-input[type=file]:active + .button > .button-content,
-.button:not(.is-disabled):active > .button-content {
+input[type=file]:active + .button .button-content,
+.button:not(.is-disabled):active .button-content {
   top: 1px;
 }
 
@@ -872,7 +872,7 @@ input[type=file]:hover + .button:before,
   border-radius: 2px;
 }
 
-.small-button > .button-content {
+.small-button .button-content {
   position: relative;
   display: block;
 }
@@ -887,8 +887,8 @@ input[type=file]:active + .small-button:before,
   box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
 }
 
-input[type=file]:active + .small-button > .button-content,
-.small-button:not(.is-disabled):active > .button-content {
+input[type=file]:active + .small-button .button-content,
+.small-button:not(.is-disabled):active .button-content {
   top: 1px;
 }
 
@@ -961,7 +961,7 @@ input[type=file]:hover + .small-button:before,
   border-radius: 2px;
 }
 
-.fly-button > .button-content {
+.fly-button .button-content {
   position: relative;
   display: block;
 }
@@ -1041,7 +1041,7 @@ input[type=file]:hover + .fly-button:before,
   border-radius: 2px;
 }
 
-.action-button > .button-content {
+.action-button .button-content {
   position: relative;
   display: block;
 }
@@ -1056,8 +1056,8 @@ input[type=file]:active + .action-button:before,
   box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
 }
 
-input[type=file]:active + .action-button > .button-content,
-.action-button:not(.is-disabled):active > .button-content {
+input[type=file]:active + .action-button .button-content,
+.action-button:not(.is-disabled):active .button-content {
   top: 1px;
 }
 
@@ -1130,7 +1130,7 @@ input[type=file]:hover:not(:checked) + .action-button:before,
   border-radius: 2px;
 }
 
-.small-action-button > .button-content {
+.small-action-button .button-content {
   position: relative;
   display: block;
 }
@@ -1145,8 +1145,8 @@ input[type=file]:active + .small-action-button:before,
   box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
 }
 
-input[type=file]:active + .small-action-button > .button-content,
-.small-action-button:not(.is-disabled):active > .button-content {
+input[type=file]:active + .small-action-button .button-content,
+.small-action-button:not(.is-disabled):active .button-content {
   top: 1px;
 }
 
@@ -1221,7 +1221,7 @@ input[type=file]:hover:not(:checked) + .small-action-button:before,
   left: 0;
 }
 
-.pseudo-button > .button-content {
+.pseudo-button .button-content {
   position: relative;
   display: block;
 }
@@ -1271,7 +1271,7 @@ input[type=file]:hover:not(:checked) + .small-action-button:before,
   left: 0;
 }
 
-.small-pseudo-button > .button-content {
+.small-pseudo-button .button-content {
   position: relative;
   display: block;
 }
@@ -1305,8 +1305,8 @@ input[type=file]:hover:not(:checked) + .small-action-button:before,
   box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
 }
 
-.toggle-button.is-checked > .button-content,
-.toggle-button.is-checked:hover > .button-content {
+.toggle-button.is-checked .button-content,
+.toggle-button.is-checked:hover .button-content {
   top: 1px;
 }
 
@@ -1338,7 +1338,7 @@ input[type=file]:hover:not(:checked) + .small-action-button:before,
   border-radius: 2px;
 }
 
-.super-button > .button-content {
+.super-button .button-content {
   position: relative;
   display: block;
 }
@@ -1437,7 +1437,7 @@ input[type=file]:hover:not(:checked) + .super-button:before,
   z-index: -1;
 }
 
-.simple-button > .button-content {
+.simple-button .button-content {
   position: relative;
   display: block;
 }
@@ -1525,7 +1525,7 @@ input[type=file]:hover + .simple-button:before,
   border-radius: 2px;
 }
 
-.checkbox > .button-content {
+.checkbox .button-content {
   position: relative;
   display: block;
 }
@@ -1608,7 +1608,7 @@ input:not(:checked) + .checkbox > .checkbox-icon {
   border-radius: 2px;
 }
 
-.radio > .button-content {
+.radio .button-content {
   position: relative;
   display: block;
 }
@@ -1688,7 +1688,7 @@ input:not(:checked) + .radio > .radio-icon {
   border-radius: 2px;
 }
 
-.normal-checkbox > .button-content {
+.normal-checkbox .button-content {
   position: relative;
   display: block;
 }
@@ -1769,7 +1769,7 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
   border-radius: 2px;
 }
 
-.small-radio > .button-content {
+.small-radio .button-content {
   position: relative;
   display: block;
 }
@@ -2009,8 +2009,8 @@ input:checked + .toggler-view:hover:before {
   box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
 }
 
-input:checked + .toggler-view > .button-content,
-input:checked + .toggler-view:hover > .button-content {
+input:checked + .toggler-view .button-content,
+input:checked + .toggler-view:hover .button-content {
   top: 1px;
 }
 

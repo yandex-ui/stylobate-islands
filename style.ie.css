@@ -604,11 +604,11 @@ hr {
   bottom: 1px;
   left: 1px;
 }
-.button > .button-content {
+.button .button-content {
   position: relative;
   display: block;
 }
-button.button > .button-content {
+button.button .button-content {
   margin: -1px -1px -3px;
 }
 .button:after {
@@ -654,11 +654,11 @@ input[type=file]:hover + .button:before,
   bottom: 1px;
   left: 1px;
 }
-.small-button > .button-content {
+.small-button .button-content {
   position: relative;
   display: block;
 }
-button.small-button > .button-content {
+button.small-button .button-content {
   margin: -1px -1px -3px;
 }
 .small-button:after {
@@ -704,11 +704,11 @@ input[type=file]:hover + .small-button:before,
   bottom: 1px;
   left: 1px;
 }
-.fly-button > .button-content {
+.fly-button .button-content {
   position: relative;
   display: block;
 }
-button.fly-button > .button-content {
+button.fly-button .button-content {
   margin: -1px -1px -3px;
 }
 .fly-button:after {
@@ -754,11 +754,11 @@ input[type=file]:hover + .fly-button:before,
   bottom: 1px;
   left: 1px;
 }
-.action-button > .button-content {
+.action-button .button-content {
   position: relative;
   display: block;
 }
-button.action-button > .button-content {
+button.action-button .button-content {
   margin: -1px -1px -3px;
 }
 .action-button:after {
@@ -804,11 +804,11 @@ input[type=file]:hover:not(:checked) + .action-button:before,
   bottom: 1px;
   left: 1px;
 }
-.small-action-button > .button-content {
+.small-action-button .button-content {
   position: relative;
   display: block;
 }
-button.small-action-button > .button-content {
+button.small-action-button .button-content {
   margin: -1px -1px -3px;
 }
 .small-action-button:after {
@@ -860,7 +860,7 @@ input[type=file]:hover:not(:checked) + .small-action-button:before,
   bottom: 0;
   left: 0;
 }
-.pseudo-button > .button-content {
+.pseudo-button .button-content {
   position: relative;
   display: block;
 }
@@ -895,7 +895,7 @@ input[type=file]:hover:not(:checked) + .small-action-button:before,
   bottom: 0;
   left: 0;
 }
-.small-pseudo-button > .button-content {
+.small-pseudo-button .button-content {
   position: relative;
   display: block;
 }
@@ -929,11 +929,11 @@ input[type=file]:hover:not(:checked) + .small-action-button:before,
   bottom: 1px;
   left: 1px;
 }
-.super-button > .button-content {
+.super-button .button-content {
   position: relative;
   display: block;
 }
-button.super-button > .button-content {
+button.super-button .button-content {
   margin: -1px -1px -3px;
 }
 .super-button:after {
@@ -985,11 +985,11 @@ input[type=file]:hover:not(:checked) + .super-button:before,
   left: 1px;
   z-index: -1;
 }
-.simple-button > .button-content {
+.simple-button .button-content {
   position: relative;
   display: block;
 }
-button.simple-button > .button-content {
+button.simple-button .button-content {
   margin: -1px -1px -3px;
 }
 .simple-button:after {
@@ -1038,11 +1038,11 @@ input[type=file]:hover + .simple-button:before,
   bottom: 1px;
   left: 1px;
 }
-.checkbox > .button-content {
+.checkbox .button-content {
   position: relative;
   display: block;
 }
-button.checkbox > .button-content {
+button.checkbox .button-content {
   margin: -1px -1px -3px;
 }
 .checkbox:after {
@@ -1097,11 +1097,11 @@ input:not(:checked) + .checkbox > .checkbox-icon {
   bottom: 1px;
   left: 1px;
 }
-.radio > .button-content {
+.radio .button-content {
   position: relative;
   display: block;
 }
-button.radio > .button-content {
+button.radio .button-content {
   margin: -1px -1px -3px;
 }
 .radio:after {
@@ -1152,11 +1152,11 @@ input:not(:checked) + .radio > .radio-icon {
   bottom: 1px;
   left: 1px;
 }
-.normal-checkbox > .button-content {
+.normal-checkbox .button-content {
   position: relative;
   display: block;
 }
-button.normal-checkbox > .button-content {
+button.normal-checkbox .button-content {
   margin: -1px -1px -3px;
 }
 .normal-checkbox:after {
@@ -1209,11 +1209,11 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
   bottom: 1px;
   left: 1px;
 }
-.small-radio > .button-content {
+.small-radio .button-content {
   position: relative;
   display: block;
 }
-button.small-radio > .button-content {
+button.small-radio .button-content {
   margin: -1px -1px -3px;
 }
 .small-radio:after {
