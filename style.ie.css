@@ -944,7 +944,7 @@ button.simple-button > .button-content {
 }
 .checkbox {
   position: relative;
-  vertical-align: baseline;
+  vertical-align: middle;
   color: #333;
   width: 1em;
   height: 1em;
@@ -953,9 +953,7 @@ button.simple-button > .button-content {
   background: #f6f6f6;
   border: 1px solid;
   border-color: #cbcbcb #b2b2b2 #9a9a9a;
-  vertical-align: middle;
   text-align: center;
-  margin-top: -3px;
   margin-right: 6px;
 }
 .checkbox:before {
@@ -1003,7 +1001,7 @@ input:not(:checked) + .checkbox > .checkbox-icon {
 }
 .radio {
   position: relative;
-  vertical-align: baseline;
+  vertical-align: middle;
   color: #333;
   width: 1em;
   height: 1em;
@@ -1013,7 +1011,6 @@ input:not(:checked) + .checkbox > .checkbox-icon {
   border: 1px solid;
   border-color: #cbcbcb #b2b2b2 #9a9a9a;
   text-align: center;
-  margin-top: -4px;
   margin-right: 6px;
 }
 .radio:before {
@@ -1061,14 +1058,12 @@ input:not(:checked) + .radio > .radio-icon {
   width: 16px;
   height: 16px;
   position: relative;
-  vertical-align: baseline;
+  vertical-align: middle;
   color: #333;
   background: #f6f6f6;
   border: 1px solid;
   border-color: #cbcbcb #b2b2b2 #9a9a9a;
-  vertical-align: middle;
   text-align: center;
-  margin-top: -3px;
   margin-right: 6px;
 }
 .normal-checkbox:before {
@@ -1118,13 +1113,12 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
   width: 14px;
   height: 14px;
   position: relative;
-  vertical-align: baseline;
+  vertical-align: middle;
   color: #333;
   background: #f6f6f6;
   border: 1px solid;
   border-color: #cbcbcb #b2b2b2 #9a9a9a;
   text-align: center;
-  margin-top: -4px;
   margin-right: 6px;
 }
 .small-radio:before {

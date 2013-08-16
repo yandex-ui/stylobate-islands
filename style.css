@@ -1403,7 +1403,7 @@ hr {
 
 .checkbox {
   position: relative;
-  vertical-align: baseline;
+  vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1418,9 +1418,7 @@ hr {
   background: rgba(0,0,0,0.3);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
-  vertical-align: middle;
   text-align: center;
-  margin-top: -3px;
   margin-right: 0.6rem;
 }
 
@@ -1485,7 +1483,7 @@ input:not(:checked) + .checkbox > .checkbox-icon {
 
 .radio {
   position: relative;
-  vertical-align: baseline;
+  vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1501,7 +1499,6 @@ input:not(:checked) + .checkbox > .checkbox-icon {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
   text-align: center;
-  margin-top: -4px;
   margin-right: 0.6rem;
   border-radius: 50%;
 }
@@ -1569,7 +1566,7 @@ input:not(:checked) + .radio > .radio-icon {
   width: 1.6rem;
   height: 1.6rem;
   position: relative;
-  vertical-align: baseline;
+  vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1580,9 +1577,7 @@ input:not(:checked) + .radio > .radio-icon {
   background: rgba(0,0,0,0.3);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
-  vertical-align: middle;
   text-align: center;
-  margin-top: -3px;
   margin-right: 0.6rem;
 }
 
@@ -1649,7 +1644,7 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
   width: 1.4000000000000001rem;
   height: 1.4000000000000001rem;
   position: relative;
-  vertical-align: baseline;
+  vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1661,7 +1656,6 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
   text-align: center;
-  margin-top: -4px;
   margin-right: 0.6rem;
   border-radius: 50%;
 }
