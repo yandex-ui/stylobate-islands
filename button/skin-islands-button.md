@@ -164,3 +164,31 @@
 > {:.styl}
 
 Тут видно, что мы задаём дополнительный отступ в `6px` на родителе — для того, чтобы у файлового инпута не обрезалось состояние фокуса. Побочный эффект: кликабельная область чуть увеличивается, но это не страшно.
+
+### Внедряемая кнопка добавления файла
+
+И второй вариант, для него нужно больше блоков, зато его можно применить и внутри уже имеющихся кнопок.
+
+> <div>
+>     <label class="button">
+>         <span class="file-intruder">
+>             <span class="file-intruder-inner">
+>                 <input class="file-intruder-input" type="file" />
+>                 <span class="file-intruder-focus"> </span>
+>             </span>
+>         </span>
+>         <span class="button-content">Прикрепить файлы…</span>
+>     </label>
+> </div>
+>
+>     .file-intruder
+>       kind: file-intruder (-inner '&-inner') (-input '&-input')
+>
+>     .file-intruder-input:focus + .file-intruder-focus
+>       kind: fill
+>       skin-islands-button_focus_style()
+> {:.styl}
+
+Тут нужно заметить, что требуются дополнительные стили для фокуса — возможно в будущем это как-то упростится, но пока только так.
+
+Плюсом этого решения, помимо внедряемости — отсутствие `overflow: hidden` на применяемом контексте. В случае с кнопкой это позволяет иметь и фокус, и правильную кликабельную область.
