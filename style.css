@@ -193,6 +193,26 @@ h3,
   vertical-align: baseline;
 }
 
+.file-input {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.file-input-controller {
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 500px;
+  opacity: 0;
+}
+
 .field-content {
   position: static;
   display: block;
@@ -739,14 +759,17 @@ hr {
   display: block;
 }
 
+input[type=file]:active + .button,
 .button:not(.is-disabled):active {
   box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
 }
 
+input[type=file]:active + .button:before,
 .button:not(.is-disabled):active:before {
   box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
 }
 
+input[type=file]:active + .button > .button-content,
 .button:not(.is-disabled):active > .button-content {
   top: 1px;
 }
@@ -760,10 +783,12 @@ hr {
   left: 0;
 }
 
+input[type=file]:focus + .button,
 .button:not(.is-disabled):focus {
   outline: 0;
 }
 
+input[type=file]:focus + .button:after,
 .button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
@@ -776,12 +801,14 @@ hr {
   background: linear-gradient(#fff, #eee);
 }
 
+input[type=file]:hover + .button,
 .button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 
+input[type=file]:hover + .button:before,
 .button:not(.is-disabled):hover:before {
   background: #fbfaf9;
   background: -webkit-linear-gradient(#fff, #f6f5f3);
@@ -821,14 +848,17 @@ hr {
   display: block;
 }
 
+input[type=file]:active + .small-button,
 .small-button:not(.is-disabled):active {
   box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
 }
 
+input[type=file]:active + .small-button:before,
 .small-button:not(.is-disabled):active:before {
   box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
 }
 
+input[type=file]:active + .small-button > .button-content,
 .small-button:not(.is-disabled):active > .button-content {
   top: 1px;
 }
@@ -842,10 +872,12 @@ hr {
   left: 0;
 }
 
+input[type=file]:focus + .small-button,
 .small-button:not(.is-disabled):focus {
   outline: 0;
 }
 
+input[type=file]:focus + .small-button:after,
 .small-button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
@@ -858,12 +890,14 @@ hr {
   background: linear-gradient(#fff, #eee);
 }
 
+input[type=file]:hover + .small-button,
 .small-button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 
+input[type=file]:hover + .small-button:before,
 .small-button:not(.is-disabled):hover:before {
   background: #fbfaf9;
   background: -webkit-linear-gradient(#fff, #f6f5f3);
@@ -903,6 +937,7 @@ hr {
   display: block;
 }
 
+input[type=file]:active + .fly-button,
 .fly-button:not(.is-disabled):active {
   top: 1px;
   box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
@@ -917,10 +952,12 @@ hr {
   left: 0;
 }
 
+input[type=file]:focus + .fly-button,
 .fly-button:not(.is-disabled):focus {
   outline: 0;
 }
 
+input[type=file]:focus + .fly-button:after,
 .fly-button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
@@ -933,12 +970,14 @@ hr {
   background: linear-gradient(#fff, #eee);
 }
 
+input[type=file]:hover + .fly-button,
 .fly-button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 
+input[type=file]:hover + .fly-button:before,
 .fly-button:not(.is-disabled):hover:before {
   background: #fbfaf9;
   background: -webkit-linear-gradient(#fff, #f6f5f3);
@@ -978,14 +1017,17 @@ hr {
   display: block;
 }
 
+input[type=file]:active + .action-button,
 .action-button:not(.is-disabled):active {
   box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
 }
 
+input[type=file]:active + .action-button:before,
 .action-button:not(.is-disabled):active:before {
   box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
 }
 
+input[type=file]:active + .action-button > .button-content,
 .action-button:not(.is-disabled):active > .button-content {
   top: 1px;
 }
@@ -999,10 +1041,12 @@ hr {
   left: 0;
 }
 
+input[type=file]:focus + .action-button,
 .action-button:not(.is-disabled):focus {
   outline: 0;
 }
 
+input[type=file]:focus + .action-button:after,
 .action-button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
@@ -1015,12 +1059,14 @@ hr {
   background: linear-gradient(#ffdf60, #fc0);
 }
 
+input[type=file]:hover:not(:checked) + .action-button,
 .action-button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 
+input[type=file]:hover:not(:checked) + .action-button:before,
 .action-button:not(.is-disabled):hover:before {
   background: #fd5;
   background: -webkit-linear-gradient(#ffe681, #ffd428);
@@ -1060,14 +1106,17 @@ hr {
   display: block;
 }
 
+input[type=file]:active + .small-action-button,
 .small-action-button:not(.is-disabled):active {
   box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
 }
 
+input[type=file]:active + .small-action-button:before,
 .small-action-button:not(.is-disabled):active:before {
   box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
 }
 
+input[type=file]:active + .small-action-button > .button-content,
 .small-action-button:not(.is-disabled):active > .button-content {
   top: 1px;
 }
@@ -1081,10 +1130,12 @@ hr {
   left: 0;
 }
 
+input[type=file]:focus + .small-action-button,
 .small-action-button:not(.is-disabled):focus {
   outline: 0;
 }
 
+input[type=file]:focus + .small-action-button:after,
 .small-action-button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
@@ -1097,12 +1148,14 @@ hr {
   background: linear-gradient(#ffdf60, #fc0);
 }
 
+input[type=file]:hover:not(:checked) + .small-action-button,
 .small-action-button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 
+input[type=file]:hover:not(:checked) + .small-action-button:before,
 .small-action-button:not(.is-disabled):hover:before {
   background: #fd5;
   background: -webkit-linear-gradient(#ffe681, #ffd428);
@@ -1261,6 +1314,7 @@ hr {
   display: block;
 }
 
+input[type=file]:active + .super-button,
 .super-button:not(.is-disabled):active {
   top: 1px;
   box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
@@ -1275,10 +1329,12 @@ hr {
   left: 0;
 }
 
+input[type=file]:focus + .super-button,
 .super-button:not(.is-disabled):focus {
   outline: 0;
 }
 
+input[type=file]:focus + .super-button:after,
 .super-button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
@@ -1291,12 +1347,14 @@ hr {
   background: linear-gradient(#ffdf60, #fc0);
 }
 
+input[type=file]:hover:not(:checked) + .super-button,
 .super-button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 
+input[type=file]:hover:not(:checked) + .super-button:before,
 .super-button:not(.is-disabled):hover:before {
   background: #fd5;
   background: -webkit-linear-gradient(#ffe681, #ffd428);
@@ -1355,11 +1413,13 @@ hr {
   display: block;
 }
 
+input[type=file]:active + .simple-button,
 .simple-button:not(.is-disabled):active {
   box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
   text-shadow: 0 1px 0 #333;
 }
 
+input[type=file]:active + .simple-button:before,
 .simple-button:not(.is-disabled):active:before {
   box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
 }
@@ -1373,10 +1433,12 @@ hr {
   left: 0;
 }
 
+input[type=file]:focus + .simple-button,
 .simple-button:not(.is-disabled):focus {
   outline: 0;
 }
 
+input[type=file]:focus + .simple-button:after,
 .simple-button:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
@@ -1389,12 +1451,14 @@ hr {
   background: linear-gradient(#fff, #eee);
 }
 
+input[type=file]:hover + .simple-button,
 .simple-button:not(.is-disabled):hover {
   background: rgba(0,0,0,0.31);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 
+input[type=file]:hover + .simple-button:before,
 .simple-button:not(.is-disabled):hover:before {
   background: #fbfaf9;
   background: -webkit-linear-gradient(#fff, #f6f5f3);
@@ -1446,10 +1510,12 @@ hr {
   left: 0;
 }
 
+input[type=file]:focus + .checkbox,
 .checkbox:not(.is-disabled):focus {
   outline: 0;
 }
 
+input[type=file]:focus + .checkbox:after,
 .checkbox:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
@@ -1527,10 +1593,12 @@ input:not(:checked) + .checkbox > .checkbox-icon {
   left: 0;
 }
 
+input[type=file]:focus + .radio,
 .radio:not(.is-disabled):focus {
   outline: 0;
 }
 
+input[type=file]:focus + .radio:after,
 .radio:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
@@ -1605,10 +1673,12 @@ input:not(:checked) + .radio > .radio-icon {
   left: 0;
 }
 
+input[type=file]:focus + .normal-checkbox,
 .normal-checkbox:not(.is-disabled):focus {
   outline: 0;
 }
 
+input[type=file]:focus + .normal-checkbox:after,
 .normal-checkbox:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
@@ -1684,10 +1754,12 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
   left: 0;
 }
 
+input[type=file]:focus + .small-radio,
 .small-radio:not(.is-disabled):focus {
   outline: 0;
 }
 
+input[type=file]:focus + .small-radio:after,
 .small-radio:not(.is-disabled):focus:after {
   z-index: 9;
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
@@ -1894,19 +1966,22 @@ input:not(:checked) + .small-radio > .radio-icon {
   cursor: pointer;
 }
 
-input:checked + .toggler-view {
+input:checked + .toggler-view,
+input:checked + .toggler-view:hover {
   background: rgba(255,236,166,0.4);
   box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
 }
 
-input:checked + .toggler-view:before {
+input:checked + .toggler-view:before,
+input:checked + .toggler-view:hover:before {
   background: #fff1be;
   background: -webkit-linear-gradient(#ffeca6, #fff6d5);
   background: linear-gradient(#ffeca6, #fff6d5);
   box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
 }
 
-input:checked + .toggler-view > .button-content {
+input:checked + .toggler-view > .button-content,
+input:checked + .toggler-view:hover > .button-content {
   top: 1px;
 }
 
@@ -2339,6 +2414,11 @@ a.service-arrow:hover {
 .search-right {
   float: right;
   margin-left: 0.6rem;
+}
+
+.file-input {
+  padding: 6px;
+  margin: -6px;
 }
 
 .header {
