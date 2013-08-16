@@ -213,6 +213,35 @@ h3,
   opacity: 0;
 }
 
+.file-intruder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.file-intruder-inner {
+  float: right;
+  text-align: right;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.file-intruder-input {
+  position: relative;
+  z-index: 11;
+  display: inline-block;
+  vertical-align: 0;
+  padding: 0;
+  margin: -5em 0 0 -20em;
+  cursor: pointer;
+  font-size: 80px;
+  opacity: 0;
+}
+
 .field-content {
   position: static;
   display: block;
@@ -2419,6 +2448,19 @@ a.service-arrow:hover {
 .file-input {
   padding: 6px;
   margin: -6px;
+}
+
+.file-intruder-input:focus + .file-intruder-focus {
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+
+.file-intruder-focus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .header {
