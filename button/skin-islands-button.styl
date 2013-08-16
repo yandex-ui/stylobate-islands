@@ -14,7 +14,7 @@ skin-islands-proto-button()
   // unless only in arguments
   position: relative
 
-  vertical-align: baseline
+  vertical-align: retrieve(arguments, middle top bottom, baseline)
   user-select: none
 
   if one-element in arguments and !ie
