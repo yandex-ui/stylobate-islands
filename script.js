@@ -4,7 +4,7 @@ Prism.languages.styl = Prism.languages.scss
 $("[data-modal]").click(function(){
     $('#' + $(this).attr('data-modal')).toggleClass('is-hidden');
 });
-$(".modal-paranja, .modal-close").click(function(){
+$(".modal-overlay, .modal-close").click(function(){
     $(this).closest('.modal-wrap').toggleClass('is-hidden');
 });
 $(".toggle-button:not(.is-disabled)").click(function(){

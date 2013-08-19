@@ -3,24 +3,8 @@
 
 .modal
   kind: modal
-  skin: isle fly
+  skin: popup (-content '&-content') (-close '&-close')
 
-.modal-paranja
-  kind: modal-paranja
-  skin: paranja
-
-// Could be a block like `content`, there are a lot of places for thing like that
-.modal-content
-  padding: $l
-
-  // Mix with .text, removing the bottom padding
-  &.text
-    padding-bottom: 0
-
-// Need to be abstracted to icon
-.modal-close
-  skin: icon remove with-hover
-
-  position: absolute
-  top: 5px
-  right: 5px
+.modal-overlay
+  kind: modal-overlay
+  skin: popup-overlay

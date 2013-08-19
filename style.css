@@ -1858,7 +1858,18 @@ input:not(:checked) + .small-radio > .radio-icon {
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 30px -5px rgba(0,0,0,0.5);
 }
 
-.modal-paranja {
+.modal-content {
+  padding: 2rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  margin-top: 0;
+}
+
+.modal-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -1866,20 +1877,6 @@ input:not(:checked) + .small-radio > .radio-icon {
   left: 0;
   visibility: visible;
   background: rgba(0,0,0,0.3);
-}
-
-.modal-content {
-  padding: 2rem;
-}
-
-.modal-content.text {
-  padding-bottom: 0;
-}
-
-.modal-close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
 }
 
 .form {
