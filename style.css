@@ -82,7 +82,9 @@ h3,
 .field-reset,
 .icon-remove,
 .active-icon-remove,
-.userpic {
+.icon-notification,
+.userpic,
+.user-pic {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -103,7 +105,9 @@ h3,
   height: 100%;
 }
 
-.modal {
+.modal,
+.user-pic,
+.user-name {
   display: inline-block;
   white-space: normal;
   vertical-align: middle;
@@ -297,6 +301,21 @@ h3,
   width: 16px;
   height: 16px;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuMjA5Yy0zLjc1MSAwLTYuNzkxIDMuMDQtNi43OTEgNi43OTEgMCAzLjc0OSAzLjA0IDYuNzg5IDYuNzkxIDYuNzg5IDMuNzQ5IDAgNi43ODktMy4wNCA2Ljc4OS02Ljc4OSAwLTMuNzUxLTMuMDQtNi43OTEtNi43ODktNi43OTF6bTMuOTkgOS4zNTVsLTEuNDI2IDEuNDI2LTIuNTY0LTIuNTY0LTIuNTY0IDIuNTY0LTEuNDI2LTEuNDI2IDIuNTY0LTIuNTY0LTIuNTY0LTIuNTY0IDEuNDI2LTEuNDI2IDIuNTY0IDIuNTY0IDIuNTY0LTIuNTY0IDEuNDI2IDEuNDI2LTIuNTY0IDIuNTY0IDIuNTY0IDIuNTY0eiIvPjwvc3ZnPg==");
+}
+
+.icon-notification {
+  height: 15px;
+  min-width: 9px;
+  padding: 0 3px;
+  border: 2px solid #fff;
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: bold;
+  color: #fff;
+  background: #f00;
+  border-radius: 1em;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,0.1), 0 5px 10px -5px rgba(0,0,0,0.5);
 }
 
 .modal-close,
@@ -2475,6 +2494,43 @@ a.service-arrow:hover {
 .userpic:link:hover,
 .userpic:visited:hover {
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+.user {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+.user:hover {
+  color: #d00;
+}
+
+.user-pic {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);
+}
+
+.user:hover > .user-pic {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+.user-pic > .icon-notification {
+  position: absolute;
+  top: -1px;
+  right: -4px;
+}
+
+.user-name {
+  margin-left: 0.6rem;
 }
 
 .header {
