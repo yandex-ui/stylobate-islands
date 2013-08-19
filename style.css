@@ -1859,7 +1859,21 @@ input:not(:checked) + .small-radio > .radio-icon {
 }
 
 .modal-content {
-  padding: 2rem;
+  padding: 1px 2rem 1px 2rem;
+}
+
+.modal-content:before {
+  content: "";
+  display: block;
+  margin-top: -1px;
+  margin-bottom: 1.6rem;
+}
+
+.modal-content:after {
+  content: "";
+  display: block;
+  margin-bottom: -1px;
+  margin-top: 1.6rem;
 }
 
 .modal-close {

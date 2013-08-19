@@ -1279,7 +1279,7 @@ input:not(:checked) + .small-radio > .radio-icon {
   margin: -1px 0;
 }
 .modal-content {
-  padding: 20px;
+  padding: 16px 20px 16px 20px;
 }
 .modal-close {
   position: absolute;
