@@ -2,7 +2,7 @@ unless check-stylobate-version is defined
   check-stylobate-version($version)
     error('Used Stylobate version is very outdated, update it to the `' + $version + '`.')
 
-check-stylobate-version('0.10.x')
+check-stylobate-version('0.11.x')
 
 // Setting variables
 $islands_xs ?= 0.6*rem
@@ -29,7 +29,6 @@ $islands_color_text_misc ?= rgba(#000, 0.4)
 @import "button/skin-islands-button_focus"
 @import "pseudo-button/skin-islands-pseudo-button"
 @import "select/skin-islands-select"
-@import "modal/skin-islands-modal"
 @import "form/skin-islands-form"
 @import "checkbox/skin-islands-checkbox"
 @import "radio/skin-islands-radio"
@@ -38,3 +37,4 @@ $islands_color_text_misc ?= rgba(#000, 0.4)
 @import "group/skin-islands-group"
 @import "icon/skin-islands-icon"
 @import "userpic/skin-islands-userpic"
+@import "popup/skin-islands-popup"
