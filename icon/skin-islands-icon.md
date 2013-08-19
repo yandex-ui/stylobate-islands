@@ -20,3 +20,18 @@
 >     .active-icon-remove
 >       skin: icon remove with-hover
 > {:.styl}
+
+### Нотификация {#notification}
+
+Иконка-баджик нотификации, с циферками.
+
+.icon-notification
+  skin: icon notification
+
+> <span class="icon-notification">7</span>
+> <span class="icon-notification">42</span>
+> <span class="icon-notification">99+</span>
+>
+>     .icon-notification
+>       skin: icon notification
+> {:.styl}

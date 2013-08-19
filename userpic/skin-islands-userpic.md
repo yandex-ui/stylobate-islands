@@ -28,3 +28,32 @@
 >     .userpic:visited
 >       skin: userpic_ (_hover '&:hover')
 > {:.styl}
+
+Ну и пример «из шапки» — с юзернеймом и иконкой нотификации
+
+> <div>
+>     <a class="user" href="#x">
+>         <span class="user-pic" style="background-image: url('http://im3-tub-ru.yandex.net/i?id=37564715-37-72.gif')">
+>             <span class="icon-notification">7</span>
+>         </span>
+>         <span class="user-name">Inky</span>
+>     </a>
+> </div>
+>
+>     .user
+>       kind: block inline, centering
+>       skin: link #000
+>     
+>       &-pic
+>         kind: icon (size 42px), centering-item
+>         skin: userpic (_hover '.user:hover > &')
+>     
+>         & > .icon-notification
+>           position: absolute
+>           top: -1px
+>           right: -4px
+>     
+>       &-name
+>         kind: centering-item
+>         margin-left: $xs
+> {:.styl}
