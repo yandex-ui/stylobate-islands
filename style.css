@@ -81,7 +81,8 @@ h3,
 .modal-close,
 .field-reset,
 .icon-remove,
-.active-icon-remove {
+.active-icon-remove,
+.userpic {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -2461,6 +2462,19 @@ a.service-arrow:hover {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.userpic {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);
+}
+
+.userpic:link:hover,
+.userpic:visited:hover {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
 }
 
 .header {

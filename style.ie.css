@@ -62,7 +62,8 @@ h1,h2,h3,
 .modal-close,
 .field-reset,
 .icon-remove,
-.active-icon-remove {
+.active-icon-remove,
+.userpic {
   position: relative;
   display: inline;
   zoom: 1;
@@ -1724,6 +1725,10 @@ a.service-arrow:hover {
   right: 0;
   bottom: 0;
   left: 0;
+}
+.userpic {
+  width: 42px;
+  height: 42px;
 }
 .header {
   position: relative;
