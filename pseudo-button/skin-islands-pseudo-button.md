@@ -27,3 +27,14 @@
 >       skin: pseudo-button small
 > {:.styl}
 
+
+Кнопка с рамкой по ховеру и тогглу
+
+> <div>
+>     <button class="pseudo-button toggle-button is-ghost" type="button"><span class="button-content">Пыщь</span></button>
+> </div>
+>
+>     .pseudo-button.is-ghost:not(:hover):not(:focus):not(.is-checked)
+>       box-shadow: none
+> {:.styl}
+
