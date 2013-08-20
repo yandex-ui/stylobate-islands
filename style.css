@@ -1514,6 +1514,10 @@ input[type=file]:hover + .simple-button:before,
   background: linear-gradient(#fff, #f6f5f3);
 }
 
+.pseudo-button.is-ghost:not(:hover):not(:focus):not(.is-checked) {
+  box-shadow: none;
+}
+
 .checkbox {
   position: relative;
   vertical-align: middle;
