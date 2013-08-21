@@ -103,7 +103,7 @@
 >     .dropdown
 >       kind: modal
 >       skin: popup \
->         (-content '&-content') \
+>         (-content '&-content' small) \
 >         (-tail '&-tail')
 > {:.styl}
 

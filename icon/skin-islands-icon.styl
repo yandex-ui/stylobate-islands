@@ -39,6 +39,18 @@ skin-islands-icon_dropdown()
   unless $color == inherit
     color: $color
 
+  if selecty in arguments
+    float: right
+
+    if small in arguments
+      top: 0.6em
+    else
+      top: 0.7em
+
+    left: -1px
+    margin-right: -1*$islands_xs
+    margin-left: $islands_s
+
 $skin-islands-icon_dropdown
   kind: icon (size 6px)
 
