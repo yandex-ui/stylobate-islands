@@ -3,35 +3,43 @@
 
 ## Иконки
 
-### Крестик удаления/закрытия {#remove}
+### Крестик удаления/закрытия {#icon_remove}
 
 Используется для закрытия попапов, очищения текстовых полей ввода и т.д.
 
-> <span class="icon-remove"> </span>
+> <span class="icon_remove"> </span>
 >
->     .icon-remove
->       skin: icon remove
+>     .icon_remove
+>       skin: icon_remove
 > {:.styl}
 
 Любую иконку можно сделать «активной» — добавить курсор и ховер с опасити, используя параметр `with-hover`
 
-> <span class="active-icon-remove"> </span>
+> <span class="active-icon_remove"> </span>
 >
->     .active-icon-remove
->       skin: icon remove with-hover
+>     .active-icon_remove
+>       skin: icon _remove with-hover
 > {:.styl}
 
-### Нотификация {#notification}
+### Нотификация {#icon_notification}
 
 Иконка-баджик нотификации, с циферками.
 
-.icon-notification
-  skin: icon notification
-
-> <span class="icon-notification">7</span>
-> <span class="icon-notification">42</span>
-> <span class="icon-notification">99+</span>
+> <span class="icon_notification">7</span>
+> <span class="icon_notification">42</span>
+> <span class="icon_notification">99+</span>
 >
->     .icon-notification
->       skin: icon notification
+>     .icon_notification
+>       skin: icon_notification
+> {:.styl}
+
+### Дропдаун {#icon_dropdown}
+
+Иконка-баджик нотификации, с циферками.
+
+> Текст <span class="icon_dropdown"></span>,
+> <a class="complex-link"><span class="link-inner">Дропдаун</span> <span class="icon_dropdown"></span></a>
+>
+>     .icon_dropdown
+>       skin: icon_dropdown
 > {:.styl}
