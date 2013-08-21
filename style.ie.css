@@ -55,6 +55,8 @@ h1,h2,h3,
 .input-controller:focus {
   outline: none;
 }
+.button-arrow,
+.small-button .button-arrow,
 .checkbox,
 .radio,
 .normal-checkbox,
@@ -250,6 +252,8 @@ h1,h2,h3,
   color: #fff;
   background: #f00;
 }
+.button-arrow,
+.small-button .button-arrow,
 .select-wrap:after,
 .icon_dropdown {
   width: 6px;
@@ -1045,6 +1049,20 @@ input[type=file]:hover + .simple-button:before,
 .simple-button:not(.is-disabled):hover:before {
   background: #fbfaf9;
 }
+.button-arrow {
+  float: right;
+  top: 0.7em;
+  left: -1px;
+  margin-right: -6px;
+  margin-left: 10px;
+}
+.small-button .button-arrow {
+  float: right;
+  top: 0.6em;
+  left: -1px;
+  margin-right: -6px;
+  margin-left: 10px;
+}
 .checkbox {
   position: relative;
   vertical-align: middle;
@@ -1351,7 +1369,7 @@ input:not(:checked) + .small-radio > .radio-icon {
   left: -50%;
 }
 .dropdown-content {
-  padding: 16px 20px 16px 20px;
+  padding: 6px 10px 6px 10px;
 }
 .dropdown-tail {
   position: absolute;

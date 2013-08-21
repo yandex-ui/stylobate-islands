@@ -74,6 +74,8 @@ h3,
   clear: both;
 }
 
+.button-arrow,
+.small-button .button-arrow,
 .checkbox,
 .radio,
 .normal-checkbox,
@@ -321,6 +323,8 @@ h3,
   box-shadow: 0 1px 0 1px rgba(0,0,0,0.1), 0 5px 10px -5px rgba(0,0,0,0.5);
 }
 
+.button-arrow,
+.small-button .button-arrow,
 .select-wrap:after,
 .icon_dropdown {
   width: 6px;
@@ -1536,6 +1540,22 @@ input[type=file]:hover + .simple-button:before,
   box-shadow: none;
 }
 
+.button-arrow {
+  float: right;
+  top: 0.7em;
+  left: -1px;
+  margin-right: -0.6rem;
+  margin-left: 1rem;
+}
+
+.small-button .button-arrow {
+  float: right;
+  top: 0.6em;
+  left: -1px;
+  margin-right: -0.6rem;
+  margin-left: 1rem;
+}
+
 .checkbox {
   position: relative;
   vertical-align: middle;
@@ -1965,20 +1985,20 @@ input:not(:checked) + .small-radio > .radio-icon {
 }
 
 .dropdown-content {
-  padding: 0 2rem 0 2rem;
+  padding: 0 1rem 0 1rem;
 }
 
 .dropdown-content:before {
   content: "";
   display: table;
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .dropdown-content:after {
   content: "";
   display: table;
   clear: both;
-  margin-top: 1.6rem;
+  margin-top: 0.6rem;
 }
 
 .dropdown-tail {
