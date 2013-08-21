@@ -156,8 +156,8 @@ h3,
 .group > .toggle-button:first-child:before,
 .group > .toggler:first-child > .toggler-view,
 .group > .toggler:first-child > .toggler-view:before {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 
 .group-end,
@@ -168,8 +168,8 @@ h3,
 .group > .toggle-button:last-child:before,
 .group > .toggler:last-child > .toggler-view,
 .group > .toggler:last-child > .toggler-view:before {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
 }
 
 .group-middle,
@@ -361,7 +361,7 @@ label.group-start {
 
 .group-middle,
 .group-middle:before {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 
 .group-middle:before {
@@ -389,7 +389,7 @@ label.group > .toggle-button:first-child {
 .group-item:not(:first-child):not(:last-child):before,
 .group > .toggle-button:not(:first-child):not(:last-child),
 .group > .toggle-button:not(:first-child):not(:last-child):before {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 
 .group-item:not(:first-child):not(:last-child):before,
@@ -406,7 +406,7 @@ label.group > .toggle-button:not(:first-child):not(:last-child) {
 
 .group > .toggler:not(:first-child):not(:last-child) > .toggler-view,
 .group > .toggler:not(:first-child):not(:last-child) > .toggler-view:before {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 
 .group > .toggler:not(:last-child) > .toggler-view:before {
