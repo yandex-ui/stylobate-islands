@@ -61,9 +61,11 @@ h1,h2,h3,
 .small-radio,
 .modal-close,
 .field-reset,
-.icon-remove,
-.active-icon-remove,
-.icon-notification,
+.select-wrap:after,
+.icon_remove,
+.active-icon_remove,
+.icon_notification,
+.icon_dropdown,
 .userpic,
 .user-pic {
   position: relative;
@@ -230,13 +232,13 @@ h1,h2,h3,
 }
 .modal-close,
 .field-reset,
-.icon-remove,
-.active-icon-remove {
+.icon_remove,
+.active-icon_remove {
   width: 16px;
   height: 16px;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuMjA5Yy0zLjc1MSAwLTYuNzkxIDMuMDQtNi43OTEgNi43OTEgMCAzLjc0OSAzLjA0IDYuNzg5IDYuNzkxIDYuNzg5IDMuNzQ5IDAgNi43ODktMy4wNCA2Ljc4OS02Ljc4OSAwLTMuNzUxLTMuMDQtNi43OTEtNi43ODktNi43OTF6bTMuOTkgOS4zNTVsLTEuNDI2IDEuNDI2LTIuNTY0LTIuNTY0LTIuNTY0IDIuNTY0LTEuNDI2LTEuNDI2IDIuNTY0LTIuNTY0LTIuNTY0LTIuNTY0IDEuNDI2LTEuNDI2IDIuNTY0IDIuNTY0IDIuNTY0LTIuNTY0IDEuNDI2IDEuNDI2LTIuNTY0IDIuNTY0IDIuNTY0IDIuNTY0eiIvPjwvc3ZnPg==");
 }
-.icon-notification {
+.icon_notification {
   height: 15px;
   min-width: 9px;
   padding: 0 3px;
@@ -248,15 +250,23 @@ h1,h2,h3,
   color: #fff;
   background: #f00;
 }
+.select-wrap:after,
+.icon_dropdown {
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  margin-top: -0.33em;
+}
 .modal-close,
 .field-reset,
-.active-icon-remove {
+.active-icon_remove {
   cursor: pointer;
   opacity: 0.2;
 }
 .modal-close:hover,
 .field-reset:hover,
-.active-icon-remove:hover {
+.active-icon_remove:hover {
   opacity: 1;
 }
 .page {
@@ -596,6 +606,7 @@ hr {
   cursor: pointer;
   color: #000;
   text-decoration: none;
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)) no-repeat;
 }
 .complex-link:hover {
   color: #d00;
@@ -1676,11 +1687,7 @@ textarea.input-controller {
   right: 12px;
   bottom: auto;
   left: auto;
-  width: 6px;
-  height: 6px;
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-  margin: -5px -2px 0 0;
+  margin-right: -2px;
   color: #000;
 }
 select:focus + .select-focus {
