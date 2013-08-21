@@ -64,3 +64,60 @@
     </div>
 </div>
 
+### Попап с хвостиком
+
+Для попапа с хвостиком нужно передать соответствующий параметр при создании попапа:
+
+    skin: popup (-tail '&-tail')
+
+Пока что подразумевается, что стили для хвостиков с конкретных сторон зашиваются в модификатор на самом попапе, в будущем (когда Стайлус получит одну новую фичу), возможно, можно будет это поменять.
+
+> <div class="dropdown dropdown_to_bottom">
+>     <div class="dropdown-tail"></div>
+>     <div class="dropdown-content text">
+>         Попап выпал вниз
+>     </div>
+> </div>
+
+> <div class="dropdown dropdown_to_left">
+>     <div class="dropdown-tail"></div>
+>     <div class="dropdown-content text">
+>         Попап выпал влево
+>     </div>
+> </div>
+
+> <div class="dropdown dropdown_to_top">
+>     <div class="dropdown-tail"></div>
+>     <div class="dropdown-content text">
+>         Попап выпал вверх
+>     </div>
+> </div>
+
+> <div class="dropdown dropdown_to_right">
+>     <div class="dropdown-tail"></div>
+>     <div class="dropdown-content text">
+>         Попап выпал вправо
+>     </div>
+> </div>
+>
+>     .dropdown
+>       kind: modal
+>       skin: popup \
+>         (-content '&-content') \
+>         (-tail '&-tail')
+> {:.styl}
+
+По умолчанию хвостик позиционируется по центру соответствующей стороны, если надо это поменять, достаточно задать соответствующие инлайновые стили блоку хвостика:
+
+> <div class="dropdown dropdown_to_bottom">
+>     <div class="dropdown-tail" style="left: 11px"></div>
+>     <div class="dropdown-content text">
+>         Попап выпал вниз
+>     </div>
+> </div>
+
+Надо отметить, что сейчас хвостик позиционируется относительно своего центра, поэтому если нужно прижать его к краю, то нужно задавать соответствующую величину не меньше 11 пикселей.
+
+Если нужно позиционировать хвостик справа или снизу, нужно не забыть переопределять `top: auto` или `left: auto`.
+
+Пока инлайновые стили надо задавать так, но потом, возможно, этот момент можно будет как-то упростить/поправить, скорее всего появятся соответствующие модификаторы, или что-то ещё типа того.
