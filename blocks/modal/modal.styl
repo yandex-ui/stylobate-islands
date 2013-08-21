@@ -3,8 +3,16 @@
 
 .modal
   kind: modal
-  skin: popup (-content '&-content') (-close '&-close')
+  skin: popup \
+    (-content '&-content') \
+    (-close '&-close')
 
 .modal-overlay
   kind: modal-overlay
   skin: popup-overlay
+
+.dropdown
+  kind: modal
+  skin: popup \
+    (-content '&-content') \
+    (-tail '&-tail')
