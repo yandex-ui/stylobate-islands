@@ -83,7 +83,7 @@
 
 > <div>
 >     <div class="custom-arrow">
->         <div class="arrow-tail">&nbsp;</div>
+>         <div class="arrow-tail"></div>
 >         Компания
 >     </div>
 > </div>
