@@ -721,6 +721,12 @@ hr {
   border-top: 1px solid #dddcda;
 }
 
+.example-code > pre.language-css:before {
+  content: "Внимание: представленный тут CSS — сгенерённый и не оптимизированный. Не используйте его.";
+  display: block;
+  padding: 1.6rem 2rem;
+}
+
 .isle {
   position: relative;
   display: block;
