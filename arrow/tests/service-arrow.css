@@ -1,0 +1,27 @@
+.service-arrow:before {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+  -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+  transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+}
+.service-arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  background: #ffdb4c;
+  white-space: nowrap;
+  margin-right: 1.212rem;
+}
+.service-arrow:before {
+  content: "";
+  width: 2.969848481766999rem;
+  height: 2.969848481766999rem;
+  background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
+}
