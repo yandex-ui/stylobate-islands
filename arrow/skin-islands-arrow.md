@@ -46,13 +46,7 @@
 >   </div>
 > </div>
 >
->     .search-arrow
->       kind: block inline
->       skin: arrow search
->
->       & > .field
->         vertical-align: top
-> {:.styl}
+> <div class="example:search-arrow"></div>
 
 Такая стрелка не тянется, так как там внутри просто обычные инлайн-блоки, ну а если надо сделать её тянущейся, нужно использовать `kind: shrink` с дополнительным враппером:
 
@@ -73,20 +67,7 @@
 >   </div>
 > </div>
 >
->     .search
->       kind: block
->       skin: arrow search
->
->       &-field
->         width: 100%
->
->       &-content
->         kind: shrink
->
->       &-right
->         kind: shrink-right
->         margin-left: $islands_xs
-> {:.styl}
+> <div class="example:search"></div>
 
 По умолчанию хвостик делается с помощью псевдоэлемента, если же нужно его отделить, можно использовать параметр `no-elements` на «теле» и `tail` на хвостике (и в этом случае хвостик будет отображаться и в IE).
 
@@ -101,13 +82,10 @@
 Кроме того, можно настраивать как цвет, так и высоту стрелки, передавая параметры соответствующих типов:
 
 > <div>
->   <div class="arrow-body">
+>   <div class="custom-arrow">
 >     <div class="arrow-tail">&nbsp;</div>
 >       Компания
 >   </div>
 > </div>
 >
->     .arrow-body
->       kind: block inline
->       skin: arrow red 11*rem (-helper '& > .arrow-tail')
-> {:.styl}
+> <div class="example:custom-arrow"></div>

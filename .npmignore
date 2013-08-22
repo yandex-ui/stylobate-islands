@@ -6,3 +6,4 @@ Makefile
 *.sublime-project
 .DS_Store
 .travis.yml
+test-runner.js

@@ -12,6 +12,17 @@
     "type": "git",
     "url": "git://github.com/yandex-ui/stylobate-islands.git"
   },
+  "devDependencies": {
+    "stylobate": "0.13.x",
+    "autoprefixer": "0.7.x",
+    "stylus": "0.37.x",
+    "glob": "3.2.x",
+    "mocha": "*",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha . --require should --reporter list"
+  },
   "engines": {
     "node": ">=0.6"
   }
