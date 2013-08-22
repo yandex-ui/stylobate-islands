@@ -71,8 +71,10 @@
                     {% capture example_find %}<div class="example:{{ example_link }}"></div>{% endcapture %}
                     {% capture example_replace %}
                     <div class="example-code">
-                        <span class="small-pseudo-button toggle-button group-start example-source js-toggler" data-toggle="styl"><span class="button-content">styl</span></span
-                        ><span class="small-pseudo-button toggle-button group-end example-source js-toggler" data-toggle="css"><span class="button-content">css</span></span>
+                        <span class="group"
+                            ><span class="small-pseudo-button toggle-button group-item example-source js-toggler" data-toggle="styl"><span class="button-content">styl</span></span
+                            ><span class="small-pseudo-button toggle-button group-item example-source js-toggler" data-toggle="css"><span class="button-content">css</span></span
+                        ></span>
                         <pre class="language-styl is-hidden" data-src="{{ site.production_url }}{{ example_link }}.styl"></pre>
                         <pre class="language-css is-hidden" data-src="{{ site.production_url }}{{ example_link }}.css"></pre>
                     </div>
