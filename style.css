@@ -286,9 +286,6 @@ h3,
   opacity: 1;
 }
 
-.search-arrow:before,
-.arrow-body > .arrow-tail,
-.search:before,
 .header-service:before {
   position: absolute;
   left: 100%;
@@ -2489,82 +2486,6 @@ x:-o-prefocus {
   margin-right: -1.5rem;
   padding-top: 0.7rem;
   padding-bottom: 0.6rem;
-}
-
-.search-arrow {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  padding: 0.5rem 1.4000000000000001rem 0.5rem 0.5rem;
-  background: #ffdb4c;
-  white-space: nowrap;
-  margin-right: 1.212rem;
-}
-
-.search-arrow:before {
-  content: "";
-  width: 2.969848481766999rem;
-  height: 2.969848481766999rem;
-  background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
-}
-
-.search-arrow > .field {
-  vertical-align: top;
-}
-
-.arrow-body {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  padding: 0.8rem 1.5rem;
-  font-size: 1.8rem;
-  line-height: 9.4rem;
-  background: #f00;
-  white-space: nowrap;
-  margin-right: 3.175rem;
-  color: #fff;
-}
-
-.arrow-body > .arrow-tail {
-  width: 7.778174595104045rem;
-  height: 7.778174595104045rem;
-  background: -webkit-linear-gradient(45deg, #f00 50%, transparent 50%);
-  background: linear-gradient(45deg, #f00 50%, transparent 50%);
-  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
-}
-
-.search {
-  position: relative;
-  display: block;
-  padding: 0.5rem 1.4000000000000001rem 0.5rem 0.5rem;
-  background: #ffdb4c;
-  white-space: nowrap;
-  margin-right: 1.212rem;
-}
-
-.search:before {
-  content: "";
-  width: 2.969848481766999rem;
-  height: 2.969848481766999rem;
-  background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
-}
-
-.search-field {
-  width: 100%;
-}
-
-.search-content {
-  display: block;
-  overflow: hidden;
-}
-
-.search-right {
-  float: right;
-  margin-left: 0.6rem;
 }
 
 .file-input {
