@@ -1,1 +1,1 @@
-# Islands skin for stylobate
+# Islands skin for stylobate [![Build Status](https://travis-ci.org/yandex-ui/stylobate-islands.png?branch=master)](https://travis-ci.org/yandex-ui/stylobate-islands)
