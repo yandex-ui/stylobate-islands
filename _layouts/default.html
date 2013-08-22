@@ -17,6 +17,12 @@
     {% endif %}
 
     <title>{{ processed_title }} — Документация к фреймворку «Стилобат»</title>
+
+    {% assign example_links = content | split:' class="example:' %}
+    {% for example_content in example_links offset:1 %}
+        {% assign example_link = example_content | split:'"></div>' | first %}
+        <link rel="stylesheet" href="{{ site.production_url }}{{example_link}}.css?v={{ site.version }}" />
+    {% endfor %}
 </head>
 <body class="page-body">
     <div class="header">
@@ -58,7 +64,23 @@
 
         <div class="content text">
             <div class="content-section">
-				{{ content | replace:'<pre class="styl">','<hr /><span class="small-pseudo-button toggle-button example-source js-toggler"><span class="button-content">styl</span></span><pre class="is-hidden">' | replace:'<code>','<code class="language-styl">' }}
+                {% assign content_with_examples = content %}
+                {% assign example_links = content | split:' class="example:' %}
+                {% for example_content in example_links offset:1 %}
+                    {% assign example_link = example_content | split:'"></div>' | first %}
+                    {% capture example_find %}<div class="example:{{ example_link }}"></div>{% endcapture %}
+                    {% capture example_replace %}
+                    <div class="example-code">
+                        <span class="small-pseudo-button toggle-button group-start example-source js-toggler" data-toggle="styl"><span class="button-content">styl</span></span
+                        ><span class="small-pseudo-button toggle-button group-end example-source js-toggler" data-toggle="css"><span class="button-content">css</span></span>
+                        <pre class="language-styl is-hidden" data-src="{{ example_link }}.styl"></pre>
+                        <pre class="language-css is-hidden" data-src="{{ example_link }}.css"></pre>
+                    </div>
+                    {% endcapture %}
+                    {% assign content_with_examples = content_with_examples | replace:example_find,example_replace %}
+                {% endfor %}
+
+				{{ content_with_examples | replace:'<pre class="styl">','<hr /><span class="small-pseudo-button toggle-button example-source js-toggler"><span class="button-content">styl</span></span><pre class="is-hidden">' | replace:'<code>','<code class="language-styl">' }}
 			</div>
 		</div>
     </div>

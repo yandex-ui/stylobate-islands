@@ -58,8 +58,10 @@ permalink: /skins/
 
 {% assign sorted_pages = site.pages | sort:'path' %}
 {% for item in sorted_pages %}{% if item.path contains 'skins/islands/' %}
-{:#{{ item.path | split:'/' | last | remove:'.md' }}}
-{{ item.content }}
+{% assign item_id = item.path | split:'/' | last | remove:'.md' %}
+{% capture replace_example %} class="example:/{{item.path | remove:item_id | remove:'.md'}}tests/{% endcapture %}
+{:#{{ item_id }}}
+{{ item.content | replace:' class="example:',replace_example }}
 
 - - -
 

@@ -12,8 +12,11 @@ $(".toggle-button:not(.is-disabled)").click(function(){
 });
 
 // Toggling code blocks
-$('.js-toggler').click(function(){
+$('.js-toggler:not([data-toggle])').click(function(){
     $(this).next().toggleClass('is-hidden');
+});
+$('.js-toggler[data-toggle]').click(function(){
+    $(this).siblings('[class*="language-' + $(this).data('toggle') + '"]').toggleClass('is-hidden');
 });
 $('.js-outer-toggler').click(function(){
     $(this).parent().next().toggleClass('is-hidden');
