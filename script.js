@@ -4,7 +4,7 @@ Prism.languages.html = Prism.languages.markup;
 
 // Injecting source of examples' HTML
 $('blockquote:has(.example-code>.group)').each(function(){
-    var $example_html = $(this).children(':not(.example-code)');
+    var $example_html = $(this).clone().children(':not(.example-code)');
     if ($example_html.length == 1 && $example_html[0].className == '') {
         $example_html = $example_html.children();
     }
