@@ -73,8 +73,8 @@
                     <div class="example-code">
                         <span class="small-pseudo-button toggle-button group-start example-source js-toggler" data-toggle="styl"><span class="button-content">styl</span></span
                         ><span class="small-pseudo-button toggle-button group-end example-source js-toggler" data-toggle="css"><span class="button-content">css</span></span>
-                        <pre class="language-styl is-hidden" data-src="{{ example_link }}.styl"></pre>
-                        <pre class="language-css is-hidden" data-src="{{ example_link }}.css"></pre>
+                        <pre class="language-styl is-hidden" data-src="{{ site.production_url }}{{ example_link }}.styl"></pre>
+                        <pre class="language-css is-hidden" data-src="{{ site.production_url }}{{ example_link }}.css"></pre>
                     </div>
                     {% endcapture %}
                     {% assign content_with_examples = content_with_examples | replace:example_find,example_replace %}
