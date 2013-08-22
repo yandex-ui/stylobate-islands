@@ -79,7 +79,7 @@
                         <pre class="language-css is-hidden" data-src="{{ site.production_url }}{{ example_link }}.css"></pre>
                     </div>
                     {% endcapture %}
-                    {% assign content_with_examples = content_with_examples | replace:example_find,example_replace %}
+                    {% assign content_with_examples = content_with_examples | replace:example_find,example_replace | replace:'>&nbsp;</span>','></span>' %}
                 {% endfor %}
 
 				{{ content_with_examples | replace:'<pre class="styl">','<hr /><span class="small-pseudo-button toggle-button example-source js-toggler"><span class="button-content">styl</span></span><pre class="is-hidden">' | replace:'<code>','<code class="language-styl">' }}
