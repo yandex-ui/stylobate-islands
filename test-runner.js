@@ -5,11 +5,12 @@
 var stylus = require('stylus')
   , fs = require('fs')
   , autoprefixer = require('autoprefixer')
-  , glob = require('glob');
+  , glob = require('glob')
+  , whatToTest = process.env.npm_package_config_whatToTest || '**';
 
 // test cases
 
-glob.sync("./**/tests/*.styl").forEach(function(test){
+glob.sync("./" + whatToTest + "/tests/*.styl").forEach(function(test){
   var name = test.replace(/\.?[\/]/g, ' ').replace(' tests',':').replace('.styl','');
   it(name, function(){
     var css = fs.readFileSync(test.replace('.styl', '.css'), 'utf8').replace(/\r/g, '').trim();

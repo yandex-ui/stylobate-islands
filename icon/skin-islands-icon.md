@@ -9,17 +9,13 @@
 
 > <span class="icon_remove"> </span>
 >
->     .icon_remove
->       skin: icon_remove
-> {:.styl}
+> <div class="example:icon_remove"></div>
 
 Любую иконку можно сделать «активной» — добавить курсор и ховер с опасити, используя параметр `with-hover`
 
 > <span class="active-icon_remove"> </span>
 >
->     .active-icon_remove
->       skin: icon _remove with-hover
-> {:.styl}
+> <div class="example:active-icon_remove"></div>
 
 ### Нотификация {#icon_notification}
 
@@ -29,9 +25,7 @@
 > <span class="icon_notification">42</span>
 > <span class="icon_notification">99+</span>
 >
->     .icon_notification
->       skin: icon_notification
-> {:.styl}
+> <div class="example:icon_notification"></div>
 
 ### Дропдаун {#icon_dropdown}
 
@@ -40,6 +34,4 @@
 > Текст <span class="icon_dropdown"></span>,
 > <a class="complex-link"><span class="link-inner">Дропдаун</span> <span class="icon_dropdown"></span></a>
 >
->     .icon_dropdown
->       skin: icon_dropdown
-> {:.styl}
+> <div class="example:icon_dropdown"></div>
