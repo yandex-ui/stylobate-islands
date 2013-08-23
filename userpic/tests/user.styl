@@ -1,0 +1,16 @@
+.user
+  kind: block inline, centering
+  skin: link #000
+
+  &-pic
+    kind: icon (size 42px), centering-item
+    skin: userpic (_hover '.user:hover > &')
+
+    & > .icon_notification
+      position: absolute
+      top: -1px
+      right: -4px
+
+  &-name
+    kind: centering-item
+    margin-left: $islands_xs

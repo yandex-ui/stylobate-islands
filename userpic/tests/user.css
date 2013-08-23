@@ -1,0 +1,52 @@
+.user-pic {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
+
+.user-pic,
+.user-name {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.user {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+.user:hover {
+  color: #d00;
+}
+
+.user-pic {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);
+}
+
+.user:hover > .user-pic {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+.user-pic > .icon_notification {
+  position: absolute;
+  top: -1px;
+  right: -4px;
+}
+
+.user-name {
+  margin-left: 0.6rem;
+}

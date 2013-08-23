@@ -1,0 +1,15 @@
+.userpic {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
+
+.userpic {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);
+}
