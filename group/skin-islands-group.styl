@@ -25,20 +25,20 @@ skin-islands-group-end()
   kind: group-end '&,&:before'
 
 skin-islands-group-item()
-  &:first-child
+  &:first-child:not(:only-child)
     skin-islands-group-start()
 
   &:not(:first-child):not(:last-child)
     skin-islands-group-middle()
 
-  &:last-child
+  &:last-child:not(:only-child)
     skin-islands-group-end()
 
 skin-islands-nested-group-item()
   $nested-group-item = alike(arguments, '.toggler-view')
   kind: group-item ('& > ' + $nested-group-item + ', & > ' + $nested-group-item + ':before')
 
-  &:not(:last-child) > {$nested-group-item}
+  &:not(:last-child):not(:only-child) > {$nested-group-item}
     &:before
       right: 0
 

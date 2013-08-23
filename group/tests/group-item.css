@@ -1,0 +1,68 @@
+.group-item:first-child:not(:only-child),
+.group-item:first-child:not(:only-child):before,
+.group-start,
+.group-start:before {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.group-item:last-child:not(:only-child),
+.group-item:last-child:not(:only-child):before,
+.group-end,
+.group-end:before {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.group-item:not(:first-child):not(:last-child),
+.group-item:last-child:not(:only-child),
+.group-middle,
+.group-end {
+  margin-left: -1px;
+}
+
+.group-item:first-child:not(:only-child):before {
+  right: 0;
+}
+
+input.group-item:first-child:not(:only-child),
+label.group-item:first-child:not(:only-child) {
+  border-right-color: transparent;
+}
+
+.group-item:not(:first-child):not(:last-child),
+.group-item:not(:first-child):not(:last-child):before {
+  border-radius: 0 !important;
+}
+
+.group-item:not(:first-child):not(:last-child):before {
+  right: 0;
+}
+
+input.group-item:not(:first-child):not(:last-child),
+label.group-item:not(:first-child):not(:last-child) {
+  border-right-color: transparent;
+}
+
+.group-start:before {
+  right: 0;
+}
+
+input.group-start,
+label.group-start {
+  border-right-color: transparent;
+}
+
+.group-middle,
+.group-middle:before {
+  border-radius: 0 !important;
+}
+
+.group-middle:before {
+  right: 0;
+}
+
+input.group-middle,
+label.group-middle {
+  border-right-color: transparent;
+}

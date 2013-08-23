@@ -23,10 +23,7 @@
 >     </label>
 > </div>
 >
->     .checkbox
->       kind: icon
->       skin: checkbox
-> {:.styl}
+> <div class="example:checkbox"></div>
 
 Если же надо сделать чекбокс определённого (не зависимого от размера шрифта) размера, вне контекста, можно сделать так:
 
@@ -43,13 +40,6 @@
 >     </label>
 > </h2>
 >
->     .normal-checkbox
->       kind: icon (size $m $m)
->       skin: checkbox sizeless (-icon '& > .checkbox-icon')
->
->     .small-radio
->       kind: icon (size ($m - 0.2*rem) ($m - 0.2*rem))
->       skin: radio sizeless (-icon '& > .radio-icon')
-> {:.styl}
+> <div class="example:sized-checkbox"></div>
 
 Нужно отметить, что из-за того, что имя внутреннего элемента отличается от родителя (`small-radio` и `radio-icon`) нужно при вызове явно прокидывать имя внутреннего элемента, не опираясь на дефолт.

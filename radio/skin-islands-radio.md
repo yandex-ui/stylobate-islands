@@ -22,7 +22,4 @@
 >     </label>
 > </div>
 >
->     .radio
->       kind: icon
->       skin: radio
-> {:.styl}
+> <div class="example:radio"></div>

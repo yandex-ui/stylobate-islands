@@ -27,12 +27,7 @@
 >     </button>
 > </div>
 >
->     .group
->       skin: group
->
->     .group > .toggle-button
->       skin: group-item
-> {:.styl}
+> <div class="example:group"></div>
 
 В случае если кнопка или другой блок, которому нужно задать соответствующий скин, может лежать внутри, можно воспользоваться специальным скином:
 
@@ -87,13 +82,7 @@
 >     </label>
 > </p>
 >
->     .group
->       skin: group
->
->     .group > .toggler
->       skin: nested-group-item '.toggler-view'
-> {:.styl}
-
+> <div class="example:nested-group"></div>
 
 В случаях когда элементы группы лежат в контейнере в неверном порядке (скажем, при использовании `float` и в некоторых иных случаях), можно задать соответствующим элементам групп нужные скины раздельно:
 
@@ -102,3 +91,5 @@
     skin: group-middle
 
     skin: group-end
+
+> <div class="example:group-item"></div>

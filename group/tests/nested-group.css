@@ -1,0 +1,37 @@
+.group {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.group > .toggler:first-child:not(:only-child) > .toggler-view,
+.group > .toggler:first-child:not(:only-child) > .toggler-view:before {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.group > .toggler:last-child:not(:only-child) > .toggler-view,
+.group > .toggler:last-child:not(:only-child) > .toggler-view:before {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.group > .toggler:not(:first-child):not(:last-child),
+.group > .toggler:last-child:not(:only-child) {
+  margin-left: -1px;
+}
+
+.group > .toggler:not(:first-child):not(:last-child) > .toggler-view,
+.group > .toggler:not(:first-child):not(:last-child) > .toggler-view:before {
+  border-radius: 0 !important;
+}
+
+.group > .toggler:not(:last-child):not(:only-child) > .toggler-view:before {
+  right: 0;
+}
+
+input.group > .toggler:not(:last-child):not(:only-child) > .toggler-view,
+label.group > .toggler:not(:last-child):not(:only-child) > .toggler-view {
+  border-right-color: transparent;
+}

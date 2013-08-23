@@ -1,0 +1,91 @@
+.radio {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
+
+.radio {
+  font: 1.5rem/2.2rem Arial, sans-serif;
+  position: relative;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  width: 1em;
+  height: 1em;
+  padding: 0 1px 1px 0;
+  line-height: 1em;
+  background: rgba(0,0,0,0.3);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  text-align: center;
+  margin-right: 0.6rem;
+  border-radius: 50%;
+}
+
+.radio:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+
+.radio .button-content {
+  position: relative;
+  display: block;
+}
+
+.radio:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+input[type=file]:focus + .radio,
+.radio:not(.is-disabled):focus {
+  outline: 0;
+}
+
+input[type=file]:focus + .radio:after,
+.radio:not(.is-disabled):focus:after {
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+
+.radio:before {
+  background: #f7f7f7;
+  background: -webkit-linear-gradient(#fff, #eee);
+  background: linear-gradient(#fff, #eee);
+}
+
+.radio:before {
+  border-radius: 50%;
+}
+
+.radio > .radio-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px;
+  background: #000;
+  border-radius: 50%;
+}
+
+input:not(:checked) + .radio > .radio-icon {
+  visibility: hidden;
+}
