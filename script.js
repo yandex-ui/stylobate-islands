@@ -9,15 +9,17 @@ $('blockquote:has(.example-code>.group)').each(function(){
         $example_html = $example_html.children();
     }
     var example_html = $example_html.wrap('<div>').parent().html();
-    var example_html_inner = example_html.split('\n');
-    if (example_html_inner[example_html_inner.length - 1].match(/^\s\s\s\s/)) {
-        example_html = example_html.replace(/\n    /g,'\n');
+    if (example_html) {
+        var example_html_inner = example_html.split('\n');
+        if (example_html_inner[example_html_inner.length - 1].match(/^\s\s\s\s/)) {
+            example_html = example_html.replace(/\n    /g,'\n');
+        }
+        var $example_src = $(this).children('.example-code');
+        var $example_src_code = $('<pre class="language-html is-hidden"><code></code></pre>');
+        $example_src_code.children('code').text(example_html);
+        $example_src.children('.group').append($('<span class="small-pseudo-button toggle-button group-item example-source js-toggler" data-toggle="html"><span class="button-content">html</span></span>'));
+        $example_src.append($example_src_code);
     }
-    var $example_src = $(this).children('.example-code');
-    var $example_src_code = $('<pre class="language-html is-hidden"><code></code></pre>');
-    $example_src_code.children('code').text(example_html);
-    $example_src.children('.group').append($('<span class="small-pseudo-button toggle-button group-item example-source js-toggler" data-toggle="html"><span class="button-content">html</span></span>'));
-    $example_src.append($example_src_code);
 });
 
 
