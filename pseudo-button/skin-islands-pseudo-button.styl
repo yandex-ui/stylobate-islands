@@ -3,7 +3,7 @@ skin-islands-pseudo-button()
 
   position: relative
 
-  vertical-align: baseline
+  vertical-align: utilus_retrieve(arguments, middle top bottom, baseline)
 
   color: $islands_color_text
 
@@ -23,7 +23,7 @@ skin-islands-pseudo-button()
     content: ""
     kind: fill
 
-  & { alike(arguments, $skin-islands-button-content) }
+  & { utilus_alike(arguments, $skin-islands-button-content) }
     kind: block
 
   if small in arguments
