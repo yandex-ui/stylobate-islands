@@ -1,0 +1,77 @@
+.pseudo-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+}
+
+.pseudo-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+.pseudo-button {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline;
+}
+
+.pseudo-button {
+  font: 1.5rem/2.2rem Arial, sans-serif;
+  position: relative;
+  vertical-align: baseline;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  padding: 0.3rem 1.1rem;
+}
+
+.pseudo-button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+
+.pseudo-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pseudo-button .button-content {
+  position: relative;
+  display: block;
+}
+
+.pseudo-button:not(.is-disabled):hover {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
+}
+
+.pseudo-button:not(.is-disabled):focus {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
+  outline: 0;
+}
+
+.pseudo-button:not(.is-disabled):focus:after {
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+

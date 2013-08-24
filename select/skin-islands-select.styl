@@ -51,7 +51,7 @@ skin-islands-select-padding()
     padding-bottom: ($sides[0] + 0.2*rem) unless small in arguments
     padding-bottom: ($sides[0] + 0.1*rem) if small in arguments
 
-skin-islands-select_focus()
+skin-islands-select-focus()
   select:focus + &
     kind: fill
     z-index: 9
@@ -67,6 +67,7 @@ skin-islands-select-wrap()
     vertical-align: middle
 
   &:after
+    position: absolute
     top: 50%
     right: 2*$islands_xs
     bottom: auto

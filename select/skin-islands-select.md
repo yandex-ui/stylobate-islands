@@ -20,16 +20,7 @@ HTML селекта это, по сути, микс с кнопкой:
 >     <span class="select-focus"></span>
 > </span>
 >
->     .select
->       kind: block
->       skin: select
->
->     .select-wrap
->       skin: select-wrap
->
->     .select-focus
->       skin: select_focus
-> {:.styl}
+> <div class="example:select"></div>
 
 И маленький селект (для маленькой кнопки)
 
@@ -44,10 +35,7 @@ HTML селекта это, по сути, микс с кнопкой:
 >     <span class="select-focus"></span>
 > </span>
 >
->     .small-select
->       kind: block
->       skin: select small
-> {:.styl}
+> <div class="example:small-select"></div>
 
 С изменённой шириной
 
@@ -73,8 +61,7 @@ HTML селекта это, по сути, микс с кнопкой:
 >     </span>
 > </a>
 >
->     .button-arrow
->       skin: icon_dropdown selecty
+> <div class="example:button-arrow"></div>
 
 Для маленькой кнопки нужен соответствующий `small` параметр. Ну и можно менять ширину кнопки в большую сторону, иконка будет в правильном месте:
 
@@ -85,5 +72,4 @@ HTML селекта это, по сути, микс с кнопкой:
 >     </span>
 > </a>
 >
->     .small-button .button-arrow
->       skin: icon_dropdown selecty small
+> <div class="example:small-button-arrow"></div>

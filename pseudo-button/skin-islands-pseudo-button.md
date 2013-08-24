@@ -9,10 +9,7 @@
 
 > <a class="pseudo-button" href="#x">Псевдокнопка ссылкой</a>
 >
->     .pseudo-button
->       kind: button
->       skin: pseudo-button
-> {:.styl}
+> <div class="example:pseudo-button"></div>
 
 Аналогично обычной кнопке, псевдо-кнопка может быть обычного размера, и маленькая — если использовать параметр `small`:
 
@@ -22,19 +19,4 @@
 >     <button class="small-pseudo-button" type="button">Маленькая псевдокнопка кнопкой</button>
 > </div>
 >
->     .small-pseudo-button
->       kind: button
->       skin: pseudo-button small
-> {:.styl}
-
-
-Кнопка с рамкой по ховеру и тогглу
-
-> <div>
->     <button class="pseudo-button toggle-button is-ghost" type="button"><span class="button-content">Пыщь</span></button>
-> </div>
->
->     .pseudo-button.is-ghost:not(:hover):not(:focus):not(.is-checked)
->       box-shadow: none
-> {:.styl}
-
+> <div class="example:small-pseudo-button"></div>

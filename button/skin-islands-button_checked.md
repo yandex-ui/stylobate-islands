@@ -23,11 +23,7 @@
 >     </button>
 > </div>
 >
->     .toggle-button
->       &.is-checked,
->       &.is-checked:hover
->         skin: button_checked
-> {:.styl}
+> <div class="example:toggle-button"></div>
 
 И работать оно будет для любых типов кнопок:
 
@@ -85,17 +81,6 @@
 >     </span>
 > </label>
 >
->     .toggler
->       kind: block inline
->
->       &-controller
->         kind: hidden visually
->
->       input:checked + &-view
->         skin: button_checked
->
->       :focus + &-view
->         skin: button_focus
-> {:.styl}
+> <div class="example:toggler"></div>
 
 Видно, что для CSS-only варианта приходится использовать чуть более сложную html-структуру, но зато всё это дело получается очень гибким и это хороший пример того, как можно сверстать один и тот же блок на разной HTML-структуре и логике, но используя один скин.

@@ -1,0 +1,91 @@
+.select-wrap:after {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
+
+.select-wrap:after {
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  margin-top: -0.33em;
+  -webkit-transform: scale(0.75) rotate(45deg);
+  -ms-transform: scale(0.75) rotate(45deg);
+  transform: scale(0.75) rotate(45deg);
+}
+
+.select {
+  position: relative;
+  display: block;
+  z-index: 10;
+  -webkit-appearance: none;
+  -moz-appearance: menuitem;
+  -moz-appearance: window;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  padding: 0.5rem 2.6999999999999997rem 0.5rem 1.5rem;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.select,
+x::-moz-focus-inner {
+  color: transparent;
+  text-shadow: 0 0 0 #333;
+}
+
+.select,
+x::-moz-focus-inner {
+  padding: 0.6rem 2.3rem 0.6rem 1.1rem;
+}
+
+.select,
+x:-o-prefocus {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-right: -1.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.select-wrap {
+  padding: 0;
+}
+
+.select-wrap,
+x:-o-prefocus {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.select-wrap:after {
+  position: absolute;
+  top: 50%;
+  right: 1.2rem;
+  bottom: auto;
+  left: auto;
+  margin-right: -2px;
+  color: #000;
+}
+
+select:focus + .select-focus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
