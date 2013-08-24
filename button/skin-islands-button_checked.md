@@ -60,8 +60,10 @@
 >     </span>
 > </label>
 >
-> И то же самое, только с радиобатонами вместо чекбоксов, и используя другой тип кнопок:
->
+> <div class="example:toggler"></div>
+
+И то же самое, только с радиобатонами вместо чекбоксов, и используя другой тип кнопок:
+
 > <label class="toggler">
 >     <input class="toggler-controller" type="radio" name="toggler1" checked="checked">
 >     <span class="pseudo-button toggler-view">
@@ -80,7 +82,5 @@
 >         <span class="button-content">Три</span>
 >     </span>
 > </label>
->
-> <div class="example:toggler"></div>
 
 Видно, что для CSS-only варианта приходится использовать чуть более сложную html-структуру, но зато всё это дело получается очень гибким и это хороший пример того, как можно сверстать один и тот же блок на разной HTML-структуре и логике, но используя один скин.

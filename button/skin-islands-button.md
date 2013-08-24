@@ -98,7 +98,7 @@
 Эта кнопка как бы говорит: «Нажми меня!»
 
 > <a class="action-button" href="#x">
->   <span class="button-content">Кнопка ссылкой</span>
+>     <span class="button-content">Кнопка ссылкой</span>
 > </a>
 >
 > <div class="example:action-button"></div>
