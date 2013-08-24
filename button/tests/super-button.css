@@ -1,0 +1,122 @@
+.super-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+}
+
+.super-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+.super-button {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline;
+}
+
+.super-button {
+  font: 1.5rem/2.2rem Arial, sans-serif;
+  position: relative;
+  vertical-align: baseline;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 8px 20px -5px rgba(0,0,0,0.25);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding: 0.5rem 1.3rem;
+  background: rgba(83,56,0,0.47);
+  background: -webkit-linear-gradient(rgba(96, 64, 0, 0.4), rgba(70,47,0,0.54));
+  background: linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
+}
+
+.super-button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+
+.super-button .button-content {
+  position: relative;
+  display: block;
+}
+
+input[type=file]:active + .super-button,
+.super-button:not(.is-disabled):active {
+  top: 1px;
+  box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
+}
+
+.super-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+input[type=file]:focus + .super-button,
+.super-button:not(.is-disabled):focus {
+  outline: 0;
+}
+
+input[type=file]:focus + .super-button:after,
+.super-button:not(.is-disabled):focus:after {
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+
+.super-button:before {
+  background: #ffd630;
+  background: -webkit-linear-gradient(#ffdf60, #fc0);
+  background: linear-gradient(#ffdf60, #fc0);
+}
+
+input[type=file]:hover:not(:checked) + .super-button,
+.super-button:not(.is-disabled):hover {
+  background: rgba(0,0,0,0.31);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+}
+
+input[type=file]:hover:not(:checked) + .super-button:before,
+.super-button:not(.is-disabled):hover:before {
+  background: #fd5;
+  background: -webkit-linear-gradient(#ffe681, #ffd428);
+  background: linear-gradient(#ffe681, #ffd428);
+}
+
+.super-button.is-checked,
+.super-button.is-checked:hover {
+  background: rgba(255,236,166,0.4);
+  box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
+  top: 1px;
+}
+
+.super-button.is-checked:before,
+.super-button.is-checked:hover:before {
+  background: #fff1be;
+  background: -webkit-linear-gradient(#ffeca6, #fff6d5);
+  background: linear-gradient(#ffeca6, #fff6d5);
+  box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
+}
+

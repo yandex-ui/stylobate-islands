@@ -11,10 +11,7 @@
 >     <span class="button-content">Кнопка ссылкой</span>
 > </a>
 >
->     .button
->       kind: button
->       skin: button
-> {:.styl}
+> <div class="example:button"></div>
 
 ### Параметры кнопки
 
@@ -34,10 +31,7 @@
 >     </button>
 > </div>
 >
->     .small-button
->       kind: button
->       skin: button small
-> {:.styl}
+> <div class="example:small-button"></div>
 
 Кроме того, есть пара «служебных» размеров: адаптивный — `adaptive`, и отсутствие заданных размеров — `sizeless`:
 
@@ -61,10 +55,7 @@
 >     </button>
 > </div>
 >
->     .fly-button
->       kind: button
->       skin: button fly
-> {:.styl}
+> <div class="example:fly-button"></div>
 
 ##### «Отключённая кнопка»
 
@@ -86,10 +77,7 @@
 
 > <a class="simple-button" href="#x">Кнопка одним элементом</a>
 >
->     .simple-button
->       kind: button
->       skin: button one-element
-> {:.styl}
+> <div class="example:simple-button"></div>
 
 ##### Отключение активности
 
@@ -113,10 +101,7 @@
 >   <span class="button-content">Кнопка ссылкой</span>
 > </a>
 >
->     .action-button
->       kind: button
->       skin: action-button
-> {:.styl}
+> <div class="example:action-button"></div>
 
 Конечно же, можно использовать всё те же модификаторы, что есть и у обычной кнопки:
 
@@ -126,10 +111,7 @@
 >     </button>
 > </div>
 >
->     .small-action-button
->       kind: button
->       skin: action-button small
-> {:.styl}
+> <div class="example:small-action-button"></div>
 
 ### Комбинирование модификаций
 
@@ -141,10 +123,7 @@
 >     </button>
 > </div>
 >
->     .super-button
->       kind: button
->       skin: action-button fly small
-> {:.styl}
+> <div class="example:super-button"></div>
 
 ### Кнопка добавления файла
 
@@ -159,9 +138,7 @@
 >     </label>
 > </div>
 >
->     .file-input
->       kind: file-input 6px (-input '&-controller')
-> {:.styl}
+> <div class="example:file-input"></div>
 
 Тут видно, что мы задаём дополнительный отступ в `6px` на родителе — для того, чтобы у файлового инпута не обрезалось состояние фокуса. Побочный эффект: кликабельная область чуть увеличивается, но это не страшно.
 
@@ -181,13 +158,7 @@
 >     </label>
 > </div>
 >
->     .file-intruder
->       kind: file-intruder (-inner '&-inner') (-input '&-input')
->
->     .file-intruder-input:focus + .file-intruder-focus
->       kind: fill
->       skin-islands-button_focus_style()
-> {:.styl}
+> <div class="example:file-intruder"></div>
 
 Тут нужно заметить, что требуются дополнительные стили для фокуса — возможно в будущем это как-то упростится, но пока только так.
 
