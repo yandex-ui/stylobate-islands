@@ -3,12 +3,16 @@ Prism.languages.styl = Prism.languages.scss;
 Prism.languages.html = Prism.languages.markup;
 
 // Injecting source of examples' HTML
+$('blockquote:not(:has(.example-code>.group)):not(:has(.example-source))').append($('<div class="example-code"><span class="group"></span></div>'))
+
 $('blockquote:has(.example-code>.group)').each(function(){
-    var $example_html = $(this).clone().children(':not(.example-code)');
-    if ($example_html.length == 1 && $example_html[0].className == '') {
-        $example_html = $example_html.children();
+    var $example_html = $(this).clone();
+    $example_html.find('.example-code').remove();
+    $child = $example_html.children();
+    if ($child.length == 1 && $child[0].className == '') {
+        $example_html = $child;
     }
-    var example_html = $example_html.wrap('<div>').parent().html();
+    var example_html = $example_html[0].innerHTML.replace(/^\s+/,'').replace(/\s+$/,'');
     if (example_html) {
         var example_html_inner = example_html.split('\n');
         if (example_html_inner[example_html_inner.length - 1].match(/^\s\s\s\s/)) {
