@@ -5,7 +5,7 @@ markdown: kramdown
 pygments: true
 permalink: /:categories/:title
 
-exclude: ["stylobate", "all.styl", "*.sublime-project", "*.sublime-workspace"]
+exclude: ["stylobate", "all.styl", "*.sublime-project", "*.sublime-workspace", "node_modules"]
 
 production_url: http://yandex-ui.github.io/stylobate-islands
 relative_permalinks: false
