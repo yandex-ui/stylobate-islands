@@ -73,8 +73,8 @@
                     <div class="example-code">
                         <span class="group"
                             ><span class="small-pseudo-button toggle-button group-item example-source js-toggler" data-toggle="styl"><span class="button-content">styl</span></span
-                            ><!--<span class="small-pseudo-button toggle-button group-item example-source js-toggler" data-toggle="css"><span class="button-content">css</span></span
-                        >--></span>
+                            >{% if site.debug %}<span class="small-pseudo-button toggle-button group-item example-source js-toggler" data-toggle="css"><span class="button-content">css</span></span
+                        >{% endif %}</span>
                         <pre class="language-styl is-hidden" data-src="{{ site.production_url }}{{ example_link }}.styl"></pre>
                         <pre class="language-css is-hidden" data-src="{{ site.production_url }}{{ example_link }}.css"></pre>
                     </div>
