@@ -366,27 +366,6 @@ hr {
   display: block;
   padding: 16px 20px;
 }
-.isle {
-  position: relative;
-  display: block;
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  margin: -1px 0;
-}
-.flying-isle {
-  position: relative;
-  display: block;
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  margin: -1px 0;
-}
-.isle-content {
-  padding: 16px;
-}
-.isle-content > .tabs:first-child {
-  margin-top: -16px;
-  margin-bottom: 10px;
-}
 .link {
   cursor: pointer;
   color: #22c;
@@ -777,6 +756,10 @@ textarea.input-controller {
   display: block;
   margin: 0 -8px;
   font-size: 13px;
+}
+.island-content .tabs {
+  margin-top: -16px;
+  margin-bottom: 6px;
 }
 .header {
   position: relative;
