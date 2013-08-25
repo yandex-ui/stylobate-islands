@@ -1,0 +1,23 @@
+.island {
+  position: relative;
+  display: block;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+.island-content {
+  padding: 0 2rem 0 2rem;
+}
+
+.island-content:before {
+  content: "";
+  display: table;
+  margin-bottom: 1.6rem;
+}
+
+.island-content:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-top: 1.6rem;
+}

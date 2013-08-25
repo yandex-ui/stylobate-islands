@@ -10,3 +10,10 @@ skin-islands-isle()
   if ie
     border: 1px solid rgba-ie(#000, alike(arguments, 0.1))
     margin: -1px 0
+
+// How to merge this and skin-islands-popup-content?
+skin-islands-isle-content()
+  if small in arguments
+    kind: content $islands_xs $islands_s
+  else
+    kind: content $islands_m $islands_l

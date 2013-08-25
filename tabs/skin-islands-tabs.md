@@ -52,7 +52,7 @@
 Можно использовать табы внутри острова, но сейчас там хардкодно, надо что-то придумать с отступами и всем таким.
 
 > <div class="flying-isle">
->     <div class="isle-content">
+>     <div class="island-content">
 >         <div class="tabs">
 >             <a class="tabs-item tabs-item_selected">Войти</a
 >             ><a href="#x" class="tabs-item">Зарегистрироваться</a>
