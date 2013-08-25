@@ -505,8 +505,8 @@ hr {
   cursor: pointer;
   color: #000;
   text-decoration: none;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255,255,255,0)) no-repeat;
-  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)) no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0)) no-repeat;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)) no-repeat;
   background-size: 16px 16px;
 }
 
