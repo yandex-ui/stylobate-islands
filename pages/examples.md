@@ -131,3 +131,13 @@ permalink: /examples/
         </div>
     </div>
 </div>
+
+> <div class="example:/skins/islands/button/tests/button"></div>
+> <div class="example:/skins/islands/button/tests/toggler"></div>
+> <div class="example:/skins/islands/button/tests/toggle-button"></div>
+> <div class="example:/skins/islands/button/tests/action-button"></div>
+> <div class="example:/skins/islands/group/tests/group"></div>
+> <div class="example:/skins/islands/pseudo-button/tests/pseudo-button"></div>
+> <div class="example:/skins/islands/pseudo-button/tests/small-pseudo-button"></div>
+> <div class="example:/skins/islands/select/tests/select"></div>
+> <div class="example:/skins/islands/checkbox/tests/checkbox"></div>
