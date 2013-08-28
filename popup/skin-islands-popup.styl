@@ -4,16 +4,16 @@ skin-islands-popup()
   // This could be moved to subskin only when we could get the parent's selector and reuse it inside.
   $popup-tail = utilus_get(arguments, '-tail')
   if $popup-tail
-    &_to_top > {$popup-tail}
+    &_to_top {$popup-tail}
       skin-islands-popup-tail_to_top()
 
-    &_to_right > {$popup-tail}
+    &_to_right {$popup-tail}
       skin-islands-popup-tail_to_right()
 
-    &_to_bottom > {$popup-tail}
+    &_to_bottom {$popup-tail}
       skin-islands-popup-tail_to_bottom()
 
-    &_to_left > {$popup-tail}
+    &_to_left {$popup-tail}
       skin-islands-popup-tail_to_left()
 
 
