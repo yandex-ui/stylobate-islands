@@ -1,0 +1,96 @@
+.input-controller {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+}
+
+.input-controller:focus {
+  outline: none;
+}
+
+.field,
+.input-controller {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  cursor: text;
+  vertical-align: baseline;
+}
+
+.field-content {
+  position: static;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+}
+
+.field-left {
+  position: relative;
+  z-index: 9;
+  float: left;
+}
+
+.field-right {
+  position: relative;
+  z-index: 9;
+  float: right;
+}
+
+.field {
+  width: 400px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  line-height: 2rem;
+  min-height: 3.2rem;
+  font-size: 1.5rem;
+}
+
+.field-left {
+  margin: -0.5rem 0 -0.5rem -1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.field-right {
+  margin: -0.5rem -1rem -0.5rem 0;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.input-controller {
+  width: 400px;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+
+textarea.input-controller {
+  vertical-align: top;
+  resize: none;
+}
+
+.input-view {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border: 1px solid transparent;
+  border-color: rgba(0,0,0,0.38) rgba(0,0,0,0.27) rgba(0,0,0,0.16);
+  background: -webkit-linear-gradient(#fff, #fff);
+  background: linear-gradient(#fff, #fff);
+  background-clip: padding-box;
+  background-size: 16px 16px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+}
+
+:not(.is-disabled):focus + .input-view {
+  outline: none;
+  border-color: rgba(78,62,2,0.515) rgba(94,76,2,0.42) rgba(117,93,0,0.335);
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+}

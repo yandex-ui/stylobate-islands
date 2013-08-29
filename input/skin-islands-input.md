@@ -9,10 +9,7 @@
 
 > <input class="input" type="text" value="Буквы" />
 >
->     .input
->       kind: input
->       skin: input
-> {:.styl}
+> <div class="example:input"></div>
 
 Он может быть маленьким — с параметром `small`
 
@@ -20,10 +17,7 @@
 
 > <input class="small-input" type="text" value="Буквы" />
 >
->     .small-input
->       kind: input
->       skin: input small
-> {:.styl}
+> <div class="example:small-input"></div>
 
 Текстария — визуально тот же инпут, так что можно использовать те же скины и классы:
 
@@ -53,23 +47,7 @@
 >     </span>
 > </label>
 >
->     .field
->       kind: field 0.5*$s $s
->       skin: input-box
->
->     .input-controller
->       kind: input
->       z-index: 9
->       width: 100%
->       height: 100%
->
->     .input-view
->       kind: fill -1px
->       skin: input-view no-focus
->
->       :not(.is-disabled):focus + &
->         skin: input_focus
-> {:.styl}
+> <div class="example:field"></div>
 
 Но если нужно будет добавить любые контролы внутрь, это становится очень легко сделать:
 
@@ -101,10 +79,7 @@
 >     </span>
 > </label>
 >
->     .small-field
->       kind: field no-elements
->       skin: input-box small
-> {:.styl}
+> <div class="example:small-field"></div>
 
 Такой инпут легко растягивать на всю ширину:
 
@@ -157,10 +132,7 @@
 >     </span>
 > </label>
 >
->     .field-label
->       kind: field-left 0.5*$s $s
->       skin: input-label
-> {:.styl}
+> <div class="example:field-label"></div>
 
 #### Сложная текстария {#complex-textarea}
 
@@ -174,8 +146,4 @@
 >     </span>
 > </label>
 >
->     .field-reset
->       kind: field-right 0.5*$s
->       skin: icon _remove with-hover
->       margin-right: $s * -1
-> {:.styl}
+> <div class="example:field-reset"></div>
