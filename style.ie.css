@@ -445,40 +445,40 @@ hr {
   border: 1px solid #e6e6e6;
   margin: -1px 0;
 }
-.dropdown_to_top > .dropdown-tail {
+.dropdown_to_top .dropdown-tail {
   bottom: 0;
   left: 50%;
   margin: -1em -0.5em;
   clip: rect(0 99em 99em -99em);
 }
-.dropdown_to_top > .dropdown-tail:before {
+.dropdown_to_top .dropdown-tail:before {
   top: -50%;
 }
-.dropdown_to_right > .dropdown-tail {
+.dropdown_to_right .dropdown-tail {
   top: 50%;
   left: 0;
   margin: -0.5em -1em;
   clip: rect(-99em auto 99em -99em);
 }
-.dropdown_to_right > .dropdown-tail:before {
+.dropdown_to_right .dropdown-tail:before {
   left: 50%;
 }
-.dropdown_to_bottom > .dropdown-tail {
+.dropdown_to_bottom .dropdown-tail {
   top: 0;
   left: 50%;
   margin: -1em -0.5em;
   clip: rect(-99em 99em auto -99em);
 }
-.dropdown_to_bottom > .dropdown-tail:before {
+.dropdown_to_bottom .dropdown-tail:before {
   top: 50%;
 }
-.dropdown_to_left > .dropdown-tail {
+.dropdown_to_left .dropdown-tail {
   top: 50%;
   right: 0;
   margin: -0.5em -1em;
   clip: rect(-99em 99em 99em 0);
 }
-.dropdown_to_left > .dropdown-tail:before {
+.dropdown_to_left .dropdown-tail:before {
   left: -50%;
 }
 .dropdown-content {
