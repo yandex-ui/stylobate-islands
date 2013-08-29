@@ -12,22 +12,7 @@ h1,h2,h3,
   font: inherit;
   vertical-align: baseline;
 }
-.input,
-.small-input,
-.input-controller {
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: transparent;
-  font: inherit;
-}
-.input:focus,
-.small-input:focus,
-.input-controller:focus {
-  outline: none;
-}
-.modal-close,
-.field-reset {
+.modal-close {
   position: relative;
   display: inline;
   zoom: 1;
@@ -60,37 +45,6 @@ h1,h2,h3,
   max-width: 100%;
   max-height: 100%;
 }
-.input,
-.small-input,
-.field,
-.small-field,
-.input-controller {
-  position: relative;
-  display: inline;
-  zoom: 1;
-  vertical-align: top;
-  max-width: 100%;
-  cursor: text;
-  vertical-align: baseline;
-}
-.field-content {
-  position: static;
-  display: block;
-  overflow: hidden;
-  height: 100%;
-}
-.field-left,
-.field-label {
-  position: relative;
-  z-index: 9;
-  float: left;
-}
-.field-right,
-.field-reset {
-  position: relative;
-  z-index: 9;
-  float: right;
-}
 .is-disabled {
   cursor: default !important;
   opacity: 0.6;
@@ -101,19 +55,16 @@ h1,h2,h3,
 .is-disabled .is-disabled {
   opacity: 1;
 }
-.modal-close,
-.field-reset {
+.modal-close {
   width: 16px;
   height: 16px;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuMjA5Yy0zLjc1MSAwLTYuNzkxIDMuMDQtNi43OTEgNi43OTEgMCAzLjc0OSAzLjA0IDYuNzg5IDYuNzkxIDYuNzg5IDMuNzQ5IDAgNi43ODktMy4wNCA2Ljc4OS02Ljc4OSAwLTMuNzUxLTMuMDQtNi43OTEtNi43ODktNi43OTF6bTMuOTkgOS4zNTVsLTEuNDI2IDEuNDI2LTIuNTY0LTIuNTY0LTIuNTY0IDIuNTY0LTEuNDI2LTEuNDI2IDIuNTY0LTIuNTY0LTIuNTY0LTIuNTY0IDEuNDI2LTEuNDI2IDIuNTY0IDIuNTY0IDIuNTY0LTIuNTY0IDEuNDI2IDEuNDI2LTIuNTY0IDIuNTY0IDIuNTY0IDIuNTY0eiIvPjwvc3ZnPg==");
 }
-.modal-close,
-.field-reset {
+.modal-close {
   cursor: pointer;
   opacity: 0.2;
 }
-.modal-close:hover,
-.field-reset:hover {
+.modal-close:hover {
   opacity: 1;
 }
 .page {
@@ -610,111 +561,6 @@ hr {
 }
 .default-form .form-field-content:first-child {
   margin-left: 200px;
-}
-.input {
-  width: 400px;
-  border: 1px solid transparent;
-  padding: 5px 10px;
-  line-height: 20px;
-  min-height: 32px;
-  font-size: 15px;
-  border-color: rgba(0,0,0,0.38) rgba(0,0,0,0.27) rgba(0,0,0,0.16);
-  background: linear-gradient(#fff, #fff);
-}
-.input:not(.is-disabled):focus {
-  outline: none;
-  border-color: rgba(78,62,2,0.515) rgba(94,76,2,0.42) rgba(117,93,0,0.335);
-}
-.input:focus {
-  z-index: 9;
-}
-.small-input {
-  width: 400px;
-  border: 1px solid transparent;
-  padding: 5px 10px;
-  line-height: 16px;
-  min-height: 28px;
-  font-size: 13px;
-  border-color: rgba(0,0,0,0.38) rgba(0,0,0,0.27) rgba(0,0,0,0.16);
-  background: linear-gradient(#fff, #fff);
-}
-.small-input:not(.is-disabled):focus {
-  outline: none;
-  border-color: rgba(78,62,2,0.515) rgba(94,76,2,0.42) rgba(117,93,0,0.335);
-}
-.small-input:focus {
-  z-index: 9;
-}
-.field {
-  width: 400px;
-  border: 1px solid transparent;
-  padding: 5px 10px;
-  line-height: 20px;
-  min-height: 32px;
-  font-size: 15px;
-}
-.field-left {
-  margin: -5px 0 -5px -10px;
-  padding: 5px 10px 5px 10px;
-}
-.field-right {
-  margin: -5px -10px -5px 0;
-  padding: 5px 10px 5px 10px;
-}
-.small-field {
-  width: 400px;
-  border: 1px solid transparent;
-  padding: 5px 10px;
-  line-height: 16px;
-  min-height: 28px;
-  font-size: 13px;
-}
-.input-controller {
-  width: 400px;
-  z-index: 9;
-  width: 100%;
-  height: 100%;
-}
-textarea.input-controller {
-  vertical-align: top;
-  resize: none;
-}
-.input-view {
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  bottom: -1px;
-  left: -1px;
-  border: 1px solid transparent;
-  border-color: rgba(0,0,0,0.38) rgba(0,0,0,0.27) rgba(0,0,0,0.16);
-  background: linear-gradient(#fff, #fff);
-}
-:not(.is-disabled):focus + .input-view {
-  outline: none;
-  border-color: rgba(78,62,2,0.515) rgba(94,76,2,0.42) rgba(117,93,0,0.335);
-}
-.field-label {
-  margin: -5px 0 -5px -10px;
-  padding: 5px 10px 5px 10px;
-  cursor: pointer;
-  color: #000;
-  text-decoration: none;
-  border-right: 1px solid rgba(0,0,0,0.08);
-  margin-right: 10px;
-  font-size: 16px;
-  background: linear-gradient(rgba(255,225,120,0.1), rgba(0,0,0,0.02));
-}
-.field-label:hover {
-  color: #d00;
-}
-.field-reset {
-  margin: -5px -5px -5px 0;
-  padding: 5px 5px 5px 5px;
-  margin-right: -10px;
-  height: auto;
-}
-.field-reset:before {
-  content: " ";
 }
 .tabs {
   position: relative;

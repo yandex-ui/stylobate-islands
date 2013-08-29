@@ -55,14 +55,26 @@ $('blockquote .tabs-item').click(function(){
     $(this).addClass('tabs-item_selected');
 });
 
-// Auto-sizing textarea
+// Auto-sizing textarea and input
 
-$('.js-autosize').on('input',function(){
-    $(this).height(0).height($(this)[0].scrollHeight);
+var reset_height = function(el) {
+    el.height(0).height(el[0].scrollHeight);
+}
+var reset_width = function(el) {
+    el.width(0).width(el[0].scrollWidth);
+}
+$('input.js-autosize').on('input',function(){
+    reset_width($(this));
 });
-
-$('.js-autosize').each(function(){
-    $(this).height(0).height($(this)[0].scrollHeight);
+$('input.js-autosize').each(function(){
+    reset_width($(this));
+    $(this).closest('.field').css('width','auto');
+});
+$('textarea.js-autosize').on('input',function(){
+    reset_height($(this));
+});
+$('textarea.js-autosize').each(function(){
+    reset_height($(this));
 });
 
 $('.field-reset').on('click',function(e){
