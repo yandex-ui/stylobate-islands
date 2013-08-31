@@ -21,18 +21,7 @@
 >     ><a href="#x" class="tabs-item">Три</a>
 > </div>
 >
->     .tabs
->       kind: block
->       skin: tabs
->
->     .tabs-item
->       kind: block inline
->       skin: tabs-item
->
->     .tabs-item_selected,
->     .tabs-item_selected:hover
->       skin: tabs-item_selected
-> {:.styl}
+> <div class="example:tabs"></div>
 
 На айтемах нужные размеры задаются в `em`, так что достаточно задавать размер только на родителе:
 
@@ -44,10 +33,7 @@
 >     ><a href="#x" class="tabs-item">Маленький три</a>
 > </div>
 >
->     .small-tabs
->       kind: block
->       skin: tabs small
-> {:.styl}
+> <div class="example:small-tabs"></div>
 
 Можно использовать табы внутри острова, но сейчас там хардкодно, надо что-то придумать с отступами и всем таким.
 
@@ -60,3 +46,5 @@
 >         blah blah
 >     </div>
 > </div>
+>
+> <div class="example:isle-tabs"></div>

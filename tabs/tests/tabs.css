@@ -1,0 +1,38 @@
+.tabs {
+  position: relative;
+  display: block;
+  margin: 0 -0.8rem;
+  font-size: 1.5rem;
+}
+
+.tabs-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  color: #22c;
+  text-decoration: none;
+  line-height: 2em;
+  padding: 0.3rem 0.8rem;
+}
+
+.tabs-item:hover {
+  color: #d00;
+}
+
+.tabs-item_selected,
+.tabs-item_selected:hover {
+  color: #000;
+  cursor: default;
+}
+
+.tabs-item_selected:before,
+.tabs-item_selected:hover:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: 0.8rem;
+  bottom: auto;
+  left: 0.8rem;
+  border-top: 2px solid;
+}
