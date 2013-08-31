@@ -425,51 +425,6 @@ hr {
 .default-form .form-field-content:first-child {
   margin-left: 200px;
 }
-.tabs {
-  position: relative;
-  display: block;
-  margin: 0 -8px;
-  font-size: 15px;
-}
-.tabs-item {
-  position: relative;
-  display: inline;
-  zoom: 1;
-  vertical-align: top;
-  cursor: pointer;
-  color: #22c;
-  text-decoration: none;
-  line-height: 2em;
-  padding: 3px 8px;
-}
-.tabs-item:hover {
-  color: #d00;
-}
-.tabs-item_selected,
-.tabs-item_selected:hover {
-  color: #000;
-  cursor: default;
-}
-.tabs-item_selected:before,
-.tabs-item_selected:hover:before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  right: 8px;
-  bottom: auto;
-  left: 8px;
-  border-top: 2px solid;
-}
-.small-tabs {
-  position: relative;
-  display: block;
-  margin: 0 -8px;
-  font-size: 13px;
-}
-.island-content .tabs {
-  margin-top: -16px;
-  margin-bottom: 6px;
-}
 .header {
   position: relative;
   display: block;
