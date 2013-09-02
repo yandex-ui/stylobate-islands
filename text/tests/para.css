@@ -1,0 +1,14 @@
+.text p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.text p {
+  margin-bottom: 1.6rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}

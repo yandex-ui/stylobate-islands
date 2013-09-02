@@ -1,0 +1,14 @@
+.text h4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.text h4 {
+  margin-bottom: 0.6rem;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}

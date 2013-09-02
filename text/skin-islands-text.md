@@ -20,15 +20,11 @@
 
 > <p>Пример обычного текста — Arial 15px, высота строки — 22px</p>
 >
->     p
->        skin: para reset
-> {:.styl}
+> <div class="example:para"></div>
 
 > <p class="secondary">Пример второстепенного текста — Arial 13px, высота строки — 18px</p>
 >
->     p.secondary
->       skin: para2
-> {:.styl}
+> <div class="example:para2"></div>
 
 
 ### Заголовки {#headers}
@@ -39,36 +35,24 @@
 
 > <h1>Заголовок</h1>
 >
->     h1
->       skin: h1 reset
-> {:.styl}
+> <div class="example:h1"></div>
 
 > <h2>Заголовок</h2>
 >
->     h2
->       skin: h2 reset
-> {:.styl}
+> <div class="example:h2"></div>
 
 > <h3>Заголовок</h3>
 >
->     h3
->       skin: h3 reset
-> {:.styl}
+> <div class="example:h3"></div>
 
 > <h4>Заголовок</h4>
 >
->     h4
->       skin: h4 reset
-> {:.styl}
+> <div class="example:h4"></div>
 
 > <h5>Заголовок</h5>
 >
->     h5
->       skin: h5 reset
-> {:.styl}
+> <div class="example:h5"></div>
 
 > <h6>Заголовок</h6>
 >
->     h6
->       skin: h6 reset
-> {:.styl}
+> <div class="example:h6"></div>
