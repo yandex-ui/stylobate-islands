@@ -95,9 +95,9 @@ input[type=file]:focus + .small-action-button:after,
 }
 
 .small-action-button:before {
-  background: #ffd630;
-  background: -webkit-linear-gradient(#ffdf60, #fc0);
-  background: linear-gradient(#ffdf60, #fc0);
+  background: #FFD630;
+  background: -webkit-linear-gradient(#FFDF60, #FC0);
+  background: linear-gradient(#FFDF60, #FC0);
 }
 
 input[type=file]:hover:not(:checked) + .small-action-button,
@@ -109,7 +109,7 @@ input[type=file]:hover:not(:checked) + .small-action-button,
 
 input[type=file]:hover:not(:checked) + .small-action-button:before,
 .small-action-button:not(.is-disabled):hover:before {
-  background: #fd5;
-  background: -webkit-linear-gradient(#ffe681, #ffd428);
-  background: linear-gradient(#ffe681, #ffd428);
+  background: #FD5;
+  background: -webkit-linear-gradient(#FFE681, #FFD428);
+  background: linear-gradient(#FFE681, #FFD428);
 }

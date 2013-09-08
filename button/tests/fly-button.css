@@ -86,9 +86,9 @@ input[type=file]:focus + .fly-button:after,
 }
 
 .fly-button:before {
-  background: #f7f7f7;
-  background: -webkit-linear-gradient(#fff, #eee);
-  background: linear-gradient(#fff, #eee);
+  background: #F7F7F7;
+  background: -webkit-linear-gradient(#FFF, #EEE);
+  background: linear-gradient(#FFF, #EEE);
 }
 
 input[type=file]:hover + .fly-button,
@@ -100,7 +100,7 @@ input[type=file]:hover + .fly-button,
 
 input[type=file]:hover + .fly-button:before,
 .fly-button:not(.is-disabled):hover:before {
-  background: #fbfaf9;
-  background: -webkit-linear-gradient(#fff, #f6f5f3);
-  background: linear-gradient(#fff, #f6f5f3);
+  background: #FBFAF9;
+  background: -webkit-linear-gradient(#FFF, #F6F5F3);
+  background: linear-gradient(#FFF, #F6F5F3);
 }

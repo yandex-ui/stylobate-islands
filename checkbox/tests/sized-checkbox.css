@@ -64,9 +64,9 @@ input[type=file]:focus + .normal-checkbox:after,
 }
 
 .normal-checkbox:before {
-  background: #f7f7f7;
-  background: -webkit-linear-gradient(#fff, #eee);
-  background: linear-gradient(#fff, #eee);
+  background: #F7F7F7;
+  background: -webkit-linear-gradient(#FFF, #EEE);
+  background: linear-gradient(#FFF, #EEE);
 }
 
 .normal-checkbox > .checkbox-icon {
@@ -146,9 +146,9 @@ input[type=file]:focus + .small-radio:after,
 }
 
 .small-radio:before {
-  background: #f7f7f7;
-  background: -webkit-linear-gradient(#fff, #eee);
-  background: linear-gradient(#fff, #eee);
+  background: #F7F7F7;
+  background: -webkit-linear-gradient(#FFF, #EEE);
+  background: linear-gradient(#FFF, #EEE);
 }
 
 .small-radio:before {
@@ -169,4 +169,3 @@ input[type=file]:focus + .small-radio:after,
 input:not(:checked) + .small-radio > .radio-icon {
   visibility: hidden;
 }
-

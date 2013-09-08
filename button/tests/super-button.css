@@ -86,9 +86,9 @@ input[type=file]:focus + .super-button:after,
 }
 
 .super-button:before {
-  background: #ffd630;
-  background: -webkit-linear-gradient(#ffdf60, #fc0);
-  background: linear-gradient(#ffdf60, #fc0);
+  background: #FFD630;
+  background: -webkit-linear-gradient(#FFDF60, #FC0);
+  background: linear-gradient(#FFDF60, #FC0);
 }
 
 input[type=file]:hover:not(:checked) + .super-button,
@@ -100,9 +100,9 @@ input[type=file]:hover:not(:checked) + .super-button,
 
 input[type=file]:hover:not(:checked) + .super-button:before,
 .super-button:not(.is-disabled):hover:before {
-  background: #fd5;
-  background: -webkit-linear-gradient(#ffe681, #ffd428);
-  background: linear-gradient(#ffe681, #ffd428);
+  background: #FD5;
+  background: -webkit-linear-gradient(#FFE681, #FFD428);
+  background: linear-gradient(#FFE681, #FFD428);
 }
 
 .super-button.is-checked,
@@ -114,9 +114,8 @@ input[type=file]:hover:not(:checked) + .super-button:before,
 
 .super-button.is-checked:before,
 .super-button.is-checked:hover:before {
-  background: #fff1be;
-  background: -webkit-linear-gradient(#ffeca6, #fff6d5);
-  background: linear-gradient(#ffeca6, #fff6d5);
+  background: #FFF1BE;
+  background: -webkit-linear-gradient(#FFECA6, #FFF6D5);
+  background: linear-gradient(#FFECA6, #FFF6D5);
   box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
 }
-

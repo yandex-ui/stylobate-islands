@@ -14,7 +14,7 @@
   padding: 0.8rem 1.5rem;
   font-size: 1.8rem;
   line-height: 2.6rem;
-  background: #ffdb4c;
+  background: #FFDB4C;
   white-space: nowrap;
   margin-right: 1.212rem;
   cursor: pointer;
@@ -26,11 +26,11 @@
   content: "";
   width: 2.969848481766999rem;
   height: 2.969848481766999rem;
-  background: -webkit-linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
-  background: linear-gradient(45deg, #ffdb4c 50%, transparent 50%);
+  background: -webkit-linear-gradient(45deg, #FFDB4C 50%, transparent 50%);
+  background: linear-gradient(45deg, #FFDB4C 50%, transparent 50%);
   -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
 }
 
 .link-arrow:hover {
-  color: #d00;
+  color: #D00;
 }

@@ -10,13 +10,13 @@
   height: 15px;
   min-width: 9px;
   padding: 0 3px;
-  border: 2px solid #fff;
+  border: 2px solid #FFF;
   text-align: center;
   font-size: 13px;
   line-height: 15px;
   font-weight: bold;
-  color: #fff;
-  background: #f00;
+  color: #FFF;
+  background: #F00;
   border-radius: 1em;
   box-shadow: 0 1px 0 1px rgba(0,0,0,0.1), 0 5px 10px -5px rgba(0,0,0,0.5);
 }

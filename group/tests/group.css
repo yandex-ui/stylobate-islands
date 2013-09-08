@@ -44,4 +44,3 @@ input.group > .toggle-button:not(:first-child):not(:last-child),
 label.group > .toggle-button:not(:first-child):not(:last-child) {
   border-right-color: transparent;
 }
-
