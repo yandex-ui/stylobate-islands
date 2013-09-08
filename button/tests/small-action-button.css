@@ -1,10 +1,8 @@
 .small-action-button {
-  padding: 0;
   margin: 0;
   border: none;
   background: transparent;
   -moz-appearance: none;
-  font: inherit;
 }
 
 .small-action-button::-moz-focus-inner {
@@ -17,14 +15,6 @@
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: baseline;
-}
-
-.small-action-button {
   font: 1.5rem/2.2rem Arial, sans-serif;
   position: relative;
   vertical-align: baseline;

@@ -2,11 +2,7 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -0.2em;
   background: 50% no-repeat;
-}
-
-.small-button .button-arrow {
   width: 6px;
   height: 6px;
   border-bottom: 2px solid;
@@ -15,9 +11,6 @@
   -webkit-transform: scale(0.75) rotate(45deg);
   -ms-transform: scale(0.75) rotate(45deg);
   transform: scale(0.75) rotate(45deg);
-}
-
-.small-button .button-arrow {
   float: right;
   top: 0.6em;
   left: -1px;

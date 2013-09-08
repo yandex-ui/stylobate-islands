@@ -1,10 +1,8 @@
 .pseudo-button {
-  padding: 0;
   margin: 0;
   border: none;
   background: transparent;
   -moz-appearance: none;
-  font: inherit;
 }
 
 .pseudo-button::-moz-focus-inner {
@@ -21,10 +19,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  vertical-align: baseline;
-}
-
-.pseudo-button {
   font: 1.5rem/2.2rem Arial, sans-serif;
   position: relative;
   vertical-align: baseline;
@@ -60,12 +54,12 @@
   display: block;
 }
 
-.pseudo-button:not(.is-disabled):hover {
+.pseudo-button:not(.is-disabled):hover,
+.pseudo-button:not(.is-disabled):focus {
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
 }
 
 .pseudo-button:not(.is-disabled):focus {
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
   outline: 0;
 }
 

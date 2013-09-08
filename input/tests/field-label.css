@@ -2,16 +2,12 @@
   position: relative;
   z-index: 9;
   float: left;
-}
-
-.field-label {
-  margin: -0.5rem 0 -0.5rem -1rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   color: #000;
   text-decoration: none;
   border-right: 1px solid rgba(0,0,0,0.08);
-  margin-right: 1rem;
+  margin: -0.5rem 1rem -0.5rem -1rem;
   font-size: 1.6rem;
   background: -webkit-linear-gradient(rgba(255, 225, 120, 0.1), rgba(0,0,0,0.02));
   background: linear-gradient(rgba(255,225,120,0.1), rgba(0,0,0,0.02));

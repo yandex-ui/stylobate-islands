@@ -1,15 +1,9 @@
 .small-field {
   position: relative;
   display: inline-block;
-  vertical-align: top;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   max-width: 100%;
   cursor: text;
   vertical-align: baseline;
-}
-
-.small-field {
   width: 400px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

@@ -1,12 +1,7 @@
 .select-wrap:after {
-  position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -0.2em;
   background: 50% no-repeat;
-}
-
-.select-wrap:after {
   width: 6px;
   height: 6px;
   border-bottom: 2px solid;
@@ -22,12 +17,10 @@
   display: block;
   z-index: 10;
   -webkit-appearance: none;
-  -moz-appearance: menuitem;
   -moz-appearance: window;
   cursor: pointer;
   width: 100%;
   border: none;
-  padding: 0;
   margin: 0;
   font: inherit;
   color: inherit;
@@ -43,10 +36,6 @@
 x::-moz-focus-inner {
   color: transparent;
   text-shadow: 0 0 0 #333;
-}
-
-.select,
-x::-moz-focus-inner {
   padding: 0.6rem 2.3rem 0.6rem 1.1rem;
 }
 

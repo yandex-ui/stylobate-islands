@@ -2,11 +2,7 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -0.2em;
   background: 50% no-repeat;
-}
-
-.icon_dropdown {
   width: 6px;
   height: 6px;
   border-bottom: 2px solid;

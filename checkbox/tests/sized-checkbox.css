@@ -1,8 +1,6 @@
 .normal-checkbox,
 .small-radio {
-  position: relative;
   display: inline-block;
-  vertical-align: middle;
   margin-top: -0.2em;
   background: 50% no-repeat;
 }
@@ -99,7 +97,6 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
   -ms-user-select: none;
   user-select: none;
   color: #333;
-  border-radius: 3px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.07);
   background: rgba(0,0,0,0.3);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4));
@@ -116,7 +113,6 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
   right: 1px;
   bottom: 1px;
   left: 1px;
-  border-radius: 2px;
 }
 
 .small-radio .button-content {
@@ -149,9 +145,6 @@ input[type=file]:focus + .small-radio:after,
   background: #F7F7F7;
   background: -webkit-linear-gradient(#FFF, #EEE);
   background: linear-gradient(#FFF, #EEE);
-}
-
-.small-radio:before {
   border-radius: 50%;
 }
 

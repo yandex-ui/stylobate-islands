@@ -1,10 +1,8 @@
 .small-pseudo-button {
-  padding: 0;
   margin: 0;
   border: none;
   background: transparent;
   -moz-appearance: none;
-  font: inherit;
 }
 
 .small-pseudo-button::-moz-focus-inner {
@@ -21,10 +19,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  vertical-align: baseline;
-}
-
-.small-pseudo-button {
   font: 1.5rem/2.2rem Arial, sans-serif;
   position: relative;
   vertical-align: baseline;

@@ -2,9 +2,9 @@
   position: absolute;
   left: 100%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
-  transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+  -webkit-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg);
+  -ms-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg);
+  transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg);
 }
 
 .custom-arrow {
@@ -14,7 +14,7 @@
   padding: 0.8rem 1.5rem;
   font-size: 1.8rem;
   line-height: 9.4rem;
-  background: #F00;
+  background: red;
   white-space: nowrap;
   margin-right: 3.175rem;
   color: #FFF;
@@ -23,7 +23,7 @@
 .custom-arrow > .arrow-tail {
   width: 7.778174595104045rem;
   height: 7.778174595104045rem;
-  background: -webkit-linear-gradient(45deg, #F00 50%, transparent 50%);
-  background: linear-gradient(45deg, #F00 50%, transparent 50%);
-  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
+  background: -webkit-linear-gradient(45deg, red 50%, transparent 50%);
+  background: linear-gradient(45deg, red 50%, transparent 50%);
+  -webkit-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg) translateZ(0);
 }

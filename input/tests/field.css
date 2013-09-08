@@ -14,12 +14,14 @@
 .input-controller {
   position: relative;
   display: inline-block;
-  vertical-align: top;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   max-width: 100%;
   cursor: text;
   vertical-align: baseline;
+}
+
+.input-controller {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .field-content {
@@ -54,16 +56,15 @@
 
 .field-left {
   margin: -0.5rem 0 -0.5rem -1rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .field-right {
   margin: -0.5rem -1rem -0.5rem 0;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .input-controller {
-  width: 400px;
   z-index: 9;
   width: 100%;
   height: 100%;

@@ -4,7 +4,7 @@
   vertical-align: top;
   background: #FFF;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 30px -5px rgba(0,0,0,0.5);
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem;
 }
 
 .small-popup:before {

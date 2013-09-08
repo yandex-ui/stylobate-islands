@@ -31,12 +31,12 @@ label.group > .toggle-button:first-child:not(:only-child) {
   border-right-color: transparent;
 }
 
-.group > .toggle-button:not(:first-child):not(:last-child),
-.group > .toggle-button:not(:first-child):not(:last-child):before {
+.group > .toggle-button:not(:first-child):not(:last-child) {
   border-radius: 0 !important;
 }
 
 .group > .toggle-button:not(:first-child):not(:last-child):before {
+  border-radius: 0 !important;
   right: 0;
 }
 

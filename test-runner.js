@@ -31,9 +31,17 @@ glob.sync("./" + whatToTest + "/tests/*.styl").forEach(function(test){
 
       // Remove those hardfixes when there would be a way to do this in csscomb
       actual = actual.replace(/([^\+>])([\+>])\./g,'$1 $2 .');
-      actual = actual.replace(/\),([^ ])([^\+>])/g,'), $1$2');
-      actual = actual.replace(',sans-serif',', sans-serif');
+      actual = actual.replace(/\)(,?)([^:\)\s,;])/g,')$1 $2');
+      actual = actual.replace(/,sans-serif/g,', sans-serif');
+      actual = actual.replace(/,#/g,', #');
+      actual = actual.replace(/,red/g,', red');
+      actual = actual.replace(/,transparent/g,', transparent');
+      actual = actual.replace(/background: 0 0/g,'background: transparent');
+      actual = actual.replace(/font-weight: 700/g,'font-weight: bold');
+      actual = actual.replace(/([^ ])!important/g,'$1 !important');
+      actual = actual.replace(/inset,([^ ])/g,'inset, $1');
       actual = actual.replace(/\)rgba/g,') rgba');
+      actual = actual.replace(/color: #333 \\0\/;/g,'color: transparent;\n  color: #333 \\0/;');
       actual.trim().should.equal(css);
     });
   })

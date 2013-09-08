@@ -3,12 +3,10 @@
   display: block;
   z-index: 10;
   -webkit-appearance: none;
-  -moz-appearance: menuitem;
   -moz-appearance: window;
   cursor: pointer;
   width: 100%;
   border: none;
-  padding: 0;
   margin: 0;
   font: inherit;
   color: inherit;
@@ -24,10 +22,6 @@
 x::-moz-focus-inner {
   color: transparent;
   text-shadow: 0 0 0 #333;
-}
-
-.small-select,
-x::-moz-focus-inner {
   padding: 0.5rem 2.1rem 0.5rem 0.9rem;
 }
 

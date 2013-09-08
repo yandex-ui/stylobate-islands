@@ -1,12 +1,7 @@
 .radio {
-  position: relative;
   display: inline-block;
-  vertical-align: middle;
   margin-top: -0.2em;
   background: 50% no-repeat;
-}
-
-.radio {
   font: 1.5rem/2.2rem Arial, sans-serif;
   position: relative;
   vertical-align: middle;
@@ -15,7 +10,6 @@
   -ms-user-select: none;
   user-select: none;
   color: #333;
-  border-radius: 3px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.07);
   width: 1em;
   height: 1em;
@@ -36,7 +30,6 @@
   right: 1px;
   bottom: 1px;
   left: 1px;
-  border-radius: 2px;
 }
 
 .radio .button-content {
@@ -69,9 +62,6 @@ input[type=file]:focus + .radio:after,
   background: #F7F7F7;
   background: -webkit-linear-gradient(#FFF, #EEE);
   background: linear-gradient(#FFF, #EEE);
-}
-
-.radio:before {
   border-radius: 50%;
 }
 
