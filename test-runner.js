@@ -41,7 +41,10 @@ glob.sync("./" + whatToTest + "/tests/*.styl").forEach(function(test){
       actual = actual.replace(/([^ ])!important/g,'$1 !important');
       actual = actual.replace(/inset,([^ ])/g,'inset, $1');
       actual = actual.replace(/\)rgba/g,') rgba');
+
+      // CSSO strips ie9 hack, should replace with smth else
       actual = actual.replace(/color: #333 \\0\/;/g,'color: transparent;\n  color: #333 \\0/;');
+
       actual.trim().should.equal(css);
     });
   })
