@@ -10,14 +10,14 @@
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
-  color: #22c;
+  color: #22C;
   text-decoration: none;
   line-height: 2em;
   padding: 0.3rem 0.8rem;
 }
 
 .tabs-item:hover {
-  color: #d00;
+  color: #D00;
 }
 
 .tabs-item_selected,
