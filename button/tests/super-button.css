@@ -1,6 +1,7 @@
 .super-button {
-  margin: 0;
   border: none;
+  margin: 0;
+
   background: transparent;
   -moz-appearance: none;
 }
@@ -11,51 +12,63 @@
 }
 
 .super-button {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  font: 1.5rem/2.2rem Arial, sans-serif;
   position: relative;
-  vertical-align: baseline;
+
+  display: inline-block;
+
+  padding: 0.5rem 1.3rem;
+
+  cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #333;
-  border-radius: 3px;
-  box-shadow: 0 8px 20px -5px rgba(0,0,0,0.25);
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+
+  font: 1.5rem/2.2rem Arial, sans-serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
-  padding: 0.5rem 1.3rem;
+
+  color: #333;
+
   background: rgba(83,56,0,0.47);
   background: -webkit-linear-gradient(rgba(96, 64, 0, 0.4), rgba(70,47,0,0.54));
   background: linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
+  box-shadow: 0 8px 20px -5px rgba(0,0,0,0.25);
+
+  border-radius: 3px;
 }
 
 .super-button:before {
   content: "";
+
   position: absolute;
   top: 1px;
   right: 1px;
   bottom: 1px;
   left: 1px;
+
   border-radius: 2px;
 }
 
 .super-button .button-content {
   position: relative;
+
   display: block;
 }
 
 input[type=file]:active + .super-button,
 .super-button:not(.is-disabled):active {
   top: 1px;
+
   box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
 }
 
 .super-button:after {
   content: "";
+
   position: absolute;
   top: 0;
   right: 0;
@@ -71,7 +84,9 @@ input[type=file]:focus + .super-button,
 input[type=file]:focus + .super-button:after,
 .super-button:not(.is-disabled):focus:after {
   z-index: 9;
+
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+
   border-radius: inherit;
 }
 
@@ -97,9 +112,10 @@ input[type=file]:hover:not(:checked) + .super-button:before,
 
 .super-button.is-checked,
 .super-button.is-checked:hover {
+  top: 1px;
+
   background: rgba(255,236,166,0.4);
   box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
-  top: 1px;
 }
 
 .super-button.is-checked:before,

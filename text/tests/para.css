@@ -1,9 +1,11 @@
 .text p {
   padding: 0;
   border: 0;
-  font: inherit;
-  vertical-align: baseline;
   margin: 0 0 1.6rem;
+
+  vertical-align: baseline;
+
+  font: inherit;
   font-size: 1.5rem;
   line-height: 2.2rem;
 }

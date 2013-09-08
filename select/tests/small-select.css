@@ -1,17 +1,22 @@
 .small-select {
   position: relative;
-  display: block;
   z-index: 10;
+
+  display: block;
   -webkit-appearance: none;
   -moz-appearance: window;
-  cursor: pointer;
   width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 1.3rem;
   border: none;
   margin: 0;
+
+  cursor: pointer;
+
   font: inherit;
+
   color: inherit;
+
   background: transparent;
-  padding: 0.5rem 2.5rem 0.5rem 1.3rem;
 }
 
 .small-select:focus {
@@ -20,16 +25,17 @@
 
 .small-select,
 x::-moz-focus-inner {
+  padding: 0.5rem 2.1rem 0.5rem 0.9rem;
+
   color: transparent;
   text-shadow: 0 0 0 #333;
-  padding: 0.5rem 2.1rem 0.5rem 0.9rem;
 }
 
 .small-select,
 x:-o-prefocus {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  margin-right: -1.5rem;
   padding-top: 0.7rem;
   padding-bottom: 0.6rem;
+  margin-right: -1.5rem;
 }

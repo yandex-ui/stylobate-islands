@@ -1,9 +1,11 @@
 .text h4 {
   padding: 0;
   border: 0;
-  font: inherit;
-  vertical-align: baseline;
   margin: 0 0 0.6rem;
+
+  vertical-align: baseline;
+
+  font: inherit;
   font-size: 1.6rem;
   line-height: 1.6rem;
 }

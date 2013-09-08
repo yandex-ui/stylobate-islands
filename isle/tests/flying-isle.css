@@ -1,6 +1,8 @@
 .flying-isle {
   position: relative;
+
   display: block;
+
   background: #FFF;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 30px -5px rgba(0,0,0,0.5);
 }

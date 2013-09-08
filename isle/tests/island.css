@@ -1,6 +1,8 @@
 .island {
   position: relative;
+
   display: block;
+
   background: #FFF;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
 }
@@ -11,13 +13,17 @@
 
 .island-content:before {
   content: "";
+
   display: table;
+
   margin-bottom: 1.6rem;
 }
 
 .island-content:after {
   content: "";
+
   display: table;
   clear: both;
+
   margin-top: 1.6rem;
 }

@@ -1,7 +1,9 @@
 .input {
   margin: 0;
-  background: transparent;
+
   font: inherit;
+
+  background: transparent;
 }
 
 .input:focus {
@@ -10,19 +12,24 @@
 
 .input {
   position: relative;
+
   display: inline-block;
-  max-width: 100%;
-  cursor: text;
-  vertical-align: baseline;
-  width: 400px;
+
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid transparent;
-  padding: 0.5rem 1rem;
-  line-height: 2rem;
+  width: 400px;
+  max-width: 100%;
   min-height: 3.2rem;
-  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
   border-color: rgba(0,0,0,0.38) rgba(0,0,0,0.27) rgba(0,0,0,0.16);
+
+  cursor: text;
+  vertical-align: baseline;
+
+  font-size: 1.5rem;
+  line-height: 2rem;
+
   background: -webkit-linear-gradient(#FFF, #FFF);
   background: linear-gradient(#FFF, #FFF);
   background-clip: padding-box;
@@ -31,9 +38,11 @@
 }
 
 .input:not(.is-disabled):focus {
-  outline: none;
   border-color: rgba(78,62,2,0.515) rgba(94,76,2,0.42) rgba(117,93,0,0.335);
+
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+
+  outline: none;
 }
 
 .input:focus {

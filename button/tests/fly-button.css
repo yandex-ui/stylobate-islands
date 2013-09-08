@@ -1,6 +1,7 @@
 .fly-button {
-  margin: 0;
   border: none;
+  margin: 0;
+
   background: transparent;
   -moz-appearance: none;
 }
@@ -11,51 +12,63 @@
 }
 
 .fly-button {
-  display: inline-block;
-  white-space: nowrap;
-  text-decoration: none;
-  cursor: pointer;
-  font: 1.5rem/2.2rem Arial, sans-serif;
   position: relative;
-  vertical-align: baseline;
+
+  display: inline-block;
+
+  padding: 0.5rem 1.5rem;
+
+  cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #333;
-  border-radius: 3px;
-  box-shadow: 0 8px 20px -5px rgba(0,0,0,0.25);
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+
+  font: 1.5rem/2.2rem Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 2.2rem;
-  padding: 0.5rem 1.5rem;
+
+  color: #333;
+
   background: rgba(0,0,0,0.3);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  box-shadow: 0 8px 20px -5px rgba(0,0,0,0.25);
+
+  border-radius: 3px;
 }
 
 .fly-button:before {
   content: "";
+
   position: absolute;
   top: 1px;
   right: 1px;
   bottom: 1px;
   left: 1px;
+
   border-radius: 2px;
 }
 
 .fly-button .button-content {
   position: relative;
+
   display: block;
 }
 
 input[type=file]:active + .fly-button,
 .fly-button:not(.is-disabled):active {
   top: 1px;
+
   box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
 }
 
 .fly-button:after {
   content: "";
+
   position: absolute;
   top: 0;
   right: 0;
@@ -71,7 +84,9 @@ input[type=file]:focus + .fly-button,
 input[type=file]:focus + .fly-button:after,
 .fly-button:not(.is-disabled):focus:after {
   z-index: 9;
+
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+
   border-radius: inherit;
 }
 

@@ -1,6 +1,8 @@
 .group {
   position: relative;
+
   display: inline-block;
+
   vertical-align: top;
   white-space: nowrap;
 }
@@ -36,8 +38,9 @@ label.group > .toggle-button:first-child:not(:only-child) {
 }
 
 .group > .toggle-button:not(:first-child):not(:last-child):before {
-  border-radius: 0 !important;
   right: 0;
+
+  border-radius: 0 !important;
 }
 
 input.group > .toggle-button:not(:first-child):not(:last-child),

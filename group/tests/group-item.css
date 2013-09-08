@@ -35,8 +35,9 @@ label.group-item:first-child:not(:only-child) {
 }
 
 .group-item:not(:first-child):not(:last-child):before {
-  border-radius: 0 !important;
   right: 0;
+
+  border-radius: 0 !important;
 }
 
 input.group-item:not(:first-child):not(:last-child),

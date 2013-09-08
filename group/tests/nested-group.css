@@ -1,6 +1,8 @@
 .group {
   position: relative;
+
   display: inline-block;
+
   vertical-align: top;
   white-space: nowrap;
 }
