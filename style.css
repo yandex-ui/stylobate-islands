@@ -2,7 +2,11 @@ h1,
 h2,
 h3,
 .page,
-.page-body {
+.page-body,
+.text p,
+.text h4,
+.text h5,
+.text h6 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -118,6 +122,56 @@ a.site-nav-link:not([href]):before {
   bottom: auto;
   left: 0.8rem;
   border-top: 2px solid;
+}
+
+.text p {
+  margin-bottom: 1.6rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.text p.secondary {
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.text h1 {
+  margin-bottom: 2rem;
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+}
+
+.text h2 {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
+.text h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.text h4 {
+  margin-bottom: 0.6rem;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+.text h5 {
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.text h6 {
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .secondary {

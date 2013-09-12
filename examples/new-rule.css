@@ -1,0 +1,659 @@
+.button,
+.action-button,
+.pseudo-button,
+.small-pseudo-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+}
+
+.button::-moz-focus-inner,
+.action-button::-moz-focus-inner,
+.pseudo-button::-moz-focus-inner,
+.small-pseudo-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+.input {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.select-wrap:after,
+.checkbox,
+.button-arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
+
+.toggler-controller {
+  position: absolute !important;
+  clip: rect(1px,1px,1px,1px) !important;
+}
+
+.button,
+.action-button,
+.pseudo-button,
+.small-pseudo-button {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline;
+}
+
+.group {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.group > .toggle-button:first-child:not(:only-child),
+.group > .toggle-button:first-child:not(:only-child):before {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.group > .toggle-button:last-child:not(:only-child),
+.group > .toggle-button:last-child:not(:only-child):before {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.group > .toggle-button:not(:first-child):not(:last-child),
+.group > .toggle-button:last-child:not(:only-child) {
+  margin-left: -1px;
+}
+
+.input {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  cursor: text;
+  vertical-align: baseline;
+}
+
+.select-wrap:after,
+.button-arrow {
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  margin-top: -0.33em;
+  -webkit-transform: scale(0.75) rotate(45deg);
+  -ms-transform: scale(0.75) rotate(45deg);
+  transform: scale(0.75) rotate(45deg);
+}
+
+.button {
+  font: 1.5rem/2.2rem Arial, sans-serif;
+  position: relative;
+  vertical-align: baseline;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  padding: 0.5rem 1.5rem;
+  background: rgba(0,0,0,0.3);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+
+.button .button-content {
+  position: relative;
+  display: block;
+}
+
+input[type=file]:active + .button,
+.button:not(.is-disabled):active {
+  box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
+}
+
+input[type=file]:active + .button:before,
+.button:not(.is-disabled):active:before {
+  box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
+}
+
+input[type=file]:active + .button .button-content,
+.button:not(.is-disabled):active .button-content {
+  top: 1px;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+input[type=file]:focus + .button,
+.button:not(.is-disabled):focus {
+  outline: 0;
+}
+
+input[type=file]:focus + .button:after,
+.button:not(.is-disabled):focus:after {
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+
+.button:before {
+  background: #f7f7f7;
+  background: -webkit-linear-gradient(#fff, #eee);
+  background: linear-gradient(#fff, #eee);
+}
+
+input[type=file]:hover + .button,
+.button:not(.is-disabled):hover {
+  background: rgba(0,0,0,0.31);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+}
+
+input[type=file]:hover + .button:before,
+.button:not(.is-disabled):hover:before {
+  background: #fbfaf9;
+  background: -webkit-linear-gradient(#fff, #f6f5f3);
+  background: linear-gradient(#fff, #f6f5f3);
+}
+
+.toggler {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+input:checked + .toggler-view,
+input:checked + .toggler-view:hover {
+  background: rgba(255,236,166,0.4);
+  box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
+}
+
+input:checked + .toggler-view:before,
+input:checked + .toggler-view:hover:before {
+  background: #fff1be;
+  background: -webkit-linear-gradient(#ffeca6, #fff6d5);
+  background: linear-gradient(#ffeca6, #fff6d5);
+  box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
+}
+
+input:checked + .toggler-view .button-content,
+input:checked + .toggler-view:hover .button-content {
+  top: 1px;
+}
+
+:focus + .toggler-view {
+  outline: 0;
+}
+
+:focus + .toggler-view:after {
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+
+.toggle-button.is-checked,
+.toggle-button.is-checked:hover {
+  background: rgba(255,236,166,0.4);
+  box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
+}
+
+.toggle-button.is-checked:before,
+.toggle-button.is-checked:hover:before {
+  background: #fff1be;
+  background: -webkit-linear-gradient(#ffeca6, #fff6d5);
+  background: linear-gradient(#ffeca6, #fff6d5);
+  box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
+}
+
+.toggle-button.is-checked .button-content,
+.toggle-button.is-checked:hover .button-content {
+  top: 1px;
+}
+
+.action-button {
+  font: 1.5rem/2.2rem Arial, sans-serif;
+  position: relative;
+  vertical-align: baseline;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  padding: 0.5rem 1.5rem;
+  background: rgba(83,56,0,0.47);
+  background: -webkit-linear-gradient(rgba(96, 64, 0, 0.4), rgba(70,47,0,0.54));
+  background: linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
+}
+
+.action-button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+
+.action-button .button-content {
+  position: relative;
+  display: block;
+}
+
+input[type=file]:active + .action-button,
+.action-button:not(.is-disabled):active {
+  box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
+}
+
+input[type=file]:active + .action-button:before,
+.action-button:not(.is-disabled):active:before {
+  box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
+}
+
+input[type=file]:active + .action-button .button-content,
+.action-button:not(.is-disabled):active .button-content {
+  top: 1px;
+}
+
+.action-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+input[type=file]:focus + .action-button,
+.action-button:not(.is-disabled):focus {
+  outline: 0;
+}
+
+input[type=file]:focus + .action-button:after,
+.action-button:not(.is-disabled):focus:after {
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+
+.action-button:before {
+  background: #ffd630;
+  background: -webkit-linear-gradient(#ffdf60, #fc0);
+  background: linear-gradient(#ffdf60, #fc0);
+}
+
+input[type=file]:hover:not(:checked) + .action-button,
+.action-button:not(.is-disabled):hover {
+  background: rgba(0,0,0,0.31);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+}
+
+input[type=file]:hover:not(:checked) + .action-button:before,
+.action-button:not(.is-disabled):hover:before {
+  background: #fd5;
+  background: -webkit-linear-gradient(#ffe681, #ffd428);
+  background: linear-gradient(#ffe681, #ffd428);
+}
+
+.group > .toggle-button:first-child:not(:only-child):before {
+  right: 0;
+}
+
+input.group > .toggle-button:first-child:not(:only-child),
+label.group > .toggle-button:first-child:not(:only-child) {
+  border-right-color: transparent;
+}
+
+.group > .toggle-button:not(:first-child):not(:last-child),
+.group > .toggle-button:not(:first-child):not(:last-child):before {
+  border-radius: 0 !important;
+}
+
+.group > .toggle-button:not(:first-child):not(:last-child):before {
+  right: 0;
+}
+
+input.group > .toggle-button:not(:first-child):not(:last-child),
+label.group > .toggle-button:not(:first-child):not(:last-child) {
+  border-right-color: transparent;
+}
+
+.pseudo-button {
+  font: 1.5rem/2.2rem Arial, sans-serif;
+  position: relative;
+  vertical-align: baseline;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  padding: 0.3rem 1.1rem;
+}
+
+.pseudo-button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+
+.pseudo-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pseudo-button .button-content {
+  position: relative;
+  display: block;
+}
+
+.pseudo-button:not(.is-disabled):hover {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
+}
+
+.pseudo-button:not(.is-disabled):focus {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
+  outline: 0;
+}
+
+.pseudo-button:not(.is-disabled):focus:after {
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+
+.small-pseudo-button {
+  font: 1.5rem/2.2rem Arial, sans-serif;
+  position: relative;
+  vertical-align: baseline;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding: 0.3rem 1rem;
+}
+
+.small-pseudo-button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+
+.small-pseudo-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.small-pseudo-button .button-content {
+  position: relative;
+  display: block;
+}
+
+.small-pseudo-button:not(.is-disabled):hover {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
+}
+
+.small-pseudo-button:not(.is-disabled):focus {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.35);
+  outline: 0;
+}
+
+.small-pseudo-button:not(.is-disabled):focus:after {
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+
+.select {
+  position: relative;
+  display: block;
+  z-index: 10;
+  -webkit-appearance: none;
+  -moz-appearance: menuitem;
+  -moz-appearance: window;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  padding: 0.5rem 2.6999999999999997rem 0.5rem 1.5rem;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.select,
+x::-moz-focus-inner {
+  color: transparent;
+  text-shadow: 0 0 0 #333;
+}
+
+.select,
+x::-moz-focus-inner {
+  padding: 0.6rem 2.3rem 0.6rem 1.1rem;
+}
+
+.select,
+x:-o-prefocus {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-right: -1.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.select-wrap {
+  padding: 0;
+}
+
+.select-wrap,
+x:-o-prefocus {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.select-wrap:after {
+  position: absolute;
+  top: 50%;
+  right: 1.2rem;
+  bottom: auto;
+  left: auto;
+  margin-right: -2px;
+  color: #000;
+}
+
+select:focus + .select-focus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+
+.checkbox {
+  font: 1.5rem/2.2rem Arial, sans-serif;
+  position: relative;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #333;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  width: 1em;
+  height: 1em;
+  padding: 0 1px 1px 0;
+  line-height: 1em;
+  background: rgba(0,0,0,0.3);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  text-align: center;
+  margin-right: 0.6rem;
+}
+
+.checkbox:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 2px;
+}
+
+.checkbox .button-content {
+  position: relative;
+  display: block;
+}
+
+.checkbox:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+input[type=file]:focus + .checkbox,
+.checkbox:not(.is-disabled):focus {
+  outline: 0;
+}
+
+input[type=file]:focus + .checkbox:after,
+.checkbox:not(.is-disabled):focus:after {
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  border-radius: inherit;
+}
+
+.checkbox:before {
+  background: #f7f7f7;
+  background: -webkit-linear-gradient(#fff, #eee);
+  background: linear-gradient(#fff, #eee);
+}
+
+.checkbox > .checkbox-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 13px;
+  border-bottom: 3px solid;
+  border-right: 3px solid;
+  margin: -13px 0 0 -2px;
+  color: #000;
+  -webkit-transform: scale(0.9) rotate(50deg) skewX(12deg);
+  -ms-transform: scale(0.9) rotate(50deg) skewX(12deg);
+  transform: scale(0.9) rotate(50deg) skewX(12deg);
+}
+
+input:not(:checked) + .checkbox > .checkbox-icon {
+  visibility: hidden;
+}
+
+.input {
+  width: 400px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  line-height: 2rem;
+  min-height: 3.2rem;
+  font-size: 1.5rem;
+  border-color: rgba(0,0,0,0.38) rgba(0,0,0,0.27) rgba(0,0,0,0.16);
+  background: -webkit-linear-gradient(#fff, #fff);
+  background: linear-gradient(#fff, #fff);
+  background-clip: padding-box;
+  background-size: 16px 16px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.input:not(.is-disabled):focus {
+  outline: none;
+  border-color: rgba(78,62,2,0.515) rgba(94,76,2,0.42) rgba(117,93,0,0.335);
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.input:focus {
+  z-index: 9;
+}
+
+.button-arrow {
+  float: right;
+  top: 0.7em;
+  left: -1px;
+  margin-right: -0.6rem;
+  margin-left: 1rem;
+}

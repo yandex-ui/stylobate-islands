@@ -8,6 +8,10 @@ build_minified:
 	./node_modules/csso/bin/csso style.css style.css && \
 	./node_modules/csso/bin/csso style.ie.css style.ie.css
 
+new-rule:
+	./node_modules/stylus/bin/stylus examples/new-rule.styl && \
+	./node_modules/autoprefixer/bin/autoprefixer examples/new-rule.css
+
 up:
 	git pull --rebase && \
 	npm install && \
