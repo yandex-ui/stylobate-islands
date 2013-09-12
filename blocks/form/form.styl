@@ -13,17 +13,22 @@
 .form-field
   kind: block
   skin: form-field
+  margin-bottom: 0
+  
+  & &
+    margin-bottom: $s 
 
 .form-inline-field
   kind: block inline
   skin: form-inline-field
+  margin-bottom: $s 
 
 .form-field-label
   kind: block inline
   skin: form-field-label
 
 .form-field-content
-  kind: block inline
+  kind: block inline, content no-before 0 0 $s
   skin: form-field-content
 
 .form-hint
@@ -54,3 +59,25 @@
     // Align labelless content
     &:first-child
       margin-left: 10*$l
+
+.wide-form
+  kind: block
+  skin: form
+
+  & .form-field-label
+    width: 9*$l
+
+  & .form-field-content
+    box-sizing: border-box
+    max-width: 100% 
+    margin-left: -10*$l 
+    padding-left: 10*$l 
+
+    // Align labelless content
+    &:first-child
+      margin-left: 10*$l
+
+  
+
+.form-epmty
+  skin: icon _remove with-hover

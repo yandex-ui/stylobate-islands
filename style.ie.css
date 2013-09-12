@@ -12,6 +12,14 @@ h1,h2,h3,
   font: inherit;
   vertical-align: baseline;
 }
+.form-epmty {
+  position: relative;
+  display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
 .header-logo-text {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px) !important;
@@ -24,6 +32,18 @@ h1,h2,h3,
   outline: 0;
 }
 .is-disabled .is-disabled {
+  opacity: 1;
+}
+.form-epmty {
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuMjA5Yy0zLjc1MSAwLTYuNzkxIDMuMDQtNi43OTEgNi43OTEgMCAzLjc0OSAzLjA0IDYuNzg5IDYuNzkxIDYuNzg5IDMuNzQ5IDAgNi43ODktMy4wNCA2Ljc4OS02Ljc4OSAwLTMuNzUxLTMuMDQtNi43OTEtNi43ODktNi43OTF6bTMuOTkgOS4zNTVsLTEuNDI2IDEuNDI2LTIuNTY0LTIuNTY0LTIuNTY0IDIuNTY0LTEuNDI2LTEuNDI2IDIuNTY0LTIuNTY0LTIuNTY0LTIuNTY0IDEuNDI2LTEuNDI2IDIuNTY0IDIuNTY0IDIuNTY0LTIuNTY0IDEuNDI2IDEuNDI2LTIuNTY0IDIuNTY0IDIuNTY0IDIuNTY0eiIvPjwvc3ZnPg==");
+}
+.form-epmty {
+  cursor: pointer;
+  opacity: 0.2;
+}
+.form-epmty:hover {
   opacity: 1;
 }
 .page {
@@ -342,6 +362,7 @@ hr {
   display: block;
   white-space: nowrap;
   margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .form-field:last-child {
   margin-bottom: 0;
@@ -350,6 +371,9 @@ hr {
   float: left;
   width: 100%;
 }
+.form-field .form-field {
+  margin-bottom: 10px;
+}
 .form-inline-field {
   position: relative;
   display: inline;
@@ -357,6 +381,7 @@ hr {
   vertical-align: top;
   vertical-align: baseline;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .form-field-label {
   position: relative;
@@ -372,6 +397,7 @@ hr {
   display: inline;
   zoom: 1;
   vertical-align: top;
+  padding: 0 0 10px 0;
   white-space: normal;
   vertical-align: baseline;
 }
@@ -425,6 +451,22 @@ hr {
   width: 300px;
 }
 .default-form .form-field-content:first-child {
+  margin-left: 200px;
+}
+.wide-form {
+  position: relative;
+  display: block;
+  cursor: default;
+}
+.wide-form .form-field-label {
+  width: 180px;
+}
+.wide-form .form-field-content {
+  max-width: 100%;
+  margin-left: -200px;
+  padding-left: 200px;
+}
+.wide-form .form-field-content:first-child {
   margin-left: 200px;
 }
 .header {

@@ -28,6 +28,14 @@ h3,
   clear: both;
 }
 
+.form-epmty {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
+
 .header-logo-text {
   position: absolute !important;
   clip: rect(1px,1px,1px,1px) !important;
@@ -53,6 +61,21 @@ h3,
   -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+}
+
+.form-epmty {
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuMjA5Yy0zLjc1MSAwLTYuNzkxIDMuMDQtNi43OTEgNi43OTEgMCAzLjc0OSAzLjA0IDYuNzg5IDYuNzkxIDYuNzg5IDMuNzQ5IDAgNi43ODktMy4wNCA2Ljc4OS02Ljc4OSAwLTMuNzUxLTMuMDQtNi43OTEtNi43ODktNi43OTF6bTMuOTkgOS4zNTVsLTEuNDI2IDEuNDI2LTIuNTY0LTIuNTY0LTIuNTY0IDIuNTY0LTEuNDI2LTEuNDI2IDIuNTY0LTIuNTY0LTIuNTY0LTIuNTY0IDEuNDI2LTEuNDI2IDIuNTY0IDIuNTY0IDIuNTY0LTIuNTY0IDEuNDI2IDEuNDI2LTIuNTY0IDIuNTY0IDIuNTY0IDIuNTY0eiIvPjwvc3ZnPg==");
+}
+
+.form-epmty {
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.form-epmty:hover {
+  opacity: 1;
 }
 
 .page {
@@ -450,6 +473,7 @@ hr {
   display: block;
   white-space: nowrap;
   margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .form-field:last-child {
@@ -461,12 +485,17 @@ hr {
   width: 100%;
 }
 
+.form-field .form-field {
+  margin-bottom: 1rem;
+}
+
 .form-inline-field {
   position: relative;
   display: inline-block;
   vertical-align: top;
   vertical-align: baseline;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .form-field-label {
@@ -482,8 +511,17 @@ hr {
   position: relative;
   display: inline-block;
   vertical-align: top;
+  padding: 0 0 0 0;
+  padding-top: 0;
   white-space: normal;
   vertical-align: baseline;
+}
+
+.form-field-content:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-top: 1rem;
 }
 
 .form-hint {
@@ -543,6 +581,28 @@ hr {
 }
 
 .default-form .form-field-content:first-child {
+  margin-left: 20rem;
+}
+
+.wide-form {
+  position: relative;
+  display: block;
+  cursor: default;
+}
+
+.wide-form .form-field-label {
+  width: 18rem;
+}
+
+.wide-form .form-field-content {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-left: -20rem;
+  padding-left: 20rem;
+}
+
+.wide-form .form-field-content:first-child {
   margin-left: 20rem;
 }
 

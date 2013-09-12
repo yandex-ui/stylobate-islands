@@ -139,3 +139,66 @@ permalink: /examples/
 > </div>
 >
 > <div class="example:/examples/new-rule"></div>
+
+## Новая форма «Создать правило» {#new-new-rule}
+
+> <div class="wide-form">
+>     <div class="form-field">
+>         <div class="form-field-label">Название правила</div
+>         ><div class="form-field-content">
+>             <input class="input" type="text" placeholder="Моё правило" />
+>         </div>
+>     </div>
+>
+>     <div class="form-field">
+>         <div class="form-field-label">Тип писем</div
+>         ><div class="form-field-content">
+>             <div class="form-inline-field">
+>                 <button class="button" type="button">
+>                     <span class="button-content">
+>                         <span class="button-arrow"> </span>
+>                         Ко всем письмам, включая спам
+>                     </span>
+>                 </button>
+>             </div
+>             ><div class="form-inline-field">
+>                 <button class="button" type="button">
+>                     <span class="button-content">
+>                         <span class="button-arrow"> </span>
+>                         с вложениями и без вложений
+>                     </span>
+>                 </button>
+>             </div>
+>         </div>
+>     </div>
+>
+>     <div class="form-field">
+>         <div class="form-field-label">Если</div
+>         ><div class="form-field-content">
+>             <div class="form-inline-field">
+>                 <button class="button" type="button">
+>                     <span class="button-content">
+>                         <span class="button-arrow"> </span>
+>                         Свойства письма
+>                     </span>
+>                 </button>
+>             </div
+>             ><div class="form-inline-field">
+>                 <button class="button" type="button">
+>                     <span class="button-content">
+>                         <span class="button-arrow"> </span>
+>                         Совпадает с
+>                     </span>
+>                 </button>
+>             </div
+>             ><div class="form-inline-field">
+>                 <input class="input" type="text" placeholder="" />
+>             </div
+>             ><div class="form-inline-field">
+>                 <span class="form-epmty"> </span>
+>             </div>
+>         </div>
+>     </div>
+> </div>
+>
+> <div class="example:/examples/new-rule"></div>
