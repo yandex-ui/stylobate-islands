@@ -2,16 +2,21 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.12.0
+
+- Now docstests are using CSSO and csscomb.js for pretier code.
+- Changelog added.
+
 ## v0.11.0 — v0.11.4
 
-- A lot of tests added, some in-place refactoring.
+- A lot of doctests added, some in-place refactoring.
 - Added variables for simple backgrounds.
 - Made misc color a bit brighter.
 - Make the tail selectors less specific.
 
 ## v0.10.0 — v0.10.4
 
-- Started to add proper tests and Travis CI.
+- Started to add proper doctests and Travis CI.
 - Added selecty modifier to `icon dropdown`.
 - Some refactoring and fixes for a lot of things.
 
