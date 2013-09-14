@@ -65,7 +65,7 @@ permalink: /skins/
 
 
 {% assign sorted_pages = site.pages | sort:'path' %}
-{% for item in sorted_pages %}{% if item.path contains 'skins/islands/' %}
+{% for item in sorted_pages %}{% if item.path contains 'skins/islands/' %}{% unless item.path contains 'CHANGELOG' %}
 {% assign item_id = item.path | split:'/' | last | remove:'.md' %}
 {% capture replace_example %} class="example:/{{item.path | remove:item_id | remove:'.md'}}tests/{% endcapture %}
 {:#{{ item_id }}}
@@ -77,4 +77,4 @@ permalink: /skins/
 [оно же на Гитхабе](https://github.com/yandex-ui/stylobate-islands/tree/master/{{ item.path | split:'/' | last | split:'_' | first | remove:'.md' | remove:'skin-islands-' }}/){:.outer-link}
 
 <pre class="language-styl is-hidden" data-src="islands/{{ item.path | split:'/' | last | split:'_' | first | remove:'.md' | remove:'skin-islands-' }}/{{ item.path | split:'/' | last | replace:'.md','.styl' }}"></pre>
-{% endif %}{% endfor %}
+{% endunless %}{% endif %}{% endfor %}
