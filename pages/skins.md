@@ -61,8 +61,18 @@ permalink: /skins/
 
 1. `$islands_color_text` — стандартный цвет для текста.
 
-2. `$islands_color_text_misc` — второстепенный цвет для текста
+2. `$islands_color_text_misc` — второстепенный цвет для текста.
 
+#### Цвета для состояний {#colors-states}
+
+1. `$islands_color_focus` — Жёлтый цвет для состояний фокуса.
+
+2. `$islands_color_error` — Красный цвет для ошибок.
+
+### Цвета для Теней {#shadows}
+
+1. `$islands_shadow_focus` — Тень для состояний фокуса, использует соответствующий цвет.
+2. `$islands_shadow_error` — Тень для состояния ошибки, использует соответствующий цвет.
 
 {% assign sorted_pages = site.pages | sort:'path' %}
 {% for item in sorted_pages %}{% if item.path contains 'skins/islands/' %}{% unless item.path contains 'CHANGELOG' %}

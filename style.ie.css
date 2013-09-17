@@ -427,7 +427,7 @@ hr {
   margin-bottom: 6px;
   font-size: 13px;
   line-height: 18px;
-  color: rgba(0,0,0,0.5);
+  color: #808080;
 }
 .form-pseudo-link {
   cursor: pointer;
