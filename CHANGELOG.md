@@ -2,6 +2,16 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.14.0
+
+- Added new color and shadow variables.
+- Refactored focus styles.
+- Added input error style.
+
+## v0.13.0 — v0.13.1
+
+- Updated Stylobate dep.
+
 ## v0.12.0
 
 - Now docstests are using CSSO and csscomb.js for pretier code.
