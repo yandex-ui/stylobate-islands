@@ -68,6 +68,8 @@
 }
 
 .dropdown-content {
+  display: block;
+
   padding: 0 1rem;
 }
 

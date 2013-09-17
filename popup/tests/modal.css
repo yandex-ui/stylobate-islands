@@ -68,6 +68,8 @@
 }
 
 .modal-content {
+  display: block;
+
   padding: 0 2rem;
 }
 

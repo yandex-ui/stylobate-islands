@@ -158,3 +158,22 @@
 > </label>
 >
 > <div class="example:field-reset"></div>
+
+### Инпут с ошибкой
+
+Если нужно отобразить состояние неверно заполненного инпута, можно воспользоваться скином `input_error`
+
+    skin: input_error
+
+> <div>
+>     <input class="input is-wrong" type="text" value="Буквы" />
+>
+>     <span class="dropdown dropdown_to_right">
+>         <span class="dropdown-tail"></span>
+>         <span class="dropdown-content text">
+>             Тут что-то не так заполнено!
+>         </span>
+>     </span>
+> </div>
+>
+> <div class="example:input_error"></div>
