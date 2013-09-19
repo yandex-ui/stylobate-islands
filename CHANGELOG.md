@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.14.1 (2013-09-19)
+
+- Updated Stylobate dep.
+
 ## v0.14.0
 
 - Added new color and shadow variables.
