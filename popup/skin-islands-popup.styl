@@ -1,5 +1,5 @@
 skin-islands-popup()
-  skin(isle fly)
+  _stylobate('skin-islands-', isle fly)
 
   // This could be moved to subskin only when we could get the parent's selector and reuse it inside.
   $popup-tail = utilus_get(arguments, '-tail')
@@ -29,7 +29,7 @@ skin-islands-popup-content()
 
 
 skin-islands-popup-close()
-  skin(icon _remove with-hover)
+  _stylobate('skin-islands-', icon _remove with-hover)
 
   position: absolute
   top: 5px
