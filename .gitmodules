@@ -1,6 +1,6 @@
 [submodule "stylobate"]
 	path = stylobate
-	url = git://github.com/kizu/stylobate.git
+	url = git://github.com/stylobate/stylobate.git
 [submodule "skins/islands"]
 	path = skins/islands
 	url = git://github.com/yandex-ui/stylobate-islands.git
