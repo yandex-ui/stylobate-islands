@@ -1,4 +1,3 @@
-
 skin-islands-input()
   skin-islands-input-box(arguments)
   skin-islands-input-view(arguments)
@@ -34,6 +33,8 @@ skin-islands-input-view()
   background-size: 16px 16px
 
   box-shadow: $skin-islands-input-view-shadow
+  
+  -webkit-appearance: textfield /* override for <input type="search"> */
 
   unless no-focus in arguments
     &:not(.is-disabled):focus
