@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.14.4 (2013-10-22)
+
+- Fixed search input appearance.
+
 ## v0.14.2-v0.14.3 (2013-09-25)
 
 - Fixed namespace problems in popup and select.
