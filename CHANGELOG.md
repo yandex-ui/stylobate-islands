@@ -2,6 +2,12 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.15.0 (2013-10-28)
+
+- Better project structure, #37.
+- `standalone.styl`, #37.
+- Better keyword for atomic tests: `make test=button`.
+
 ## v0.14.4 (2013-10-22)
 
 - Fixed search input appearance.
