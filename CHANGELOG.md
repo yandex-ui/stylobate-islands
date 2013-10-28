@@ -2,6 +2,12 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.15.1 (2013-10-28)
+
+- More shortcuts for variables in a standalone version.
+
+- Shortcuts for variables are now lazy, so they won't break anything on include.
+
 ## v0.15.0 (2013-10-28)
 
 - Better project structure, #37.
