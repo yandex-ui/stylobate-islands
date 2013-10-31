@@ -5,6 +5,9 @@
 ## v0.16.0 (2013-10-31)
 
 - Updated Stylobate to the latest version.
+- Moved variables to hashes.
+- Added header text sizes.
+- Fixed appearance of inputs, #38.
 
 ## v0.15.1 (2013-10-28)
 
