@@ -12,7 +12,7 @@
 
 .small-input {
   position: relative;
-  -webkit-appearance: textfield;
+  -webkit-appearance: none;
   max-width: 100%;
 
   cursor: text;
