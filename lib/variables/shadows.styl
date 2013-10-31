@@ -1,2 +1,9 @@
-$islands_shadow_focus ?= 0 0 6px 2px $islands_color_focus
-$islands_shadow_error ?= 0 0 0 2px $islands_color_error
+$islands ?= {}
+
+$islands["shadows"] = {
+  focus: 0 0 6px 2px $islands_color_focus,
+  error: 0 0 0 2px $islands_color_error
+}
+
+$islands_shadow_focus ?= $islands.shadows.focus
+$islands_shadow_error ?= $islands.shadows.error
