@@ -1,3 +1,5 @@
+$skin-islands-input-disabled ?= '.is-disabled'
+
 skin-islands-input()
   skin-islands-input-box(arguments)
   skin-islands-input-view(arguments)
@@ -33,11 +35,11 @@ skin-islands-input-view()
   background-size: 16px 16px
 
   box-shadow: $skin-islands-input-view-shadow
-  
+
   -webkit-appearance: none /* override for <input type="search"> */
 
   unless no-focus in arguments
-    &:not(.is-disabled):focus
+    &:not({$skin-islands-input-disabled}):focus
       skin-islands-input_focus(arguments)
 
 skin-islands-input_focus()
