@@ -2,6 +2,12 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.16.2 (2013-11-09)
+
+- Fixed hardcoded disabled state for inputs.
+- Fixed dropdown icon's padding, #41.
+- Stylobate up.
+
 ## v0.16.1 (2013-11-06)
 
 - Stylobate and Stylus deps up.
