@@ -16,17 +16,32 @@ skin-islands-input-box()
 
   if small in arguments
     line-height: $islands_m
-    min-height:  $islands_m + $islands_s + 0.2*rem
+
+    if ie
+      min-height:  $islands_m
+    else
+      min-height:  $islands_m + $islands_s + 0.2*rem
+
     font-size: $islands_text_s
   else
     line-height: $islands_l
-    min-height:  $islands_l + $islands_s + 0.2*rem
+
+    if ie
+      min-height:  $islands_l
+    else
+      min-height:  $islands_l + $islands_s + 0.2*rem
+
     font-size: $islands_text_m
 
 $skin-islands-input-view-shadow = 0 1px 0 rgba(#FFF, 0.2), inset 0 1px 1px rgba(#000, 0.1)
 
 skin-islands-input-view()
+
   border: 1px solid transparent unless @border
+
+  if ie
+    border: solid 1px #aeaeae
+
   border-color: rgba(#000, 0.38) rgba(#000, 0.27) rgba(#000, 0.16)
 
   background: linear-gradient(#FFF, #FFF)
