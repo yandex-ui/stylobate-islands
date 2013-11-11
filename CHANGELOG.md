@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.16.3 (2013-11-11)
+
+- Fixed inputs' borders in IE, #42.
+
 ## v0.16.2 (2013-11-09)
 
 - Fixed hardcoded disabled state for inputs.
