@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.16.4 (2013-11-12)
+
+- Fixed baseline problems with button in IE.
+
 ## v0.16.3 (2013-11-11)
 
 - Fixed inputs' borders in IE, #42.
