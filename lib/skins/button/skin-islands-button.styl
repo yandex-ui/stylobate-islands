@@ -14,7 +14,9 @@ skin-islands-proto-button()
   // unless only in arguments
   position: relative
 
-  vertical-align: utilus_retrieve(arguments, middle top bottom, baseline)
+  $align = utilus_retrieve(arguments, middle top bottom, baseline)
+  $align = middle if ie and $align == baseline
+  vertical-align: $align
   user-select: none
 
   if one-element in arguments and !ie
