@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.16.5 (2013-11-13)
+
+- Fixed rem on font problem in IE.
+
 ## v0.16.4 (2013-11-12)
 
 - Fixed baseline problems with button in IE.
