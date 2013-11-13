@@ -4,6 +4,7 @@
 
   background: transparent;
   -moz-appearance: none;
+  font: inherit;
 }
 
 .small-pseudo-button::-moz-focus-inner {
@@ -27,7 +28,7 @@
   white-space: nowrap;
   text-decoration: none;
 
-  font: 1.5rem/2.2rem Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 1.3rem;
   line-height: 1.8rem;
 

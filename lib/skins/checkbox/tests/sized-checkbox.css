@@ -21,7 +21,9 @@
   text-align: center;
   vertical-align: middle;
 
-  font: 1.5rem/2.2rem Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 
   color: #333;
 
@@ -117,7 +119,9 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
   text-align: center;
   vertical-align: middle;
 
-  font: 1.5rem/2.2rem Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 
   color: #333;
 

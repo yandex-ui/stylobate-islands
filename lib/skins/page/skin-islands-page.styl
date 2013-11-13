@@ -9,7 +9,10 @@ skin-islands-page()
   background: $islands_bg_page
 
 skin-islands-page-font()
-  font: $islands_text_m/2.2*rem Arial, sans-serif
+  // Not in shorthand 'cause of IE 9&10 — http://dabblet.com/gist/7445329
+  font-size: $islands_text_m
+  line-height: 2.2*rem
+  font-family: Arial, sans-serif
 
 skin-islands-check-font()
   unless $init_islands_root
