@@ -2,6 +2,11 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.16.6 (2013-11-14)
+
+- Workaround for CSSO/IE error.
+- In IE fallback to browser checkboxes.
+
 ## v0.16.5 (2013-11-13)
 
 - Fixed rem on font problem in IE.
