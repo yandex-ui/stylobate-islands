@@ -5,13 +5,15 @@
 
     skin: promo-button
 
-> <button class="promo-button" type="button">
->     <span class="button-content">Промо кнопка</span>
-> </button>
+> <div>
+>     <button class="promo-button" type="button">
+>         <span class="button-content">Промо кнопка</span>
+>     </button>
+> </div>
 >
 > <div class="example:button"></div>
 
-##### Размеры
+### Размеры
 
 У промо кнопки есть четыре размера: стандартный, `small`, `large` и `xlarge`, нестандартный размер задается параметром:
 
@@ -25,7 +27,7 @@
 >
 > <div class="example:small-promo-button"></div>
 
-##### «Летающая» кнопка
+### «Летающая» кнопка
 
 Как и простую кнопку, промо кнопку можно сделать летающей при помощи параметра `fly`:
 
