@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.16.8 (2013-11-14)
+
+- Fixed more IE valign problems.
+
 ## v0.16.7 (2013-11-14)
 
 - In IE fallback to browser radios too.
