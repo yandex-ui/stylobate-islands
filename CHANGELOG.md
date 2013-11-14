@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.16.7 (2013-11-14)
+
+- In IE fallback to browser radios too.
+
 ## v0.16.6 (2013-11-14)
 
 - Workaround for CSSO/IE error.
