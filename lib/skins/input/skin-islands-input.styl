@@ -42,7 +42,10 @@ skin-islands-input-view()
   if ie
     border: solid 1px #aeaeae
 
-  border-color: rgba(#000, 0.38) rgba(#000, 0.27) rgba(#000, 0.16)
+  // Temporarily fix for the https://github.com/css/csso/issues/134
+  border-color: rgba(#000, 0.27)
+  border-top-color: rgba(#000, 0.38)
+  border-bottom-color: rgba(#000, 0.16)
 
   background: linear-gradient(#FFF, #FFF)
 
@@ -59,7 +62,11 @@ skin-islands-input-view()
 
 skin-islands-input_focus()
   outline: none
-  border-color: rgba(#4E3E02, 0.515) rgba(#5E4C02, 0.42) rgba(#755D00, 0.335)
+
+  // Temporarily fix for the https://github.com/css/csso/issues/134
+  border-color: rgba(#5E4C02, 0.42)
+  border-top-color: rgba(#4E3E02, 0.515)
+  border-bottom-color: rgba(#755D00, 0.335)
 
   box-shadow: $islands_shadow_focus, $skin-islands-input-view-shadow
 

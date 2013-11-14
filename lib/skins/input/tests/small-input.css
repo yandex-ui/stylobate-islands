@@ -24,13 +24,15 @@
   border: 1px solid transparent;
   padding: 0.5rem 1rem;
 
-  display: inline-block;
+  line-height: 1.6rem;
 
-  min-height: 2.8000000000000003rem;
+  display: inline-block;
 
   font-size: 1.3rem;
 
-  border-color: rgba(0,0,0,0.38) rgba(0,0,0,0.27) rgba(0,0,0,0.16);
+  border-color: rgba(0,0,0,0.27);
+  border-top-color: rgba(0,0,0,0.38);
+  border-bottom-color: rgba(0,0,0,0.16);
 
   background: -webkit-linear-gradient(#FFF, #FFF);
   background: linear-gradient(#FFF, #FFF);
@@ -38,11 +40,13 @@
   background-size: 16px 16px;
   box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
 
-  line-height: 1.6rem;
+  min-height: 2.8000000000000003rem;
 }
 
 .small-input:not(.is-disabled):focus {
-  border-color: rgba(78,62,2,0.515) rgba(94,76,2,0.42) rgba(117,93,0,0.335);
+  border-color: rgba(94,76,2,0.42);
+  border-top-color: rgba(78,62,2,0.515);
+  border-bottom-color: rgba(117,93,0,0.335);
 
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
 
