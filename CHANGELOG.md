@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.16.9 (2013-11-18)
+
+- Fixed background for inputs in IE.
+
 ## v0.16.8 (2013-11-14)
 
 - Fixed more IE valign problems.
