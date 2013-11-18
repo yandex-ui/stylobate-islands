@@ -34,6 +34,7 @@
   border-top-color: rgba(0,0,0,0.38);
   border-bottom-color: rgba(0,0,0,0.16);
 
+  background: #FFF;
   background: -webkit-linear-gradient(#FFF, #FFF);
   background: linear-gradient(#FFF, #FFF);
   background-clip: padding-box;
