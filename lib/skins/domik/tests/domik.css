@@ -1,0 +1,51 @@
+.domik {
+  display: inline-block;
+}
+
+.domik-roof {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  padding-top: 3px;
+
+  -webkit-transform: translate(0,1px);
+  -ms-transform: translate(0,1px);
+  transform: translate(0,1px);
+}
+
+.domik-roof:before {
+  content: "";
+
+  display: block;
+
+  padding-top: 17.1875%;
+}
+
+.domik-roof:after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  width: 100%;
+  padding-bottom: 100%;
+
+  -webkit-transform: translate(0,-25.65%) scale(1,0.345) rotate(45deg) translate(2px,2px);
+  -ms-transform: translate(0,-25.65%) scale(1,0.345) rotate(45deg) translate(2px,2px);
+  transform: translate(0,-25.65%) scale(1,0.345) rotate(45deg) translate(2px,2px);
+
+  background: #FFF;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.13), 0 0 0 1px #FFF;
+}
+
+.domik-content {
+  padding: 2rem 3.2rem;
+
+  background: #FFF;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+}

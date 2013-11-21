@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.17.0 (2013-11-21)
+
+- Added basic domik.
+
 ## v0.16.9 (2013-11-18)
 
 - Fixed background for inputs in IE.
