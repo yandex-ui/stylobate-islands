@@ -11,7 +11,7 @@
 >     </button>
 > </div>
 >
-> <div class="example:button"></div>
+> <div class="example:promo-button"></div>
 
 ### Размеры
 
