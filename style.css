@@ -85,7 +85,9 @@ h3,
 }
 
 .page-body {
-  font: 1.5rem/2.2rem Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-family: Arial, sans-serif;
   background: transparent;
 }
 
