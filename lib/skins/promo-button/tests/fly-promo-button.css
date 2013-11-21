@@ -3,6 +3,7 @@
 
   background: transparent;
   -moz-appearance: none;
+  font: inherit;
 }
 
 .fly-promo-button::-moz-focus-inner {
@@ -28,8 +29,9 @@
   white-space: nowrap;
   text-decoration: none;
 
-  font: 1.5rem/2.2rem Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 2.4rem;
+  line-height: 2.2rem;
 
   color: #473E09;
   text-shadow: 0 1px 0 rgba(255,255,255,0.36);
