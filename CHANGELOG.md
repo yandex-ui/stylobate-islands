@@ -4,6 +4,7 @@
 
 ## v0.17.0 (2013-11-21)
 
+- Added promo-button, #43.
 - Added basic domik.
 
 ## v0.16.9 (2013-11-18)
