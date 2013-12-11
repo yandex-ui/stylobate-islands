@@ -1,9 +1,10 @@
-.small-menu-item {
+.shrinked-menu-item {
   position: relative;
 
   display: block;
+  overflow: hidden;
 
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 1.6rem;
 
   cursor: pointer;
   -webkit-user-select: none;
@@ -12,13 +13,14 @@
   user-select: none;
   white-space: nowrap;
   text-decoration: none;
+  text-overflow: ellipsis;
 
-  font-size: 1.3rem;
-  line-height: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 
   color: #333;
 }
 
-.small-menu-item:hover {
+.shrinked-menu-item:hover {
   background: rgba(255,193,0,0.37);
 }

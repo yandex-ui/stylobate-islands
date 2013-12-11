@@ -6,23 +6,27 @@ skin-islands-menu-item()
   kind: block
   skin(link $islands_color_text no-hover)
 
+  user-select: none
+  white-space: nowrap
+
+  if ellipsis in arguments
+    overflow: hidden
+    text-overflow: ellipsis
+
+  unless utilus_get(arguments, '_size')
+    skin-islands-menu-item_size(arguments)
+
+  unless no-hover in arguments or utilus_get(arguments, '_hover')
+    &:hover
+      skin-islands-menu-item_hover(arguments)
+
+skin-islands-menu-item_size()
   if small in arguments
     skin(para2 no-margin)
     padding: 0.5*$islands_xs $islands_s
   else
     skin(para no-margin)
     padding: 0.5*$islands_s $islands_m
-
-  unless no-hover in arguments or utilus_get(arguments, '_hover')
-    &:hover
-      skin-islands-menu-item_hover(arguments)
-
-  if padded in arguments and no-wrapper in arguments
-    &:first-child
-      margin-top: 0.5*(small in arguments ? $islands_xs : $islands_s)
-
-    &:last-child
-      margin-bottom: 0.5*(small in arguments ? $islands_xs : $islands_s)
 
 skin-islands-menu-item_hover()
   background: $islands_color_selected

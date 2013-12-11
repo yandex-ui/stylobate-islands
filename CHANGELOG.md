@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.18.2 (in development)
+
+- Some enhancements for menu-item (ellipsis param, `wsnw`, no user select).
+
 ## v0.18.1 (2013-12-11)
 
 - Added menu-separator.

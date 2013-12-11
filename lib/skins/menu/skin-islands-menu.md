@@ -115,3 +115,16 @@
 > </div>
 >
 > <div class="example:menu-item_checked"></div>
+
+### Обрезание в многоточие
+
+Если внутри пункта меню может быть много контента, нужно использовать параметр `ellipsis`. Он не стоит по умолчанию, так как включает `overflow: hidden`, что не всегда может быть нужно.
+
+    skin: menu-item ellipsis
+
+> <div class="flying-isle" style="width: 200px;">
+>     <a class="shrinked-menu-item" href="#x">Foo foo foo foo foo foo foo</a>
+>     <a class="shrinked-menu-item" href="#x">Baz baz baz baz</a>
+> </div>
+>
+> <div class="example:menu-item_ellipsis"></div>
