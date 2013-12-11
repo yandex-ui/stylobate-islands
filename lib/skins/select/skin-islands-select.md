@@ -73,3 +73,21 @@ HTML селекта это, по сути, микс с кнопкой:
 > </a>
 >
 > <div class="example:small-button-arrow"></div>
+
+Ну и, конечно, можно использовать в принципе любую кнопку для селекта, например, псевдокнопку:
+
+> <a class="pseudo-button" href="#x" style="width: 300px">
+>     <span class="button-content">
+>         <span class="button-arrow"> </span>
+>         Типа селект в псевдокнопке
+>     </span>
+> </a>
+
+Или кнопку действия:
+
+> <a class="action-button" href="#x" style="width: 300px">
+>     <span class="button-content">
+>         <span class="button-arrow"> </span>
+>         Типа селект в кнопке действия
+>     </span>
+> </a>
