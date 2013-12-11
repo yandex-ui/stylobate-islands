@@ -5,9 +5,6 @@ skin-islands-menu()
     else
       padding: 0.5*$islands_s 0
 
-  unless no-elements in arguments or utilus_get(arguments, '-item')
-    skin-islands-menu-item(arguments)
-
 skin-islands-menu-item()
   kind: block
   skin(link $islands_color_text no-hover)
@@ -19,11 +16,11 @@ skin-islands-menu-item()
     skin(para no-margin)
     padding: 0.5*$islands_s $islands_m
 
-  unless no-hover in arguments or utilus_get(arguments, '-hover')
+  unless no-hover in arguments or utilus_get(arguments, '_hover')
     &:hover
-      skin-islands-menu-item-hover(arguments)
+      skin-islands-menu-item_hover(arguments)
 
-skin-islands-menu-item-hover()
+skin-islands-menu-item_hover()
   background: $islands_color_selected
 
 skin-islands-menu-item_checked()
