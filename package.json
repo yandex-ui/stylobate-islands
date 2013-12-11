@@ -1,6 +1,6 @@
 {
   "name": "stylobate-islands",
-  "version": "0.17.0",
+  "version": "0.18.0",
   "author": "Roman Komarov <kizmarh@ya.ru> (http://kizu.ru/en/)",
   "licence": "MIT",
   "description": "Islands skin for stylobate",
@@ -19,7 +19,7 @@
     "autoprefixer": "0.7.x",
     "csso": "1.3.x",
     "csscomb": "0.1.x",
-    "stylus": "0.40.x",
+    "stylus": "0.41.x",
     "glob": "3.2.x",
     "mocha": "*",
     "should": "*"

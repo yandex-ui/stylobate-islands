@@ -35,3 +35,11 @@
 > <a class="complex-link"><span class="link-inner">Дропдаун</span> <span class="icon_dropdown"></span></a>
 >
 > <div class="example:icon_dropdown"></div>
+
+### Галочка {#icon_check}
+
+Иконка с галочкой — для чекбоксов и аналогичных мест.
+
+> <span class="icon_check"> </span>
+>
+> <div class="example:icon_check"></div>

@@ -2,6 +2,11 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.18.0 (2013-12-11)
+
+- Added menu skin.
+- Added check icon (and reused it in the checkbox).
+
 ## v0.17.0 (2013-11-21)
 
 - Added promo-button, #43.

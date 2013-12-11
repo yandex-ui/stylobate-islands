@@ -1,0 +1,18 @@
+.menu-group {
+  display: block;
+}
+
+.menu-group + .menu-group {
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+
+  box-shadow: 0 -1px rgba(0,0,0,0.2);
+}
+
+.small-menu-group {
+  display: block;
+}
+
+.small-menu-group + .small-menu-group {
+  box-shadow: 0 -1px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,53 @@
+skin-islands-menu()
+  if padded in arguments
+    if small in arguments
+      padding: 0.5*$islands_xs 0
+    else
+      padding: 0.5*$islands_s 0
+
+  unless no-elements in arguments or utilus_get(arguments, '-item')
+    skin-islands-menu-item(arguments)
+
+skin-islands-menu-item()
+  kind: block
+  skin(link $islands_color_text no-hover)
+
+  if small in arguments
+    skin(para2 no-margin)
+    padding: 0.5*$islands_xs $islands_s
+  else
+    skin(para no-margin)
+    padding: 0.5*$islands_s $islands_m
+
+  unless no-hover in arguments or utilus_get(arguments, '-hover')
+    &:hover
+      skin-islands-menu-item-hover(arguments)
+
+skin-islands-menu-item-hover()
+  background: $islands_color_selected
+
+skin-islands-menu-item_checked()
+  unless utilus_get(arguments, '-helper')
+    &:after
+      content: ""
+      skin-islands-menu-item_checked-helper()
+
+skin-islands-menu-item_checked-helper()
+  skin-islands-icon_check()
+  margin: -1*$islands_s 0 0 $islands_s
+
+
+skin-islands-menu-group()
+  display: block
+
+  & + &
+    box-shadow: 0 -1px rgba(#000, 0.2)
+
+    $args = utilus_get(arguments, 'parent', arguments)
+    if padded in $args
+      if small in $args
+        margin-top: 0.5*$islands_xs
+        padding-top: 0.5*$islands_xs
+      else
+        margin-top: 0.5*$islands_s
+        padding-top: 0.5*$islands_s

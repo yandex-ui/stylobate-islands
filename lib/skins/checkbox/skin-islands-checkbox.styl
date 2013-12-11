@@ -22,21 +22,7 @@ skin-islands-checkbox()
 
 skin-islands-checkbox-icon()
   if !ie
-    // Replace it with svg?
-    // And icon kind?
-    position: absolute
-    top: 50%
-    left: 50%
-
-    width: 5px
-    height: 13px
-    border-bottom: 3px solid
-    border-right: 3px solid
-    margin: -13px 0 0 -2px
-
-    color: #000
-
-    transform: scale(0.9) rotate(50deg) skewX(12deg)
+    skin-islands-icon_check(absolute)
 
     // Find out if there is any way to make this easier?
     input:not(:checked) + &
