@@ -1,9 +1,6 @@
 skin-islands-menu()
   if padded in arguments
-    if small in arguments
-      padding: 0.5*$islands_xs 0
-    else
-      padding: 0.5*$islands_s 0
+    padding: 0.5*(small in arguments ? $islands_xs : $islands_s) 0
 
 skin-islands-menu-item()
   kind: block
@@ -19,6 +16,13 @@ skin-islands-menu-item()
   unless no-hover in arguments or utilus_get(arguments, '_hover')
     &:hover
       skin-islands-menu-item_hover(arguments)
+
+  if padded in arguments and no-wrapper in arguments
+    &:first-child
+      margin-top: 0.5*(small in arguments ? $islands_xs : $islands_s)
+
+    &:last-child
+      margin-bottom: 0.5*(small in arguments ? $islands_xs : $islands_s)
 
 skin-islands-menu-item_hover()
   background: $islands_color_selected
@@ -40,11 +44,14 @@ skin-islands-menu-group()
   & + &
     box-shadow: 0 -1px rgba(#000, 0.2)
 
-    $args = utilus_get(arguments, 'parent', arguments)
-    if padded in $args
-      if small in $args
-        margin-top: 0.5*$islands_xs
-        padding-top: 0.5*$islands_xs
-      else
-        margin-top: 0.5*$islands_s
-        padding-top: 0.5*$islands_s
+    if padded in arguments
+      margin-top: 0.5*(small in arguments ? $islands_xs : $islands_s)
+      padding-top: 0.5*(small in arguments ? $islands_xs : $islands_s)
+
+skin-islands-menu-separator()
+  display: block
+  border-top: 1px solid rgba-ie(#000, 0.2)
+
+  if padded in arguments
+    margin-top: 0.5*(small in arguments ? $islands_xs : $islands_s)
+    margin-bottom: 0.5*(small in arguments ? $islands_xs : $islands_s)

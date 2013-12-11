@@ -85,6 +85,23 @@
 >
 > <div class="example:menu-group"></div>
 
+### Разделитель
+
+Для создания разделителя между пунктами меню можно использовать не только группы, но и отдельный элемент-разделитель.
+
+    skin: menu-separator
+
+Аналогично остальным элементам меню, разделитель может принимать как параметр `padded`, так и `small`
+
+> <div class="menu flying-isle" style="width: 200px;">
+>     <a class="menu-item" href="#x">Foo foo foo</a>
+>     <a class="menu-item" href="#x">Bar bar</a>
+>     <span class="menu-separator"></span>
+>     <a class="menu-item" href="#x">Baz</a>
+> </div>
+>
+> <div class="example:menu-separator"></div>
+
 ### Выбранный пункт меню
 
 Пункт меню может быть «выбранным», в этом случае внутри него появляется галочка:
