@@ -2,6 +2,11 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.18.1 (2013-12-11)
+
+- Added menu-separator.
+- Fixed the naming for the menu-item_hover.
+
 ## v0.18.0 (2013-12-11)
 
 - Added menu skin.
