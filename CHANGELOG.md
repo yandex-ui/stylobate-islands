@@ -2,9 +2,9 @@
 # Stylobate-islands Changelog
 ---
 
-## v0.18.2 (in development)
+## v0.18.2 (2013-12-12)
 
-- Some enhancements for menu-item (ellipsis param, `wsnw`, no user select).
+- Some enhancements for menu-item (ellipsis param, `wsnw`, no user select, separate size).
 
 ## v0.18.1 (2013-12-11)
 
