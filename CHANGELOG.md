@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.19.1–v0.19.2 (2014-01-10)
+
+- Some minor hotfixes.
+
 ## v0.19.0 (2014-01-10)
 
 - Now using require instead of import.
