@@ -2,6 +2,12 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.19.0 (2014-01-10)
+
+- Now using require instead of import.
+- Refactored some skins using the latest Stylobate features.
+- Updated deps.
+
 ## v0.18.2 (2013-12-12)
 
 - Some enhancements for menu-item (ellipsis param, `wsnw`, no user select, separate size).

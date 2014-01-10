@@ -20,9 +20,9 @@ skin-islands-arrow()
 
     margin-right: round(($height / 2) * tan(30deg), 3)
 
-    unless ie
+    unless ie or (no-elements in arguments)
       stylobate_defaults(arguments,
-        -helper (no-elements in arguments ? '' : '&:before'))
+        -helper '&:before')
 
     deprecate(arguments, no-elements)
 
