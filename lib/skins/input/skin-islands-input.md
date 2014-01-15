@@ -98,6 +98,21 @@
 >     </label>
 > </div>
 
+#### Плейсхолдеры {#field-placeholder}
+
+Для сложного инпута очень просто добавить кастомный плейсхолдер:
+
+> <label class="field">
+>     <span class="field-content">
+>         <input class="input-controller" type="text" value="" />
+>         <span class="input-view"> </span>
+>         <span class="field-placeholder">Буквы</span>
+>     </span>
+> </label>
+>
+> <div class="example:field-placeholder"></div>
+
+
 #### Группировка {#field-group}
 
 Для такого инпута хорошо работает группировка с кнопками:

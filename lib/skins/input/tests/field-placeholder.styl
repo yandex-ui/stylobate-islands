@@ -1,0 +1,47 @@
+.field
+  kind: field 0.5*$islands_s $islands_s
+  skin: input-box
+
+.input-controller
+  kind: input
+  z-index: 9
+  width: 100%
+  height: 100%
+
+.field-placeholder
+  // Move most of these things to skin/field
+  kind: fill left -1px
+  // Check if this would work with post-added things,
+  // otherwise we would need no sides + neg margin + placed in the right place
+
+  skin: input-box
+
+  pointer-events: none
+
+  z-index: 9 // To overlap if placed before
+  color: $islands_color_text_misc
+
+  // Should have a kind for ellipsis
+  // Maybe this should apply when not after textarea,
+  // Cause we could want to have multiline placeholder in this case
+  max-width: 100%
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+  // Could be default _hidden element
+  // Or not, 'cause it could work only with validating
+  input:focus + * + &
+    visibility: hidden
+
+textarea.input-controller
+  vertical-align: top
+  resize: none
+
+.input-view
+  kind: fill -1px
+  skin: input-view no-focus
+
+  :not({$skin-islands-input-disabled}):focus + &
+    skin: input_focus
+

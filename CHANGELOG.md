@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.19.3 (in development)
+
+- Added placeholder for fields.
+
 ## v0.19.1–v0.19.2 (2014-01-10)
 
 - Some minor hotfixes.
