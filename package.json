@@ -18,8 +18,7 @@
 
   "dependencies": {
     "stylus": "0.42.x",
-    "autoprefixer": "0.7.x",
-    "csso": "1.3.x"
+    "stylobuild": "0.4.x"
   },
 
   "engines": { "node": ">=0.6" }

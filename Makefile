@@ -1,16 +1,9 @@
 build:
 	./node_modules/stylus/bin/stylus style.styl && \
-	./node_modules/stylus/bin/stylus style.ie.styl && \
-	./node_modules/autoprefixer/bin/autoprefixer style.css
+	./node_modules/stylus/bin/stylus style.ie.styl
 
-build_minified:
-	make build && \
-	./node_modules/csso/bin/csso style.css style.css && \
-	./node_modules/csso/bin/csso style.ie.css style.ie.css
-
-new-rule:
-	./node_modules/stylus/bin/stylus examples/new-rule.styl && \
-	./node_modules/autoprefixer/bin/autoprefixer examples/new-rule.css
+watch:
+	./node_modules/stylus/bin/stylus --watch style.styl
 
 up:
 	git pull --rebase && \

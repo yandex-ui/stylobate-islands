@@ -1,8 +1,13 @@
-@import "stylobate"
+// Using stylobuild
+use('node_modules/stylobuild', {
+  ie: ie
+})
+
+@require "stylobate"
 
 // Skins
 $init_islands_root = false
-@import "skins/islands"
+@require "skins/islands"
 set-skin-namespace('islands')
 
 // Shortcuts to variables
@@ -21,22 +26,22 @@ $color_text_misc = $islands_color_text_misc
 reset('h1' 'h2' 'h3', global)
 
 // Page
-@import "structures/page/page"
+@require "structures/page/page"
 
 // Blocks
-@import "blocks/is-hidden"
-@import "blocks/is-disabled"
-@import "blocks/site-nav/site-nav" // Rename to tabs/nav/smth like that?
-@import "blocks/text/text"
-@import "blocks/example/example"
-@import "blocks/link/link"
-@import "blocks/form/form"
+@require "blocks/is-hidden"
+@require "blocks/is-disabled"
+@require "blocks/site-nav/site-nav" // Rename to tabs/nav/smth like that?
+@require "blocks/text/text"
+@require "blocks/example/example"
+@require "blocks/link/link"
+@require "blocks/form/form"
 
 // Structures
-@import "structures/header/header"
-@import "structures/header/header-logo"
-@import "structures/header/header-service"
+@require "structures/header/header"
+@require "structures/header/header-logo"
+@require "structures/header/header-service"
 
-@import "structures/content/content"
+@require "structures/content/content"
 
-@import "structures/aside/aside" // Move vertical nav out of here?
+@require "structures/aside/aside" // Move vertical nav out of here?
