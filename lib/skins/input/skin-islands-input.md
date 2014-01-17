@@ -26,6 +26,25 @@
 > </textarea>
 
 
+#### Группировка {#field-group}
+
+Для такого инпута хорошо работает группировка с кнопками:
+
+> <div class="group">
+>     <button class="button group-item" type="button">
+>         <span class="button-content">–</span>
+>     </button
+>     ><input class="input group-item" type="text" style="width:100px"
+>     /><button class="button group-item" type="button">
+>         <span class="button-content">⟷</span>
+>     </button
+>     ><input class="input group-item" type="text" style="width:100px"
+>     /><button class="button group-item" type="button">
+>         <span class="button-content">+</span>
+>     </button>
+> </div>
+
+
 ### Сложные инпуты {#fields}
 
 Если же нужно что-то сложнее (нужно вставлять сущности внутрь, типа крестика и подобных штук) лучше использовать «составной» инпут.
@@ -98,6 +117,26 @@
 >     </label>
 > </div>
 
+
+#### Имя сервиса внутри инпута {#field-label}
+
+Специально для использования внутри инпута есть скин для «меток», обычно они используются для имени сервиса внутри инпута:
+
+    skin: input-label
+
+> <label class="field">
+>     <a class="field-label" href="#x">
+>         Маркет
+>     </a>
+>     <span class="field-content">
+>         <input class="input-controller" type="text" value="Буквы" />
+>         <span class="input-view"> </span>
+>     </span>
+> </label>
+>
+> <div class="example:field-label"></div>
+
+
 #### Плейсхолдеры {#field-placeholder}
 
 Для сложного инпута очень просто добавить кастомный плейсхолдер:
@@ -153,42 +192,6 @@
 > </label>
 
 
-#### Группировка {#field-group}
-
-Для такого инпута хорошо работает группировка с кнопками:
-
-> <div class="group">
->     <button class="button group-item" type="button">
->         <span class="button-content">–</span>
->     </button
->     ><input class="input group-item" type="text" style="width:100px"
->     /><button class="button group-item" type="button">
->         <span class="button-content">⟷</span>
->     </button
->     ><input class="input group-item" type="text" style="width:100px"
->     /><button class="button group-item" type="button">
->         <span class="button-content">+</span>
->     </button>
-> </div>
-
-#### Имя сервиса внутри инпута {#field-label}
-
-Специально для использования внутри инпута есть скин для «меток», обычно они используются для имени сервиса внутри инпута:
-
-    skin: input-label
-
-> <label class="field">
->     <a class="field-label" href="#x">
->         Маркет
->     </a>
->     <span class="field-content">
->         <input class="input-controller" type="text" value="Буквы" />
->         <span class="input-view"> </span>
->     </span>
-> </label>
->
-> <div class="example:field-label"></div>
-
 #### Автоувеличивающийся инпут {#resizing-field}
 
 Со сложным инпутом становится просто сделать автоувеличивающийся по ширине инпут:
@@ -213,6 +216,7 @@
 > </label>
 >
 > <div class="example:field-reset"></div>
+
 
 ### Инпут с ошибкой {#input-error}
 
