@@ -3,9 +3,9 @@
   top: 50%;
   left: 100%;
 
-  -webkit-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg);
-  -ms-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg);
-  transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+  -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+  transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
 }
 
 .search {
@@ -27,7 +27,7 @@
   width: 2.969848481766999rem;
   height: 2.969848481766999rem;
 
-  -webkit-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg) translateZ(0);
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
 
   background: -webkit-linear-gradient(45deg, #FFDB4C 50%, transparent 50%);
   background: linear-gradient(45deg, #FFDB4C 50%, transparent 50%);

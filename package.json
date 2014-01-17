@@ -16,7 +16,7 @@
     "stylobate": "0.20.0"
   },
   "devDependencies": {
-    "autoprefixer": "0.7.x",
+    "autoprefixer": "1.0.x",
     "csso": "1.3.x",
     "csscomb": "2.0.x",
     "stylus": "0.42.x",

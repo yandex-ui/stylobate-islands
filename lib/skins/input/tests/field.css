@@ -94,26 +94,26 @@ textarea.input-controller {
   left: -1px;
 
   border: 1px solid transparent;
-  border-color: rgba(0,0,0,0.27);
-  border-top-color: rgba(0,0,0,0.38);
-  border-bottom-color: rgba(0,0,0,0.16);
+  border-color: rgba(0, 0, 0, 0.27);
+  border-top-color: rgba(0, 0, 0, 0.38);
+  border-bottom-color: rgba(0, 0, 0, 0.16);
 
   background: #FFF;
   background: -webkit-linear-gradient(#FFF, #FFF);
   background: linear-gradient(#FFF, #FFF);
   background-clip: padding-box;
   background-size: 16px 16px;
-  box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1);
 
   -webkit-appearance: none;
 }
 
 :not(.is-disabled):focus + .input-view {
-  border-color: rgba(94,76,2,0.42);
-  border-top-color: rgba(78,62,2,0.515);
-  border-bottom-color: rgba(117,93,0,0.335);
+  border-color: rgba(94, 76, 2, 0.42);
+  border-top-color: rgba(78, 62, 2, 0.515);
+  border-bottom-color: rgba(117, 93, 0, 0.335);
 
-  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1);
 
   outline: none;
 }

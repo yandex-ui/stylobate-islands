@@ -20,7 +20,7 @@
 
   background: 50% no-repeat;
   background: red;
-  box-shadow: 0 1px 0 1px rgba(0,0,0,0.1), 0 5px 10px -5px rgba(0,0,0,0.5);
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(0, 0, 0, 0.5);
 
   border-radius: 1em;
 }

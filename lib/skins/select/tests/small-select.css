@@ -35,7 +35,6 @@ x::-moz-focus-inner {
 
 .small-select,
 x:-o-prefocus {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   padding-top: 0.7rem;
   padding-bottom: 0.6rem;

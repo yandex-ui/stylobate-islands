@@ -12,14 +12,14 @@
   white-space: normal;
 
   background: #FFF;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 30px -5px rgba(0,0,0,0.5);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 8px 30px -5px rgba(0, 0, 0, 0.5);
 }
 
 .dropdown_to_top .dropdown-tail {
   bottom: 0;
   left: 50%;
 
-  clip: rect(0,99em,99em,-99em);
+  clip: rect(0, 99em, 99em, -99em);
 
   margin: -1em -0.5em;
 }
@@ -32,7 +32,7 @@
   top: 50%;
   left: 0;
 
-  clip: rect(-99em,auto,99em,-99em);
+  clip: rect(-99em, auto, 99em, -99em);
 
   margin: -0.5em -1em;
 }
@@ -45,7 +45,7 @@
   top: 0;
   left: 50%;
 
-  clip: rect(-99em,99em,auto,-99em);
+  clip: rect(-99em, 99em, auto, -99em);
 
   margin: -1em -0.5em;
 }
@@ -58,7 +58,7 @@
   top: 50%;
   right: 0;
 
-  clip: rect(-99em,99em,99em,0);
+  clip: rect(-99em, 99em, 99em, 0);
 
   margin: -0.5em -1em;
 }
@@ -93,7 +93,7 @@
 .dropdown-tail {
   position: absolute;
 
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
 
   width: 1em;
   height: 1em;
@@ -116,5 +116,5 @@
   transform: rotate(45deg);
 
   background: #FFF;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 8px 8px 30px -5px rgba(0,0,0,0.5);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 8px 8px 30px -5px rgba(0, 0, 0, 0.5);
 }

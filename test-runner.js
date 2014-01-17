@@ -26,16 +26,16 @@ glob.sync("./lib/skins/" + whatToTest + "/tests/*.styl").forEach(function(test){
       // Change the order of csso and autoprefixer when
       // we would able to set selector list code style
       actual = csso.justDoIt(actual);
-      actual = autoprefixer.compile(actual);
+      actual = autoprefixer("last 2 versions", "> 2%").process(actual).css;
       actual = comb.processString(actual);
 
       // Remove those hardfixes when there would be a way to do this in csscomb
       actual = actual.replace(/([^\+>])([\+>])\./g,'$1 $2 .');
       actual = actual.replace(/\)(,?)([^:\)\s,;])/g,')$1 $2');
-      actual = actual.replace(/,sans-serif/g,', sans-serif');
-      actual = actual.replace(/,#/g,', #');
-      actual = actual.replace(/,red/g,', red');
-      actual = actual.replace(/,transparent/g,', transparent');
+      actual = actual.replace(/, ?(\.|label|input|x\:)/g,',\n$1');
+      actual = actual.replace(/([^ ])\}/g,'$1}\n');
+      actual = actual.replace(/,(\S)/g,', $1');
+      actual = actual.replace(/base64, /g,'base64,');
       actual = actual.replace(/background: 0 0/g,'background: transparent');
       actual = actual.replace(/font-weight: 700/g,'font-weight: bold');
       actual = actual.replace(/([^ ])!important/g,'$1 !important');

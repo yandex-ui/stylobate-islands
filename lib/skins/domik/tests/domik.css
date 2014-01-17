@@ -10,9 +10,9 @@
 
   padding-top: 3px;
 
-  -webkit-transform: translate(0,1px);
-  -ms-transform: translate(0,1px);
-  transform: translate(0,1px);
+  -webkit-transform: translate(0, 1px);
+  -ms-transform: translate(0, 1px);
+  transform: translate(0, 1px);
 }
 
 .domik-roof:before {
@@ -35,17 +35,17 @@
   width: 100%;
   padding-bottom: 100%;
 
-  -webkit-transform: translate(0,-25.65%) scale(1,0.345) rotate(45deg) translate(2px,2px);
-  -ms-transform: translate(0,-25.65%) scale(1,0.345) rotate(45deg) translate(2px,2px);
-  transform: translate(0,-25.65%) scale(1,0.345) rotate(45deg) translate(2px,2px);
+  -webkit-transform: translate(0, -25.65%) scale(1, 0.345) rotate(45deg) translate(2px, 2px);
+  -ms-transform: translate(0, -25.65%) scale(1, 0.345) rotate(45deg) translate(2px, 2px);
+  transform: translate(0, -25.65%) scale(1, 0.345) rotate(45deg) translate(2px, 2px);
 
   background: #FFF;
-  box-shadow: 0 0 0 2px rgba(0,0,0,0.13), 0 0 0 1px #FFF;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.13), 0 0 0 1px #FFF;
 }
 
 .domik-content {
   padding: 2rem 3.2rem;
 
   background: #FFF;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 }

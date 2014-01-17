@@ -23,10 +23,10 @@
   color: #333;
 
   background: 50% no-repeat;
-  background: rgba(0,0,0,0.3);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4));
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
-  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  background: rgba(0, 0, 0, 0.3);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
 
   border-radius: 3px;
 }
@@ -68,7 +68,7 @@ input[type=file]:focus + .checkbox:after,
 .checkbox:not(.is-disabled):focus:after {
   z-index: 9;
 
-  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
+  box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);
 
   border-radius: inherit;
 }

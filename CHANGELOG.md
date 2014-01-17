@@ -5,6 +5,7 @@
 ## v0.20.0 (2014-01-17)
 
 - Added placeholder for fields.
+- Updated tests with proper content (after new CSSComb and Autoprefixer).
 
 ## v0.19.1–v0.19.2 (2014-01-10)
 
