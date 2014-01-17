@@ -87,6 +87,60 @@ $('.field-reset').on('click',function(e){
         .height($textarea[0].scrollHeight);
 });
 
+// Handling placeholder
+$('.js-with-placeholder .input-controller').on('input', function(){
+    var input = $(this);
+    var field = input.closest('.field');
+    var placeholder = field.find('.field-placeholder');
+
+    if (input.val() == '') {
+        placeholder.css('visibility', 'inherit');
+    } else {
+        placeholder.css('visibility', 'hidden');
+    }
+}).trigger('input');
+
+// Handling placeholder ghost
+$('.js-with-placeholder-ghost .input-controller').on('input', function(){
+    var input = $(this);
+    var field = input.closest('.field');
+    var ghost = field.find('.field-placeholder-ghost');
+
+    ghost.text(input.val());
+}).trigger('input');
+
+$('.js-with-placeholder-ghost .input-controller').on('focus', function(){
+    $(this)
+        .closest('.field')
+        .find('.field-placeholder')
+        .css('visibility', 'hidden');
+});
+
+$('.js-with-placeholder-ghost .input-controller').on('blur', function(){
+    var input = $(this);
+    if (input.val() != '') {
+        input
+            .closest('.field')
+            .find('.field-placeholder')
+            .css('visibility', 'inherit');
+    }
+});
+
+// Handling placeholder autocomplete
+$('.js-with-placeholder-autocomplete .input-controller').on('input', function(){
+    var input = $(this);
+    var field = input.closest('.field');
+    var ghost = field.find('.field-placeholder-ghost');
+    var autocomplete = field.find('.field-placeholder-content');
+    var input_value = input.val();
+    ghost.text(input_value);
+    if ('Абракадабра'.indexOf(input_value) == 0) {
+        autocomplete.text('Абракадабра'.replace(input_value, ''));
+    } else {
+        autocomplete.text('');
+    }
+}).trigger('input');
+
 // Keeping the position of the sidebar
 
 var lastScroll = $(window).scrollTop();
