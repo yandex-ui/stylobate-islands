@@ -87,6 +87,8 @@
   display: block;
 
   height: 0;
+
+  color: rgba(0,0,0,0.5);
 }
 
 .field-placeholder-inner {
@@ -110,8 +112,6 @@
 
   font-size: 1.5rem;
   line-height: 2rem;
-
-  color: rgba(0,0,0,0.5);
 }
 
 .field-placeholder-ghost {
@@ -125,7 +125,7 @@ textarea.input-controller {
 
 .input-view {
   position: absolute;
-  -webkit-appearance: none;
+  top: -1px;
   right: -1px;
   bottom: -1px;
   left: -1px;
@@ -133,8 +133,7 @@ textarea.input-controller {
   border: 1px solid transparent;
   border-color: rgba(0,0,0,0.27);
   border-top-color: rgba(0,0,0,0.38);
-
-  top: -1px;
+  border-bottom-color: rgba(0,0,0,0.16);
 
   background: #FFF;
   background: -webkit-linear-gradient(#FFF, #FFF);
@@ -143,7 +142,7 @@ textarea.input-controller {
   background-size: 16px 16px;
   box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
 
-  border-bottom-color: rgba(0,0,0,0.16);
+  -webkit-appearance: none;
 }
 
 :not(.is-disabled):focus + .input-view {

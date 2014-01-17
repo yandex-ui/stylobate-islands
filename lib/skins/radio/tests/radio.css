@@ -22,10 +22,10 @@
 
   color: #333;
 
+  background: 50% no-repeat;
   background: rgba(0,0,0,0.3);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
-  background: 50% no-repeat;
   box-shadow: 0 1px 0 rgba(0,0,0,0.07);
 
   border-radius: 50%;

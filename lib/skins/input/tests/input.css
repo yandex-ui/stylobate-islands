@@ -12,27 +12,25 @@
 
 .input {
   position: relative;
-  -webkit-appearance: none;
+
+  display: inline-block;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 400px;
   max-width: 100%;
+  min-height: 3.2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-color: rgba(0,0,0,0.27);
+  border-top-color: rgba(0,0,0,0.38);
+  border-bottom-color: rgba(0,0,0,0.16);
 
   cursor: text;
   vertical-align: baseline;
 
-  width: 400px;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 1px solid transparent;
-  padding: 0.5rem 1rem;
-
-  line-height: 2rem;
-
-  display: inline-block;
-
   font-size: 1.5rem;
-
-  border-color: rgba(0,0,0,0.27);
-  border-top-color: rgba(0,0,0,0.38);
-  border-bottom-color: rgba(0,0,0,0.16);
+  line-height: 2rem;
 
   background: #FFF;
   background: -webkit-linear-gradient(#FFF, #FFF);
@@ -41,7 +39,7 @@
   background-size: 16px 16px;
   box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
 
-  min-height: 3.2rem;
+  -webkit-appearance: none;
 }
 
 .input:not(.is-disabled):focus {

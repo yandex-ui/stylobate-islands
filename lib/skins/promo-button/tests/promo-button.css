@@ -1,9 +1,11 @@
 .promo-button {
   margin: 0;
 
-  background: transparent;
-  -moz-appearance: none;
   font: inherit;
+
+  background: transparent;
+
+  -moz-appearance: none;
 }
 
 .promo-button::-moz-focus-inner {

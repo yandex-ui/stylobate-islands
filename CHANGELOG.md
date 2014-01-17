@@ -2,7 +2,7 @@
 # Stylobate-islands Changelog
 ---
 
-## v0.19.3 (in development)
+## v0.20.0 (2014-01-17)
 
 - Added placeholder for fields.
 

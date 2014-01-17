@@ -20,8 +20,7 @@
   z-index: 10;
 
   display: block;
-  -webkit-appearance: none;
-  -moz-appearance: window;
+
   width: 100%;
   padding: 0.5rem 2.6999999999999997rem 0.5rem 1.5rem;
   border: none;
@@ -34,6 +33,9 @@
   color: inherit;
 
   background: transparent;
+
+  -webkit-appearance: none;
+  -moz-appearance: window;
 }
 
 .select:focus {
