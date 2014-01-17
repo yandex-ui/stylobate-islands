@@ -9,30 +9,7 @@
   height: 100%
 
 .field-placeholder
-  // Move most of these things to skin/field
-  kind: fill left -1px
-  // Check if this would work with post-added things,
-  // otherwise we would need no sides + neg margin + placed in the right place
-
-  skin: input-box
-
-  pointer-events: none
-
-  z-index: 9 // To overlap if placed before
-  color: $islands_color_text_misc
-
-  // Should have a kind for ellipsis
-  // Maybe this should apply when not after textarea,
-  // Cause we could want to have multiline placeholder in this case
-  max-width: 100%
-  white-space: nowrap
-  overflow: hidden
-  text-overflow: ellipsis
-
-  // Could be default _hidden element
-  // Or not, 'cause it could work only with validating
-  input:focus + * + &
-    visibility: hidden
+  skin: input-placeholder (-inner '&-inner') (-ghost '&-ghost')
 
 textarea.input-controller
   vertical-align: top

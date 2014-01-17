@@ -82,11 +82,17 @@
 }
 
 .field-placeholder {
+  position: relative;
+
+  display: block;
+
+  height: 0;
+}
+
+.field-placeholder-inner {
   position: absolute;
   z-index: 9;
   top: -1px;
-  right: auto;
-  bottom: -1px;
   left: -1px;
 
   overflow: hidden;
@@ -94,8 +100,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 100%;
-  min-height: 3.2rem;
-  padding: 0.5rem 1rem;
+  min-height: 0;
+  padding: 0;
   border: 1px solid transparent;
 
   white-space: nowrap;
@@ -108,7 +114,7 @@
   color: rgba(0,0,0,0.5);
 }
 
-input:focus+* + .field-placeholder {
+.field-placeholder-ghost {
   visibility: hidden;
 }
 
