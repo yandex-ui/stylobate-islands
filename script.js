@@ -79,34 +79,39 @@ $('textarea.js-autosize').each(function(){
 
 $('.field-reset').on('click',function(e){
     e.preventDefault();
-    var $textarea = $(this).closest('.field').find('.input-controller')
-    $textarea
+    var $field = $(this).closest('.field');
+    var $input = $field.find('.input-controller');
+    $input
         .val('')
-        .focus()
-        .height(0)
-        .height($textarea[0].scrollHeight);
+        .trigger('input')
+        .focus();
+    if ($field.hasClass('js-autosize')) {
+        $input
+            .height(0)
+            .height($input[0].scrollHeight);
+    }
 });
 
 // Handling placeholder
 $('.js-with-placeholder .input-controller').on('input', function(){
-    var input = $(this);
-    var field = input.closest('.field');
-    var placeholder = field.find('.field-placeholder');
+    var $input = $(this);
+    var $field = $input.closest('.field');
+    var $placeholder = $field.find('.field-placeholder');
 
-    if (input.val() == '') {
-        placeholder.css('visibility', 'inherit');
+    if ($input.val() == '') {
+        $placeholder.css('visibility', 'inherit');
     } else {
-        placeholder.css('visibility', 'hidden');
+        $placeholder.css('visibility', 'hidden');
     }
 }).trigger('input');
 
 // Handling placeholder ghost
 $('.js-with-placeholder-ghost .input-controller').on('input', function(){
-    var input = $(this);
-    var field = input.closest('.field');
-    var ghost = field.find('.field-placeholder-ghost');
+    var $input = $(this);
+    var $field = $input.closest('.field');
+    var $ghost = $field.find('.field-placeholder-ghost');
 
-    ghost.text(input.val());
+    $ghost.text($input.val());
 }).trigger('input');
 
 $('.js-with-placeholder-ghost .input-controller').on('focus', function(){
@@ -117,9 +122,9 @@ $('.js-with-placeholder-ghost .input-controller').on('focus', function(){
 });
 
 $('.js-with-placeholder-ghost .input-controller').on('blur', function(){
-    var input = $(this);
-    if (input.val() != '') {
-        input
+    var $input = $(this);
+    if ($input.val() != '') {
+        $input
             .closest('.field')
             .find('.field-placeholder')
             .css('visibility', 'inherit');
