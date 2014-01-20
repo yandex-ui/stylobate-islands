@@ -2,6 +2,11 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.21.0 (2014-01-20)
+
+- Updated Stylobate.
+- Translated links to the new Stylobate.
+
 ## v0.20.0 (2014-01-17)
 
 - Added placeholder for fields.
