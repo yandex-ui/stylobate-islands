@@ -1,16 +1,17 @@
-@import "../stylobate"
-$init_islands_root = false
-@import "../skins/islands"
-set-skin-namespace('islands')
+// Using stylobuild
+use('../node_modules/stylobuild')
 
-@import "../skins/islands/button/tests/button"
-@import "../skins/islands/button/tests/toggler"
-@import "../skins/islands/button/tests/toggle-button"
-@import "../skins/islands/button/tests/action-button"
-@import "../skins/islands/group/tests/group"
-@import "../skins/islands/pseudo-button/tests/pseudo-button"
-@import "../skins/islands/pseudo-button/tests/small-pseudo-button"
-@import "../skins/islands/select/tests/select"
-@import "../skins/islands/checkbox/tests/checkbox"
-@import "../skins/islands/input/tests/input"
-@import "../skins/islands/select/tests/button-arrow"
+@require "../skins/islands/lib/standalone.styl"
+
+@require "../skins/islands/lib/skins/button/tests/button"
+@require "../skins/islands/lib/skins/button/tests/toggler"
+@require "../skins/islands/lib/skins/button/tests/toggle-button"
+@require "../skins/islands/lib/skins/button/tests/action-button"
+@require "../skins/islands/lib/skins/group/tests/group"
+@require "../skins/islands/lib/skins/pseudo-button/tests/pseudo-button"
+@require "../skins/islands/lib/skins/pseudo-button/tests/small-pseudo-button"
+@require "../skins/islands/lib/skins/select/tests/select"
+@require "../skins/islands/lib/skins/checkbox/tests/checkbox"
+@require "../skins/islands/lib/skins/input/tests/input"
+@require "../skins/islands/lib/skins/select/tests/button-arrow"
+

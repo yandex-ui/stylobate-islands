@@ -2,6 +2,9 @@ build:
 	./node_modules/stylus/bin/stylus style.styl && \
 	./node_modules/stylus/bin/stylus style.ie.styl
 
+examples:
+	./node_modules/stylus/bin/stylus examples/*.styl
+
 watch:
 	./node_modules/stylus/bin/stylus --watch style.styl
 
@@ -23,4 +26,4 @@ up:
 serve:
 	jekyll serve --watch --config _config.yml,_config-dev.yml
 
-.PHONY: build
+.PHONY: build examples
