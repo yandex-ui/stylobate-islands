@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.22.0 (2014-02-11)
+
+- Added arrow icon skin.
+
 ## v0.21.1 (2014-01-23)
 
 - Updated Stylobate.
