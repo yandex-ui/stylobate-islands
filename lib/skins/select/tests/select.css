@@ -1,10 +1,6 @@
 .select-wrap:after {
   display: inline-block;
 
-  border-right: 2px solid;
-  border-bottom: 2px solid;
-  margin-top: -0.33em;
-
   vertical-align: middle;
 
   background: 50% no-repeat;
@@ -73,6 +69,9 @@ x:-o-prefocus {
 
   width: 6px;
   height: 6px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  margin-top: -0.33em;
   margin-right: -2px;
 
   -webkit-transform: scale(0.75) rotate(45deg);
