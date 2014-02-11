@@ -48,15 +48,24 @@ skin-islands-icon_dropdown()
     margin-left: $islands_s
 
 skin-islands-icon_arrow()
-  @extends $skin-islands-icon_arrow
-
-  $size = utilus_alike(arguments, 6px)
+  $size = utilus_get(arguments, 'size', utilus_alike(arguments, 6px))
   kind: icon (size $size)
+
+  $width = utilus_get(arguments, 'width', 2px)
+  border-bottom: $width solid
+  border-right: $width solid
+  margin-top: -0.33em
 
   $color = utilus_get_color(arguments, inherit)
   unless $color == inherit
     color: $color
 
+  if with-transition in arguments
+    transition: transform 0.3s
+
+  skin-islands-icon_arrow-direction(arguments)
+
+skin-islands-icon_arrow-direction()
   $angle = 45deg
   if top in arguments
     $angle = -135deg
@@ -66,14 +75,7 @@ skin-islands-icon_arrow()
 
   else if left in arguments
     $angle = 135deg
-
   transform: scale(0.75) rotate($angle)
-
-$skin-islands-icon_arrow
-  border-bottom: 2px solid
-  border-right: 2px solid
-  margin-top: -0.33em
-
 
 skin-islands-icon_check()
   if absolute in arguments

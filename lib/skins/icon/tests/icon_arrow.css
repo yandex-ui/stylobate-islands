@@ -1,0 +1,47 @@
+.icon_arrow,
+.icon_another-arrow {
+  position: relative;
+
+  display: inline-block;
+
+  vertical-align: middle;
+
+  background: 50% no-repeat;
+}
+
+.icon_arrow {
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+
+  -webkit-transform: scale(0.75) rotate(-45deg);
+  -ms-transform: scale(0.75) rotate(-45deg);
+  transform: scale(0.75) rotate(-45deg);
+
+  color: red;
+}
+
+.icon_arrow,
+.icon_another-arrow {
+  width: 20px;
+  height: 20px;
+  margin-top: -0.33em;
+}
+
+.icon_another-arrow {
+  border-right: 4px solid;
+  border-bottom: 4px solid;
+
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: scale(0.75) rotate(-135deg);
+  -ms-transform: scale(0.75) rotate(-135deg);
+  transform: scale(0.75) rotate(-135deg);
+
+  color: #00F;
+}
+
+.icon_another-arrow:hover {
+  -webkit-transform: scale(0.75) rotate(45deg);
+  -ms-transform: scale(0.75) rotate(45deg);
+  transform: scale(0.75) rotate(45deg);
+}

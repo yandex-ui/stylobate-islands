@@ -27,9 +27,24 @@
 >
 > <div class="example:icon_notification"></div>
 
+### Стрелочка {#icon_arrow}
+
+Иконка для стрелочки. Принимает большое число опциональных параметров:
+
+    kind: icon_arrow
+
+- Размер: одно число, по умолчанию — `6px`.
+- Цвет: по умолчанию наследует цвет текста.
+- Направление: одно из ключевых слов `top`, `right`, `bottom`, `left`; по умолчанию — `bottom`.
+
+> <span class="icon_arrow"></span>
+> <span class="icon_another-arrow"></span>
+>
+> <div class="example:icon_arrow"></div>
+
 ### Дропдаун {#icon_dropdown}
 
-Иконка-баджик нотификации, с циферками.
+Частный случай стрелочки, используется в дропдаунах.
 
 > Текст <span class="icon_dropdown"></span>,
 > <a class="complex-link"><span class="link-inner">Дропдаун</span> <span class="icon_dropdown"></span></a>
