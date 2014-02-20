@@ -75,7 +75,16 @@ skin-islands-icon_arrow-direction()
 
   else if left in arguments
     $angle = 135deg
-  transform: scale(0.75) rotate($angle)
+
+  $offset-x = utilus_get(arguments, 'offset-x', '')
+  if $offset-x
+    $offset-x = 'translateX(%s)'% $offset-x
+
+  $offset-y = utilus_get(arguments, 'offset-y', '')
+  if $offset-y
+    $offset-y = 'translateY(%s)'% $offset-y
+
+  transform: unquote($offset-x) unquote($offset-y) scale(0.75) rotate($angle)
 
 skin-islands-icon_check()
   if absolute in arguments
