@@ -39,9 +39,11 @@
 - Направление: одно из ключевых слов `top`, `right`, `bottom`, `left`; по умолчанию — `bottom`.
 - Модификатор направления: можно задать дополнительные направления параметром-элементом `-direction`, например `(-direction '&:hover' right)`.
 - Стандартный транзишн: чтобы включить транзишн для смены направления достаточно использовать параметр `with-transition`.
+- Смещение иконки по X и Y: именованные параметры `offset-x` и `offset-y`, например `(offset-y -6px)`
 
 > <span class="icon_arrow"></span>
 > <span class="icon_another-arrow"></span>
+> <span class="icon_another-arrow_offset"></span>
 >
 > <div class="example:icon_arrow"></div>
 
