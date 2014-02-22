@@ -4,6 +4,8 @@
 
 ## v0.23.0 (2014-02-22)
 
+- Added offset arguments for arrow icon.
+- Using stylobate's disabled kind for disabled skin.
 - Updated deps.
 
 ## v0.22.0 (2014-02-11)

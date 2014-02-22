@@ -1,0 +1,10 @@
+.is-disabled {
+  cursor: default !important;
+  pointer-events: none;
+
+  opacity: 0.6;
+}
+
+.is-disabled .is-disabled {
+  opacity: 1;
+}
