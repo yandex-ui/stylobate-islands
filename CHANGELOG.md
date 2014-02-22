@@ -7,6 +7,7 @@
 - Added offset arguments for arrow icon.
 - Removed disabled guards, as it is now have no events.
 - Using stylobate's disabled kind for disabled skin.
+- Fixed selectors for file inputs a bit.
 - Updated deps.
 
 ## v0.22.0 (2014-02-11)

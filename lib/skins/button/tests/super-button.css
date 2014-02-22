@@ -101,14 +101,14 @@ input[type=file]:focus + .super-button:after,
   background: linear-gradient(#FFDF60, #FC0);
 }
 
-input[type=file]:hover:not(:checked) + .super-button,
+input[type=file]:hover + .super-button,
 .super-button:hover {
   background: rgba(0, 0, 0, 0.31);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.4));
   background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.4));
 }
 
-input[type=file]:hover:not(:checked) + .super-button:before,
+input[type=file]:hover + .super-button:before,
 .super-button:hover:before {
   background: #FD5;
   background: -webkit-linear-gradient(#FFE681, #FFD428);
