@@ -1,5 +1,6 @@
 .icon_arrow,
-.icon_another-arrow {
+.icon_another-arrow,
+.icon_another-arrow_offset {
   position: relative;
 
   display: inline-block;
@@ -44,4 +45,16 @@
   -webkit-transform: scale(0.75) rotate(45deg);
   -ms-transform: scale(0.75) rotate(45deg);
   transform: scale(0.75) rotate(45deg);
+}
+
+.icon_another-arrow_offset {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  margin-top: -0.33em;
+
+  -webkit-transform: translateX(7px) translateY(12px) scale(0.75) rotate(45deg);
+  -ms-transform: translateX(7px) translateY(12px) scale(0.75) rotate(45deg);
+  transform: translateX(7px) translateY(12px) scale(0.75) rotate(45deg);
 }
