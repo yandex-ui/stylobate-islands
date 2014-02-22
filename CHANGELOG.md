@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.23.0 (2014-02-22)
+
+- Updated deps.
+
 ## v0.22.0 (2014-02-11)
 
 - Added arrow icon skin.
