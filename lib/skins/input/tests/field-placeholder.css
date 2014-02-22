@@ -145,7 +145,7 @@ textarea.input-controller {
   -webkit-appearance: none;
 }
 
-:not(.is-disabled):focus + .input-view {
+:focus + .input-view {
   border-color: rgba(94, 76, 2, 0.42);
   border-top-color: rgba(78, 62, 2, 0.515);
   border-bottom-color: rgba(117, 93, 0, 0.335);

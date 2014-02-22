@@ -64,12 +64,12 @@
 }
 
 input[type=file]:focus + .normal-checkbox,
-.normal-checkbox:not(.is-disabled):focus {
+.normal-checkbox:focus {
   outline: 0;
 }
 
 input[type=file]:focus + .normal-checkbox:after,
-.normal-checkbox:not(.is-disabled):focus:after {
+.normal-checkbox:focus:after {
   z-index: 9;
 
   box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);
@@ -160,12 +160,12 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
 }
 
 input[type=file]:focus + .small-radio,
-.small-radio:not(.is-disabled):focus {
+.small-radio:focus {
   outline: 0;
 }
 
 input[type=file]:focus + .small-radio:after,
-.small-radio:not(.is-disabled):focus:after {
+.small-radio:focus:after {
   z-index: 9;
 
   box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);

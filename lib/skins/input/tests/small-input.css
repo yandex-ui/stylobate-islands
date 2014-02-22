@@ -1,16 +1,4 @@
 .small-input {
-  margin: 0;
-
-  font: inherit;
-
-  background: transparent;
-}
-
-.small-input:focus {
-  outline: none;
-}
-
-.small-input {
   position: relative;
 
   display: inline-block;
@@ -25,13 +13,16 @@
   border-color: rgba(0, 0, 0, 0.27);
   border-top-color: rgba(0, 0, 0, 0.38);
   border-bottom-color: rgba(0, 0, 0, 0.16);
+  margin: 0;
 
   cursor: text;
   vertical-align: baseline;
 
+  font: inherit;
   font-size: 1.3rem;
   line-height: 1.6rem;
 
+  background: transparent;
   background: #FFF;
   background: -webkit-linear-gradient(#FFF, #FFF);
   background: linear-gradient(#FFF, #FFF);
@@ -42,7 +33,9 @@
   -webkit-appearance: none;
 }
 
-.small-input:not(.is-disabled):focus {
+.small-input:focus {
+  z-index: 9;
+
   border-color: rgba(94, 76, 2, 0.42);
   border-top-color: rgba(78, 62, 2, 0.515);
   border-bottom-color: rgba(117, 93, 0, 0.335);
@@ -50,8 +43,4 @@
   box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1);
 
   outline: none;
-}
-
-.small-input:focus {
-  z-index: 9;
 }

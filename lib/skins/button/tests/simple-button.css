@@ -69,14 +69,14 @@
 }
 
 input[type=file]:active + .simple-button,
-.simple-button:not(.is-disabled):active {
+.simple-button:active {
   text-shadow: 0 1px 0 #333;
 
   box-shadow: inset 0 2px 1px -1px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 input[type=file]:active + .simple-button:before,
-.simple-button:not(.is-disabled):active:before {
+.simple-button:active:before {
   box-shadow: inset 0 1px 3px -1px rgba(0, 0, 0, 0.5);
 }
 
@@ -91,12 +91,12 @@ input[type=file]:active + .simple-button:before,
 }
 
 input[type=file]:focus + .simple-button,
-.simple-button:not(.is-disabled):focus {
+.simple-button:focus {
   outline: 0;
 }
 
 input[type=file]:focus + .simple-button:after,
-.simple-button:not(.is-disabled):focus:after {
+.simple-button:focus:after {
   z-index: 9;
 
   box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);
@@ -111,14 +111,14 @@ input[type=file]:focus + .simple-button:after,
 }
 
 input[type=file]:hover + .simple-button,
-.simple-button:not(.is-disabled):hover {
+.simple-button:hover {
   background: rgba(0, 0, 0, 0.31);
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.4));
   background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.4));
 }
 
 input[type=file]:hover + .simple-button:before,
-.simple-button:not(.is-disabled):hover:before {
+.simple-button:hover:before {
   background: #FBFAF9;
   background: -webkit-linear-gradient(#FFF, #F6F5F3);
   background: linear-gradient(#FFF, #F6F5F3);

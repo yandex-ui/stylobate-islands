@@ -6,8 +6,6 @@
 
 // Proto for simple buttons
 $skin-islands-button-content ?= '.button-content'
-$skin-islands-button-disabled ?= '.is-disabled'
-
 skin-islands-proto-button()
   skin-islands-check-font()
 
@@ -72,7 +70,7 @@ skin-islands-proto-button()
 
   unless no-active in arguments
     input[type=file]:active + &,
-    &:not({$skin-islands-button-disabled}):active
+    &:active
       skin-islands-button_pressed(arguments)
 
   // So it would overlay anything inside
@@ -86,7 +84,7 @@ skin-islands-proto-button()
 
   unless no-focus in arguments
     input[type=file]:focus + &,
-    &:not({$skin-islands-button-disabled}):focus
+    &:focus
       skin-islands-button_focus(arguments)
 
 
@@ -107,7 +105,7 @@ skin-islands-button()
 
   unless no-hover in arguments
     input[type=file]:hover + &,
-    &:not({$skin-islands-button-disabled}):hover
+    &:hover
       skin-islands-button_hover()
 
 
@@ -128,7 +126,7 @@ skin-islands-action-button()
 
   unless no-hover in arguments
     input[type=file]:hover:not(:checked) + &,
-    &:not({$skin-islands-button-disabled}):hover
+    &:hover
       skin-islands-action-button_hover()
 
 
