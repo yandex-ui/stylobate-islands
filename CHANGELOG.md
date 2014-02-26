@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.23.3 (2014-02-26)
+
+- Updated Stylobate to `0.22.5`.
+
 ## v0.23.2 (2014-02-26)
 
 - Fixed incorrect call of button skin in checkbox.
