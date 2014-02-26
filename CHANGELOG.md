@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.23.1 (2014-02-26)
+
+- Updated Stylobate to `0.22.4`.
+
 ## v0.23.0 (2014-02-22)
 
 - Added offset arguments for arrow icon.
