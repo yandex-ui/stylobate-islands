@@ -48,43 +48,70 @@ skin-islands-icon_dropdown()
     margin-left: $islands_s
 
 skin-islands-icon_arrow()
-  $size = utilus_get(arguments, 'size', utilus_alike(arguments, 6px))
-  kind: icon (size $size)
+  if !ie
+    $size = utilus_get(arguments, 'size', utilus_alike(arguments, 6px))
+    kind: icon (size $size)
 
-  $width = utilus_get(arguments, 'width', 2px)
-  border-bottom: $width solid
-  border-right: $width solid
-  margin-top: -0.33em
+    $width = utilus_get(arguments, 'width', 2px)
+    border-bottom: $width solid
+    border-right: $width solid
+    margin-top: -0.33em
 
-  $color = utilus_get_color(arguments, inherit)
-  unless $color == inherit
-    color: $color
+    $color = utilus_get_color(arguments, inherit)
+    unless $color == inherit
+      color: $color
 
-  if with-transition in arguments
-    transition: transform 0.3s
+    if with-transition in arguments
+      transition: transform 0.3s
+
+  if ie
+    width: 0
+    height: 0
 
   skin-islands-icon_arrow-direction(arguments)
 
 skin-islands-icon_arrow-direction()
-  $angle = 45deg
-  if top in arguments
-    $angle = -135deg
+  if !ie
+    $angle = 45deg
+    if top in arguments
+      $angle = -135deg
 
-  else if right in arguments
-    $angle = -45deg
+    else if right in arguments
+      $angle = -45deg
 
-  else if left in arguments
-    $angle = 135deg
+    else if left in arguments
+      $angle = 135deg
 
-  $offset-x = utilus_get(arguments, 'offset-x', '')
-  if $offset-x
-    $offset-x = 'translateX(%s)'% $offset-x
+    $offset-x = utilus_get(arguments, 'offset-x', '')
+    if $offset-x
+      $offset-x = 'translateX(%s)'% $offset-x
 
-  $offset-y = utilus_get(arguments, 'offset-y', '')
-  if $offset-y
-    $offset-y = 'translateY(%s)'% $offset-y
+    $offset-y = utilus_get(arguments, 'offset-y', '')
+    if $offset-y
+      $offset-y = 'translateY(%s)'% $offset-y
 
-  transform: unquote($offset-x) unquote($offset-y) scale(0.75) rotate($angle)
+    transform: unquote($offset-x) unquote($offset-y) scale(0.75) rotate($angle)
+
+  if ie
+    $size = utilus_get(arguments, 'size', utilus_alike(arguments, 6px))
+    border: $size solid
+
+    if left in arguments || right in arguments
+      border-top-color: transparent
+      border-bottom-color: transparent
+
+      if right in arguments
+        border-left-width: 0
+      else
+        border-right-width: 0
+    else
+      border-right-color: transparent
+      border-left-color: transparent
+
+      if top in arguments
+        border-bottom-width: 0
+      else
+        border-top-width: 0
 
 skin-islands-icon_check()
   if absolute in arguments
