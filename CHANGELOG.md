@@ -2,7 +2,7 @@
 # Stylobate-islands Changelog
 ---
 
-## v0.24.1 (in development)
+## v0.24.1 (2014-03-06)
 
 - Made inverted pseudo-button slightly brighter.
 - Fixed bounding box of check icon.
