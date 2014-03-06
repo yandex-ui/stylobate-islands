@@ -2,6 +2,12 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.24.0 (2014-03-06)
+
+- Added `_inverted` modifier to pseudo-button.
+
+- Added ie fallback for arrow skin
+
 ## v0.23.3 (2014-02-26)
 
 - Updated Stylobate to `0.22.5`.

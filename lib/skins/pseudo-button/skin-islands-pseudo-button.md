@@ -20,3 +20,25 @@
 > </div>
 >
 > <div class="example:small-pseudo-button"></div>
+
+### Инвертированная всевдо-кнопка
+
+Так как псевдокнопка не имеет фона, то если понадобится использовать её на тёмном фоне, то нужно будет воспользоваться модификатором `_inverted`:
+
+    skin: pseudo-button _inverted
+
+> <div style="background: #000; padding: 20px;">
+>     <button class="inverted-pseudo-button" type="button">Инвертированная псевдокнопка</button>
+> </div>
+>
+> <div class="example:inverted-pseudo-button"></div>
+
+Такой модификатор можно добавить и к обычной кнопке, используя соответствующий синтаксис:
+
+    skin: pseudo-button_ _inverted
+
+> <div style="background: #000; padding: 20px;">
+>     <a class="pseudo-button pseudo-button_inverted" href="#x">Инвертированная псевдокнопка</a>
+> </div>
+>
+> <div class="example:pseudo-button_inverted"></div>

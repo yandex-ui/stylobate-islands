@@ -46,9 +46,27 @@ skin-islands-pseudo-button()
     _focus '&:focus')
 
 skin-islands-pseudo-button_hover()
-  box-shadow: inset 0 0 0 1px rgba(#000, 0.35)
+  box-shadow: inset 0 0 0 1px rgba(#000, 0.35) unless _inverted in arguments
 
 skin-islands-pseudo-button_focus()
-  box-shadow: inset 0 0 0 1px rgba(#000, 0.35)
+  box-shadow: inset 0 0 0 1px rgba(#000, 0.35) unless _inverted in arguments
 
   skin-islands-button_focus(arguments)
+
+skin-islands-pseudo-button_inverted()
+  color: invert($islands_color_text)
+
+  box-shadow: inset 0 0 0 1px invert(rgba(#000, 0.2))
+
+  if ie
+    border: 1px solid invert(#CBCBCB)
+
+  stylobate_defaults(arguments,
+    _hover '&:hover' _inverted,
+    _focus '&:focus' _inverted)
+
+skin-islands-pseudo-button_inverted_hover()
+  box-shadow: inset 0 0 0 1px rgba(#FFF, 0.35)
+
+skin-islands-pseudo-button_inverted_focus()
+  box-shadow: inset 0 0 0 1px rgba(#FFF, 0.35)
