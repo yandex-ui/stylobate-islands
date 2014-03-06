@@ -1,13 +1,13 @@
 .pseudo-button_inverted {
-  color: #CCC;
+  color: #E6E6E6;
 
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
 }
 
 .pseudo-button_inverted:hover {
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
 .pseudo-button_inverted:focus {
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 }

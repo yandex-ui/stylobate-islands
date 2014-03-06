@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.24.1 (in development)
+
+- Made inverted pseudo-button slightly brighter.
+
 ## v0.24.0 (2014-03-06)
 
 - Added `_inverted` modifier to pseudo-button.
