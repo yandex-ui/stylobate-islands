@@ -95,8 +95,8 @@ $('.field-reset').on('click',function(e){
 // Handling placeholder
 $('.js-with-placeholder .input-controller').on('input', function(){
     var $input = $(this);
-    var $field = $input.closest('.field');
-    var $placeholder = $field.find('.field-placeholder');
+    var $field = $input.closest('.field, .small-field');
+    var $placeholder = $field.find('.field-placeholder, .small-field-placeholder');
 
     if ($input.val() == '') {
         $placeholder.css('visibility', 'inherit');
