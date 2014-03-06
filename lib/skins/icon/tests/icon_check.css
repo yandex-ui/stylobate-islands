@@ -7,7 +7,7 @@
   height: 13px;
   border-right: 3px solid;
   border-bottom: 3px solid;
-  margin: -13px 0 0 -2px;
+  margin: -3px 3px 1px;
 
   -webkit-transform: scale(0.9) rotate(50deg) skewX(12deg);
   -ms-transform: scale(0.9) rotate(50deg) skewX(12deg);

@@ -62,4 +62,6 @@
 
 > <span class="icon_check"> </span>
 >
+> Тест на границы: <span class="bounding-box"><span class="icon_check"> </span></span>
+>
 > <div class="example:icon_check"></div>

@@ -5,6 +5,8 @@
 ## v0.24.1 (in development)
 
 - Made inverted pseudo-button slightly brighter.
+- Fixed bounding box of check icon.
+- Refactored and tested variables.
 
 ## v0.24.0 (2014-03-06)
 
