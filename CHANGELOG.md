@@ -6,6 +6,7 @@
 
 - Made inverted pseudo-button slightly brighter.
 - Fixed bounding box of check icon.
+- Added way to make a small placeholder.
 - Refactored and tested variables.
 
 ## v0.24.0 (2014-03-06)

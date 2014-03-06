@@ -103,7 +103,9 @@ skin-islands-input-placeholder-inner()
   top: -1px
   left: -1px
 
-  skin-islands-input-box()
+  is_small_placeholder = ''
+  is_small_placeholder = unquote('small') if small in utilus_get(arguments, 'parent') or small in arguments
+  skin-islands-input-box(is_small_placeholder)
   padding: 0
   min-height: 0
 

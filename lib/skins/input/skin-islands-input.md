@@ -155,6 +155,20 @@
 >
 > <div class="example:field-placeholder"></div>
 
+Для маленького плейсхолдера нужно передать дополнительный параметр `small`:
+
+    skin: input-placeholder small (-inner '&-inner') 
+
+> <label class="small-field js-with-placeholder">
+>     <span class="field-content">
+>         <span class="small-field-placeholder"><span class="small-field-placeholder-inner">Буквы</span></span>
+>         <input class="input-controller" type="text" value="" />
+>         <span class="input-view"> </span>
+>     </span>
+> </label>
+>
+> <div class="example:field-placeholder"></div>
+
 Довольно просто сделать плесхолдер-подсказку, если использовать дополнительный элемент `-ghost`, в который дублировать значение инпута — это позволит расположить плейсхолдер ровно после вбитого текста:
 
     skin: input-placeholder (-inner '&-inner')  (-ghost '&-ghost') 
