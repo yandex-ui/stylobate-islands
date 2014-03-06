@@ -14,7 +14,7 @@ comb.configure(require('./.csscomb.json'));
 
 // test cases
 
-glob.sync("./lib/skins/" + whatToTest + "/tests/*.styl").forEach(function(test){
+glob.sync("./lib/**/" + whatToTest + "/tests/*.styl").forEach(function(test){
   var name = test.replace(/\.?[\/]/g, ' ').replace(' tests',':').replace('.styl','');
 
   it(name, function(){

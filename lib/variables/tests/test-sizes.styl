@@ -1,0 +1,35 @@
+.test1
+  &_xs
+    padding: $islands_xs
+  &_s
+    padding: $islands_s
+  &_m
+    padding: $islands_m
+  &_l
+    padding: $islands_l
+
+  &_text_s
+    font-size: $islands_text_s
+  &_text_m
+    font-size: $islands_text_m
+  &_text_h1
+    font-size: $islands_text_h1
+  &_text_h2
+    font-size: $islands_text_h2
+  &_text_h3
+    font-size: $islands_text_h3
+  &_text_h4
+    font-size: $islands_text_h4
+  &_text_h5
+    font-size: $islands_text_h5
+  &_text_h6
+    font-size: $islands_text_h6
+
+.test2
+  for $name, $size in $islands.sizes
+    &_{$name}
+      padding: $size
+
+  for $name, $size in $islands.text_sizes
+    &_text_{$name}
+      font-size: $size
