@@ -102,7 +102,7 @@ permalink: /codestyle/
       &:hover
         color: red
 
-      &:active
+      & .bar
         background: lime
 
 
