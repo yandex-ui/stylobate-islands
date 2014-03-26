@@ -1,0 +1,48 @@
+.vertical-group {
+  position: relative;
+
+  display: inline-block;
+
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.vertical-group > .toggle-button:first-child:not(:only-child),
+.vertical-group > .toggle-button:first-child:not(:only-child):before {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.vertical-group > .toggle-button:last-child:not(:only-child),
+.vertical-group > .toggle-button:last-child:not(:only-child):before {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.vertical-group > .toggle-button:not(:first-child):not(:last-child),
+.vertical-group > .toggle-button:last-child:not(:only-child) {
+  margin-top: -1px;
+}
+
+.vertical-group > .toggle-button:first-child:not(:only-child):before,
+.vertical-group > .toggle-button:not(:first-child):not(:last-child):before {
+  bottom: 0;
+}
+
+input.vertical-group > .toggle-button:first-child:not(:only-child),
+input.vertical-group > .toggle-button:not(:first-child):not(:last-child),
+label.vertical-group > .toggle-button:first-child:not(:only-child),
+label.vertical-group > .toggle-button:not(:first-child):not(:last-child) {
+  border-bottom-color: transparent;
+}
+
+.vertical-group > .toggle-button {
+  display: block;
+
+  width: 100%;
+}
+
+.vertical-group > .toggle-button:not(:first-child):not(:last-child),
+.vertical-group > .toggle-button:not(:first-child):not(:last-child):before {
+  border-radius: 0 !important;
+}

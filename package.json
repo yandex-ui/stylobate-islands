@@ -13,7 +13,7 @@
     "url": "git://github.com/yandex-ui/stylobate-islands.git"
   },
   "dependencies": {
-    "stylobate": "0.22.5"
+    "stylobate": "0.23.1"
   },
   "devDependencies": {
     "autoprefixer": "1.1.x",

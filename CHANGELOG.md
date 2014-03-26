@@ -2,6 +2,11 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.25.0 (2014-03-26)
+
+- Added vertical groups.
+- Refactored groups to have placeholders.
+
 ## v0.24.1 (2014-03-06)
 
 - Made inverted pseudo-button slightly brighter.

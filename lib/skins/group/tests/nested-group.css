@@ -24,11 +24,6 @@
   margin-left: -1px;
 }
 
-.group > .toggler:not(:first-child):not(:last-child) > .toggler-view,
-.group > .toggler:not(:first-child):not(:last-child) > .toggler-view:before {
-  border-radius: 0 !important;
-}
-
 .group > .toggler:not(:last-child):not(:only-child) > .toggler-view:before {
   right: 0;
 }
@@ -37,3 +32,9 @@ input.group > .toggler:not(:last-child):not(:only-child) > .toggler-view,
 label.group > .toggler:not(:last-child):not(:only-child) > .toggler-view {
   border-right-color: transparent;
 }
+
+.group > .toggler:not(:first-child):not(:last-child) > .toggler-view,
+.group > .toggler:not(:first-child):not(:last-child) > .toggler-view:before {
+  border-radius: 0 !important;
+}
+

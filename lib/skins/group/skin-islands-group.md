@@ -90,3 +90,29 @@
     skin: group-end
 
 > <div class="example:group-item"></div>
+
+### Вертикальные группы {#vertical-groups}
+
+Кроме горизонтальных групп можно также применять вертикальные группы, для этого есть параметр `vertical`:
+
+    skin: group-item vertical
+
+    skin: group-start vertical
+
+    skin: group-middle vertical
+
+    skin: group-end vertical
+
+> <div class="vertical-group">
+>     <button class="button toggle-button" type="button">
+>         <span class="button-content">Раз</span>
+>     </button
+>     ><button class="button toggle-button is-checked" type="button">
+>         <span class="button-content">Два</span>
+>     </button
+>     ><button class="button toggle-button is-checked" type="button">
+>         <span class="button-content">Три</span>
+>     </button>
+> </div>
+>
+> <div class="example:vertical-group"></div>
