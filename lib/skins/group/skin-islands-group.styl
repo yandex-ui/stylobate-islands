@@ -17,36 +17,36 @@ $skin-islands-group_vertical
   label&
     border-bottom-color: transparent
 
-skin-islands-group-start()
-  kind: group-start '&,&:before' (vertical in arguments ? vertical : false)
+skin-islands-group-start($this)
+  kind: group-start '&,&:before' (vertical in $this.arguments ? vertical : false)
 
-  $placeholder = vertical in arguments ? '$skin-islands-group_vertical' : '$skin-islands-group'
+  $placeholder = vertical in $this.arguments ? '$skin-islands-group_vertical' : '$skin-islands-group'
   @extends {$placeholder}
 
-skin-islands-group-middle()
-  kind: group-middle '&,&:before' (vertical in arguments ? vertical : false)
+skin-islands-group-middle($this)
+  kind: group-middle '&,&:before' (vertical in $this.arguments ? vertical : false)
 
-  $placeholder = vertical in arguments ? '$skin-islands-group_vertical' : '$skin-islands-group'
+  $placeholder = vertical in $this.arguments ? '$skin-islands-group_vertical' : '$skin-islands-group'
   @extends {$placeholder}
 
-skin-islands-group-end()
-  kind: group-end '&,&:before' (vertical in arguments ? vertical : false)
+skin-islands-group-end($this)
+  kind: group-end '&,&:before' (vertical in $this.arguments ? vertical : false)
 
-skin-islands-group-item()
+skin-islands-group-item($this)
   &:first-child:not(:only-child)
-    skin-islands-group-start(arguments)
+    skin-islands-group-start($this)
 
   &:not(:first-child):not(:last-child)
-    skin-islands-group-middle(arguments)
+    skin-islands-group-middle($this)
 
   &:last-child:not(:only-child)
-    skin-islands-group-end(arguments)
+    skin-islands-group-end($this)
 
-skin-islands-nested-group-item()
-  $nested-group-item = alike(arguments, '.toggler-view')
-  kind: group-item ('& > ' + $nested-group-item + ', & > ' + $nested-group-item + ':before') (vertical in arguments ? vertical : false)
+skin-islands-nested-group-item($this)
+  $nested-group-item = $this.strings[0] or '.toggler-view'
+  kind: group-item ('& > ' + $nested-group-item + ', & > ' + $nested-group-item + ':before') (vertical in $this.arguments ? vertical : false)
 
   &:not(:last-child):not(:only-child) > {$nested-group-item}
-    $placeholder = vertical in arguments ? '$skin-islands-group_vertical' : '$skin-islands-group'
+    $placeholder = vertical in $this.arguments ? '$skin-islands-group_vertical' : '$skin-islands-group'
     @extends {$placeholder}
 
