@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.25.1 (2014-03-31)
+
+- Updated `if-ie.styl` to `0.5.0`.
+
 ## v0.25.0 (2014-03-26)
 
 - Added vertical groups.
