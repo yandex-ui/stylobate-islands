@@ -4,6 +4,7 @@
 
 ## v0.26.0 (in development)
 
+- Added a way to configure border-alpha of pseudo-buttons.
 - Changed default text color to black, #67.
 - Updated Stylus to `0.43` and tests for it.
 

@@ -1,0 +1,90 @@
+.dimmed-pseudo-button {
+  border: none;
+  margin: 0;
+
+  font: inherit;
+
+  background: transparent;
+
+  -moz-appearance: none;
+}
+
+.dimmed-pseudo-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+.dimmed-pseudo-button {
+  position: relative;
+
+  display: inline-block;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.3rem 1.1rem;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+
+  color: #000;
+
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+
+  border-radius: 3px;
+}
+
+.dimmed-pseudo-button:before {
+  content: "";
+
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+
+  border-radius: 2px;
+}
+
+.dimmed-pseudo-button:after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.dimmed-pseudo-button .button-content {
+  position: relative;
+
+  display: block;
+}
+
+.dimmed-pseudo-button:hover {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+.dimmed-pseudo-button:focus {
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+
+  outline: 0;
+}
+
+.dimmed-pseudo-button:focus:after {
+  z-index: 9;
+
+  box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);
+
+  border-radius: inherit;
+}
