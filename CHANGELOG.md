@@ -2,7 +2,7 @@
 # Stylobate-islands Changelog
 ---
 
-## v0.26.0 (in development)
+## v0.26.0 (2014-04-10)
 
 - Added a way to configure border-alpha of pseudo-buttons.
 - Added a way to center the content of simple inputs.
