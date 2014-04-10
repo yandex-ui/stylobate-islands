@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.25.2 (in development)
+
+- Updated Stylus to `0.43` and tests for it.
+
 ## v0.25.1 (2014-03-31)
 
 - Updated `if-ie.styl` to `0.5.0`.

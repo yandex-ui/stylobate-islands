@@ -108,8 +108,8 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
 .small-radio {
   position: relative;
 
-  width: 1.4000000000000001rem;
-  height: 1.4000000000000001rem;
+  width: 1.4rem;
+  height: 1.4rem;
   margin-right: 0.6rem;
 
   -webkit-user-select: none;

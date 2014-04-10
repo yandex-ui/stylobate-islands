@@ -20,7 +20,7 @@
 
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 2.4000000000000004rem 4.5rem;
+  padding: 2.4rem 4.5rem;
   border: none;
 
   cursor: pointer;
@@ -34,7 +34,7 @@
   text-decoration: none;
 
   font-family: Arial, sans-serif;
-  font-size: 3.5999999999999996rem;
+  font-size: 3.6rem;
   line-height: 2.2rem;
 
   color: #473E09;
