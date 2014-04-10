@@ -25,26 +25,6 @@
 > Some text inside
 > </textarea>
 
-
-#### Группировка {#field-group}
-
-Для такого инпута хорошо работает группировка с кнопками:
-
-> <div class="group">
->     <button class="button group-item" type="button">
->         <span class="button-content">–</span>
->     </button
->     ><input class="input group-item" type="text" style="width:100px"
->     /><button class="button group-item" type="button">
->         <span class="button-content">⟷</span>
->     </button
->     ><input class="input group-item" type="text" style="width:100px"
->     /><button class="button group-item" type="button">
->         <span class="button-content">+</span>
->     </button>
-> </div>
-
-
 ### Сложные инпуты {#fields}
 
 Если же нужно что-то сложнее (нужно вставлять сущности внутрь, типа крестика и подобных штук) лучше использовать «составной» инпут.
@@ -117,6 +97,23 @@
 >     </label>
 > </div>
 
+#### Группировка {#field-group}
+
+Для такого инпута хорошо работает группировка с кнопками:
+
+> <div class="group">
+>     <button class="button group-item" type="button">
+>         <span class="button-content">–</span>
+>     </button
+>     ><input class="input group-item" type="text" style="width:100px"
+>     /><button class="button group-item" type="button">
+>         <span class="button-content">⟷</span>
+>     </button
+>     ><input class="input group-item" type="text" style="width:100px"
+>     /><button class="button group-item" type="button">
+>         <span class="button-content">+</span>
+>     </button>
+> </div>
 
 #### Имя сервиса внутри инпута {#field-label}
 
@@ -250,3 +247,15 @@
 > </div>
 >
 > <div class="example:input_error"></div>
+
+### Центрированный инпут {#centered-input}
+
+Чтобы центрировать контент инпута достаточно добавить параметр `centered`:
+
+    skin: input centered
+
+> <input class="centered-input" type="text" value="Буквы" />
+>
+> <div class="example:centered-input"></div>
+
+Для сложных инпутов с плейсхолдерами пока простого пути нет, нужно просто прокинуть `text-align: center` куда нужно. Когда будет полноценный отдельный скин для сложных инпутов, станет попроще.
