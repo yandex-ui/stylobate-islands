@@ -2,8 +2,9 @@
 # Stylobate-islands Changelog
 ---
 
-## v0.25.2 (in development)
+## v0.26.0 (in development)
 
+- Changed default text color to black, #67.
 - Updated Stylus to `0.43` and tests for it.
 
 ## v0.25.1 (2014-03-31)

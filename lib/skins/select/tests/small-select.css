@@ -30,7 +30,7 @@ x::-moz-focus-inner {
   padding: 0.5rem 2.1rem 0.5rem 0.9rem;
 
   color: transparent;
-  text-shadow: 0 0 0 #333;
+  text-shadow: 0 0 0 #000;
 }
 
 .small-select,
