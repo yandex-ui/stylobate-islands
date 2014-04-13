@@ -1,12 +1,3 @@
-.group {
-  position: relative;
-
-  display: inline-block;
-
-  vertical-align: top;
-  white-space: nowrap;
-}
-
 .group > .toggler:first-child:not(:only-child) > .toggler-view,
 .group > .toggler:first-child:not(:only-child) > .toggler-view:before {
   border-top-right-radius: 0 !important;
@@ -31,6 +22,15 @@
 input.group > .toggler:not(:last-child):not(:only-child) > .toggler-view,
 label.group > .toggler:not(:last-child):not(:only-child) > .toggler-view {
   border-right-color: transparent;
+}
+
+.group {
+  position: relative;
+
+  display: inline-block;
+
+  vertical-align: top;
+  white-space: nowrap;
 }
 
 .group > .toggler:not(:first-child):not(:last-child) > .toggler-view,

@@ -1,12 +1,3 @@
-.group {
-  position: relative;
-
-  display: inline-block;
-
-  vertical-align: top;
-  white-space: nowrap;
-}
-
 .group > .toggle-button:first-child:not(:only-child),
 .group > .toggle-button:first-child:not(:only-child):before {
   border-top-right-radius: 0 !important;
@@ -34,6 +25,15 @@ input.group > .toggle-button:not(:first-child):not(:last-child),
 label.group > .toggle-button:first-child:not(:only-child),
 label.group > .toggle-button:not(:first-child):not(:last-child) {
   border-right-color: transparent;
+}
+
+.group {
+  position: relative;
+
+  display: inline-block;
+
+  vertical-align: top;
+  white-space: nowrap;
 }
 
 .group > .toggle-button:not(:first-child):not(:last-child),

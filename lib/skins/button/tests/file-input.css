@@ -4,6 +4,9 @@
   display: inline-block;
   overflow: hidden;
 
+  padding: 6px;
+  margin: -6px;
+
   vertical-align: top;
 }
 
@@ -22,9 +25,4 @@
   font-size: 500px;
 
   opacity: 0;
-}
-
-.file-input {
-  padding: 6px;
-  margin: -6px;
 }

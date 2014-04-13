@@ -1,9 +1,5 @@
 .field-reset {
-  position: relative;
-  z-index: 9;
-
   display: inline-block;
-  float: right;
 
   width: 16px;
   height: 16px;
@@ -22,6 +18,11 @@
 }
 
 .field-reset {
+  position: relative;
+  z-index: 9;
+
+  float: right;
+
   height: auto;
   padding: 0.5rem;
   margin: -0.5rem -1rem -0.5rem 0;

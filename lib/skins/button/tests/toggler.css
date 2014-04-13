@@ -1,9 +1,3 @@
-.toggler-controller {
-  position: absolute !important;
-
-  clip: rect(1px, 1px, 1px, 1px) !important;
-}
-
 .toggler {
   position: relative;
 
@@ -11,6 +5,12 @@
 
   cursor: pointer;
   vertical-align: top;
+}
+
+.toggler-controller {
+  position: absolute !important;
+
+  clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
 input:checked + .toggler-view,

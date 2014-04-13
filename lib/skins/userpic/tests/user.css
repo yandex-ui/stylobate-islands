@@ -1,11 +1,24 @@
 .user-pic {
-  position: relative;
-
-  display: inline-block;
-
   margin-top: -0.2em;
 
   background: 50% no-repeat;
+}
+
+.user-pic,
+.user {
+  position: relative;
+
+  display: inline-block;
+}
+
+.user {
+  cursor: pointer;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+  text-decoration: none;
+
+  color: #000;
 }
 
 .user-pic,
@@ -15,20 +28,6 @@
   text-align: left;
   vertical-align: middle;
   white-space: normal;
-}
-
-.user {
-  position: relative;
-
-  display: inline-block;
-
-  cursor: pointer;
-  text-align: center;
-  vertical-align: top;
-  white-space: nowrap;
-  text-decoration: none;
-
-  color: #000;
 }
 
 .user:hover {

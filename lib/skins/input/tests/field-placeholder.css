@@ -12,21 +12,28 @@
   outline: none;
 }
 
+.field {
+  width: 400px;
+  min-height: 3.2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .field,
 .input-controller {
   position: relative;
 
   display: inline-block;
 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   max-width: 100%;
 
   cursor: text;
   vertical-align: baseline;
-}
-
-.input-controller {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .field-content {
@@ -39,38 +46,22 @@
 }
 
 .field-left {
-  position: relative;
-  z-index: 9;
-
   float: left;
-}
 
-.field-right {
-  position: relative;
-  z-index: 9;
-
-  float: right;
-}
-
-.field {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 400px;
-  min-height: 3.2rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid transparent;
-
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.field-left {
-  padding: 0.5rem 1rem;
   margin: -0.5rem 0 -0.5rem -1rem;
 }
 
+.field-left,
 .field-right {
+  position: relative;
+  z-index: 9;
+
   padding: 0.5rem 1rem;
+}
+
+.field-right {
+  float: right;
+
   margin: -0.5rem -1rem -0.5rem 0;
 }
 
