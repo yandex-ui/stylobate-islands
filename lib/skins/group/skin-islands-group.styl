@@ -18,19 +18,19 @@ $skin-islands-group_vertical
     border-bottom-color: transparent
 
 skin-islands-group-start($this)
-  kind: group-start '&,&:before' (vertical in $this.arguments ? vertical : false)
+  kind: group-start '&,&:before' $this.params.vertical
 
-  $placeholder = vertical in $this.arguments ? '$skin-islands-group_vertical' : '$skin-islands-group'
+  $placeholder = $this.params.vertical ? '$skin-islands-group_vertical' : '$skin-islands-group'
   @extends {$placeholder}
 
 skin-islands-group-middle($this)
-  kind: group-middle '&,&:before' (vertical in $this.arguments ? vertical : false)
+  kind: group-middle '&,&:before' $this.params.vertical
 
-  $placeholder = vertical in $this.arguments ? '$skin-islands-group_vertical' : '$skin-islands-group'
+  $placeholder = $this.params.vertical ? '$skin-islands-group_vertical' : '$skin-islands-group'
   @extends {$placeholder}
 
 skin-islands-group-end($this)
-  kind: group-end '&,&:before' (vertical in $this.arguments ? vertical : false)
+  kind: group-end '&,&:before' $this.params.vertical
 
 skin-islands-group-item($this)
   &:first-child:not(:only-child)
@@ -43,10 +43,10 @@ skin-islands-group-item($this)
     skin-islands-group-end($this)
 
 skin-islands-nested-group-item($this)
-  $nested-group-item = $this.strings[0] or '.toggler-view'
-  kind: group-item ('& > ' + $nested-group-item + ', & > ' + $nested-group-item + ':before') (vertical in $this.arguments ? vertical : false)
+  $nested-group-item = $this.selectors[0] or '.toggler-view'
+  kind: group-item ('& > ' + $nested-group-item + ', & > ' + $nested-group-item + ':before') $this.params.vertical
 
   &:not(:last-child):not(:only-child) > {$nested-group-item}
-    $placeholder = vertical in $this.arguments ? '$skin-islands-group_vertical' : '$skin-islands-group'
+    $placeholder = $this.params.vertical ? '$skin-islands-group_vertical' : '$skin-islands-group'
     @extends {$placeholder}
 

@@ -7,6 +7,6 @@ skin-islands-button_focus($this)
     skin-islands-button_focus_style($this)
 
 // https://github.com/stylobate/stylobate/issues/65
-skin-islands-button_focus_style($this={arguments:''})
+skin-islands-button_focus_style($this=stylobate_this())
   box-shadow: $islands_shadow_focus, inset 0 0 0 1px rgba(193,154,0, 0.2);
-  border-radius: inherit unless no-radius in $this.arguments
+  border-radius: inherit unless $this.params.no-radius

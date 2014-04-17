@@ -1,5 +1,5 @@
 skin-islands-icon($this)
-  if with-hover in $this.arguments
+  if $this.params.with-hover
     @extends $skin-islands-icon_with-hover
 
 skin-islands-icon_remove()
@@ -35,10 +35,10 @@ $skin-islands-icon_notification
 skin-islands-icon_dropdown($this)
   skin-islands-icon_arrow($this)
 
-  if selecty in $this.arguments
+  if $this.params.selecty
     float: right
 
-    if small in $this.arguments
+    if $this.params.small
       top: 0.58em
     else
       top: 0.7em
@@ -49,10 +49,10 @@ skin-islands-icon_dropdown($this)
 
 skin-islands-icon_arrow($this)
   if !ie
-    $size = utilus_get($this.arguments, 'size') or $this.units[0] or 6px
-    kind: icon (size $size)
+    $size = $this.params.size or $this.units[0] or 6px
+    kind: icon ('size' $size)
 
-    $width = utilus_get($this.arguments, 'width', 2px)
+    $width = $this.params.width or 2px
     border-bottom: $width solid
     border-right: $width solid
     margin-top: -0.33em
@@ -61,7 +61,7 @@ skin-islands-icon_arrow($this)
     unless $color == inherit
       color: $color
 
-    if with-transition in $this.arguments
+    if $this.params.with-transition
       transition: transform 0.3s
 
   if ie
@@ -73,6 +73,7 @@ skin-islands-icon_arrow($this)
 skin-islands-icon_arrow-direction($this)
   if !ie
     $angle = 45deg
+    // Here and later we do not need to look at the parents, so — arguments.
     if top in $this.arguments
       $angle = -135deg
 
@@ -82,25 +83,25 @@ skin-islands-icon_arrow-direction($this)
     else if left in $this.arguments
       $angle = 135deg
 
-    $offset-x = utilus_get($this.arguments, 'offset-x', '')
+    $offset-x = $this.params.offset-x
     if $offset-x
       $offset-x = 'translateX(%s)'% $offset-x
 
-    $offset-y = utilus_get($this.arguments, 'offset-y', '')
+    $offset-y = $this.params.offset-y
     if $offset-y
       $offset-y = 'translateY(%s)'% $offset-y
 
-    transform: unquote($offset-x) unquote($offset-y) scale(0.75) rotate($angle)
+    transform: $offset-x $offset-y scale(0.75) rotate($angle)
 
   if ie
-    $size = utilus_get($this.arguments, 'size') or $this.units[0] or 6px
+    $size = $this.params.size or $this.units[0] or 6px
     border: $size solid
 
-    if left in $this.arguments || right in $this.arguments
+    if $this.params.left || $this.params.right
       border-top-color: transparent
       border-bottom-color: transparent
 
-      if right in $this.arguments
+      if $this.params.right
         border-left-width: 0
       else
         border-right-width: 0
@@ -108,13 +109,13 @@ skin-islands-icon_arrow-direction($this)
       border-right-color: transparent
       border-left-color: transparent
 
-      if top in $this.arguments
+      if $this.params.top
         border-top-width: 0
       else
         border-bottom-width: 0
 
 skin-islands-icon_check($this)
-  if absolute in $this.arguments
+  if $this.params.absolute
     position: absolute
     top: 50%
     left: 50%

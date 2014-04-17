@@ -10,10 +10,10 @@ skin-islands-button_checked($this)
         gradient: #FFECA6, #FFF6D5
         box-shadow: 0 1px 3px -1px rgba(#000, 0.45) inset
 
-      if fly in $this.arguments
+      if $this.params.fly
         top: 1px
       else
-        $selector = $this.strings[0] or $skin-islands-button-content
+        $selector = $this.selectors[0] or $skin-islands-button-content
         & { $selector }
           top: 1px
     else

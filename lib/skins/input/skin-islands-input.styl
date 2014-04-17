@@ -12,10 +12,10 @@ skin-islands-input-box($this)
   border: 1px solid transparent
   padding: 0.5*$islands_s $islands_s
 
-  if centered in $this.arguments
+  if $this.params.centered
     text-align: center
 
-  if small in $this.arguments
+  if $this.params.small
     line-height: $islands_m
 
     if ie
@@ -58,7 +58,7 @@ skin-islands-input-view($this)
 
   -webkit-appearance: none /* override for <input type="search"> */
 
-  unless no-focus in $this.arguments
+  unless $this.params.no-focus
     &:focus
       skin-islands-input_focus()
 
@@ -106,9 +106,7 @@ skin-islands-input-placeholder-inner($this)
   top: -1px
   left: -1px
 
-  is_small_placeholder = ''
-  is_small_placeholder = unquote('small') if small in $this['parent'].arguments or small in $this.arguments
-  global_skin(islands-input-box is_small_placeholder)
+  global_skin(islands-input-box $this.params.small)
   padding: 0
   min-height: 0
 

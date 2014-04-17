@@ -1,16 +1,16 @@
 skin-islands-checkbox($this)
   if !ie
-    global_skin: islands-button no-active middle retrieve($this.arguments, sizeless, adaptive) (_hover '')
+    global_skin: islands-button no-active middle retrieve($this.params, sizeless, adaptive) (_hover '')
 
     text-align: center
 
   margin-right: $islands_xs
 
-  unless ie or (no-elements in $this.arguments)
+  unless ie or $this.params.no-elements
     stylobate_defaults($this,
       -icon '& > &-icon')
 
-  deprecate($this.arguments, no-elements)
+  deprecate($this.params, no-elements)
 
 skin-islands-checkbox-icon()
   if !ie
