@@ -5,10 +5,10 @@ skin-islands-arrow($this)
   $height = $this.units[0] or $skin-islands-arrow-height
   $color = $this.colors[0] or $skin-islands-arrow-color
 
-  if tail in $this.arguments
+  if $this.params.tail
     skin-islands-arrow-helper($this)
   else
-    if search in $this.arguments
+    if $this.params.search
       padding: ($islands_xs - 0.1*rem) ($islands_m - 0.2*rem) ($islands_xs - 0.1*rem) ($islands_xs - 0.1*rem)
     else
       padding: ($islands_xs + 0.2*rem) ($islands_m - 0.1*rem)
@@ -20,44 +20,41 @@ skin-islands-arrow($this)
 
     margin-right: round(($height / 2) * tan(30deg), 3)
 
-    unless ie or (no-elements in $this.arguments)
+    unless ie or ($this.params.no-elements)
       stylobate_defaults($this,
         -helper '&:before')
 
-    deprecate($this.arguments, no-elements)
+    deprecate($this.params, no-elements)
 
 skin-islands-arrow-helper($this)
   pseudo-with-content()
 
+  +cache()
+    position: absolute
+    left: 100%
+
+    if ie
+      top: 0
+      height: 0
+
+      border-style: dashed solid
+    else
+      top: 50%
+
+      transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
+
   $height = $this.units[0] or $this['parent']['units'][0] or $skin-islands-arrow-height
   $color = $this.colors[0] or $this['parent']['colors'][0] or $skin-islands-arrow-color
+  +cache($height $color)
+    if ie
+      border-color: transparent $color
+      border-width: ($height / 2) 0 ($height / 2) (round(($height / 2) * tan(30deg), 3))
+    else
+      $sqrt2 = 1.414213562
+      width: $height * (1/$sqrt2)
+      height: $height * (1/$sqrt2)
 
-  @extends $skin-islands-arrow-helper
+      background: linear-gradient(45deg, $color 50%,transparent 50%)
 
-  if ie
-    border-color: transparent $color
-    border-width: ($height / 2) 0 ($height / 2) (round(($height / 2) * tan(30deg), 3))
-  else
-    $sqrt2 = 1.414213562
-    width: $height * (1/$sqrt2)
-    height: $height * (1/$sqrt2)
-
-    background: linear-gradient(45deg, $color 50%,transparent 50%)
-
-    if alpha($color) == 1
-      -webkit-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg) translateZ(0)
-
-$skin-islands-arrow-helper
-  position: absolute
-  left: 100%
-
-  if ie
-    top: 0
-    height: 0
-
-    border-style: dashed solid
-  else
-    top: 50%
-
-    transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
-
+      if alpha($color) == 1
+        -webkit-transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg) translateZ(0)

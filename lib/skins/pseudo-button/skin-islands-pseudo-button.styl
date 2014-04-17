@@ -3,14 +3,14 @@ skin-islands-pseudo-button($this)
 
   position: relative
 
-  $align = utilus_retrieve($this.arguments, middle top bottom, baseline)
+  $align = utilus_retrieve($this.params, middle top bottom, baseline)
   $align = middle if ie and $align == baseline
   vertical-align: $align
 
   color: $islands_color_text
 
   border-radius: 3px
-  $border-alpha = utilus_get($this.arguments, 'border-alpha') or 0.2
+  $border-alpha = $this.params.border-alpha or 0.2
   box-shadow: inset 0 0 0 1px rgba(#000, $border-alpha)
 
   if ie
@@ -30,7 +30,7 @@ skin-islands-pseudo-button($this)
   & { $selector }
     kind: block
 
-  if small in $this.arguments
+  if $this.params.small
     global_skin: islands-para2 no-margin
     if !ie
       padding: ($islands_xs - 0.3*rem) $islands_s
@@ -48,14 +48,12 @@ skin-islands-pseudo-button($this)
     _focus '&:focus')
 
 skin-islands-pseudo-button_hover($this)
-  $border-alpha = utilus_get($this['parent'].arguments, 'border-alpha')
-  $border-alpha = utilus_get($this.arguments, 'border-alpha') or ($border-alpha ? ($border-alpha + 0.15) : 0.35)
+  $border-alpha = $this.params.border-alpha ? $this.params.border-alpha + 0.15 : 0.35
 
   box-shadow: inset 0 0 0 1px rgba(#000, $border-alpha)
 
 skin-islands-pseudo-button_focus($this)
-  $border-alpha = utilus_get($this['parent'].arguments, 'border-alpha')
-  $border-alpha = utilus_get($this.arguments, 'border-alpha') or ($border-alpha ? ($border-alpha + 0.15) : 0.35)
+  $border-alpha = $this.params.border-alpha ? $this.params.border-alpha + 0.15 : 0.35
 
   box-shadow: inset 0 0 0 1px rgba(#000, $border-alpha)
 
@@ -64,7 +62,7 @@ skin-islands-pseudo-button_focus($this)
 skin-islands-pseudo-button_inverted($this)
   color: darken(invert($islands_color_text), 10%)
 
-  $border-alpha = utilus_get($this['parent'].arguments, 'border-alpha') or 0.3
+  $border-alpha = $this.params.border-alpha or 0.3
   box-shadow: inset 0 0 0 1px rgba(#FFF, $border-alpha)
 
   if ie
@@ -75,13 +73,11 @@ skin-islands-pseudo-button_inverted($this)
     _focus '&:focus' _inverted)
 
 skin-islands-pseudo-button_inverted_hover($this)
-  $border-alpha = utilus_get($this['parent']['parent'].arguments, 'border-alpha')
-  $border-alpha = utilus_get($this['parent'].arguments, 'border-alpha') or ($border-alpha ? ($border-alpha + 0.2) : 0.5)
+  $border-alpha = $this.params.border-alpha ? $this.params.border-alpha + 0.2 : 0.5
 
   box-shadow: inset 0 0 0 1px rgba(#FFF, $border-alpha)
 
 skin-islands-pseudo-button_inverted_focus($this)
-  $border-alpha = utilus_get($this['parent']['parent'].arguments, 'border-alpha')
-  $border-alpha = utilus_get($this['parent'].arguments, 'border-alpha') or ($border-alpha ? ($border-alpha + 0.2) : 0.5)
+  $border-alpha = $this.params.border-alpha ? $this.params.border-alpha + 0.2 : 0.5
 
   box-shadow: inset 0 0 0 1px rgba(#FFF, $border-alpha)
