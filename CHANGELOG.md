@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.26.1 (2014-04-17)
+
+- Fixed rgba to rgba-ie in border-color values, #70.
+
 ## v0.26.0 (2014-04-10)
 
 - Added a way to configure border-alpha of pseudo-buttons.
