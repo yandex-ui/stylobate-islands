@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.27.0 (2014-04-24)
+
+- Applied latest Stylobate, some API changes, caching and other stuff.
+
 ## v0.26.1 (2014-04-17)
 
 - Fixed rgba to rgba-ie in border-color values, #70.
