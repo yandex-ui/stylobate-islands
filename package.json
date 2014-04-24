@@ -17,7 +17,7 @@
   },
 
   "dependencies": {
-    "stylus": "0.42.x",
+    "stylus": "0.44.x",
     "stylobuild": "0.4.x"
   },
 
