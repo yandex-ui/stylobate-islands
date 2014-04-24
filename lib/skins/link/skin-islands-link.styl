@@ -25,10 +25,10 @@ skin-islands-link($this)
     background-size: 16px 16px
 
 skin-islands-outer-link($this)
-  skin-islands-link(#070 $this.idents[0])
+  global_skin: islands-link #070 $this.idents[0]
 
-skin-islands-pseudo-link()
-  skin-islands-link(pseudo $this.idends[0])
+skin-islands-pseudo-link($this)
+  global_skin: islands-link pseudo $this.idents[0]
 
 skin-islands-link_selected()
   color: #000

@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.27.1 (2014-04-24)
+
+- Fixed a few left issues: links and form.
+
 ## v0.27.0 (2014-04-24)
 
 - Applied latest Stylobate, some API changes, caching and other stuff.
