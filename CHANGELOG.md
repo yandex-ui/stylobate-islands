@@ -5,6 +5,7 @@
 ## v0.27.2 (2014-04-26)
 
 - Fixed broken `init_islands_root`.
+- Updated Stylobate to v0.24.1.
 
 ## v0.27.1 (2014-04-24)
 
