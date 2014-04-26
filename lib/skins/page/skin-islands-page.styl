@@ -27,10 +27,13 @@ skin-islands-page-body($this)
   unless $init_islands_root
     $init_islands_root[0] = true
 
-// Init if the var is set
-if $init_islands_root
+init_islands_root()
   html
-    skin-islands-page()
+    global_skin: islands-page
 
   body
-    skin-islands-page-body()
+    global_skin: islands-page-body
+
+// Init if the var is set
+if $init_islands_root
+  init_islands_root()

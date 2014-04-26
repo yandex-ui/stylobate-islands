@@ -1,0 +1,25 @@
+html, body {
+  padding: 0;
+  border: 0;
+  margin: 0;
+
+  vertical-align: baseline;
+
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  color: #000;
+
+  background: #F6F5F3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+
+  background: transparent;
+}

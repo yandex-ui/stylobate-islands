@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.27.2 (2014-04-26)
+
+- Fixed broken `init_islands_root`.
+
 ## v0.27.1 (2014-04-24)
 
 - Fixed a few left issues: links and form.
