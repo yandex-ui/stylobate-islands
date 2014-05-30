@@ -2,6 +2,11 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.27.3 (2014-05-30)
+
+- Fixed clean-css issue in promo-button, #74.
+- Updated dev deps and fixed Travis issue.
+
 ## v0.27.2 (2014-04-26)
 
 - Fixed broken `init_islands_root`.
