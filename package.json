@@ -1,6 +1,6 @@
 {
   "name": "stylobate-islands",
-  "version": "0.27.3",
+  "version": "0.27.4",
   "author": "Roman Komarov <kizmarh@ya.ru> (http://kizu.ru/en/)",
   "licence": "MIT",
   "description": "Islands skin for stylobate",
@@ -13,7 +13,7 @@
     "url": "git://github.com/yandex-ui/stylobate-islands.git"
   },
   "dependencies": {
-    "stylobate": "0.24.1"
+    "stylobate": "0.24.2"
   },
   "devDependencies": {
     "autoprefixer": "1.1.x",

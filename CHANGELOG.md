@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.27.4 (2014-05-30)
+
+- Updated Stylobate dep, fixes icon problems.
+
 ## v0.27.3 (2014-05-30)
 
 - Fixed clean-css issue in promo-button, #74.
