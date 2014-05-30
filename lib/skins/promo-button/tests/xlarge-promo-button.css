@@ -40,9 +40,9 @@
   color: #473E09;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.36);
 
+  background: #F9C400;
   background: -webkit-linear-gradient(top, #FFE025, #F9C400 92%, #BE8C05);
   background: linear-gradient(to bottom, #FFE025, #F9C400 92%, #BE8C05);
-  background-color: #F9C400;
   box-shadow: 0 0 1px 0 #FFF;
 
   border-radius: 8px;
@@ -50,9 +50,9 @@
 }
 
 .xlarge-promo-button:active {
+  background: #FFE652;
   background: -webkit-linear-gradient(top, #C69007, #F8C106 8%, #DEC35E);
   background: linear-gradient(to bottom, #C69007, #F8C106 8%, #DEC35E);
-  background-color: #FFE652;
 }
 
 .xlarge-promo-button:active:before {

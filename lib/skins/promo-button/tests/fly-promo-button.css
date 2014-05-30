@@ -40,9 +40,9 @@
   color: #473E09;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.36);
 
+  background: #F9C400;
   background: -webkit-linear-gradient(top, #FFE025, #F9C400 92%, #BE8C05);
   background: linear-gradient(to bottom, #FFE025, #F9C400 92%, #BE8C05);
-  background-color: #F9C400;
   box-shadow: 0 0 1px 0 #FFF, 0 9px 18px 0 rgba(153, 120, 46, 0.36);
 
   border-radius: 4px;
