@@ -28,9 +28,6 @@ skin-islands-v3-proto-button($this)
 
   border-radius: 3px
 
-  if $this.params.fly
-    box-shadow: 0 8px 20px -5px rgba(#000, 0.25)
-
   &:before
     content: ""
     kind: fill 1px
@@ -67,10 +64,14 @@ skin-islands-v3-proto-button($this)
       else
         padding: ($islands_xs - 0.2*rem) ($islands_m - 0.2*rem)
 
+  unless $this.params.no-hover
+    if !ie
+      transition: background 0.05s ease-out 0.05s
+
   unless $this.params.no-active
-    input[type=file]:active + &,
-    &:active
-      skin-islands-v3-button_pressed($this)
+    if !ie
+      &:before
+        transition: background 0.05s ease-out 0.05s
 
   // So it would overlay anything inside
   &:after
@@ -92,21 +93,25 @@ skin-islands-v3-button($this)
   skin-islands-v3-proto-button($this)
 
   if !ie
-    gradient: #000 0.2, 0.4
+    background: rgba(#000, 0.2)
 
     &:before
-      gradient: #FFF, #EEE
+      background: #FFF
 
   else
-    background: #F6F6F6
+    background: #FFF
     border: 1px solid
-    border-color: #CBCBCB #B2B2B2 #9A9A9A
+    border-color: #CBCBCB
 
   deprecate($this.params, no-hover)
 
   stylobate_defaults($this,
      _hover ($this.params.no-hover ? '' : 'input[type=file]:hover + &'),
      _hover ($this.params.no-hover ? '' : '&:hover'))
+
+  stylobate_defaults($this,
+     _pressed ($this.params.no-active ? '' : 'input[type=file]:active + &'),
+     _pressed ($this.params.no-active ? '' : '&:active'))
 
 
 // Action button
@@ -130,14 +135,15 @@ skin-islands-v3-action-button($this)
      _hover ($this.params.no-hover ? '' : 'input[type=file]:hover + &'),
      _hover ($this.params.no-hover ? '' : '&:hover'))
 
+  stylobate_defaults($this,
+     _pressed ($this.params.no-active ? '' : 'input[type=file]:active + &'),
+     _pressed ($this.params.no-active ? '' : '&:active'))
+
 
 // Hover state
 skin-islands-v3-button_hover()
   +cache('skin-islands-v3-button_hover')
-    gradient: #000 0.22, 0.4
-
-    &:before
-      gradient: #FFF, #F6F5F3
+    background: rgba(#000, 0.3)
 
 
 // Hover state for action
@@ -148,19 +154,20 @@ skin-islands-v3-action-button_hover()
 
 // Pressed state
 skin-islands-v3-button_pressed($this)
-  if !ie
-    if $this.params.fly
-      top: 1px
-      box-shadow: 0 4px 10px -4px rgba(#000, 0.45)
-    else
-      box-shadow: inset 0 2px 1px -1px rgba(#000, 0.4), 0 1px 0 rgba(#FFF, 0.2)
-
+  +cache('skin-islands-v3-button_pressed')
+    if !ie
       &:before
-        box-shadow: inset 0 1px 3px -1px rgba(#000, 0.5)
+        background: #F6F5F3
 
-      if $this.params.one-element
-        text-shadow: 0 1px 0 $islands_color_text
-      else
-        $selector = $this.selectors[0] or $skin-islands-v3-button-content
-        & { $selector }
-          top: 1px
+    else
+      background: #F6F5F3
+
+// Pressed state for action
+skin-islands-v3-action-button_pressed($this)
+  +cache('skin-islands-v3-action-button_pressed')
+    if !ie
+      &:before
+        background: #FC0
+
+    else
+      background: #FC0

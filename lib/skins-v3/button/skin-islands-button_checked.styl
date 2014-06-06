@@ -3,20 +3,25 @@ skin-islands-v3-button_checked($this)
   &,
   &:hover
     if !ie
-      background: rgba(255,236,166, 0.4)
-      box-shadow: 0 1px 7px rgba(30,23,0,.8) inset, 0 2px 0 -1px rgba(255,255,255,.2)
+      background: rgba(#997A00, 0.5)
 
       &:before
-        gradient: #FFECA6, #FFF6D5
-        box-shadow: 0 1px 3px -1px rgba(#000, 0.45) inset
+        background: #FFEBA0
 
-      if $this.params.fly
-        top: 1px
-      else
-        $selector = $this.selectors[0] or $skin-islands-v3-button-content
-        & { $selector }
-          top: 1px
     else
-      background: #FFF1C0
-      border-color: #999278 #B4AD93 #CCC4AA
+      background: #FFEBA0
+      border-color: #CBBD7B
 
+  unless $this.params.no-hover
+    &:hover
+      if !ie
+        background: rgba(#816700, 0.6)
+
+  unless $this.params.no-active
+    &:active
+      if !ie
+        &:before
+          background: #FEE481
+
+      else
+        background: #FEE481
