@@ -1,0 +1,14 @@
+.toggler
+  kind: block inline
+
+  // To use in checkboxes etc.
+  cursor: pointer
+
+  &-controller
+    kind: hidden visually
+
+  input:checked + &-view
+    skin: button_checked
+
+  :focus + &-view
+    skin: button_focus
