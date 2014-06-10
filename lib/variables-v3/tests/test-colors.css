@@ -1,0 +1,47 @@
+.test1_defaults {
+  color: #000;
+
+  background: #FFF;
+}
+
+.test1_misc {
+  color: rgba(0, 0, 0, 0.5);
+
+  background: #F6F5F3;
+}
+
+.test1_focus {
+  background: #FC0;
+}
+
+.test1_error {
+  background: rgba(255, 0, 0, 0.7);
+}
+
+.test1_selected {
+  background: rgba(255, 193, 0, 0.37);
+}
+
+.test2_defaults {
+  color: #000;
+
+  background: #FFF;
+}
+
+.test2_misc {
+  color: rgba(0, 0, 0, 0.5);
+
+  background: #F6F5F3;
+}
+
+.test2_focus {
+  background: #FC0;
+}
+
+.test2_error {
+  background: rgba(255, 0, 0, 0.7);
+}
+
+.test2_selected {
+  background: rgba(255, 193, 0, 0.37);
+}

@@ -1,0 +1,19 @@
+.small-field {
+  position: relative;
+
+  display: inline-block;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 400px;
+  max-width: 100%;
+  min-height: 2.8rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+
+  cursor: text;
+  vertical-align: baseline;
+
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}

@@ -1,0 +1,27 @@
+.field
+  kind: field 0.5*$islands_s $islands_s
+  skin: input-box
+
+.input-controller
+  kind: input
+  z-index: 9
+  width: 100%
+  height: 100%
+
+.field-placeholder
+  skin: input-placeholder (-inner '&-inner') (-ghost '&-ghost')
+
+.small-field-placeholder
+  skin: input-placeholder small (-inner '&-inner')
+
+textarea.input-controller
+  vertical-align: top
+  resize: none
+
+.input-view
+  kind: fill -1px
+  skin: input-view no-focus
+
+  :focus + &
+    skin: input_focus
+
