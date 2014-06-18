@@ -4,3 +4,9 @@ skin-islands-v3-button_focus($this)
 
   &:after
     z-index: 9 // So it would be over other elements nearby
+    skin-islands-button_focus_style($this)
+
+// https://github.com/stylobate/stylobate/issues/65
+skin-islands-button_focus_style($this=stylobate_this())
+  box-shadow: $islands-v3_shadow_focus;
+  border-radius: inherit unless $this.params.no-radius
