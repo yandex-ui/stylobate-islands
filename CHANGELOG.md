@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v0.27.5 (2014-06-18)
+
+- Updated Stylobate dep, fixes rem problem.
+
 ## v0.27.4 (2014-05-30)
 
 - Updated Stylobate dep, fixes icon problems.
