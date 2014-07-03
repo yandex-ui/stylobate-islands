@@ -3,7 +3,6 @@
 
   display: inline-block;
 
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 400px;
   max-width: 100%;

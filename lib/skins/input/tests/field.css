@@ -28,7 +28,6 @@
 
   display: inline-block;
 
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 100%;
 

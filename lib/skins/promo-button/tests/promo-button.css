@@ -18,7 +18,6 @@
 
   display: inline-block;
 
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 1.3rem 2.7rem;
   border: none;

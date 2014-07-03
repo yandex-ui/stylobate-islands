@@ -28,7 +28,6 @@
 
   display: inline-block;
 
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 100%;
 
@@ -90,7 +89,6 @@
 
   overflow: hidden;
 
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 100%;
   min-height: 0;
@@ -127,7 +125,6 @@
 
   overflow: hidden;
 
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 100%;
   min-height: 0;
