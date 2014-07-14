@@ -49,12 +49,10 @@ skin-islands-v3-arrow-body($this)
     $tail-width = round(($height / 2) * tan(30deg), 3)
     margin-right: $tail-width
 
-    border: $skin-islands-v3-arrow-border-width solid transparent
-    border-right: 0
+    border: $skin-islands-v3-arrow-border-width solid $color
+    border-right-width: 0
 
-    background: \
-      linear-gradient(90deg, $islands-v3_bg_main, $islands-v3_bg_main) padding-box, \
-      linear-gradient(90deg, $color, $color) border-box
+    background: $islands-v3_bg_main
 
 skin-islands-v3-arrow-tail($this)
   pseudo-with-content()
@@ -74,13 +72,13 @@ skin-islands-v3-arrow-tail($this)
     $tail-width = round(($height / 2) * tan(30deg), 3) + $skin-islands-v3-arrow-border-width
     width: round($height * (1/$sqrt2), 1)
     height: round($height * (1/$sqrt2), 1)
-    margin-left: -($tail-width)
+    margin-left: -($tail-width) + 0.05*rem
 
-    border: ($skin-islands-v3-arrow-border-width + 0.1*rem) solid transparent
+    border: ($skin-islands-v3-arrow-border-width + 0.1*rem) solid $color
+    border-top: 0
+    border-right: 0
 
-    background: \
-      linear-gradient(45deg, $islands-v3_bg_main 50%, transparent 50%) no-repeat padding-box, \
-      linear-gradient(45deg, $color 50%, transparent 50%) border-box
+    background: linear-gradient(90deg, $islands-v3_bg_main, $islands-v3_bg_main) border-box
 
     // Fix jugged edges in Chrome
     if alpha($color) == 1
