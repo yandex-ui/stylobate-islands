@@ -1,0 +1,173 @@
+// What to simplify:
+// 1. Detail/skin/kind for layered button with gradiented borders, to call both gradients at the same time.
+// 2. Move different buttons to other files.
+// 3. Move the focus to skin/detail, to use it both there and for pseudo-button
+// 4. Better handling of arguments?
+
+// Proto for simple buttons
+$skin-islands-v3-button-content ?= '.button-content'
+skin-islands-v3-proto-button($this)
+  skin-islands-check-font()
+
+  // unless only in arguments
+  position: relative
+
+  $align = utilus_retrieve($this.params, middle top bottom, baseline)
+  $align = middle if ie and $align == baseline
+  vertical-align: $align
+  user-select: none
+
+  if $this.params.one-element and !ie
+    color: transparent
+    color: $islands_color_text unquote('\0/') // For IE9
+
+    text-shadow: 0 0 0 $islands_color_text
+    z-index: 9
+  else
+    color: $islands_color_text
+
+  border-radius: 3px
+
+  &:before
+    content: ""
+    kind: fill 1px
+    border-radius: 2px
+
+    if $this.params.one-element
+      z-index: -1
+
+  $selector = $this.selectors[0] or $skin-islands-v3-button-content
+  & { $selector }
+    kind: block
+    if ie
+      button&
+        margin: -1px -1px -3px
+
+  if $this.params.small
+    global_skin: islands-para2 no-margin
+    if !ie
+      padding: ($islands_xs - 0.1*rem) ($islands_m - 0.3*rem)
+    else
+      padding: ($islands_xs - 0.2*rem) ($islands_m - 0.4*rem)
+
+  else if $this.params.adaptive
+    width: 1em
+    height: 1em
+    padding: 0 1px 1px 0
+    line-height: 1em
+
+  else
+    unless $this.params.sizeless
+      global_skin: islands-para no-margin
+      if !ie
+        padding: ($islands_xs - 0.1*rem) ($islands_m - 0.1*rem)
+      else
+        padding: ($islands_xs - 0.2*rem) ($islands_m - 0.2*rem)
+
+  unless $this.params.no-hover
+    if !ie
+      transition: background 0.05s ease-out 0.05s
+
+  unless $this.params.no-active
+    if !ie
+      &:before
+        transition: background 0.05s ease-out 0.05s
+
+  // So it would overlay anything inside
+  &:after
+    content: ""
+    kind: fill
+
+  // Possible CSS-only way to disable focus on clicked buttons
+  // &:hover:after
+  //   -moz-transition: box-shadow 0.1s 999s
+
+  unless $this.params.no-focus
+    input[type=file]:focus + &,
+    &:focus
+      skin-islands-v3-button_focus($this)
+
+
+// Normal button
+skin-islands-v3-button($this)
+  skin-islands-v3-proto-button($this)
+
+  if !ie
+    background: rgba(#000, 0.2)
+
+    &:before
+      background: #FFF
+
+  else
+    background: #FFF
+    border: 1px solid
+    border-color: #CBCBCB
+
+  deprecate($this.params, no-hover)
+
+  stylobate_defaults($this,
+     _hover ($this.params.no-hover ? '' : 'input[type=file]:hover + &'),
+     _hover ($this.params.no-hover ? '' : '&:hover'))
+
+  stylobate_defaults($this,
+     _pressed ($this.params.no-active ? '' : 'input[type=file]:active + &'),
+     _pressed ($this.params.no-active ? '' : '&:active'))
+
+
+// Action button
+skin-islands-v3-action-button($this)
+  skin-islands-v3-proto-button($this)
+
+  if !ie
+    background: rgba(#BF9900, 0.8)
+
+    &:before
+      background: #FFDB4D
+
+  else
+    background: #FFDB4D
+    border: 1px solid
+    border-color: #CCAE21
+
+  deprecate($this.params, no-hover)
+
+  stylobate_defaults($this,
+     _hover ($this.params.no-hover ? '' : 'input[type=file]:hover + &'),
+     _hover ($this.params.no-hover ? '' : '&:hover'))
+
+  stylobate_defaults($this,
+     _pressed ($this.params.no-active ? '' : 'input[type=file]:active + &'),
+     _pressed ($this.params.no-active ? '' : '&:active'))
+
+
+// Hover state
+skin-islands-v3-button_hover()
+  +cache('skin-islands-v3-button_hover')
+    background: rgba(#000, 0.3)
+
+
+// Hover state for action
+skin-islands-v3-action-button_hover()
+  +cache('skin-islands-v3-action-button_hover')
+    background: rgba(#9F7F00, 0.8)
+
+
+// Pressed state
+skin-islands-v3-button_pressed($this)
+  +cache('skin-islands-v3-button_pressed')
+    if !ie
+      &:before
+        background: #F6F5F3
+
+    else
+      background: #F6F5F3
+
+// Pressed state for action
+skin-islands-v3-action-button_pressed($this)
+  +cache('skin-islands-v3-action-button_pressed')
+    if !ie
+      &:before
+        background: #FC0
+
+    else
+      background: #FC0

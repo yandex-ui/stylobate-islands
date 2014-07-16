@@ -1,0 +1,27 @@
+// Selected state
+skin-islands-v3-button_checked($this)
+  &,
+  &:hover
+    if !ie
+      background: rgba(#997A00, 0.5)
+
+      &:before
+        background: #FFEBA0
+
+    else
+      background: #FFEBA0
+      border-color: #CBBD7B
+
+  unless $this.params.no-hover
+    &:hover
+      if !ie
+        background: rgba(#816700, 0.6)
+
+  unless $this.params.no-active
+    &:active
+      if !ie
+        &:before
+          background: #FEE481
+
+      else
+        background: #FEE481
