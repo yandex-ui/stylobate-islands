@@ -1,0 +1,10 @@
+.test1
+  &_focus
+    box-shadow: $islands-v3_shadow_focus
+  &_error
+    box-shadow: $islands-v3_shadow_error
+
+.test2
+  for $name, $shadow in $islands-v3.shadows
+    &_{$name}
+      box-shadow: $shadow

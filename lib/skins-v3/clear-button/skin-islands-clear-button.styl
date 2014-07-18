@@ -1,0 +1,67 @@
+skin-islands-v3-clear-button($this)
+  global_skin: islands-check-font
+
+  position: relative
+
+  $align = utilus_retrieve($this.params, middle top bottom, baseline)
+  $align = middle if ie and $align == baseline
+  vertical-align: $align
+
+  color: $islands_color_text
+
+  border-radius: 3px
+
+  if ie
+    border: 1px solid #CBCBCB
+
+  unless ie
+    transition: background 0.05s ease-out 0.05s
+
+  $selector = $this.strings[0] or $skin-islands-button-content
+  & { $selector }
+    kind: block
+    opacity: 0.25
+    transition: opacity .1s ease-out
+
+  if $this.params.small
+    global_skin: islands-para2 no-margin
+    if !ie
+      padding: ($islands_xs - 0.3*rem) $islands_s
+    else
+      padding: ($islands_xs - 0.4*rem) ($islands_s - 0.1*rem)
+  else
+    global_skin: islands-para no-margin
+    if !ie
+      padding: ($islands_xs - 0.3*rem) ($islands_s + 0.1*rem)
+    else
+      padding: ($islands_xs - 0.4*rem) $islands_s
+
+  stylobate_defaults($this,
+    _hover '&:hover',
+    _pressed '&:active',
+    _focus '&:focus')
+
+skin-islands-v3-clear-button_hover($this)
+  & { $skin-islands-button-content }
+    opacity: 1
+
+skin-islands-v3-clear-button_pressed($this)
+  & { $skin-islands-button-content }
+    opacity: 1
+
+  background: #F6F5F3
+
+skin-islands-v3-clear-button_focus($this)
+  outline: 0
+  box-shadow: $islands-v3_shadow_focus;
+
+  & { $skin-islands-button-content }
+    opacity: 1
+
+skin-islands-v3-clear-button_checked($this)
+  &,
+  &:hover
+    background: #FFEBA0
+
+  & { $skin-islands-button-content }
+    opacity: 1
