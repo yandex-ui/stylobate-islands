@@ -4,6 +4,7 @@
 
 ## v1.0.0 (in development)
 
+- **Breaking change:** Changed notation for elements from `foo-element` to `foo__element`.
 - Using Stylobate 1.0.0
 
 ## v0.28.0 (2014-07-03)

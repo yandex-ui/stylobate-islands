@@ -6,7 +6,7 @@ skin-islands-arrow($this)
   $color = $this.colors[0] or $skin-islands-arrow-color
 
   if $this.params.tail
-    skin-islands-arrow-helper($this)
+    skin-islands-arrow__helper($this)
   else
     if $this.params.search
       padding: ($islands_xs - 0.1*rem) ($islands_m - 0.2*rem) ($islands_xs - 0.1*rem) ($islands_xs - 0.1*rem)
@@ -22,11 +22,11 @@ skin-islands-arrow($this)
 
     unless ie or ($this.params.no-elements)
       stylobate_defaults($this,
-        -helper '&:before')
+        __helper '&:before')
 
     deprecate($this.params, no-elements)
 
-skin-islands-arrow-helper($this)
+skin-islands-arrow__helper($this)
   pseudo-with-content()
 
   +cache()
