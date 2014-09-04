@@ -2,6 +2,10 @@
 # Stylobate-islands Changelog
 ---
 
+## v1.0.0 (in development)
+
+- Using Stylobate 1.0.0
+
 ## v0.28.0 (2014-07-03)
 
 - Updated Stylobate and Stylus deps.
