@@ -20,11 +20,9 @@ skin-islands-arrow($this)
 
     margin-right: round(($height / 2) * tan(30deg), 3)
 
-    unless ie or ($this.params.no-elements)
+    unless ie
       stylobate_defaults($this,
         __helper '&:before')
-
-    deprecate($this.params, no-elements)
 
 skin-islands-arrow__helper($this)
   pseudo-with-content()

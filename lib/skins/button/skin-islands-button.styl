@@ -104,11 +104,9 @@ skin-islands-button($this)
     border: 1px solid
     border-color: #CBCBCB #B2B2B2 #9A9A9A
 
-  deprecate($this.params, no-hover)
-
   stylobate_defaults($this,
-     _hover ($this.params.no-hover ? '' : 'input[type=file]:hover + &'),
-     _hover ($this.params.no-hover ? '' : '&:hover'))
+     _hover 'input[type=file]:hover + &',
+     _hover '&:hover')
 
 
 // Action button
@@ -126,11 +124,9 @@ skin-islands-action-button($this)
     border: 1px solid
     border-color: #BFB298 #A99C82 #9B8E75
 
-  deprecate($this.params, no-hover)
-
   stylobate_defaults($this,
-     _hover ($this.params.no-hover ? '' : 'input[type=file]:hover + &'),
-     _hover ($this.params.no-hover ? '' : '&:hover'))
+     _hover 'input[type=file]:hover + &',
+     _hover '&:hover')
 
 
 // Hover state

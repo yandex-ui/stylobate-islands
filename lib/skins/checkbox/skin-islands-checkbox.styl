@@ -6,11 +6,9 @@ skin-islands-checkbox($this)
 
   margin-right: $islands_xs
 
-  unless ie or $this.params.no-elements
+  unless ie
     stylobate_defaults($this,
       __icon '& > &-icon')
-
-  deprecate($this.params, no-elements)
 
 skin-islands-checkbox__icon()
   if !ie
