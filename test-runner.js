@@ -16,6 +16,9 @@ comb.configure(require('./.csscomb.json'));
 
 glob.sync("./lib/**/" + whatToTest + "/tests/*.styl").forEach(function(test){
   var name = test.replace(/\.?[\/]/g, ' ').replace(' tests',':').replace('.styl','');
+  if(name.indexOf(' old_') != -1) {
+    return;
+  }
 
   it(name, function(){
     var css = fs.readFileSync(test.replace('.styl', '.css'), 'utf8').replace(/\r/g, '').trim();
