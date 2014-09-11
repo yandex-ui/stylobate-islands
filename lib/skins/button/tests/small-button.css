@@ -1,0 +1,76 @@
+.small-button {
+  margin: 0;
+
+  font: inherit;
+
+  background: transparent;
+
+  -moz-appearance: none;
+}
+
+.small-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+.small-button {
+  position: relative;
+
+  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+
+  box-sizing: border-box;
+  padding: 0 9px;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 20px;
+
+  color: #000;
+
+  box-shadow: inset 0 90px #FFF;
+
+  border-radius: 3px;
+}
+
+.small-button:hover {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.small-button:active {
+  box-shadow: inset 0 90px #F6F5F3;
+}
+
+.small-button:focus {
+  border-color: rgba(178, 142, 0, 0.6);
+
+  outline: none;
+}
+
+.small-button:focus:before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  box-shadow: 0 0 10px #FC0;
+
+  border-radius: inherit;
+}

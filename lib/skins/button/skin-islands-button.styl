@@ -1,0 +1,104 @@
+// 1. Need this for proper focus state
+
+stylobate_defaults('skin-islands-button',
+  '_reset',
+  '_color',
+  '_theme' normal,
+  '_size' medium,
+  '_hover' '&:hover',
+  '_active' '&:active',
+  '_focus' '&:focus',
+  '_focus__helper' '&:focus:before'
+  )
+
+skin-islands-button($this)
+  font-family: Arial, sans-serif
+
+  border-radius: 3px
+
+  unless 'content' in $this.elements
+    position: relative // [1]
+
+    border: 1px solid
+
+
+skin-islands-button_reset($this)
+  kind: button
+
+
+skin-islands-button_color($this)
+  color: $this.colors[0] || $islands.colors.text
+
+
+skin-islands-button_size($this)
+  // TODO: allow sizing using any pixel unit
+  $size = $this.idents[0] || 'medium'
+
+  if $size == 'small'
+    padding: 0 9px
+    line-height: 20px
+    font-size: $islands_text_s
+
+  if $size == 'medium'
+    padding: 0 12px
+    line-height: 26px
+    font-size: $islands_text_s
+
+  if $size == 'large'
+    padding: 0 14px
+    line-height: 30px
+    font-size: $islands_text_m
+
+
+skin-islands-button_hover($this)
+  $parent_theme = $this.parent.modifiers['theme']
+  $theme = $parent_theme || $this.idents[0] || 'normal'
+
+  if $theme == 'normal'
+    border-color: rgba(#000, 0.4)
+
+  if $theme == 'action'
+    border-color: #BF9900
+
+skin-islands-button_focus($this)
+  border-color: rgba(178,142,0,.6);
+  outline: none
+
+
+skin-islands-button_focus__helper($this)
+  pseudo-with-content()
+
+  kind: fill
+
+  border-radius: inherit
+  box-shadow: 0 0 10px #FC0
+
+
+skin-islands-button_checked($this)
+  border-color: rgba(#997A00, 0.5)
+  box-shadow: inset 0 90px #FFEBA0
+
+
+skin-islands-button_theme($this)
+  // TODO: allow theming using any color
+  $theme = $this.idents[0] || 'normal'
+
+  if $theme == 'normal'
+    border-color: rgba(#000, 0.2)
+    box-shadow: inset 0 90px #FFF
+
+  if $theme == 'action'
+    border-color: rgba(#000, 0.2)
+    box-shadow: inset 0 90px #FFDB4D
+
+
+
+skin-islands-button_active($this)
+  $parent_theme = $this.parent.modifiers['theme']
+  $theme = $parent_theme || $this.idents[0] || 'normal'
+
+  if $theme == 'normal'
+    box-shadow: inset 0 90px #F6F5F3
+
+  if $theme == 'action'
+    box-shadow: inset 0 90px #FC0

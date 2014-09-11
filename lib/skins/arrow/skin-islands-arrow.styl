@@ -1,6 +1,9 @@
 $skin-islands-arrow-height ?= 4.2*rem
 $skin-islands-arrow-color  ?= #FFDB4C
 
+unless ie
+  stylobate_defaults('skin-islands-arrow', __helper '&:before')
+
 skin-islands-arrow($this)
   $height = $this.units[0] or $skin-islands-arrow-height
   $color = $this.colors[0] or $skin-islands-arrow-color
@@ -18,10 +21,6 @@ skin-islands-arrow($this)
   white-space: nowrap
 
   margin-right: round(($height / 2) * tan(30deg), 3)
-
-  unless ie
-    stylobate_defaults($this,
-      __helper '&:before')
 
 skin-islands-arrow__helper($this)
   pseudo-with-content()
