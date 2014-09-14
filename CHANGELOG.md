@@ -4,6 +4,8 @@
 
 ## v1.0.0 (in development)
 
+- Added extra-large button size.
+- Added shortcut aliases for button sizes (`s`, `xl` etc.).
 - Changed notation for elements from `foo-element` to `foo__element`.
 - Removed all the deprecated code.
 - Removed `tail` param from arrow in favor of `__helper`.
