@@ -26,10 +26,8 @@ glob.sync("./lib/**/" + whatToTest + "/tests/*.styl").forEach(function(test){
 
     style.render(function(err, actual){
       if (err) throw err;
-      // Change the order of csso and autoprefixer when
-      // we would able to set selector list code style
-      actual = csso.justDoIt(actual);
       actual = autoprefixer("last 2 versions", "> 2%").process(actual).css;
+      actual = csso.justDoIt(actual);
       actual = comb.processString(actual);
 
       // Remove those hardfixes when there would be a way to do this in csscomb

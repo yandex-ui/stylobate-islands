@@ -29,7 +29,6 @@
   width: 2.969848481766999rem;
   height: 2.969848481766999rem;
 
-  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg) translateZ(0);
   -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
   transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
