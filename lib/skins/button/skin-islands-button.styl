@@ -37,20 +37,25 @@ skin-islands-button_size($this)
   // TODO: allow sizing using any pixel unit
   $size = $this.idents[0] || 'medium'
 
-  if $size == 'small'
+  if $size in ('s' 'small')
     padding: 0 9px
     line-height: 20px
     font-size: $islands_text_s
 
-  if $size == 'medium'
+  if $size in ('m' 'medium')
     padding: 0 12px
     line-height: 26px
     font-size: $islands_text_s
 
-  if $size == 'large'
+  if $size in ('l' 'large')
     padding: 0 14px
     line-height: 30px
     font-size: $islands_text_m
+
+  if $size in ('xl' 'extra-large')
+    padding: 0 17px
+    line-height: 36px
+    font-size: 18px
 
 
 
@@ -58,7 +63,7 @@ skin-islands-button_hover($this)
   $parent_theme = $this.parent.modifiers['theme']
   $theme = $parent_theme || $this.idents[0] || 'normal'
 
-  if $theme == 'normal'
+  if $theme in ('normal' 'pseudo')
     border-color: rgba(#000, 0.4)
 
   if $theme == 'action'
@@ -96,6 +101,9 @@ skin-islands-button_theme($this)
     border-color: rgba(#000, 0.2)
     box-shadow: inset 0 90px #FFF
 
+  if $theme == 'pseudo'
+    border-color: rgba(#000, 0.2)
+
   if $theme == 'action'
     border-color: rgba(#000, 0.2)
     box-shadow: inset 0 90px #FFDB4D
@@ -108,6 +116,9 @@ skin-islands-button_active($this)
 
   if $theme == 'normal'
     box-shadow: inset 0 90px #F6F5F3
+
+  if $theme == 'pseudo'
+    box-shadow: inset 0 90px rgba(#000, 0.05)
 
   if $theme == 'action'
     box-shadow: inset 0 90px #FC0

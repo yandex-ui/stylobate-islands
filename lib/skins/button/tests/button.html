@@ -2,15 +2,20 @@
 <link rel="stylesheet" href="button.css">
 <link rel="stylesheet" href="small-button.css">
 <link rel="stylesheet" href="large-button.css">
+<link rel="stylesheet" href="xl-button.css">
 <link rel="stylesheet" href="button_sizes.css">
 <link rel="stylesheet" href="action-button.css">
+<link rel="stylesheet" href="pseudo-button.css">
 
 <!-- Extra deps: need a way to handle them -->
 <link rel="stylesheet" href="../../page/tests/page.css">
 
 <title>search</title>
 
+<h2>Button</h2>
+
 <div>
+    <h2>On different elements</h2>
     <div class="button">Button as div</div>
     <span class="button">Button as span</span>
     <button class="button">Button as button</button>
@@ -18,28 +23,23 @@
 </div>
 
 <div>
-    <div class="small-button">Small button as div</div>
-    <span class="small-button">Small button as span</span>
-    <button class="small-button">Small button as button</button>
-    <a href="#x" class="small-button">Small button as link</a>
+    <h2>Different sizes</h2>
+    <button class="small-button">Small button</button>
+    <button class="button">Medium button</button>
+    <button class="large-button">Large button</button>
+    <button class="xl-button">Extra Large button</button>
 </div>
 
 <div>
-    <div class="large-button">Large button as div</div>
-    <span class="large-button">Large button as span</span>
-    <button class="large-button">Large button as button</button>
-    <a href="#x" class="large-button">Large button as link</a>
-</div>
-
-<div>
+    <h2>Sizes as modifiers</h2>
     <a href="#x" class="button button_size_small">Small button by modifier</a>
     <a href="#x" class="button button_size_large">Medium button by modifier</a>
 </div>
 
 <div>
-    <div class="action-button">Action button as div</div>
-    <span class="action-button">Action button as span</span>
-    <button class="action-button">Action button as button</button>
-    <a href="#x" class="action-button">Action button as link</a>
+    <h2>Themes</h2>
+    <button class="button">Normal button</button>
+    <button class="pseudo-button">Pseudo button</button>
+    <button class="action-button">Action button</button>
 </div>
 
