@@ -5,10 +5,12 @@ stylobate_defaults('skin-islands-button',
   '_size' medium,
   '_hover' '&:hover',
   '_active' '&:active',
-  '_focus' '&:focus',
-  '_focus__helper' '&:focus:before'
+  '_focus' '&:focus'
   )
 
+stylobate_defaults('skin-islands-button_focus',
+  '__helper' '&:before'
+  )
 
 
 skin-islands-button($this)

@@ -1,0 +1,13 @@
+@require '../../../standalone.styl'
+
+.normal-button
+  skin: button (_hover '') (_active '') (_focus '')
+
+.hovered-button
+  skin: button _hover (_active '') (_focus '')
+
+.clicked-button
+  skin: button (_hover '') _active (_focus '')
+
+.focused-button
+  skin: button (_hover '') (_active '') _focus
