@@ -25,7 +25,7 @@
     "should": "2.x.x"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha test-runner.js --require should --reporter list"
+    "test": "./node_modules/.bin/mocha test-runner.js --require should --reporter list --timeout 4000"
   },
   "config": {
     "whatToTest": "**"
