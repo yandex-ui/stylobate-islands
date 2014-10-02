@@ -1,11 +1,14 @@
 .text h2 {
+  margin: 0;
   padding: 0;
   border: 0;
-  margin: 0 0 2rem;
-
-  vertical-align: baseline;
-
+  font-size: 100%;
   font: inherit;
+  vertical-align: baseline;
+}
+
+.text h2 {
+  margin-bottom: 2rem;
   font-size: 2.4rem;
   line-height: 2.4rem;
 }

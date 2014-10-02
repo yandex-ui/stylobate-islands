@@ -6,8 +6,8 @@
 
 .vertical-group > .toggle-button:last-child:not(:only-child),
 .vertical-group > .toggle-button:last-child:not(:only-child):before {
-  border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
 }
 
 .vertical-group > .toggle-button:not(:first-child):not(:last-child),
@@ -29,16 +29,13 @@ label.vertical-group > .toggle-button:not(:first-child):not(:last-child) {
 
 .vertical-group {
   position: relative;
-
   display: inline-block;
-
   vertical-align: top;
   white-space: nowrap;
 }
 
 .vertical-group > .toggle-button {
   display: block;
-
   width: 100%;
 }
 

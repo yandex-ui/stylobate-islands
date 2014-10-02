@@ -29,9 +29,7 @@ label.group > .toggle-button:not(:first-child):not(:last-child) {
 
 .group {
   position: relative;
-
   display: inline-block;
-
   vertical-align: top;
   white-space: nowrap;
 }

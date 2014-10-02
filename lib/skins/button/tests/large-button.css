@@ -1,11 +1,10 @@
 .large-button {
+  padding: 0;
   margin: 0;
-
-  font: inherit;
-
+  border: none;
   background: transparent;
-
   -moz-appearance: none;
+  font: inherit;
 }
 
 .large-button::-moz-focus-inner {
@@ -14,63 +13,53 @@
 }
 
 .large-button {
+  font-family: Arial, sans-serif;
+  border-radius: 3px;
   position: relative;
-
+  border: 1px solid;
   display: inline-block;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-
-  box-sizing: border-box;
-  padding: 0 14px;
-  border: 1px solid;
-  border-color: rgba(0, 0, 0, 0.2);
-
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   vertical-align: baseline;
   white-space: nowrap;
   text-decoration: none;
-
-  font-family: Arial, sans-serif;
-  font-size: 1.5rem;
-  line-height: 30px;
-
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #000;
-
-  box-shadow: inset 0 90px #FFF;
-
-  border-radius: 3px;
+  border-color: rgba(0,0,0,0.2);
+  box-shadow: inset 0 90px #fff;
+  padding: 0 14px;
+  line-height: 30px;
+  font-size: 1.5rem;
 }
 
 .large-button:hover {
-  border-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(0,0,0,0.4);
 }
 
 .large-button:active {
-  box-shadow: inset 0 90px #F6F5F3;
+  box-shadow: inset 0 90px #f6f5f3;
 }
 
 .large-button:focus {
-  border-color: rgba(178, 142, 0, 0.6);
-
+  border-color: rgba(178,142,0,0.6);
   outline: none;
 }
 
 .large-button:focus:before {
   content: "";
-
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-
-  box-shadow: 0 0 10px #FC0;
-
   border-radius: inherit;
+  box-shadow: 0 0 10px #fc0;
 }
