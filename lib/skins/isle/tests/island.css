@@ -6,18 +6,18 @@
 }
 
 .island-content {
-  padding: 0 2rem 0 2rem;
+  padding: 0 20px 0 20px;
 }
 
 .island-content:before {
   content: "";
   display: table;
-  margin-bottom: 1.6rem;
+  margin-bottom: 16px;
 }
 
 .island-content:after {
   content: "";
   display: table;
   clear: both;
-  margin-top: 1.6rem;
+  margin-top: 16px;
 }

@@ -7,6 +7,7 @@
 - Added extra-large button size.
 - Added `dark` and `pseudo-dark` button types.
 - Added shortcut aliases for button sizes (`s`, `xl` etc.).
+- Changed `rem` to `px` for standalone variant.
 - Changed notation for elements from `foo-element` to `foo__element`.
 - Removed all the deprecated code.
 - Removed `tail` param from arrow in favor of `__helper`.

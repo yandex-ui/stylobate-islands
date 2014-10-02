@@ -18,5 +18,5 @@
   -webkit-transform: scale(0.9) rotate(50deg) skewX(12deg);
       -ms-transform: scale(0.9) rotate(50deg) skewX(12deg);
           transform: scale(0.9) rotate(50deg) skewX(12deg);
-  margin: -1rem 0 0 1rem;
+  margin: -10px 0 0 10px;
 }

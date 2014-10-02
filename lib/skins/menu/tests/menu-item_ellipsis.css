@@ -12,9 +12,9 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-  padding: 0.5rem 1.6rem;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 5px 16px;
 }
 
 .shrinked-menu-item:hover {

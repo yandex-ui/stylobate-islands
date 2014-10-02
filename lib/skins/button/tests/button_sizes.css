@@ -1,11 +1,11 @@
 .button_size_small {
   padding: 0 9px;
   line-height: 20px;
-  font-size: 1.3rem;
+  font-size: 13px;
 }
 
 .button_size_large {
   padding: 0 14px;
   line-height: 30px;
-  font-size: 1.5rem;
+  font-size: 15px;
 }

@@ -8,7 +8,7 @@
 }
 
 .text p {
-  margin-bottom: 1.6rem;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 22px;
 }

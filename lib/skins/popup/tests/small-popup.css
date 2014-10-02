@@ -5,18 +5,18 @@
   background: #fff;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 8px 30px -5px rgba(0,0,0,0.5);
   display: block;
-  padding: 0 1rem 0 1rem;
+  padding: 0 10px 0 10px;
 }
 
 .small-popup:before {
   content: "";
   display: table;
-  margin-bottom: 0.6rem;
+  margin-bottom: 6px;
 }
 
 .small-popup:after {
   content: "";
   display: table;
   clear: both;
-  margin-top: 0.6rem;
+  margin-top: 6px;
 }

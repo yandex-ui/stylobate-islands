@@ -3,18 +3,18 @@
   display: block;
   background: #fff;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
-  padding: 0 1rem 0 1rem;
+  padding: 0 10px 0 10px;
 }
 
 .islet:before {
   content: "";
   display: table;
-  margin-bottom: 0.6rem;
+  margin-bottom: 6px;
 }
 
 .islet:after {
   content: "";
   display: table;
   clear: both;
-  margin-top: 0.6rem;
+  margin-top: 6px;
 }

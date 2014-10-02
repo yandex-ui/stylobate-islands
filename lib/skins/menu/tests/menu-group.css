@@ -4,8 +4,8 @@
 
 .menu-group + .menu-group {
   box-shadow: 0 -1px rgba(0,0,0,0.2);
-  margin-top: 0.5rem;
-  padding-top: 0.5rem;
+  margin-top: 5px;
+  padding-top: 5px;
 }
 
 .small-menu-group {

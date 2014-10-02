@@ -9,9 +9,9 @@
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-  padding: 0.3rem 1rem;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 3px 10px;
 }
 
 .small-menu-item:hover {

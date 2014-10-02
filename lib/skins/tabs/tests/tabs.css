@@ -1,8 +1,8 @@
 .tabs {
   position: relative;
   display: block;
-  margin: 0 -0.8rem;
-  font-size: 1.5rem;
+  margin: 0 -8px;
+  font-size: 15px;
 }
 
 .tabs-item {
@@ -13,7 +13,7 @@
   color: #22c;
   text-decoration: none;
   line-height: 2em;
-  padding: 0.3rem 0.8rem;
+  padding: 3px 8px;
 }
 
 .tabs-item:hover {
@@ -31,8 +31,8 @@
   content: "";
   position: absolute;
   top: -1px;
-  right: 0.8rem;
+  right: 8px;
   bottom: auto;
-  left: 0.8rem;
+  left: 8px;
   border-top: 2px solid;
 }
