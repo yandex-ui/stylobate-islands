@@ -31,8 +31,9 @@ skin-islands-button_reset($this)
 
 
 skin-islands-button_color($this)
-  color: $this.colors[0] || $islands.colors.text
+  $type = $this.parent.modifiers['type'] || 'normal'
 
+  color: $this.colors[0] || ($type in ('dark' 'dark-pseudo') ? invert($islands.colors.text) : $islands.colors.text)
 
 
 skin-islands-button_size($this)
@@ -62,11 +63,13 @@ skin-islands-button_size($this)
 
 
 skin-islands-button_hover($this)
-  $parent_type = $this.parent.modifiers['type']
-  $type = $parent_type || $this.idents[0] || 'normal'
+  $type = $this.parent.modifiers['type'] || 'normal'
 
   if $type in ('normal' 'pseudo')
     border-color: rgba(#000, 0.4)
+
+  if $type in ('dark' 'dark-pseudo')
+    border-color: rgba(#FFF, 0.55)
 
   if $type == 'action'
     border-color: #BF9900
@@ -97,14 +100,21 @@ skin-islands-button_checked($this)
 
 skin-islands-button_type($this)
   // TODO: allow theming using any color
-  $type = $this.idents[0] || 'normal'
+  $type = $this.parent.modifiers['type'] || 'normal'
 
   if $type == 'normal'
     border-color: rgba(#000, 0.2)
     box-shadow: inset 0 90px #FFF
 
+  if $type == 'dark'
+    border-color: rgba(#FFF, 0.35)
+    box-shadow: inset 0 90px #000
+
   if $type == 'pseudo'
     border-color: rgba(#000, 0.2)
+
+  if $type == 'dark-pseudo'
+    border-color: rgba(#FFF, 0.35)
 
   if $type == 'action'
     border-color: rgba(#000, 0.2)
@@ -113,14 +123,19 @@ skin-islands-button_type($this)
 
 
 skin-islands-button_active($this)
-  $parent_type = $this.parent.modifiers['type']
-  $type = $parent_type || $this.idents[0] || 'normal'
+  $type = $this.parent.modifiers['type'] || 'normal'
 
   if $type == 'normal'
     box-shadow: inset 0 90px #F6F5F3
 
+  if $type == 'dark'
+    box-shadow: inset 0 90px #111
+
   if $type == 'pseudo'
     box-shadow: inset 0 90px rgba(#000, 0.05)
+
+  if $type == 'dark-pseudo'
+    box-shadow: inset 0 90px rgba(#FFF, 0.1)
 
   if $type == 'action'
     box-shadow: inset 0 90px #FC0
