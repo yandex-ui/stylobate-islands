@@ -24,7 +24,6 @@
   position: relative;
   border: 1px solid;
   display: inline-block;
-  display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -52,7 +51,6 @@
   position: relative;
   border: 1px solid;
   display: inline-block;
-  display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -81,7 +79,6 @@
   position: relative;
   border: 1px solid;
   display: inline-block;
-  display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -110,7 +107,6 @@
   position: relative;
   border: 1px solid;
   display: inline-block;
-  display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
