@@ -16,6 +16,7 @@
   font-family: Arial, sans-serif;
   position: relative;
   border: 1px solid;
+  color: #000;
   display: inline-block;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -30,7 +31,6 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  color: #000;
   border-color: rgba(0,0,0,0.2);
   box-shadow: inset 0 90px #fff;
   padding: 0 12px;

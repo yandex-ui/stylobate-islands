@@ -1,6 +1,5 @@
 stylobate_defaults('skin-islands-button',
   '_reset',
-  '_color',
   '_shape' normal,
   '_type' normal,
   '_size' medium,
@@ -9,21 +8,22 @@ stylobate_defaults('skin-islands-button',
   '_focus' '&:focus'
   )
 
-stylobate_defaults('skin-islands-button_focus',
-  '__helper' '&:before'
-  )
 
 
 skin-islands-button($this)
+  $type = $this.modifiers['type'] || 'normal'
+
   font-family: Arial, sans-serif
 
   position: relative
 
   border: 1px solid
 
+  color: $this.colors[0] || ($type in ('dark' 'dark-pseudo') ? invert($islands.colors.text) : $islands.colors.text)
 
 
-skin-islands-button-content($this)
+
+skin-islands-button__content($this)
   kind: block
   border-radius: $this.modifiers.shape == 'round' ? 999px : 2px
 
@@ -33,173 +33,10 @@ skin-islands-button_reset($this)
   kind: button
 
 
-
-skin-islands-button_shape($this)
-  $shape = $this.parent.modifiers['shape'] || 'normal'
-
-  if $shape == 'normal'
-    border-radius: 3px
-
-  if $shape == 'round'
-    border-radius: 999px
-
-
-
-skin-islands-button_color($this)
-  $type = $this.parent.modifiers['type'] || 'normal'
-
-  color: $this.colors[0] || ($type in ('dark' 'dark-pseudo') ? invert($islands.colors.text) : $islands.colors.text)
-
-
-skin-islands-button_size($this)
-  // TODO: allow sizing using any pixel unit
-  $size = $this.idents[0] || 'medium'
-
-  $selector = 'content' in $this.elements ? $this.elements.content : ''
-  rules()
-    if $size in ('s' 'small')
-      padding: 0 9px
-      line-height: 20px
-      font-size: $islands_text_s
-
-    if $size in ('m' 'medium')
-      padding: 0 12px
-      line-height: 26px
-      font-size: $islands_text_s
-
-    if $size in ('l' 'large')
-      padding: 0 14px
-      line-height: 30px
-      font-size: $islands_text_m
-
-    if $size in ('xl' 'extra-large')
-      padding: 0 17px
-      line-height: 36px
-      font-size: 18px
-
-  rules() unless $selector
-  {$selector}
-    rules() if $selector
-
-
-skin-islands-button_hover($this)
-  $type = $this.parent.modifiers['type'] || 'normal'
-
-  $border-color = null
-
-  if $type in ('normal' 'pseudo')
-    $border-color = rgba(#000, 0.4)
-
-  if $type in ('dark' 'dark-pseudo')
-    $border-color = rgba(#FFF, 0.55)
-
-  if $type == 'action'
-    $border-color = #BF9900
-
-  $border-color = $border-color || $this.colors[0]
-
-  if $border-color
-    border-color: $border-color
-
-
-skin-islands-button_focus($this)
-  border-color: $this.colors[0] || rgba(178,142,0,.6);
-  outline: none
-
-  if 'content' in $this.elements
-    {replace('&', $this.parent.selector, $this.elements.content)}
-      box-shadow: 0 0 10px ($this.colors[0] || #FC0)
-
-
-
-skin-islands-button_focus__helper($this)
-  unless 'content' in $this.elements
-    pseudo-with-content()
-
-    kind: fill
-
-    border-radius: inherit
-    box-shadow: 0 0 10px ($this.colors[0] || #FC0)
-
-
-
-skin-islands-button_checked($this)
-  border-color: rgba(#997A00, 0.5)
-
-  $background = $this.colors[0] || #FFEBA0
-
-  if 'content' in $this.elements
-    {replace('&', $this.parent.selector, $this.elements.content)}
-      background: $background
-  else
-    box-shadow: inset 0 90px $background
-
-
-
-skin-islands-button_type($this)
-  $type = $this.parent.modifiers['type'] || 'normal'
-
-  $background = null
-  $border-color = null
-
-  if $type == 'normal'
-    $border-color = rgba(#000, 0.2)
-    $background = #FFF
-
-  if $type == 'dark'
-    $border-color = rgba(#FFF, 0.35)
-    $background = #000
-
-  if $type == 'pseudo'
-    $border-color = rgba(#000, 0.2)
-
-  if $type == 'dark-pseudo'
-    $border-color = rgba(#FFF, 0.35)
-
-  if $type == 'action'
-    $border-color = rgba(#000, 0.2)
-    $background = #FFDB4D
-
-  $background = $background || $this.colors[0]
-  $border-color = $border-color || $this.colors[1]
-
-  if $border-color
-    border-color: $border-color
-
-  if $background
-    if 'content' in $this.elements
-      {$this.elements.content}
-        background: $background
-    else
-      box-shadow: inset 0 90px $background
-
-
-
-skin-islands-button_active($this)
-  $type = $this.parent.modifiers['type'] || 'normal'
-
-  $background = null
-
-  if $type == 'normal'
-    $background = #F6F5F3
-
-  if $type == 'dark'
-    $background = #111
-
-  if $type == 'pseudo'
-    $background = rgba(#000, 0.05)
-
-  if $type == 'dark-pseudo'
-    $background = rgba(#FFF, 0.1)
-
-  if $type == 'action'
-    $background = #FC0
-
-  $background = $background || $this.colors[0]
-
-  if $background
-    if 'content' in $this.elements
-      {replace('&', $this.parent.selector, $this.elements.content)}
-        background: $background
-    else
-      box-shadow: inset 0 90px $background
+@require '_shape/skin-islands-button_shape'
+@require '_size/skin-islands-button_size'
+@require '_hover/skin-islands-button_hover'
+@require '_focus/skin-islands-button_focus'
+@require '_checked/skin-islands-button_checked'
+@require '_type/skin-islands-button_type'
+@require '_active/skin-islands-button_active'
