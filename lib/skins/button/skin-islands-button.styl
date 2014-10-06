@@ -1,6 +1,7 @@
 stylobate_defaults('skin-islands-button',
   '_reset',
   '_color',
+  '_shape' normal,
   '_type' normal,
   '_size' medium,
   '_hover' '&:hover',
@@ -16,8 +17,6 @@ stylobate_defaults('skin-islands-button_focus',
 skin-islands-button($this)
   font-family: Arial, sans-serif
 
-  border-radius: 3px
-
   position: relative
 
   border: 1px solid
@@ -26,12 +25,23 @@ skin-islands-button($this)
 
 skin-islands-button-content($this)
   kind: block
-  border-radius: 2px
+  border-radius: $this.modifiers.shape == 'round' ? 999px : 2px
 
 
 
 skin-islands-button_reset($this)
   kind: button
+
+
+
+skin-islands-button_shape($this)
+  $shape = $this.parent.modifiers['shape'] || 'normal'
+
+  if $shape == 'normal'
+    border-radius: 3px
+
+  if $shape == 'round'
+    border-radius: 999px
 
 
 

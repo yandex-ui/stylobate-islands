@@ -14,7 +14,6 @@
 
 .complex-button {
   font-family: Arial, sans-serif;
-  border-radius: 3px;
   position: relative;
   border: 1px solid;
   display: inline-block;
@@ -32,6 +31,7 @@
       -ms-user-select: none;
           user-select: none;
   color: #000;
+  border-radius: 3px;
   border-color: rgba(0,0,0,0.2);
 }
 

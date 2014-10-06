@@ -1,4 +1,4 @@
-.custom-button {
+.round-button {
   padding: 0;
   margin: 0;
   border: none;
@@ -7,12 +7,12 @@
   font: inherit;
 }
 
-.custom-button::-moz-focus-inner {
+.round-button::-moz-focus-inner {
   padding: 0;
   border: none;
 }
 
-.custom-button {
+.round-button {
   font-family: Arial, sans-serif;
   position: relative;
   border: 1px solid;
@@ -31,20 +31,28 @@
       -ms-user-select: none;
           user-select: none;
   color: #000;
-  border-radius: 3px;
+  border-color: rgba(0,0,0,0.2);
+  box-shadow: inset 0 90px #fff;
   padding: 0 12px;
   line-height: 26px;
   font-size: 13px;
-  border-color: #0f0;
-  box-shadow: inset 0 90px #f00;
+  border-radius: 999px;
 }
 
-.custom-button:focus {
+.round-button:hover {
+  border-color: rgba(0,0,0,0.4);
+}
+
+.round-button:active {
+  box-shadow: inset 0 90px #f6f5f3;
+}
+
+.round-button:focus {
   border-color: rgba(178,142,0,0.6);
   outline: none;
 }
 
-.custom-button:focus:before {
+.round-button:focus:before {
   content: "";
   position: absolute;
   top: 0;
@@ -53,12 +61,4 @@
   left: 0;
   border-radius: inherit;
   box-shadow: 0 0 10px #fc0;
-}
-
-.custom-button:hover {
-  border-color: #00f;
-}
-
-.custom-button:active {
-  box-shadow: inset 0 90px #ff0;
 }
