@@ -1,0 +1,55 @@
+.clear-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+}
+
+.clear-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+.clear-button {
+  font-family: Arial, sans-serif;
+  position: relative;
+  border: 1px solid;
+  color: #000;
+  display: inline-block;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 3px;
+  padding: 0 12px;
+  line-height: 26px;
+  font-size: 13px;
+  border-color: transparent;
+}
+
+.clear-button:focus {
+  border-color: rgba(178,142,0,0.6);
+  outline: none;
+}
+
+.clear-button:focus:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 10px #fc0;
+}

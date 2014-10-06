@@ -22,6 +22,9 @@ skin-islands-button_type($this)
     $border-color = rgba(#000, 0.2)
     $background = #FFDB4D
 
+  if $type == 'clear'
+    $border-color = transparent
+
   $background = $background || $this.colors[0]
   $border-color = $border-color || $this.colors[1]
 
