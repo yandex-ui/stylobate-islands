@@ -7,6 +7,8 @@
 - Added extra-large button size.
 - Added `dark` and `pseudo-dark` button types.
 - Added shortcut aliases for button sizes (`s`, `xl` etc.).
+- Added button using two elements (when using `content` element).
+- Added `shape` modifier to button.
 - Changed line-height on body to unitless.
 - Changed `rem` to `px` for standalone variant.
 - Changed notation for elements from `foo-element` to `foo__element`.
