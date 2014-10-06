@@ -25,7 +25,7 @@ skin-islands-button($this)
 
 skin-islands-button__content($this)
   kind: block
-  border-radius: $this.modifiers.shape == 'round' ? 999px : 2px
+  border-radius: $this.modifiers.shape in ('round' 'circle') ? 999px : 2px
 
 
 
