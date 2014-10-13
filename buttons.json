@@ -1,0 +1,8 @@
+{
+  "name": "button",
+  "modifiers": {
+    "_size": ["medium", "small", "large", "extra-large"],
+    "_type": ["normal", "pseudo", "action", "dark", "dark-pseudo", "clear"],
+    "_shape": ["rect", "circle"]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "stylobate-islands-docs",
+  "dependencies": {
+    "stylus": "0.49.1",
+    "stylobate": "1.0.0-alpha.5",
+    "stylobate-islands": "1.0.0-alpha.5"
+  }
+}

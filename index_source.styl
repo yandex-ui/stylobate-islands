@@ -1,0 +1,19 @@
+@css {
+  @require 'stylobate'
+  @require 'stylobate-islands'
+
+  init_islands_root()
+
+  set-skin-namespace('islands-v3')
+}
+
+$buttons = json('buttons.json', { hash: true })
+
+make_lulz($skin)
+  for $key, $values in $skin.modifiers
+    for $value_index, $value in $values
+      .{$value}-{$skin.name}
+        skin: '%s (%s %s)' % (unquote($skin.name) unquote($key) unquote($value))
+
+
+make_lulz($buttons)
