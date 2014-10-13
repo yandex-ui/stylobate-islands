@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="normal-button.css">
+<link rel="stylesheet" href="button-states.css">
+<link rel="stylesheet" href="small-button.css">
+<link rel="stylesheet" href="large-button.css">
+<link rel="stylesheet" href="xl-button.css">
+<link rel="stylesheet" href="button_sizes.css">
+<link rel="stylesheet" href="action-button.css">
+<link rel="stylesheet" href="clear-button.css">
+<link rel="stylesheet" href="pseudo-button.css">
+<link rel="stylesheet" href="dark-button.css">
+<link rel="stylesheet" href="dark-pseudo-button.css">
+<link rel="stylesheet" href="custom-button.css">
+<link rel="stylesheet" href="complex-button.css">
+<link rel="stylesheet" href="round-button.css">
+
+<!-- Extra deps: need a way to handle them -->
+<link rel="stylesheet" href="../../page/tests/page.css">
+<link rel="stylesheet" href="../../disabled/tests/disabled.css">
+
+<title>Button</title>
+
+<style>
+    body {
+        padding: 20px;
+    }
+</style>
+
+<h1>Button</h1>
+
+<div>
+    <h2>On different elements</h2>
+    <div class="button">Button as div</div>
+    <span class="button">Button as span</span>
+    <button class="button">Button as button</button>
+    <a href="#x" class="button">Button as link</a>
+</div>
+
+<div>
+    <h2>Different states of a button</h2>
+    <button class="normal-button">Normal state</button>
+    <button class="hovered-button">Hovered state</button>
+    <button class="clicked-button">Clicked state</button>
+    <button class="focused-button">Focused state</button>
+    <button class="button is-checked">Checked state</button>
+    <button class="button is-disabled">Disabled state</button>
+</div>
+
+<div>
+    <h2>Different sizes</h2>
+    <button class="small-button">Small button</button>
+    <button class="button">Medium button</button>
+    <button class="large-button">Large button</button>
+    <button class="xl-button">Extra Large button</button>
+</div>
+
+<div>
+    <h2>Different Shapes</h2>
+    <button class="normal-button">Normal shape</button>
+    <button class="round-button">Round shape</button>
+</div>
+
+<div>
+    <h2>Sizes as modifiers</h2>
+    <a href="#x" class="button button_size_small">Small button by modifier</a>
+    <a href="#x" class="button button_size_large">Large button by modifier</a>
+</div>
+
+<div>
+    <h2>Different types</h2>
+    <button class="button">Normal button</button>
+    <button class="pseudo-button">Pseudo button</button>
+    <button class="action-button">Action button</button>
+    <button class="clear-button">Clear button</button>
+    <button class="custom-button">Custom button</button>
+    <span style="background: #333; padding: 20px; margin-left: 20px;">
+        <button class="dark-button">Dark button</button>
+    </span>
+    <span style="background: #333; padding: 20px; padding-left: 0;">
+        <button class="dark-pseudo-button">Dark pseudo button</button>
+    </span>
+</div>
+
+<div>
+    <h2>Different element compositions</h2>
+    <button class="button">Normal button</button>
+    <button class="complex-button">
+        <span class="complex-button-content">
+            Complex button
+        </span>
+    </button>
+</div>
+

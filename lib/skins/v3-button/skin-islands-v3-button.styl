@@ -1,0 +1,42 @@
+stylobate_defaults('skin-islands-v3-button',
+  '_reset',
+  '_shape' normal,
+  '_type' normal,
+  '_size' medium,
+  '_hover' '&:hover',
+  '_active' '&:active',
+  '_focus' '&:focus'
+  )
+
+
+
+skin-islands-v3-button($this)
+  $type = $this.modifiers['type'] || 'normal'
+
+  font-family: Arial, sans-serif
+
+  position: relative
+
+  border: 1px solid
+
+  color: $this.colors[0] || ($type in ('dark' 'dark-pseudo') ? invert($islands.colors.text) : $islands.colors.text)
+
+
+
+skin-islands-v3-button__content($this)
+  kind: block
+  border-radius: $this.modifiers.shape in ('round' 'circle') ? 999px : 2px
+
+
+
+skin-islands-v3-button_reset($this)
+  kind: button
+
+
+@require '_shape/skin-islands-v3-button_shape'
+@require '_size/skin-islands-v3-button_size'
+@require '_hover/skin-islands-v3-button_hover'
+@require '_focus/skin-islands-v3-button_focus'
+@require '_checked/skin-islands-v3-button_checked'
+@require '_type/skin-islands-v3-button_type'
+@require '_active/skin-islands-v3-button_active'

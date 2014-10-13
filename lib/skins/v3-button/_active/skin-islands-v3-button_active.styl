@@ -1,0 +1,28 @@
+skin-islands-v3-button_active($this)
+  $type = $this.parent.modifiers['type'] || 'normal'
+
+  $background = null
+
+  if $type == 'normal'
+    $background = #F6F5F3
+
+  if $type == 'dark'
+    $background = #111
+
+  if $type == 'pseudo'
+    $background = rgba(#000, 0.05)
+
+  if $type == 'dark-pseudo'
+    $background = rgba(#FFF, 0.1)
+
+  if $type == 'action'
+    $background = #FC0
+
+  $background = $background || $this.colors[0]
+
+  if $background
+    if 'content' in $this.elements
+      {replace('&', $this.parent.selector, $this.elements.content)}
+        background: $background
+    else
+      box-shadow: inset 0 90px $background
