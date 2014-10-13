@@ -1,30 +1,27 @@
 .toggler {
   position: relative;
-
   display: inline-block;
-
-  cursor: pointer;
   vertical-align: top;
+  cursor: pointer;
 }
 
 .toggler-controller {
   position: absolute !important;
-
-  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip: rect(1px,1px,1px,1px) !important;
 }
 
 input:checked + .toggler-view,
 input:checked + .toggler-view:hover {
-  background: rgba(255, 236, 166, 0.4);
-  box-shadow: 0 1px 7px rgba(30, 23, 0, 0.8) inset, 0 2px 0 -1px rgba(255, 255, 255, 0.2);
+  background: rgba(255,236,166,0.4);
+  box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
 }
 
 input:checked + .toggler-view:before,
 input:checked + .toggler-view:hover:before {
-  background: #FFF1BE;
-  background: -webkit-linear-gradient(#FFECA6, #FFF6D5);
-  background: linear-gradient(#FFECA6, #FFF6D5);
-  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.45) inset;
+  background: #fff1be;
+  background: -webkit-linear-gradient(#ffeca6, #fff6d5);
+  background: linear-gradient(#ffeca6, #fff6d5);
+  box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
 }
 
 input:checked + .toggler-view .button-content,
@@ -38,8 +35,6 @@ input:checked + .toggler-view:hover .button-content {
 
 :focus + .toggler-view:after {
   z-index: 9;
-
-  box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);
-
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
