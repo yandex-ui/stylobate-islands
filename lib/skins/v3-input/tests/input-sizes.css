@@ -1,0 +1,139 @@
+.small-input,
+.large-input,
+.extralarge-input {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+}
+
+.small-input:focus,
+.large-input:focus,
+.extralarge-input:focus {
+  outline: none;
+}
+
+.small-input {
+  position: relative;
+  width: 400px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  color: #000;
+  border: 1px solid rgba(0,0,0,0.2);
+  background: -webkit-linear-gradient(#fff, #fff);
+  background: linear-gradient(#fff, #fff);
+  background-clip: padding-box;
+  background-size: 16px 16px;
+  padding: 4px 6px;
+  font-size: 13px;
+  line-height: 16px;
+  min-height: 24px;
+}
+
+.small-input,
+.large-input,
+.extralarge-input {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: text;
+  vertical-align: baseline;
+}
+
+.small-input {
+  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+textarea.small-input {
+  vertical-align: top;
+}
+
+.small-input:focus {
+  border-color: rgba(178,142,0,0.6);
+  box-shadow: 0 0 10px #fc0;
+}
+
+.large-input {
+  position: relative;
+  width: 400px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  color: #000;
+  border: 1px solid rgba(0,0,0,0.2);
+  background: -webkit-linear-gradient(#fff, #fff);
+  background: linear-gradient(#fff, #fff);
+  background-clip: padding-box;
+  background-size: 16px 16px;
+  padding: 6px 10px;
+  font-size: 15px;
+  line-height: 20px;
+  min-height: 32px;
+}
+
+.large-input {
+  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+textarea.large-input {
+  vertical-align: top;
+}
+
+.large-input:focus {
+  border-color: rgba(178,142,0,0.6);
+  box-shadow: 0 0 10px #fc0;
+}
+
+.extralarge-input {
+  position: relative;
+  width: 400px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  color: #000;
+  border: 1px solid rgba(0,0,0,0.2);
+  background: -webkit-linear-gradient(#fff, #fff);
+  background: linear-gradient(#fff, #fff);
+  background-clip: padding-box;
+  background-size: 16px 16px;
+  padding: 7px 12px;
+  font-size: 18px;
+  line-height: 24px;
+  min-height: 40px;
+}
+
+.extralarge-input {
+  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+textarea.extralarge-input {
+  vertical-align: top;
+}
+
+.extralarge-input:focus {
+  border-color: rgba(178,142,0,0.6);
+  box-shadow: 0 0 10px #fc0;
+}

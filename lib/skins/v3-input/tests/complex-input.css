@@ -64,6 +64,7 @@ textarea.complex-input-controller {
   right: -1px;
   bottom: -1px;
   left: -1px;
+  color: #000;
   border: 1px solid rgba(0,0,0,0.2);
   background: -webkit-linear-gradient(#fff, #fff);
   background: linear-gradient(#fff, #fff);

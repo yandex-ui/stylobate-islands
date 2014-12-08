@@ -18,6 +18,8 @@ skin-islands-v3-input__view($this)
   if 'controller' in $this.elements
     kind: fill -1px
 
+  color: #000
+
   // Move colors to `_type` if there would be dark/pseudo/…?
   border: 1px solid rgba(#000, 0.2)
   if ie
@@ -47,7 +49,7 @@ skin-islands-v3-input__controller($this)
     vertical-align: top
 
 
-@require '_size/skin-islands-v3-input_reset'
+@require '_reset/skin-islands-v3-input_reset'
 @require '_size/skin-islands-v3-input_size'
-@require '_size/skin-islands-v3-input_focus'
-@require '_size/skin-islands-v3-input_centered'
+@require '_focus/skin-islands-v3-input_focus'
+@require '_centered/skin-islands-v3-input_centered'
