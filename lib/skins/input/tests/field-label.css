@@ -1,0 +1,22 @@
+.field-label {
+  margin: -5px 0 -5px -10px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  margin-right: 10px;
+  font-size: 16px;
+  background: -webkit-linear-gradient(rgba(255,225,120,0.1), rgba(0,0,0,0.02));
+  background: linear-gradient(rgba(255,225,120,0.1), rgba(0,0,0,0.02));
+}
+
+.field-label {
+  position: relative;
+  z-index: 9;
+  float: left;
+}
+
+.field-label:hover {
+  color: #d00;
+}
