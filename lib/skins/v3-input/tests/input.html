@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="normal-input.css">
+<link rel="stylesheet" href="input-states.css">
+<link rel="stylesheet" href="complex-input.css">
 
 <!-- Extra deps: need a way to handle them -->
 <link rel="stylesheet" href="../../page/tests/page.css">
@@ -19,7 +21,25 @@
     <h2>On different elements</h2>
     Here we are:
     <input class="normal-input" value="Input as input" />
-    <textarea class="normal-input">
-        Input as textarea
-    </textarea>
+    <textarea class="normal-input" rows="8" cols="20">Input as textarea</textarea>
+</div>
+
+<div>
+    <h2>Different states of an input</h2>
+    <input class="normal-input" value="Normal state" />
+    <input class="focused-input" value="Focused state" />
+    <input class="normal-input is-disabled" value="Disabled state" />
+</div>
+
+<div>
+    <h2>Simple and complex inputs</h2>
+    <input class="normal-input" value="Simple input" />
+    <label class="complex-input">
+        <input class="complex-input-controller" value="Complex input" />
+        <span class="complex-input-view"></span>
+    </label>
+    <label class="complex-input">
+        <textarea class="complex-input-controller" rows="8" cols="20">Complex textarea</textarea>
+        <span class="complex-input-view"></span>
+    </label>
 </div>

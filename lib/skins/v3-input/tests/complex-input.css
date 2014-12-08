@@ -1,4 +1,5 @@
-.normal-input {
+.complex-input,
+.complex-input-controller {
   padding: 0;
   margin: 0;
   border: none;
@@ -6,27 +7,24 @@
   font: inherit;
 }
 
-.normal-input:focus {
+.complex-input:focus,
+.complex-input-controller:focus {
   outline: none;
 }
 
-.normal-input {
+.complex-input {
   position: relative;
   width: 400px;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  border: 1px solid rgba(0,0,0,0.2);
-  background: -webkit-linear-gradient(#fff, #fff);
-  background: linear-gradient(#fff, #fff);
-  background-clip: padding-box;
-  background-size: 16px 16px;
   padding: 6px 8px;
   font-size: 13px;
   line-height: 16px;
   min-height: 28px;
 }
 
-.normal-input {
+.complex-input,
+.complex-input-controller {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -37,7 +35,7 @@
   vertical-align: baseline;
 }
 
-.normal-input {
+.complex-input {
   display: inline-block;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -48,11 +46,32 @@
   text-decoration: none;
 }
 
-textarea.normal-input {
+.complex-input-controller {
+  width: 400px;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+
+textarea.complex-input-controller {
   vertical-align: top;
 }
 
-.normal-input:focus {
+.complex-input-view {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border: 1px solid rgba(0,0,0,0.2);
+  background: -webkit-linear-gradient(#fff, #fff);
+  background: linear-gradient(#fff, #fff);
+  background-clip: padding-box;
+  background-size: 16px 16px;
+}
+
+.complex-input-controller:focus + .complex-input-view {
   border-color: rgba(178,142,0,0.6);
   box-shadow: 0 0 10px #fc0;
 }

@@ -9,7 +9,7 @@ skin-islands-v3-input_size($this)
       font-size: $islands_text_s
       line-height: $islands_m
 
-      min-height: $islands_m + (ie ? 0 : 0.5*$islands_m + 2*$islands_px)
+      min-height: $islands_m + (ie ? 0 : 0.5*$islands_m)
 
     if $size in ('m' 'medium')
       padding: $islands_xs 0.5*$islands_m
@@ -17,7 +17,7 @@ skin-islands-v3-input_size($this)
       font-size: $islands_text_s
       line-height: $islands_m
 
-      min-height: $islands_m + (ie ? 0 : 2*$islands_xs + 2*$islands_px)
+      min-height: $islands_m + (ie ? 0 : 2*$islands_xs)
 
     if $size in ('l' 'large')
       padding: $islands_xs $islands_s
@@ -25,7 +25,7 @@ skin-islands-v3-input_size($this)
       font-size: $islands_text_m
       line-height: $islands_l
 
-      min-height: $islands_l + (ie ? 0 : 2*$islands_xs + 2*$islands_px)
+      min-height: $islands_l + (ie ? 0 : 2*$islands_xs)
 
     if $size in ('xl' 'extra-large')
       padding: (0.5*$islands_m - $islands_px) 2*$islands_xs

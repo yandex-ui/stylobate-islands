@@ -1,4 +1,4 @@
-.normal-input {
+.focused-input {
   padding: 0;
   margin: 0;
   border: none;
@@ -6,11 +6,11 @@
   font: inherit;
 }
 
-.normal-input:focus {
+.focused-input:focus {
   outline: none;
 }
 
-.normal-input {
+.focused-input {
   position: relative;
   width: 400px;
   -moz-box-sizing: border-box;
@@ -24,9 +24,11 @@
   font-size: 13px;
   line-height: 16px;
   min-height: 28px;
+  border-color: rgba(178,142,0,0.6);
+  box-shadow: 0 0 10px #fc0;
 }
 
-.normal-input {
+.focused-input {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -37,7 +39,7 @@
   vertical-align: baseline;
 }
 
-.normal-input {
+.focused-input {
   display: inline-block;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -48,11 +50,6 @@
   text-decoration: none;
 }
 
-textarea.normal-input {
+textarea.focused-input {
   vertical-align: top;
-}
-
-.normal-input:focus {
-  border-color: rgba(178,142,0,0.6);
-  box-shadow: 0 0 10px #fc0;
 }

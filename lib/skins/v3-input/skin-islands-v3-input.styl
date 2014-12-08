@@ -2,6 +2,7 @@ stylobate_defaults('skin-islands-v3-input',
   '_reset',
   '__box',
   '__view',
+  '_focus' '&:focus',
   '_size' medium
   )
 
@@ -22,8 +23,8 @@ skin-islands-v3-input__view($this)
   if ie
     background: #FFF
   else
-    background-clip: padding-box
     background: linear-gradient(#FFF, #FFF)
+    background-clip: padding-box
     background-size: 16px 16px
 
 
@@ -40,21 +41,29 @@ skin-islands-v3-input__controller($this)
   if 'centered' in $this.modifiers
     text-align: center
 
+  // FIXME: proper function for adding tag to the proper place
+  // FIXME: move to kind input
+  textarea&
+    vertical-align: top
+
 
 skin-islands-v3-input_centered($this)
   text-align: center
 
 
+skin-islands-v3-input_focus($this)
+  border-color: rgba(178,142,0,.6)
+  box-shadow: 0 0 10px ($this.colors[0] || #FC0)
+
+
 skin-islands-v3-input_reset($this)
-  if 'controller' in $this.elements
+  kind: input
+  &
     kind: pill
-  else
-    kind: input
 
-    &
-      kind: pill
-
+  unless 'controller' in $this.elements
     // FIXME: proper function for adding tag to the proper place
+    // FIXME: move to kind input
     textarea&
       vertical-align: top
 
