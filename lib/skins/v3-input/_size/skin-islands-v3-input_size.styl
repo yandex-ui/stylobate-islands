@@ -1,8 +1,6 @@
 skin-islands-v3-input_size($this)
-  $size = $this.idents[0] || 'medium'
-
-  $selector = 'box' in $this.elements ? $this.elements.box : ''
-  rules()
+  +optional-element($this, 'box')
+    $size = $this.idents[0] || 'medium'
     if $size in ('s' 'small')
       padding: 0.25*$islands_m $islands_xs
 
@@ -34,7 +32,3 @@ skin-islands-v3-input_size($this)
       line-height: 4*$islands_xs
 
       min-height: 4*$islands_xs + (ie ? 0 : $islands_m)
-
-  rules() unless $selector
-  {$selector}
-    rules() if $selector

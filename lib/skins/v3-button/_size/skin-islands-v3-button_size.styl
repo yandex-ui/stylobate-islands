@@ -1,9 +1,8 @@
 skin-islands-v3-button_size($this)
-  // TODO: allow sizing using any pixel unit
-  $size = $this.idents[0] || 'medium'
+  +optional-element($this, 'content')
+    // TODO: allow sizing using any pixel unit
+    $size = $this.idents[0] || 'medium'
 
-  $selector = 'content' in $this.elements ? $this.elements.content : ''
-  rules()
     if $size in ('s' 'small')
       padding: 0 9px
       line-height: 20px
@@ -23,7 +22,3 @@ skin-islands-v3-button_size($this)
       padding: 0 17px
       line-height: 36px
       font-size: 18px
-
-  rules() unless $selector
-  {$selector}
-    rules() if $selector
