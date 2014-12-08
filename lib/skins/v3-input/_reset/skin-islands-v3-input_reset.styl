@@ -1,0 +1,10 @@
+skin-islands-v3-input_reset($this)
+  kind: input
+  &
+    kind: pill
+
+  unless 'controller' in $this.elements
+    // FIXME: proper function for adding tag to the proper place
+    // FIXME: move to kind input
+    textarea&
+      vertical-align: top

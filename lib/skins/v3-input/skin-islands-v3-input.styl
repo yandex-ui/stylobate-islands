@@ -47,24 +47,7 @@ skin-islands-v3-input__controller($this)
     vertical-align: top
 
 
-skin-islands-v3-input_centered($this)
-  text-align: center
-
-
-skin-islands-v3-input_focus($this)
-  border-color: rgba(178,142,0,.6)
-  box-shadow: 0 0 10px ($this.colors[0] || #FC0)
-
-
-skin-islands-v3-input_reset($this)
-  kind: input
-  &
-    kind: pill
-
-  unless 'controller' in $this.elements
-    // FIXME: proper function for adding tag to the proper place
-    // FIXME: move to kind input
-    textarea&
-      vertical-align: top
-
+@require '_size/skin-islands-v3-input_reset'
 @require '_size/skin-islands-v3-input_size'
+@require '_size/skin-islands-v3-input_focus'
+@require '_size/skin-islands-v3-input_centered'
