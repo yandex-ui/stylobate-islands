@@ -1,0 +1,61 @@
+stylobate_defaults('skin-islands-v3-input',
+  '_reset',
+  '__box',
+  '__view',
+  '_size' medium
+  )
+
+skin-islands-v3-input($this)
+  position: relative
+
+
+skin-islands-v3-input__box($this)
+  box-sizing: border-box
+
+
+skin-islands-v3-input__view($this)
+  if 'controller' in $this.elements
+    kind: fill -1px
+
+  // Move colors to `_type` if there would be dark/pseudo/…?
+  border: 1px solid rgba(#000, 0.2)
+  if ie
+    background: #FFF
+  else
+    background-clip: padding-box
+    background: linear-gradient(#FFF, #FFF)
+    background-size: 16px 16px
+
+
+skin-islands-v3-input__controller($this)
+  kind: input
+
+  z-index: 9 // Magic?
+
+  width: 100%
+  height: 100%
+
+  resize: none
+
+  if 'centered' in $this.modifiers
+    text-align: center
+
+
+skin-islands-v3-input_centered($this)
+  text-align: center
+
+
+skin-islands-v3-input_reset($this)
+  if 'controller' in $this.elements
+    kind: pill
+  else
+    kind: input
+
+    &
+      kind: pill
+
+    // FIXME: proper function for adding tag to the proper place
+    textarea&
+      vertical-align: top
+
+@require '_size/skin-islands-v3-input_size'

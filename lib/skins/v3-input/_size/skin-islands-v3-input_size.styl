@@ -1,0 +1,40 @@
+skin-islands-v3-input_size($this)
+  $size = $this.idents[0] || 'medium'
+
+  $selector = 'box' in $this.elements ? $this.elements.box : ''
+  rules()
+    if $size in ('s' 'small')
+      padding: 0.25*$islands_m $islands_xs
+
+      font-size: $islands_text_s
+      line-height: $islands_m
+
+      min-height: $islands_m + (ie ? 0 : 0.5*$islands_m + 2*$islands_px)
+
+    if $size in ('m' 'medium')
+      padding: $islands_xs 0.5*$islands_m
+
+      font-size: $islands_text_s
+      line-height: $islands_m
+
+      min-height: $islands_m + (ie ? 0 : 2*$islands_xs + 2*$islands_px)
+
+    if $size in ('l' 'large')
+      padding: $islands_xs $islands_s
+
+      font-size: $islands_text_m
+      line-height: $islands_l
+
+      min-height: $islands_l + (ie ? 0 : 2*$islands_xs + 2*$islands_px)
+
+    if $size in ('xl' 'extra-large')
+      padding: (0.5*$islands_m - $islands_px) 2*$islands_xs
+
+      font-size: $islands_text_h3
+      line-height: 4*$islands_xs
+
+      min-height: 4*$islands_xs + (ie ? 0 : $islands_m)
+
+  rules() unless $selector
+  {$selector}
+    rules() if $selector

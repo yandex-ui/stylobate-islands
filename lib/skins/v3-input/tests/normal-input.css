@@ -1,0 +1,53 @@
+.normal-input {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+}
+
+.normal-input:focus {
+  outline: none;
+}
+
+.normal-input {
+  position: relative;
+  width: 400px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  border: 1px solid rgba(0,0,0,0.2);
+  background-clip: padding-box;
+  background: -webkit-linear-gradient(#fff, #fff);
+  background: linear-gradient(#fff, #fff);
+  background-size: 16px 16px;
+  padding: 6px 8px;
+  font-size: 13px;
+  line-height: 16px;
+  min-height: 30px;
+}
+
+.normal-input {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: text;
+  vertical-align: baseline;
+}
+
+.normal-input {
+  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+textarea.normal-input {
+  vertical-align: top;
+}
