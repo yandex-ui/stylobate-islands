@@ -1,0 +1,14 @@
+skin-islands-v3-button_align($this)
+  $align = $this.parent.modifiers['align'] || 'center'
+
+  if $align == 'center'
+    text-align: center
+    justify-content: center
+
+  if $align == 'left'
+    text-align: left
+    justify-content: flex-start
+
+  if $align == 'right'
+    text-align: right
+    justify-content: flex-end

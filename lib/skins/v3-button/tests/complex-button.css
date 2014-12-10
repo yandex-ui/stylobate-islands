@@ -34,6 +34,11 @@
           user-select: none;
   border-radius: 3px;
   border-color: rgba(0,0,0,0.2);
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .complex-button-content {
