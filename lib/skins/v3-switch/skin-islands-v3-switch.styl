@@ -1,0 +1,127 @@
+stylobate_defaults('skin-islands-v3-switch',
+  '_size' medium)
+
+stylobate_defaults('skin-islands-v3-switch__view-content',
+  '__helper' '&:after')
+
+$skin-islands-v3-switch = {
+  height: {
+    s:     24px
+    small: 24px
+    m:      28px
+    medium: 28px
+    l:     32px
+    large: 32px
+  }
+  font-size: {
+    s:     $islands_text_s
+    small: $islands_text_s
+    m:      $islands_text_s
+    medium: $islands_text_s
+    l:     $islands_text_m
+    large: $islands_text_m
+  }
+}
+
+skin-islands-v3-switch($this)
+  kind: block inline
+  overflow: hidden
+
+  white-space: nowrap
+  cursor: pointer
+  user-select: none
+
+  color: #000
+
+
+skin-islands-v3-switch_size($this)
+  font-size: $skin-islands-v3-switch.font-size[''+$this.modifiers.size]
+
+
+skin-islands-v3-switch__controller($this)
+  kind: hidden visually
+
+
+skin-islands-v3-switch__view($this)
+  kind: block inline
+  z-index: 1
+
+  vertical-align: top
+  text-align: center
+
+  $height = $skin-islands-v3-switch.height[''+$this.modifiers.size]
+  line-height: $height
+  height: $height
+  padding: 0 ($height / 2)
+
+  border-radius: 3px
+
+  background: linear-gradient(to right, #FFEBA0 50%, rgba(#000, 0.05) 50%)
+  background-size: 200% 100%
+  transition: background-position 0.15s ease-out
+
+  &:after
+    content: ""
+    kind: fill
+
+    box-shadow: inset 0 0 0 1px rgba(#000, 0.2)
+    border-radius: 3px
+
+  // Could be _hover modifier, but I'm lazy enough
+  &:hover:after
+    box-shadow: inset 0 0 0 1px rgba(#000, 0.3)
+
+  input:checked + &
+    background-position: 100% 0
+
+
+skin-islands-v3-switch__view-content($this)
+  kind: block
+  left: 0%
+
+  height: 100%
+
+  transition: left 0.15s ease-out
+
+  // Is it ok to use star here? It is not on the left, so, afaik, ok.
+  input:checked + * > &
+    left: -100%
+
+
+skin-islands-v3-switch__view-content__helper($this)
+  content: ""
+  position: absolute
+  z-index: 9
+  top: 1px
+  bottom: 1px
+  left: 100%
+
+  $height = $skin-islands-v3-switch.height[''+$this.modifiers.size] - 2*$islands_px
+  width: $height
+  margin: 0 0 0 ($height / -2)
+
+  border-radius: 2px
+  background: #FFF
+
+  box-shadow: 0 0 0 1px rgba(#000, 0.2)
+
+
+skin-islands-v3-switch__on($this)
+  kind: block
+
+  height: 100%
+  max-width: 100%
+
+  padding-right: $skin-islands-v3-switch.height[''+$this.modifiers.size]
+
+
+skin-islands-v3-switch__off($this)
+  kind: block
+
+  height: 100%
+  max-width: 100%
+
+  top: -100%
+  left: 100%
+
+  padding-left: $skin-islands-v3-switch.height[''+$this.modifiers.size]

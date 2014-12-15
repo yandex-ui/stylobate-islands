@@ -1,0 +1,17 @@
+@require '../../../standalone.styl'
+
+.small-switch
+  skin: v3-switch (_size small) \
+        (__controller '& .switch-controller') \
+        (__view '& .switch-view') \
+        (__view-content '& .switch-view-content') \
+        (__on '& .switch-on') \
+        (__off '& .switch-off')
+
+.large-switch
+  skin: v3-switch (_size large) \
+        (__controller '& .switch-controller') \
+        (__view '& .switch-view') \
+        (__view-content '& .switch-view-content') \
+        (__on '& .switch-on') \
+        (__off '& .switch-off')

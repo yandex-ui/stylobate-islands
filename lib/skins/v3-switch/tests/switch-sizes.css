@@ -1,0 +1,199 @@
+.small-switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #000;
+  font-size: 13px;
+}
+
+.small-switch .switch-controller,
+.large-switch .switch-controller {
+  position: absolute !important;
+  clip: rect(1px,1px,1px,1px) !important;
+}
+
+.small-switch .switch-view {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 1;
+  vertical-align: top;
+  text-align: center;
+  line-height: 24px;
+  height: 24px;
+  padding: 0 12px;
+  border-radius: 3px;
+  background: -webkit-linear-gradient(left, #ffeba0 50%, rgba(0,0,0,0.05) 50%);
+  background: linear-gradient(to right, #ffeba0 50%, rgba(0,0,0,0.05) 50%);
+  background-size: 200% 100%;
+  -webkit-transition: background-position 0.15s ease-out;
+          transition: background-position 0.15s ease-out;
+}
+
+.small-switch .switch-view:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+.small-switch .switch-view:hover:after {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+input:checked + .small-switch .switch-view {
+  background-position: 100% 0;
+}
+
+.small-switch .switch-view-content {
+  position: relative;
+  display: block;
+  left: 0%;
+  height: 100%;
+  -webkit-transition: left 0.15s ease-out;
+          transition: left 0.15s ease-out;
+}
+
+input:checked + * > .small-switch .switch-view-content {
+  left: -100%;
+}
+
+.small-switch .switch-view-content:after {
+  content: "";
+  position: absolute;
+  z-index: 9;
+  top: 1px;
+  bottom: 1px;
+  left: 100%;
+  width: 22px;
+  margin: 0 0 0 -11px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+
+.small-switch .switch-on {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  padding-right: 24px;
+}
+
+.small-switch .switch-off {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  top: -100%;
+  left: 100%;
+  padding-left: 24px;
+}
+
+.large-switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #000;
+  font-size: 15px;
+}
+
+.large-switch .switch-view {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 1;
+  vertical-align: top;
+  text-align: center;
+  line-height: 32px;
+  height: 32px;
+  padding: 0 16px;
+  border-radius: 3px;
+  background: -webkit-linear-gradient(left, #ffeba0 50%, rgba(0,0,0,0.05) 50%);
+  background: linear-gradient(to right, #ffeba0 50%, rgba(0,0,0,0.05) 50%);
+  background-size: 200% 100%;
+  -webkit-transition: background-position 0.15s ease-out;
+          transition: background-position 0.15s ease-out;
+}
+
+.large-switch .switch-view:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+.large-switch .switch-view:hover:after {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+input:checked + .large-switch .switch-view {
+  background-position: 100% 0;
+}
+
+.large-switch .switch-view-content {
+  position: relative;
+  display: block;
+  left: 0%;
+  height: 100%;
+  -webkit-transition: left 0.15s ease-out;
+          transition: left 0.15s ease-out;
+}
+
+input:checked + * > .large-switch .switch-view-content {
+  left: -100%;
+}
+
+.large-switch .switch-view-content:after {
+  content: "";
+  position: absolute;
+  z-index: 9;
+  top: 1px;
+  bottom: 1px;
+  left: 100%;
+  width: 30px;
+  margin: 0 0 0 -15px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+
+.large-switch .switch-on {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  padding-right: 32px;
+}
+
+.large-switch .switch-off {
+  position: relative;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  top: -100%;
+  left: 100%;
+  padding-left: 32px;
+}

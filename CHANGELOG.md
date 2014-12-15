@@ -4,6 +4,8 @@
 
 ## v1.0.0 (in development)
 
+- Added islands-v3 switch.
+
 - Added islands-v3 input, with a lot of upgrades from the v2 one (except for the overall wrote-from-scratching):
 
     - `large` and `extra-large` sizes, with aliases for all of them.
