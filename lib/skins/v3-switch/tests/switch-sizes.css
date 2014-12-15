@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  overflow: hidden;
+  z-index: 1;
   white-space: nowrap;
   cursor: pointer;
   -webkit-user-select: none;
@@ -20,10 +20,8 @@
 }
 
 .small-switch .switch-view {
-  position: relative;
   display: inline-block;
-  vertical-align: top;
-  z-index: 1;
+  overflow: hidden;
   vertical-align: top;
   text-align: center;
   line-height: 24px;
@@ -50,6 +48,11 @@
 
 .small-switch .switch-view:hover:after {
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+input:focus + .small-switch .switch-view:after,
+input:focus + .small-switch .switch-view:hover:after {
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(0,0,0,0.3);
 }
 
 input:checked + .small-switch .switch-view {
@@ -105,7 +108,7 @@ input:checked + * > .small-switch .switch-view-content {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  overflow: hidden;
+  z-index: 1;
   white-space: nowrap;
   cursor: pointer;
   -webkit-user-select: none;
@@ -117,10 +120,8 @@ input:checked + * > .small-switch .switch-view-content {
 }
 
 .large-switch .switch-view {
-  position: relative;
   display: inline-block;
-  vertical-align: top;
-  z-index: 1;
+  overflow: hidden;
   vertical-align: top;
   text-align: center;
   line-height: 32px;
@@ -147,6 +148,11 @@ input:checked + * > .small-switch .switch-view-content {
 
 .large-switch .switch-view:hover:after {
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+input:focus + .large-switch .switch-view:after,
+input:focus + .large-switch .switch-view:hover:after {
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(0,0,0,0.3);
 }
 
 input:checked + .large-switch .switch-view {

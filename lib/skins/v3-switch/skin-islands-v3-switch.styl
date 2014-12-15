@@ -25,7 +25,7 @@ $skin-islands-v3-switch = {
 
 skin-islands-v3-switch($this)
   kind: block inline
-  overflow: hidden
+  z-index: 1
 
   white-space: nowrap
   cursor: pointer
@@ -43,8 +43,10 @@ skin-islands-v3-switch__controller($this)
 
 
 skin-islands-v3-switch__view($this)
-  kind: block inline
-  z-index: 1
+  // Shouldn't have relative position due to focus styles and stuff
+  // kind: block inline
+  display: inline-block
+  overflow: hidden
 
   vertical-align: top
   text-align: center
@@ -70,6 +72,11 @@ skin-islands-v3-switch__view($this)
   // Could be _hover modifier, but I'm lazy enough
   &:hover:after
     box-shadow: inset 0 0 0 1px rgba(#000, 0.3)
+
+  // Could be _focus modifier, but I'm lazy enough
+  input:focus + &:after,
+  input:focus + &:hover:after
+    box-shadow: $islands_shadow_focus, inset 0 0 0 1px rgba(#000, 0.3)
 
   input:checked + &
     background-position: 100% 0
