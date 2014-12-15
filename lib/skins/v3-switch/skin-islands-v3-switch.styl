@@ -27,7 +27,6 @@ skin-islands-v3-switch($this)
   kind: block inline
   z-index: 1
 
-  white-space: nowrap
   cursor: pointer
   user-select: none
 
@@ -51,6 +50,8 @@ skin-islands-v3-switch__view($this)
   vertical-align: top
   text-align: center
 
+  box-sizing: border-box
+  width: 100%
   $height = $skin-islands-v3-switch.height[''+$this.modifiers.size]
   line-height: $height
   height: $height
@@ -114,7 +115,7 @@ skin-islands-v3-switch__view-content__helper($this)
 
 
 skin-islands-v3-switch__on($this)
-  kind: block
+  kind: block, ellipsis
 
   height: 100%
   max-width: 100%
@@ -123,7 +124,7 @@ skin-islands-v3-switch__on($this)
 
 
 skin-islands-v3-switch__off($this)
-  kind: block
+  kind: block, ellipsis
 
   height: 100%
   max-width: 100%

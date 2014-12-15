@@ -3,7 +3,6 @@
   display: inline-block;
   vertical-align: top;
   z-index: 1;
-  white-space: nowrap;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -23,6 +22,9 @@
   overflow: hidden;
   vertical-align: top;
   text-align: center;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  width: 100%;
   line-height: 28px;
   height: 28px;
   padding: 0 14px;
@@ -88,6 +90,9 @@ input:checked + * > .switch-view-content {
 .switch-on {
   position: relative;
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   height: 100%;
   max-width: 100%;
   padding-right: 28px;
@@ -96,6 +101,9 @@ input:checked + * > .switch-view-content {
 .switch-off {
   position: relative;
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   height: 100%;
   max-width: 100%;
   top: -100%;
