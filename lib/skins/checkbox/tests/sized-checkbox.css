@@ -1,61 +1,55 @@
 .normal-checkbox,
 .small-radio {
+  position: relative;
   display: inline-block;
-
+  vertical-align: top;
+  vertical-align: middle;
   margin-top: -0.2em;
-
   background: 50% no-repeat;
 }
 
 .normal-checkbox {
-  position: relative;
-
-  width: 1.6rem;
-  height: 1.6rem;
-  margin-right: 0.6rem;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  vertical-align: middle;
-
+  font-size: 15px;
+  line-height: 1.467;
   font-family: Arial, sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-
+  position: relative;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #000;
-
-  background: rgba(0, 0, 0, 0.3);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
-
   border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  background: rgba(0,0,0,0.3);
+  background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  text-align: center;
+  margin-right: 6px;
+}
+
+.normal-checkbox {
+  width: 16px;
+  height: 16px;
 }
 
 .normal-checkbox:before {
   content: "";
-
   position: absolute;
   top: 1px;
   right: 1px;
   bottom: 1px;
   left: 1px;
-
   border-radius: 2px;
 }
 
 .normal-checkbox .button-content {
   position: relative;
-
   display: block;
 }
 
 .normal-checkbox:after {
   content: "";
-
   position: absolute;
   top: 0;
   right: 0;
@@ -71,34 +65,29 @@ input[type=file]:focus + .normal-checkbox,
 input[type=file]:focus + .normal-checkbox:after,
 .normal-checkbox:focus:after {
   z-index: 9;
-
-  box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);
-
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
 
 .normal-checkbox:before {
-  background: #F7F7F7;
-  background: -webkit-linear-gradient(#FFF, #EEE);
-  background: linear-gradient(#FFF, #EEE);
+  background: #f7f7f7;
+  background: -webkit-linear-gradient(#fff, #eee);
+  background: linear-gradient(#fff, #eee);
 }
 
 .normal-checkbox > .checkbox-icon {
   position: absolute;
   top: 50%;
   left: 50%;
-
+  margin: -13px 0 0 -2px;
   width: 5px;
   height: 13px;
-  border-right: 3px solid;
   border-bottom: 3px solid;
-  margin: -13px 0 0 -2px;
-
-  -webkit-transform: scale(0.9) rotate(50deg) skewX(12deg);
-  -ms-transform: scale(0.9) rotate(50deg) skewX(12deg);
-  transform: scale(0.9) rotate(50deg) skewX(12deg);
-
+  border-right: 3px solid;
   color: #000;
+  -webkit-transform: scale(0.9) rotate(50deg) skewX(12deg);
+      -ms-transform: scale(0.9) rotate(50deg) skewX(12deg);
+          transform: scale(0.9) rotate(50deg) skewX(12deg);
 }
 
 input:not(:checked) + .normal-checkbox > .checkbox-icon {
@@ -106,52 +95,48 @@ input:not(:checked) + .normal-checkbox > .checkbox-icon {
 }
 
 .small-radio {
-  position: relative;
-
-  width: 1.4rem;
-  height: 1.4rem;
-  margin-right: 0.6rem;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  vertical-align: middle;
-
+  font-size: 15px;
+  line-height: 1.467;
   font-family: Arial, sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-
+  position: relative;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #000;
-
-  background: rgba(0, 0, 0, 0.3);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
-
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  background: rgba(0,0,0,0.3);
+  background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  text-align: center;
   border-radius: 50%;
+  margin-right: 6px;
+}
+
+.small-radio {
+  width: 14px;
+  height: 14px;
 }
 
 .small-radio:before {
   content: "";
-
   position: absolute;
   top: 1px;
   right: 1px;
   bottom: 1px;
   left: 1px;
+  border-radius: 2px;
 }
 
 .small-radio .button-content {
   position: relative;
-
   display: block;
 }
 
 .small-radio:after {
   content: "";
-
   position: absolute;
   top: 0;
   right: 0;
@@ -167,17 +152,17 @@ input[type=file]:focus + .small-radio,
 input[type=file]:focus + .small-radio:after,
 .small-radio:focus:after {
   z-index: 9;
-
-  box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);
-
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
 
 .small-radio:before {
-  background: #F7F7F7;
-  background: -webkit-linear-gradient(#FFF, #EEE);
-  background: linear-gradient(#FFF, #EEE);
+  background: #f7f7f7;
+  background: -webkit-linear-gradient(#fff, #eee);
+  background: linear-gradient(#fff, #eee);
+}
 
+.small-radio:before {
   border-radius: 50%;
 }
 
@@ -185,13 +170,10 @@ input[type=file]:focus + .small-radio:after,
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 6px;
   height: 6px;
   margin: -3px;
-
   background: #000;
-
   border-radius: 50%;
 }
 
