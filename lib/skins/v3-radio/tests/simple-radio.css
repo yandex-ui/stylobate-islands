@@ -1,25 +1,25 @@
-.checkbox {
+.radio {
   position: relative;
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
 }
 
-.checkbox-view {
+.radio-view {
   border-color: rgba(0,0,0,0.2);
   box-shadow: inset 0 90px #fff;
 }
 
-.checkbox:hover > .checkbox-view {
+.radio:hover > .radio-view {
   border-color: rgba(0,0,0,0.4);
 }
 
-input:focus + .checkbox-view {
+input:focus + .radio-view {
   border-color: rgba(178,142,0,0.6);
   outline: none;
 }
 
-input:focus + .checkbox-view:before {
+input:focus + .radio-view:before {
   content: "";
   position: absolute;
   top: 0;
@@ -30,37 +30,39 @@ input:focus + .checkbox-view:before {
   box-shadow: 0 0 10px #fc0;
 }
 
-input:active + .checkbox-view {
+input:active + .radio-view {
   box-shadow: inset 0 90px #f6f5f3;
 }
 
-input:checked + .checkbox-view {
+input:checked + .radio-view {
   border-color: rgba(153,122,0,0.5);
   box-shadow: inset 0 90px #ffeba0;
 }
 
-input:checked + .checkbox-view:after {
+input:checked + .radio-view:after {
   visibility: inherit;
 }
 
-.checkbox-view:after {
+.radio-view:after {
   content: '';
   visibility: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -17px 0 0 -3px;
-  width: 7px;
-  height: 18px;
-  border-right: 2px solid;
-  border-bottom: 2px solid;
-  color: #000;
-  -webkit-transform: scale(0.85) rotate(47deg) skewX(12deg);
-      -ms-transform: scale(0.85) rotate(47deg) skewX(12deg);
-          transform: scale(0.85) rotate(47deg) skewX(12deg);
+  width: 14px;
+  height: 14px;
+  margin: -3px -4px;
+  background: #000;
+  border-radius: 50%;
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
 }
 
-.checkbox-view {
+.radio-view {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -75,9 +77,10 @@ input:checked + .checkbox-view:after {
   border-radius: 3px;
   width: 15px;
   height: 15px;
+  border-radius: 999px;
 }
 
-.checkbox-controller {
+.radio-controller {
   position: absolute !important;
   clip: rect(1px,1px,1px,1px) !important;
 }

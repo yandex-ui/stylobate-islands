@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="simple-checkbox.css">
+<link rel="stylesheet" href="pseudo-checkbox.css">
 
 <!-- Extra deps: need a way to handle them -->
 <link rel="stylesheet" href="../../page/tests/page.css">
@@ -16,18 +17,36 @@
 <h1>Checkbox</h1>
 
 <div>
-    <h2>Simple</h2>
+    <h2>Normal</h2>
     <p>
-        <label class="toggler">
-            <input class="toggler-controller" type="checkbox" checked="checked">
-            <span class="checkbox toggler-view"></span>
+        <label class="checkbox">
+            <input class="checkbox-controller" type="checkbox" checked="checked">
+            <span class="checkbox-view"></span>
             Чекбокс
         </label>
     </p>
     <p>
-        <label class="toggler">
-            <input class="toggler-controller" type="checkbox">
-            <span class="checkbox toggler-view"></span>
+        <label class="checkbox">
+            <input class="checkbox-controller" type="checkbox">
+            <span class="checkbox-view"></span>
+            Чекбокс
+        </label>
+    </p>
+</div>
+
+<div>
+    <h2>Pseudo</h2>
+    <p>
+        <label class="pseudo-checkbox">
+            <input class="pseudo-checkbox-controller" type="checkbox" checked="checked">
+            <span class="pseudo-checkbox-view"></span>
+            Чекбокс
+        </label>
+    </p>
+    <p>
+        <label class="pseudo-checkbox">
+            <input class="pseudo-checkbox-controller" type="checkbox">
+            <span class="pseudo-checkbox-view"></span>
             Чекбокс
         </label>
     </p>

@@ -1,25 +1,20 @@
-.checkbox {
+.pseudo-checkbox {
   position: relative;
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
 }
 
-.checkbox-view {
-  border-color: rgba(0,0,0,0.2);
-  box-shadow: inset 0 90px #fff;
-}
-
-.checkbox:hover > .checkbox-view {
+.pseudo-checkbox:hover > .pseudo-checkbox-view {
   border-color: rgba(0,0,0,0.4);
 }
 
-input:focus + .checkbox-view {
+input:focus + .pseudo-checkbox-view {
   border-color: rgba(178,142,0,0.6);
   outline: none;
 }
 
-input:focus + .checkbox-view:before {
+input:focus + .pseudo-checkbox-view:before {
   content: "";
   position: absolute;
   top: 0;
@@ -30,20 +25,20 @@ input:focus + .checkbox-view:before {
   box-shadow: 0 0 10px #fc0;
 }
 
-input:active + .checkbox-view {
-  box-shadow: inset 0 90px #f6f5f3;
+input:active + .pseudo-checkbox-view {
+  box-shadow: inset 0 90px rgba(0,0,0,0.05);
 }
 
-input:checked + .checkbox-view {
+input:checked + .pseudo-checkbox-view {
   border-color: rgba(153,122,0,0.5);
   box-shadow: inset 0 90px #ffeba0;
 }
 
-input:checked + .checkbox-view:after {
+input:checked + .pseudo-checkbox-view:after {
   visibility: inherit;
 }
 
-.checkbox-view:after {
+.pseudo-checkbox-view:after {
   content: '';
   visibility: hidden;
   position: absolute;
@@ -60,7 +55,11 @@ input:checked + .checkbox-view:after {
           transform: scale(0.85) rotate(47deg) skewX(12deg);
 }
 
-.checkbox-view {
+.pseudo-checkbox-view {
+  border-color: rgba(0,0,0,0.2);
+}
+
+.pseudo-checkbox-view {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -77,7 +76,7 @@ input:checked + .checkbox-view:after {
   height: 15px;
 }
 
-.checkbox-controller {
+.pseudo-checkbox-controller {
   position: absolute !important;
   clip: rect(1px,1px,1px,1px) !important;
 }

@@ -13,7 +13,7 @@
     "url": "git://github.com/yandex-ui/stylobate-islands.git"
   },
   "dependencies": {
-    "stylobate": "1.0.0-alpha.7"
+    "stylobate": "1.0.0-alpha.10"
   },
   "devDependencies": {
     "stylus": "~0.50.0",

@@ -1,2 +1,76 @@
+stylobate_defaults('skin-islands-v3-checkbox',
+  '_type' normal,
+  '_hover' '&:hover',
+  '_focus' '&:focus',
+  '_active' '&:active',
+  '_checked' '&:checked',
+  '__icon' '&:after'
+  )
+
 skin-islands-v3-checkbox($this)
-  // asdasd
+  kind: block inline
+  cursor: pointer
+
+skin-islands-v3-checkbox__view($this)
+  kind: block inline
+
+  user-select: none
+
+  vertical-align: middle
+
+  border-width: 1px
+  border-style: solid
+  margin-top: -3px
+
+  border-radius: $islands-v3.radius
+
+  // move to size
+  width: 15px
+  height: 15px
+
+skin-islands-v3-checkbox__controller($this)
+  kind: hidden visually
+
+skin-islands-v3-checkbox__icon($this)
+  +optional-element($this, 'view')
+    content: ''
+    visibility: hidden
+
+    position: absolute
+    top: 50%
+    left: 50%
+    margin: -17px 0 0 -3px
+    width: 7px
+    height: 18px
+    border-right: 2px solid
+    border-bottom: 2px solid
+    color: #000
+
+    transform: scale(0.85) rotate(47deg) skewX(12deg)
+
+skin-islands-v3-checkbox_type($this)
+  +optional-element($this, 'view')
+    skin-islands-v3-button_type($this)
+
+skin-islands-v3-checkbox_hover($this)
+  +optional-element($this, 'view', $this.parent.selector + ':hover > &')
+    skin-islands-v3-button_hover($this)
+
+skin-islands-v3-checkbox_focus($this)
+  +optional-element($this, 'view', 'input:focus + &')
+    skin-islands-v3-button_focus($this)
+
+    &:before
+      skin-islands-v3-button_focus__helper($this)
+
+skin-islands-v3-checkbox_active($this)
+  +optional-element($this, 'view', 'input:active + &')
+    skin-islands-v3-button_active($this)
+
+skin-islands-v3-checkbox_checked($this)
+  +optional-element($this, 'view', 'input:checked + &')
+    skin-islands-v3-button_checked($this)
+
+    if 'icon' in $this.elements
+      {$this.elements['icon']}
+        visibility: inherit
