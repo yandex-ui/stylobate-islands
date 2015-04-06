@@ -1,9 +1,11 @@
 stylobate_extends('skin-islands-v3-radio', 'skin-islands-v3-checkbox')
 
+
 skin-islands-v3-radio__view($this)
   skin-islands-v3-checkbox__view($this)
 
   border-radius: 999px
+
 
 skin-islands-v3-radio__icon($this)
   +optional-element($this, 'view')
@@ -11,17 +13,36 @@ skin-islands-v3-radio__icon($this)
     visibility: hidden
 
     position: absolute
-    top: 50%
-    left: 50%
-
-    // Wrap with size
-    width: 14px
-    height: 14px
-    margin: -3px -4px
+    top: 0
+    left: 0
 
     background: #000
 
     border-radius: 50%
 
-    transform: scale(0.5)
-    transform-origin: 0 0
+    transform: scale(0.5) translate(1px, 1px)
+
+    $size = $this.modifiers['size'] || 'medium'
+
+    if $size in ('m' 'medium')
+      // FIXME: proper measurments
+      width: 12px
+      height: 12px
+
+    if $size in ('l' 'large')
+      width: 14px
+      height: 14px
+
+
+skin-islands-v3-radio_size($this)
+  +optional-element($this, 'view')
+    $size = $this.modifiers['size'] || 'medium'
+
+    if $size in ('m' 'medium')
+      // FIXME: proper measurments
+      width: 13px
+      height: 13px
+
+    if $size in ('l' 'large')
+      width: 15px
+      height: 15px

@@ -1,30 +1,25 @@
-.radio {
+.large-checkbox {
   position: relative;
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
 }
 
-.radio-view {
+.large-checkbox-view {
   border-color: rgba(0,0,0,0.2);
   box-shadow: inset 0 90px #fff;
 }
 
-.radio-view {
-  width: 13px;
-  height: 13px;
-}
-
-.radio:hover > .radio-view {
+.large-checkbox:hover > .large-checkbox-view {
   border-color: rgba(0,0,0,0.4);
 }
 
-input:focus + .radio-view {
+input:focus + .large-checkbox-view {
   border-color: rgba(178,142,0,0.6);
   outline: none;
 }
 
-input:focus + .radio-view:before {
+input:focus + .large-checkbox-view:before {
   content: "";
   position: absolute;
   top: 0;
@@ -35,35 +30,42 @@ input:focus + .radio-view:before {
   box-shadow: 0 0 10px #fc0;
 }
 
-input:active + .radio-view {
+input:active + .large-checkbox-view {
   box-shadow: inset 0 90px #f6f5f3;
 }
 
-input:checked + .radio-view {
+input:checked + .large-checkbox-view {
   border-color: rgba(153,122,0,0.5);
   box-shadow: inset 0 90px #ffeba0;
 }
 
-input:checked + .radio-view:after {
+input:checked + .large-checkbox-view:after {
   visibility: inherit;
 }
 
-.radio-view:after {
+.large-checkbox-view:after {
   content: '';
   visibility: hidden;
   position: absolute;
-  top: 0;
-  left: 0;
-  background: #000;
-  border-radius: 50%;
-  -webkit-transform: scale(0.5) translate(1px, 1px);
-      -ms-transform: scale(0.5) translate(1px, 1px);
-          transform: scale(0.5) translate(1px, 1px);
-  width: 12px;
-  height: 12px;
+  top: 50%;
+  left: 50%;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  color: #000;
+  -webkit-transform: scale(0.85) rotate(47deg) skewX(12deg);
+      -ms-transform: scale(0.85) rotate(47deg) skewX(12deg);
+          transform: scale(0.85) rotate(47deg) skewX(12deg);
+  margin: -17px 0 0 -3px;
+  width: 7px;
+  height: 18px;
 }
 
-.radio-view {
+.large-checkbox-view {
+  width: 15px;
+  height: 15px;
+}
+
+.large-checkbox-view {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -76,10 +78,9 @@ input:checked + .radio-view:after {
   border-style: solid;
   margin-top: -3px;
   border-radius: 3px;
-  border-radius: 999px;
 }
 
-.radio-controller {
+.large-checkbox-controller {
   position: absolute !important;
   clip: rect(1px,1px,1px,1px) !important;
 }

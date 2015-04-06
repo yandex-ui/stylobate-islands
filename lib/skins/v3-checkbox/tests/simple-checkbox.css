@@ -10,6 +10,11 @@
   box-shadow: inset 0 90px #fff;
 }
 
+.checkbox-view {
+  width: 12px;
+  height: 12px;
+}
+
 .checkbox:hover > .checkbox-view {
   border-color: rgba(0,0,0,0.4);
 }
@@ -49,15 +54,15 @@ input:checked + .checkbox-view:after {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -17px 0 0 -3px;
-  width: 7px;
-  height: 18px;
   border-right: 2px solid;
   border-bottom: 2px solid;
   color: #000;
   -webkit-transform: scale(0.85) rotate(47deg) skewX(12deg);
       -ms-transform: scale(0.85) rotate(47deg) skewX(12deg);
           transform: scale(0.85) rotate(47deg) skewX(12deg);
+  margin: -16px 0 0 -2px;
+  width: 7px;
+  height: 17px;
 }
 
 .checkbox-view {
@@ -73,8 +78,6 @@ input:checked + .checkbox-view:after {
   border-style: solid;
   margin-top: -3px;
   border-radius: 3px;
-  width: 15px;
-  height: 15px;
 }
 
 .checkbox-controller {

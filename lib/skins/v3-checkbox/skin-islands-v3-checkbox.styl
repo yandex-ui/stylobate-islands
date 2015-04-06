@@ -1,5 +1,6 @@
 stylobate_defaults('skin-islands-v3-checkbox',
   '_type' normal,
+  '_size' medium,
   '_hover' '&:hover',
   '_focus' '&:focus',
   '_active' '&:active',
@@ -10,6 +11,7 @@ stylobate_defaults('skin-islands-v3-checkbox',
 skin-islands-v3-checkbox($this)
   kind: block inline
   cursor: pointer
+
 
 skin-islands-v3-checkbox__view($this)
   kind: block inline
@@ -24,12 +26,9 @@ skin-islands-v3-checkbox__view($this)
 
   border-radius: $islands-v3.radius
 
-  // move to size
-  width: 15px
-  height: 15px
-
 skin-islands-v3-checkbox__controller($this)
   kind: hidden visually
+
 
 skin-islands-v3-checkbox__icon($this)
   +optional-element($this, 'view')
@@ -39,14 +38,37 @@ skin-islands-v3-checkbox__icon($this)
     position: absolute
     top: 50%
     left: 50%
-    margin: -17px 0 0 -3px
-    width: 7px
-    height: 18px
     border-right: 2px solid
     border-bottom: 2px solid
     color: #000
 
     transform: scale(0.85) rotate(47deg) skewX(12deg)
+
+    $size = $this.modifiers['size'] || 'medium'
+
+    if $size in ('m' 'medium')
+      margin: -16px 0 0 -2px
+      width: 7px
+      height: 17px
+
+    if $size in ('l' 'large')
+      margin: -17px 0 0 -3px
+      width: 7px
+      height: 18px
+
+
+skin-islands-v3-checkbox_size($this)
+  +optional-element($this, 'view')
+    $size = $this.modifiers['size'] || 'medium'
+
+    if $size in ('m' 'medium')
+      width: 12px
+      height: 12px
+
+    if $size in ('l' 'large')
+      width: 15px
+      height: 15px
+
 
 skin-islands-v3-checkbox_type($this)
   +optional-element($this, 'view')
