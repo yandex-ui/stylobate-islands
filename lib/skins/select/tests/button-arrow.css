@@ -1,0 +1,27 @@
+.button-arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
+
+.button-arrow {
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  margin-top: -0.33em;
+  -webkit-transform: scale(0.75) rotate(45deg);
+      -ms-transform: scale(0.75) rotate(45deg);
+          transform: scale(0.75) rotate(45deg);
+  float: right;
+  top: 0.7em;
+  left: -4px;
+  margin-right: -6px;
+  margin-left: 10px;
+}
+
+.button-arrow {
+  width: 6px;
+  height: 6px;
+}

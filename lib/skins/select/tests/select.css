@@ -1,32 +1,28 @@
 .select-wrap:after {
+  position: relative;
   display: inline-block;
-
+  vertical-align: top;
   vertical-align: middle;
-
+  margin-top: -0.2em;
   background: 50% no-repeat;
 }
 
 .select {
   position: relative;
-  z-index: 10;
-
   display: block;
-
-  width: 100%;
-  padding: 0.5rem 2.7rem 0.5rem 1.5rem;
-  border: none;
-  margin: 0;
-
-  cursor: pointer;
-
-  font: inherit;
-
-  color: inherit;
-
-  background: transparent;
-
+  z-index: 10;
   -webkit-appearance: none;
+  -moz-appearance: menuitem;
   -moz-appearance: window;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  padding: 5px 27px 5px 15px;
 }
 
 .select:focus {
@@ -35,18 +31,21 @@
 
 .select,
 x::-moz-focus-inner {
-  padding: 0.6rem 2.3rem 0.6rem 1.1rem;
-
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
 
 .select,
+x::-moz-focus-inner {
+  padding: 6px 23px 6px 11px;
+}
+
+.select,
 x:-o-prefocus {
   box-sizing: content-box;
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-  margin-right: -1.5rem;
+  margin-right: -15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .select-wrap {
@@ -56,40 +55,37 @@ x:-o-prefocus {
 .select-wrap,
 x:-o-prefocus {
   overflow: hidden;
-
   vertical-align: middle;
 }
 
 .select-wrap:after {
   position: absolute;
   top: 50%;
-  right: 1.2rem;
+  right: 12px;
   bottom: auto;
   left: auto;
+  margin-right: -2px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  margin-top: -0.33em;
+  color: #000;
+  -webkit-transform: scale(0.75) rotate(45deg);
+      -ms-transform: scale(0.75) rotate(45deg);
+          transform: scale(0.75) rotate(45deg);
+}
 
+.select-wrap:after {
   width: 6px;
   height: 6px;
-  border-right: 2px solid;
-  border-bottom: 2px solid;
-  margin-top: -0.33em;
-  margin-right: -2px;
-
-  -webkit-transform: scale(0.75) rotate(45deg);
-  -ms-transform: scale(0.75) rotate(45deg);
-  transform: scale(0.75) rotate(45deg);
-
-  color: #000;
 }
 
 select:focus + .select-focus {
   position: absolute;
-  z-index: 9;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-
-  box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);
-
+  z-index: 9;
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }

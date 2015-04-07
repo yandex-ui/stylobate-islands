@@ -7,7 +7,7 @@ skin-islands-input($this)
     z-index: 9
 
 skin-islands-input__box($this)
-  box-sizing: border-box
+  box-sizing: border-box if !ie // Somehow bugs in if-ie
 
   border: 1px solid transparent
   padding: 0.5*$islands_s $islands_s

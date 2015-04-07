@@ -1,0 +1,91 @@
+.large-promo-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+}
+
+.large-promo-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+.large-promo-button {
+  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 15px;
+  line-height: 1.467;
+  font-family: Arial, sans-serif;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  outline: 0;
+  background: #f9c400;
+  background: -webkit-linear-gradient(top, #ffe025, #f9c400 92%, #be8c05);
+  background: linear-gradient(to bottom, #ffe025, #f9c400 92%, #be8c05);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.36);
+  color: #473e09;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-shadow: 0 0 1px 0 #fff;
+  font-size: 30px;
+  padding: 20px 36px;
+  border-radius: 6px;
+}
+
+.large-promo-button:active {
+  background: #ffe652;
+  background: -webkit-linear-gradient(top, #c69007, #f8c106 8%, #dec35e);
+  background: linear-gradient(to bottom, #c69007, #f8c106 8%, #dec35e);
+}
+
+.large-promo-button:active:before {
+  background: -webkit-linear-gradient(top, #ffe349, #ffdb01);
+  background: linear-gradient(to bottom, #ffe349, #ffdb01);
+  box-shadow: inset 0 2px 4px 0 rgba(102,52,0,0.2);
+}
+
+.large-promo-button:active .button-content {
+  top: 3px;
+}
+
+.large-promo-button:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background: -webkit-linear-gradient(top, #ffe34a, #ffdb03);
+  background: linear-gradient(to bottom, #ffe34a, #ffdb03);
+  box-shadow: inset 0 -2px 0 0 rgba(102,52,0,0.2), inset 0 0 3px 0 rgba(254,255,187,0.5);
+  border-radius: inherit;
+}
+
+.large-promo-button:hover:before {
+  background: -webkit-linear-gradient(top, #ffe86a, #ffe130);
+  background: linear-gradient(to bottom, #ffe86a, #ffe130);
+}
+
+.large-promo-button .button-content {
+  position: relative;
+  display: block;
+}
