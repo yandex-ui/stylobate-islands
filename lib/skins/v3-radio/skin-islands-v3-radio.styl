@@ -7,6 +7,10 @@ skin-islands-v3-radio__view($this)
   border-radius: 999px
 
 
+stylobate_defaults('skin-islands-v3-radio__icon',
+  '_size'
+  )
+
 skin-islands-v3-radio__icon($this)
   +optional-element($this, 'view')
     content: ''
@@ -20,6 +24,9 @@ skin-islands-v3-radio__icon($this)
 
     border-radius: 50%
 
+
+skin-islands-v3-radio__icon_size($this)
+  +optional-element($this, 'view')
     $size = $this.modifiers['size'] || 'medium'
 
     if $size in ('m' 'medium')

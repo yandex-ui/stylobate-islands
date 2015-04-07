@@ -58,6 +58,9 @@ input:checked + .radio-view:after {
   left: 0;
   background: #000;
   border-radius: 50%;
+}
+
+.radio-view:after {
   width: 6px;
   height: 6px;
   margin: 3px;

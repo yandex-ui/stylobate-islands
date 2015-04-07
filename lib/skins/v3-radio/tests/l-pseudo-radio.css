@@ -48,6 +48,9 @@ input:checked + .l-pseudo-radio-view:after {
   left: 0;
   background: #000;
   border-radius: 50%;
+}
+
+.l-pseudo-radio-view:after {
   width: 14px;
   height: 14px;
   -webkit-transform: scale(0.5) translate(1px, 1px);

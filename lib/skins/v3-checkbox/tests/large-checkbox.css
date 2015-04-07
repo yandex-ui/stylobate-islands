@@ -57,6 +57,9 @@ input:checked + .large-checkbox-view:after {
   -webkit-transform: scale(0.85) rotate(47deg) skewX(12deg);
       -ms-transform: scale(0.85) rotate(47deg) skewX(12deg);
           transform: scale(0.85) rotate(47deg) skewX(12deg);
+}
+
+.large-checkbox-view:after {
   margin: -17px 0 0 -3px;
   width: 7px;
   height: 18px;

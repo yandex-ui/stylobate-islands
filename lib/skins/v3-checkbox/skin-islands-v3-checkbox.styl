@@ -27,9 +27,14 @@ skin-islands-v3-checkbox__view($this)
 
   border-radius: $islands-v3.radius
 
+
 skin-islands-v3-checkbox__controller($this)
   kind: hidden visually
 
+
+stylobate_defaults('skin-islands-v3-checkbox__icon',
+  '_size'
+  )
 
 skin-islands-v3-checkbox__icon($this)
   +optional-element($this, 'view')
@@ -45,6 +50,9 @@ skin-islands-v3-checkbox__icon($this)
 
     transform: scale(0.85) rotate(47deg) skewX(12deg)
 
+
+skin-islands-v3-checkbox__icon_size($this)
+  +optional-element($this, 'view')
     $size = $this.modifiers['size'] || 'medium'
 
     if $size in ('m' 'medium')
