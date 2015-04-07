@@ -5,7 +5,8 @@ stylobate_defaults('skin-islands-v3-checkbox',
   '_focus' '&:focus',
   '_active' '&:active',
   '_checked' '&:checked',
-  '__icon' '&:after'
+  '__icon' '&:after',
+  '__text'
   )
 
 skin-islands-v3-checkbox($this)
@@ -55,6 +56,24 @@ skin-islands-v3-checkbox__icon($this)
       margin: -17px 0 0 -3px
       width: 7px
       height: 18px
+
+
+skin-islands-v3-checkbox__text($this)
+  $size = $this.modifiers['size'] || 'medium'
+
+  if $size in ('m' 'medium')
+    // Disabled, as it should be only when after checkbox
+    // padding-left: 5px // That's how it is in guides -_-
+
+    font-size: $islands-v3.font-size.p
+    line-height: 24px // Should be a variable?
+
+  if $size in ('l' 'large')
+    // Disabled, as it should be only when after checkbox
+    // padding-left: 7px // That's how it is in guides -_-
+
+    font-size: $islands-v3.font-size.p2
+    line-height: 30px // Should be a variable?
 
 
 skin-islands-v3-checkbox_size($this)

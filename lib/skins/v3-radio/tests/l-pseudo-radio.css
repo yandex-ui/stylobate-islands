@@ -3,6 +3,8 @@
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .l-pseudo-radio:hover > .l-pseudo-radio-view {
@@ -46,11 +48,11 @@ input:checked + .l-pseudo-radio-view:after {
   left: 0;
   background: #000;
   border-radius: 50%;
+  width: 14px;
+  height: 14px;
   -webkit-transform: scale(0.5) translate(1px, 1px);
       -ms-transform: scale(0.5) translate(1px, 1px);
           transform: scale(0.5) translate(1px, 1px);
-  width: 14px;
-  height: 14px;
 }
 
 .l-pseudo-radio-view {
