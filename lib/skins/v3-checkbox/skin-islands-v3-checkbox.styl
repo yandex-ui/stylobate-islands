@@ -102,22 +102,22 @@ skin-islands-v3-checkbox_type($this)
     skin-islands-v3-button_type($this)
 
 skin-islands-v3-checkbox_hover($this)
-  +optional-element($this, 'view', $this.parent.selector + ':hover > &')
+  +optional-element($this, 'view', 'ROOT:hover > __view')
     skin-islands-v3-button_hover($this)
 
 skin-islands-v3-checkbox_focus($this)
-  +optional-element($this, 'view', 'input:focus + &')
+  +optional-element($this, 'view', 'ROOT > input:focus + __view')
     skin-islands-v3-button_focus($this)
 
     &:before
       skin-islands-v3-button_focus__helper($this)
 
 skin-islands-v3-checkbox_active($this)
-  +optional-element($this, 'view', 'input:active + &')
+  +optional-element($this, 'view', 'ROOT > input:active + __view')
     skin-islands-v3-button_active($this)
 
 skin-islands-v3-checkbox_checked($this)
-  +optional-element($this, 'view', 'input:checked + &')
+  +optional-element($this, 'view', 'ROOT > input:checked + __view')
     skin-islands-v3-button_checked($this)
 
     if 'icon' in $this.elements

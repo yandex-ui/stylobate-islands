@@ -16,12 +16,12 @@
   border-color: rgba(0,0,0,0.4);
 }
 
-input:focus + .pseudo-checkbox-view {
+.pseudo-checkbox > input:focus + .pseudo-checkbox-view {
   border-color: rgba(178,142,0,0.6);
   outline: none;
 }
 
-input:focus + .pseudo-checkbox-view:before {
+.pseudo-checkbox > input:focus + .pseudo-checkbox-view:before {
   content: "";
   position: absolute;
   top: 0;
@@ -32,16 +32,16 @@ input:focus + .pseudo-checkbox-view:before {
   box-shadow: 0 0 10px #fc0;
 }
 
-input:active + .pseudo-checkbox-view {
+.pseudo-checkbox > input:active + .pseudo-checkbox-view {
   box-shadow: inset 0 90px rgba(0,0,0,0.05);
 }
 
-input:checked + .pseudo-checkbox-view {
+.pseudo-checkbox > input:checked + .pseudo-checkbox-view {
   border-color: rgba(153,122,0,0.5);
   box-shadow: inset 0 90px #ffeba0;
 }
 
-input:checked + .pseudo-checkbox-view:after {
+.pseudo-checkbox > input:checked + .pseudo-checkbox-view:after {
   visibility: inherit;
 }
 

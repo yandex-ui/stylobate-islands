@@ -21,12 +21,12 @@
   border-color: rgba(0,0,0,0.4);
 }
 
-input:focus + .radio-view {
+.radio > input:focus + .radio-view {
   border-color: rgba(178,142,0,0.6);
   outline: none;
 }
 
-input:focus + .radio-view:before {
+.radio > input:focus + .radio-view:before {
   content: "";
   position: absolute;
   top: 0;
@@ -37,16 +37,16 @@ input:focus + .radio-view:before {
   box-shadow: 0 0 10px #fc0;
 }
 
-input:active + .radio-view {
+.radio > input:active + .radio-view {
   box-shadow: inset 0 90px #f6f5f3;
 }
 
-input:checked + .radio-view {
+.radio > input:checked + .radio-view {
   border-color: rgba(153,122,0,0.5);
   box-shadow: inset 0 90px #ffeba0;
 }
 
-input:checked + .radio-view:after {
+.radio > input:checked + .radio-view:after {
   visibility: inherit;
 }
 
