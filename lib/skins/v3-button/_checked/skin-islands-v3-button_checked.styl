@@ -6,7 +6,7 @@ skin-islands-v3-button_checked($this)
   $background = $this.colors[0] || #FFEBA0
 
   if 'content' in $this.elements
-    {replace('&', $this.parent.selector, $this.elements.content)}
+    +optional-element($this, 'content')
       background: $background
   else
     box-shadow: inset 0 90px $background

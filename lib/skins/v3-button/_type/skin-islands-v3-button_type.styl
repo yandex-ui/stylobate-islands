@@ -33,7 +33,7 @@ skin-islands-v3-button_type($this)
 
   if $background
     if 'content' in $this.elements
-      {$this.elements.content}
+      +optional-element($this, 'content')
         background: $background
     else
       box-shadow: inset 0 90px $background

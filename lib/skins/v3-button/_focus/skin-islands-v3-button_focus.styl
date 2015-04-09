@@ -9,7 +9,7 @@ skin-islands-v3-button_focus($this)
   outline: none
 
   if 'content' in $this.elements
-    {replace('&', $this.parent.selector, $this.elements.content)}
+    +optional-element($this, 'content', 'ROOT:focus __content')
       box-shadow: 0 0 10px ($this.colors[0] || #FC0)
 
 
