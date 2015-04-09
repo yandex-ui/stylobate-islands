@@ -42,8 +42,8 @@ skin-islands-v3-checkbox__icon($this)
     visibility: hidden
 
     position: absolute
-    top: 50%
-    left: 50%
+    top: 0
+    left: 0
     border-right: 2px solid
     border-bottom: 2px solid
     color: #000
@@ -56,12 +56,12 @@ skin-islands-v3-checkbox__icon_size($this)
     $size = $this.modifiers['size'] || 'medium'
 
     if $size in ('m' 'medium')
-      margin: -16px 0 0 -2px
+      margin: -10px 0 0 4px
       width: 7px
       height: 17px
 
     if $size in ('l' 'large')
-      margin: -17px 0 0 -3px
+      margin: -9px 0 0 5px
       width: 7px
       height: 18px
 

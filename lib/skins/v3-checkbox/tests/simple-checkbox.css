@@ -54,8 +54,8 @@
   content: '';
   visibility: hidden;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   border-right: 2px solid;
   border-bottom: 2px solid;
   color: #000;
@@ -65,7 +65,7 @@
 }
 
 .checkbox-view:after {
-  margin: -16px 0 0 -2px;
+  margin: -10px 0 0 4px;
   width: 7px;
   height: 17px;
 }
