@@ -22,12 +22,12 @@
   overflow: hidden;
   vertical-align: top;
   text-align: center;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
   width: 100%;
-  line-height: 28px;
+  line-height: 30px;
   height: 28px;
   padding: 0 14px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   border-radius: 3px;
   background: -webkit-linear-gradient(left, #ffeba0 50%, rgba(0,0,0,0.05) 50%);
   background: linear-gradient(to right, #ffeba0 50%, rgba(0,0,0,0.05) 50%);
@@ -51,12 +51,12 @@
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
 }
 
-input:focus + .switch-view:after,
-input:focus + .switch-view:hover:after {
+.switch > input:focus + .switch-view:after,
+.switch > input:focus + .switch-view:hover:after {
   box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(0,0,0,0.3);
 }
 
-input:checked + .switch-view {
+.switch > input:checked + .switch-view {
   background-position: 100% 0;
 }
 
@@ -69,7 +69,7 @@ input:checked + .switch-view {
           transition: left 0.15s ease-out;
 }
 
-input:checked + * > .switch-view-content {
+.switch > input:checked + * > .switch-view-content {
   left: -100%;
 }
 
