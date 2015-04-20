@@ -1,0 +1,30 @@
+stylobate_defaults('skin-islands-v3-isle',
+  '_type' normal
+  )
+
+skin-islands-v3-isle($this)
+  background: $this.colors[0] or #FFF
+
+skin-islands-v3-isle_type($this)
+  $type = $this.parent.modifiers['type'] || 'normal'
+
+  if $type == 'normal'
+    box-shadow: 0 0 0 1px rgba(#000, ($this.units[0] or 0.1))
+
+  if $type == 'fly'
+    box-shadow: 0 0 0 1px rgba(0,0,0, ($this.units[0] or 0.15)),
+                0 8px 30px -5px rgba(0,0,0,0.5)
+
+  if ie
+    border: 1px solid rgba-ie(#000, ($this.units[0] or 0.1))
+    margin: -1px 0
+
+// How to merge this and skin-islands-popup-content?
+skin-islands-v3-isle__content($this)
+  $size = $this.parent.modifiers['size'] || 'medium'
+
+  if $size in ('s' 'small')
+    kind: content $islands_xs $islands_s
+
+  if $size in ('m' 'medium')
+    kind: content $islands_m $islands_l
