@@ -7,6 +7,8 @@ skin-islands-v3-loader($this)
 
 // Fallbacks for browsers that do not support SMIL animations
 skin-islands-v3-loader_fallbacks($this)
+  $color = $this.modifiers['color'] || #FC0
+
   @keyframes rotate360
     from
       transform: rotate(0deg)
@@ -16,7 +18,12 @@ skin-islands-v3-loader_fallbacks($this)
   // IE fallback
   :root &,
   /_:-ms-input-placeholder
+    box-sizing: border-box
+    border: 2px solid $color
+    border-left-color: transparent
+    border-top-color: transparent
     animation: rotate360 1s linear infinite
+    border-radius: 50%
 
   // Old Opera fallback
   body:last-child &
@@ -47,4 +54,8 @@ skin-islands-v3-loader_size($this)
 
   $color = replace("#", "%23", "" + $color)
 
+  // The points of doing it by animating dashoffset
+  // 1. More “true” way of rotating visualiazation (no needless antialiasing)
+  // 2. No webkit transform animation problems (blocks losing subpixel font antialiasing etc.)
+  // Ideally this should be made not in CSS, but via JS in canvas.
   background: url("data:image/svg+xml;utf8,<svg width='" + $radius*2 + "px' height='" + $radius*2 + "px' viewBox='0 0 " + $radius*2 + " " + $radius*2 + "' xmlns='http%3A//www.w3.org/2000/svg'><circle fill='none' stroke-width='2' stroke-dashoffset='" + $length + "' stroke-dasharray='" + $length + "' stroke='"+ $color +"' cx='" + $radius + "' cy='" + $radius + "' r='" + ($radius - 1) + "'><animate attributeName='stroke-dashoffset' from='" + $length + "' to='-" + $length + "' dur='1s' repeatCount='indefinite' /></circle></svg>")
