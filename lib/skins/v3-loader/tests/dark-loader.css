@@ -4,7 +4,7 @@
   vertical-align: top;
   width: 28px;
   height: 28px;
-  background: url("data:image/svg+xml;utf8,<svg width='28px' height='28px' viewBox='0 0 28 28' xmlns='http%3A//www.w3.org/2000/svg'><circle fill='none' stroke-width='2' stroke-dashoffset='40.84' stroke-dasharray='40.84' stroke='rgba(255,255,255,0.8)' cx='14' cy='14' r='13'><animate attributeName='stroke-dashoffset' from='40.84' to='-40.84' dur='1s' repeatCount='indefinite' /></circle></svg>");
+  background: url("data:image/svg+xml;utf8,<svg width='28px' height='28px' viewBox='0 0 28 28' xmlns='http%3A//www.w3.org/2000/svg'><circle fill='none' stroke-width='2' stroke-dashoffset='81.68' stroke-dasharray='40.84' stroke='rgba(255,255,255,0.8)' cx='14' cy='14' r='13'><animate attributeName='stroke-dashoffset' from='81.68' to='0' dur='1s' repeatCount='indefinite' /></circle></svg>");
 }
 
 :root .dark-loader,
