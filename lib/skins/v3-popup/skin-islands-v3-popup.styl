@@ -1,0 +1,102 @@
+skin-islands-v3-popup($this)
+  global_skin(islands-v3-isle (_type fly))
+
+  // This could be moved to subskin only when we could get the parent's selector and reuse it inside.
+  $popup-tail = utilus_get($this.arguments, '__tail')
+  if $popup-tail
+    &_to_top {$popup-tail}
+      skin-islands-v3-popup__tail_to_top()
+
+    &_to_right {$popup-tail}
+      skin-islands-v3-popup__tail_to_right()
+
+    &_to_bottom {$popup-tail}
+      skin-islands-v3-popup__tail_to_bottom()
+
+    &_to_left {$popup-tail}
+      skin-islands-v3-popup__tail_to_left()
+
+
+skin-islands-v3-popup__overlay($this)
+  background: $this.colors[0] or rgba(#323232, 0.2)
+
+skin-islands-v3-popup__content($this)
+  display: block
+  if small in $this.arguments
+    kind: content $islands_xs $islands_s
+  else
+    kind: content $islands_m $islands_l
+
+
+skin-islands-v3-popup__close()
+  global_skin: islands-v3-icon _remove with-hover
+
+  position: absolute
+  top: 5px
+  right: 5px
+
+  margin-top: 0
+
+
+skin-islands-v3-popup__tail()
+  position: absolute
+
+  font-size: $islands_m
+
+  width: 1em
+  height: 1em
+  clip: rect(0,0,0,0) // Hide until mode set
+
+  &:before
+    content: ""
+
+    position: absolute
+    top: 0
+    left: 0
+
+    width: 100%
+    height: 100%
+
+    background: $islands_bg_main
+
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15),
+                8px 8px 30px -5px rgba(0,0,0,0.5)
+    transform: rotate(45deg)
+
+
+skin-islands-v3-popup__tail_to_top()
+  bottom: 0
+  left: 50%
+  margin: -1em -.5em
+  clip: rect(0, 99em, 99em, -99em)
+
+  &:before
+    top: -50%
+
+skin-islands-v3-popup__tail_to_right()
+  top: 50%
+  left: 0
+  margin: -.5em -1em
+  clip: rect(-99em, auto, 99em, -99em)
+
+  &:before
+    left: 50%
+
+skin-islands-v3-popup__tail_to_bottom()
+  top: 0
+  left: 50%
+  margin: -1em -.5em
+  clip: rect(-99em, 99em, auto, -99em)
+
+  &:before
+    top: 50%
+
+skin-islands-v3-popup__tail_to_left()
+  top: 50%
+  right: 0
+  margin: -.5em -1em
+  clip: rect(-99em, 99em, 99em, 0)
+
+  &:before
+    left: -50%
+
