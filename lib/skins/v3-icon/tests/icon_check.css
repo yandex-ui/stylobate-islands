@@ -1,0 +1,20 @@
+.icon_check {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
+
+.icon_check {
+  margin: -3px 3px 1px;
+  width: 5px;
+  height: 13px;
+  border-bottom: 3px solid;
+  border-right: 3px solid;
+  color: #000;
+  -webkit-transform: scale(0.9) rotate(50deg) skewX(12deg);
+      -ms-transform: scale(0.9) rotate(50deg) skewX(12deg);
+          transform: scale(0.9) rotate(50deg) skewX(12deg);
+}
