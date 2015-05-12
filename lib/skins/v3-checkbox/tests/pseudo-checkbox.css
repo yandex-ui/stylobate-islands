@@ -17,6 +17,7 @@
 }
 
 .pseudo-checkbox > input:focus + .pseudo-checkbox-view {
+  z-index: 2;
   border-color: rgba(178,142,0,0.6);
   outline: none;
 }

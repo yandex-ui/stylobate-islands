@@ -20,6 +20,7 @@
   width: 400px;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
+  z-index: 1;
   color: #000;
   border: 1px solid rgba(0,0,0,0.2);
   background: -webkit-linear-gradient(#fff, #fff);
@@ -59,6 +60,7 @@ textarea.normal-input {
 }
 
 .normal-input:focus {
+  z-index: 2;
   border-color: rgba(178,142,0,0.6);
   box-shadow: 0 0 10px #fc0;
 }

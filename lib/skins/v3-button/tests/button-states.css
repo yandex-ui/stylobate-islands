@@ -20,6 +20,7 @@
 
 .normal-button {
   font-family: Arial, sans-serif;
+  z-index: 1;
   position: relative;
   border: 1px solid;
   color: #000;
@@ -53,6 +54,7 @@
 
 .hovered-button {
   font-family: Arial, sans-serif;
+  z-index: 1;
   position: relative;
   border: 1px solid;
   color: #000;
@@ -87,6 +89,7 @@
 
 .clicked-button {
   font-family: Arial, sans-serif;
+  z-index: 1;
   position: relative;
   border: 1px solid;
   color: #000;
@@ -121,6 +124,7 @@
 
 .focused-button {
   font-family: Arial, sans-serif;
+  z-index: 1;
   position: relative;
   border: 1px solid;
   color: #000;
@@ -150,6 +154,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 2;
   border-color: rgba(178,142,0,0.6);
   outline: none;
 }

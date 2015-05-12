@@ -14,6 +14,7 @@
 
 .round-button {
   font-family: Arial, sans-serif;
+  z-index: 1;
   position: relative;
   border: 1px solid;
   color: #000;
@@ -54,6 +55,7 @@
 }
 
 .round-button:focus {
+  z-index: 2;
   border-color: rgba(178,142,0,0.6);
   outline: none;
 }

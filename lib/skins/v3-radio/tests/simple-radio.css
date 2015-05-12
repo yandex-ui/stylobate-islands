@@ -22,6 +22,7 @@
 }
 
 .radio > input:focus + .radio-view {
+  z-index: 2;
   border-color: rgba(178,142,0,0.6);
   outline: none;
 }
