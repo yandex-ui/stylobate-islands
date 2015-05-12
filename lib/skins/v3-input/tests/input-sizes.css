@@ -6,6 +6,13 @@
   border: none;
   background: transparent;
   font: inherit;
+  -webkit-appearance: none;
+}
+
+.small-input::-ms-clear,
+.large-input::-ms-clear,
+.extralarge-input::-ms-clear {
+  display: none;
 }
 
 .small-input:focus,
@@ -25,9 +32,9 @@
   background: linear-gradient(#fff, #fff);
   background-clip: padding-box;
   background-size: 16px 16px;
-  padding: 4px 6px;
   font-size: 13px;
   line-height: 16px;
+  padding: 4px 6px 2px;
   min-height: 24px;
 }
 
@@ -75,9 +82,9 @@ textarea.small-input {
   background: linear-gradient(#fff, #fff);
   background-clip: padding-box;
   background-size: 16px 16px;
-  padding: 6px 10px;
   font-size: 15px;
   line-height: 20px;
+  padding: 6px 10px 4px;
   min-height: 32px;
 }
 
@@ -112,10 +119,10 @@ textarea.large-input {
   background: linear-gradient(#fff, #fff);
   background-clip: padding-box;
   background-size: 16px 16px;
-  padding: 7px 12px;
   font-size: 18px;
-  line-height: 24px;
-  min-height: 40px;
+  line-height: 26px;
+  padding: 5px 12px 3px;
+  min-height: 36px;
 }
 
 .extralarge-input {

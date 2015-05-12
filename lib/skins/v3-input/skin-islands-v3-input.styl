@@ -1,3 +1,48 @@
+// Find better place for this function
+size_short($size)
+  if $size == 'extra-small'
+    return 'xs'
+  else if $size == 'small'
+    return 's'
+  else if $size == 'medium'
+    return 'm'
+  else if $size == 'large'
+    return 'l'
+  else if $size == 'extra-large'
+    return 'xl'
+  else
+    // TODO: only accept known sizes, fallback to stylobate_default
+    // TODO: accept both idents and strings
+    return $size
+
+// Should be somewhere in global scope and more like button stuff
+$skin-islands-v3-input = {
+  height: {
+    s:  24px
+    m:  28px
+    l:  32px
+    xl: 36px
+  }
+  padding: {
+    s:  $islands_xs
+    m:  0.5*$islands_m
+    l:  $islands_s
+    xl: 2*$islands_xs
+  }
+  font-size: {
+    s:  $islands-v3.font-size.p
+    m:  $islands-v3.font-size.p
+    l:  $islands-v3.font-size.p2
+    xl: $islands-v3.font-size.h3
+  }
+  line-height: {
+    s:  $islands-v3.line-height.p
+    m:  $islands-v3.line-height.p
+    l:  $islands-v3.line-height.p2
+    xl: $islands-v3.line-height.h3
+  }
+}
+
 stylobate_defaults('skin-islands-v3-input',
   '_reset',
   '__box',
@@ -49,7 +94,59 @@ skin-islands-v3-input__controller($this)
     vertical-align: top
 
 
+skin-islands-v3-input__content($this)
+  kind: field__content
+
+
+skin-islands-v3-input__left($this)
+  $size = size_short($this.modifiers.size || 'medium')
+
+  kind: field__left
+  height: auto
+  padding: 0 $skin-islands-v3-input.padding[$size]
+  margin-left: -1*$skin-islands-v3-input.padding[$size]
+
+
+skin-islands-v3-input__right($this)
+  $size = size_short($this.modifiers.size || 'medium')
+
+  kind: field__right
+  height: auto
+  padding: 0 $skin-islands-v3-input.padding[$size]
+  margin-left: -1*$skin-islands-v3-input.padding[$size]
+
+
+skin-islands-v3-input__reset($this)
+  $size = size_short($this.modifiers.size || 'medium')
+
+  // TODO: Rather messy everything, should rethink
+  kind: field__right
+
+  skin-islands-v3-icon_remove()
+  skin-islands-v3-icon_hover()
+  skin-islands-v3-input_size($this)
+
+  box-sizing: border-box
+  margin-top: -1*@padding[0]
+  margin-bottom: -1*@padding[1][1] // == [2], stylus bug?
+  margin-right: -1*$skin-islands-v3-input.padding[$size]
+
+  color: #000
+
+  if $size in ('s' 'm')
+    width: $skin-islands-v3-input.padding[$size]*1.5 + 14px
+
+    &:before,
+    &:after
+      width: 14px
+      margin-left: -7px
+  else
+    width: $skin-islands-v3-input.padding[$size]*1.5 + 20px
+
 @require '_reset/skin-islands-v3-input_reset'
 @require '_size/skin-islands-v3-input_size'
 @require '_focus/skin-islands-v3-input_focus'
 @require '_centered/skin-islands-v3-input_centered'
+
+@require '__placeholder/skin-islands-v3-input__placeholder'
+

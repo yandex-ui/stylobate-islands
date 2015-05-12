@@ -4,6 +4,11 @@
   border: none;
   background: transparent;
   font: inherit;
+  -webkit-appearance: none;
+}
+
+.focused-input::-ms-clear {
+  display: none;
 }
 
 .focused-input:focus {
@@ -21,9 +26,9 @@
   background: linear-gradient(#fff, #fff);
   background-clip: padding-box;
   background-size: 16px 16px;
-  padding: 6px 8px;
   font-size: 13px;
   line-height: 16px;
+  padding: 6px 8px 4px;
   min-height: 28px;
   border-color: rgba(178,142,0,0.6);
   box-shadow: 0 0 10px #fc0;

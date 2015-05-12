@@ -1,6 +1,9 @@
 skin-islands-v3-icon($this)
   if $this.params.with-hover
-    @extends $skin-islands-v3-icon_with-hover
+    skin-islands-v3-icon_hover($this)
+
+skin-islands-v3-icon_hover()
+  @extends $skin-islands-v3-icon_with-hover
 
 skin-islands-v3-icon_remove()
   @extends $skin-islands-v3-icon_remove
@@ -14,12 +17,12 @@ $skin-islands-v3-icon_remove
 
     position: absolute
     top: 50%
-    left: 0
+    left: 50%
 
     // Need to use trigonometry stuff there for width/margin
     width: 20px
     border-top: 1px solid
-    margin: 0 -3px
+    margin-left: -10px
 
     transform: translateY(-0.5px) rotate(45deg)
 

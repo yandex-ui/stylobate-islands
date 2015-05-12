@@ -30,6 +30,10 @@
 }
 
 .field-reset {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
   position: relative;
   z-index: 9;
   float: right;

@@ -4,6 +4,11 @@
   border: none;
   background: transparent;
   font: inherit;
+  -webkit-appearance: none;
+}
+
+.normal-input::-ms-clear {
+  display: none;
 }
 
 .normal-input:focus {
@@ -21,9 +26,9 @@
   background: linear-gradient(#fff, #fff);
   background-clip: padding-box;
   background-size: 16px 16px;
-  padding: 6px 8px;
   font-size: 13px;
   line-height: 16px;
+  padding: 6px 8px 4px;
   min-height: 28px;
 }
 

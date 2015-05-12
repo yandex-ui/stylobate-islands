@@ -1,0 +1,32 @@
+// FIXME: That, alongside other fieldy stuff (except for sizings), should be in kind
+skin-islands-v3-input__placeholder($this)
+  kind: block
+  height: 0
+
+  color: $this.colors[0] or $islands-v3.color.gray-rgba
+
+
+skin-islands-v3-input__placeholder__inner($this)
+  position: absolute
+  top: 0
+  left: 0
+
+  $size = size_short($this.modifiers.size || 'medium')
+
+  font-size: $skin-islands-v3-input.font-size[$size]
+  line-height: $skin-islands-v3-input.line-height[$size]
+
+  pointer-events: none
+
+  z-index: 9 // To overlap if placed before
+
+  // Should have a kind for ellipsis
+  // Maybe this should apply when not after textarea,
+  // Cause we could want to have multiline placeholder in this case
+  max-width: 100%
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+skin-islands-v3-input__placeholder__ghost()
+  visibility: hidden

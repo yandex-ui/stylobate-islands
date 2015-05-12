@@ -1,34 +1,14 @@
+// FIXME: Proper sizes? Right now making them the same size as buttons
+
 skin-islands-v3-input_size($this)
   +optional-element($this, 'box')
-    $size = $this.idents[0] || 'medium'
-    if $size in ('s' 'small')
-      padding: 0.25*$islands_m $islands_xs
+    $size = size_short($this.modifiers.size || 'medium')
 
-      font-size: $islands_text_s
-      line-height: $islands_m
+    font-size: $skin-islands-v3-input.font-size[$size]
+    line-height: $skin-islands-v3-input.line-height[$size]
+    $halfpadding = (($skin-islands-v3-input.height[$size] - 2 - $skin-islands-v3-input.line-height[$size]) / 2)
+    padding: ($halfpadding + 1) $skin-islands-v3-input.padding[$size] ($halfpadding - 1)
 
-      min-height: $islands_m + (ie ? 0 : 0.5*$islands_m)
-
-    if $size in ('m' 'medium')
-      padding: $islands_xs 0.5*$islands_m
-
-      font-size: $islands_text_s
-      line-height: $islands_m
-
-      min-height: $islands_m + (ie ? 0 : 2*$islands_xs)
-
-    if $size in ('l' 'large')
-      padding: $islands_xs $islands_s
-
-      font-size: $islands_text_m
-      line-height: $islands_l
-
-      min-height: $islands_l + (ie ? 0 : 2*$islands_xs)
-
-    if $size in ('xl' 'extra-large')
-      padding: (0.5*$islands_m - $islands_px) 2*$islands_xs
-
-      font-size: $islands_text_h3
-      line-height: 4*$islands_xs
-
-      min-height: 4*$islands_xs + (ie ? 0 : $islands_m)
+    $extras-for-height = 0
+    $extras-for-height = ($this.elements.view ? 0 : 2px) if !ie
+    min-height: $skin-islands-v3-input.height[$size] - 2 + $extras-for-height

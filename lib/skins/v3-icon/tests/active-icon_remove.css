@@ -8,9 +8,28 @@
 }
 
 .active-icon_remove {
-  width: 16px;
-  height: 16px;
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuMjA5Yy0zLjc1MSAwLTYuNzkxIDMuMDQtNi43OTEgNi43OTEgMCAzLjc0OSAzLjA0IDYuNzg5IDYuNzkxIDYuNzg5IDMuNzQ5IDAgNi43ODktMy4wNCA2Ljc4OS02Ljc4OSAwLTMuNzUxLTMuMDQtNi43OTEtNi43ODktNi43OTF6bTMuOTkgOS4zNTVsLTEuNDI2IDEuNDI2LTIuNTY0LTIuNTY0LTIuNTY0IDIuNTY0LTEuNDI2LTEuNDI2IDIuNTY0LTIuNTY0LTIuNTY0LTIuNTY0IDEuNDI2LTEuNDI2IDIuNTY0IDIuNTY0IDIuNTY0LTIuNTY0IDEuNDI2IDEuNDI2LTIuNTY0IDIuNTY0IDIuNTY0IDIuNTY0eiIvPjwvc3ZnPg==");
+  width: 14px;
+  height: 14px;
+}
+
+.active-icon_remove:before,
+.active-icon_remove:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  border-top: 1px solid;
+  margin-left: -10px;
+  -webkit-transform: translateY(-0.5px) rotate(45deg);
+      -ms-transform: translateY(-0.5px) rotate(45deg);
+          transform: translateY(-0.5px) rotate(45deg);
+}
+
+.active-icon_remove:after {
+  -webkit-transform: translateY(-0.5px) rotate(-45deg);
+      -ms-transform: translateY(-0.5px) rotate(-45deg);
+          transform: translateY(-0.5px) rotate(-45deg);
 }
 
 .active-icon_remove {

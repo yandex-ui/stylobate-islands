@@ -5,6 +5,12 @@
   border: none;
   background: transparent;
   font: inherit;
+  -webkit-appearance: none;
+}
+
+.complex-input::-ms-clear,
+.complex-input-controller::-ms-clear {
+  display: none;
 }
 
 .complex-input:focus,
@@ -17,10 +23,10 @@
   width: 400px;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  padding: 6px 8px;
   font-size: 13px;
   line-height: 16px;
-  min-height: 28px;
+  padding: 6px 8px 4px;
+  min-height: 26px;
 }
 
 .complex-input,

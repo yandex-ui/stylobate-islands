@@ -4,6 +4,11 @@
   border: none;
   background: transparent;
   font: inherit;
+  -webkit-appearance: none;
+}
+
+.input-controller::-ms-clear {
+  display: none;
 }
 
 .input-controller:focus {
@@ -34,6 +39,10 @@
 }
 
 .field-content {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: block;
   overflow: hidden;
   height: 100%;
@@ -56,6 +65,10 @@
 }
 
 .field-right {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
   position: relative;
   z-index: 9;
   float: right;
