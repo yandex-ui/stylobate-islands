@@ -7,7 +7,7 @@ skin-islands-v3-input_size($this)
     font-size: $skin-islands-v3-input.font-size[$size]
     line-height: $skin-islands-v3-input.line-height[$size]
     $halfpadding = (($skin-islands-v3-input.height[$size] - 2 - $skin-islands-v3-input.line-height[$size]) / 2)
-    padding: ($halfpadding + 1) $skin-islands-v3-input.padding[$size] ($halfpadding - 1)
+    padding: $halfpadding $skin-islands-v3-input.padding[$size]
 
     $extras-for-height = 0
     $extras-for-height = ($this.elements.view ? 0 : 2px) if !ie

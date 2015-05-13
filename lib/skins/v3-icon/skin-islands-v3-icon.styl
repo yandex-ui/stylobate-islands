@@ -60,12 +60,15 @@ skin-islands-v3-icon_dropdown($this)
     float: right
 
     if $this.params.small
-      top: 0.58em
-    else
-      top: 0.7em
+      top: 0.75em
+      left: -5px
 
-    left: -4px
-    margin-right: -1*$islands_xs
+      margin-right: -0.5*$islands_m
+    else
+      top: 0.9em
+      left: -4px
+      margin-right: -1*$islands_s
+
     margin-left: $islands_s
 
 skin-islands-v3-icon_arrow($this)
@@ -156,7 +159,7 @@ skin-islands-v3-icon_check($this)
 
 $skin-islands-v3-icon_with-hover
   cursor: pointer
-  opacity: 0.2
+  opacity: 0.25
 
   &:hover
     opacity: 1

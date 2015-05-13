@@ -54,6 +54,8 @@ stylobate_defaults('skin-islands-v3-input',
 skin-islands-v3-input($this)
   position: relative
 
+  font-family: Arial, sans-serif
+
 
 skin-islands-v3-input__box($this)
   box-sizing: border-box
@@ -130,7 +132,7 @@ skin-islands-v3-input__reset($this)
 
   box-sizing: border-box
   margin-top: -1*@padding[0]
-  margin-bottom: -1*@padding[1][1] // == [2], stylus bug?
+  margin-bottom: -1*@padding[0]
   margin-right: -1*$skin-islands-v3-input.padding[$size]
 
   color: #000
