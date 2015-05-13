@@ -26,6 +26,7 @@
   vertical-align: baseline;
   white-space: nowrap;
   text-decoration: none;
+  display: -moz-inline-box;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   cursor: pointer;
@@ -39,6 +40,7 @@
   text-align: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
+     -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 9px;

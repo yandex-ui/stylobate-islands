@@ -28,6 +28,7 @@
   vertical-align: baseline;
   white-space: nowrap;
   text-decoration: none;
+  display: -moz-inline-box;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   cursor: pointer;
@@ -44,6 +45,7 @@
   text-align: left;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
@@ -87,6 +89,7 @@
   vertical-align: baseline;
   white-space: nowrap;
   text-decoration: none;
+  display: -moz-inline-box;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
   cursor: pointer;
@@ -103,6 +106,7 @@
   text-align: right;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }

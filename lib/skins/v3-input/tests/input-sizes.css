@@ -57,6 +57,7 @@
   display: inline-block;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
+  display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: baseline;
@@ -97,6 +98,7 @@ textarea.small-input {
   display: inline-block;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
+  display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: baseline;
@@ -137,6 +139,7 @@ textarea.large-input {
   display: inline-block;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
+  display: -moz-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: baseline;

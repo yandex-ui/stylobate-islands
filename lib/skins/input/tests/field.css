@@ -41,6 +41,7 @@
 .field-content {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   display: block;
@@ -67,6 +68,7 @@
 .field-right {
   -webkit-box-ordinal-group: 2;
   -webkit-order: 1;
+     -moz-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
   position: relative;
