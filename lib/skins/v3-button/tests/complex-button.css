@@ -93,6 +93,7 @@
   float: left;
   content: "\a0";
   width: 0;
+  min-width: 0;
 }
 
 .complex-button-text {
