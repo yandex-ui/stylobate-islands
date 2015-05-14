@@ -13,22 +13,6 @@
 }
 
 .simple-button {
-  display: inline-block;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: baseline;
-  white-space: nowrap;
-  text-decoration: none;
-  display: -moz-inline-box;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   font-size: 15px;
   line-height: 1.467;
   font-family: Arial, sans-serif;
@@ -50,6 +34,22 @@
   background: rgba(0,0,0,0.3);
   background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+}
+
+.simple-button {
+  display: inline-block;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .simple-button:before {

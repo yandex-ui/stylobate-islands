@@ -13,27 +13,10 @@
 }
 
 .round-button {
-  font-family: Arial, sans-serif;
   z-index: 1;
-  position: relative;
   border: 1px solid;
+  font-family: Arial, sans-serif;
   color: #000;
-  display: inline-block;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: baseline;
-  white-space: nowrap;
-  text-decoration: none;
-  display: -moz-inline-box;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   border-color: rgba(0,0,0,0.2);
   box-shadow: inset 0 90px #fff;
   padding: 0 12px;
@@ -45,7 +28,22 @@
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 999px;
+}
+
+.round-button {
+  display: inline-block;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .round-button:hover {

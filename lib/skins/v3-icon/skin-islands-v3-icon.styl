@@ -74,12 +74,13 @@ skin-islands-v3-icon_dropdown($this)
 skin-islands-v3-icon_arrow($this)
   if !ie
     $size = $this.params.size or $this.units[0] or 8px
+
     kind: icon ('size' $size)
 
     $width = $this.params.width or 1px
     border-bottom: $width solid
     border-right: $width solid
-    margin-top: -0.33em
+    margin-top: -5px
 
     $color = $this.colors[0] or inherit
     unless $color == inherit
@@ -115,7 +116,7 @@ skin-islands-v3-icon_arrow-direction($this)
     if $offset-y
       $offset-y = 'translateY(%s)'% $offset-y
 
-    transform: $offset-x $offset-y scale(0.75) rotate($angle)
+    transform: $offset-x $offset-y scale($this.params.small ? 0.7 : 0.9) rotate($angle)
 
   if ie
     $size = $this.params.size or $this.units[0] or 6px

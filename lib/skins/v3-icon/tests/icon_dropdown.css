@@ -10,10 +10,10 @@
 .icon_dropdown {
   border-bottom: 1px solid;
   border-right: 1px solid;
-  margin-top: -0.33em;
-  -webkit-transform: scale(0.75) rotate(45deg);
-      -ms-transform: scale(0.75) rotate(45deg);
-          transform: scale(0.75) rotate(45deg);
+  margin-top: -5px;
+  -webkit-transform: scale(0.9) rotate(45deg);
+      -ms-transform: scale(0.9) rotate(45deg);
+          transform: scale(0.9) rotate(45deg);
 }
 
 .icon_dropdown {

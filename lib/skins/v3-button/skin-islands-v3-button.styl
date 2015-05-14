@@ -14,25 +14,99 @@ stylobate_defaults('skin-islands-v3-button',
 skin-islands-v3-button($this)
   $type = $this.modifiers['type'] || 'normal'
 
-  font-family: Arial, sans-serif
-
   z-index: 1
-  position: relative
 
   border: 1px solid
+
+  font-family: Arial, sans-serif
 
   color: $this.colors[0] || ($type in ('dark' 'dark-pseudo') ? invert($islands.colors.text) : $islands.colors.text)
 
 
 
-skin-islands-v3-button__content($this)
-  kind: block
-  border-radius: $this.modifiers.shape in ('round' 'circle') ? 999px : ($islands-v3.radius - 1px)
-
-
-
 skin-islands-v3-button_reset($this)
   kind: button
+
+
+skin-islands-v3-button__content($this)
+  kind: button__content
+
+  unless $this.modifiers.shape in ('round' 'circle')
+    border-radius: $islands-v3.radius - 1px
+
+
+skin-islands-v3-button__text($this)
+  kind: button__text
+
+
+skin-islands-v3-button__before($this)
+  $size = $this.modifiers.size || 'medium'
+
+  kind: button__before
+
+  +cache($size)
+    if $size in ('s' 'small')
+      margin-right: 7px
+      margin-left: -2px
+
+      &:only-child
+        margin-right: -2px
+
+    if $size in ('m' 'medium')
+      margin-right: 8px
+      margin-left: -4px
+
+      &:only-child
+        margin-right: -4px
+
+    if $size in ('l' 'large')
+      margin-right: 9px
+      margin-left: -5px
+
+      &:only-child
+        margin-right: -5px
+
+    if $size in ('xl' 'extra-large')
+      margin-right: 11px
+      margin-left: -6px
+
+      &:only-child
+        margin-right: -6px
+
+
+skin-islands-v3-button__after($this)
+  $size = $this.modifiers.size || 'medium'
+
+  kind: button__after
+
+  +cache($size)
+    if $size in ('s' 'small')
+      margin-left: 7px
+      margin-right: -2px
+
+      &:only-child
+        margin-left: -2px
+
+    if $size in ('m' 'medium')
+      margin-left: 8px
+      margin-right: -4px
+
+      &:only-child
+        margin-left: -4px
+
+    if $size in ('l' 'large')
+      margin-left: 9px
+      margin-right: -5px
+
+      &:only-child
+        margin-left: -5px
+
+    if $size in ('xl' 'extra-large')
+      margin-left: 11px
+      margin-right: -6px
+
+      &:only-child
+        margin-left: -6px
 
 
 @require '_align/skin-islands-v3-button_align'

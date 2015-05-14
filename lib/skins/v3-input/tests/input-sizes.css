@@ -55,11 +55,6 @@
 
 .small-input {
   display: inline-block;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   vertical-align: baseline;
   white-space: nowrap;
   text-decoration: none;
@@ -96,11 +91,6 @@ textarea.small-input {
 
 .large-input {
   display: inline-block;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   vertical-align: baseline;
   white-space: nowrap;
   text-decoration: none;
@@ -137,11 +127,6 @@ textarea.large-input {
 
 .extralarge-input {
   display: inline-block;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   vertical-align: baseline;
   white-space: nowrap;
   text-decoration: none;

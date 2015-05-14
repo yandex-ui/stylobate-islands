@@ -1,8 +1,5 @@
 skin-islands-v3-button_shape($this)
   $shape = $this.parent.modifiers['shape'] || 'normal'
 
-  if $shape in ('normal' 'rect')
+  unless $this.modifiers.shape in ('round' 'circle')
     border-radius: $islands-v3.radius
-
-  if $shape in ('round' 'circle')
-    border-radius: 999px

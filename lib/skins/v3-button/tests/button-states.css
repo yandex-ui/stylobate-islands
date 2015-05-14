@@ -19,27 +19,10 @@
 }
 
 .normal-button {
-  font-family: Arial, sans-serif;
   z-index: 1;
-  position: relative;
   border: 1px solid;
+  font-family: Arial, sans-serif;
   color: #000;
-  display: inline-block;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: baseline;
-  white-space: nowrap;
-  text-decoration: none;
-  display: -moz-inline-box;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   border-radius: 3px;
   border-color: rgba(0,0,0,0.2);
   box-shadow: inset 0 90px #fff;
@@ -54,28 +37,30 @@
           justify-content: center;
 }
 
-.hovered-button {
-  font-family: Arial, sans-serif;
-  z-index: 1;
-  position: relative;
-  border: 1px solid;
-  color: #000;
+.normal-button,
+.hovered-button,
+.clicked-button,
+.focused-button {
   display: inline-block;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   vertical-align: baseline;
   white-space: nowrap;
   text-decoration: none;
-  display: -moz-inline-box;
+  position: relative;
   -moz-box-sizing: border-box;
        box-sizing: border-box;
+  max-width: 100%;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.hovered-button {
+  z-index: 1;
+  border: 1px solid;
+  font-family: Arial, sans-serif;
+  color: #000;
   border-radius: 3px;
   border-color: rgba(0,0,0,0.2);
   box-shadow: inset 0 90px #fff;
@@ -92,27 +77,10 @@
 }
 
 .clicked-button {
-  font-family: Arial, sans-serif;
   z-index: 1;
-  position: relative;
   border: 1px solid;
+  font-family: Arial, sans-serif;
   color: #000;
-  display: inline-block;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: baseline;
-  white-space: nowrap;
-  text-decoration: none;
-  display: -moz-inline-box;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   border-radius: 3px;
   border-color: rgba(0,0,0,0.2);
   box-shadow: inset 0 90px #fff;
@@ -129,27 +97,10 @@
 }
 
 .focused-button {
-  font-family: Arial, sans-serif;
   z-index: 1;
-  position: relative;
   border: 1px solid;
+  font-family: Arial, sans-serif;
   color: #000;
-  display: inline-block;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: baseline;
-  white-space: nowrap;
-  text-decoration: none;
-  display: -moz-inline-box;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   border-radius: 3px;
   border-color: rgba(0,0,0,0.2);
   box-shadow: inset 0 90px #fff;
