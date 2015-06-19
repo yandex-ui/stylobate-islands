@@ -3,6 +3,7 @@
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
+  vertical-align: baseline;
   font-size: 15px;
   line-height: 30px;
 }
