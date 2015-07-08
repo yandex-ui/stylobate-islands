@@ -59,7 +59,7 @@ skin-islands-v3-switch__view($this)
 
   border-radius: $islands-v3.radius
 
-  background: linear-gradient(to right, #FFEBA0 50%, rgba(#000, 0.05) 50%)
+  background: linear-gradient(to right, #FFEBA0 50%, rgba(#000, 0.05) 50%) 100% 0
   background-size: 200% 100%
   transition: background-position 0.15s ease-out
 
@@ -81,12 +81,12 @@ skin-islands-v3-switch__view($this)
       box-shadow: $islands_shadow_focus, inset 0 0 0 1px rgba(#000, 0.3)
 
   +stylobate-selector($this, 'ROOT > input:checked + __view')
-    background-position: 100% 0
+    background-position: 0 0
 
 
 skin-islands-v3-switch__view-content($this)
   kind: block
-  left: 0%
+  left: -100%
 
   height: 100%
 
@@ -94,7 +94,7 @@ skin-islands-v3-switch__view-content($this)
 
   // Is it ok to use star here? It is not on the left, so, afaik, ok.
   +stylobate-selector($this, 'ROOT > input:checked + * > __view-content')
-    left: -100%
+    left: 0
 
 
 skin-islands-v3-switch__view-content__helper($this)
