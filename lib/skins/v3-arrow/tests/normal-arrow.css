@@ -2,11 +2,13 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
+  z-index: 1;
   white-space: nowrap;
   overflow: hidden;
   height: 32px;
   padding: 0 14px;
   padding-right: 19.119px;
+  font-size: 16px;
   line-height: 32px;
   color: #000;
 }
