@@ -1,43 +1,39 @@
 stylobate_defaults('skin-islands-v3-arrow',
-  '-tail' '&:after',
-  '-body' '&:before')
-
-
-$skin-islands-v3-arrow-border-width ?= 0.2*rem
-$skin-islands-v3-arrow-height ?= 3.2*rem
-$skin-islands-v3-arrow-color  ?= #FFD600
+  '_color' #000,
+  '_border-color' #FC0,
+  '_height' 32px,
+  '_border-width' 2px,
+  '_background' #FFF,
+  '__tail' '&:after',
+  '__body' '&:before')
 
 skin-islands-v3-arrow($this)
-  $height = $this.units[0] or $skin-islands-v3-arrow-height
-  $tail-width = round(($height / 2) * tan(30deg), 3) + 0.5*$skin-islands-v3-arrow-border-width
+  $height = $this.modifiers.height
+  $border-width = $this.modifiers.border-width
+  $color = $this.modifiers.color
 
-  if $this.params.tail
-    skin-islands-v3-arrow-tail($this)
-  else
-    if $this.params.search
-      padding: ($islands_xs - 0.1*rem) ($islands_m - 0.2*rem) ($islands_xs - 0.1*rem) ($islands_xs - 0.1*rem)
-    else
-      padding: ($islands_xs - 0.1*rem) ($islands_m - 0.2*rem)
-      line-height: $height - (2*$islands_xs - 0.2*rem)
+  $tail-width = round(($height / 2) * tan(30deg), 3) + 0.5*$border-width
 
-      if ($this.params.negative-margin)
-        margin-right: -($tail-width)
+  deprecate($this.params, tail, true)
+  deprecate($this.params, no-elements, true)
+  deprecate($this.params, search, true)
 
-    white-space: nowrap
-    overflow: hidden
+  kind: block inline
+  white-space: nowrap
+  overflow: hidden
 
-    unless ($this.params.no-elements)
-      padding-right: ($islands_m - 0.2*rem) + 0.5*$tail-width
+  height: $height
+  padding: 0 ($islands_m - $border-width)
+  padding-right: ($islands_m - $border-width) + 0.5*$tail-width
+  line-height: $height
 
-      // stylobate_defaults($this,
-      //   -tail '&:after')
+  if ($this.params.negative-margin)
+    margin-right: -1*$tail-width
 
-      // stylobate_defaults($this,
-      //   -body '&:before')
+  color: $color
 
-    deprecate($this.params, no-elements)
 
-skin-islands-v3-arrow-body($this)
+skin-islands-v3-arrow__body($this)
   pseudo-with-content()
 
   +cache()
@@ -48,18 +44,18 @@ skin-islands-v3-arrow-body($this)
     bottom: 0
     left: 0
 
-  $height = $this.units[0] or $this['parent']['units'][0] or $skin-islands-v3-arrow-height
-  $color = $this.colors[0] or $this['parent']['colors'][0] or $skin-islands-v3-arrow-color
-  +cache($height $color)
+  $height = $this.modifiers.height
+  $border-width = $this.modifiers.border-width
+  $border-color = $this.modifiers.border-color
+
+  +cache($height $border-width $border-color)
     $tail-width = round(($height / 2) * tan(30deg), 3)
     margin-right: $tail-width
 
-    border: $skin-islands-v3-arrow-border-width solid $color
+    border: $border-width solid $border-color
     border-right-width: 0
 
-    background: #FFF
-
-skin-islands-v3-arrow-tail($this)
+skin-islands-v3-arrow__tail($this)
   pseudo-with-content()
 
   +cache()
@@ -70,21 +66,32 @@ skin-islands-v3-arrow-tail($this)
 
     transform: translate(-50%,-50%) scale(0.5,1) rotate(-135deg)
 
-  $height = ($this.units[0] or $this['parent']['units'][0] or $skin-islands-v3-arrow-height) - 2*$skin-islands-v3-arrow-border-width
-  $color = $this.colors[0] or $this['parent']['colors'][0] or $skin-islands-v3-arrow-color
-  +cache($height $color)
+  // TODO: proper height/width for the big border
+  $border-width = $this.modifiers.border-width
+  $height = $this.modifiers.height - 2 * $border-width
+  $border-color = $this.modifiers.border-color
+
+  +cache($height $border-width $border-color)
     $sqrt2 = 1.414213562
-    $tail-width = round(($height / 2) * tan(30deg), 3) + $skin-islands-v3-arrow-border-width
+    $tail-width = round(($height / 2) * tan(30deg), 3) + $border-width
     width: round($height * (1/$sqrt2), 1)
     height: round($height * (1/$sqrt2), 1)
-    margin-left: -($tail-width) + 0.05*rem
+    margin-left: -($tail-width) + 0.5px
 
-    border: ($skin-islands-v3-arrow-border-width + 0.1*rem) solid $color
-    border-top:#FFD600
+    border: ($border-width + 1) solid $border-color
+    border-top: 0
     border-right: 0
 
-    background: linear-gradient(90deg, #FFF, #FFF) border-box
 
-    // Fix jugged edges in Chrome
-    if alpha($color) == 1
-      -webkit-backface-visibility: hidden;
+skin-islands-v3-arrow_background($this)
+  $background = $this.modifiers.background
+
+  +cache($background)
+    {$this.elements.body}
+      background: $background
+
+    {$this.elements.tail}
+      if $background == transparent
+        background: linear-gradient(90deg, $background, $background) border-box
+      else
+        background: $background

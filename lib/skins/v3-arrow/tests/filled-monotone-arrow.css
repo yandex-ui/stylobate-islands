@@ -1,0 +1,62 @@
+.filled-monotone-arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 32px;
+  padding: 0 14px;
+  padding-right: 19.119px;
+  line-height: 32px;
+  color: #000;
+}
+
+.filled-monotone-arrow:after {
+  content: "";
+}
+
+.filled-monotone-arrow:after {
+  z-index: -1;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+      -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+          transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+}
+
+.filled-monotone-arrow:after {
+  width: 19.8px;
+  height: 19.8px;
+  margin-left: -9.583px;
+  border: 3px solid #ccc;
+  border-top: 0;
+  border-right: 0;
+}
+
+.filled-monotone-arrow:before {
+  content: "";
+}
+
+.filled-monotone-arrow:before {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.filled-monotone-arrow:before {
+  margin-right: 9.238px;
+  border: 2px solid #ccc;
+  border-right-width: 0;
+}
+
+.filled-monotone-arrow:before {
+  background: #ccc;
+}
+
+.filled-monotone-arrow:after {
+  background: #ccc;
+}
