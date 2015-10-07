@@ -29,6 +29,7 @@
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 99em;
 }
 
 .round-button {

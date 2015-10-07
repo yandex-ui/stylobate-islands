@@ -45,6 +45,10 @@
 }
 
 .complex-button-content {
+  border-radius: 2px;
+}
+
+.complex-button-content {
   background: #fff;
 }
 
@@ -70,10 +74,6 @@
 
 .complex-button:focus .complex-button-content {
   box-shadow: 0 0 10px #fc0;
-}
-
-.complex-button-content {
-  border-radius: 2px;
 }
 
 .complex-button-content {
