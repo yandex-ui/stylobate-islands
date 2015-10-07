@@ -48,7 +48,7 @@ skin-islands-input__view($this)
   border-top-color: rgba-ie(#000, 0.38)
   border-bottom-color: rgba-ie(#000, 0.16)
 
-  background: #FFF /* ie fallback */
+  background: #FFF // ie fallback
   background: linear-gradient(#FFF, #FFF)
 
   background-clip: padding-box
@@ -56,7 +56,7 @@ skin-islands-input__view($this)
 
   box-shadow: $skin-islands-input__view__shadow
 
-  -webkit-appearance: none /* override for <input type="search"> */
+  -webkit-appearance: none // override for <input type="search">
 
   unless $this.params.no-focus
     &:focus
