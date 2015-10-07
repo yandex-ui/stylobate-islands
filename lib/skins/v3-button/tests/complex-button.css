@@ -45,10 +45,6 @@
 }
 
 .complex-button-content {
-  border-radius: 2px;
-}
-
-.complex-button-content {
   background: #fff;
 }
 
@@ -95,6 +91,10 @@
   content: "\a0";
   width: 0;
   min-width: 0;
+}
+
+.complex-button-content {
+  border-radius: 2px;
 }
 
 .complex-button-text {

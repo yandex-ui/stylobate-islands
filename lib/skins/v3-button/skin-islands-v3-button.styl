@@ -32,6 +32,9 @@ skin-islands-v3-button_reset($this)
 skin-islands-v3-button__content($this)
   kind: button__content
 
+  unless $this.modifiers.shape in ('round' 'circle')
+    &
+      border-radius: $islands-v3.radius - 1px
 
 skin-islands-v3-button__text($this)
   kind: button__text
