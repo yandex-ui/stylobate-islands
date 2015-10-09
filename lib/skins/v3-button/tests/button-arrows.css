@@ -1,0 +1,56 @@
+.complex-button-larr,
+.complex-button-rarr,
+.complex-button-darr {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
+
+.complex-button-larr {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  margin-top: 0;
+  margin-right: -5px;
+  margin-left: 2px;
+  -webkit-transform: scale(0.9) rotate(135deg);
+      -ms-transform: scale(0.9) rotate(135deg);
+          transform: scale(0.9) rotate(135deg);
+}
+
+.complex-button-larr {
+  width: 8px;
+  height: 8px;
+}
+
+.complex-button-rarr {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  margin-top: 0;
+  margin-left: -5px;
+  margin-right: 2px;
+  -webkit-transform: scale(0.9) rotate(-45deg);
+      -ms-transform: scale(0.9) rotate(-45deg);
+          transform: scale(0.9) rotate(-45deg);
+}
+
+.complex-button-rarr {
+  width: 8px;
+  height: 8px;
+}
+
+.complex-button-darr {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  margin-top: -5px;
+  -webkit-transform: scale(0.9) rotate(45deg);
+      -ms-transform: scale(0.9) rotate(45deg);
+          transform: scale(0.9) rotate(45deg);
+}
+
+.complex-button-darr {
+  width: 8px;
+  height: 8px;
+}

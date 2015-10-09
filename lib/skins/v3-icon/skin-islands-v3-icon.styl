@@ -80,7 +80,6 @@ skin-islands-v3-icon_arrow($this)
     $width = $this.params.width or 1px
     border-bottom: $width solid
     border-right: $width solid
-    margin-top: -5px
 
     $color = $this.colors[0] or inherit
     unless $color == inherit
@@ -115,6 +114,19 @@ skin-islands-v3-icon_arrow-direction($this)
     $offset-y = $this.params.offset-y
     if $offset-y
       $offset-y = 'translateY(%s)'% $offset-y
+
+    if right in $this.arguments
+      margin-top: 0
+      margin-left: -5px
+      margin-right: 2px
+
+    else if left in $this.arguments
+      margin-top: 0
+      margin-right: -5px
+      margin-left: 2px
+
+    else
+      margin-top: -5px
 
     transform: $offset-x $offset-y scale($this.params.small ? 0.7 : 0.9) rotate($angle)
 
