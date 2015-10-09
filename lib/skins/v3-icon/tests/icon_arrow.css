@@ -12,8 +12,10 @@
 .icon_arrow {
   border-bottom: 1px solid;
   border-right: 1px solid;
-  margin-top: -5px;
   color: #f00;
+  margin-top: 0;
+  margin-left: -5px;
+  margin-right: 2px;
   -webkit-transform: scale(0.9) rotate(-45deg);
       -ms-transform: scale(0.9) rotate(-45deg);
           transform: scale(0.9) rotate(-45deg);
@@ -27,10 +29,10 @@
 .icon_another-arrow {
   border-bottom: 4px solid;
   border-right: 4px solid;
-  margin-top: -5px;
   color: #00f;
   -webkit-transition: -webkit-transform 0.3s;
           transition: transform 0.3s;
+  margin-top: -5px;
   -webkit-transform: scale(0.9) rotate(-135deg);
       -ms-transform: scale(0.9) rotate(-135deg);
           transform: scale(0.9) rotate(-135deg);
@@ -42,6 +44,7 @@
 }
 
 .icon_another-arrow:hover {
+  margin-top: -5px;
   -webkit-transform: scale(0.9) rotate(45deg);
       -ms-transform: scale(0.9) rotate(45deg);
           transform: scale(0.9) rotate(45deg);

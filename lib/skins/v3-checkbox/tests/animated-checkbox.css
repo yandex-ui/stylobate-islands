@@ -1,29 +1,34 @@
-.large-checkbox {
+.animated-checkbox {
   position: relative;
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
   vertical-align: baseline;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
-.large-checkbox-view {
+.animated-checkbox-view {
   border-color: rgba(0,0,0,0.2);
   box-shadow: inset 0 90px #fff;
 }
 
-.large-checkbox:hover > .large-checkbox-view {
+.animated-checkbox-view {
+  width: 12px;
+  height: 12px;
+}
+
+.animated-checkbox:hover > .animated-checkbox-view {
   border-color: rgba(0,0,0,0.4);
 }
 
-.large-checkbox > input:focus + .large-checkbox-view {
+.animated-checkbox > input:focus + .animated-checkbox-view {
   z-index: 2;
   border-color: rgba(178,142,0,0.6);
   outline: none;
 }
 
-.large-checkbox > input:focus + .large-checkbox-view:before {
+.animated-checkbox > input:focus + .animated-checkbox-view:before {
   content: "";
   position: absolute;
   top: 0;
@@ -34,23 +39,24 @@
   box-shadow: 0 0 10px #fc0;
 }
 
-.large-checkbox > input:active + .large-checkbox-view {
+.animated-checkbox > input:active + .animated-checkbox-view {
   box-shadow: inset 0 90px #f6f5f3;
 }
 
-.large-checkbox > input:checked + .large-checkbox-view {
+.animated-checkbox > input:checked + .animated-checkbox-view {
   border-color: rgba(153,122,0,0.5);
   box-shadow: inset 0 90px #ffeba0;
 }
 
-.large-checkbox > input:checked + .large-checkbox-view:after {
-  visibility: inherit;
+.animated-checkbox > input:checked + .animated-checkbox-view:after {
+  top: 0;
+  opacity: 1;
 }
 
-.large-checkbox-view:after {
+.animated-checkbox-view:after {
   content: '';
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
   border-right: 2px solid;
   border-bottom: 2px solid;
@@ -58,21 +64,18 @@
   -webkit-transform: scale(0.85) rotate(47deg) skewX(12deg);
       -ms-transform: scale(0.85) rotate(47deg) skewX(12deg);
           transform: scale(0.85) rotate(47deg) skewX(12deg);
-  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: bottom 0.1s ease-out, opacity 0.05s ease-out;
+          transition: bottom 0.1s ease-out, opacity 0.05s ease-out;
 }
 
-.large-checkbox-view:after {
-  margin: -9px 0 0 5px;
+.animated-checkbox-view:after {
+  margin: -10px 0 0 4px;
   width: 7px;
-  height: 18px;
+  height: 17px;
 }
 
-.large-checkbox-view {
-  width: 15px;
-  height: 15px;
-}
-
-.large-checkbox-view {
+.animated-checkbox-view {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -87,7 +90,7 @@
   border-radius: 3px;
 }
 
-.large-checkbox-controller {
+.animated-checkbox-controller {
   position: absolute !important;
   clip: rect(1px,1px,1px,1px) !important;
 }

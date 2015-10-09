@@ -40,16 +40,24 @@ stylobate_defaults('skin-islands-v3-checkbox__icon',
 skin-islands-v3-checkbox__icon($this)
   +optional-element($this, 'view')
     content: ''
-    visibility: hidden
 
     position: absolute
-    top: 0
+    if animated in $this.modifiers
+      top: -5px
+    else
+      top: 0
     left: 0
     border-right: 2px solid
     border-bottom: 2px solid
     color: #000
 
     transform: scale(0.85) rotate(47deg) skewX(12deg)
+
+    if animated in $this.modifiers
+      opacity: 0
+      transition: bottom 0.1s ease-out, opacity 0.05s ease-out
+    else
+      visibility: hidden
 
 
 skin-islands-v3-checkbox__icon_size($this)
@@ -125,4 +133,8 @@ skin-islands-v3-checkbox_checked($this)
 
     if 'icon' in $this.elements
       {$this.elements['icon']}
-        visibility: inherit
+        if animated in $this.modifiers
+          top: 0
+          opacity: 1
+        else
+          visibility: inherit

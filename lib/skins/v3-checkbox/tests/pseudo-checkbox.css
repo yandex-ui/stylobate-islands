@@ -49,7 +49,6 @@
 
 .pseudo-checkbox-view:after {
   content: '';
-  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -59,6 +58,7 @@
   -webkit-transform: scale(0.85) rotate(47deg) skewX(12deg);
       -ms-transform: scale(0.85) rotate(47deg) skewX(12deg);
           transform: scale(0.85) rotate(47deg) skewX(12deg);
+  visibility: hidden;
 }
 
 .pseudo-checkbox-view:after {
