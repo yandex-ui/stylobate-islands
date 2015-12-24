@@ -4,7 +4,7 @@
   vertical-align: top;
   width: 16px;
   height: 16px;
-  background: url("data:image/svg+xml;utf8,<svg width='16px' height='16px' viewBox='0 0 16 16' xmlns='http%3A//www.w3.org/2000/svg'><circle fill='none' stroke-width='2' stroke-dashoffset='43.98' stroke-dasharray='21.99' stroke='%23fc0' cx='8' cy='8' r='7'><animate attributeName='stroke-dashoffset' from='43.98' to='0' dur='1s' repeatCount='indefinite' /></circle></svg>");
+  background: url("data:image/svg+xml;utf8,<svg width='16px' height='16px' viewBox='0 0 16 16' xmlns='http%3A//www.w3.org/2000/svg'><style>@-webkit-keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}circle{-webkit-animation:rotate 1s linear infinite;animation:rotate 1s linear infinite;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;will-change:transform}</style><circle fill='none' stroke-width='2' stroke-dasharray='21.99' stroke='%23fc0' cx='8' cy='8' r='7'></circle></svg>");
 }
 
 :root .xs-loader,
@@ -50,7 +50,7 @@ to {
   vertical-align: top;
   width: 20px;
   height: 20px;
-  background: url("data:image/svg+xml;utf8,<svg width='20px' height='20px' viewBox='0 0 20 20' xmlns='http%3A//www.w3.org/2000/svg'><circle fill='none' stroke-width='2' stroke-dashoffset='56.54' stroke-dasharray='28.27' stroke='%23fc0' cx='10' cy='10' r='9'><animate attributeName='stroke-dashoffset' from='56.54' to='0' dur='1s' repeatCount='indefinite' /></circle></svg>");
+  background: url("data:image/svg+xml;utf8,<svg width='20px' height='20px' viewBox='0 0 20 20' xmlns='http%3A//www.w3.org/2000/svg'><style>@-webkit-keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}circle{-webkit-animation:rotate 1s linear infinite;animation:rotate 1s linear infinite;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;will-change:transform}</style><circle fill='none' stroke-width='2' stroke-dasharray='28.27' stroke='%23fc0' cx='10' cy='10' r='9'></circle></svg>");
 }
 
 :root .s-loader,
@@ -96,7 +96,7 @@ to {
   vertical-align: top;
   width: 28px;
   height: 28px;
-  background: url("data:image/svg+xml;utf8,<svg width='28px' height='28px' viewBox='0 0 28 28' xmlns='http%3A//www.w3.org/2000/svg'><circle fill='none' stroke-width='2' stroke-dashoffset='81.68' stroke-dasharray='40.84' stroke='%23fc0' cx='14' cy='14' r='13'><animate attributeName='stroke-dashoffset' from='81.68' to='0' dur='1s' repeatCount='indefinite' /></circle></svg>");
+  background: url("data:image/svg+xml;utf8,<svg width='28px' height='28px' viewBox='0 0 28 28' xmlns='http%3A//www.w3.org/2000/svg'><style>@-webkit-keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}circle{-webkit-animation:rotate 1s linear infinite;animation:rotate 1s linear infinite;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;will-change:transform}</style><circle fill='none' stroke-width='2' stroke-dasharray='40.84' stroke='%23fc0' cx='14' cy='14' r='13'></circle></svg>");
 }
 
 :root .m-loader,
@@ -142,7 +142,7 @@ to {
   vertical-align: top;
   width: 32px;
   height: 32px;
-  background: url("data:image/svg+xml;utf8,<svg width='32px' height='32px' viewBox='0 0 32 32' xmlns='http%3A//www.w3.org/2000/svg'><circle fill='none' stroke-width='2' stroke-dashoffset='94.24' stroke-dasharray='47.12' stroke='%23fc0' cx='16' cy='16' r='15'><animate attributeName='stroke-dashoffset' from='94.24' to='0' dur='1s' repeatCount='indefinite' /></circle></svg>");
+  background: url("data:image/svg+xml;utf8,<svg width='32px' height='32px' viewBox='0 0 32 32' xmlns='http%3A//www.w3.org/2000/svg'><style>@-webkit-keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}circle{-webkit-animation:rotate 1s linear infinite;animation:rotate 1s linear infinite;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;will-change:transform}</style><circle fill='none' stroke-width='2' stroke-dasharray='47.12' stroke='%23fc0' cx='16' cy='16' r='15'></circle></svg>");
 }
 
 :root .l-loader,
