@@ -21,7 +21,7 @@
 
 Для отступов контента можно использовать специальный параметр:
 
-    skin: islands-isle (-content '&-content')
+    skin: islands-isle (__content '&-content')
 
 > <div class="island">
 >     <div class="island-content">
@@ -34,7 +34,7 @@
 
 Этот параметр также можно настроить, задав маленький отступы параметром `small`:
 
-    skin: islands-isle (-content '&' small)
+    skin: islands-isle (__content '&' small)
 
 > <div class="islet">And I'm a small one!</div>
 >

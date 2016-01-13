@@ -13,7 +13,7 @@
 
 У домика есть два обязательных «элемента»: крыша и контент:
 
-    skin: islands-domik (-roof '&-roof') (-content '&-content')
+    skin: islands-domik (__roof '&-roof') (__content '&-content')
 
 > <div class="domik">
 >     <div class="domik-roof"></div>

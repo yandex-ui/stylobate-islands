@@ -138,7 +138,7 @@
 
 Для сложного инпута очень просто добавить кастомный плейсхолдер:
 
-    skin: islands-input-placeholder (-inner '&-inner') 
+    skin: islands-input-placeholder (__inner '&-inner') 
 
 В коде сложного инпута он должен идти строго в самом начале контента.
 
@@ -154,7 +154,7 @@
 
 Для маленького плейсхолдера нужно передать дополнительный параметр `small`:
 
-    skin: islands-input-placeholder small (-inner '&-inner') 
+    skin: islands-input-placeholder small (__inner '&-inner') 
 
 > <label class="small-field js-with-placeholder">
 >     <span class="field-content">
@@ -168,7 +168,7 @@
 
 Довольно просто сделать плесхолдер-подсказку, если использовать дополнительный элемент `-ghost`, в который дублировать значение инпута — это позволит расположить плейсхолдер ровно после вбитого текста:
 
-    skin: islands-input-placeholder (-inner '&-inner')  (-ghost '&-ghost') 
+    skin: islands-input-placeholder (__inner '&-inner')  (__ghost '&-ghost') 
 
 > <label class="field js-with-placeholder-ghost">
 >     <span class="field-content">
