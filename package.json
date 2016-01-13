@@ -17,8 +17,8 @@
   },
 
   "dependencies": {
-    "stylus": "0.44.x",
-    "stylobuild": "0.4.x"
+    "stylus": "~0.53.0",
+    "stylobuild": "~0.7.0"
   },
 
   "engines": { "node": ">=0.6" }
