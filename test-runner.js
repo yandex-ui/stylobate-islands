@@ -19,7 +19,7 @@ glob.sync("./lib/*/" + whatToTest + "/tests/*.styl").forEach(function(test){
 
   it(name, function(){
     var css = fs.readFileSync(test.replace('.styl', '.css'), 'utf8').replace(/\r/g, '').trim();
-    var style = stylus('@require "lib/standalone.styl"; @require "' + test + '"');
+    var style = stylus('@require "node_modules/stylobate"; @require "lib/index"; @require "' + test + '"');
 
     style.render(function(err, actual){
       if (err) throw err;

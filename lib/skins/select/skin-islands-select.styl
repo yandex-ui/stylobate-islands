@@ -30,26 +30,26 @@ skin-islands-select($this)
 
 skin-islands-select__padding($this)
   if small in $this.arguments
-    $sides = ($islands_xs - 0.1*rem) (2*$islands_xs + $islands_m - 0.3*rem) ($islands_xs - 0.1*rem) ($islands_m - 0.3*rem)
+    $sides = ($islands_xs - 1px) (2*$islands_xs + $islands_m - 3px) ($islands_xs - 1px) ($islands_m - 3px)
   else
-    $sides = ($islands_xs - 0.1*rem) (2*$islands_xs + $islands_m - 0.1*rem) ($islands_xs - 0.1*rem) ($islands_m - 0.1*rem)
+    $sides = ($islands_xs - 1px) (2*$islands_xs + $islands_m - 1px) ($islands_xs - 1px) ($islands_m - 1px)
 
   padding: $sides[0] $sides[1] $sides[2] $sides[3]
 
   // Fixing padding in Fx
   &, /x::-moz-focus-inner
     // Here in for opera one-liners 'cause there is a bug in Stylus
-    padding: ($sides[0] + 0.1*rem) ($sides[1] - 0.4*rem) ($sides[2] + 0.1*rem) ($sides[3] - 0.4*rem) unless small in $this.arguments
-    padding: $sides[0] ($sides[1] - 0.4*rem) $sides[2] ($sides[3] - 0.4*rem) if small in $this.arguments
+    padding: ($sides[0] + 1px) ($sides[1] - 4px) ($sides[2] + 1px) ($sides[3] - 4px) unless small in $this.arguments
+    padding: $sides[0] ($sides[1] - 4px) $sides[2] ($sides[3] - 4px) if small in $this.arguments
 
   // Fixing margins in Opera
   &, /x:-o-prefocus
     box-sizing: content-box
 
-    margin-right: -1.5*rem
-    padding-top: ($sides[0] + 0.2*rem)
-    padding-bottom: ($sides[0] + 0.2*rem) unless small in $this.arguments
-    padding-bottom: ($sides[0] + 0.1*rem) if small in $this.arguments
+    margin-right: -15px
+    padding-top: ($sides[0] + 2px)
+    padding-bottom: ($sides[0] + 2px) unless small in $this.arguments
+    padding-bottom: ($sides[0] + 1px) if small in $this.arguments
 
 skin-islands-select__focus()
   select:focus + &

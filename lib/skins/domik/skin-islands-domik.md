@@ -5,15 +5,15 @@
 
 Простой домик, крыша которого автоматически подстраивается под ширину самого домика.
 
-    skin: domik
+    skin: islands-domik
 
 По умолчанию домик блочный, если нужен инлайновый контекст, можно использовать параметр `inline`:
 
-    skin: domik inline
+    skin: islands-domik inline
 
 У домика есть два обязательных «элемента»: крыша и контент:
 
-    skin: domik (-roof '&-roof') (-content '&-content')
+    skin: islands-domik (-roof '&-roof') (-content '&-content')
 
 > <div class="domik">
 >     <div class="domik-roof"></div>

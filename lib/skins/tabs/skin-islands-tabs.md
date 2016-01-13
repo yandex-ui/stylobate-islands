@@ -5,15 +5,15 @@
 
 Табы состоят из враппера:
 
-    skin: tabs
+    skin: islands-tabs
 
 и отдельных пунктов:
 
-    skin: tabs-item
+    skin: islands-tabs-item
 
 Плюс есть подскин с текущим табом:
 
-    skin: tabs-item_selected
+    skin: islands-tabs-item_selected
 
 > <div class="tabs">
 >     <a class="tabs-item tabs-item_selected">Раз</a
@@ -25,7 +25,7 @@
 
 На айтемах нужные размеры задаются в `em`, так что достаточно задавать размер только на родителе:
 
-    skin: tabs small
+    skin: islands-tabs small
 
 > <div class="small-tabs">
 >     <a class="tabs-item tabs-item_selected">Маленький раз</a

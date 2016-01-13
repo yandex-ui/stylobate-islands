@@ -37,15 +37,15 @@ skin-islands-pseudo-button($this)
   if $this.params.small
     global_skin: islands-para2 no-margin
     if !ie
-      padding: ($islands_xs - 0.3*rem) $islands_s
+      padding: ($islands_xs - 3px) $islands_s
     else
-      padding: ($islands_xs - 0.4*rem) ($islands_s - 0.1*rem)
+      padding: ($islands_xs - 4px) ($islands_s - 1px)
   else
     global_skin: islands-para no-margin
     if !ie
-      padding: ($islands_xs - 0.3*rem) ($islands_s + 0.1*rem)
+      padding: ($islands_xs - 3px) ($islands_s + 1px)
     else
-      padding: ($islands_xs - 0.4*rem) $islands_s
+      padding: ($islands_xs - 4px) $islands_s
 
 skin-islands-pseudo-button_hover($this)
   $border-alpha = $this.params.border-alpha ? $this.params.border-alpha + 0.15 : 0.35

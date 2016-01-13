@@ -24,6 +24,8 @@
 - Added `$islands_px` for modifying variables using the same unit that is used for other variables, if necessary.
 - Changed notation for elements from `foo-element` to `foo__element`.
 - Removed all the deprecated code.
+- Removed the “standalone” version.
+- Using `islands-` prefix everywhere (docs and tests).
 - Removed `tail` param from arrow in favor of `__helper`.
 - Using Stylobate 1.0.0
 

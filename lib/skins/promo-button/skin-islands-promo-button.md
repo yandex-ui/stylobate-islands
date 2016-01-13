@@ -3,7 +3,7 @@
 
 ## Промо кнопка
 
-    skin: promo-button
+    skin: islands-promo-button
 
 > <div>
 >     <button class="promo-button" type="button">
@@ -17,7 +17,7 @@
 
 У промо кнопки есть четыре размера: стандартный, `small`, `large` и `xlarge`, нестандартный размер задается параметром:
 
-    skin: promo-button small
+    skin: islands-promo-button small
 
 > <div>
 >     <button class="small-promo-button" type="button">
@@ -27,7 +27,7 @@
 >
 > <div class="example:small-promo-button"></div>
 
-    skin: promo-button large
+    skin: islands-promo-button large
 
 > <div>
 >     <button class="large-promo-button" type="button">
@@ -37,7 +37,7 @@
 >
 > <div class="example:large-promo-button"></div>
 
-    skin: promo-button xlarge
+    skin: islands-promo-button xlarge
 
 > <div>
 >     <button class="xlarge-promo-button" type="button">
@@ -51,7 +51,7 @@
 
 Как и простую кнопку, промо кнопку можно сделать летающей при помощи параметра `fly`:
 
-    skin: promo-button fly
+    skin: islands-promo-button fly
 
 > <div>
 >     <button class="fly-promo-button" type="button">

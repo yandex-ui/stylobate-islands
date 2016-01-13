@@ -1,4 +1,4 @@
-$skin-islands-arrow-height ?= 4.2*rem
+$skin-islands-arrow-height ?= 42px
 $skin-islands-arrow-color  ?= #FFDB4C
 
 unless ie
@@ -11,11 +11,11 @@ skin-islands-arrow($this)
   deprecate($this.params, 'tail')
 
   if $this.params.search
-    padding: ($islands_xs - 0.1*rem) ($islands_m - 0.2*rem) ($islands_xs - 0.1*rem) ($islands_xs - 0.1*rem)
+    padding: ($islands_xs - 1px) ($islands_m - 2px) ($islands_xs - 1px) ($islands_xs - 1px)
   else
-    padding: ($islands_xs + 0.2*rem) ($islands_m - 0.1*rem)
-    font-size: 1.8*rem
-    line-height: $height - (2*$islands_xs + 0.4*rem)
+    padding: ($islands_xs + 2px) ($islands_m - 1px)
+    font-size: 18px
+    line-height: $height - (2*$islands_xs + 4px)
 
   background: $color
   white-space: nowrap

@@ -3,7 +3,7 @@
 
 ## disabled
 
-    skin: disabled
+    skin: islands-disabled
 
 Используется для визуального отключения какого-либо блока.
 

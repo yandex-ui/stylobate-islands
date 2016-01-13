@@ -3,7 +3,7 @@
 
 ## Псевдо-кнопка
 
-    skin: pseudo-button
+    skin: islands-pseudo-button
 
 В отличие от [обычной кнопки](#skin-islands-button), псевдокнопка не имеет «активного» состояния и следующей из него необходимости иметь внутренний элемент, так что псевдокнопку можно сделать и на одном элементе:
 
@@ -13,7 +13,7 @@
 
 Аналогично обычной кнопке, псевдокнопка может быть обычного размера, и маленькая — если использовать параметр `small`:
 
-    skin: pseudo-button small
+    skin: islands-pseudo-button small
 
 > <div>
 >     <button class="small-pseudo-button" type="button">Маленькая псевдокнопка кнопкой</button>
@@ -25,7 +25,7 @@
 
 Так как псевдокнопка не имеет фона, то если понадобится использовать её на тёмном фоне, то нужно будет воспользоваться модификатором `_inverted`:
 
-    skin: pseudo-button _inverted
+    skin: islands-pseudo-button _inverted
 
 > <div style="background: #000; padding: 20px;">
 >     <button class="inverted-pseudo-button" type="button">Инвертированная псевдокнопка</button>
@@ -35,9 +35,9 @@
 
 Такой модификатор можно добавить и к уже имеющейся кнопке, или вызвав только подскин, или используя соответствующий синтаксис:
 
-    skin: pseudo-button_inverted
+    skin: islands-pseudo-button_inverted
 
-    skin: pseudo-button_ _inverted
+    skin: islands-pseudo-button_ _inverted
 
 > <div style="background: #000; padding: 20px;">
 >     <a class="pseudo-button pseudo-button_inverted" href="#x">Инвертированная псевдокнопка</a>
@@ -49,7 +49,7 @@
 
 Основная задача псевдокнопки — быть кнопкой, но при этом и не притягивать к себе внимание. В некоторых случаях обычная псевдокнопка может оказаться или слишком бледной, или слишком яркой, в этом случае можно исправить это, воспользовавшись параметром `border-alpha`, изменив значение полупрозрачности границы.
 
-    skin: pseudo-button (border-alpha 0.15)
+    skin: islands-pseudo-button (border-alpha 0.15)
 
 Это будет работать и для обычной псевдокнопки:
 
