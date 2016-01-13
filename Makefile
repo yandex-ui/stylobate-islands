@@ -24,6 +24,6 @@ up:
 	cd ..
 
 serve:
-	jekyll serve --watch --config _config.yml,_config-dev.yml
+	bundle exec jekyll serve --watch --config _config.yml,_config-dev.yml
 
 .PHONY: build examples
