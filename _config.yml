@@ -2,10 +2,10 @@ version: 0.6.1
 
 safe: true
 markdown: kramdown
-pygments: true
+highlighter: true
 permalink: /:categories/:title
 
-exclude: ["stylobate", "all.styl", "*.sublime-project", "*.sublime-workspace", "node_modules"]
+exclude: ["stylobate", "skins/islands/node_modules", "all.styl", "*.sublime-project", "*.sublime-workspace", "node_modules"]
 
 production_url: http://yandex-ui.github.io/stylobate-islands
 relative_permalinks: false
