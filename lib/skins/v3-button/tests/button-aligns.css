@@ -28,7 +28,6 @@
   font-size: 13px;
   text-align: left;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
      -moz-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -90,7 +89,6 @@
   font-size: 13px;
   text-align: right;
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
      -moz-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;

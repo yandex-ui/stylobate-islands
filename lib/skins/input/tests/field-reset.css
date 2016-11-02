@@ -31,7 +31,6 @@
 
 .field-reset {
   -webkit-box-ordinal-group: 2;
-  -webkit-order: 1;
      -moz-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
