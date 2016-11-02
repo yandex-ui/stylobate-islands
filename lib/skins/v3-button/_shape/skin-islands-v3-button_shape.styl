@@ -1,0 +1,15 @@
+skin-islands-v3-button_shape($this)
+  $shape = $this.modifiers.shape || 'normal'
+  if $shape == 'normal'
+    border-radius: $islands-v3.radius
+
+    if length($this.parent) == 0
+      +optional-element($this, 'content', $only_optional: true)
+        border-radius: $islands-v3.radius - 1px
+
+  if $shape in ('round' 'circle')
+    border-radius: 99em
+
+    if length($this.parent) == 0
+      +optional-element($this, 'content', $only_optional: true)
+        border-radius: inherit

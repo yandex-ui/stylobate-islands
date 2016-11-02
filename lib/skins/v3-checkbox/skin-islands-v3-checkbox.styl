@@ -1,0 +1,140 @@
+stylobate_defaults('skin-islands-v3-checkbox',
+  '_type' normal,
+  '_size' medium,
+  '_hover' '&:hover',
+  '_focus' '&:focus',
+  '_active' '&:active',
+  '_checked' '&:checked',
+  '__icon' '&:after',
+  '__text'
+  )
+
+skin-islands-v3-checkbox($this)
+  kind: block inline
+  cursor: pointer
+  vertical-align: baseline
+
+
+skin-islands-v3-checkbox__view($this)
+  kind: block inline
+
+  user-select: none
+
+  vertical-align: middle
+
+  border-width: 1px
+  border-style: solid
+  margin-top: -3px
+
+  border-radius: $islands-v3.radius
+
+
+skin-islands-v3-checkbox__controller($this)
+  kind: hidden visually
+
+
+stylobate_defaults('skin-islands-v3-checkbox__icon',
+  '_size'
+  )
+
+skin-islands-v3-checkbox__icon($this)
+  +optional-element($this, 'view')
+    content: ''
+
+    position: absolute
+    if animated in $this.modifiers
+      top: -5px
+    else
+      top: 0
+    left: 0
+    border-right: 2px solid
+    border-bottom: 2px solid
+    color: #000
+
+    transform: scale(0.85) rotate(47deg) skewX(12deg)
+
+    if animated in $this.modifiers
+      opacity: 0
+      transition: bottom 0.1s ease-out, opacity 0.05s ease-out
+    else
+      visibility: hidden
+
+
+skin-islands-v3-checkbox__icon_size($this)
+  +optional-element($this, 'view')
+    $size = $this.modifiers['size'] || 'medium'
+
+    if $size in ('m' 'medium')
+      margin: -10px 0 0 4px
+      width: 7px
+      height: 17px
+
+    if $size in ('l' 'large')
+      margin: -9px 0 0 5px
+      width: 7px
+      height: 18px
+
+
+skin-islands-v3-checkbox__text($this)
+  $size = $this.modifiers['size'] || 'medium'
+
+  if $size in ('m' 'medium')
+    font-size: $islands-v3.font-size.p
+    line-height: 24px // Should be a variable?
+
+  if $size in ('l' 'large')
+    font-size: $islands-v3.font-size.p2
+    line-height: 30px // Should be a variable?
+
+  if 'view' in $this.elements and $this.selectors
+    +stylobate-selector($this, 'ROOT > __view + __text')
+      if $size in ('m' 'medium')
+        padding-left: 5px
+
+      if $size in ('l' 'large')
+        padding-left: 7px
+
+
+skin-islands-v3-checkbox_size($this)
+  +optional-element($this, 'view')
+    $size = $this.modifiers['size'] || 'medium'
+
+    if $size in ('m' 'medium')
+      width: 12px
+      height: 12px
+
+    if $size in ('l' 'large')
+      width: 15px
+      height: 15px
+
+
+skin-islands-v3-checkbox_type($this)
+  +optional-element($this, 'view')
+    skin-islands-v3-button_type($this)
+
+skin-islands-v3-checkbox_hover($this)
+  +optional-element($this, 'view', 'ROOT:hover > __view')
+    skin-islands-v3-button_hover($this)
+
+skin-islands-v3-checkbox_focus($this)
+  +optional-element($this, 'view', 'ROOT > input:focus + __view')
+    skin-islands-v3-button_focus($this)
+
+    &:before
+      skin-islands-v3-button_focus__helper($this)
+
+skin-islands-v3-checkbox_active($this)
+  +optional-element($this, 'view', 'ROOT > input:active + __view')
+    skin-islands-v3-button_active($this)
+
+skin-islands-v3-checkbox_checked($this)
+  +optional-element($this, 'view', 'ROOT > input:checked + __view')
+    skin-islands-v3-button_checked($this)
+
+    if 'icon' in $this.elements
+      {$this.elements['icon']}
+        if animated in $this.modifiers
+          top: 0
+          opacity: 1
+        else
+          visibility: inherit

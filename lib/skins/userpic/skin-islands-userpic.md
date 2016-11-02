@@ -5,7 +5,7 @@
 
 Стандартный круглый (в нормальных браузерах) юзерпик.
 
-    skin: userpic
+    skin: islands-userpic
 
 Картинка задаётся через инлайновый стиль `style="background-image:url('foo.png')"`.
 
@@ -17,7 +17,7 @@
 
 Можно применять и к ссылкам, есть дополнительный скин-модификатор для ховера, его можно применить через соответствующий параметр:
 
-    skin: userpic_ (_hover '&:hover')
+    skin: islands-userpic_ (_hover '&:hover')
 
 > <a class="userpic" href="#x" style="background-image: url('http://im3-tub-ru.yandex.net/i?id=37564715-37-72.gif')"></a>
 >

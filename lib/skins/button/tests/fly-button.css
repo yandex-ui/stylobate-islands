@@ -1,12 +1,10 @@
 .fly-button {
-  border: none;
+  padding: 0;
   margin: 0;
-
-  font: inherit;
-
+  border: none;
   background: transparent;
-
   -moz-appearance: none;
+  font: inherit;
 }
 
 .fly-button::-moz-focus-inner {
@@ -15,64 +13,65 @@
 }
 
 .fly-button {
+  font-size: 15px;
+  line-height: 1.467;
+  font-family: Arial, sans-serif;
   position: relative;
-
-  display: inline-block;
-
-  box-sizing: border-box;
-  padding: 0.5rem 1.5rem;
-
-  cursor: pointer;
+  vertical-align: baseline;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #000;
+  border-radius: 3px;
+  box-shadow: 0 8px 20px -5px rgba(0,0,0,0.25);
+  font-size: 15px;
+  line-height: 22px;
+  padding: 5px 15px;
+  background: rgba(0,0,0,0.3);
+  background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4));
+}
+
+.fly-button {
+  display: inline-block;
   vertical-align: baseline;
   white-space: nowrap;
   text-decoration: none;
-
-  font-family: Arial, sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-
-  color: #000;
-
-  background: rgba(0, 0, 0, 0.3);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
-  box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.25);
-
-  border-radius: 3px;
+  position: relative;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .fly-button:before {
   content: "";
-
   position: absolute;
   top: 1px;
   right: 1px;
   bottom: 1px;
   left: 1px;
-
   border-radius: 2px;
 }
 
 .fly-button .button-content {
   position: relative;
-
   display: block;
 }
 
 input[type=file]:active + .fly-button,
 .fly-button:active {
   top: 1px;
-
-  box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 4px 10px -4px rgba(0,0,0,0.45);
 }
 
 .fly-button:after {
   content: "";
-
   position: absolute;
   top: 0;
   right: 0;
@@ -88,28 +87,26 @@ input[type=file]:focus + .fly-button,
 input[type=file]:focus + .fly-button:after,
 .fly-button:focus:after {
   z-index: 9;
-
-  box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);
-
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
 
 .fly-button:before {
-  background: #F7F7F7;
-  background: -webkit-linear-gradient(#FFF, #EEE);
-  background: linear-gradient(#FFF, #EEE);
+  background: #f7f7f7;
+  background: -webkit-linear-gradient(#fff, #eee);
+  background: linear-gradient(#fff, #eee);
 }
 
 input[type=file]:hover + .fly-button,
 .fly-button:hover {
-  background: rgba(0, 0, 0, 0.31);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.4));
-  background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.4));
+  background: rgba(0,0,0,0.31);
+  background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 
 input[type=file]:hover + .fly-button:before,
 .fly-button:hover:before {
-  background: #FBFAF9;
-  background: -webkit-linear-gradient(#FFF, #F6F5F3);
-  background: linear-gradient(#FFF, #F6F5F3);
+  background: #fbfaf9;
+  background: -webkit-linear-gradient(#fff, #f6f5f3);
+  background: linear-gradient(#fff, #f6f5f3);
 }

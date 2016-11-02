@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="menu-item.css">
+<link rel="stylesheet" href="large-menu-item.css">
+<link rel="stylesheet" href="menu-group.css">
+<link rel="stylesheet" href="menu-separator.css">
+
+<!-- Extra deps: need a way to handle them -->
+<link rel="stylesheet" href="../../page/tests/page.css">
+
+<title>Menu</title>
+
+<style>
+    body {
+        padding: 20px;
+    }
+</style>
+
+<h1>Menu</h1>
+
+<div>
+    <h2>Normal menu</h2>
+
+    <div class="menu">
+        <div class="menu-item">Show more from this site</div>
+        <div class="menu-item">Saved copy</div>
+        <div class="menu-item">Translation</div>
+    </div>
+</div>
+
+<div>
+    <h2>Large menu</h2>
+
+    <div class="large-menu">
+        <div class="large-menu-item">Show more from this site</div>
+        <div class="large-menu-item">Saved copy</div>
+        <div class="large-menu-item">Translation</div>
+    </div>
+</div>
+
+<div>
+    <h2>Groups</h2>
+
+    <div class="menu">
+        <div class="menu-group">
+            <div class="menu-item">Show more from this site</div>
+            <div class="menu-item">Saved copy</div>
+        </div>
+        <div class="menu-group">
+            <div class="menu-item">Translation</div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h2>Separator</h2>
+
+    <div class="menu">
+        <div class="menu-item">Show more from this site</div>
+        <div class="menu-item">Saved copy</div>
+        <div class="menu-separator"></div>
+        <div class="menu-item">Translation</div>
+    </div>
+</div>
+
+<div>
+    <h2>Titles and nestings</h2>
+
+    <div class="menu">
+        <div class="menu-group menu-group_nesting">
+            <div class="menu-title">Here are some items</div>
+            <div class="menu-item">Show more from this site</div>
+            <div class="menu-item">Saved copy</div>
+            <div class="menu-item">Translation</div>
+        </div>
+        <div class="menu-group menu-group_nesting">
+            <div class="menu-title">Other items</div>
+            <div class="menu-item">Show more from this site</div>
+            <div class="menu-item">Saved copy</div>
+            <div class="menu-item">Translation</div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h2>Checkeds</h2>
+
+    <div class="menu">
+        <div class="menu-group menu-group_nesting">
+            <div class="menu-title">Here are some items</div>
+            <div class="menu-item menu-item_checked">Show more from this site</div>
+            <div class="menu-item menu-item_checked">Saved copy</div>
+            <div class="menu-item">Translation</div>
+        </div>
+        <div class="menu-group menu-group_nesting">
+            <div class="menu-item">Show more from this site</div>
+            <div class="menu-item menu-item_checked">Saved copy</div>
+            <div class="menu-item">Translation</div>
+        </div>
+    </div>
+</div>
+

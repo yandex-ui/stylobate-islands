@@ -1,24 +1,19 @@
 .small-menu-item {
   position: relative;
-
   display: block;
-
-  padding: 0.3rem 1rem;
-
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  text-decoration: none;
-
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-
   color: #000;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 3px 10px;
 }
 
 .small-menu-item:hover {
-  background: rgba(255, 193, 0, 0.37);
+  background: rgba(255,193,0,0.37);
 }

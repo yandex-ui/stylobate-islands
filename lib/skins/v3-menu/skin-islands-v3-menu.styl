@@ -1,0 +1,134 @@
+stylobate_defaults('skin-islands-v3-menu',
+  '_size' medium,
+  '_padded',
+  '_ellipsis'
+  )
+
+
+skin-islands-v3-menu($this)
+  kind: block inline
+
+  vertical-align: top
+
+skin-islands-v3-menu_padded($this)
+  $size = $this.modifiers.size || 'medium'
+
+  if $size in ('m' 'medium')
+      padding: 0.25*$islands_m 0
+
+  if $size in ('l' 'large')
+      padding: 0.5*$islands_s 0
+
+
+skin-islands-v3-menu_size($this)
+  $size = $this.modifiers.size || 'medium'
+
+  if $size in ('m' 'medium')
+    font-size: $islands-v3.font-size.p
+    line-height: 25px // magic?
+
+  if $size in ('l' 'large')
+    font-size: $islands-v3.font-size.p2
+    line-height: 28px // magic?
+
+
+stylobate_defaults('skin-islands-v3-menu__item',
+  '_hover' '&:hover'
+  )
+
+skin-islands-v3-menu__item($this)
+  $size = $this.modifiers.size || 'medium'
+
+  kind: block
+  global_skin(islands-link $islands_color_text no-hover)
+
+  user-select: none
+  white-space: nowrap
+
+  box-sizing: border-box
+  width: 100%
+  padding: 0 1em
+
+  if $size in ('m' 'medium')
+    height: 24px // magic?
+
+  if $size in ('l' 'large')
+    height: 28px // magic?
+
+  if ellipsis in $this.modifiers
+    kind: ellipsis
+
+skin-islands-v3-menu__title($this)
+  // Need to be extended somehow with disabling hover
+  skin-islands-v3-menu__item($this)
+  cursor: default
+
+  color: $islands-v3.color.gray-rgba
+
+
+skin-islands-v3-menu__item_nested($this)
+  padding-left: 3*$islands-v3.gap.s + 0.5*$islands-v3.gap.xs
+
+
+skin-islands-v3-menu__item_hover()
+  background: $islands-v3.color.selection-rgba
+
+
+skin-islands-v3-menu__item_checked($this)
+  // checkmark?
+
+stylobate_defaults('skin-islands-v3-menu__item_checked',
+  '__helper' '&:before'
+  )
+
+skin-islands-v3-menu__item_checked__helper($this)
+  $size = $this.modifiers.size || 'medium'
+
+  // Should be done somehow better
+  skin-islands-v3-checkbox__icon($this)
+  visibility: inherit
+
+  left: 1em // Equal to the left padding
+  // Magics
+  margin: 0 0 0 2px
+  width: 7px
+
+  if $size in ('m' 'medium')
+    height: 15px
+
+  if $size in ('l' 'large')
+    height: 17px
+
+
+skin-islands-v3-menu__group($this)
+  $size = $this.modifiers.size || 'medium'
+
+  display: block
+
+  & + &
+    border-top: 1px solid $islands-v3.color.border.normal
+
+    if padded in $this.modifiers
+      if $size in ('m' 'medium')
+        padding-top: 0.25*$islands_m
+        margin-top: @padding-top
+
+      if $size in ('l' 'large')
+        padding-top: 0.5*$islands_s
+        margin-top: @padding-top
+
+
+skin-islands-v3-menu__separator($this)
+  $size = $this.modifiers.size || 'medium'
+
+  display: block
+  border-top: 1px solid $islands-v3.color.border.normal
+
+  if padded in $this.modifiers
+    if $size in ('m' 'medium')
+      margin-top: 0.25*$islands_m
+      margin-bottom: @margin-top
+
+    if $size in ('l' 'large')
+      margin-top: 0.5*$islands_s
+      margin-bottom: @margin-top

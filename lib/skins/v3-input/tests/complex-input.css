@@ -1,0 +1,83 @@
+.complex-input,
+.complex-input-controller {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+  -webkit-appearance: none;
+}
+
+.complex-input::-ms-clear,
+.complex-input-controller::-ms-clear {
+  display: none;
+}
+
+.complex-input:focus,
+.complex-input-controller:focus {
+  outline: none;
+}
+
+.complex-input {
+  position: relative;
+  font-family: Arial, sans-serif;
+  width: 400px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 5px 8px;
+  min-height: 26px;
+}
+
+.complex-input,
+.complex-input-controller {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: text;
+  vertical-align: baseline;
+}
+
+.complex-input {
+  display: inline-block;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.complex-input-controller {
+  width: 400px;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+
+textarea.complex-input-controller {
+  vertical-align: top;
+}
+
+.complex-input-view {
+  z-index: 1;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  color: #000;
+  border: 1px solid rgba(0,0,0,0.2);
+  background: -webkit-linear-gradient(#fff, #fff);
+  background: linear-gradient(#fff, #fff);
+  background-clip: padding-box;
+  background-size: 16px 16px;
+}
+
+.complex-input-controller:focus + .complex-input-view {
+  z-index: 2;
+  border-color: rgba(178,142,0,0.6);
+  box-shadow: 0 0 10px #fc0;
+}

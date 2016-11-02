@@ -1,6 +1,6 @@
 {
   "name": "stylobate-islands",
-  "version": "0.28.0",
+  "version": "1.0.0-alpha.29",
   "author": "Roman Komarov <kizmarh@ya.ru> (http://kizu.ru/en/)",
   "licence": "MIT",
   "description": "Islands skin for stylobate",
@@ -13,19 +13,18 @@
     "url": "git://github.com/yandex-ui/stylobate-islands.git"
   },
   "dependencies": {
-    "stylobate": "0.25.0"
+    "stylobate": "1.0.0-alpha.20"
   },
   "devDependencies": {
-    "autoprefixer": "2.1.x",
-    "csso": "1.3.x",
-    "csscomb": "2.0.x",
-    "stylus": "0.47.1",
+    "stylus": "~0.52.4",
+    "autoprefixer": "~3.1.0",
+    "postcss": "~2.1.2",
     "glob": "3.2.x",
-    "mocha": "*",
+    "mocha": "1.20.x",
     "should": "2.x.x"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha test-runner.js --require should --reporter list"
+    "test": "./node_modules/.bin/mocha test-runner.js --require should --reporter list --timeout 4000"
   },
   "config": {
     "whatToTest": "**"

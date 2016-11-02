@@ -1,0 +1,14 @@
+// FIXME: Proper sizes? Right now making them the same size as buttons
+
+skin-islands-v3-input_size($this)
+  +optional-element($this, 'box')
+    $size = size_short($this.modifiers.size || 'medium')
+
+    font-size: $skin-islands-v3-input.font-size[$size]
+    line-height: $skin-islands-v3-input.line-height[$size]
+    $halfpadding = (($skin-islands-v3-input.height[$size] - 2 - $skin-islands-v3-input.line-height[$size]) / 2)
+    padding: $halfpadding $skin-islands-v3-input.padding[$size]
+
+    $extras-for-height = 0
+    $extras-for-height = ($this.elements.view ? 0 : 2px) if !ie
+    min-height: $skin-islands-v3-input.height[$size] - 2 + $extras-for-height

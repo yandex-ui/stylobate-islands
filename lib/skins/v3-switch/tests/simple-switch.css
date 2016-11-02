@@ -1,0 +1,112 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #000;
+  font-size: 13px;
+}
+
+.switch-controller {
+  position: absolute !important;
+  clip: rect(1px,1px,1px,1px) !important;
+}
+
+.switch-view {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  text-align: center;
+  width: 100%;
+  line-height: 30px;
+  height: 28px;
+  padding: 0 14px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  border-radius: 3px;
+  background: -webkit-linear-gradient(left, #ffeba0 50%, rgba(0,0,0,0.05) 50%) 100% 0;
+  background: linear-gradient(to right, #ffeba0 50%, rgba(0,0,0,0.05) 50%) 100% 0;
+  background-size: 200% 100%;
+  -webkit-transition: background-position 0.15s ease-out;
+          transition: background-position 0.15s ease-out;
+}
+
+.switch-view:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+.switch-view:hover:after {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+.switch > input:focus + .switch-view:after,
+.switch > input:focus + .switch-view:hover:after {
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(0,0,0,0.3);
+}
+
+.switch > input:checked + .switch-view {
+  background-position: 0 0;
+}
+
+.switch-view-content {
+  position: relative;
+  display: block;
+  left: -100%;
+  height: 100%;
+  -webkit-transition: left 0.15s ease-out;
+          transition: left 0.15s ease-out;
+}
+
+.switch > input:checked + * > .switch-view-content {
+  left: 0;
+}
+
+.switch-view-content:after {
+  content: "";
+  position: absolute;
+  z-index: 9;
+  top: 1px;
+  bottom: 1px;
+  left: 100%;
+  width: 26px;
+  margin: 0 0 0 -13px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+
+.switch-on {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%;
+  max-width: 100%;
+  padding-right: 28px;
+}
+
+.switch-off {
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%;
+  max-width: 100%;
+  top: -100%;
+  left: 100%;
+  padding-left: 28px;
+}

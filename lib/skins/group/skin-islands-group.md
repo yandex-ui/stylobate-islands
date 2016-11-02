@@ -9,11 +9,11 @@
 
 У группы должен быть враппер:
 
-    skin: group
+    skin: islands-group
 
 Если элементы группы лежат на одном уровне, можно использовать CSS3-селекторы и применить `group-item`:
 
-    skin: group-item
+    skin: islands-group-item
 
 > <div class="group">
 >     <button class="button toggle-button" type="button">
@@ -31,7 +31,7 @@
 
 В случае если кнопка или другой блок, которому нужно задать соответствующий скин, может лежать внутри, можно воспользоваться специальным скином:
 
-    skin: nested-group-item '.toggler-view'
+    skin: islands-nested-group-item '.toggler-view'
 
 Параметром к нему передаётся селектор элемента, к которому нужно применять соответствующий скин, например, если реализовать радиогруппу на инпутах:
 
@@ -83,11 +83,11 @@
 
 В случаях когда элементы группы лежат в контейнере в неверном порядке (скажем, при использовании `float` и в некоторых иных случаях), можно задать соответствующим элементам групп нужные скины раздельно:
 
-    skin: group-start
+    skin: islands-group-start
 
-    skin: group-middle
+    skin: islands-group-middle
 
-    skin: group-end
+    skin: islands-group-end
 
 > <div class="example:group-item"></div>
 
@@ -95,13 +95,13 @@
 
 Кроме горизонтальных групп можно также применять вертикальные группы, для этого есть параметр `vertical`:
 
-    skin: group-item vertical
+    skin: islands-group-item vertical
 
-    skin: group-start vertical
+    skin: islands-group-start vertical
 
-    skin: group-middle vertical
+    skin: islands-group-middle vertical
 
-    skin: group-end vertical
+    skin: islands-group-end vertical
 
 > <div class="vertical-group">
 >     <button class="button toggle-button" type="button">

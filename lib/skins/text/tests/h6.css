@@ -1,12 +1,15 @@
 .text h6 {
+  margin: 0;
   padding: 0;
   border: 0;
-  margin: 0 0 0.6rem;
-
-  vertical-align: baseline;
-
+  font-size: 100%;
   font: inherit;
-  font-size: 1.3rem;
+  vertical-align: baseline;
+}
+
+.text h6 {
+  margin-bottom: 6px;
   font-weight: bold;
-  line-height: 2rem;
+  font-size: 13px;
+  line-height: 20px;
 }

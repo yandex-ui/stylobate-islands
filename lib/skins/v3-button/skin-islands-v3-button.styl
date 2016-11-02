@@ -1,0 +1,120 @@
+stylobate_defaults('skin-islands-v3-button',
+  '_reset',
+  '_shape' normal,
+  '_type' normal,
+  '_size' medium,
+  '_align' center,
+  '_hover' '&:hover',
+  '_active' '&:active',
+  '_focus' '&:focus'
+  )
+
+
+
+skin-islands-v3-button($this)
+  $type = $this.modifiers['type'] || 'normal'
+
+  z-index: 1
+
+  border: 1px solid
+
+  font-family: Arial, sans-serif
+
+  color: $this.colors[0] || ($type in ('dark' 'dark-pseudo') ? invert($islands.colors.text) : $islands.colors.text)
+
+
+
+skin-islands-v3-button_reset($this)
+  kind: button
+  line-height: 0 // Preventing line-height inheritance
+
+
+skin-islands-v3-button__content($this)
+  kind: button__content
+
+  unless $this.modifiers.shape in ('round' 'circle')
+    &
+      border-radius: $islands-v3.radius - 1px
+
+skin-islands-v3-button__text($this)
+  kind: button__text
+
+
+skin-islands-v3-button__before($this)
+  $size = $this.modifiers.size || 'medium'
+
+  kind: button__before
+
+  +cache($size)
+    if $size in ('s' 'small')
+      margin-right: 7px
+      margin-left: -2px
+
+      &:only-child
+        margin-right: -2px
+
+    if $size in ('m' 'medium')
+      margin-right: 8px
+      margin-left: -4px
+
+      &:only-child
+        margin-right: -4px
+
+    if $size in ('l' 'large')
+      margin-right: 9px
+      margin-left: -5px
+
+      &:only-child
+        margin-right: -5px
+
+    if $size in ('xl' 'extra-large')
+      margin-right: 11px
+      margin-left: -6px
+
+      &:only-child
+        margin-right: -6px
+
+
+skin-islands-v3-button__after($this)
+  $size = $this.modifiers.size || 'medium'
+
+  kind: button__after
+
+  +cache($size)
+    if $size in ('s' 'small')
+      margin-left: 7px
+      margin-right: -2px
+
+      &:only-child
+        margin-left: -2px
+
+    if $size in ('m' 'medium')
+      margin-left: 8px
+      margin-right: -4px
+
+      &:only-child
+        margin-left: -4px
+
+    if $size in ('l' 'large')
+      margin-left: 9px
+      margin-right: -5px
+
+      &:only-child
+        margin-left: -5px
+
+    if $size in ('xl' 'extra-large')
+      margin-left: 11px
+      margin-right: -6px
+
+      &:only-child
+        margin-left: -6px
+
+
+@require '_align/skin-islands-v3-button_align'
+@require '_shape/skin-islands-v3-button_shape'
+@require '_size/skin-islands-v3-button_size'
+@require '_hover/skin-islands-v3-button_hover'
+@require '_focus/skin-islands-v3-button_focus'
+@require '_checked/skin-islands-v3-button_checked'
+@require '_type/skin-islands-v3-button_type'
+@require '_active/skin-islands-v3-button_active'

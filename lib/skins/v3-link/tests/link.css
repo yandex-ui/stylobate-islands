@@ -1,0 +1,16 @@
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  color: #04b;
+}
+
+.link:active,
+.link:hover {
+  outline: 0;
+}
+
+.link:hover {
+  color: #c00;
+}

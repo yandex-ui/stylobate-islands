@@ -1,8 +1,7 @@
 .is-disabled {
   cursor: default !important;
-  pointer-events: none;
-
   opacity: 0.6;
+  pointer-events: none;
 }
 
 .is-disabled .is-disabled {

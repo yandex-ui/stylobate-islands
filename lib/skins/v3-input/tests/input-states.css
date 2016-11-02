@@ -1,0 +1,60 @@
+.focused-input {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+  -webkit-appearance: none;
+}
+
+.focused-input::-ms-clear {
+  display: none;
+}
+
+.focused-input:focus {
+  outline: none;
+}
+
+.focused-input {
+  position: relative;
+  font-family: Arial, sans-serif;
+  width: 400px;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  z-index: 1;
+  color: #000;
+  border: 1px solid rgba(0,0,0,0.2);
+  background: -webkit-linear-gradient(#fff, #fff);
+  background: linear-gradient(#fff, #fff);
+  background-clip: padding-box;
+  background-size: 16px 16px;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 5px 8px;
+  min-height: 28px;
+  z-index: 2;
+  border-color: rgba(178,142,0,0.6);
+  box-shadow: 0 0 10px #fc0;
+}
+
+.focused-input {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: text;
+  vertical-align: baseline;
+}
+
+.focused-input {
+  display: inline-block;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+textarea.focused-input {
+  vertical-align: top;
+}

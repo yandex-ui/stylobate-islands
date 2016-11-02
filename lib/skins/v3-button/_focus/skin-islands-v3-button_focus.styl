@@ -1,0 +1,25 @@
+stylobate_defaults('skin-islands-v3-button_focus',
+  '__helper' '&:before'
+  )
+
+
+
+skin-islands-v3-button_focus($this)
+  z-index: 2
+  border-color: $this.colors[0] || rgba(178,142,0,.6);
+  outline: none
+
+  if 'content' in $this.elements
+    +optional-element($this, 'content', 'ROOT:focus __content')
+      box-shadow: 0 0 10px ($this.colors[0] || #FC0)
+
+
+
+skin-islands-v3-button_focus__helper($this)
+  unless 'content' in $this.elements
+    pseudo-with-content()
+
+    kind: fill
+
+    border-radius: inherit
+    box-shadow: 0 0 10px ($this.colors[0] || #FC0)

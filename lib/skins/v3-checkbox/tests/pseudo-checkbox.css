@@ -1,0 +1,92 @@
+.pseudo-checkbox {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  vertical-align: baseline;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.pseudo-checkbox-view {
+  width: 12px;
+  height: 12px;
+}
+
+.pseudo-checkbox:hover > .pseudo-checkbox-view {
+  border-color: rgba(0,0,0,0.4);
+}
+
+.pseudo-checkbox > input:focus + .pseudo-checkbox-view {
+  z-index: 2;
+  border-color: rgba(178,142,0,0.6);
+  outline: none;
+}
+
+.pseudo-checkbox > input:focus + .pseudo-checkbox-view:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 10px #fc0;
+}
+
+.pseudo-checkbox > input:active + .pseudo-checkbox-view {
+  box-shadow: inset 0 90px rgba(0,0,0,0.05);
+}
+
+.pseudo-checkbox > input:checked + .pseudo-checkbox-view {
+  border-color: rgba(153,122,0,0.5);
+  box-shadow: inset 0 90px #ffeba0;
+}
+
+.pseudo-checkbox > input:checked + .pseudo-checkbox-view:after {
+  visibility: inherit;
+}
+
+.pseudo-checkbox-view:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  color: #000;
+  -webkit-transform: scale(0.85) rotate(47deg) skewX(12deg);
+      -ms-transform: scale(0.85) rotate(47deg) skewX(12deg);
+          transform: scale(0.85) rotate(47deg) skewX(12deg);
+  visibility: hidden;
+}
+
+.pseudo-checkbox-view:after {
+  margin: -10px 0 0 4px;
+  width: 7px;
+  height: 17px;
+}
+
+.pseudo-checkbox-view {
+  border-color: rgba(0,0,0,0.2);
+}
+
+.pseudo-checkbox-view {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  border-width: 1px;
+  border-style: solid;
+  margin-top: -3px;
+  border-radius: 3px;
+}
+
+.pseudo-checkbox-controller {
+  position: absolute !important;
+  clip: rect(1px,1px,1px,1px) !important;
+}

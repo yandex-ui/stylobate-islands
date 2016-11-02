@@ -1,0 +1,24 @@
+skin-islands-v3-button_size($this)
+  +optional-element($this, 'content')
+    // TODO: allow sizing using any pixel unit
+    $size = $this.idents[0] || 'medium'
+
+    if $size in ('s' 'small')
+      padding: 0 9px
+      line-height: 22px
+      font-size: $islands_text_s
+
+    if $size in ('m' 'medium')
+      padding: 0 12px
+      line-height: 26px
+      font-size: $islands_text_s
+
+    if $size in ('l' 'large')
+      padding: 0 14px
+      line-height: 30px
+      font-size: $islands_text_m
+
+    if $size in ('xl' 'extra-large')
+      padding: 0 17px
+      line-height: 36px
+      font-size: 18px

@@ -1,15 +1,20 @@
 .field-reset {
+  position: relative;
   display: inline-block;
+  vertical-align: top;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
 
+.field-reset {
   width: 16px;
   height: 16px;
-
-  cursor: pointer;
-  vertical-align: middle;
-
-  background: 50% no-repeat;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuMjA5Yy0zLjc1MSAwLTYuNzkxIDMuMDQtNi43OTEgNi43OTEgMCAzLjc0OSAzLjA0IDYuNzg5IDYuNzkxIDYuNzg5IDMuNzQ5IDAgNi43ODktMy4wNCA2Ljc4OS02Ljc4OSAwLTMuNzUxLTMuMDQtNi43OTEtNi43ODktNi43OTF6bTMuOTkgOS4zNTVsLTEuNDI2IDEuNDI2LTIuNTY0LTIuNTY0LTIuNTY0IDIuNTY0LTEuNDI2LTEuNDI2IDIuNTY0LTIuNTY0LTIuNTY0LTIuNTY0IDEuNDI2LTEuNDI2IDIuNTY0IDIuNTY0IDIuNTY0LTIuNTY0IDEuNDI2IDEuNDI2LTIuNTY0IDIuNTY0IDIuNTY0IDIuNTY0eiIvPjwvc3ZnPg==");
+}
 
+.field-reset {
+  cursor: pointer;
   opacity: 0.2;
 }
 
@@ -18,14 +23,20 @@
 }
 
 .field-reset {
+  margin: -5px -5px -5px 0;
+  padding: 5px 5px 5px 5px;
+  margin-right: -10px;
+  height: auto;
+}
+
+.field-reset {
+  -webkit-box-ordinal-group: 2;
+     -moz-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   position: relative;
   z-index: 9;
-
   float: right;
-
-  height: auto;
-  padding: 0.5rem;
-  margin: -0.5rem -1rem -0.5rem 0;
 }
 
 .field-reset:before {

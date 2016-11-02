@@ -1,0 +1,33 @@
+.icon_remove {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
+
+.icon_remove {
+  width: 14px;
+  height: 14px;
+}
+
+.icon_remove:before,
+.icon_remove:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  border-top: 1px solid;
+  margin-left: -10px;
+  -webkit-transform: translateY(-0.5px) rotate(45deg);
+      -ms-transform: translateY(-0.5px) rotate(45deg);
+          transform: translateY(-0.5px) rotate(45deg);
+}
+
+.icon_remove:after {
+  -webkit-transform: translateY(-0.5px) rotate(-45deg);
+      -ms-transform: translateY(-0.5px) rotate(-45deg);
+          transform: translateY(-0.5px) rotate(-45deg);
+}

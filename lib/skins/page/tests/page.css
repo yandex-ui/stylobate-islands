@@ -1,25 +1,22 @@
-html, body {
+html,
+body {
+  margin: 0;
   padding: 0;
   border: 0;
-  margin: 0;
-
-  vertical-align: baseline;
-
+  font-size: 100%;
   font: inherit;
+  vertical-align: baseline;
 }
 
 html {
   font-size: 62.5%;
-
   color: #000;
-
-  background: #F6F5F3;
+  background: #f6f5f3;
 }
 
 body {
+  font-size: 15px;
+  line-height: 1.467;
   font-family: Arial, sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-
   background: transparent;
 }

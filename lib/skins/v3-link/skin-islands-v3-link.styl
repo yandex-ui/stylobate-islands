@@ -1,0 +1,69 @@
+stylobate_defaults('skin-islands-v3-link',
+  '_reset',
+  '_type' normal,
+  '_hover' '&:hover' #C00
+  )
+
+skin-islands-v3-link($this)
+  // asdas
+
+skin-islands-v3-link_type($this)
+  $type = $this.modifiers.type
+
+  if $type == 'normal'
+    color: #04B
+
+  if $type == 'minor'
+    color: #669
+
+  if $type == 'ghost'
+    color: #999
+
+  if $type == 'outer'
+    color: #070
+
+  if $type == 'strong'
+    font-weight: bold
+    color: #04B
+
+  if $type == 'black'
+    color: #000
+
+
+skin-islands-v3-link_color($this)
+  $color = utilus_get_color($this.modifiers.color)
+
+  if $color
+    color: $color
+
+skin-islands-v3-link_hover($this)
+  $hover_color = utilus_get_color($this.modifiers.hover) || #C00
+
+  if $hover_color
+    color: $hover_color
+
+skin-islands-v3-link_reset($this)
+  cursor: pointer
+  text-decoration: none
+  color: inherit
+  background-color: transparent // no bg for active links in IE
+
+  &:active,
+  &:hover
+    outline: 0
+
+
+skin-islands-v3-link_underline($this)
+  if not $this.modifiers.pseudo
+    text-decoration: underline
+  else
+    text-decoration: none
+    border-bottom: 1px dashed
+
+skin-islands-v3-link_nogaps($this)
+  background-image: linear-gradient(rgba(#000, 0), rgba(#000, 0))
+  background-repeat: no-repeat
+  background-size: 16px 16px
+
+skin-islands-v3-link_selected($this)
+  cursor: default

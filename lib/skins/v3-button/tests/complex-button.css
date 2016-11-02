@@ -1,0 +1,152 @@
+.complex-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+}
+
+.complex-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+.complex-button {
+  z-index: 1;
+  border: 1px solid;
+  font-family: Arial, sans-serif;
+  color: #000;
+  line-height: 0;
+  border-radius: 3px;
+  border-color: rgba(0,0,0,0.2);
+  text-align: center;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.complex-button {
+  display: inline-block;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.complex-button-content {
+  background: #fff;
+}
+
+.complex-button-content {
+  padding: 0 12px;
+  line-height: 26px;
+  font-size: 13px;
+}
+
+.complex-button:hover {
+  border-color: rgba(0,0,0,0.4);
+}
+
+.complex-button:active .complex-button-content {
+  background: #f6f5f3;
+}
+
+.complex-button:focus {
+  z-index: 2;
+  border-color: rgba(178,142,0,0.6);
+  outline: none;
+}
+
+.complex-button:focus .complex-button-content {
+  box-shadow: 0 0 10px #fc0;
+}
+
+.complex-button-content {
+  position: relative;
+  display: block;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.complex-button-content:before {
+  float: left;
+  content: "\a0";
+  width: 0;
+  min-width: 0;
+}
+
+.complex-button-content {
+  border-radius: 2px;
+}
+
+.complex-button-text {
+  display: block;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+_:-ms-input-placeholder,
+:root .complex-button-text {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  width: 100%;
+}
+
+.complex-button-before {
+  float: left;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.complex-button-before {
+  margin-right: 8px;
+  margin-left: -4px;
+}
+
+.complex-button-before:only-child {
+  margin-right: -4px;
+}
+
+.complex-button-after {
+  -webkit-box-ordinal-group: 2;
+     -moz-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  float: right;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.complex-button-after {
+  margin-left: 8px;
+  margin-right: -4px;
+}
+
+.complex-button-after:only-child {
+  margin-left: -4px;
+}

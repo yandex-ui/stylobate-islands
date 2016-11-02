@@ -1,18 +1,21 @@
 .small-field {
-  position: relative;
-
-  display: inline-block;
-
-  box-sizing: border-box;
   width: 400px;
-  max-width: 100%;
-  min-height: 2.8rem;
-  padding: 0.5rem 1rem;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   border: 1px solid transparent;
+  padding: 5px 10px;
+  line-height: 16px;
+  min-height: 28px;
+  font-size: 13px;
+}
 
+.small-field {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
   cursor: text;
   vertical-align: baseline;
-
-  font-size: 1.3rem;
-  line-height: 1.6rem;
 }

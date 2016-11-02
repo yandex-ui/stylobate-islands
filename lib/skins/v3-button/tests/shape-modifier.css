@@ -1,0 +1,7 @@
+.button_round {
+  border-radius: 99em;
+}
+
+.button_round .complex-button-content {
+  border-radius: inherit;
+}

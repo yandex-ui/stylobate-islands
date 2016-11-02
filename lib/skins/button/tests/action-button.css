@@ -1,12 +1,10 @@
 .action-button {
-  border: none;
+  padding: 0;
   margin: 0;
-
-  font: inherit;
-
+  border: none;
   background: transparent;
-
   -moz-appearance: none;
+  font: inherit;
 }
 
 .action-button::-moz-focus-inner {
@@ -15,62 +13,65 @@
 }
 
 .action-button {
+  font-size: 15px;
+  line-height: 1.467;
+  font-family: Arial, sans-serif;
   position: relative;
-
-  display: inline-block;
-
-  box-sizing: border-box;
-  padding: 0.5rem 1.5rem;
-
-  cursor: pointer;
+  vertical-align: baseline;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #000;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  font-size: 15px;
+  line-height: 22px;
+  padding: 5px 15px;
+  background: rgba(83,56,0,0.47);
+  background: -webkit-linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
+  background: linear-gradient(rgba(96,64,0,0.4), rgba(70,47,0,0.54));
+}
+
+.action-button {
+  display: inline-block;
   vertical-align: baseline;
   white-space: nowrap;
   text-decoration: none;
-
-  font-family: Arial, sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-
-  color: #000;
-
-  background: rgba(83, 56, 0, 0.47);
-  background: -webkit-linear-gradient(rgba(96, 64, 0, 0.4), rgba(70, 47, 0, 0.54));
-  background: linear-gradient(rgba(96, 64, 0, 0.4), rgba(70, 47, 0, 0.54));
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
-
-  border-radius: 3px;
+  position: relative;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .action-button:before {
   content: "";
-
   position: absolute;
   top: 1px;
   right: 1px;
   bottom: 1px;
   left: 1px;
-
   border-radius: 2px;
 }
 
 .action-button .button-content {
   position: relative;
-
   display: block;
 }
 
 input[type=file]:active + .action-button,
 .action-button:active {
-  box-shadow: inset 0 2px 1px -1px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 2px 1px -1px rgba(0,0,0,0.4), 0 1px 0 rgba(255,255,255,0.2);
 }
 
 input[type=file]:active + .action-button:before,
 .action-button:active:before {
-  box-shadow: inset 0 1px 3px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.5);
 }
 
 input[type=file]:active + .action-button .button-content,
@@ -80,7 +81,6 @@ input[type=file]:active + .action-button .button-content,
 
 .action-button:after {
   content: "";
-
   position: absolute;
   top: 0;
   right: 0;
@@ -96,28 +96,26 @@ input[type=file]:focus + .action-button,
 input[type=file]:focus + .action-button:after,
 .action-button:focus:after {
   z-index: 9;
-
-  box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);
-
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
 
 .action-button:before {
-  background: #FFD630;
-  background: -webkit-linear-gradient(#FFDF60, #FC0);
-  background: linear-gradient(#FFDF60, #FC0);
+  background: #ffd630;
+  background: -webkit-linear-gradient(#ffdf60, #fc0);
+  background: linear-gradient(#ffdf60, #fc0);
 }
 
 input[type=file]:hover + .action-button,
 .action-button:hover {
-  background: rgba(0, 0, 0, 0.31);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.4));
-  background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.4));
+  background: rgba(0,0,0,0.31);
+  background: -webkit-linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.4));
 }
 
 input[type=file]:hover + .action-button:before,
 .action-button:hover:before {
-  background: #FD5;
-  background: -webkit-linear-gradient(#FFE681, #FFD428);
-  background: linear-gradient(#FFE681, #FFD428);
+  background: #fd5;
+  background: -webkit-linear-gradient(#ffe681, #ffd428);
+  background: linear-gradient(#ffe681, #ffd428);
 }

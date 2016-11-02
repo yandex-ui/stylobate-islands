@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="simple-radio.css">
+<link rel="stylesheet" href="l-pseudo-radio.css">
+
+<!-- Extra deps: need a way to handle them -->
+<link rel="stylesheet" href="../../page/tests/page.css">
+<link rel="stylesheet" href="../../disabled/tests/disabled.css">
+
+<title>radio</title>
+
+<style>
+    body {
+        padding: 20px;
+    }
+</style>
+
+<h1>radio</h1>
+
+<div>
+    <h2>Simple</h2>
+    <div>
+        <label class="radio">
+            <input name="lol" class="radio-controller" type="radio" checked="checked">
+            <span class="radio-view"></span>
+            Radiobutton
+        </label>
+    </div>
+    <div>
+        <label class="radio">
+            <input name="lol" class="radio-controller" type="radio">
+            <span class="radio-view"></span>
+            Radiobutton
+        </label>
+    </div>
+</div>
+
+<div>
+    <h2>Large psudo</h2>
+    <div>
+        <label class="l-pseudo-radio">
+            <input name="lol2" class="l-pseudo-radio-controller" type="radio" checked="checked">
+            <span class="l-pseudo-radio-view"></span>
+            Radiobutton
+        </label>
+    </div>
+    <div>
+        <label class="l-pseudo-radio">
+            <input name="lol2" class="l-pseudo-radio-controller" type="radio">
+            <span class="l-pseudo-radio-view"></span>
+            Radiobutton
+        </label>
+    </div>
+</div>

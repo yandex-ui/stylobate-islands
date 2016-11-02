@@ -1,11 +1,14 @@
 .text h3 {
+  margin: 0;
   padding: 0;
   border: 0;
-  margin: 0 0 0.6rem;
-
-  vertical-align: baseline;
-
+  font-size: 100%;
   font: inherit;
-  font-size: 1.8rem;
-  line-height: 2.6rem;
+  vertical-align: baseline;
+}
+
+.text h3 {
+  margin-bottom: 6px;
+  font-size: 18px;
+  line-height: 26px;
 }

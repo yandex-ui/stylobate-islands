@@ -1,0 +1,178 @@
+skin-islands-v3-icon($this)
+  if $this.params.with-hover
+    skin-islands-v3-icon_hover($this)
+
+skin-islands-v3-icon_hover()
+  @extends $skin-islands-v3-icon_with-hover
+
+skin-islands-v3-icon_remove()
+  @extends $skin-islands-v3-icon_remove
+
+$skin-islands-v3-icon_remove
+  kind: icon (size 14px 14px)
+
+  &:before,
+  &:after
+    content: ""
+
+    position: absolute
+    top: 50%
+    left: 50%
+
+    // Need to use trigonometry stuff there for width/margin
+    width: 20px
+    border-top: 1px solid
+    margin-left: -10px
+
+    transform: translateY(-0.5px) rotate(45deg)
+
+  &:after
+    transform: translateY(-0.5px) rotate(-45deg)
+
+skin-islands-v3-icon_notification()
+  @extends $skin-islands-v3-icon_notification
+
+$skin-islands-v3-icon_notification
+  kind: icon
+
+  height: 15px
+  min-width: 9px
+  padding: 0 3px
+  border: 2px solid #FFF
+
+  text-align: center
+
+  font-size: 13px
+  line-height: 15px
+  font-weight: bold
+
+  color: #FFF
+  background: #F00
+  border-radius: 1em
+
+  box-shadow: 0 1px 0 1px rgba(#000, 0.1),
+              0 5px 10px -5px rgba(#000, 0.5)
+
+skin-islands-v3-icon_dropdown($this)
+  skin-islands-v3-icon_arrow($this)
+
+  if $this.params.selecty
+    float: right
+
+    if $this.params.small
+      top: 0.75em
+      left: -5px
+
+      margin-right: -0.5*$islands_m
+    else
+      top: 0.9em
+      left: -4px
+      margin-right: -1*$islands_s
+
+    margin-left: $islands_s
+
+skin-islands-v3-icon_arrow($this)
+  if !ie
+    $size = $this.params.size or $this.units[0] or 8px
+
+    kind: icon ('size' $size)
+
+    $width = $this.params.width or 1px
+    border-bottom: $width solid
+    border-right: $width solid
+
+    $color = $this.colors[0] or inherit
+    unless $color == inherit
+      color: $color
+
+    if $this.params.with-transition
+      transition: transform 0.3s
+
+  if ie
+    width: 0
+    height: 0
+
+  skin-islands-v3-icon_arrow-direction($this)
+
+skin-islands-v3-icon_arrow-direction($this)
+  if !ie
+    $angle = 45deg
+    // Here and later we do not need to look at the parents, so — arguments.
+    if top in $this.arguments
+      $angle = -135deg
+
+    else if right in $this.arguments
+      $angle = -45deg
+
+    else if left in $this.arguments
+      $angle = 135deg
+
+    $offset-x = $this.params.offset-x
+    if $offset-x
+      $offset-x = 'translateX(%s)'% $offset-x
+
+    $offset-y = $this.params.offset-y
+    if $offset-y
+      $offset-y = 'translateY(%s)'% $offset-y
+
+    if right in $this.arguments
+      margin-top: 0
+      margin-left: -5px
+      margin-right: 2px
+
+    else if left in $this.arguments
+      margin-top: 0
+      margin-right: -5px
+      margin-left: 2px
+
+    else
+      margin-top: -5px
+
+    transform: $offset-x $offset-y scale($this.params.small ? 0.7 : 0.9) rotate($angle)
+
+  if ie
+    $size = $this.params.size or $this.units[0] or 6px
+    border: $size solid
+
+    if $this.params.left || $this.params.right
+      border-top-color: transparent
+      border-bottom-color: transparent
+
+      if $this.params.right
+        border-left-width: 0
+      else
+        border-right-width: 0
+    else
+      border-right-color: transparent
+      border-left-color: transparent
+
+      if $this.params.top
+        border-top-width: 0
+      else
+        border-bottom-width: 0
+
+skin-islands-v3-icon_check($this)
+  if $this.params.absolute
+    position: absolute
+    top: 50%
+    left: 50%
+    margin: -13px 0 0 -2px
+  else
+    kind: icon
+    margin: -3px 3px 1px
+
+  width: 5px
+  height: 13px
+  border-bottom: 3px solid
+  border-right: 3px solid
+
+  color: #000
+
+  transform: scale(0.9) rotate(50deg) skewX(12deg)
+
+$skin-islands-v3-icon_with-hover
+  cursor: pointer
+  opacity: 0.25
+
+  &:hover
+    opacity: 1

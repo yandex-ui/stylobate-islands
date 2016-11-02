@@ -1,0 +1,65 @@
+.transparent-arrow {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 32px;
+  padding: 0 14px;
+  padding-right: 19.119px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000;
+}
+
+.transparent-arrow:after {
+  content: "";
+}
+
+.transparent-arrow:after {
+  z-index: -1;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+      -ms-transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+          transform: translate(-50%, -50%) scale(0.5, 1) rotate(-135deg);
+}
+
+.transparent-arrow:after {
+  width: 19.8px;
+  height: 19.8px;
+  margin-left: -9.583px;
+  border: 3px solid #fc0;
+  border-top: 0;
+  border-right: 0;
+}
+
+.transparent-arrow:before {
+  content: "";
+}
+
+.transparent-arrow:before {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.transparent-arrow:before {
+  margin-right: 9.238px;
+  border: 2px solid #fc0;
+  border-right-width: 0;
+}
+
+.transparent-arrow:before {
+  background: transparent;
+}
+
+.transparent-arrow:after {
+  background: -webkit-linear-gradient(0deg, transparent, transparent) border-box;
+  background: linear-gradient(90deg, transparent, transparent) border-box;
+}

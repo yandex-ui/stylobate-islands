@@ -1,15 +1,15 @@
 .toggle-button.is-checked,
 .toggle-button.is-checked:hover {
-  background: rgba(255, 236, 166, 0.4);
-  box-shadow: 0 1px 7px rgba(30, 23, 0, 0.8) inset, 0 2px 0 -1px rgba(255, 255, 255, 0.2);
+  background: rgba(255,236,166,0.4);
+  box-shadow: 0 1px 7px rgba(30,23,0,0.8) inset, 0 2px 0 -1px rgba(255,255,255,0.2);
 }
 
 .toggle-button.is-checked:before,
 .toggle-button.is-checked:hover:before {
-  background: #FFF1BE;
-  background: -webkit-linear-gradient(#FFECA6, #FFF6D5);
-  background: linear-gradient(#FFECA6, #FFF6D5);
-  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.45) inset;
+  background: #fff1be;
+  background: -webkit-linear-gradient(#ffeca6, #fff6d5);
+  background: linear-gradient(#ffeca6, #fff6d5);
+  box-shadow: 0 1px 3px -1px rgba(0,0,0,0.45) inset;
 }
 
 .toggle-button.is-checked .button-content,

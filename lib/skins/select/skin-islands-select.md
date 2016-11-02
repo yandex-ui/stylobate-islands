@@ -5,7 +5,7 @@
 
 ### На `<select>`
 
-    skin: select
+    skin: islands-select
 
 Если хочется сделать CSS-only селект, это возможно, однако код такого селекта будет не особо оптимальным: приходится городить много хардкода для правильных отступов в Опере и ФФ.
 
@@ -24,7 +24,7 @@ HTML селекта это, по сути, микс с кнопкой:
 
 И маленький селект (для маленькой кнопки)
 
-    skin: select small
+    skin: islands-select small
 
 > <span class="small-button select-wrap">
 >     <select class="small-select">

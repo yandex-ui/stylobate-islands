@@ -4,6 +4,10 @@
 // 3. Move the focus to skin/detail, to use it both there and for pseudo-button
 // 4. Better handling of arguments?
 
+stylobate_defaults('skin-islands-button',
+  '_hover' 'input[type=file]:hover + &',
+  '_hover' '&:hover')
+
 // Proto for simple buttons
 $skin-islands-button-content ?= '.button-content'
 skin-islands-proto-button($this)
@@ -51,9 +55,9 @@ skin-islands-proto-button($this)
   if $this.params.small
     global_skin: islands-para2 no-margin
     if !ie
-      padding: ($islands_xs - 0.1*rem) ($islands_m - 0.3*rem)
+      padding: ($islands_xs - 1px) ($islands_m - 3px)
     else
-      padding: ($islands_xs - 0.2*rem) ($islands_m - 0.4*rem)
+      padding: ($islands_xs - 2px) ($islands_m - 4px)
 
   else if $this.params.adaptive
     width: 1em
@@ -65,9 +69,9 @@ skin-islands-proto-button($this)
     unless $this.params.sizeless
       global_skin: islands-para no-margin
       if !ie
-        padding: ($islands_xs - 0.1*rem) ($islands_m - 0.1*rem)
+        padding: ($islands_xs - 1px) ($islands_m - 1px)
       else
-        padding: ($islands_xs - 0.2*rem) ($islands_m - 0.2*rem)
+        padding: ($islands_xs - 2px) ($islands_m - 2px)
 
   unless $this.params.no-active
     input[type=file]:active + &,
@@ -104,14 +108,12 @@ skin-islands-button($this)
     border: 1px solid
     border-color: #CBCBCB #B2B2B2 #9A9A9A
 
-  deprecate($this.params, no-hover)
-
-  stylobate_defaults($this,
-     _hover ($this.params.no-hover ? '' : 'input[type=file]:hover + &'),
-     _hover ($this.params.no-hover ? '' : '&:hover'))
-
-
 // Action button
+
+stylobate_defaults('skin-islands-action-button',
+  '_hover' 'input[type=file]:hover + &',
+  '_hover' '&:hover')
+
 skin-islands-action-button($this)
   skin-islands-proto-button($this)
 
@@ -126,11 +128,6 @@ skin-islands-action-button($this)
     border: 1px solid
     border-color: #BFB298 #A99C82 #9B8E75
 
-  deprecate($this.params, no-hover)
-
-  stylobate_defaults($this,
-     _hover ($this.params.no-hover ? '' : 'input[type=file]:hover + &'),
-     _hover ($this.params.no-hover ? '' : '&:hover'))
 
 
 // Hover state

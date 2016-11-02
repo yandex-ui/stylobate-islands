@@ -12,9 +12,9 @@
 
 Для основного текста есть два скина: `skin-islands-para` и `skin-islands-para2`, для текста обычного размера и маленького (второстепенного) соответственно. Например:
 
-    skin: para reset
+    skin: islands-para reset
 
-    skin: para2 no-margin
+    skin: islands-para2 no-margin
 
 Пара примеров:
 
@@ -31,7 +31,7 @@
 
 Заголовки задаются скинами `skin-islands-h1` – `skin-islands-h6`, например:
 
-    skin: h1 reset
+    skin: islands-h1 reset
 
 > <h1>Заголовок</h1>
 >

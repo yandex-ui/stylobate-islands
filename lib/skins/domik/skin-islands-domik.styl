@@ -6,13 +6,13 @@ skin-islands-domik($this)
   else
     display: block
 
-skin-islands-domik-roof()
+skin-islands-domik__roof()
   kind: block
 
   overflow: hidden
 
-  padding-top: 3px /* Showing top part */
-  transform: translate(0, 1px) /* Fixing gap */
+  padding-top: 3px // Showing top part
+  transform: translate(0, 1px) // Fixing gap
 
   // Should I move something of this outside?
   if !ie
@@ -39,7 +39,7 @@ skin-islands-domik-roof()
       transform: translate(0, -25.65%) scale(1, 0.345) rotate(45deg) translate(2px, 2px)
       box-shadow: 0 0 0 2px rgba(0,0,0,0.13), 0 0 0 1px #FFF
 
-skin-islands-domik-content()
+skin-islands-domik__content()
   padding: 2*$islands_s 2*$islands_m
 
   background: #FFF

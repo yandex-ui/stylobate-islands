@@ -1,6 +1,6 @@
 .field
   kind: field 0.5*$islands_s $islands_s
-  skin: input-box
+  skin: islands-input__box
 
 .input-controller
   kind: input
@@ -9,10 +9,10 @@
   height: 100%
 
 .field-placeholder
-  skin: input-placeholder (-inner '&-inner') (-ghost '&-ghost')
+  skin: islands-input__placeholder (__inner '&-inner') (__ghost '&-ghost')
 
 .small-field-placeholder
-  skin: input-placeholder small (-inner '&-inner')
+  skin: islands-input__placeholder small (__inner '&-inner')
 
 textarea.input-controller
   vertical-align: top
@@ -20,8 +20,8 @@ textarea.input-controller
 
 .input-view
   kind: fill -1px
-  skin: input-view no-focus
+  skin: islands-input__view no-focus
 
   :focus + &
-    skin: input_focus
+    skin: islands-input_focus
 

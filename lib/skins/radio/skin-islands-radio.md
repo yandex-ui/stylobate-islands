@@ -3,7 +3,7 @@
 
 ## Радиокнопки
 
-    skin: radio
+    skin: islands-radio
 
 всё аналогично [чекбоксам](#skin-islands-checkbox)
 

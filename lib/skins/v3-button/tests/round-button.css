@@ -1,0 +1,73 @@
+.round-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+}
+
+.round-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+.round-button {
+  z-index: 1;
+  border: 1px solid;
+  font-family: Arial, sans-serif;
+  color: #000;
+  line-height: 0;
+  border-color: rgba(0,0,0,0.2);
+  box-shadow: inset 0 90px #fff;
+  padding: 0 12px;
+  line-height: 26px;
+  font-size: 13px;
+  text-align: center;
+  -webkit-box-pack: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 99em;
+}
+
+.round-button {
+  display: inline-block;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.round-button:hover {
+  border-color: rgba(0,0,0,0.4);
+}
+
+.round-button:active {
+  box-shadow: inset 0 90px #f6f5f3;
+}
+
+.round-button:focus {
+  z-index: 2;
+  border-color: rgba(178,142,0,0.6);
+  outline: none;
+}
+
+.round-button:focus:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 10px #fc0;
+}

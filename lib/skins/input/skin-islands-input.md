@@ -5,7 +5,7 @@
 
 Простейший инпут можно сделать на одном элементе:
 
-    skin: input
+    skin: islands-input
 
 > <input class="input" type="text" value="Буквы" />
 >
@@ -13,7 +13,7 @@
 
 Он может быть маленьким — с параметром `small`
 
-    skin: input small
+    skin: islands-input small
 
 > <input class="small-input" type="text" value="Буквы" />
 >
@@ -31,11 +31,11 @@
 
 Обычный скин инпута, на самом деле, составной: это объединение двух подскинов — `skin-islands-input-box` и `skin-islands-input-view`. Ну и ещё есть один подскин — для фокуса, чтобы можно было его перенести на нужный блок — `skin-islands-input_focus`.
 
-    skin: input-box
+    skin: islands-input-box
 
-    skin: input-view no-focus
+    skin: islands-input-view no-focus
 
-    skin: input-focus
+    skin: islands-input-focus
 
 В минимальном обрамлении он выглядит аналогично обычному инпуту, но html-структура у него должна быть посложнее:
 
@@ -119,7 +119,7 @@
 
 Специально для использования внутри инпута есть скин для «меток», обычно они используются для имени сервиса внутри инпута:
 
-    skin: input-label
+    skin: islands-input-label
 
 > <label class="field">
 >     <a class="field-label" href="#x">
@@ -138,7 +138,7 @@
 
 Для сложного инпута очень просто добавить кастомный плейсхолдер:
 
-    skin: input-placeholder (-inner '&-inner') 
+    skin: islands-input-placeholder (__inner '&-inner') 
 
 В коде сложного инпута он должен идти строго в самом начале контента.
 
@@ -154,7 +154,7 @@
 
 Для маленького плейсхолдера нужно передать дополнительный параметр `small`:
 
-    skin: input-placeholder small (-inner '&-inner') 
+    skin: islands-input-placeholder small (__inner '&-inner') 
 
 > <label class="small-field js-with-placeholder">
 >     <span class="field-content">
@@ -168,7 +168,7 @@
 
 Довольно просто сделать плесхолдер-подсказку, если использовать дополнительный элемент `-ghost`, в который дублировать значение инпута — это позволит расположить плейсхолдер ровно после вбитого текста:
 
-    skin: input-placeholder (-inner '&-inner')  (-ghost '&-ghost') 
+    skin: islands-input-placeholder (__inner '&-inner')  (__ghost '&-ghost') 
 
 > <label class="field js-with-placeholder-ghost">
 >     <span class="field-content">
@@ -233,7 +233,7 @@
 
 Если нужно отобразить состояние неверно заполненного инпута, можно воспользоваться скином `input_error`
 
-    skin: input_error
+    skin: islands-input_error
 
 > <div>
 >     <input class="input is-wrong" type="text" value="Буквы" />
@@ -252,7 +252,7 @@
 
 Чтобы центрировать контент инпута достаточно добавить параметр `centered`:
 
-    skin: input centered
+    skin: islands-input centered
 
 > <input class="centered-input" type="text" value="Буквы" />
 >

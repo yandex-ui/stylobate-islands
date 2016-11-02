@@ -1,0 +1,22 @@
+.icon_dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  background: 50% no-repeat;
+}
+
+.icon_dropdown {
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  margin-top: -5px;
+  -webkit-transform: scale(0.9) rotate(45deg);
+      -ms-transform: scale(0.9) rotate(45deg);
+          transform: scale(0.9) rotate(45deg);
+}
+
+.icon_dropdown {
+  width: 8px;
+  height: 8px;
+}

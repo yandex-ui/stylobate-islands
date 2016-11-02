@@ -1,0 +1,120 @@
+.lefty-button,
+.righty-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  -moz-appearance: none;
+  font: inherit;
+}
+
+.lefty-button::-moz-focus-inner,
+.righty-button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+.lefty-button {
+  z-index: 1;
+  border: 1px solid;
+  font-family: Arial, sans-serif;
+  color: #000;
+  line-height: 0;
+  border-radius: 3px;
+  border-color: rgba(0,0,0,0.2);
+  box-shadow: inset 0 90px #fff;
+  padding: 0 12px;
+  line-height: 26px;
+  font-size: 13px;
+  text-align: left;
+  -webkit-box-pack: start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.lefty-button,
+.righty-button {
+  display: inline-block;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-decoration: none;
+  position: relative;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.lefty-button:hover {
+  border-color: rgba(0,0,0,0.4);
+}
+
+.lefty-button:active {
+  box-shadow: inset 0 90px #f6f5f3;
+}
+
+.lefty-button:focus {
+  z-index: 2;
+  border-color: rgba(178,142,0,0.6);
+  outline: none;
+}
+
+.lefty-button:focus:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 10px #fc0;
+}
+
+.righty-button {
+  z-index: 1;
+  border: 1px solid;
+  font-family: Arial, sans-serif;
+  color: #000;
+  line-height: 0;
+  border-radius: 3px;
+  border-color: rgba(0,0,0,0.2);
+  box-shadow: inset 0 90px #fff;
+  padding: 0 12px;
+  line-height: 26px;
+  font-size: 13px;
+  text-align: right;
+  -webkit-box-pack: end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.righty-button:hover {
+  border-color: rgba(0,0,0,0.4);
+}
+
+.righty-button:active {
+  box-shadow: inset 0 90px #f6f5f3;
+}
+
+.righty-button:focus {
+  z-index: 2;
+  border-color: rgba(178,142,0,0.6);
+  outline: none;
+}
+
+.righty-button:focus:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 10px #fc0;
+}

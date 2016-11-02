@@ -1,0 +1,45 @@
+.dark-loader {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 28px;
+  height: 28px;
+  background: url("data:image/svg+xml;utf8,<svg width='28px' height='28px' viewBox='0 0 28 28' xmlns='http%3A//www.w3.org/2000/svg'><circle fill='none' stroke-width='2' stroke-dashoffset='81.68' stroke-dasharray='40.84' stroke='rgba(255,255,255,0.8)' cx='14' cy='14' r='13'><animate attributeName='stroke-dashoffset' from='81.68' to='0' dur='1s' repeatCount='indefinite' /></circle></svg>");
+}
+
+:root .dark-loader,
+_:-ms-input-placeholder {
+  box-sizing: border-box;
+  border: 2px solid rgba(255,255,255,0.8);
+  border-left-color: transparent;
+  border-top-color: transparent;
+  animation: rotate360 1s linear infinite;
+  border-radius: 50%;
+}
+
+body:last-child .dark-loader,
+_:-o-prefocus {
+  animation: rotate360 1s linear infinite;
+}
+@-webkit-keyframes rotate360 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate360 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

@@ -26,9 +26,7 @@ label.group > .toggler:not(:last-child):not(:only-child) > .toggler-view {
 
 .group {
   position: relative;
-
   display: inline-block;
-
   vertical-align: top;
   white-space: nowrap;
 }
@@ -37,4 +35,3 @@ label.group > .toggler:not(:last-child):not(:only-child) > .toggler-view {
 .group > .toggler:not(:first-child):not(:last-child) > .toggler-view:before {
   border-radius: 0 !important;
 }
-

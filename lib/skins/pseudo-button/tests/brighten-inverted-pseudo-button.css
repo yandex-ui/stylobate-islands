@@ -1,12 +1,10 @@
 .brighten-inverted-pseudo-button {
-  border: none;
+  padding: 0;
   margin: 0;
-
-  font: inherit;
-
+  border: none;
   background: transparent;
-
   -moz-appearance: none;
+  font: inherit;
 }
 
 .brighten-inverted-pseudo-button::-moz-focus-inner {
@@ -15,48 +13,49 @@
 }
 
 .brighten-inverted-pseudo-button {
+  font-size: 15px;
+  line-height: 1.467;
+  font-family: Arial, sans-serif;
   position: relative;
+  vertical-align: baseline;
+  color: #000;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.5);
+  font-size: 15px;
+  line-height: 22px;
+  padding: 3px 11px;
+  color: #e6e6e6;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+}
 
+.brighten-inverted-pseudo-button {
   display: inline-block;
-
-  box-sizing: border-box;
-  padding: 0.3rem 1.1rem;
-
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   vertical-align: baseline;
   white-space: nowrap;
   text-decoration: none;
-
-  font-family: Arial, sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-
-  color: #E6E6E6;
-
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
-
-  border-radius: 3px;
+  position: relative;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  max-width: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .brighten-inverted-pseudo-button:before {
   content: "";
-
   position: absolute;
   top: 1px;
   right: 1px;
   bottom: 1px;
   left: 1px;
-
   border-radius: 2px;
 }
 
 .brighten-inverted-pseudo-button:after {
   content: "";
-
   position: absolute;
   top: 0;
   right: 0;
@@ -66,26 +65,28 @@
 
 .brighten-inverted-pseudo-button .button-content {
   position: relative;
-
   display: block;
 }
 
+.brighten-inverted-pseudo-button:hover {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.65);
+}
+
 .brighten-inverted-pseudo-button:focus {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.65);
   outline: 0;
 }
 
 .brighten-inverted-pseudo-button:focus:after {
   z-index: 9;
-
-  box-shadow: 0 0 6px 2px rgba(255, 204, 0, 0.7), inset 0 0 0 1px rgba(193, 154, 0, 0.2);
-
+  box-shadow: 0 0 6px 2px rgba(255,204,0,0.7), inset 0 0 0 1px rgba(193,154,0,0.2);
   border-radius: inherit;
 }
 
 .brighten-inverted-pseudo-button:hover {
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.7);
 }
 
 .brighten-inverted-pseudo-button:focus {
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.7);
 }
