@@ -54,10 +54,8 @@ skin-islands-v3-loader_size($this)
 
   $color = replace("#", "%23", "" + $color)
 
-  // Using CSS rotate animation inside on SVG's circe we're getting no webkit sub
-  $svgdatauriprefix = "data:image/svg+xml;utf8,"
-  $svgstart = "<svg width='" + $radius*2 + "px' height='" + $radius*2 + "px' viewBox='0 0 " + $radius*2 + " " + $radius*2 + "' xmlns='http%3A//www.w3.org/2000/svg'>"
-  $animation = "<style>@-webkit-keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate{from{-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}circle{-webkit-animation:rotate 1s linear infinite;animation:rotate 1s linear infinite;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;will-change:transform}</style>"
-  $circle = "<circle fill='none' stroke-width='2' stroke-dasharray='" + $length + "' stroke='"+ $color +"' cx='" + $radius + "' cy='" + $radius + "' r='" + ($radius - 1) + "'></circle>"
-  $svgend = "</svg>"
-  background: url($svgdatauriprefix + $svgstart + $animation + $circle + $svgend)
+  // The points of doing it by animating dashoffset
+  // 1. More “true” way of rotating visualiazation (no needless antialiasing)
+  // 2. No webkit transform animation problems (blocks losing subpixel font antialiasing etc.)
+  // Ideally this should be made not in CSS, but via JS in canvas.
+  background: url("data:image/svg+xml;utf8,<svg width='" + $radius*2 + "px' height='" + $radius*2 + "px' viewBox='0 0 " + $radius*2 + " " + $radius*2 + "' xmlns='http%3A//www.w3.org/2000/svg'><circle fill='none' stroke-width='2' stroke-dashoffset='" + 2*$length + "' stroke-dasharray='" + $length + "' stroke='"+ $color +"' cx='" + $radius + "' cy='" + $radius + "' r='" + ($radius - 1) + "'><animate attributeName='stroke-dashoffset' from='" + $length*2 + "' to='0' dur='1s' repeatCount='indefinite' /></circle></svg>")
